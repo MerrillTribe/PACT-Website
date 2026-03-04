@@ -37,8 +37,18 @@ export default function Home() {
       description="Provo Auxiliary Communications Team (PACT) — volunteer emergency communications, training, and resources.">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
-      </main>
+  <div style={{textAlign: "center", padding: "4rem 0"}}>
+    <img
+      src="/img/pact-logo.png"
+      alt="PACT Logo"
+      style={{
+        maxWidth: "500px",
+        width: "80%",
+        height: "auto"
+      }}
+    />
+  </div>
+</main>
     </Layout>
   );
 }

@@ -4,7 +4,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Provo Auxiliary Communications Team',
-  tagline: 'PACT',
+  tagline: 'The Provo Auxiliary Communication Team (PACT) is a neighborhood volunteer team organized to assist Provo City with communications during large emergencies or other disruptions as well as Planned Events in Provo.',
   favicon: 'img/favicon.ico',
 
   future: {
