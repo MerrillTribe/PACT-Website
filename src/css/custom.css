@@ -1,18 +1,18 @@
 /**
- * Any CSS included here will be global.
+ * Global CSS for PACT site
  */
 
 /* -------------------------
    Brand palette + theme vars
 -------------------------- */
 :root {
-  /* PACT palette */
   --pact-navy: #002030;
   --pact-blue: #2050a0;
-  --pact-red:  #a02010;
+  --pact-blue-dark: #1c4690;
+  --pact-red: #a02010;
+  --pact-red-hover: #c02a18;
 
-  /* Docusaurus primary (buttons, accents) */
-  --ifm-color-primary: #2050a0;
+  --ifm-color-primary: var(--pact-blue);
   --ifm-color-primary-dark: #1c4690;
   --ifm-color-primary-darker: #1a4287;
   --ifm-color-primary-darkest: #15366f;
@@ -20,20 +20,19 @@
   --ifm-color-primary-lighter: #4a76b6;
   --ifm-color-primary-lightest: #7fa0cf;
 
-  /* Surfaces */
   --ifm-navbar-background-color: var(--pact-navy);
   --ifm-footer-background-color: var(--pact-navy);
 
-  /* Links */
   --ifm-link-color: var(--pact-blue);
   --ifm-link-hover-color: var(--pact-red);
 
-  /* Alerts */
   --ifm-color-danger: var(--pact-red);
+
+  --ifm-button-border-radius: 8px;
 }
 
 /* -------------------------
-   Navbar styling
+   Navbar
 -------------------------- */
 .navbar,
 .navbar a,
@@ -46,16 +45,20 @@
   color: var(--pact-red) !important;
 }
 
-/* Active sidebar accent */
+/* -------------------------
+   Sidebar
+-------------------------- */
 .menu__link--active {
   border-left: 3px solid var(--pact-red);
+  color: var(--pact-red);
+  font-weight: 600;
 }
 
 /* -------------------------
-   Footer styling (force navy)
+   Footer
 -------------------------- */
 .footer {
-  background-color: #002030 !important; /* direct hex avoids var issues */
+  background-color: var(--pact-navy) !important;
 }
 
 .footer,
@@ -66,30 +69,163 @@
 
 .footer a {
   color: #ffffff !important;
-  text-decoration: none;
 }
 
 .footer a:hover {
-  color: #a02010 !important;
-  text-decoration: underline;
+  color: var(--pact-red) !important;
 }
 
 /* -------------------------
-   Dark mode tweaks
+   Dark mode
 -------------------------- */
 [data-theme='dark'] {
   --ifm-background-color: #001622;
-
-  /* Keep top/bottom bars PACT navy in dark mode too */
-  --ifm-navbar-background-color: #002030;
-  --ifm-footer-background-color: #002030;
-
+  --ifm-navbar-background-color: var(--pact-navy);
+  --ifm-footer-background-color: var(--pact-navy);
   --ifm-link-color: #4a76b6;
-  --ifm-link-hover-color: #a02010;
 }
 
-/* Homepage hero banner color */
+/* -------------------------
+   Hero
+-------------------------- */
 .hero--primary {
-  background-color: #a02010; /* PACT red */
+  background-color: var(--pact-red);
   color: #ffffff;
+}
+
+/* -------------------------
+   Buttons
+-------------------------- */
+.button {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Primary */
+.button.button--primary {
+  background-color: var(--pact-blue);
+  border-color: var(--pact-blue);
+  color: white;
+}
+
+.button.button--primary:hover {
+  background-color: var(--pact-blue-dark);
+}
+
+/* -------------------------
+   CTA BUTTON (FIXED)
+-------------------------- */
+.button--cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 58px;
+  padding: 0 2rem;
+
+  background-color: var(--pact-red) !important;
+  border-color: var(--pact-red) !important;
+  color: white !important;
+
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: normal;
+}
+
+.button--cta:hover {
+  background-color: var(--pact-red-hover) !important;
+  transform: translateY(-1px);
+}
+
+/* Hero CTA contrast */
+.hero--primary .button--cta {
+  background-color: white !important;
+  color: var(--pact-red) !important;
+}
+
+.hero--primary .button--cta:hover {
+  background-color: #f2f2f2 !important;
+}
+
+/* -------------------------
+   Button Centering
+-------------------------- */
+.button-center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* -------------------------
+   FAQ (LIGHT RED)
+-------------------------- */
+.faqBlock {
+  max-width: 850px;
+  margin: 2rem auto;
+}
+
+/* Box */
+.faqItem {
+  border: 1px solid var(--pact-red);
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background: rgba(160, 32, 16, 0.15);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+/* Hover */
+.faqItem:hover {
+  background: rgba(160, 32, 16, 0.22);
+}
+
+/* Question */
+.faqItem summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 1rem 1.25rem;
+  font-weight: 700;
+  background: rgba(160, 32, 16, 0.22);
+}
+
+/* Remove arrow */
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+/* + / - */
+.faqItem summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.2rem;
+}
+
+.faqItem[open] summary::after {
+  content: "–";
+}
+
+/* Answer */
+.faqAnswer {
+  padding: 1rem 1.25rem;
+  background: rgba(160, 32, 16, 0.1);
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* -------------------------
+   Layout helpers
+-------------------------- */
+.section-center {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }

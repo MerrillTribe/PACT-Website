@@ -22,21 +22,42 @@ const sidebars = {
     },
 
     {
-      type: 'doc',
-      id: 'training',
+      type: 'category',
       label: 'Training',
+      items: [
+        'training/weekly-training-net',
+        'training/meetings',
+        'training/certification',
+        'training/training-exercises',
+      ],
     },
 
     {
-      type: 'doc',
-      id: 'resources',
+      type: 'category',
       label: 'Resources',
+      items: [
+        'resources/radio-basics',
+        'resources/vocabulary-acronyms',
+        'resources/band-plans-frequency-allocations',
+        'resources/codes',
+        'resources/local-frequencies-repeaters-nets',
+        'resources/emergency-notification-systems',
+        'resources/equipment',
+        'resources/radio-troubleshooting',
+        'resources/forms',
+        'resources/local-groups',
+        'resources/lds-resources',
+        'resources/likelihood-of-disasters',
+        'resources/clothing',
+        'resources/leadership-team',
+
+      ],
     },
 
     {
       type: 'doc',
-      id: 'join-pact',
-      label: 'Join PACT',
+      id: 'get-involved',
+      label: 'Get Involved',
     },
   ],
 };

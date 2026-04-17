@@ -4,14 +4,15 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Provo Auxiliary Communications Team',
-  tagline: 'The Provo Auxiliary Communication Team (PACT) is a neighborhood volunteer team organized to assist Provo City with communications during large emergencies or other disruptions as well as Planned Events in Provo.',
-  favicon: 'img/favicon.ico',
+  tagline:
+    'The Provo Auxiliary Communication Team (PACT) is a volunteer team organized to assist Provo City with communications during large emergencies or other disruptions as well as planned events in Provo.',
+  favicon: 'img/pact-favicon.ico',
 
   future: {
     v4: true,
   },
 
-  // GitHub Pages (project site) config for repo: MerrillTribe/PACT-Website
+  // GitHub Pages config
   url: 'https://merrilltribe.github.io',
   baseUrl: '/PACT-Website/',
 
@@ -28,16 +29,12 @@ const config = {
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/MerrillTribe/PACT-Website/tree/main/',
         },
-
-        // If you don't want a blog, disable it (cleaner for an org docs site)
         blog: false,
-
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -49,23 +46,23 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/docusaurus-social-card.jpg',
+
       colorMode: {
         respectPrefersColorScheme: true,
       },
 
       navbar: {
-        title: 'PACT',
+        title: 'Home',
         logo: {
           alt: 'PACT Logo',
-          src: 'img/pact-logo.png', // change to pact-logo.jpg if your file is JPG
+          src: 'img/pact-logo-blue.png',
         },
         items: [
           {to: '/docs/intro', label: 'About PACT', position: 'left'},
           {to: '/docs/operations/activation', label: 'Operations', position: 'left'},
-          {to: '/docs/training', label: 'Training', position: 'left'},
-          {to: '/docs/resources', label: 'Resources', position: 'left'},
-          {to: '/docs/join-pact', label: 'Join PACT', position: 'left'},
-
+          {to: '/docs/training/weekly-training-net', label: 'Training', position: 'left'},
+          {to: '/docs/resources/codes', label: 'Resources', position: 'left'},
+          {to: '/docs/get-involved', label: 'Get Involved', position: 'left'},
           {
             href: 'https://github.com/MerrillTribe/PACT-Website',
             label: 'GitHub',
@@ -76,25 +73,7 @@ const config = {
 
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'PACT',
-            items: [
-              {label: 'About PACT', to: '/docs/intro'},
-              {label: 'Operations', to: '/docs/operations/activation'},
-              {label: 'Training', to: '/docs/training'},
-              {label: 'Resources', to: '/docs/resources'},
-              {label: 'Join PACT', to: '/docs/join-pact'},
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {label: 'GitHub', href: 'https://github.com/MerrillTribe/PACT-Website'},
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} Provo Auxiliary Communications Team (PACT).`,
+        copyright: `Copyright © ${new Date().getFullYear()} Provo Auxiliary Communications Team`,
       },
 
       prism: {

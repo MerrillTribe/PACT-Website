@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
@@ -19,7 +20,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
 
         <div className={styles.buttons}>
-          <Link className="button button--primary button--lg" to="/docs/join-pact">
+          <Link className="button button--primary button--lg" to="/docs/get-involved">
             Join PACT
           </Link>
         </div>
@@ -37,18 +38,18 @@ export default function Home() {
       description="Provo Auxiliary Communications Team (PACT) — volunteer emergency communications, training, and resources.">
       <HomepageHeader />
       <main>
-  <div style={{textAlign: "center", padding: "4rem 0"}}>
-    <img
-      src="/img/pact-logo.png"
-      alt="PACT Logo"
-      style={{
-        maxWidth: "500px",
-        width: "80%",
-        height: "auto"
-      }}
-    />
-  </div>
-</main>
+        <div style={{textAlign: 'center', padding: '4rem 0'}}>
+          <img
+            src={useBaseUrl('/img/pact-logo.png')}
+            alt="PACT Logo"
+            style={{
+              maxWidth: '500px',
+              width: '80%',
+              height: 'auto',
+            }}
+          />
+        </div>
+      </main>
     </Layout>
   );
 }
