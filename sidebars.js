@@ -16,8 +16,8 @@ const sidebars = {
       label: 'Operations',
       items: [
         'operations/activation',
-        'operations/frequency-allocation',
         'operations/staffing-assignments-reporting',
+        'operations/frequency-allocation',
       ],
     },
 
@@ -37,7 +37,6 @@ const sidebars = {
       label: 'Resources',
       items: [
         'resources/radio-basics',
-        'resources/vocabulary-acronyms',
         'resources/band-plans-frequency-allocations',
         'resources/codes',
         'resources/local-frequencies-repeaters-nets',

@@ -1,0 +1,11 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:PACT Interface Meeting
+DESCRIPTION:Training Topic: PACT Communication Plan
+LOCATION:Provo Fire Station 22 Community Room, 2737 N Canyon Rd, Provo, UT 84604
+URL:https://provoauxiliarycommunicationsteam.com
+DTSTART:20260218T020000Z
+DTEND:20260218T030000Z
+END:VEVENT
+END:VCALENDAR

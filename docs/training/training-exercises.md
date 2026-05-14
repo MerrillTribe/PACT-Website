@@ -28,6 +28,82 @@ https://www.provo.gov/1353/Provo-Prepared
 
 ### Communications Plan
 
+
+<div style={{marginTop: '1.5rem'}}>
+
+<div style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>
+UHF District Frequencies (Simplex)
+</div>
+
+<div style={{
+  display: 'flex',
+  borderRadius: '8px',
+  overflow: 'hidden',
+  border: '1px solid #ccc'
+}}>
+
+<div style={{
+  flex: 1,
+  backgroundColor: '#f0fdf4',
+  padding: '0.75rem',
+  textAlign: 'center',
+  borderRight: '1px solid #ddd'
+}}>
+<div style={{color: '#22c55e', fontWeight: 'bold'}}>D1</div>
+<div><strong>439.850</strong></div>
+</div>
+
+<div style={{
+  flex: 1,
+  backgroundColor: '#fefce8',
+  padding: '0.75rem',
+  textAlign: 'center',
+  borderRight: '1px solid #ddd'
+}}>
+<div style={{color: '#eab308', fontWeight: 'bold'}}>D2</div>
+<div><strong>439.925</strong></div>
+</div>
+
+<div style={{
+  flex: 1,
+  backgroundColor: '#faf5ff',
+  padding: '0.75rem',
+  textAlign: 'center',
+  borderRight: '1px solid #ddd'
+}}>
+<div style={{color: '#a855f7', fontWeight: 'bold'}}>D3</div>
+<div><strong>439.825</strong></div>
+</div>
+
+<div style={{
+  flex: 1,
+  backgroundColor: '#fef2f2',
+  padding: '0.75rem',
+  textAlign: 'center',
+  borderRight: '1px solid #ddd'
+}}>
+<div style={{color: '#ef4444', fontWeight: 'bold'}}>D4</div>
+<div><strong>439.875</strong></div>
+</div>
+
+<div style={{
+  flex: 1,
+  backgroundColor: '#eff6ff',
+  padding: '0.75rem',
+  textAlign: 'center'
+}}>
+<div style={{color: '#3b82f6', fontWeight: 'bold'}}>D5</div>
+<div><strong>439.000</strong></div>
+</div>
+
+</div>
+
+<div style={{marginTop: '0.5rem', fontSize: '0.9rem'}}>
+All district frequencies are designated for <strong>Inner District Communications</strong>.
+</div>
+
+</div>
+
 ---
 
 ## Provo Half Marathon

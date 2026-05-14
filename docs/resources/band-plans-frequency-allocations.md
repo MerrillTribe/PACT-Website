@@ -10,7 +10,6 @@ Xxx
 The Family Radio Service (FRS) is a private, two-way, short-distance voice and data communications service for facilitating family and group activities. The most common use for FRS channels is short-distance, two-way voice communications using small hand-held radios that are similar to walkie-talkies. The service is licensed-by-rule so the general public can use the devices without having to obtain a license and channel sharing is achieved through a listen-before-talk etiquette. The FRS is authorized 22 channels in the 462 MHz and 467 MHz range, all of which are shared with General Mobile Radio Service (GMRS) which requires an individual license for use.
 The usual range of an FRS device on channels 8-14 is less than one-half mile, but longer range communications can be achieved on channels 1-7 and 15-22 depending on conditions. You may not interconnect FRS transmitters and radios with the telephone system.
 
-
 <table>
   <thead>
     <tr>
@@ -23,7 +22,6 @@ The usual range of an FRS device on channels 8-14 is less than one-half mile, bu
     </tr>
   </thead>
   <tbody>
-    <!-- Channels 1–7 -->
     <tr>
       <td>1</td>
       <td>462.5625</td>
@@ -53,8 +51,6 @@ The usual range of an FRS device on channels 8-14 is less than one-half mile, bu
       <td>7</td>
       <td>462.7125</td>
     </tr>
-
-    <!-- Channels 8–14 -->
     <tr>
       <td>8</td>
       <td>467.5625</td>
@@ -84,8 +80,6 @@ The usual range of an FRS device on channels 8-14 is less than one-half mile, bu
       <td>14</td>
       <td>467.7125</td>
     </tr>
-
-    <!-- Channels 15–22 -->
     <tr>
       <td>15</td>
       <td>462.5500</td>
@@ -201,120 +195,25 @@ The FCC service rules for the Citizens Band Radio Service (CBRS) are located in 
       <td>27.2150</td>
       <td rowSpan="20" style={{ verticalAlign: 'middle', textAlign: 'center' }}>4 watts</td>
     </tr>
-    <tr>
-      <td>2</td>
-      <td>26.9750</td>
-      <td>22</td>
-      <td>27.2250</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>26.9850</td>
-      <td>23</td>
-      <td>27.2550</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>27.0050</td>
-      <td>24</td>
-      <td>27.2350</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>27.0150</td>
-      <td>25</td>
-      <td>27.2450</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>27.0250</td>
-      <td>26</td>
-      <td>27.2650</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>27.0350</td>
-      <td>27</td>
-      <td>27.2750</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>27.0550</td>
-      <td>28</td>
-      <td>27.2850</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>27.0650</td>
-      <td>29</td>
-      <td>27.2950</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>27.0750</td>
-      <td>30</td>
-      <td>27.3050</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>27.0850</td>
-      <td>31</td>
-      <td>27.3150</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>27.1050</td>
-      <td>32</td>
-      <td>27.3250</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>27.1150</td>
-      <td>33</td>
-      <td>27.3350</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>27.1250</td>
-      <td>34</td>
-      <td>27.3450</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>27.1350</td>
-      <td>35</td>
-      <td>27.3550</td>
-    </tr>
-    <tr>
-      <td>16</td>
-      <td>27.1550</td>
-      <td>36</td>
-      <td>27.3650</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>27.1650</td>
-      <td>37</td>
-      <td>27.3750</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>27.1750</td>
-      <td>38</td>
-      <td>27.3850</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>27.1850</td>
-      <td>39</td>
-      <td>27.3950</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>27.2050</td>
-      <td>40</td>
-      <td>27.4050</td>
-    </tr>
+    <tr><td>2</td><td>26.9750</td><td>22</td><td>27.2250</td></tr>
+    <tr><td>3</td><td>26.9850</td><td>23</td><td>27.2550</td></tr>
+    <tr><td>4</td><td>27.0050</td><td>24</td><td>27.2350</td></tr>
+    <tr><td>5</td><td>27.0150</td><td>25</td><td>27.2450</td></tr>
+    <tr><td>6</td><td>27.0250</td><td>26</td><td>27.2650</td></tr>
+    <tr><td>7</td><td>27.0350</td><td>27</td><td>27.2750</td></tr>
+    <tr><td>8</td><td>27.0550</td><td>28</td><td>27.2850</td></tr>
+    <tr><td>9</td><td>27.0650</td><td>29</td><td>27.2950</td></tr>
+    <tr><td>10</td><td>27.0750</td><td>30</td><td>27.3050</td></tr>
+    <tr><td>11</td><td>27.0850</td><td>31</td><td>27.3150</td></tr>
+    <tr><td>12</td><td>27.1050</td><td>32</td><td>27.3250</td></tr>
+    <tr><td>13</td><td>27.1150</td><td>33</td><td>27.3350</td></tr>
+    <tr><td>14</td><td>27.1250</td><td>34</td><td>27.3450</td></tr>
+    <tr><td>15</td><td>27.1350</td><td>35</td><td>27.3550</td></tr>
+    <tr><td>16</td><td>27.1550</td><td>36</td><td>27.3650</td></tr>
+    <tr><td>17</td><td>27.1650</td><td>37</td><td>27.3750</td></tr>
+    <tr><td>18</td><td>27.1750</td><td>38</td><td>27.3850</td></tr>
+    <tr><td>19</td><td>27.1850</td><td>39</td><td>27.3950</td></tr>
+    <tr><td>20</td><td>27.2050</td><td>40</td><td>27.4050</td></tr>
   </tbody>
 </table>
 
@@ -327,13 +226,13 @@ An FCC license is required to operate the GMRS system. Licenses are issued for a
 A GMRS system licensed to a non-individual prior to July 31, 1987 is also eligible for renewal, but the licensee may not make any major modification to the system.
 You may apply for a GMRS license if you are 18 years or older and not a representative of a foreign government. If you receive a license, any family member, regardless of age, can operate GMRS stations and units within the licensed system.
 A GMRS user can expect a communications range of one to twenty-five miles depending on station class, terrain, and repeater use.
-GMRS stations cannot be interconnected with the public switched telephone network or any other network for the purpose of carrying GMRS communications, but these networks can be used for remote control of repeater stations.  In other words, repeaters may not be linked via the internet—an example of an “other network” in the rules—to extend the range of the communications across a large geographic area.  Linking multiple repeaters to enable a repeater outside the communications range of the handheld or mobile device to retransmit messages violates sections 95.1733(a)(8) and 95.1749 of the Commission’s rules, and potentially other rules in 47 C.F.R.  Repeaters may be connected to the telephone network or other networks only for purposes of remote control of a GMRS station, not for carrying communication signals. 
+GMRS stations cannot be interconnected with the public switched telephone network or any other network for the purpose of carrying GMRS communications, but these networks can be used for remote control of repeater stations. In other words, repeaters may not be linked via the internet—an example of an “other network” in the rules—to extend the range of the communications across a large geographic area. Linking multiple repeaters to enable a repeater outside the communications range of the handheld or mobile device to retransmit messages violates sections 95.1733(a)(8) and 95.1749 of the Commission’s rules, and potentially other rules in 47 C.F.R. Repeaters may be connected to the telephone network or other networks only for purposes of remote control of a GMRS station, not for carrying communication signals.
 The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. You can find more information about GMRS licensing in the rules.
 
 <table>
   <thead>
     <tr>
-      <th colSpan="4" style={{ textAlign: 'center' }}>GMRS</th>
+      <th colSpan="4" style={{ textAlign: 'center', backgroundColor: '#f2b600' }}>GMRS</th>
     </tr>
     <tr>
       <th>CH</th>
@@ -349,36 +248,12 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
       <td>-</td>
       <td rowSpan="7" style={{ verticalAlign: 'middle', textAlign: 'center' }}>5 watts</td>
     </tr>
-    <tr>
-      <td>2</td>
-      <td>462.5875</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>462.6125</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>462.6375</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>462.6625</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>462.6875</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>462.7125</td>
-      <td>-</td>
-    </tr>
+    <tr><td>2</td><td>462.5875</td><td>-</td></tr>
+    <tr><td>3</td><td>462.6125</td><td>-</td></tr>
+    <tr><td>4</td><td>462.6375</td><td>-</td></tr>
+    <tr><td>5</td><td>462.6625</td><td>-</td></tr>
+    <tr><td>6</td><td>462.6875</td><td>-</td></tr>
+    <tr><td>7</td><td>462.7125</td><td>-</td></tr>
 
     <tr>
       <td>8</td>
@@ -386,36 +261,12 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
       <td>-</td>
       <td rowSpan="7" style={{ verticalAlign: 'middle', textAlign: 'center' }}>0.5 watts</td>
     </tr>
-    <tr>
-      <td>9</td>
-      <td>467.5875</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>467.6125</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>467.6375</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>467.6625</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>467.6875</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>467.7125</td>
-      <td>-</td>
-    </tr>
+    <tr><td>9</td><td>467.5875</td><td>-</td></tr>
+    <tr><td>10</td><td>467.6125</td><td>-</td></tr>
+    <tr><td>11</td><td>467.6375</td><td>-</td></tr>
+    <tr><td>12</td><td>467.6625</td><td>-</td></tr>
+    <tr><td>13</td><td>467.6875</td><td>-</td></tr>
+    <tr><td>14</td><td>467.7125</td><td>-</td></tr>
 
     <tr>
       <td>15</td>
@@ -423,41 +274,13 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
       <td>467.5500</td>
       <td rowSpan="8" style={{ verticalAlign: 'middle', textAlign: 'center' }}>50 watts</td>
     </tr>
-    <tr>
-      <td>16</td>
-      <td>462.5750</td>
-      <td>467.5750</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>462.6000</td>
-      <td>467.6000</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>462.6250</td>
-      <td>467.6250</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>462.6500</td>
-      <td>467.6500</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>462.6750</td>
-      <td>467.6750</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>462.7000</td>
-      <td>467.7000</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>462.7250</td>
-      <td>467.7250</td>
-    </tr>
+    <tr><td>16</td><td>462.5750</td><td>467.5750</td></tr>
+    <tr><td>17</td><td>462.6000</td><td>467.6000</td></tr>
+    <tr><td>18</td><td>462.6250</td><td>467.6250</td></tr>
+    <tr><td>19</td><td>462.6500</td><td>467.6500</td></tr>
+    <tr><td>20</td><td>462.6750</td><td>467.6750</td></tr>
+    <tr><td>21</td><td>462.7000</td><td>467.7000</td></tr>
+    <tr><td>22</td><td>462.7250</td><td>467.7250</td></tr>
   </tbody>
 </table>
 
@@ -482,9 +305,6 @@ Xxx
 ### Wilderness Protocol
 Xxx
 
-### Amateur Radio
-Xxx
-
 ### Modes
 Xxx
 
@@ -496,7 +316,7 @@ Xxx
 | Image/Video | Slow Scan TV (SSTV), Fast Scan TV (FSTV-NTSC standard) |
 | Morse Code | Continuous Wave (CW), Modulated Continuous Wave (MCW), Frequency-Shift Keying (FSK) |
 
-*Procedural Activities (Modes): EchoLink, Earth-Moon-Earth (EME), Automatically Controlled Digital Stations (ACDS), OSCAR, Low transmitter power (QRP), ALS, ALE
+*Procedural Activities (Modes): EchoLink, Earth-Moon-Earth (EME), Automatically Controlled Digital Stations (ACDS), OSCAR, Low transmitter power (QRP), ALS, ALE*
 
 ### Digital Phone Modes (DMR, D-STAR, Fusion, P25, NXDN)
 Xxx
@@ -505,5 +325,7 @@ Xxx
 Xxx
 
 ### NIFOG
-XXX
+Xxx
 
+### Amateur Radio
+Xxx

@@ -12,6 +12,11 @@
   --pact-red: #a02010;
   --pact-red-hover: #c02a18;
 
+  --pact-green: #2e7d32;
+  --pact-yellow: #f9a825;
+  --pact-yellow-dark: #9a6a00;
+  --pact-purple: #6a3fa0;
+
   --ifm-color-primary: var(--pact-blue);
   --ifm-color-primary-dark: #1c4690;
   --ifm-color-primary-darker: #1a4287;
@@ -104,23 +109,21 @@
 
 .button:hover {
   transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Primary */
 .button.button--primary {
   background-color: var(--pact-blue);
   border-color: var(--pact-blue);
-  color: white;
+  color: #ffffff;
 }
 
 .button.button--primary:hover {
   background-color: var(--pact-blue-dark);
 }
 
-/* -------------------------
-   CTA BUTTON (FIXED)
--------------------------- */
+/* CTA Button */
 .button--cta {
   display: inline-flex;
   align-items: center;
@@ -131,7 +134,7 @@
 
   background-color: var(--pact-red) !important;
   border-color: var(--pact-red) !important;
-  color: white !important;
+  color: #ffffff !important;
 
   font-weight: 700;
   font-size: 1.05rem;
@@ -145,7 +148,7 @@
 
 /* Hero CTA contrast */
 .hero--primary .button--cta {
-  background-color: white !important;
+  background-color: #ffffff !important;
   color: var(--pact-red) !important;
 }
 
@@ -164,14 +167,13 @@
 }
 
 /* -------------------------
-   FAQ (LIGHT RED)
+   FAQ
 -------------------------- */
 .faqBlock {
   max-width: 850px;
   margin: 2rem auto;
 }
 
-/* Box */
 .faqItem {
   border: 1px solid var(--pact-red);
   border-radius: 12px;
@@ -181,12 +183,10 @@
   transition: all 0.2s ease;
 }
 
-/* Hover */
 .faqItem:hover {
   background: rgba(160, 32, 16, 0.22);
 }
 
-/* Question */
 .faqItem summary {
   list-style: none;
   cursor: pointer;
@@ -195,12 +195,10 @@
   background: rgba(160, 32, 16, 0.22);
 }
 
-/* Remove arrow */
 .faqItem summary::-webkit-details-marker {
   display: none;
 }
 
-/* + / - */
 .faqItem summary::after {
   content: "+";
   float: right;
@@ -211,7 +209,6 @@
   content: "–";
 }
 
-/* Answer */
 .faqAnswer {
   padding: 1rem 1.25rem;
   background: rgba(160, 32, 16, 0.1);
@@ -228,4 +225,961 @@
 
 .text-center {
   text-align: center;
+}
+
+.victim-condition-group {
+  background: transparent !important;
+}
+
+.victim-condition-group td {
+  background-color: var(--ifm-background-color) !important;
+}
+
+/* =========================
+   ACTIVATION / CERT CARDS
+========================= */
+
+.cert-path-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 1.5rem;
+  color: var(--pact-navy);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cert-path-title::before,
+.cert-path-title::after {
+  content: "";
+  flex: 1;
+  border-top: 2px solid #c8ced8;
+}
+
+/* LAYOUT */
+.cert-progress {
+  display: flex;
+  align-items: stretch;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+/* CARD */
+.cert-card {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b7c2d0;
+  border-radius: 12px;
+  background: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+/* HEADER */
+.cert-card-header {
+  padding: 0.65rem 0.5rem;
+  background: var(--pact-blue-dark);
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+/* ICON */
+.cert-icon {
+  width: 86px;
+  height: 86px;
+  margin: 1.2rem auto 0.75rem;
+  border-radius: 50%;
+  background: rgba(0, 32, 48, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cert-icon img {
+  width: 75%;
+  height: 75%;
+  object-fit: contain;
+}
+
+/* TITLE (FIXED WRAPPING) */
+.cert-card h3 {
+  margin: 0.5rem auto;
+  padding: 0 0.75rem;
+  color: var(--pact-blue-dark);
+  font-size: 1.05rem;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  /* KEY FIXES */
+  white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* BODY */
+.cert-card p {
+  flex-grow: 1;
+  padding: 0 1rem;
+  margin: 0 0 1.2rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* FOOTER */
+.cert-footer {
+  margin-top: auto;
+  min-height: 72px;
+  padding: 0.75rem;
+  background: rgba(0, 32, 48, 0.10);
+  color: var(--pact-blue-dark);
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  line-height: 1.25;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* =========================
+   ACTIVATION CARD LINKS
+========================= */
+
+.cert-progress .cert-card.card-link,
+.cert-progress .cert-card.card-link:visited,
+.cert-progress .cert-card.card-link:hover,
+.cert-progress .cert-card.card-link:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.cert-progress .cert-card.card-link h3,
+.cert-progress .cert-card.card-link p,
+.cert-progress .cert-card.card-link strong {
+  text-decoration: none !important;
+}
+
+.cert-progress .cert-card.card-link:hover {
+  transform: translateY(-4px);
+}
+
+/* =========================
+   COLOR SYSTEM (PACT ONLY)
+========================= */
+
+/* DEFAULT (BLUE) */
+.cert-blue .cert-card-header {
+  background: var(--pact-blue-dark);
+}
+
+.cert-blue h3 {
+  color: var(--pact-blue-dark);
+}
+
+.cert-blue .cert-footer {
+  background: rgba(0, 32, 48, 0.10);
+  color: var(--pact-blue-dark);
+}
+
+/* RED */
+.cert-red .cert-card-header {
+  background: var(--pact-red);
+}
+
+.cert-red h3 {
+  color: var(--pact-red);
+}
+
+.cert-red .cert-footer {
+  background: rgba(160, 32, 16, 0.10);
+  color: var(--pact-red);
+}
+
+.cert-red .cert-icon {
+  background: rgba(160, 32, 16, 0.10);
+}
+
+/* =========================
+   ARROWS + TIP
+========================= */
+
+.cert-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pact-navy);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.cert-tip {
+  margin: 1.75rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  background: var(--pact-navy);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 996px) {
+  .cert-progress {
+    flex-direction: column;
+  }
+
+  .cert-arrow {
+    transform: rotate(90deg);
+    margin: -0.25rem 0;
+  }
+}
+
+/* =========================
+   Smooth Scroll
+========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+h2[id],
+h3[id] {
+  scroll-margin-top: 90px;
+}
+
+/* =========================
+   Meeting Page
+========================= */
+.meeting-card {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-left: 6px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.meeting-card h3 {
+  margin-top: 0;
+}
+
+.meeting-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.button.button--calendar,
+.meeting-card .button--calendar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  background-color: #c62828 !important;
+  border: 2px solid #c62828 !important;
+  color: #ffffff !important;
+
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+
+  padding: 0.85rem 1.25rem;
+  border-radius: 12px;
+  margin-top: 1.25rem;
+
+  box-shadow: 0 4px 10px rgba(198, 40, 40, 0.18);
+}
+
+.button.button--calendar:hover,
+.meeting-card .button--calendar:hover {
+  background-color: #b71c1c !important;
+  border-color: #b71c1c !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   Custom Info Boxes
+========================= */
+.custom-box {
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #ffffff;
+  height: 100%;
+  transition: all 0.2s ease;
+}
+
+.custom-box:hover {
+  border-color: #3578e5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.custom-box-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.custom-box-header img {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.custom-box-header h3 {
+  margin: 0;
+}
+
+.custom-box-body p {
+  margin-bottom: 10px;
+}
+
+.custom-box-body ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+/* =========================
+   PRINT STYLES
+========================= */
+@media print {
+
+  /* Improve print color accuracy */
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide top navbar and unnecessary elements */
+  .navbar,
+  .footer,
+  .pagination-nav,
+  .breadcrumbs,
+  .table-of-contents,
+  .theme-edit-this-page,
+  .theme-back-to-top-button {
+    display: none !important;
+  }
+
+  /* Keep sidebar visible */
+  .theme-doc-sidebar-container,
+  .theme-doc-sidebar-menu,
+  .menu {
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  /* Preserve doc layout */
+  .docMainContainer_gTbr,
+  .docPage__5DB {
+    display: flex !important;
+  }
+
+  /* Sidebar formatting */
+  .theme-doc-sidebar-container {
+    width: 240px !important;
+    flex: 0 0 240px !important;
+
+    border-right: 1px solid #ccc;
+
+    padding-right: 12px;
+    margin-right: 18px;
+  }
+
+  /* Main content area */
+  .theme-doc-markdown {
+    flex: 1 !important;
+    max-width: none !important;
+  }
+
+  /* Full-width layout */
+  .main-wrapper,
+  .container,
+  .row,
+  main,
+  article {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* Avoid awkward page breaks */
+  h1,
+  h2,
+  h3,
+  h4 {
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  table,
+  img,
+  .card,
+  .custom-box,
+  .cert-card,
+  pre,
+  blockquote {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Improve table printing */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border: 1px solid #ccc;
+    padding: 4px;
+  }
+
+  /* Keep links readable */
+  a {
+    text-decoration: none !important;
+  }
+
+  /* =========================
+     KEEP BUTTON STYLING
+  ========================= */
+
+  .button,
+  .button--primary,
+  .button--secondary,
+  .button--success,
+  .button--danger,
+  .button--warning,
+  .button--info {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+
+    text-decoration: none !important;
+  }
+
+  /* Primary buttons */
+  .button--primary {
+    color: #fff !important;
+    background: var(--ifm-color-primary) !important;
+    border-color: var(--ifm-color-primary) !important;
+  }
+
+  /* Secondary buttons */
+  .button--secondary {
+    background: var(--ifm-button-background-color) !important;
+    border-color: var(--ifm-button-border-color) !important;
+    color: var(--ifm-button-color) !important;
+  }
+
+  /* Images */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Code blocks */
+  pre,
+  code {
+    white-space: pre-wrap !important;
+    word-break: break-word;
+  }
+}
+
+/* =========================
+   Form Buttons on Assignments Page
+========================= */
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.card-link .card {
+  border: 2px solid #9e1b32;
+  border-radius: 18px;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+    
+  height: 100%;
+  min-height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: white;
+}
+
+.card-link .card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1.5rem;
+}
+
+.card-link h3 {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #9e1b32;
+}
+
+.card-link p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.card-link:hover .card {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+  border-color: #7f1628;
+}
+
+/* =========================
+   DEPLOYMENT CARD FIXES
+========================= */
+
+.deployment-step-cards .cert-progress {
+  align-items: stretch;
+}
+
+.deployment-step-cards .cert-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 210px;
+  height: auto;
+
+  overflow: hidden;
+}
+
+.deployment-step-cards .cert-card-header {
+  padding: 0.55rem;
+}
+
+.deployment-step-cards .cert-card > h3 {
+  font-size: 0.9rem !important;
+  font-weight: 800;
+  line-height: 1.1;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--pact-red);
+
+  margin: 0.55rem 0.35rem 0.2rem;
+  padding: 0 0.25rem;
+
+  min-height: 46px;
+
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deployment-step-cards .cert-card p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+
+  text-align: center;
+
+  margin: 0;
+  padding: 0 0.85rem 0.85rem;
+}
+
+.deployment-step-cards .cert-arrow {
+  align-self: center;
+}
+
+/* Tablet */
+
+@media (max-width: 996px) {
+  .deployment-step-cards .cert-card {
+    min-height: 190px;
+  }
+
+  .deployment-step-cards .cert-card > h3 {
+    font-size: 0.82rem !important;
+    min-height: 42px;
+  }
+
+  .deployment-step-cards .cert-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Phone */
+
+@media (max-width: 600px) {
+  .deployment-step-cards .cert-card {
+    min-height: auto;
+  }
+
+  .deployment-step-cards .cert-card > h3 {
+    font-size: 0.95rem !important;
+    min-height: auto;
+  }
+}
+
+/* =========================
+   EQUIPMENT FLIP CARDS
+========================= */
+
+.flip-card {
+  width: 100%;
+  max-width: 320px;
+  min-height: 340px;
+  perspective: 1000px;
+  margin-bottom: 2rem;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  transition: transform 0.7s ease;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+
+  padding: 1.5rem;
+
+  border: 4px solid var(--pact-red);
+  border-radius: 18px;
+
+  background: #fff;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  backface-visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.flip-card-front {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flip-card-front h3,
+.flip-card-back h3 {
+  margin-top: 1rem;
+  color: var(--pact-navy);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  justify-content: flex-start;
+  overflow-y: auto;
+}
+
+.flip-card-back ul {
+  padding-left: 1.2rem;
+}
+
+.flip-card-icon {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+/* =========================
+   EQUIPMENT ACCORDION CARDS
+========================= */
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.equipment-card {
+  border: 4px solid var(--pact-red);
+  border-radius: 18px;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.equipment-card-icon {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.equipment-card h3 {
+  text-align: center;
+  color: var(--pact-navy);
+  margin-top: 0;
+}
+
+.equipment-card p {
+  text-align: center;
+}
+
+.equipment-card details {
+  margin-top: 1rem;
+}
+
+.equipment-card summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--pact-navy);
+}
+
+.equipment-card summary:hover {
+  color: var(--pact-red);
+}
+
+/* =========================
+   FORM PREVIEW CARDS
+========================= */
+
+.form-card {
+  border: 3px solid var(--pact-red);
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Smaller preview image */
+.form-preview-image {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+
+  display: block;
+
+  margin: 1.5rem auto 0.5rem;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  background: #f5f5f5;
+}
+
+/* Card titles */
+.form-card .card__body h3 {
+  color: var(--pact-navy);
+}
+
+/* Red buttons */
+.form-card .button--primary {
+  background-color: var(--pact-red);
+  border-color: var(--pact-red);
+}
+
+.form-card .button--primary:hover {
+  background-color: #8f1d1d;
+  border-color: #8f1d1d;
+}
+
+/* =========================
+   INTERFACE MEETING GRID
+========================= */
+
+.meeting-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.meeting-card.compact {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  padding: 1rem;
+  background: var(--ifm-background-surface-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 180px;
+}
+
+.meeting-card.compact h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.meeting-card.compact p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.meeting-card.compact .button {
+  width: 100%;
+}
+
+.button--calendar {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* =========================
+   Certification Requirements Grid
+========================= */
+
+.cert-checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.cert-checklist-card {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 18px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cert-checklist-card--optional {
+  border-style: dashed;
+}
+
+
+.cert-card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.cert-card-title h3 {
+  margin: 0;
+  color: var(--pact-red);
+  font-size: 1.15rem;
+  line-height: 1.1;
+}
+
+.cert-card-icon-img {
+  width: 62px;
+  height: 62px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cert-checklist-card hr {
+  border: none;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  margin: 1rem 0 1.25rem;
+}
+
+
+.cert-list,
+.cert-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.cert-list > li {
+  margin-bottom: 1rem;
+  line-height: 1.65;
+}
+
+.cert-list ul {
+  margin-top: 0.65rem;
+  margin-left: 2.15rem;
+}
+
+.cert-list ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.55;
+}
+
+
+.cert-list input[type="checkbox"] {
+  margin-right: 0.7rem;
+  transform: scale(1.15);
+  vertical-align: middle;
+}
+
+
+.cert-note {
+  display: inline-block;
+  margin-top: auto;
+  padding: 0.45rem 0.8rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+}
+
+
+@media (max-width: 768px) {
+  .cert-checklist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-card-title h3 {
+    font-size: 1.6rem;
+  }
+
+  .cert-checklist-card {
+    padding: 1.25rem;
+  }
 }

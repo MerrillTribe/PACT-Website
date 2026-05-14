@@ -8,7 +8,7 @@ sidebar_position: 4
 Xxx
 
 
-### Overview
+## Overview
 
 The following matrix was developed by the 
 
@@ -157,6 +157,18 @@ Catastrophic
 :::
 
 
+## Loss Estimates
+
+| Hazard | # Buildings | Building Value (thousands) | Major Road Miles | Transmission Miles | Railroad Miles |
+|---|---:|---:|---:|---:|---:|
+| Dam Failure | 16,883 | $5,531,865 | 36.42 | 41.71 | 32.05 |
+| Fire Risk High | 652 | $364,479 | 0.94 | 29.04 | 0.20 |
+| Fire Risk Moderate | 227 | $76,906 | 0.60 | 4.20 | 0.69 |
+| Flood 1% Yearly Probability | 48 | $23,058 | 0.47 | 9.80 | 0.25 |
+| Landslide | 290 | $108,752 | 0.00 | 4.46 | 0.00 |
+| Liquefaction Moderate to High | 19,338 | $6,140,581 | 40.33 | 48.54 | 49.49 |
+| Earthquake (Pre-1990 buildings) | 15,358 | $4,386,424 | na | na | na |
+
 
 ### Dam Failure
 
@@ -180,7 +192,21 @@ Sunny day failures of either Jordanelle or Deer Creek Dams will inundate the res
 
 Projections of a sunny day dam failure predict that 10 hours after flooding begins, most of the floodwaters will be safely contained by Utah Lake.
 
-Insert Dam Failure Charts Here
+**Sunny Day Failure of Jordanelle Dam**
+
+| River Miles Downstream of Deer Creek Dam | Maximum Water Surface Elevation (Ft) | Depth Above Streambed (Ft) | Arrival Time of Leading Edge (Hours) | Arrival Time of Peak Flow (Hours) | Maximum Flow (CFS) | Location |
+|---|---:|---:|---:|---:|---:|---|
+| 0.0 | 5439 | 165 | N/A | 2.5 | 3,573,000 | Deer Creek Dam |
+| 10.0 | 4926 | 104 | 2 | 2.9 | 3,124,000 | Mouth of Provo Canyon |
+| 14.5 | N/A | N/A | 2.5 | 3 | 3,085,000 | Provo City |
+
+**Sunny Day Failure of Deer Creek Dam**
+
+| River Miles Downstream of Deer Creek Dam | Maximum Water Surface Elevation (Ft) | Depth Above Streambed (Ft) | Arrival Time of Leading Edge (Hours) | Arrival Time of Peak Flow (Hours) | Maximum Flow (CFS) | Location |
+|---|---:|---:|---:|---:|---:|---|
+| 0.0 | 5381 | 107 | 0.1 | 0.7 | 1,550,000 | Deer Creek Dam |
+| 10.0 | 4915 | 93 | 0.8 | 1.1 | 1,397,000 | Mouth of Provo Canyon |
+| 14.5 | N/A | N/A | 0.9 | 1.2 | 1,386,000 | Provo City |
 
 ### Flooding
 Xxx
@@ -247,7 +273,18 @@ Seiches
 
 Standing bodies of water are susceptible to earthquake ground motion. Water in lakes and reservoirs may be set in motion and slosh from one end to the other, much like in a bathtub. This motion is called a seiche. A seiche may lead to dam failure or damage along shorelines.
 
-Insert Modified Mercalli Scale Here
+Modified Mercalli Scale
+
+| Intensity | Effects | Geologic Effects |
+|---|---|---|
+| 1 | Barely felt by a few. |  |
+| 2 | Felt by a few indoors. |  |
+| 3 | Felt by several indoors. Hanging objects may swing. |  |
+| 4 | Felt by many indoors and few outdoors. Glass rattles. | Rock falls may be triggered. |
+| 5 | Felt by almost everyone. Walls crack, hanging objects swing greatly. | Liquefaction may be triggered. |
+| 6 | Felt by all. Some heavy furniture moved. Damage light. | Strong shaking. |
+| 7 | Damage negligible in buildings of good design, slight to moderate damage in ordinary structures, considerable damage in poorly built or badly designed structures. | Very strong shaking. Seiche waves may be produced. |
+| 8 | Slight damage in specially designed structures, considerable damage in ordinary structures. | Severe shaking. Surface rupturing fractures. |
 
 
 

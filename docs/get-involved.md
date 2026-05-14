@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Get Involved
 
-Membership applications for the Provo Auxiliary Communications Team (PACT) are currently managed by the City of Provo. There is no annual membership fee or cost to apply.
+The Provo Auxiliary Communications Team (PACT) is made up of local volunteers who support emergency communications during disasters, city events, and other situations where reliable communication is needed. Joining is free and there is no annual membership fee. Membership applications are managed by the City of Provo.
 
-**All new applicants will need to complete a short membership application.**
+**All new applicants must complete a short membership application before joining PACT.**
 
 <div className="button-center">
   <a
@@ -19,7 +19,7 @@ Membership applications for the Provo Auxiliary Communications Team (PACT) are c
 
 ---
 
-:::warning Age Requirement
+:::warning Membership Requirements
 **All applicants must be Provo residents and 18 years of age or older.**
 :::
 
@@ -29,14 +29,20 @@ Membership applications for the Provo Auxiliary Communications Team (PACT) are c
 
 PACT may be a good fit if you:
 
-- Are interested in amateur radio or emergency communications
-- Want to support Provo during emergencies and city events
-- Are willing to train and participate in exercises
-- Can monitor group communications and respond to activations when able
+- Have an interest in amateur radio or emergency communications.
+- Want to support Provo during emergencies and city events.
+- Are willing to train and participate in exercises.
+- Can monitor group communications and respond to activations when able.
 
 ---
 
-## Frequently Asked Questions (FAQ)
+## What to Expect
+
+After submitting your application, a PACT membership coordinator will review it and contact you with next steps. New members are encouraged to begin participating in [weekly training nets](/docs/training/weekly-training-net), join the PACT Telegram group, and work toward completing [certification levels](/docs/training/certification).
+
+---
+
+## Frequently Asked Questions
 
 <details>
   <summary>Do I have what it takes to join PACT?</summary>
@@ -49,44 +55,37 @@ PACT may be a good fit if you:
 <details>
   <summary>Do I need a license to join?</summary>
   <p>
-    Not necessarily. Some roles may require an amateur radio license, while others may support operations in non-radio positions.
-  </p>
-</details>
-
-<details>
-  <summary>What happens after I submit my application?</summary>
-  <p>
-    After you submit your application, a PACT membership coordinator will contact you with the next steps.
+    Not necessarily. While most roles require an amateur radio license, there is always room for others to support PACT operations as a scribe or message runner.
   </p>
 </details>
 
 <details>
   <summary>What kind of training is involved?</summary>
   <p>
-    Members may participate in regular nets, exercises, event support, and emergency communications training.
+    PACT has a [**certification program**](/docs/training/certification) designed to help members improve their knowledge, skills, and operational capabilities. The program emphasizes participation in [**training nets**](/docs/training/weekly-training-net) and [**exercises**](/docs/training/training-exercises) because these provide valuable hands-on experience. Additional training is also provided during [**quarterly interface meetings**](/docs/training/meetings).
   </p>
 </details>
 
 <details>
   <summary>How much time does PACT require?</summary>
   <p>
-    Time commitments vary, but members are generally encouraged to participate in weekly training nets, quarterly interface meetings, and occasional exercises or events.
+    Members are generally encouraged to participate in weekly [**training nets**](/docs/training/weekly-training-net), quarterly [**interface meetings**](/docs/training/meetings), and occasional [**exercises or events**](/docs/training/training-exercises). Training nets typically last 15–20 minutes, quarterly interface meetings are approximately one hour, and exercises generally range from 3–6 hours.
   </p>
 </details>
 
 <details>
   <summary>What are the expectations for PACT members?</summary>
   <ul>
-    <li>Participate in weekly training nets, quarterly interface meetings, and training exercises</li>
-    <li>Work toward obtaining a Technician amateur radio license from the FCC</li>
-    <li>Become familiar with personal equipment and maintain knowledge of proper procedures</li>
-    <li>Demonstrate professionalism during operations</li>
+    <li>Participate in [**training nets**](/docs/training/weekly-training-net), [**interface meetings**](/docs/training/meetings), and [**training exercises**](/docs/training/training-exercises) when able.</li>
+    <li>Work toward obtaining a Technician amateur radio license from the FCC.</li>
+    <li>Become familiar with communication procedures and personal equipment.</li>
+    <li>Demonstrate professionalism during operations and exercises.</li>
   </ul>
 </details>
 
 <details>
   <summary>What equipment will I need?</summary>
   <p>
-    Equipment needs may vary by role. Members will receive guidance on recommended radio and communication equipment as they get involved.
+    Members are not required to purchase equipment to get started. However, many members eventually choose to use a personal radio and related equipment as they become more involved. Visit the [**Equipment**](/docs/resources/equipment) page to learn more.
   </p>
 </details>

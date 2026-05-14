@@ -4,15 +4,12 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Provo Auxiliary Communications Team',
+
   tagline:
     'The Provo Auxiliary Communication Team (PACT) is a volunteer team organized to assist Provo City with communications during large emergencies or other disruptions as well as planned events in Provo.',
-  favicon: 'img/pact-favicon.ico',
 
-  future: {
-    v4: true,
-  },
+  favicon: 'img/favicon.ico',
 
-  // GitHub Pages config
   url: 'https://merrilltribe.github.io',
   baseUrl: '/PACT-Website/',
 
@@ -26,19 +23,28 @@ const config = {
     locales: ['en'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
-      ({
+      {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl: 'https://github.com/MerrillTribe/PACT-Website/tree/main/',
+          editUrl:
+            'https://github.com/MerrillTribe/PACT-Website/tree/main/',
         },
+
         blog: false,
+
         theme: {
           customCss: './src/css/custom.css',
         },
-      }),
+      },
     ],
   ],
 
@@ -53,16 +59,38 @@ const config = {
 
       navbar: {
         title: 'Home',
+
         logo: {
           alt: 'PACT Logo',
           src: 'img/pact-logo-blue.png',
         },
+
         items: [
-          {to: '/docs/intro', label: 'About PACT', position: 'left'},
-          {to: '/docs/operations/activation', label: 'Operations', position: 'left'},
-          {to: '/docs/training/weekly-training-net', label: 'Training', position: 'left'},
-          {to: '/docs/resources/codes', label: 'Resources', position: 'left'},
-          {to: '/docs/get-involved', label: 'Get Involved', position: 'left'},
+          {
+            to: '/docs/intro',
+            label: 'About PACT',
+            position: 'left',
+          },
+          {
+            to: '/docs/operations/activation',
+            label: 'Operations',
+            position: 'left',
+          },
+          {
+            to: '/docs/training/weekly-training-net',
+            label: 'Training',
+            position: 'left',
+          },
+          {
+            to: '/docs/resources/codes',
+            label: 'Resources',
+            position: 'left',
+          },
+          {
+            to: '/docs/get-involved',
+            label: 'Get Involved',
+            position: 'left',
+          },
           {
             href: 'https://github.com/MerrillTribe/PACT-Website',
             label: 'GitHub',
