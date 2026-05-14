@@ -10,7 +10,7 @@ const config = {
 
   favicon: 'img/favicon.ico',
 
-  url: 'https://www.provoauxiliarycommunicationsteam.com',
+  url: 'https://provoauxiliarycommunicationsteam.com',
   baseUrl: '/',
 
   organizationName: 'MerrillTribe',
