@@ -10,11 +10,12 @@ const config = {
 
   favicon: 'img/favicon.ico',
 
-  url: 'https://merrilltribe.github.io',
-  baseUrl: '/PACT-Website/',
+  url: 'https://www.provoauxiliarycommunicationsteam.com',
+  baseUrl: '/',
 
   organizationName: 'MerrillTribe',
   projectName: 'PACT-Website',
+  deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
 
