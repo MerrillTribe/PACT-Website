@@ -12,6 +12,7 @@ const config = {
 
   url: 'https://provoauxiliarycommunicationsteam.com',
   baseUrl: '/',
+trailingSlash: true,
 
   organizationName: 'MerrillTribe',
   projectName: 'PACT-Website',
