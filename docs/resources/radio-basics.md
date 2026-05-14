@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Radio Basics
+draft: true
 ---
 
 # Radio Basics
