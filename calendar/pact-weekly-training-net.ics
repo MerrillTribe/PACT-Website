@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//PACT//Weekly Training Net//EN
+CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:pact-weekly-training-net-2026@provoauxiliarycommunicationsteam.com
+SUMMARY:PACT Weekly Training Net
+DESCRIPTION:439.800 MHz (Simplex)
+LOCATION:Provo, UT
+URL:https://provoauxiliarycommunicationsteam.com
+DTSTART:20260507T023000Z
+DTEND:20260507T030000Z
+RRULE:FREQ=WEEKLY;BYDAY=WE
+END:VEVENT
+END:VCALENDAR
