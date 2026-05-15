@@ -192,7 +192,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
         <ul>
           <li><input type="checkbox" /> Multitool or Pocketknife</li>
-          <li><input type="checkbox" /> Flashlight</li>
+          <li><input type="checkbox" /> Reusable water bottle</li>
           <li><input type="checkbox" /> Personal First Aid Kit</li>
         </ul>
       </li>
@@ -283,7 +283,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
     <hr />
 
     <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>2.1</strong> Complete Level 1 Certification</li>
+      <li><input type="checkbox" /> <strong>2.1</strong> Complete the Level 1 Certification</li>
     </ul>
   </div>
 
@@ -412,7 +412,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
     <ul className="cert-list">
       <li><input type="checkbox" /> <strong>2.9</strong> Participate in five Weekly Training Nets (must be different than the ones used for a previous certification level)</li>
-      <li><input type="checkbox" /> <strong>2.10</strong> Attend 1 Quarterly Interface</li>
+      <li><input type="checkbox" /> <strong>2.10</strong> Attend one Quarterly Interface</li>
     </ul>
   </div>
 
@@ -638,7 +638,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
       <li><input type="checkbox" /> <strong>4.6</strong> Attend two Quarterly Interfaces (must be different than the ones used for a previous certification level)</li>
       <li><input type="checkbox" /> <strong>4.7</strong> Visit the Brigham Young University Emergency Operations Center</li>
       <li><input type="checkbox" /> <strong>4.8</strong> Participate in one PACT sponsored event/exercise</li>
-      <li><input type="checkbox" /> <strong>4.9</strong> Serve as Net Control for three Weekly Training Net (contact Net Control to schedule)</li>
+      <li><input type="checkbox" /> <strong>4.9</strong> Serve as Net Control for three Weekly Training Nets (contact Net Control to schedule)</li>
     </ul>
   </div>
 
