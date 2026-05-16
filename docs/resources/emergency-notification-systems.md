@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Emergency Notification Systems
 
-Xxx
+Emergency notification systems provide timely information before, during, and after emergencies. PACT members should be familiar with the primary alerting systems used within Provo, Utah County, and Brigham Young University, as these systems are often the first source of information regarding severe weather, public safety incidents, evacuations, and other emergency situations. Monitoring official notifications can improve situational awareness, support informed decision-making, and help operators anticipate potential communication activations.
 
 ## Provo & Utah County Notification System (Everbridge)
 

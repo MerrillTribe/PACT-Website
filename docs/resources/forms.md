@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Forms
 
-Forms are used to collect, organize, and pass emergency communications information in a clear and consistent format.
+Forms are used to collect, organize, and relay emergency communications information in a clear, accurate, and consistent format. PACT members should keep printed copies of commonly used forms readily available during activations, training exercises, and public service events to support efficient message handling and record keeping.
 
 <div className="row">
 
