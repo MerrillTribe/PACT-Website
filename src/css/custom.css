@@ -933,6 +933,17 @@ h3[id] {
   object-fit: contain;
 }
 
+.flip-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.flip-card {
+  margin: 0 auto 2rem;
+}
+
 /* =========================
    EQUIPMENT ACCORDION CARDS
 ========================= */
@@ -1277,4 +1288,18 @@ h3[id] {
 
 .repeater-card-warning {
   border-color: #b91c1c;
+}
+
+/* =========================
+   MERMAID WIDTH FIX
+========================= */
+
+.theme-mermaid {
+  width: 100%;
+}
+
+.theme-mermaid svg {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
 }
