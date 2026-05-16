@@ -1228,3 +1228,53 @@ h3[id] {
     line-height: 1.55 !important;
   }
 }
+
+/* =========================
+   RACE REPEATER INFO CARDS
+========================= */
+
+.repeater-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.repeater-card {
+  border: 2px solid var(--ifm-color-primary);
+  border-radius: 16px;
+  padding: 1rem;
+  background: var(--ifm-card-background-color);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+.repeater-card-header {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: var(--ifm-color-primary);
+}
+
+.repeater-frequency {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.repeater-details {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.repeater-details li {
+  margin-bottom: 0.45rem;
+}
+
+.repeater-card-backup {
+  border-color: #d97706;
+}
+
+.repeater-card-warning {
+  border-color: #b91c1c;
+}
