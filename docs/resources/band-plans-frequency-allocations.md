@@ -3,9 +3,9 @@ sidebar_position: 4
 draft: true
 ---
 
-# Band Plans, Modes, & Frequency Allocations
+# Radio Services, Modes, & Frequency Allocations/Band Plans
 
-Xxx
+## Radio Services
 
 ### Family Radio Service (FRS)
 The Family Radio Service (FRS) is a private, two-way, short-distance voice and data communications service for facilitating family and group activities. The most common use for FRS channels is short-distance, two-way voice communications using small hand-held radios that are similar to walkie-talkies. The service is licensed-by-rule so the general public can use the devices without having to obtain a license and channel sharing is achieved through a listen-before-talk etiquette. The FRS is authorized 22 channels in the 462 MHz and 467 MHz range, all of which are shared with General Mobile Radio Service (GMRS) which requires an individual license for use.
@@ -14,7 +14,7 @@ The usual range of an FRS device on channels 8-14 is less than one-half mile, bu
 <table>
   <thead>
     <tr>
-      <th colSpan="3" style={{ textAlign: 'center', backgroundColor: '#f2b600' }}>FRS</th>
+      <th colspan="3">FRS</th>
     </tr>
     <tr>
       <th>CH</th>
@@ -22,98 +22,47 @@ The usual range of an FRS device on channels 8-14 is less than one-half mile, bu
       <th>ERP Max</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>1</td>
       <td>462.5625</td>
-      <td rowSpan="7" style={{ verticalAlign: 'middle', textAlign: 'center' }}>2 watts</td>
+      <td rowspan="7">2 watts</td>
     </tr>
-    <tr>
-      <td>2</td>
-      <td>462.5875</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>462.6125</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>462.6375</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>462.6625</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>462.6875</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>462.7125</td>
-    </tr>
+
+    <tr><td>2</td><td>462.5875</td></tr>
+    <tr><td>3</td><td>462.6125</td></tr>
+    <tr><td>4</td><td>462.6375</td></tr>
+    <tr><td>5</td><td>462.6625</td></tr>
+    <tr><td>6</td><td>462.6875</td></tr>
+    <tr><td>7</td><td>462.7125</td></tr>
+
     <tr>
       <td>8</td>
       <td>467.5625</td>
-      <td rowSpan="7" style={{ verticalAlign: 'middle', textAlign: 'center' }}>0.5 watts</td>
+      <td rowspan="7">0.5 watts</td>
     </tr>
-    <tr>
-      <td>9</td>
-      <td>467.5875</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>467.6125</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>467.6375</td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td>467.6625</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>467.6875</td>
-    </tr>
-    <tr>
-      <td>14</td>
-      <td>467.7125</td>
-    </tr>
+
+    <tr><td>9</td><td>467.5875</td></tr>
+    <tr><td>10</td><td>467.6125</td></tr>
+    <tr><td>11</td><td>467.6375</td></tr>
+    <tr><td>12</td><td>467.6625</td></tr>
+    <tr><td>13</td><td>467.6875</td></tr>
+    <tr><td>14</td><td>467.7125</td></tr>
+
     <tr>
       <td>15</td>
       <td>462.5500</td>
-      <td rowSpan="8" style={{ verticalAlign: 'middle', textAlign: 'center' }}>2 watts</td>
+      <td rowspan="8">2 watts</td>
     </tr>
-    <tr>
-      <td>16</td>
-      <td>462.5750</td>
-    </tr>
-    <tr>
-      <td>17</td>
-      <td>462.6000</td>
-    </tr>
-    <tr>
-      <td>18</td>
-      <td>462.6250</td>
-    </tr>
-    <tr>
-      <td>19</td>
-      <td>462.6500</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>462.6750</td>
-    </tr>
-    <tr>
-      <td>21</td>
-      <td>462.7000</td>
-    </tr>
-    <tr>
-      <td>22</td>
-      <td>462.7250</td>
-    </tr>
+
+    <tr><td>16</td><td>462.5750</td></tr>
+    <tr><td>17</td><td>462.6000</td></tr>
+    <tr><td>18</td><td>462.6250</td></tr>
+    <tr><td>19</td><td>462.6500</td></tr>
+    <tr><td>20</td><td>462.6750</td></tr>
+    <tr><td>21</td><td>462.7000</td></tr>
+    <tr><td>22</td><td>462.7250</td></tr>
   </tbody>
 </table>
 
@@ -125,7 +74,7 @@ MURS is licensed by rule. This means an individual license is not required for a
 <table>
   <thead>
     <tr>
-      <th colSpan="3" style={{ textAlign: 'center', backgroundColor: '#f2b600' }}>MURS</th>
+      <th colspan="3">MURS</th>
     </tr>
     <tr>
       <th>CH</th>
@@ -133,24 +82,29 @@ MURS is licensed by rule. This means an individual license is not required for a
       <th>ERP Max</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>1</td>
       <td>151.8200</td>
-      <td rowSpan="5" style={{ verticalAlign: 'middle', textAlign: 'center' }}>2 watts</td>
+      <td rowspan="5">2 watts</td>
     </tr>
+
     <tr>
       <td>2</td>
       <td>151.8800</td>
     </tr>
+
     <tr>
       <td>3</td>
       <td>151.9400</td>
     </tr>
+
     <tr>
       <td>4</td>
       <td>154.5700</td>
     </tr>
+
     <tr>
       <td>5</td>
       <td>154.6000</td>
@@ -176,7 +130,7 @@ The FCC service rules for the Citizens Band Radio Service (CBRS) are located in 
 <table>
   <thead>
     <tr>
-      <th colSpan="6" style={{ textAlign: 'center', backgroundColor: '#f2b600' }}>CB</th>
+      <th colspan="6">CB</th>
     </tr>
     <tr>
       <th>CH</th>
@@ -187,15 +141,17 @@ The FCC service rules for the Citizens Band Radio Service (CBRS) are located in 
       <th>ERP Max</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>1</td>
       <td>26.9650</td>
-      <td rowSpan="20" style={{ verticalAlign: 'middle', textAlign: 'center' }}>4 watts</td>
+      <td rowspan="20">4 watts</td>
       <td>21</td>
       <td>27.2150</td>
-      <td rowSpan="20" style={{ verticalAlign: 'middle', textAlign: 'center' }}>4 watts</td>
+      <td rowspan="20">4 watts</td>
     </tr>
+
     <tr><td>2</td><td>26.9750</td><td>22</td><td>27.2250</td></tr>
     <tr><td>3</td><td>26.9850</td><td>23</td><td>27.2550</td></tr>
     <tr><td>4</td><td>27.0050</td><td>24</td><td>27.2350</td></tr>
@@ -233,7 +189,7 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
 <table>
   <thead>
     <tr>
-      <th colSpan="4" style={{ textAlign: 'center', backgroundColor: '#f2b600' }}>GMRS</th>
+      <th colspan="4">GMRS</th>
     </tr>
     <tr>
       <th>CH</th>
@@ -242,12 +198,13 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
       <th>ERP Max</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>1</td>
       <td>462.5625</td>
       <td>-</td>
-      <td rowSpan="7" style={{ verticalAlign: 'middle', textAlign: 'center' }}>5 watts</td>
+      <td rowspan="7">5 watts</td>
     </tr>
     <tr><td>2</td><td>462.5875</td><td>-</td></tr>
     <tr><td>3</td><td>462.6125</td><td>-</td></tr>
@@ -260,7 +217,7 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
       <td>8</td>
       <td>467.5625</td>
       <td>-</td>
-      <td rowSpan="7" style={{ verticalAlign: 'middle', textAlign: 'center' }}>0.5 watts</td>
+      <td rowspan="7">0.5 watts</td>
     </tr>
     <tr><td>9</td><td>467.5875</td><td>-</td></tr>
     <tr><td>10</td><td>467.6125</td><td>-</td></tr>
@@ -273,7 +230,7 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
       <td>15</td>
       <td>462.5500</td>
       <td>467.5500</td>
-      <td rowSpan="8" style={{ verticalAlign: 'middle', textAlign: 'center' }}>50 watts</td>
+      <td rowspan="8">50 watts</td>
     </tr>
     <tr><td>16</td><td>462.5750</td><td>467.5750</td></tr>
     <tr><td>17</td><td>462.6000</td><td>467.6000</td></tr>
@@ -289,24 +246,193 @@ The FCC service rules for the GMRS are located in 47 C.F.R. Part 95 Subpart E. Y
 Xxx
 
 ### LoRa
-Xxx
+
+| Frequency | Band | Typical Use |
+|---|---|---|
+| **902.300 MHz** | 33 centimeters | Meshtastic / LoRa Mesh |
+| **903.000 MHz** | 33 centimeters | LoRa ISM Applications |
+| **904.000 MHz** | 33 centimeters | Experimental / Data Links |
+| **905.000 MHz** | 33 centimeters | LoRa Telemetry |
+| **906.875 MHz** | 33 centimeters | Meshtastic LongFast Default |
+| **908.000 MHz** | 33 centimeters | LoRa Mesh Networking |
+| **910.000 MHz** | 33 centimeters | IoT / Sensor Networks |
+| **915.000 MHz** | 33 centimeters | ISM / LoRa Applications |
+| **920.000 MHz** | 33 centimeters | Regional LoRa Use |
+| **927.000 MHz** | 33 centimeters | LoRa / ISM Devices |
+| **928.000 MHz** | 33 centimeters | ISM Upper Band Edge |
 
 ### Marine
-Xxx
+
+Marine VHF radios are regulated by the  in the United States. Channel 16 (156.800 MHz) is the primary international distress and calling frequency and should be monitored whenever practical while underway.
+
+| Channel | Frequency | Usage |
+|---|---|---|
+| **06** | **156.300 MHz** | Intership Safety Communications |
+| **09** | **156.450 MHz** | Recreational Calling Channel |
+| **13** | **156.650 MHz** | Bridge-to-Bridge Navigation |
+| **16** | **156.800 MHz** | International Distress, Safety, & Calling |
+| **21A** | **157.050 MHz** | U.S. Coast Guard Liaison |
+| **22A** | **157.100 MHz** | U.S. Coast Guard Information Broadcasts |
+| **68** | **156.425 MHz** | Recreational Vessel Communications |
+| **69** | **156.475 MHz** | Non-Commercial Communications |
+| **71** | **156.575 MHz** | Recreational Communications |
+| **72** | **156.625 MHz** | Ship-to-Ship Communications |
+| **78A** | **156.925 MHz** | Recreational Communications |
+| **80A** | **157.025 MHz** | Commercial / Port Operations |
+| **81A** | **157.075 MHz** | Commercial Operations |
+| **82A** | **157.125 MHz** | U.S. Government / Coast Guard |
+| **83A** | **157.175 MHz** | U.S. Coast Guard Operations |
+| **WX1** | **162.550 MHz** | NOAA Weather Radio |
+| **WX2** | **162.400 MHz** | NOAA Weather Radio |
+| **WX3** | **162.475 MHz** | NOAA Weather Radio |
+| **WX4** | **162.425 MHz** | NOAA Weather Radio |
+| **WX5** | **162.450 MHz** | NOAA Weather Radio |
+| **WX6** | **162.500 MHz** | NOAA Weather Radio |
+| **WX7** | **162.525 MHz** | NOAA Weather Radio |
 
 ### Aviation
-Xxx
+
+#### Utah Aviation Frequencies
+
+| Location / Agency | Frequency | Usage |
+|---|---|---|
+| **Salt Lake Center (ZLC)** | **128.300 MHz** | ARTCC / En Route Control |
+| **Salt Lake Center (ZLC)** | **132.675 MHz** | ARTCC / High Altitude |
+| **Salt Lake Approach** | **124.300 MHz** | Approach / Departure |
+| **Salt Lake International (SLC)** | **118.300 MHz** | Tower |
+| **Salt Lake International (SLC)** | **121.900 MHz** | Ground Control |
+| **Salt Lake International (SLC)** | **135.500 MHz** | ATIS |
+| **Provo Airport (PVU)** | **118.300 MHz** | Tower |
+| **Provo Airport (PVU)** | **121.725 MHz** | Ground Control |
+| **Provo Airport (PVU)** | **124.350 MHz** | ATIS |
+| **Ogden-Hinckley Airport (OGD)** | **124.700 MHz** | Tower |
+| **Ogden-Hinckley Airport (OGD)** | **121.800 MHz** | Ground Control |
+| **Spanish Fork Airport (U77)** | **122.900 MHz** | CTAF / UNICOM |
+| **Heber Valley Airport (36U)** | **123.000 MHz** | CTAF / UNICOM |
+| **Skypark Airport (BTF)** | **118.700 MHz** | Tower |
+| **Skypark Airport (BTF)** | **120.000 MHz** | Ground Control |
+| **Cedar City Regional (CDC)** | **118.000 MHz** | Tower |
+| **St. George Regional (SGU)** | **118.275 MHz** | Tower |
+| **Moab Canyonlands (CNY)** | **122.800 MHz** | CTAF / UNICOM |
+| **Common Traffic Advisory** | **122.800 MHz** | Utah Backcountry / CTAF |
+| **Flight Service Station** | **122.200 MHz** | Flight Service |
+| **Guard** | **121.500 MHz** | Emergency Frequency |
+
+#### Utah Backcountry Aviation Frequencies
+
+| Airport / Area | Frequency | Usage |
+|---|---|---|
+| **General Backcountry CTAF** | **122.800 MHz** | Common Traffic Advisory |
+| **Mexican Mountain (U62)** | **122.900 MHz** | CTAF |
+| **Dirty Devil (UTL)** | **122.900 MHz** | CTAF |
+| **Hite Airport (UT03)** | **122.900 MHz** | CTAF |
+| **Mineral Canyon (UT75)** | **122.900 MHz** | CTAF |
+| **Canyonlands Area** | **122.800 MHz** | Air-to-Air / Advisory |
+| **Bryce Canyon Area** | **122.750 MHz** | Air-to-Air |
+| **Moab Area** | **122.800 MHz** | CTAF / Advisory |
+| **Flight Service Station** | **122.200 MHz** | Flight Service |
+| **Guard** | **121.500 MHz** | Emergency Frequency |
+
+#### Utah Life Flight / Air Medical Frequencies
+
+| Agency | Frequency | Usage |
+|---|---|---|
+| **AirMed** | **155.340 MHz** | Hospital Coordination |
+| **AirMed** | **123.025 MHz** | Air-to-Air Coordination |
+| **Classic Air Medical** | **155.280 MHz** | EMS Coordination |
+| **Life Flight** | **123.050 MHz** | Air Operations |
+| **University of Utah AirMed** | **463.000 MHz** | Operations |
+| **Utah EMS MED Channel** | **463.025 MHz** | Medical Coordination |
+| **HEAR System** | **155.340 MHz** | Hospital Emergency Admin Radio |
+| **Guard** | **121.500 MHz** | Aviation Emergency |
+
+#### Utah Emergency Aviation Monitoring Frequencies
+
+| Frequency | Band | Usage |
+|---|---|---|
+| **121.500 MHz** | VHF Airband | International Aviation Emergency (Guard) |
+| **243.000 MHz** | UHF Military | Military Guard |
+| **123.100 MHz** | VHF Airband | Search & Rescue |
+| **122.750 MHz** | VHF Airband | Air-to-Air Coordination |
+| **122.800 MHz** | VHF Airband | Common CTAF / Advisory |
+| **155.160 MHz** | VHF Public Safety | Utah SAR Coordination |
+| **155.340 MHz** | VHF EMS | Hospital / Air Medical |
+| **155.475 MHz** | VHF Public Safety | National Law Enforcement |
+| **154.280 MHz** | VHF Fire | Fire Mutual Aid |
+| **168.625 MHz** | Federal VHF | National Air Guard |
+| **163.100 MHz** | Federal VHF | NIFC Air Operations |
+
+#### Utah Civil Air Patrol Frequencies
+
+| Frequency | Usage |
+|---|---|
+| **148.150 MHz** | CAP Primary VHF |
+| **148.125 MHz** | CAP Tactical |
+| **148.1375 MHz** | CAP Operations |
+| **148.1625 MHz** | CAP Logistics |
+| **121.500 MHz** | ELT Search / Guard Monitoring |
+| **243.000 MHz** | Military Guard |
 
 ### Railroad
-Xxx
+
+Railroad radio communications in North America primarily use standardized VHF frequencies assigned by the  (AAR). Specific channel usage varies by railroad company and geographic region.
+
+| AAR Channel | Frequency | Typical Use |
+|---|---|---|
+| **007** | **160.215 MHz** | Yard Operations |
+| **008** | **160.230 MHz** | Yard / Switching |
+| **020** | **160.410 MHz** | Road Operations |
+| **021** | **160.425 MHz** | Dispatcher Communications |
+| **036** | **160.650 MHz** | Local Train Operations |
+| **046** | **160.800 MHz** | Dispatcher / Road Channel |
+| **052** | **160.890 MHz** | Maintenance of Way |
+| **058** | **160.980 MHz** | Yard & Terminal Operations |
+| **060** | **161.010 MHz** | Train Dispatch |
+| **064** | **161.070 MHz** | Road Channel |
+| **066** | **161.100 MHz** | Dispatcher Communications |
+| **072** | **161.190 MHz** | Maintenance / Engineering |
+| **074** | **161.220 MHz** | Railroad Operations |
+| **080** | **161.310 MHz** | Road Operations |
+| **086** | **161.400 MHz** | Dispatcher Channel |
+| **096** | **161.550 MHz** | Railroad Operations |
+| **097** | **161.565 MHz** | End-of-Train Devices |
 
 ### National Calling Frequencies
-Xxx
+
+| Band | Frequency | Mode | Usage |
+|---|---|---|---|
+| 160 meters | **1.910 MHz** | SSB | National Calling Frequency |
+| 80 meters | **3.860 MHz** | SSB | National Calling Frequency |
+| 40 meters | **7.290 MHz** | SSB | National Calling Frequency |
+| 20 meters | **14.300 MHz** | USB | Maritime Mobile Service Net |
+| 17 meters | **18.160 MHz** | USB | National Calling Frequency |
+| 15 meters | **21.360 MHz** | USB | National Calling Frequency |
+| 12 meters | **24.950 MHz** | USB | National Calling Frequency |
+| 10 meters | **28.400 MHz** | USB | National Calling Frequency |
+| 6 meters | **50.125 MHz** | USB | National Calling Frequency |
+| 2 meters | **146.520 MHz** | FM Simplex | National Calling Frequency |
+| 2 meters | **144.390 MHz** | APRS | North American APRS Frequency |
+| 1.25 meters | **223.500 MHz** | FM Simplex | National Calling Frequency |
+| 70 centimeters | **446.000 MHz** | FM Simplex | National Calling Frequency |
+| GMRS | **462.675 MHz** | FM | GMRS National Calling Frequency |
+| MURS | **151.940 MHz** | FM | MURS Calling Frequency |
 
 ### Wilderness Protocol
-Xxx
 
-### Modes
+The Wilderness Protocol is an informal amateur radio monitoring practice intended to improve the likelihood of establishing communications in remote areas when assistance is needed.
+
+Amateur radio operators monitoring the Wilderness Protocol typically listen on **146.520 MHz** at the top of the hour for at least five minutes. Operators in remote areas who need assistance are encouraged to attempt contact during these monitoring periods.
+
+| Frequency | Band | Mode | Usage |
+|---|---|---|---|
+| **146.520 MHz** | 2 meters | FM Simplex | Primary Wilderness Protocol Monitoring Frequency |
+| **446.000 MHz** | 70 centimeters | FM Simplex | UHF Wilderness / National Calling Frequency |
+| **52.525 MHz** | 6 meters | FM Simplex | 6-meter FM Calling Frequency |
+| **223.500 MHz** | 1.25 meters | FM Simplex | 1.25-meter Calling Frequency |
+| **121.500 MHz** | Aviation | AM | International Emergency Frequency (Guard) |
+| **156.800 MHz** | Marine VHF | FM | Marine Channel 16 Distress Frequency |
+
+## Modes
 Xxx
 
 | Operating Mode | Modulation Modes |
@@ -325,8 +451,8 @@ Xxx
 ### APRS
 Xxx
 
-### NIFOG
+## Amateur Radio Band Plans
 Xxx
 
-### Amateur Radio
+### NIFOG
 Xxx

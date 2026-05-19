@@ -3,7 +3,7 @@ sidebar_position: 1
 draft: true
 ---
 
-# Clothing
+# Merchandise
 
 PACT members may order branded clothing using the item cards below. Each order button opens the PACT clothing order form.
 

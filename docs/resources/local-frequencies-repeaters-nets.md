@@ -3,20 +3,38 @@ sidebar_position: 1
 draft: true
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 # Local Nets, Repeaters, & Frequencies
+
+## PACT Standard Load
+
+The PACT Standard Load is a baseline set of frequencies and repeater channels programmed into member radios to support interoperable communications during nets, deployments, and emergency operations. Maintaining a standardized radio configuration helps ensure operators can communicate efficiently and transition between assignments with minimal confusion.
+
+<div className="button-center">
+  <a
+    className="button button--lg button--cta"
+  href={useBaseUrl('/files/pact-standard-load.xlsx')}
+  download
+  >
+    DOWNLOAD PACT STANDARD LOAD (VER 1.0)
+  </a>
+</div>
+
+---
 
 ## Local Nets
 
-| Net | Day | Time | Repeater Name | RX Freq | TX Freq | CTCSS |
-|---|---|---|---|---|---|---|
-| **UVARC Family Net** | Sunday | 3:30 PM |  |  | **146.780 Repeater** |  |
-| **Jackson Hole Net** | Monday | 8:00 PM |  |  | **146.760 Repeater** |  |
-| **UVARC Ladies' Net** | Tuesday | 7:00 PM |  |  | **146.780 Repeater** |  |
-| **76ers Social Net** | Wednesday | 7:00 PM |  |  | **146.760 Repeater** |  |
-| **UVARC HF Net** | Wednesday | 9:00 PM |  | **28.345 MHz** |  |  |
-| **UVARC New Ham Net** | Thursday | 7:00 PM |  |  | **146.780 Repeater** |  |
-| **UVARC 6-meter Net** | Friday | 8:00 PM |  | **50.140 MHz** |  |  |
-| **UVARC Family History Net** | Saturday | 8:00 PM |  |  | **146.780 Repeater** |  |
+| Net | Day | Time | Frequency / Repeater |
+|---|---|---|---|
+| **UVARC Family Net** | Sunday | 3:30 PM | **146.780 Repeater** |
+| **Jackson Hole Net** | Monday | 8:00 PM | **146.760 Repeater** |
+| **UVARC Ladies' Net** | Tuesday | 7:00 PM | **146.780 Repeater** |
+| **76ers Social Net** | Wednesday | 7:00 PM | **146.760 Repeater** |
+| **UVARC HF Net** | Wednesday | 9:00 PM | **28.345 MHz** |
+| **UVARC New Ham Net** | Thursday | 7:00 PM | **146.780 Repeater** |
+| **UVARC 6-meter Net** | Friday | 8:00 PM | **50.140 MHz** |
+| **UVARC Family History Net** | Saturday | 8:00 PM | **146.780 Repeater** |
 
 ## Local Repeaters
 

@@ -311,6 +311,18 @@ Another way to prepare for an emergency is to receive first aid, CPR, and AED tr
 
 </details>
 
+---
+
+:::note Emergency Response Communications (ERC) Net
+The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called ERC (Emergency Response Communications). The ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, stake, and ward levels as well. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+:::
+
+:::warning Reporting Priorities
+**While the ERC can serve as an alternate method for reporting to Church Headquarters during communications outages, members should remember that it is a secondary reporting channel. Priority should be given to reporting incidents to Provo's Emergency Management. The Church does not have the capability to dispatch lifesaving resources such as fire, EMS, law enforcement, or utility services.**
+:::
+
+---
+
 ## Additional Resources
 
 ### Member Preparation
