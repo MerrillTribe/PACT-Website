@@ -199,33 +199,34 @@ PACT’s certification program is similar to the UCARES certification requiremen
     </ul>
   </div>
 
-  <div className="cert-checklist-card cert-checklist-card--optional">
-    <div className="cert-card-title">
-      <img
-        className="cert-card-icon-img"
-        src={useBaseUrl('/img/shirt.png')}
-        alt="Optional"
-      />
-      <h3>Optional Items</h3>
-    </div>
-
-    <hr />
-
-    <ul className="cert-list">
-      <li>
-        <input type="checkbox" /> <strong>1.6</strong> Purchase PACT Branded Clothing
-
-        <ul>
-          <li><input type="checkbox" /> PACT Ballcap</li>
-          <li><input type="checkbox" /> PACT T-shirt</li>
-        </ul>
-      </li>
-    </ul>
-
-    <div className="cert-note">
-      Optional: Not required for certification
-    </div>
+<div className="cert-checklist-card cert-checklist-card--optional">
+  <div className="cert-card-title">
+    <img
+      className="cert-card-icon-img"
+      src={useBaseUrl('/img/shirt.png')}
+      alt="Optional"
+    />
+    <h3>Optional Items</h3>
   </div>
+
+  <hr />
+
+<ul className="cert-list">
+  <li>
+    <input type="checkbox" /> <strong>1.6</strong> Purchase {' '}<a href="/docs/resources/clothing">PACT Apparel</a>
+
+    <ul>
+      <li><input type="checkbox" /> PACT Ballcap</li>
+      <li><input type="checkbox" /> PACT T-shirt</li>
+    </ul>
+  </li>
+</ul>
+
+  <div className="cert-note">
+    Optional: Not required for certification
+  </div>
+
+</div>
 
 </div>
 
