@@ -255,7 +255,8 @@ ACC Radio Operators will transmit to their District Radio Operator using the dis
     maxWidth: '900px',
     display: 'block',
     margin: '1.5rem auto',
-    borderRadius: '12px'
+    borderRadius: '12px',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
   }}
 />
 

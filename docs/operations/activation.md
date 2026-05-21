@@ -129,7 +129,13 @@ The diagram below illustrates Provo’s Incident Command System (ICS) structure 
 <img
   src={useBaseUrl('/img/ics.png')}
   alt="ICS Structure"
-  style={{ maxWidth: '100%', height: 'auto' }}
+  style={{
+    maxWidth: '80%',
+    height: 'auto',
+    display: 'block',
+    margin: '1.5rem auto',
+    boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+  }}
 />
 
 PACT is responsible for relaying information from the community to the EOC. This information enables the Situation Awareness Section to help city decision-makers understand field conditions, identify needs, and coordinate an appropriate response.
