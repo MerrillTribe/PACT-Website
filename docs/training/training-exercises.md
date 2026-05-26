@@ -384,7 +384,89 @@ On the day of the event, UCARES will link the following repeaters to support eve
 
 ---
 
-## Provo Freedom Festival
+## Provo Freedom Festival Parade
 
-:::warning STAY TUNED FOR UPDATES
-:::
+### Event Overview
+
+The America's Freedom Festival at Provo is one of the nation’s largest patriotic celebrations and has been a longstanding Provo tradition since the late 1800s. Held annually from spring through the Fourth of July, the festival features more than 25 community events, including the Grand Parade, Balloon Fest, and the nationally recognized Stadium of Fire. On Independence Day morning, thousands of spectators gather along University Avenue in downtown Provo to watch the Grand Parade, one of the festival’s most recognized community traditions.
+
+### Volunteer Information
+
+The event typically utilizes approximately thirty-five amateur radio volunteers. Most volunteers are assigned to locations along the parade route, including the staging area and the parade start and finish lines. Several operators provide roving coverage throughout the event. All volunteers should plan on being at their assigned location by 0620.
+
+Volunteer communications support for the Freedom Festival Parade is coordinated through [**Utah County Amateur Radio Emergency Service (UCARES)**](/docs/resources/local-groups). PACT members interested in participating should register through UCARES.
+
+### Communications Plan
+
+On the day of the event, UCARES will use the following repeaters & frequencies to support parade communications.
+
+<div className="repeater-card-grid">
+
+  <div className="repeater-card">
+    <div className="repeater-card-header">
+      Main Repeater
+    </div>
+
+    <div className="repeater-frequency">
+      145.470 MHz
+    </div>
+
+    <ul className="repeater-details">
+      <li><strong>Tone:</strong> 100.0 Hz</li>
+      <li><strong>Purpose:</strong> Primary parade communications</li>
+      <li><strong>Note:</strong> Best signal reported on this repeater</li>
+    </ul>
+  </div>
+
+  <div className="repeater-card repeater-card-backup">
+    <div className="repeater-card-header">
+      Backup Frequency
+    </div>
+
+    <div className="repeater-frequency">
+      147.340 MHz
+    </div>
+
+    <ul className="repeater-details">
+      <li><strong>Purpose:</strong> Backup parade communications</li>
+      <li><strong>Note:</strong> Use if directed by Net Control</li>
+    </ul>
+  </div>
+
+</div>
+
+<div className="repeater-card-grid">
+
+  <div className="repeater-card repeater-card-warning">
+    <div className="repeater-card-header">
+      Shadow Repeater
+    </div>
+
+    <div className="repeater-frequency">
+      449.325 MHz
+    </div>
+
+    <ul className="repeater-details">
+      <li><strong>Tone:</strong> 100.0 Hz</li>
+      <li><strong>Purpose:</strong> Shadow operator communications</li>
+      <li><strong>Note:</strong> Use only if assigned to shadow operations</li>
+    </ul>
+  </div>
+
+  <div className="repeater-card repeater-card-backup">
+    <div className="repeater-card-header">
+      Shadow Backup Repeater
+    </div>
+
+    <div className="repeater-frequency">
+      147.280 MHz
+    </div>
+
+    <ul className="repeater-details">
+      <li><strong>Tone:</strong> 141.3 Hz</li>
+      <li><strong>Purpose:</strong> Backup for shadow communications</li>
+      <li><strong>Note:</strong> Use if directed by Net Control</li>
+    </ul>
+  </div>
+
+</div>
