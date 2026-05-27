@@ -1,5 +1,5 @@
 // @ts-check
-import {themes as prismThemes} from 'prism-react-renderer';
+import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -12,7 +12,7 @@ const config = {
 
   url: 'https://provoauxiliarycommunicationsteam.com',
   baseUrl: '/',
-trailingSlash: true,
+  trailingSlash: true,
 
   organizationName: 'MerrillTribe',
   projectName: 'PACT-Website',
@@ -37,8 +37,8 @@ trailingSlash: true,
       {
         docs: {
           sidebarPath: './sidebars.js',
-          editUrl:
-            'https://github.com/MerrillTribe/PACT-Website/tree/main/',
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
         },
 
         blog: false,
@@ -56,7 +56,9 @@ trailingSlash: true,
       image: 'img/docusaurus-social-card.jpg',
 
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'light',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
 
       navbar: {
@@ -92,11 +94,6 @@ trailingSlash: true,
             to: '/docs/get-involved',
             label: 'Get Involved',
             position: 'left',
-          },
-          {
-            href: 'https://github.com/MerrillTribe/PACT-Website',
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },
