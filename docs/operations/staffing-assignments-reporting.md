@@ -101,7 +101,7 @@ PACT operators assigned to an ACC are expected to:
 - Assist with message handling
 - Maintain a communication log
 
-Some PACT operators may be assigned to another location like the Brigham Young University Emergency Operations Center (EOC) or the Utah Valley Hospital.
+Some PACT operators may be assigned to another location like the Brigham Young University Emergency Operations Center (EOC), Provo Power Emergency Operations Center (EOC), or the Utah Valley Hospital.
 
 ### Net Control
 
@@ -278,3 +278,10 @@ PACT members should have the following forms available for relaying information:
   </div>
 
 </div>
+
+---
+
+:::note Ready to Deploy?
+
+Successful deployments begin before activation. Review the [**Deployment Checklist**](/docs/resources/equipment/#deployment-checklist) to verify that your radio equipment, documentation, power sources, and reporting forms are prepared and ready for use.
+:::

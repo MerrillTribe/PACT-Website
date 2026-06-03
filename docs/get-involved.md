@@ -86,6 +86,6 @@ After submitting your application, a PACT membership coordinator will review it 
 <details>
   <summary>What equipment will I need?</summary>
   <p>
-    Members are not required to purchase equipment to get started. However, many members eventually choose to use a personal radio and related equipment as they become more involved. Visit the Equipment page to learn more.
+    Members are not required to purchase equipment to get started. However, many members eventually choose to use a personal radio and related equipment as they become more involved. Visit the [**Equipment & Gear**](/docs/resources/equipment) page to learn more.
   </p>
 </details>

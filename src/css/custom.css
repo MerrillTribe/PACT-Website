@@ -949,18 +949,36 @@ h3[id] {
 ========================= */
 
 .equipment-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin: 1.5rem 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  margin: 2rem auto 4rem;
 }
 
 .equipment-card {
+  position: relative;
+
+  width: 70%;
+  min-width: 700px;
+  max-width: 900px;
+
+  margin: 0 auto 4rem;
+
   border: 4px solid var(--pact-red);
   border-radius: 18px;
-  padding: 1.5rem;
+
+  padding: 1.75rem;
+
   background: #fff;
+
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.equipment-card:last-child {
+  margin-bottom: 0;
 }
 
 .equipment-card-icon {
@@ -975,14 +993,96 @@ h3[id] {
   text-align: center;
   color: var(--pact-navy);
   margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 .equipment-card p {
   text-align: center;
+  line-height: 1.7;
+  margin-bottom: 1rem;
 }
 
+/* =========================
+   REQUIREMENT BADGE
+========================= */
+
+.equipment-badge {
+  position: absolute;
+
+  top: 1.5rem;
+  right: 1.5rem;
+
+  padding: 0.35rem 0.8rem;
+
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.equipment-badge.required {
+  background: var(--pact-red);
+  color: #ffffff;
+}
+
+.equipment-badge.recommended {
+  background: var(--pact-yellow);
+  color: #000000;
+}
+
+.equipment-badge.optional {
+  background: #e0e0e0;
+  color: #333333;
+}
+
+/* =========================
+   LEVEL BADGE
+========================= */
+
+.equipment-level {
+  position: absolute;
+
+  top: 3.70rem;
+  right: 1.5rem;
+
+  padding: 0.25rem 0.7rem;
+
+  border-radius: 999px;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.level-1 {
+  background: var(--pact-blue);
+}
+
+.level-2 {
+  background: var(--pact-blue);
+}
+
+.level-3 {
+  background: var(--pact-blue);
+}
+
+.level-4 {
+  background: var(--pact-blue);
+}
+
+/* =========================
+   DETAILS
+========================= */
+
 .equipment-card details {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
 }
 
 .equipment-card summary {
@@ -994,6 +1094,29 @@ h3[id] {
 .equipment-card summary:hover {
   color: var(--pact-red);
 }
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 996px) {
+  .equipment-card {
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 3rem;
+  }
+
+  .equipment-badge {
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .equipment-level {
+    top: 3.75rem;
+    right: 1rem;
+  }
+}
+
 
 /* =========================
    FORM PREVIEW CARDS

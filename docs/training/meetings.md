@@ -8,11 +8,20 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 :::info Next Interface Meeting
 
-## May 27, 2026
+<div
+  style={{
+    fontSize: 'var(--ifm-h2-font-size)',
+    fontWeight: 'var(--ifm-heading-font-weight)',
+    lineHeight: 'var(--ifm-heading-line-height)',
+    marginBottom: '0.5rem',
+  }}
+>
+  August 18, 2026
+</div>
 
 **Time:** 7:00–8:00 PM  
 **Location:** Quail Orchard Park  
-**Training Topic:** Portable Radios / Go Kits
+**Training Topic:** TBD
 
 :::
 
