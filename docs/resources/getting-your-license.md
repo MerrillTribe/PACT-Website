@@ -14,13 +14,13 @@ An amateur radio license allows you to legally operate on amateur radio frequenc
 
 Licensed operators can:
 
-- Participate in PACT training nets, exercises, and deployments.
-- Volunteer at community events that utilize amateur radio communications.
-- Communicate when traditional communication systems are unavailable.
-- Learn practical radio and emergency communication skills.
-- Connect with amateur radio operators across the country and around the world.
-
-Whether your interest is emergency preparedness, public service, technical experimentation, or simply learning a new hobby, earning your license is the first step.
+- Communicate locally and around the world.
+- Be better prepared for emergencies.
+- Support community events.
+- Explore new technology.
+- Enjoy outdoor radio activities like POTA or SOTA.
+- Learn practical communication skills.
+- Participate in fun challenges and awards programs.
 
 ---
 
@@ -36,7 +36,7 @@ In the United States, there are currently three amateur radio license classes.
 
 :::info PACT MEMBERS
 
-A Technician Class License is sufficient for participating in all current PACT activities, training nets, exercises, public service events, and deployments.
+**A Technician License is sufficient for participating in all current PACT activities, training nets, exercises, public service events, and deployments.**
 
 :::
 
@@ -46,7 +46,7 @@ While some individuals choose to pursue multiple licenses at once, we recommend 
 
 :::tip TYPICAL TIMELINE
 
-Most individuals can earn their Technician Class License within 2–6 weeks depending on study time and exam availability.
+**Most individuals can earn their Technician Class License within 2–6 weeks depending on study time and exam availability.**
 
 :::
 
@@ -56,17 +56,17 @@ Most individuals can earn their Technician Class License within 2–6 weeks depe
 
 ### Step 1: Study for the Exam
 
-The Technician exam consists of 35 multiple-choice questions selected from a question pool of 409 questions. In order to pass the test, you must get 26 questions right, or 74% correct.
+The Technician exam consists of 35 multiple-choice questions that are selected from a question pool of 409 questions. In order to pass the test, you must get 26 questions right, or 74% correct.
 
-If you want to study for free, we recommend:
+**If you want to study for free, we recommend:**you 
 
 - [**HamStudy.org**](https://hamstudy.org/) – As long as you use a web browser, you will have access to free study tools, flashcards, and practice exams.
-- **Taking a Local Ham Radio Class** – Many clubs offer classes, mentoring, and study groups.
+- Taking a Local Ham Radio Class – Many clubs offer classes, mentoring, and study groups.
 
-If you prefer structured paid study materials, we recommend:
+**If you prefer structured paid study materials, we recommend:**
 
 - [**Ham Radio Prep**](https://hamradioprep.com) – A paid study option that includes video lessons, practice tests, learning games, text lessons, and mobile app access.
-- **Gordon West Test Prep Books** – Comprehensive study guides available in print formats.
+- Gordon West Test Prep Books – Comprehensive study guides available in print formats.
 
 :::tip STUDY TIPS
 
@@ -97,7 +97,7 @@ To find upcoming exam sessions, visit [**HamStudy.org**](https://hamstudy.org/se
 
 Some exam sessions require a reservation because seats are limited.
 
-Depending on the organization hosting the exam, there may be a fee. Exam fees are usually around $15.00 USD.
+Depending on the organization hosting the exam, there may be a testing fee. Exam fees are usually around $15.00 USD.
 
 ### Step 4: Take the Exam
 
@@ -114,9 +114,9 @@ Remember, a passing score is **26 correct answers out of 35**.
 
 ### Step 5: Receive Your Call Sign
 
-After passing the exam, your information will be submitted to the FCC by the Volunteer Examiners. Once your information is processed by the FCC, you will receive an email with instructions on how to pay the $35.00 USD application fee.
+After passing the exam, your information will be submitted to the FCC by the Volunteer Examiners. Once your information has been processed by the FCC, you will receive an email with instructions on how to pay the $35.00 USD application fee.
 
-After you pay the fee, your license application will be processed and you will be issued a PDF of your license by email. On your license, you will receive a unique amateur radio call sign.
+After you pay the fee, your license application will be processed and you will be issued a PDF of your license by email. On your license, you will see your unique amateur radio call sign.
 
 ### Step 6: Get On the Air
 
