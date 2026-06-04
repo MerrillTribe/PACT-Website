@@ -6,6 +6,8 @@ sidebar_position: 1
 
 Obtaining your amateur radio license is the first step toward becoming an active member of the amateur radio community. Whether your goal is emergency communications, public service, experimentation, or simply staying connected, earning your license opens the door to a wide range of opportunities.
 
+---
+
 ## Why Get Licensed?
 
 An amateur radio license allows you to legally operate on amateur radio frequencies and participate in a wide variety of activities.
@@ -19,6 +21,8 @@ Licensed operators can:
 - Connect with amateur radio operators across the country and around the world.
 
 Whether your interest is emergency preparedness, public service, technical experimentation, or simply learning a new hobby, earning your license is the first step.
+
+---
 
 ## Licensing
 
@@ -45,6 +49,8 @@ While some individuals choose to pursue multiple licenses at once, we recommend 
 Most individuals can earn their Technician Class License within 2–6 weeks depending on study time and exam availability.
 
 :::
+
+---
 
 ## Licensing Steps
 
