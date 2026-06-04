@@ -58,7 +58,7 @@ While some individuals choose to pursue multiple licenses at once, we recommend 
 
 The Technician exam consists of 35 multiple-choice questions that are selected from a question pool of 409 questions. In order to pass the test, you must get 26 questions right, or 74% correct.
 
-**If you want to study for free, we recommend:**you 
+**If you want to study for free, we recommend:** 
 
 - [**HamStudy.org**](https://hamstudy.org/) – As long as you use a web browser, you will have access to free study tools, flashcards, and practice exams.
 - Taking a Local Ham Radio Class – Many clubs offer classes, mentoring, and study groups.
