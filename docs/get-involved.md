@@ -57,6 +57,11 @@ After submitting your application, a PACT membership coordinator will review it 
   <p>
     Not necessarily. While most roles require an amateur radio license, there is always room for others to support PACT operations as a scribe or message runner.
   </p>
+  <p>
+    We encourage members to obtain an amateur radio license as they become more involved with PACT. See the
+    [**Getting Your License**](/docs/resources/getting-your-license)
+    section to learn about license classes, study resources, and exam sessions.
+  </p>
 </details>
 
 <details>

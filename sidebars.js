@@ -36,6 +36,7 @@ const sidebars = {
       type: 'category',
       label: 'Resources',
       items: [
+        'resources/getting-your-license',
         'resources/radio-basics',
         'resources/band-plans-frequency-allocations',
         'resources/codes',
