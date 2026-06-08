@@ -7,15 +7,40 @@ sidebar_position: 4
 While the Provo Auxiliary Communications Team (PACT) is not associated with any faith based organization, members of the Church of Jesus Christ of Latter-day Saints constitute roughly 90% of Provo's population. This page is intended to help members of Provo's predominant faith based organization find resources for creating and updating Ward/Stake Emergency Response Plans.
 
 ---
+## Ward/Stake Emergency Response Plans
+
+Church guidance encourages wards and stakes to identify emergency communication methods, understand local community emergency plans, and coordinate with civil authorities during emergencies. Communication specialists can play an important role in helping priesthood leaders prepare for and respond to communication challenges during a disaster.
+
+Ward and stake leaders should consider how communication specialists will gain familiarity with local emergency communication procedures, reporting processes, and community emergency management resources before an emergency occurs. Participation in the Provo Auxiliary Communications Team (PACT) can provide opportunities to develop this knowledge through training nets, exercises, public service events, and other preparedness activities.
+
+Through regular training and participation, communication specialists can gain practical experience operating radios, passing messages, collecting situational information, and communicating within established emergency communication networks. These skills can help support priesthood leaders during emergencies and improve coordination with local government when normal communication systems are disrupted.
+
+Special consideration should be given to wards and stakes that experience frequent membership turnover, such as Young Single Adult (YSA) or Married Student units. Communication specialists, ward council members, and other key leaders may change regularly, making it important to review, update, and communicate emergency response plans frequently to ensure that members understand their roles and responsibilities.
+
+As wards and stakes review and update their emergency response plans, leaders should consider how their communication procedures align with Provo's emergency management plans. Understanding how information will be gathered, reported, and shared during an emergency can help improve coordination between Church response efforts and community response organizations when assistance is needed.
+
+---
+
+:::note Emergency Response Communications (ERC) Net
+The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called ERC (Emergency Response Communications). ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, stake, and ward levels. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+:::
+
+:::warning Reporting Priorities
+**Life-threatening emergencies and requests for public safety assistance should always be reported through appropriate public safety channels. ERC Nets and priesthood reporting channels serve a different purpose and do not replace requests for emergency services.**
+:::
+
+---
+
+## Resources
 
 <details>
   <summary><strong>Emergency Preparedness</strong></summary>
 
-## Emergency Preparedness
+### Emergency Preparedness
 
 Members of the Church have been counseled for many years to be prepared for adversity. Preparation, both spiritual and temporal, can dispel fear. Elder L. Tom Perry taught, “The need for preparation is abundantly clear. The great blessing of being prepared gives us freedom from fear.” With the guidance of Church leaders, individuals and families should prepare to be self-reliant in times of personal and widespread tragedy.
 
-### The Principle of Preparation
+#### The Principle of Preparation
 
 As members of the Church, we know that it is our responsibility to provide for ourselves and our families both in good times and in bad. Part of fulfilling that obligation is making preparations now to face whatever challenges may come our way.
 
@@ -23,11 +48,11 @@ President Spencer W. Kimball taught that we must be “anxiously engaged in a po
 
 He explained, “The Lord will not translate one’s good hopes and desires and intentions into works. Each of us must do that for himself.”
 
-### How Does the Church Prepare for Emergencies?
+#### How Does the Church Prepare for Emergencies?
 
 The Church prepares for emergencies by establishing and maintaining an emergency response plan in each ward and stake.
 
-### Ward and Stake Emergency Plans
+#### Ward and Stake Emergency Plans
 
 Wards and stakes should prepare for natural and man-made disasters that are likely to occur in their respective areas by creating an emergency plan. These plans are prepared under the direction of the bishop or stake president. They should be updated periodically.
 
@@ -48,29 +73,29 @@ Each plan should:
 <details>
   <summary><strong>Emergency Response</strong></summary>
 
-## Emergency Response
+### Emergency Response
 
 The Church provides relief in situations of civil unrest, famine, and natural disasters by providing short-term resources such as food, water, shelter, clothing, medical supplies, and hygiene kits. This response is accomplished under the direction of local leadership, often in conjunction with local and international relief organizations. Members help by distributing supplies and participating in cleanup.
 
-### Disaster Response
+#### Disaster Response
 
 When tragedy strikes, ward and stake leaders begin carrying out their emergency plan by gathering in a previously determined location where they can direct relief efforts. Leaders work together to complete assigned tasks as outlined in the emergency plan to account for missionaries and members, assess and respond to needs, and report to area leadership. Response efforts should be coordinated with civil authorities and community relief organizations.
 
-### Guidelines for Ward and Stake Emergency Plans
+#### Guidelines for Ward and Stake Emergency Plans
 
-#### Account
+##### Account
 
 In the event of an emergency, ward and stake councils are responsible for accounting for each missionary and member within their areas. They should pay special attention to those who may need additional help. This accounting may be done through ministering brothers and sisters.
 
-#### Assess
+##### Assess
 
 Assess missionary and member needs, damage to Church property, and general conditions in the community.
 
-#### Respond
+##### Respond
 
 Work in conjunction with civil authorities and relief organizations to supply basic provisions and services, such as food, clothing, sanitation, medical assistance, and temporary shelter to those who have suffered damage to homes or belongings, emotional trauma, injury, or loss of livelihood.
 
-#### Report
+##### Report
 
 Report the condition of:
 
@@ -81,11 +106,11 @@ Report the condition of:
 
 These needs should be reported through priesthood channels to the bishop, stake president, and area leadership.
 
-### Meetinghouses as Emergency Shelters
+#### Meetinghouses as Emergency Shelters
 
 Following a disaster, the use of a meetinghouse as a community emergency shelter is occasionally needed. Permission is granted by the stake president, after consulting with a member of the Presidency of the Seventy or the Area Presidency. After receiving approval, the priesthood leader should contact his Church physical facilities representative.
 
-### How Can I Help During an Emergency?
+#### How Can I Help During an Emergency?
 
 **Directly Involved**
 
@@ -135,19 +160,19 @@ Wards, families, and individuals are encouraged to participate in local relief p
 <details>
   <summary><strong>Disaster Planning</strong></summary>
 
-## Disaster Planning
+### Disaster Planning
 
 Thinking about natural disasters can feel frightening and overwhelming. But we are promised, “If ye are prepared, ye shall not fear” (Doctrine and Covenants 38:30). Preparing for emergencies can help us feel more secure and can help us stay as safe as possible when a disaster or unexpected event occurs.
 
 Preparation is necessary in many areas, including financial preparation, food storage, emotional resilience, and emergency planning. If we have plans in place, we can be prepared when disasters occur.
 
-### What Is a Disaster Plan?
+#### What Is a Disaster Plan?
 
 Disaster plans are plans for how you will prepare and what you will do in the case of a natural disaster. This includes food storage, water supply, emotional wellness, reunification planning, and communication with family members. The most effective plans are simple and brief. As a family or individual, you should review and update this plan regularly.
 
 When developing your disaster plan, consider coordinating with ward, stake, and community plans.
 
-### What Are the Main Components of a Disaster Plan?
+#### What Are the Main Components of a Disaster Plan?
 
 When planning for disasters, it’s helpful to:
 
@@ -157,23 +182,23 @@ When planning for disasters, it’s helpful to:
 - Think about your family’s specific physical, emotional, mental, social, and spiritual needs.
 - Update your plans on a regular basis.
 
-#### Storing Emergency Supplies
+##### Storing Emergency Supplies
 
 Find a location for storing and accessing important family documents, emergency funds, survival and emergency supplies, and food storage.
 
 Pack an emergency bag for each member of the family with things such as basic hygiene items, clothing, a light source, snacks, activities, and a comfort item to help children feel safe.
 
-#### Reunification Plan
+##### Reunification Plan
 
 Set up a safe family gathering place that coincides with the ward, stake, or community reunification plans. Designate a safe place where you and your family can find each other after an emergency. It is also a good idea to pick an alternate place.
 
-#### Communication Plan
+##### Communication Plan
 
 Establish ways to communicate with each other about your safety in case you are separated during the disaster. It’s good to have a list of family members, friends, neighbors, Church leaders, and community resources.
 
 After a disaster, it can be hard to make calls within the area. It’s often easier to make long-distance calls. Designate a relative in another city to be an out-of-town contact.
 
-#### Evacuation Plan
+##### Evacuation Plan
 
 Identify where to go in the event of an evacuation. Map out primary and secondary routes to these locations. Review these routes with your family.
 
@@ -188,7 +213,7 @@ Consider packing an emergency bag that can easily be taken with you in the event
 
 Have a practice evacuation with your family.
 
-#### After a Disaster
+##### After a Disaster
 
 **Immediately After a Disaster:**
 
@@ -199,7 +224,7 @@ Obtain medical care for those who have been injured or who have other health cha
 Provide assistance to family members who are suffering, have damaged shelter or belongings, or are experiencing emotional trauma or loss of livelihood.
 
 :::note Source
-[**Life Help - Preparedness - Disaster Planning**(https://www.churchofjesuschrist.org/life/preparedness/disaster-planning?lang=eng) ***(Updated April 2026)***
+[**Life Help - Preparedness - Disaster Planning**](https://www.churchofjesuschrist.org/life/preparedness/disaster-planning?lang=eng) ***(Updated April 2026)***
 :::
 
 </details>
@@ -207,11 +232,11 @@ Provide assistance to family members who are suffering, have damaged shelter or 
 <details>
   <summary><strong>Emergency Communication Guidelines</strong></summary>
 
-## Emergency Communication Guidelines
+### Emergency Communication Guidelines
 
 During a disaster, normal means of communication may become inoperable; however, the need to communicate with Church leaders, missionaries, members, employees, civil authorities, and others is greatly increased. Using proper emergency communication methods can help decrease anxiety and stress during an emergency.
 
-### The Foundation of Emergency Communication
+#### The Foundation of Emergency Communication
 
 The Church’s objective in establishing emergency communication is to ensure that critical information can be received and conveyed.
 
@@ -222,7 +247,7 @@ This includes:
 - Plans for responding to needs of Church members and the community.
 - Coordination of relief efforts with civil authorities and other relief agencies.
 
-### What Is the Role of a Welfare and Self-Reliance Specialist?
+#### What Is the Role of a Welfare and Self-Reliance Specialist?
 
 The role of a welfare and self-reliance specialist assigned to manage emergency communications is to enhance a leader’s ability to communicate prior to a disaster and during disaster response.
 
@@ -236,17 +261,17 @@ A stake welfare and self-reliance specialist has the following responsibilities:
 - Maintains an understanding of local community and government emergency communication plans.
 - Plans to serve at the side of priesthood leaders during a disaster.
 
-### What Communication Equipment Is Available?
+#### What Communication Equipment Is Available?
 
 - Communication equipment has been positioned at Church headquarters, some welfare facilities, and area offices.
 - Local communication equipment can also be an effective resource for local units.
 
-#### Amateur Radio Networks “Nets”
+##### Amateur Radio Networks “Nets”
 
 - Nets may also be organized at the local unit level under the direction of priesthood leaders.
 - Amateur radio should be seen as one of several options with which local emergency communication specialists should be familiar.
 
-### What Are the Communication Methods?
+#### What Are the Communication Methods?
 
 Telephone and internet services are often disrupted after a large or regional disaster. Leaders and members should be prepared to communicate using alternate methods that are available locally.
 
@@ -268,25 +293,25 @@ Telephone and internet services are often disrupted after a large or regional di
 <details>
   <summary><strong>Member Preparation</strong></summary>
 
-## Member Preparation
+### Member Preparation
 
-### How Can I Prepare for an Emergency?
+#### How Can I Prepare for an Emergency?
 
 Church members are encouraged to make an emergency plan and update it regularly. As you make an emergency plan, consider each of these elements.
 
-### Avoid Debt and Live Within Your Means
+#### Avoid Debt and Live Within Your Means
 
 It is needful that we discipline ourselves by avoiding debt and living within our means. Doing so will put us in a better position to help ourselves and help others during times of personal or widespread crisis.
 
 Living within our means allows us to maintain control of our circumstances. Falling into debt only leads to further hardship.
 
-### Gain an Adequate Education
+#### Gain an Adequate Education
 
 In an ever-changing world, we must prepare for uncertainties. One way that we can do this is by first gaining an adequate education and then continuing to increase our knowledge and skill base as time and circumstance permit.
 
 It is vital that we stay abreast of current industry practices and continue building our skill set. Doing so will give us the best chance at gainful employment.
 
-### Keep a Reserve of Food and Other Supplies
+#### Keep a Reserve of Food and Other Supplies
 
 Another way we can prepare for an emergency is by building up a store of needed supplies to help carry us through a crisis.
 
@@ -301,7 +326,7 @@ As you build and maintain your emergency supply, include the following items:
 - Three-month supply of food that is part of your normal diet
 - Ways to communicate with family following a disaster
 
-### Obtain First Aid Training
+#### Obtain First Aid Training
 
 Another way to prepare for an emergency is to receive first aid, CPR, and AED training through a certified program.
 
@@ -310,16 +335,6 @@ Another way to prepare for an emergency is to receive first aid, CPR, and AED tr
 :::
 
 </details>
-
----
-
-:::note Emergency Response Communications (ERC) Net
-The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called ERC (Emergency Response Communications). ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, stake, and ward levels as well. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
-:::
-
-:::warning Reporting Priorities
-**While the ERC can serve as an alternate method for reporting to Church Headquarters during communications outages, members should remember that it is a secondary reporting channel. Priority should be given to reporting incidents to Provo's Emergency Management. The Church does not have the capability to dispatch lifesaving resources such as fire, EMS, law enforcement, or utility services.**
-:::
 
 ---
 
