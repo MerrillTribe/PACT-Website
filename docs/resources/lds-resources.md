@@ -9,20 +9,20 @@ While the Provo Auxiliary Communications Team (PACT) is not associated with any 
 ---
 ## Ward/Stake Emergency Response Plans
 
-Church guidance encourages wards and stakes to identify emergency communication methods, understand local community emergency plans, and coordinate with civil authorities during emergencies. Communication specialists can play an important role in helping priesthood leaders prepare for and respond to communication challenges during a disaster.
+Church guidance encourages Wards and Stakes to identify emergency communication methods, understand local community emergency plans, and coordinate with civil authorities during emergencies. Communication specialists can play an important role in helping priesthood leaders prepare for and respond to communication challenges during a disaster.
 
 Ward and stake leaders should consider how communication specialists will gain familiarity with local emergency communication procedures, reporting processes, and community emergency management resources before an emergency occurs. Participation in the Provo Auxiliary Communications Team (PACT) can provide opportunities to develop this knowledge through training nets, exercises, public service events, and other preparedness activities.
 
 Through regular training and participation, communication specialists can gain practical experience operating radios, passing messages, collecting situational information, and communicating within established emergency communication networks. These skills can help support priesthood leaders during emergencies and improve coordination with local government when normal communication systems are disrupted.
 
-Special consideration should be given to wards and stakes that experience frequent membership turnover, such as Young Single Adult (YSA) or Married Student units. Communication specialists, ward council members, and other key leaders may change regularly, making it important to review, update, and communicate emergency response plans frequently to ensure that members understand their roles and responsibilities.
+Special consideration should be given to Wards and Stakes that experience frequent membership turnover, such as Young Single Adult (YSA) or Married Student units. Communication specialists, ward council members, and other key leaders may change regularly, making it important to review, update, and communicate emergency response plans frequently to ensure that members understand their roles and responsibilities.
 
-As wards and stakes review and update their emergency response plans, leaders should consider how their communication procedures align with Provo's emergency management plans. Understanding how information will be gathered, reported, and shared during an emergency can help improve coordination between Church response efforts and community response organizations when assistance is needed.
+As Wards and Stakes review and update their emergency response plans, leaders should consider how their communication procedures align with Provo's emergency management plans. Understanding how information will be gathered, reported, and shared during an emergency can help improve coordination between Church response efforts and community response organizations when assistance is needed.
 
 ---
 
 :::note Emergency Response Communications (ERC) Net
-The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called ERC (Emergency Response Communications). ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, stake, and ward levels. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called ERC (Emergency Response Communications). ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, Stake, and Ward levels. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
 :::
 
 :::warning Reporting Priorities
