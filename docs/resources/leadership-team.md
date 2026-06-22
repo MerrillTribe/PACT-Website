@@ -26,6 +26,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
       </div>
       <div className="flip-card-back">
         <ul>
+          <li><strong>Callsign:</strong> KM7GCR</li>
+          <li><strong>Operator Privileges:</strong> Technician</li>
           <li><strong>Email:</strong> cblinzinger@provo.gov</li>
           <li><strong>Role:</strong> Leads PACT operations and coordination with city officials.</li>
         </ul>

@@ -16,12 +16,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     marginBottom: '0.5rem',
   }}
 >
-  August 18, 2026
+  August 11, 2026
 </div>
 
 **Time:** 7:00–8:00 PM  
 **Location:** Quail Orchard Park  
-**Training Topic:** TBD
+**Training Topic:** PACT Radio Trailer
 
 :::
 
@@ -41,7 +41,7 @@ We look forward to seeing you at our next Interface Meeting.
 |---|---|---|---|
 | February 17 | 7:00–8:00 PM | Fire Station 22 | PACT Communication Plan |
 | May 27 | 7:00–8:00 PM | Quail Orchard Park | Portable Radios / Go Kits |
-| August 18 | 7:00–8:00 PM | Quail Orchard Park | TBD |
+| August 18 | 7:00–8:00 PM | Quail Orchard Park | PACT Radio Trailer |
 | November 17 | 7:00–8:00 PM | Fire Station 22 | TBD |
 
 ---
@@ -91,7 +91,7 @@ We look forward to seeing you at our next Interface Meeting.
   </div>
 
   <div className="meeting-card compact">
-    <h3>August 18, 2026</h3>
+    <h3>August 11, 2026</h3>
 
     <p>
       <strong>Time:</strong> 7:00–8:00 PM<br />
