@@ -163,7 +163,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
         <input type="checkbox" /> <strong>1.4</strong> Maintain a documentation binder
 
         <ul>
-          <li><input type="checkbox" /> PACT Field Manual</li>
+          <li><input type="checkbox" /> PACT Field Manual (coming soon)</li>
           <li><input type="checkbox" /> Provo street map</li>
           <li><input type="checkbox" /> PACT district & frequency map</li>
           <li><input type="checkbox" /> Notebook</li>
