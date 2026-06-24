@@ -1426,3 +1426,31 @@ h3[id] {
   height: auto !important;
   max-width: 100% !important;
 }
+
+/* -------------------------
+   Checklist
+-------------------------- */
+
+.cert-list ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.55;
+}
+
+.cert-list ul li input[type="checkbox"] {
+  margin: 0;
+  transform: scale(1.15);
+  flex-shrink: 0;
+}
+
+.cert-list ul li a {
+  line-height: 1.55;
+  position: relative;
+  top: 9.5px;
+}
+
+.cert-list-inline li {
+  display: block !important;
+}

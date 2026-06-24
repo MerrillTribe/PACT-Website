@@ -108,10 +108,15 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
     <hr />
 
-    <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>1.1</strong> Register for PACT</li>
-      <li><input type="checkbox" /> <strong>1.2</strong> Join the PACT Telegram group</li>
-    </ul>
+<ul className="cert-list">
+  <li>
+    <input type="checkbox" /> <strong>1.1</strong>{' '}
+    <a href="/docs/get-involved">Register</a> for PACT
+  </li>
+
+  <li><input type="checkbox" /> <strong>1.2</strong> Join the PACT <a href="https://t.me/+M5nUHsEYmoI1ZDQx" target="_blank" rel="noopener noreferrer">Telegram Group</a></li>
+</ul>
+
   </div>
 
 </div>
@@ -164,8 +169,27 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
         <ul>
           <li><input type="checkbox" /> PACT Field Manual (coming soon)</li>
-          <li><input type="checkbox" /> Provo street map</li>
-          <li><input type="checkbox" /> PACT district & frequency map</li>
+<li>
+  <input type="checkbox" />
+  <a
+    href="/files/provo-street-map.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Provo Street Map
+  </a>
+</li>
+
+<li>
+  <input type="checkbox" />
+  <a
+    href="/files/pact-map-v1-2.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    PACT District & Frequency Map
+  </a>
+</li>
           <li><input type="checkbox" /> Notebook</li>
           <li><input type="checkbox" /> Zipper pouch with writing utensils</li>
           <li><input type="checkbox" /> Radio manual for handheld radio</li>
@@ -173,7 +197,6 @@ PACT’s certification program is similar to the UCARES certification requiremen
       </li>
     </ul>
   </div>
-
   <div className="cert-checklist-card">
     <div className="cert-card-title">
       <img
@@ -247,9 +270,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
     <hr />
 
     <ul className="cert-list">
-      <li>
-        <input type="checkbox" /> <strong>1.7</strong> Participate in three Weekly Training Nets
-      </li>
+      <li><input type="checkbox" /> <strong>1.7</strong> Participate in three <a href="/docs/training/weekly-training-net">Weekly Training Nets</a></li>
     </ul>
 
   </div>
@@ -412,9 +433,11 @@ PACT’s certification program is similar to the UCARES certification requiremen
     <hr />
 
     <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>2.9</strong> Participate in five Weekly Training Nets (must be different than the ones used for a previous certification level)</li>
-      <li><input type="checkbox" /> <strong>2.10</strong> Attend one Quarterly Interface</li>
+      <li><input type="checkbox" /> <strong>2.9</strong> Participate in five <a href="/docs/training/weekly-training-net">Weekly Training Nets</a> (must be different than the ones used for a previous certification level)</li>
+
+      <li><input type="checkbox" /> <strong>2.10</strong> Attend one <a href="/docs/training/meetings">Quarterly Interface</a></li>
     </ul>
+
   </div>
 
 </div>
@@ -524,13 +547,18 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
     <hr />
 
-    <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>3.5</strong> Participate in five Weekly Training Nets (must be different than the ones used for a previous certification level)</li>
-      <li><input type="checkbox" /> <strong>3.6</strong> Attend one Quarterly Interface (must be different than the ones used for a previous certification level)</li>
-      <li><input type="checkbox" /> <strong>3.7</strong> Visit the Provo Emergency Operations Center (contact Emergency Manager to schedule)</li>
-      <li><input type="checkbox" /> <strong>3.8</strong> Participate in two PACT sponsored events/exercises</li>
-      <li><input type="checkbox" /> <strong>3.9</strong> Serve as Net Control for one Weekly Training Net (contact Net Control to schedule)</li>
-    </ul>
+<ul className="cert-list">
+  <li><input type="checkbox" /> <strong>3.5</strong> Participate in five <a href="/docs/training/weekly-training-net">Weekly Training Nets</a> (must be different than the ones used for a previous certification level)</li>
+
+  <li><input type="checkbox" /> <strong>3.6</strong> Attend one <a href="/docs/training/meetings">Quarterly Interface</a> (must be different than the ones used for a previous certification level)</li>
+
+  <li><input type="checkbox" /> <strong>3.7</strong> Visit the Provo Emergency Operations Center (contact the <a href="/docs/resources/leadership-team">Emergency Manager</a> to schedule)</li>
+
+  <li><input type="checkbox" /> <strong>3.8</strong> Participate in two PACT sponsored <a href="/docs/training/training-exercises">events/exercises</a></li>
+
+  <li><input type="checkbox" /> <strong>3.9</strong> Serve as Net Control for one Weekly Training Net (contact <a href="/docs/resources/leadership-team">Net Control</a> to schedule)</li>
+</ul>
+
   </div>
 
 </div>
@@ -634,13 +662,17 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
     <hr />
 
-    <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>4.5</strong> Participate in five Weekly Training Nets (must be different than the ones used for a previous certification level)</li>
-      <li><input type="checkbox" /> <strong>4.6</strong> Attend two Quarterly Interfaces (must be different than the ones used for a previous certification level)</li>
-      <li><input type="checkbox" /> <strong>4.7</strong> Visit the Brigham Young University Emergency Operations Center</li>
-      <li><input type="checkbox" /> <strong>4.8</strong> Participate in one PACT sponsored event/exercise</li>
-      <li><input type="checkbox" /> <strong>4.9</strong> Serve as Net Control for three Weekly Training Nets (contact Net Control to schedule)</li>
-    </ul>
+<ul className="cert-list">
+  <li><input type="checkbox" /> <strong>4.5</strong> Participate in five <a href="/docs/training/weekly-training-net">Weekly Training Nets</a> (must be different than the ones used for a previous certification level)</li>
+
+  <li><input type="checkbox" /> <strong>4.6</strong> Attend two <a href="/docs/training/meetings">Quarterly Interfaces</a> (must be different than the ones used for a previous certification level)</li>
+
+  <li><input type="checkbox" /> <strong>4.7</strong> Visit the Brigham Young University Emergency Operations Center</li>
+
+  <li><input type="checkbox" /> <strong>4.8</strong> Participate in one PACT sponsored <a href="/docs/training/training-exercises">event/exercise</a></li>
+
+  <li><input type="checkbox" /> <strong>4.9</strong> Serve as Net Control for three Weekly Training Nets (contact <a href="/docs/resources/leadership-team">Net Control</a> to schedule)</li>
+</ul>
   </div>
 
 </div>
