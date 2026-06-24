@@ -125,78 +125,80 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
 <div className="cert-checklist-grid">
 
-  <div className="cert-checklist-card">
-    <div className="cert-card-title">
-      <img
-        className="cert-card-icon-img"
-        src={useBaseUrl('/img/radio.png')}
-        alt="Equipment"
-      />
-      <h3>Radio Equipment</h3>
-    </div>
-
-    <hr />
-
-    <ul className="cert-list">
-      <li>
-        <input type="checkbox" /> <strong>1.3</strong> 2m/70cm handheld radio
-
-        <ul>
-          <li><input type="checkbox" /> Spare battery for handheld radio</li>
-          <li><input type="checkbox" /> Earpiece for handheld radio</li>
-          <li><input type="checkbox" /> Upgraded handheld radio antenna (whip antenna)</li>
-          <li><input type="checkbox" /> Handheld radio programmed with PACT Standard Load</li>
-        </ul>
-      </li>
-    </ul>
+<div className="cert-checklist-card">
+  <div className="cert-card-title">
+    <img
+      className="cert-card-icon-img"
+      src={useBaseUrl('/img/radio.png')}
+      alt="Equipment"
+    />
+    <h3>Radio Equipment</h3>
   </div>
 
-  <div className="cert-checklist-card">
-    <div className="cert-card-title">
-      <img
-        className="cert-card-icon-img"
-        src={useBaseUrl('/img/binder.png')}
-        alt="Documentation Binder"
-      />
-      <h3>Documentation Binder</h3>
-    </div>
+  <hr />
 
-    <hr />
+  <ul className="cert-list">
+    <li>
+      <input type="checkbox" /> <strong>1.3</strong> 2m/70cm handheld radio
 
-    <ul className="cert-list">
-      <li>
-        <input type="checkbox" /> <strong>1.4</strong> Maintain a documentation binder
+      <ul>
+        <li><input type="checkbox" /> Spare battery for handheld radio</li>
+        <li><input type="checkbox" /> Earpiece for handheld radio</li>
+        <li><input type="checkbox" /> Upgraded handheld radio antenna (whip antenna)</li>
+        <li><input type="checkbox" /> Handheld radio programmed with PACT Standard Load (coming soon)</li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
-        <ul>
-          <li><input type="checkbox" /> PACT Field Manual (coming soon)</li>
-<li>
-  <input type="checkbox" />
-  <a
-    href="/files/provo-street-map.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Provo Street Map
-  </a>
-</li>
-
-<li>
-  <input type="checkbox" />
-  <a
-    href="/files/pact-map-v1-2.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    PACT District & Frequency Map
-  </a>
-</li>
-          <li><input type="checkbox" /> Notebook</li>
-          <li><input type="checkbox" /> Zipper pouch with writing utensils</li>
-          <li><input type="checkbox" /> Radio manual for handheld radio</li>
-        </ul>
-      </li>
-    </ul>
+<div className="cert-checklist-card">
+  <div className="cert-card-title">
+    <img
+      className="cert-card-icon-img"
+      src={useBaseUrl('/img/binder.png')}
+      alt="Documentation Binder"
+    />
+    <h3>Documentation Binder</h3>
   </div>
+
+  <hr />
+
+  <ul className="cert-list cert-list-docs">
+    <li>
+      <input type="checkbox" /> <strong>1.4</strong> Maintain a documentation binder
+
+      <ul>
+        <li><input type="checkbox" /> PACT Field Manual (coming soon)</li>
+
+        <li>
+          <input type="checkbox" />
+          <a
+            href="/files/provo-street-map.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Provo Street Map
+          </a>
+        </li>
+
+        <li>
+          <input type="checkbox" />
+          <a
+            href="/files/pact-map-v1-2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            PACT District & Frequency Map
+          </a>
+        </li>
+
+        <li><input type="checkbox" /> Notebook</li>
+        <li><input type="checkbox" /> Zipper pouch with writing utensils</li>
+        <li><input type="checkbox" /> Radio manual for handheld radio</li>
+      </ul>
+    </li>
+  </ul>
+</div>
   <div className="cert-checklist-card">
     <div className="cert-card-title">
       <img
@@ -304,9 +306,9 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
     <hr />
 
-    <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>2.1</strong> Complete the Level 1 Certification</li>
-    </ul>
+<ul className="cert-list">
+  <li><input type="checkbox" /> <strong>2.1</strong> Complete the <a href="#level-1">Level 1</a> Certification</li>
+</ul>
   </div>
 
 </div>
@@ -409,13 +411,14 @@ PACT’s certification program is similar to the UCARES certification requiremen
     <hr />
 
     <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>2.7</strong> ICS-100.C</li>
-      <li><input type="checkbox" /> <strong>2.8</strong> ICS-200.C</li>
+      <li><input type="checkbox" /> <strong>2.7</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c" target="_blank" rel="noopener noreferrer">ICS-100.C</a></li>
+
+      <li><input type="checkbox" /> <strong>2.8</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-200.c" target="_blank" rel="noopener noreferrer">ICS-200.C</a></li>
     </ul>
+
   </div>
 
 </div>
-
 ### Participation Requirements
 
 <div className="cert-checklist-grid cert-checklist-grid--single">
@@ -468,9 +471,9 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
     <hr />
 
-    <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>3.1</strong> Complete the Level Two Certification</li>
-    </ul>
+<ul className="cert-list">
+  <li><input type="checkbox" /> <strong>3.1</strong> Complete the <a href="#level-2">Level 2</a> Certification</li>
+</ul>
   </div>
 
 </div>
@@ -524,9 +527,11 @@ PACT’s certification program is similar to the UCARES certification requiremen
     <hr />
 
     <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>3.3</strong> ICS-700.B</li>
-      <li><input type="checkbox" /> <strong>3.4</strong> ARRL Basic EmComm</li>
+      <li><input type="checkbox" /> <strong>3.3</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-700.b" target="_blank" rel="noopener noreferrer">ICS-700.B</a></li>
+
+      <li><input type="checkbox" /> <strong>3.4</strong> <a href="https://www.arrl.org/online-course-catalog" target="_blank" rel="noopener noreferrer">ARRL Basic EmComm</a> (Optional)</li>
     </ul>
+
   </div>
 
 </div>
@@ -591,9 +596,9 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
     <hr />
 
-    <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>4.1</strong> Complete the Level Three Certification</li>
-    </ul>
+<ul className="cert-list">
+  <li><input type="checkbox" /> <strong>4.1</strong> Complete the <a href="#level-3">Level 3</a> Certification</li>
+</ul>
   </div>
 
 </div>

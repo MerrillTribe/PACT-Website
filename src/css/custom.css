@@ -1447,6 +1447,10 @@ h3[id] {
 
 .cert-list ul li a {
   line-height: 1.55;
+}
+
+/* Use this only on documentation/PDF checklist links if needed */
+.cert-list-docs ul li a {
   position: relative;
   top: 9.5px;
 }

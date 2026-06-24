@@ -112,7 +112,7 @@ The following equipment & gear is required for the [**PACT Certification Levels*
 
 <div className="equipment-grid">
 
-  <div className="equipment-card">
+<div id="handheld-radio" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/handheld-radio.png" alt="Handheld Radio" className="equipment-card-icon" />
@@ -126,7 +126,7 @@ Primary communication tool for most PACT deployments. Members should program all
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="speaker-mic-headset" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/headset.png" alt="Speaker Mic or Headset" className="equipment-card-icon" />
@@ -140,7 +140,7 @@ Improves radio operation in noisy environments or when hands-free use is helpful
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="radio-carrier" className="equipment-card">
     <span className="equipment-badge recommended">Optional</span>
     <img src="/img/equipment/carrier.png" alt="Radio Carrier" className="equipment-card-icon" />
     <h3>Radio Carrier</h3>
@@ -153,7 +153,7 @@ Keeps the radio secure and accessible while moving on foot. A good carrier helps
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="mobile-radio" className="equipment-card">
     <span className="equipment-badge recommended">Optional</span>
     <img src="/img/equipment/mobile-radio.png" alt="Mobile Radio" className="equipment-card-icon" />
     <h3>Mobile Radio</h3>
@@ -172,7 +172,7 @@ Provides more power and capability than a handheld radio when vehicle or base op
 
 <div className="equipment-grid">
 
-  <div className="equipment-card">
+<div id="high-gain-whip-antenna" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/whip-antenna.png" alt="High-Gain Whip Antenna" className="equipment-card-icon" />
@@ -186,7 +186,7 @@ Improves handheld radio performance compared to many stock antennas. A high-gain
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="portable-antenna" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
     <img src="/img/equipment/portable-antenna.png" alt="Portable Antenna" className="equipment-card-icon" />
@@ -200,7 +200,7 @@ Improves field communication when a handheld or mobile radio antenna is not enou
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="throw-rope" className="equipment-card">
     <span className="equipment-badge recommended">Recommended</span>
     <img src="/img/equipment/throw-rope.png" alt="Throw Rope" className="equipment-card-icon" />
     <h3>Throw Rope & Weight</h3>
@@ -215,7 +215,7 @@ Useful for raising lightweight antennas into trees or other elevated supports. T
 
 </div>
 
-<div className="equipment-card">
+<div id="portable-mast" className="equipment-card">
   <span className="equipment-badge recommended">Optional</span>
 
   <img
@@ -240,7 +240,7 @@ Useful for raising lightweight antennas into trees or other elevated supports. T
 
 <div className="equipment-grid">
 
-  <div className="equipment-card">
+<div id="external-power-source" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-4">Level 4</span>
     <img src="/img/equipment/power-supply.png" alt="External Power Source" className="equipment-card-icon" />
@@ -254,7 +254,7 @@ Backup power helps maintain communications if commercial power is unavailable. O
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="anderson-powerpoles" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-3">Level 3</span>
     <img src="/img/equipment/powerpole.png" alt="Anderson Powerpole Connectors" className="equipment-card-icon" />
@@ -268,7 +268,7 @@ Standardized power connectors commonly used in amateur radio emergency communica
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="usb-cables" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
     <img src="/img/equipment/usb-cable.png" alt="USB Cables" className="equipment-card-icon" />
@@ -282,7 +282,7 @@ Used for charging devices, programming radios, or connecting accessories. Operat
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="coaxial-adapters" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
     <img src="/img/equipment/coax-adapter.png" alt="Coaxial Adapters" className="equipment-card-icon" />
@@ -296,7 +296,7 @@ Allow radios, antennas, and feed lines with different connector types to be conn
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="coax-cable" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
     <img src="/img/equipment/coax-cable.png" alt="Coax Cable" className="equipment-card-icon" />
@@ -312,7 +312,7 @@ Connects radios to external antennas for improved range and signal quality. Coax
 
 </div>
 
-<div className="equipment-card">
+<div id="solar-panel" className="equipment-card">
   <span className="equipment-badge recommended">Optional</span>
 
   <img
@@ -333,7 +333,7 @@ Connects radios to external antennas for improved range and signal quality. Coax
   </details>
 </div>
 
-<div className="equipment-card">
+<div id="solar-charge-controller" className="equipment-card">
   <span className="equipment-badge recommended">Optional</span>
 
   <img
@@ -358,7 +358,7 @@ Connects radios to external antennas for improved range and signal quality. Coax
 
 <div className="equipment-grid">
 
-  <div className="equipment-card">
+<div id="first-aid-kit" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/first-aid-kit.png" alt="Personal First Aid Kit" className="equipment-card-icon" />
@@ -372,7 +372,7 @@ Provides basic supplies for minor injuries during field assignments. A personal 
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="water-bottle" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/water-bottle.png" alt="Water Bottles" className="equipment-card-icon" />
@@ -386,7 +386,7 @@ Helps operators stay hydrated during outdoor events and emergency assignments. M
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="multitool" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/multitool.png" alt="Multitool" className="equipment-card-icon" />
@@ -400,7 +400,7 @@ Useful for small repairs, adjustments, and general field tasks. A multitool can 
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="maps" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/maps.png" alt="Maps" className="equipment-card-icon" />
@@ -414,7 +414,7 @@ Useful for small repairs, adjustments, and general field tasks. A multitool can 
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="field-manual" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
     <img src="/img/equipment/field-manual.png" alt="Field Manual" className="equipment-card-icon" />
@@ -428,7 +428,7 @@ Contains procedures, frequencies, forms, and reference information needed during
     </details>
   </div>
 
-  <div className="equipment-card">
+<div id="headlamp" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-4">Level 4</span>
     <img src="/img/equipment/headlamp.png" alt="Headlamp" className="equipment-card-icon" />
