@@ -10,6 +10,8 @@ The Utah County Amateur Radio Emergency Service (UCARES) is a group of licensed 
 
 https://www.ucares.org/
 
+---
+
 ## Utah County Emergency Communications & Support Team (ECS Team)
 
 The Utah County Emergency Communication and Support Team, better known as “ECS Team” is a volunteer organization made up of 30 citizen volunteers from throughout the County and is overseen by the Emergency Services Division of the Sheriff’s Office. The team was formed in 1981 and has several members with over 20 years of dedicated service to the Sheriff’s Office and the citizens of Utah County.
@@ -20,17 +22,23 @@ All members of the ECS Team start with obtaining their “HAM” radio license. 
 
 https://sheriff.utahcounty.gov/supportServices/emergencyManagement/ECS
 
+---
+
 ## Timpanogos Emergency Response Team (TERT)
 
-The Timpanogos Emergency Response Team (TERT) is an all-volunteer group formed in 1983, dedicated to providing emergency medical care, search and rescue support, and safety information to hikers on Mt. Timpanogos. Overseen by the Utah County Sheriff's Office, TERT operates on summer weekends, staffing trailheads and a "High Camp" near Emerald Lake
+The Timpanogos Emergency Response Team (TERT) is an all-volunteer group formed in 1983, dedicated to providing emergency medical care, search and rescue support, and safety information to hikers on Mt. Timpanogos. Overseen by the Utah County Sheriff's Office, TERT operates on summer weekends, staffing trailheads and a "High Camp" near Emerald Lake.
 
 https://www.tert.org/radio-training-and-resources/
+
+---
 
 ## Utah Valley Amateur Radio Club (UVARC)
 
 Officially organized on Friday 05 February 2016, the mission of UVARC is to promote the enjoyment of the amateur radio fellowship and hobby in the Utah Valley area. We also provide Utah Valley ham radio information for those within or visiting from outside our area.
 
 https://uvarc.club/
+
+---
 
 ## BYU Amateur Radio Club (BARC)
 

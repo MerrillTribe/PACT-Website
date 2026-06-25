@@ -40,29 +40,75 @@ export default function Home() {
     name: 'Provo Auxiliary Communications Team',
     alternateName: 'PACT',
     url: 'https://provoauxiliarycommunicationsteam.com',
-
     logo: {
       '@type': 'ImageObject',
       url: 'https://provoauxiliarycommunicationsteam.com/img/pact-logo.png',
     },
-
+    description:
+      'The Provo Auxiliary Communications Team (PACT) is a volunteer organization supporting Provo City through emergency communications, training, public service events, and disaster preparedness.',
+    foundingDate: '2025',
     address: {
       '@type': 'PostalAddress',
       addressLocality: 'Provo',
       addressRegion: 'UT',
       addressCountry: 'US',
     },
-
     areaServed: {
-      '@type': 'City',
-      name: 'Provo',
-      addressRegion: 'UT',
-      addressCountry: 'US',
+      '@type': 'AdministrativeArea',
+      name: 'Provo, Utah',
     },
-
+    knowsAbout: [
+      'Amateur Radio',
+      'Emergency Communications',
+      'Emergency Preparedness',
+      'Disaster Response',
+      'Ham Radio',
+      'Public Service Communications',
+    ],
     sameAs: [
       'https://www.linkedin.com/company/provo-auxiliary-communications-team-pact/',
     ],
+  };
+
+  const websiteSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Provo Auxiliary Communications Team',
+    alternateName: 'PACT',
+    url: 'https://provoauxiliarycommunicationsteam.com',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Provo Auxiliary Communications Team',
+    },
+    inLanguage: 'en-US',
+    hasPart: [
+      {
+        '@type': 'WebPage',
+        name: 'Join PACT',
+        url: 'https://www.provo.gov/1056/Provo-Auxiliary-Communications-Team-PACT',
+        description:
+          'Official Provo City membership application page for the Provo Auxiliary Communications Team.',
+      },
+    ],
+  };
+
+  const webpageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Provo Auxiliary Communications Team',
+    url: 'https://provoauxiliarycommunicationsteam.com',
+    description:
+      'Volunteer emergency communications organization serving Provo, Utah.',
+    isPartOf: {
+      '@type': 'WebSite',
+      name: 'Provo Auxiliary Communications Team',
+      url: 'https://provoauxiliarycommunicationsteam.com',
+    },
+    about: {
+      '@type': 'Organization',
+      name: 'Provo Auxiliary Communications Team',
+    },
+    inLanguage: 'en-US',
   };
 
   return (
@@ -74,6 +120,18 @@ export default function Home() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(webpageSchema),
           }}
         />
       </Head>
