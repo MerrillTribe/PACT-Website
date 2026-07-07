@@ -867,3 +867,17 @@ This page contains commonly used simplex frequencies used throughout Utah and su
 
 </div>
 </details>
+
+## Interactive Repeater Map
+
+Explore local repeaters on an interactive map.
+
+> 📍 **[Open the Interactive Repeater Map](/repeater-map)**
+
+The interactive map allows you to:
+- View repeater locations.
+- Click markers for repeater details.
+- Visualize repeater distribution throughout Utah Valley.
+
+---
+
