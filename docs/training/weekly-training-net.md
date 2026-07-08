@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 :::info WEEKLY TRAINING NETS
 **When:** Every Wednesday at 8:30 PM  
 **Check-ins:** 439.800 MHz (Simplex)  
-**Announcements:** 47' Repeater — RX: 145.470 MHz / TX: 144.870 MHz / CTCSS: 100.0 Hz
+**Announcements:** '47 Repeater — RX: 145.470 MHz / TX: 144.870 MHz / CTCSS: 100.0 Hz
 :::
 
 <div className="meeting-actions">
@@ -27,17 +27,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ---
 
-Training nets are held weekly to provide consistency and repetition. Attendance at every net is not required, but regular participation is strongly encouraged.
+PACT holds a weekly training net to help its members practice radio procedures, build confidence, and stay familiar with emergency communication operations.
 
-Checking in regularly helps members build confidence, improve coordination, and stay familiar with radio equipment and emergency communication procedures.
+While attendance is not required, regular participation is strongly encouraged.
 
 ---
 
-The net is conducted in two phases.
+## Net Format
 
-**Check-ins** are conducted on 439.800 MHz simplex, allowing members to practice on the same frequencies used during PACT [**activations**](/docs/operations/activation).
+Check-ins are conducted on 439.800 MHz simplex, allowing members to practice on the same frequencies used during PACT [**activations**](/docs/operations/activation).
 
-Once check-ins are complete, all stations will switch to the 47' repeater for **announcements, traffic, and the weekly training topic**.
+Once check-ins are complete, all stations will switch to the '47 repeater for announcements, traffic, and the weekly training topic.
 
 ---
 
@@ -56,13 +56,13 @@ When your district is called:
 
 **Example:**
 
-> ***Net Control:*** *"North District stations, please check in."*
+> ***Net Control:*** *"All stations located in the North District, please check in."*
 >
 > ***Operator:*** *"This is November-Seven-Bravo-Yankee-Uniform with no traffic."*
 
 If you have announcements, formal traffic, or information for the net, say **"with traffic"** instead of **"with no traffic."**
 
-After your check-in has been acknowledged, remain on **439.800 MHz simplex** until Net Control instructs all stations to switch to the 47' repeater.
+After your check-in has been acknowledged, remain on **439.800 MHz simplex** until Net Control instructs all stations to switch to the '47 repeater.
 
 ---
 
@@ -70,12 +70,10 @@ If you indicate that you have traffic, Net Control will let you know when to spe
 
 If you miss your district's check-in, wait until Net Control calls for late or missed check-ins.
 
----
-
 :::tip Why Check-Ins Use Simplex
 PACT emergency operations primarily rely on **simplex communications** between operators and Net Control. Conducting weekly check-ins on simplex gives members regular practice using the same operating method that may be required during an activation.
 
-Because Provo covers a large geographic area, it is normal for some stations to hear Net Control but not every other station—or vice versa. After check-ins are complete, the net transitions to the **47' repeater**, allowing everyone to hear announcements, traffic, and the weekly training topic more reliably.
+Because Provo covers a large geographic area, it is normal for some stations to hear Net Control but not every other station—or vice versa. After check-ins are complete, the net transitions to the **'47 repeater**, allowing everyone to hear announcements, traffic, and the weekly training topic more reliably.
 :::
 
 :::tip Handling Doubles
@@ -115,7 +113,7 @@ The Provo Auxiliary Communications Team Weekly Training Net will begin at **20:3
 
 Check-ins will be taken on **439.800 MHz simplex**.
 
-After check-ins are complete, the remainder of the net will be conducted on the **47' repeater**.
+After check-ins are complete, the remainder of the net will be conducted on the **'47 repeater**.
 
 All stations interested in participating, please stand by until the net is called.
 
@@ -125,11 +123,11 @@ All stations interested in participating, please stand by until the net is calle
 
 Calling the Provo Auxiliary Communications Team Weekly Training Net.
 
-This is Net Control Station ________ and my transmitting location is the ________ Neighborhood in ______ District.
+This is Net Control Station ________ and my transmitting location is the ________ Neighborhood in the ______ District.
 
 The purpose of this net is to provide training for amateur radio operators and to become familiar with radio equipment and emergency communication procedures in Provo.
 
-Check-ins will be taken on **439.800 MHz simplex**. Once check-ins are complete, all stations will be directed to switch to the **47' repeater** for announcements, traffic, and tonight's training topic.
+Check-ins will be taken on **439.800 MHz simplex**. Once check-ins are complete, all stations will be directed to switch to the **'47 repeater** for announcements, traffic, and tonight's training topic.
 
 This is a directed net. Please transmit **ONLY** as requested by Net Control.
 
@@ -150,15 +148,15 @@ Check-ins will now be taken by Provo Neighborhood District.
 5. Central District (District 5)
 6. Stations from anywhere
 
-Pause after every three or four check-ins to acknowledge stations.
+**(Pause after every three or four check-ins to acknowledge stations.)**
 
 ---
 
 #### Announcements, Traffic, & Training
 
-The remainder of the net will be conducted on the **47' repeater**.
+The remainder of the net will be conducted on the **'47 repeater**.
 
-The 47' repeater uses the following settings:
+The '47 repeater uses the following settings:
 
 - **Receive (Output):** 145.470 MHz
 - **Transmit (Input):** 144.870 MHz

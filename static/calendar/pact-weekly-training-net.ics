@@ -5,7 +5,7 @@ CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:pact-weekly-training-net-2026@provoauxiliarycommunicationsteam.com
 SUMMARY:PACT Weekly Training Net
-DESCRIPTION:439.800 MHz (Simplex)
+DESCRIPTION:Check-ins: 439.800 MHz (Simplex)  Announcements: 47' Repeater — RX: 145.470 MHz / TX: 144.870 MHz / CTCSS: 100.0 Hz
 LOCATION:Provo, UT
 URL:https://provoauxiliarycommunicationsteam.com
 DTSTART:20260507T023000Z
