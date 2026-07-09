@@ -48,6 +48,7 @@ const sidebars = {
         'resources/local-groups',
         'resources/lds-resources',
         'resources/likelihood-of-disasters',
+        'resources/helpful-links',
         'resources/clothing',
         'resources/leadership-team',
 
