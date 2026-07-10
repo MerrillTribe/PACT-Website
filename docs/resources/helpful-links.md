@@ -117,11 +117,6 @@ A collection of useful amateur radio websites for propagation, repeaters, digita
     <p>Track APRS stations, weather stations, digipeaters, and position reports worldwide.</p>
   </a>
 
-  <a className="link-card" href="https://www.arednmesh.org/" target="_blank" rel="noopener noreferrer">
-    <h3>AREDN</h3>
-    <p>High-speed mesh networking software for amateur radio emergency communications.</p>
-  </a>
-
 </div>
 
 ## Mesh Networking
@@ -247,7 +242,7 @@ A collection of useful amateur radio websites for propagation, repeaters, digita
 
 <div className="link-card-grid">
 
-  <a className="link-card" href="https://uvarc.org/" target="_blank" rel="noopener noreferrer">
+  <a className="link-card" href="https://uvarc.club" target="_blank" rel="noopener noreferrer">
     <h3>Utah Valley Amateur Radio Club</h3>
     <p>Local amateur radio club serving Utah Valley with events, education, and public service opportunities.</p>
   </a>

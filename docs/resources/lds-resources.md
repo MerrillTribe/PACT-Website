@@ -22,7 +22,11 @@ As Wards and Stakes review and update their emergency response plans, leaders sh
 ---
 
 :::note Emergency Response Communications (ERC) Net
-The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called ERC (Emergency Response Communications). ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, Stake, and Ward levels. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called Emergency Response Communications (ERC). ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, Stake, and Ward levels. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+:::
+
+:::note Mercury Amateur Radio Association (MARA)
+After the Teton Dam disaster of 1976, the Church created an emergency communication network known as the Mercury Amateur Radio Association (MARA). In 1990, the Church separated itself from MARA, and created another emergency communication team called the Emergency Response Radio System (ERRS). ERRS was renamed in 1995 to Emergency Response Communications (ERC).
 :::
 
 :::warning Reporting Priorities
