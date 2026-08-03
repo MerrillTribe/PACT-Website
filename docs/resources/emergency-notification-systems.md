@@ -23,10 +23,10 @@ https://emergencymanagement.byu.edu/warnings-and-notifications
 
 ## NOAA Weather Radio (NWR)
 
-"NOAA Weather Radio (NWR) is a nationwide network of radio stations broadcasting continuous weather information directly from the nearest National Weather Service office. NWR broadcasts official Weather Service warnings, watches, forecasts and other hazard information 24 hours a day, 7 days a week.
+NOAA Weather Radio (NWR) is a nationwide network of radio stations broadcasting continuous weather information directly from the nearest National Weather Service office. NWR broadcasts official Weather Service warnings, watches, forecasts and other hazard information 24 hours a day, 7 days a week.
 
 Working with the Federal Communication Commission's (FCC) Emergency Alert System, NWR is an "All Hazards" radio network, making it your single source for comprehensive weather and emergency information. In conjunction with Federal, State, and Local Emergency Managers and other public officials, NWR also broadcasts warning and post-event information for all types of hazards – including natural (such as earthquakes or avalanches), environmental (such as chemical releases or oil spills), and public safety (such as AMBER alerts or 911 Telephone outages).
-NWR requires a special radio receiver or scanner capable of picking up the signal. Broadcasts are found in the VHF public service band at these seven frequencies (MHz)"
+NWR requires a special radio receiver or scanner capable of picking up the signal. Broadcasts are found in the VHF public service band at these seven frequencies (MHz).
 
 	- 162.400
 

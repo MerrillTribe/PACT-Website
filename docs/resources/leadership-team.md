@@ -27,7 +27,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
       <div className="flip-card-back">
         <ul>
           <li><strong>Callsign:</strong> KM7GCR</li>
-          <li><strong>Operator Privileges:</strong> Technician</li>
+          <li><strong>Operator Privileges:</strong> General</li>
           <li><strong>Email:</strong> cblinzinger@provo.gov</li>
           <li><strong>Role:</strong> Leads PACT operations and coordination with city officials.</li>
         </ul>
@@ -49,7 +49,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
           <li><strong>Email:</strong> elzabah@gmail.com</li>
           <li><strong>Role:</strong> Leads PACT operations and coordination with city officials.</li>
         </ul>
-        <p>Elizabeth Feil, LCSW, is the Therapist Supervisor at the Provo Family Clinic. She has been working as a therapist at Wasatch Mental Health since 2002.</p>
+        <p>Elizabeth Feil is a Licensed Clinical Social Worker and has been working as a therapist at Wasatch Mental Health since 2002 where she is currently the Division Director over Clinical and Community Services. She has been an amateur radio operator since 2022. She enjoys reading, musical theater (audience, not performer), exploring nature and being the favorite aunt to 10 nieces and nephews. </p>
       </div>
     </div>
   </div>

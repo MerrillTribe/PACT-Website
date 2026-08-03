@@ -6,7 +6,7 @@ sidebar_position: 1
 
 ## Utah County Amature Radio Emergency Service (UCARES)
 
-The Utah County Amateur Radio Emergency Service (UCARES) is a local ARES group. Its members are licensed amateur radio operators who volunteer their time and skills for community service and emergency communications. UCARES is supported by the Utah County Sheriff's Office and the ECS Team.
+The Utah County Amateur Radio Emergency Service (UCARES) is a local [ARES](https://www.arrl.org/ares) group. Its members are licensed amateur radio operators who volunteer their time and skills for community service and emergency communications. UCARES is supported by the Utah County Sheriff's Office and the ECS Team.
 
 https://www.ucares.org/
 
@@ -42,7 +42,7 @@ https://uvarc.club/
 
 The Brigham Young University Amateur Radio Club (BARC) is a place for students to learn and practice radio operating skills and to use those skills to serve the community.
 
-During the school year, the club meets Tuesday evenings at 7:00 PM
+During the school year, the club meets Tuesday evenings at 7:00 PM.
 
 Weekly club activities include: Build nights, demonstrations, training, transmitter hunts, and practice using club radio equipment. The club often volunteers to provide communications for campus and community events such as: Hike and Light the Y and the Rex Lee Run.
 
