@@ -41,8 +41,8 @@ We look forward to seeing you at our next Interface Meeting.
 |---|---|---|---|
 | February 17 | 7:00–8:00 PM | Fire Station 22 | PACT Communication Plan |
 | May 27 | 7:00–8:00 PM | Quail Orchard Park | Portable Radios / Go Kits |
-| August 18 | 7:00–8:00 PM | Quail Orchard Park | PACT Radio Trailer |
-| November 17 | 7:00–8:00 PM | Fire Station 22 | TBD |
+| August 11 | 7:00–8:00 PM | Quail Orchard Park | Portable Radios Part 2 |
+| November 17 | 7:00–8:00 PM | Fire Station 22 | PACT Radio Trailer |
 
 ---
 
