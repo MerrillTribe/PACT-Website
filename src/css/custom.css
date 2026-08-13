@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&display=swap');
+
 /**
  * Global CSS for PACT site
  */
@@ -6,6 +8,11 @@
    Brand palette + theme vars
 -------------------------- */
 :root {
+  /* Typography */
+  --ifm-font-family-base: 'Source Sans 3', sans-serif;
+  --ifm-heading-font-family: 'Source Sans 3', sans-serif;
+  --ifm-heading-font-weight: 700;
+
   --pact-navy: #002030;
   --pact-blue: #2050a0;
   --pact-blue-dark: #1c4690;
