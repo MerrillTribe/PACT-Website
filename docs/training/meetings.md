@@ -19,8 +19,8 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
   November 17, 2026
 </div>
 
-**Time:** 7:00–8:00 PM  
-**Location:** Fire Station 22 
+**Time:** 7:00–8:00 PM <br />
+**Location:** Fire Station 22 <br />
 **Training Topic:** PACT Radio Trailer
 
 :::
