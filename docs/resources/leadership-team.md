@@ -15,6 +15,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 </div>
 
 ---
+<div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+  <p>
+    Have a question about PACT? Email us at <a href="mailto:provoauxcomm@gmail.com">provoauxcomm@gmail.com</a>.
+  </p>
+
+  <a
+    href="mailto:provoauxcomm@gmail.com"
+    className="button button--primary button--lg"
+  >
+    ✉️ Contact Leadership Team
+  </a>
+</div>
+---
 
 <div className="flip-card-grid">
 
@@ -28,7 +41,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsign:</strong> KM7GCR</li>
           <li><strong>Operator Privileges:</strong> General</li>
-          <li><strong>Email:</strong> cblinzinger@provo.gov</li>
           <li><strong>Role:</strong> Leads PACT operations and coordination with city officials.</li>
         </ul>
         <p>Chris Blinzinger is the Emergency Manager for Provo City. He has held this position since 2010 and has been involved in Emergency Response for over 20 years. As a volunteer Fireman and EMT in Colorado, he responded for the County Ambulance Service and Local Fire Protection District.</p>
@@ -46,7 +58,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsign:</strong> KK7IUS</li>
           <li><strong>Operator Privileges:</strong> Technician</li>
-          <li><strong>Email:</strong> elzabah@gmail.com</li>
           <li><strong>Role:</strong> Leads PACT operations and coordination with city officials.</li>
         </ul>
         <p>Elizabeth Feil is a Licensed Clinical Social Worker and has been working as a therapist at Wasatch Mental Health since 2002 where she is currently the Division Director over Clinical and Community Services. She has been an amateur radio operator since 2022. She enjoys reading, musical theater (audience, not performer), exploring nature and being the favorite aunt to 10 nieces and nephews. </p>
@@ -64,7 +75,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsign:</strong> N7QOC</li>
           <li><strong>Operator Privileges:</strong> Amateur Extra</li>
-          <li><strong>Email:</strong> pmurie@xmission.com</li>
           <li><strong>Role:</strong> Manages net operations and communications protocols.</li>
         </ul>
         <p>Paul is a retired pathologist who specialized in anatomic and clinical pathology. He received his medical degree from the University of Utah School of Medicine and practiced medicine for more than 45 years.</p>
@@ -82,7 +92,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsign:</strong> KK7LBK</li>
           <li><strong>Operator Privileges:</strong> General</li>
-          <li><strong>Email:</strong> henrywright978@gmail.com</li>
           <li><strong>Role:</strong> Supports net operations and assists during activations.</li>
         </ul>
         <p>Bio coming soon.</p>
@@ -100,7 +109,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsigns:</strong> K3BYU & WSGN400</li>
           <li><strong>Operator Privileges:</strong> General</li>
-          <li><strong>Email:</strong> samuelfrederickmerrill@gmail.com</li>
           <li><strong>Role:</strong> Oversees PACT member onboarding and engagement.</li>
         </ul>
         <p>Samuel has been a part of Amateur Radio since 2023. He joined PACT in 2025.</p>
@@ -118,7 +126,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsign:</strong> KF7RJO</li>
           <li><strong>Operator Privileges:</strong> Technician</li>
-          <li><strong>Email:</strong> dnknecht@yahoo.com</li>
           <li><strong>Role:</strong> Assists with PACT member onboarding and engagement.</li>
         </ul>
         <p>Dave served as a city council member for Provo from 2002–2006. During that time, he was both the chair and vice-chair of the council.</p>
@@ -136,7 +143,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsign:</strong> KK7RXQ</li>
           <li><strong>Operator Privileges:</strong> Amateur Extra</li>
-          <li><strong>Email:</strong> 11070547@uvu.edu</li>
           <li><strong>Role:</strong> Plans and coordinates quarterly interface meetings.</li>
         </ul>
         <p>Andrew has been an Amateur Radio operator for two years and holds an Amateur Extra license. Andrew is a certified EMT and volunteers for ICS drills with UVU EMS.</p>
@@ -154,7 +160,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
         <ul>
           <li><strong>Callsign:</strong> K9GKG</li>
           <li><strong>Operator Privileges:</strong> Technician</li>
-          <li><strong>Email:</strong> k9gkg@ecsteam.org</li>
           <li><strong>Role:</strong> Coordinates with Emergency Communications Services.</li>
         </ul>
         <p>Gavin currently works as a special education teacher for the Provo School District. Gavin is currently the President of the ECS Team.</p>

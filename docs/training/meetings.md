@@ -16,11 +16,11 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     marginBottom: '0.5rem',
   }}
 >
-  August 11, 2026
+  November 17, 2026
 </div>
 
 **Time:** 7:00–8:00 PM  
-**Location:** Quail Orchard Park  
+**Location:** Fire Station 22 
 **Training Topic:** PACT Radio Trailer
 
 :::

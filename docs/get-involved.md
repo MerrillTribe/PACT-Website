@@ -94,3 +94,17 @@ After submitting your application, a PACT membership coordinator will review it 
     Members are not required to purchase equipment to get started. However, many members eventually choose to use a personal radio and related equipment as they become more involved. Visit the [**Equipment & Gear**](/docs/resources/equipment) page to learn more.
   </p>
 </details>
+
+---
+<div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
+  <p>
+    Have a question about PACT? Email us at <a href="mailto:provoauxcomm@gmail.com">provoauxcomm@gmail.com</a>.
+  </p>
+
+  <a
+    href="mailto:provoauxcomm@gmail.com"
+    className="button button--primary button--lg"
+  >
+    ✉️ Contact Leadership Team
+  </a>
+</div>
