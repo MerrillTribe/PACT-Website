@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 :::info WEEKLY TRAINING NETS
 **When:** Every Wednesday at 8:30 PM  
 **Check-ins:** 439.800 MHz (Simplex)  
-**Announcements:** '47 Repeater — RX: 145.470 MHz / TX: 144.870 MHz / CTCSS: 100.0 Hz
+**Announcements:** '47 Repeater — RX: 444.325 MHz / TX: 449.325 MHz / CTCSS: 100.0 Hz
 :::
 
 <div className="meeting-actions">
