@@ -1640,8 +1640,8 @@ article.margin-bottom--xl a[class*='readMore'] {
 .current-announcements {
   margin-bottom: 2rem;
   padding: 1.5rem 1.75rem;
-  background: color-mix(in srgb, var(--pact-red) 8%, white);
-  border: 1px solid color-mix(in srgb, var(--pact-red) 35%, white);
+  background: #fbf4f2;
+  border: 1px solid #d8aaa3;
   border-left: 5px solid var(--pact-red);
   border-radius: 12px;
 }
