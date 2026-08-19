@@ -40,7 +40,7 @@ As you move from left to right across the spectrum above, wavelengths become lon
 <div style={{ textAlign: 'center', margin: '2rem 0' }}>
   <img
     src={useBaseUrl('/img/radio-waves.png')}
-    alt="Radio Wave Diagram"
+    alt="Wavelength, Amplitude, & Frequency Diagram"
     style={{
       maxWidth: '50%',
       borderRadius: '12px',

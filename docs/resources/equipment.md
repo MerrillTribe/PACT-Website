@@ -106,6 +106,13 @@ The following equipment & gear is required for the [**PACT Certification Levels*
 
 ---
 
+## Team Equipment
+
+### PACT Radio Trailer
+
+### Provo Emergency Operations Center (EOC)
+---
+
 ## Recommended Equipment & Gear
 
 ### Radio Equipment

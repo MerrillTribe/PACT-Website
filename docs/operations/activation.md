@@ -128,7 +128,7 @@ The diagram below illustrates Provo’s Incident Command System (ICS) structure 
 
 <img
   src={useBaseUrl('/img/ics.png')}
-  alt="ICS Structure"
+  alt="Diagram of Provo's Incident Command System (ICS)"
   style={{
     maxWidth: '80%',
     height: 'auto',

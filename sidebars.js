@@ -51,8 +51,13 @@ const sidebars = {
         'resources/helpful-links',
         'resources/clothing',
         'resources/leadership-team',
-
       ],
+    },
+
+    {
+      type: 'link',
+      label: 'Announcements',
+      href: '/announcements/',
     },
 
     {

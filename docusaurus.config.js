@@ -41,7 +41,15 @@ const config = {
           showLastUpdateTime: false,
         },
 
-        blog: false,
+blog: {
+  routeBasePath: 'announcements',
+  blogTitle: 'PACT Announcements',
+  blogDescription:
+    'Important updates, training information, schedule changes, certification updates, and other information from the Provo Auxiliary Communications Team.',
+  showReadingTime: false,
+  blogSidebarTitle: 'Recent Announcements',
+  blogSidebarCount: 5,
+},
 
         theme: {
           customCss: './src/css/custom.css',
@@ -88,6 +96,11 @@ const config = {
           {
             to: '/docs/resources/codes',
             label: 'Resources',
+            position: 'left',
+          },
+          {
+            to: '/announcements',
+            label: 'Announcements',
             position: 'left',
           },
           {

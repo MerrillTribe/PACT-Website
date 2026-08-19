@@ -16,7 +16,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     marginBottom: '0.5rem',
   }}
 >
-  November 17, 2026
+  November 18, 2026
 </div>
 
 **Time:** 7:00–8:00 PM <br />
@@ -42,7 +42,7 @@ We look forward to seeing you at our next Interface Meeting.
 | February 17 | 7:00–8:00 PM | Fire Station 22 | PACT Communication Plan |
 | May 27 | 7:00–8:00 PM | Quail Orchard Park | Portable Radios / Go Kits |
 | August 11 | 7:00–8:00 PM | Quail Orchard Park | Portable Radios Part 2 |
-| November 17 | 7:00–8:00 PM | Fire Station 22 | PACT Radio Trailer |
+| November 18 | 7:00–8:00 PM | Fire Station 22 | PACT Radio Trailer |
 
 ---
 
@@ -111,7 +111,7 @@ We look forward to seeing you at our next Interface Meeting.
   </div>
 
   <div className="meeting-card compact">
-    <h3>November 17, 2026</h3>
+    <h3>November 18, 2026</h3>
 
     <p>
       <strong>Time:</strong> 7:00–8:00 PM<br />

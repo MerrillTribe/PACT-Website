@@ -1,19 +1,24 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+general-announcement:
+  label: General Announcements
+  permalink: /general-announcements
+  description: Important PACT updates and other general notices.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+resources:
+  label: Resources
+  permalink: /resources
+  description: New or updated resources.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+certification:
+  label: Certification Program
+  permalink: /certification-program
+  description: Updates related to the PACT Certification Program.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+training:
+  label: Training Exercises & Events
+  permalink: /training
+  description: PACT Training Exercises and Events.
+
+meetings:
+  label: Interface Meetings
+  permalink: /interface-meetings
+  description: PACT Interface Meetings.

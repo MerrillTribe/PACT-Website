@@ -1512,3 +1512,196 @@ h3[id] {
     grid-template-columns: 1fr;
   }
 }
+
+/* =========================
+   PACT ANNOUNCEMENTS PAGE
+   ========================= */
+
+/* Keep announcement content from stretching too wide */
+.blog-wrapper main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Style each announcement preview like a card */
+article.margin-bottom--xl {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Announcement titles */
+article.margin-bottom--xl h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.65rem;
+}
+
+/* Make title links cleaner */
+article.margin-bottom--xl h2 a {
+  text-decoration: none;
+}
+
+/* Slight lift effect on hover */
+article.margin-bottom--xl {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+article.margin-bottom--xl:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+/* Tone down date/metadata */
+article.margin-bottom--xl .margin-top--md,
+article.margin-bottom--xl time {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+/* Better spacing between paragraphs */
+article.margin-bottom--xl p {
+  line-height: 1.65;
+}
+
+/* Make tags look cleaner */
+article.margin-bottom--xl .badge {
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+}
+
+/* Improve Read More link */
+article.margin-bottom--xl a[class*='readMore'] {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Better spacing at the top of the announcements page */
+.blog-wrapper header {
+  margin-bottom: 2rem;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  article.margin-bottom--xl {
+    padding: 1.25rem;
+    border-radius: 10px;
+  }
+
+  article.margin-bottom--xl h2 {
+    font-size: 1.4rem;
+  }
+}
+/* Hide year headings in the Recent Announcements sidebar */
+.blog-wrapper aside h3 {
+  display: none;
+}
+
+/* Announcement author/signature */
+.announcement-signature {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+}
+
+.announcement-signature img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.announcement-signature div {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.3;
+}
+
+.announcement-signature strong {
+  font-size: 0.95rem;
+  color: var(--ifm-font-color-base);
+}
+
+.announcement-signature span {
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ========================================
+   CURRENT ANNOUNCEMENTS
+   ======================================== */
+
+.current-announcements {
+  margin-bottom: 2rem;
+  padding: 1.5rem 1.75rem;
+  background: color-mix(in srgb, var(--pact-red) 8%, white);
+  border: 1px solid color-mix(in srgb, var(--pact-red) 35%, white);
+  border-left: 5px solid var(--pact-red);
+  border-radius: 12px;
+}
+
+.current-announcements__heading {
+  margin-bottom: 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--pact-red);
+}
+
+.current-announcements__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.current-announcements__item {
+  padding-right: 1rem;
+}
+
+.current-announcements__item + .current-announcements__item {
+  border-left: 1px solid var(--ifm-color-emphasis-300);
+  padding-left: 1.5rem;
+}
+
+.current-announcements__item h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+}
+
+.current-announcements__item p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.current-announcements__item a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .current-announcements__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .current-announcements__item {
+    padding-right: 0;
+  }
+
+  .current-announcements__item + .current-announcements__item {
+    border-left: none;
+    border-top: 1px solid var(--ifm-color-emphasis-300);
+    padding-left: 0;
+    padding-top: 1.25rem;
+  }
+
+  .current-announcements {
+    padding: 1.25rem;
+  }
+}
