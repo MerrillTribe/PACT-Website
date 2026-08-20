@@ -14,7 +14,13 @@ Wearing PACT apparel helps identify team members and promotes a consistent, prof
 
 Visit the PACT Clothing page to view available items, ordering information, and current options.
 
-<div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+<div
+  style={{
+    marginTop: '1.5rem',
+    marginBottom: '2rem',
+    textAlign: 'center',
+  }}
+>
   <a
     href="/docs/resources/clothing/"
     className="button button--primary button--lg"
@@ -23,6 +29,7 @@ Visit the PACT Clothing page to view available items, ordering information, and 
   </a>
 </div>
 
+<!-- truncate -->
 ---
 
 <div className="announcement-signature">

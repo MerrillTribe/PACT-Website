@@ -31,6 +31,7 @@ Members are encouraged to participate each Wednesday to practice radio procedure
 
 For complete net information and procedures, visit the [Weekly Training Net](/docs/training/weekly-training-net/) page.
 
+<!-- truncate -->
 ---
 
 <div className="announcement-signature">

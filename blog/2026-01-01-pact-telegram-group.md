@@ -10,7 +10,13 @@ Telegram is PACT's primary platform for team announcements, training updates, ac
 
 All PACT members are encouraged to join the group so they can stay informed and receive timely information from the team.
 
-<div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+<div
+  style={{
+    marginTop: '1.5rem',
+    marginBottom: '2rem',
+    textAlign: 'center',
+  }}
+>
   <a
     href="https://t.me/+M5nUHsEYmoI1ZDQx"
     className="button button--primary button--lg"
@@ -21,6 +27,7 @@ All PACT members are encouraged to join the group so they can stay informed and 
   </a>
 </div>
 
+<!-- truncate -->
 ---
 
 <div className="announcement-signature">

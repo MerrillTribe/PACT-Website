@@ -17,6 +17,8 @@ The upcoming PACT Interface Meeting has been rescheduled. Please update your cal
 
 We look forward to seeing you there!
 
+<!-- truncate -->
+
 ---
 
 <div className="announcement-signature">

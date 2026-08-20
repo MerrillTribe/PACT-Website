@@ -24,7 +24,13 @@ PACT members can add the Provo Auxiliary Communications Team to the Volunteer Ex
 
 If you serve with PACT, consider adding the team to your profile and following the PACT LinkedIn page for team updates and information.
 
-<div style={{ marginTop: '1.5rem', marginBottom: '2rem' }}>
+<div
+  style={{
+    marginTop: '1.5rem',
+    marginBottom: '2rem',
+    textAlign: 'center',
+  }}
+>
   <a
     href="https://www.linkedin.com/company/provo-auxiliary-communications-team-pact/about/"
     className="button button--primary button--lg"
@@ -35,6 +41,7 @@ If you serve with PACT, consider adding the team to your profile and following t
   </a>
 </div>
 
+<!-- truncate -->
 ---
 
 <div className="announcement-signature">
