@@ -238,7 +238,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
 <ul className="cert-list">
   <li>
-    <input type="checkbox" /> <strong>1.6</strong> Purchase {' '}<a href="/docs/resources/clothing">PACT Apparel</a>
+    <input type="checkbox" /> <strong>1.6</strong> Purchase {' '}<a href="/docs/resources/apparel">PACT Apparel</a>
 
     <ul>
       <li><input type="checkbox" /> PACT Ballcap</li>

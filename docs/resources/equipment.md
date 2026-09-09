@@ -28,7 +28,7 @@ Successful emergency communications require both trained operators and dependabl
 
 ## Certification Levels
 
-The following equipment & gear is required for the [**PACT Certification Levels**](/docs/training/certification).
+The following equipment & gear are required for the [**PACT Certification Levels**](/docs/training/certification).
 
 <details>
   <summary><strong>Level 1</strong></summary>
@@ -108,9 +108,136 @@ The following equipment & gear is required for the [**PACT Certification Levels*
 
 ## Team Equipment
 
-### PACT Radio Trailer
+<div className="facility-grid">
 
-### Provo Emergency Operations Center (EOC)
+  <section className="facility-card">
+
+    <div className="facility-card-header">
+      <div>
+        <p className="facility-eyebrow">Mobile Communications Asset</p>
+        <h2>PACT Radio Trailer</h2>
+      </div>
+    </div>
+
+    <div className="facility-image">
+      <img
+        src="/img/pact-radio-trailer.jpg"
+        alt="PACT Radio Communications Trailer"
+      />
+    </div>
+
+    <p className="facility-description">
+      A deployable communications platform supporting amateur radio, GMRS,
+      and off-grid field operations during emergencies, exercises, and planned events.
+    </p>
+
+    <div className="facility-specs">
+
+      <div className="facility-spec">
+        <span className="facility-spec-label">VHF / UHF</span>
+        <div>
+          <strong>Icom IC-2820H</strong>
+          <p>50 W · 2-meter and 70-centimeter amateur bands</p>
+        </div>
+      </div>
+
+      <div className="facility-spec">
+        <span className="facility-spec-label">HF / 6 m</span>
+        <div>
+          <strong>Yaesu FT-891</strong>
+          <p>100 W · HF and 6-meter amateur radio communications</p>
+        </div>
+      </div>
+
+      <div className="facility-spec">
+        <span className="facility-spec-label">GMRS</span>
+        <div>
+          <strong>Midland MicroMobile</strong>
+          <p>5 W · GMRS channels</p>
+        </div>
+      </div>
+
+      <div className="facility-spec">
+        <span className="facility-spec-label">POWER</span>
+        <div>
+          <strong>400 W Solar System</strong>
+          <p>Two solar arrays with a Wanderer solar charge controller</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="facility-capabilities">
+      <span>Operational Capabilities</span>
+      <p>
+        Outside of communications, the PACT Trailer also stores basic supplies and equipment for emergencies.
+      </p>
+    </div>
+
+  </section>
+
+
+  <section className="facility-card">
+
+    <div className="facility-card-header">
+      <div>
+        <p className="facility-eyebrow">Fixed Communications Facility</p>
+        <h2>Provo Emergency Operations Center</h2>
+      </div>
+    </div>
+
+    <div className="facility-image">
+      <img
+        src="/img/provo-eoc.jpg"
+        alt="Provo Emergency Operations Center"
+      />
+    </div>
+
+    <p className="facility-description">
+      A fixed communications facility supporting coordination between PACT,
+      Provo City, and other emergency-response resources.
+    </p>
+
+    <div className="facility-specs">
+
+      <div className="facility-spec">
+        <span className="facility-spec-label">VHF / UHF</span>
+        <div>
+          <strong>Icom IC-2730A</strong>
+          <p>50 W · 2-meter and 70-centimeter amateur bands</p>
+        </div>
+      </div>
+
+      <div className="facility-spec">
+        <span className="facility-spec-label">HF / 6 m</span>
+        <div>
+          <strong>xxxx</strong>
+          <p>100 W · HF and 6-meter amateur radio communications</p>
+        </div>
+      </div>
+
+      <div className="facility-spec">
+        <span className="facility-spec-label">CITY</span>
+        <div>
+          <strong>Emergency Communications</strong>
+          <p>Equipment details to be added</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="facility-capabilities">
+      <span>Operational Capabilities</span>
+      <p>
+        Fixed communications support for emergency coordination,
+        incident response, and citywide communications operations.
+      </p>
+    </div>
+
+  </section>
+
+</div>
+
 ---
 
 ## Recommended Equipment & Gear
