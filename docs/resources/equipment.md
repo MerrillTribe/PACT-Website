@@ -121,7 +121,7 @@ The following equipment & gear are required for the [**PACT Certification Levels
 
     <div className="facility-image">
       <img
-        src="/img/pact-radio-trailer.jpg"
+        src="/img/pact-radio-trailer.png"
         alt="PACT Radio Communications Trailer"
       />
     </div>
@@ -182,14 +182,14 @@ The following equipment & gear are required for the [**PACT Certification Levels
     <div className="facility-card-header">
       <div>
         <p className="facility-eyebrow">Fixed Communications Facility</p>
-        <h2>Provo Emergency Operations Center</h2>
+        <h2>Emergency Operations Center</h2>
       </div>
     </div>
 
     <div className="facility-image">
       <img
-        src="/img/provo-eoc.jpg"
-        alt="Provo Emergency Operations Center"
+        src="/img/provo-eoc.png"
+        alt="Emergency Operations Center"
       />
     </div>
 
@@ -203,7 +203,7 @@ The following equipment & gear are required for the [**PACT Certification Levels
       <div className="facility-spec">
         <span className="facility-spec-label">VHF / UHF</span>
         <div>
-          <strong>Icom IC-2730A</strong>
+          <strong>Icom IC-2820H</strong>
           <p>50 W · 2-meter and 70-centimeter amateur bands</p>
         </div>
       </div>
@@ -211,16 +211,16 @@ The following equipment & gear are required for the [**PACT Certification Levels
       <div className="facility-spec">
         <span className="facility-spec-label">HF / 6 m</span>
         <div>
-          <strong>xxxx</strong>
-          <p>100 W · HF and 6-meter amateur radio communications</p>
+          <strong>Icom IC-718 </strong>
+          <p>100 W · HF amateur radio communications · MFJ Automatic Antenna Tuner · Digirig sound card for digital modes like Winlink</p>
         </div>
       </div>
 
       <div className="facility-spec">
-        <span className="facility-spec-label">CITY</span>
+        <span className="facility-spec-label">POWER</span>
         <div>
-          <strong>Emergency Communications</strong>
-          <p>Equipment details to be added</p>
+          <strong>Power Supply and Emergency Power</strong>
+          <p>Astron RS-20M Power supply · emergency backup generator </p>
         </div>
       </div>
 

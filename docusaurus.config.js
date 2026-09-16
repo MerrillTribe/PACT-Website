@@ -6,7 +6,7 @@ const config = {
   title: 'Provo Auxiliary Communications Team',
 
   tagline:
-    'The Provo Auxiliary Communications Team (PACT) is a volunteer team organized to assist Provo City with communications during large emergencies or other disruptions as well as planned events in Provo.',
+    'The Provo Auxiliary Communications Team (PACT) is a volunteer team organized to assist Provo City with communications during large emergencies & planned community events.',
 
   favicon: 'img/favicon.ico',
 

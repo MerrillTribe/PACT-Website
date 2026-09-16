@@ -91,17 +91,21 @@ export const DisasterCard = ({
  
 # Preparation for Disasters
  
-Provo’s location makes it a great place to live, but it also comes with some unique risks. The Wasatch Mountains and Wasatch Fault bring the potential for earthquakes, landslides, debris flows, and wildfires. On the other side of the city, Utah Lake, the Provo River, and local soil conditions create concerns for flooding and liquefaction. Provo is also crossed by a major railroad corridor and is home to a growing airport, bringing the possibility of transportation accidents and hazardous-material emergencies.
- 
-Some of these disasters are much more likely than others. Severe weather and wildfires are relatively common in Utah County. A major earthquake or dam failure may be unlikely, but could have devastating consequences.
- 
-We may not be able to prevent every disaster, but we can prepare for them. Understanding the risks facing Provo is an important first step toward protecting ourselves, our families, and our community.
+Provo’s location makes it a great place to live, but it also comes with some inherent risks.
+
+The Wasatch Mountains and Wasatch Fault bring the potential for earthquakes, landslides, debris flows, and wildfires. Utah Lake, the Provo River, and local soil conditions create risks of flooding and liquefaction. A major railroad corridor and a growing airport add to the possibility of transportation accidents.
+
+Some disasters are more likely than others. Severe weather and wildfires occur relatively often in Utah County, while major earthquakes and dam failures are much less common but could have devastating consequences.
+
+We may not be able to prevent every disaster, but we can prepare for them. **Understanding [**Provo's risks**](#understanding-provos-risks) is an important first step toward protecting ourselves, our families, and our community.**
  
 ---
  
 ## Disasters
  
-Disasters can result from natural processes, severe weather, infrastructure failures, accidents, or human actions. Many disasters are interconnected. Earthquakes, for example, can cause liquefaction or damage to dams.
+Disasters can result from natural processes, severe weather, infrastructure failures, accidents, or human actions. Many disasters can have a domino effect. An earthquake, for example, can cause liquefaction, landslides, tsunamis, or dam failure.
+
+The icons below represent some of the disasters found around the world.
  
 ### Natural Disasters
  
@@ -381,18 +385,14 @@ Disasters can result from natural processes, severe weather, infrastructure fail
  
 ---
  
-## Understanding Provo's Risk
+## Understanding Provo's Risks
  
-Not every disaster presents the same level of risk.
- 
-The **[2022 Pre-Disaster Mitigation Plan](https://magutah.gov/static/files/Planning/2022%20Pre-Disaster%20Mitigation%20Plan%20for%20Summit%20Utah%20and%20Wasatch%20Counties%20with%20April%202022%20Revisions.pdf)**, prepared by the Mountainland Association of Governments, evaluates hazards in Utah County using two primary factors:
- 
-- **Probability** — how likely the hazard is to occur.
-- **Severity** — how serious the consequences could be if it occurs.
- 
-This distinction is important. A hazard that happens frequently may have relatively limited consequences, while a rare event could affect a large portion of the community.
- 
-The Utah County Hazard Matrix summarizes this relationship.
+The **[2022 Pre-Disaster Mitigation Plan](https://magutah.gov/static/files/Planning/2022%20Pre-Disaster%20Mitigation%20Plan%20for%20Summit%20Utah%20and%20Wasatch%20Counties%20with%20April%202022%20Revisions.pdf)**, prepared by the Mountainland Association of Governments, compares disasters in Utah County by their **probability** and **severity**.
+
+- **Probability** — how likely a disaster is to occur.
+- **Severity** — how serious its impacts could be.
+
+Together, these factors help show which disasters pose the greatest risk to our community. The matrix below shows how each disaster compares.
  
 <div className="hazard-matrix-wrapper">
  
@@ -534,60 +534,70 @@ The Utah County Hazard Matrix summarizes this relationship.
  
 :::
  
----
- 
-## What Could Be Affected in Provo?
- 
-The **[2022 Pre-Disaster Mitigation Plan](https://magutah.gov/static/files/Planning/2022%20Pre-Disaster%20Mitigation%20Plan%20for%20Summit%20Utah%20and%20Wasatch%20Counties%20with%20April%202022%20Revisions.pdf)** estimates the number and value of Provo buildings potentially exposed to several major hazards.
- 
-The figures show why both **likelihood and consequence** matter when considering disaster risk. Some of Provo's least frequent hazards could affect a surprisingly large number of buildings if they occurred.
- 
-| Hazard | Buildings Potentially Exposed | Building Value (Thousands) |
+### What Could Be Affected in Provo?
+
+The **[2022 Pre-Disaster Mitigation Plan](https://magutah.gov/static/files/Planning/2022%20Pre-Disaster%20Mitigation%20Plan%20for%20Summit%20Utah%20and%20Wasatch%20Counties%20with%20April%202022%20Revisions.pdf)** estimates how many buildings in Provo could be exposed to several major disasters. These estimates show that even less frequent events could affect a significant portion of our community.
+
+| Disaster | Buildings Potentially Exposed | Estimated Building Value |
 |---|---:|---:|
-| Dam Failure | 16,883 | $5,531,865 |
-| Fire Risk — High | 652 | $364,479 |
-| Fire Risk — Moderate | 227 | $76,906 |
-| Flood — 1% Annual Probability | 48 | $23,058 |
-| Landslide | 290 | $108,752 |
-| Liquefaction — Moderate to High | 19,338 | $6,140,581 |
-| Earthquake — Pre-1990 Buildings | 15,358 | $4,386,424 |
- 
-### Where Are These Risks?
- 
-The number of buildings potentially exposed tells only part of the story. Hazard maps help show where some of these risks are concentrated within Provo.
- 
+| Dam Failure | 16,883 | $5,531,865,000 |
+| Fire Risk — High | 652 | $364,479,000 |
+| Fire Risk — Moderate | 227 | $76,906,000 |
+| Flood — 1% Annual Probability | 48 | $23,058,000 |
+| Landslide | 290 | $108,752,000 |
+| Liquefaction — Moderate to High | 19,338 | $6,140,581,000 |
+| Earthquake — Pre-1990 Buildings | 15,358 | $4,386,424,000 |
+
+### Risk Maps
+
+The number of buildings potentially exposed only tells part of the story. Risk maps help show where some of these threats are concentrated throughout Provo.
+
 <div className="hazard-map-links">
- 
+
   <a
     href={useBaseUrl('/files/provo-flood-plain-map.pdf')}
     target="_blank"
     rel="noopener noreferrer"
     className="hazard-map-button"
   >
-    View Flood Hazard Map
+    Flood Hazard Map
   </a>
- 
+
+  <a
+    href={useBaseUrl('/files/provo-landslide-map.pdf')}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hazard-map-button"
+  >
+    Landslide Hazard Map
+  </a>
+
+  <a
+    href={useBaseUrl('/files/provo-wildfire-map.pdf')}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hazard-map-button"
+  >
+    Wildfire Hazard Map
+  </a>
+
+  <a
+    href={useBaseUrl('/files/provo-liquefaction-map.pdf')}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hazard-map-button"
+  >
+    Liquefaction Hazard Map
+  </a>
+
 </div>
  
-:::warning Transportation & Access During a Major Emergency
- 
-Provo's geography can make movement through the city more difficult during a large emergency. Utah Lake, the Wasatch Mountains, the Provo River, Interstate 15, and the railroad corridor all influence how people and emergency resources move through the community.
- 
-The 2022 assessment specifically notes that areas west of I-15 have relatively few crossings to the east side of the city, which could create congestion during a large-scale evacuation.
- 
-A major disaster could also damage or temporarily close roads, bridges, rail crossings, and other transportation routes.
- 
-:::
- 
 ---
  
-## Preparing for Disasters
+## Disasters
  
-Different disasters create different challenges. Each disaster shown in the icon grid above has its own profile below. Where the 2022 regional assessment provides a Utah County probability or severity rating, that rating is shown. Hazards that are not separately rated by the assessment are marked **Not Rated** rather than being assigned an unsupported value.
- 
-For hazards with meaningful local exposure, additional Provo-specific information and mitigation measures are included. Hazards that are extremely unlikely to affect Provo directly are intentionally kept brief.
+The cards below provide information about different types of disasters, including how they occur, the impacts they can cause, and how they may affect Provo and Utah County.
 
----
 ### Earthquake
  
 <DisasterCard
@@ -1353,6 +1363,19 @@ Although the probability is classified as **Unlikely**, the county matrix classi
 </DisasterCard>
  
 ---
+
+## Preparing for Disasters
+
+:::warning Transportation & Access During a Major Emergency
+ 
+Provo's geography can make movement through the city more difficult during a large emergency. Utah Lake, the Wasatch Mountains, the Provo River, Interstate 15, and the railroad corridor all influence how people and emergency resources move through the community.
+ 
+The 2022 assessment specifically notes that areas west of I-15 have relatively few crossings to the east side of the city, which could create congestion during a large-scale evacuation.
+ 
+A major disaster could also damage or temporarily close roads, bridges, rail crossings, and other transportation routes.
+ 
+:::
+---
  
 ## Stay Informed
 
@@ -1375,4 +1398,4 @@ When an emergency occurs, monitor official alerts and follow instructions from P
  
 ---
  
-*Disaster and mitigation information on this page is based primarily on the **[2022 Pre-Disaster Mitigation Plan](https://magutah.gov/static/files/Planning/2022%20Pre-Disaster%20Mitigation%20Plan%20for%20Summit%20Utah%20and%20Wasatch%20Counties%20with%20April%202022%20Revisions.pdf)**, prepared by the Mountainland Association of Governments. A small number of recent examples are included to illustrate how these hazards can affect Utah and Utah County; hazards not separately rated by the plan are identified as Not Rated.*
+*Disaster and mitigation information on this page is based primarily on the **[2022 Pre-Disaster Mitigation Plan](https://magutah.gov/static/files/Planning/2022%20Pre-Disaster%20Mitigation%20Plan%20for%20Summit%20Utah%20and%20Wasatch%20Counties%20with%20April%202022%20Revisions.pdf)***
