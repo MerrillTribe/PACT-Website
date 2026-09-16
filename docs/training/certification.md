@@ -413,8 +413,8 @@ PACT’s certification program is similar to the UCARES certification requiremen
     <ul className="cert-list">
       <li><input type="checkbox" /> <strong>2.7</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c" target="_blank" rel="noopener noreferrer">ICS-100.C</a></li>
 
-      <li><input type="checkbox" /> <strong>2.8</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-200.c" target="_blank" rel="noopener noreferrer">ICS-200.C</a></li>
-    </ul>
+  <li><input type="checkbox" /> <strong>2.8</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-700.b" target="_blank" rel="noopener noreferrer">ICS-700.B</a></li>
+</ul>
 
   </div>
 
@@ -527,7 +527,7 @@ PACT’s certification program is similar to the UCARES certification requiremen
     <hr />
 
     <ul className="cert-list">
-      <li><input type="checkbox" /> <strong>3.3</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-700.b" target="_blank" rel="noopener noreferrer">ICS-700.B</a></li>
+      <li><input type="checkbox" /> <strong>3.3</strong> <a href="https://training.fema.gov/is/courseoverview.aspx?code=IS-800.d" target="_blank" rel="noopener noreferrer">ICS-800.D</a></li>
 
       <li><input type="checkbox" /> <strong>3.4</strong> <a href="https://www.arrl.org/online-course-catalog" target="_blank" rel="noopener noreferrer">ARRL Basic EmComm</a> (Optional)</li>
     </ul>
