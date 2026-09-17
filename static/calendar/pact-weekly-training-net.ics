@@ -2,14 +2,45 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//PACT//Weekly Training Net//EN
 CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:PACT Weekly Training Net
+X-WR-TIMEZONE:America/Denver
+BEGIN:VTIMEZONE
+TZID:America/Denver
+X-LIC-LOCATION:America/Denver
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0600
+TZNAME:MDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0700
+TZNAME:MST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
 BEGIN:VEVENT
 UID:pact-weekly-training-net-2026@provoauxiliarycommunicationsteam.com
+DTSTAMP:20260917T000000Z
+LAST-MODIFIED:20260917T000000Z
+SEQUENCE:1
 SUMMARY:PACT Weekly Training Net
-DESCRIPTION:Check-ins: 439.800 MHz (Simplex)  Announcements: 47' Repeater — RX: 145.470 MHz / TX: 144.870 MHz / CTCSS: 100.0 Hz
-LOCATION:Provo, UT
-URL:https://provoauxiliarycommunicationsteam.com
-DTSTART:20260507T023000Z
-DTEND:20260507T030000Z
+DESCRIPTION:Weekly two-part net:\n1. Check-ins on 439.800 MHz simplex.\n
+ 2. Announcements\, traffic\, and training on the Provo City Repeater — Out
+ put (RX): 443.575 MHz\; Input (TX): 448.575 MHz\; CTCSS: 123.0 Hz.\n\n
+ Learn more: https://provoauxiliarycommunicationsteam.com/docs/training/wee
+ kly-training-net/
+LOCATION:On air — 439.800 MHz simplex and the Provo City Repeater
+URL:https://provoauxiliarycommunicationsteam.com/docs/training/weekly-trai
+ ning-net/
+DTSTART;TZID=America/Denver:20260506T203000
+DTEND;TZID=America/Denver:20260506T210000
 RRULE:FREQ=WEEKLY;BYDAY=WE
+STATUS:CONFIRMED
+TRANSP:OPAQUE
 END:VEVENT
 END:VCALENDAR

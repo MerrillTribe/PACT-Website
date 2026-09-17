@@ -9,7 +9,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 :::info WEEKLY TRAINING NETS
 **When:** Every Wednesday at 8:30 PM  
 **Check-ins:** 439.800 MHz (Simplex)  
-**Announcements:** '47 Repeater — RX: 444.325 MHz / TX: 449.325 MHz / CTCSS: 100.0 Hz
+**Announcements:** Provo City Repeater — RX: 443.575 MHz / TX: 448.575 MHz / CTCSS: 123.0 Hz
 :::
 
 <div className="meeting-actions">
@@ -37,7 +37,7 @@ While attendance is not required, regular participation is strongly encouraged.
 
 Check-ins are conducted on 439.800 MHz simplex, allowing members to practice on the same frequencies used during PACT [**activations**](/docs/operations/activation).
 
-Once check-ins are complete, all stations will switch to the '47 repeater for announcements, traffic, and the weekly training topic.
+Once check-ins are complete, all stations will switch to the Provo City repeater for announcements, traffic, and the weekly training topic.
 
 ---
 
@@ -62,7 +62,7 @@ When your district is called:
 
 If you have announcements, formal traffic, or information for the net, say **"with traffic"** instead of **"with no traffic."**
 
-After your check-in has been acknowledged, remain on **439.800 MHz simplex** until Net Control instructs all stations to switch to the '47 repeater.
+After your check-in has been acknowledged, remain on **439.800 MHz simplex** until Net Control instructs all stations to switch to the Provo City repeater.
 
 ---
 
@@ -73,7 +73,7 @@ If you miss your district's check-in, wait until Net Control calls for late or m
 :::tip Why Check-Ins Use Simplex
 PACT emergency operations primarily rely on **simplex communications** between operators and Net Control. Conducting weekly check-ins on simplex gives members regular practice using the same operating method that may be required during an activation.
 
-Because Provo covers a large geographic area, it is normal for some stations to hear Net Control but not every other station—or vice versa. After check-ins are complete, the net transitions to the **'47 repeater**, allowing everyone to hear announcements, traffic, and the weekly training topic more reliably.
+Because Provo covers a large geographic area, it is normal for some stations to hear Net Control but not every other station—or vice versa. After check-ins are complete, the net transitions to the **Provo City repeater**, allowing everyone to hear announcements, traffic, and the weekly training topic more reliably.
 :::
 
 :::tip Handling Doubles
@@ -113,7 +113,7 @@ The Provo Auxiliary Communications Team Weekly Training Net will begin at **20:3
 
 Check-ins will be taken on **439.800 MHz simplex**.
 
-After check-ins are complete, the remainder of the net will be conducted on the **'47 repeater**.
+After check-ins are complete, the remainder of the net will be conducted on the **Provo City repeater**.
 
 All stations interested in participating, please stand by until the net is called.
 
@@ -127,7 +127,7 @@ This is Net Control Station ________ and my transmitting location is the _______
 
 The purpose of this net is to provide training for amateur radio operators and to become familiar with radio equipment and emergency communication procedures in Provo.
 
-Check-ins will be taken on **439.800 MHz simplex**. Once check-ins are complete, all stations will be directed to switch to the **'47 repeater** for announcements, traffic, and tonight's training topic.
+Check-ins will be taken on **439.800 MHz simplex**. Once check-ins are complete, all stations will be directed to switch to the **Provo City repeater** for announcements, traffic, and tonight's training topic.
 
 This is a directed net. Please transmit **ONLY** as requested by Net Control.
 
@@ -154,13 +154,13 @@ Check-ins will now be taken by Provo Neighborhood District.
 
 #### Announcements, Traffic, & Training
 
-The remainder of the net will be conducted on the **'47 repeater**.
+The remainder of the net will be conducted on the **Provo City repeater**.
 
-The '47 repeater uses the following settings:
+The Provo City repeater uses the following settings:
 
-- **Receive (Output):** 145.470 MHz
-- **Transmit (Input):** 144.870 MHz
-- **CTCSS Tone:** 100.0 Hz
+- **Receive (Output):** 443.575 MHz
+- **Transmit (Input):** 448.575 MHz
+- **CTCSS Tone:** 123.0 Hz
 
 Please switch to the repeater now.
 
