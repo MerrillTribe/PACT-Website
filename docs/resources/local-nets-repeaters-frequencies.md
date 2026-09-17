@@ -354,6 +354,7 @@ This page lists local and regional amateur radio repeaters from the **UVHFS** re
 | 448.550 | 443.550 | Salt Lake | WasFrnt | IHC - West Valley Lake Park Bl | W6IHC | — | 100.0 | — |
 | 448.575 | 443.575 | Ogden | WasFrnt | Little Mtn | W7SU | OARC | 100.0 | — |
 | 448.575 | 443.575 | Marysvale | Central | Mt Edna | N7IOD | WB7REL | 131.8 | — |
+| 448.575 | 443.575 | Provo | WasFrnt | Provo City Hall | — | Provo City | 123.0 | — |
 | 448.600 | 443.600 | Page AZ | South | Navajo Mtn | WA7VHF | UVHFS | 100.0 | 146.800 |
 | 448.600 | 443.600 | Ogden | WasFrnt | Mt Ogden | KE7EGG | OARC | 123.0 | — |
 | 448.625 | 443.625 | Salt Lake | WasFrnt | Flat Top | WA7GIE | DARS | — | Cactus |
