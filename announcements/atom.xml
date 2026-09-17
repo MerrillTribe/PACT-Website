@@ -2,11 +2,52 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://provoauxiliarycommunicationsteam.com/announcements/</id>
     <title>Provo Auxiliary Communications Team Blog</title>
-    <updated>2026-08-19T00:00:00.000Z</updated>
+    <updated>2026-09-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://provoauxiliarycommunicationsteam.com/announcements/"/>
     <subtitle>Provo Auxiliary Communications Team Blog</subtitle>
     <icon>https://provoauxiliarycommunicationsteam.com/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Weekly Training Net Repeater Change]]></title>
+        <id>https://provoauxiliarycommunicationsteam.com/announcements/2026/09/17/net-format-change/</id>
+        <link href="https://provoauxiliarycommunicationsteam.com/announcements/2026/09/17/net-format-change/"/>
+        <updated>2026-09-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The PACT Weekly Training Net will continue using its two-part format, with check-ins on 439.800 MHz simplex followed by announcements, traffic, and training on the new Provo City Repeater.]]></summary>
+        <content type="html"><![CDATA[<p>The format of the PACT Weekly Training Net is staying the same, but the repeater used for the second portion of the net is changing.</p>
+<p>The net will continue to be held every Wednesday at <strong>2030 hrs (8:30 PM)</strong> using the same two-part format.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="1-check-ins">1. Check-Ins<a href="https://provoauxiliarycommunicationsteam.com/announcements/2026/09/17/net-format-change/#1-check-ins" class="hash-link" aria-label="Direct link to 1. Check-Ins" title="Direct link to 1. Check-Ins" translate="no">​</a></h2>
+<p>The net will begin with member check-ins on:</p>
+<p><strong>439.800 MHz Simplex</strong></p>
+<p>After check-ins are complete, participants will switch to the <strong>Provo City Repeater</strong> for the remainder of the net.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="2-announcements--training">2. Announcements &amp; Training<a href="https://provoauxiliarycommunicationsteam.com/announcements/2026/09/17/net-format-change/#2-announcements--training" class="hash-link" aria-label="Direct link to 2. Announcements &amp; Training" title="Direct link to 2. Announcements &amp; Training" translate="no">​</a></h2>
+<p>Announcements, traffic, and the weekly training topic will now take place on the Provo City Repeater instead of the '47 repeater:</p>
+<p><strong>Provo City Repeater</strong><br>
+<strong>Output (RX):</strong> 443.575 MHz<br>
+<strong>Input (TX):</strong> 448.575 MHz<br>
+<strong>CTCSS:</strong> 123.0 Hz</p>
+<p>Members are encouraged to participate each Wednesday to practice radio procedures, stay informed, and build familiarity with PACT communications.</p>
+<p>For complete net information and procedures, visit the <a class="" href="https://provoauxiliarycommunicationsteam.com/docs/training/weekly-training-net/">Weekly Training Net</a> page.</p>
+<hr>
+<div class="announcement-signature"><img src="https://provoauxiliarycommunicationsteam.com/img/pact-logo.png" alt="PACT Logo"><div><strong>PACT Leadership Team</strong><span>Provo Auxiliary Communications Team</span></div></div>]]></content>
+        <category label="Training Exercises & Events" term="Training Exercises & Events"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New Provo City Repeater]]></title>
+        <id>https://provoauxiliarycommunicationsteam.com/announcements/2026/09/16/provo-city-repeater/</id>
+        <link href="https://provoauxiliarycommunicationsteam.com/announcements/2026/09/16/provo-city-repeater/"/>
+        <updated>2026-09-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A new amateur radio repeater is now available at Provo City Hall.]]></summary>
+        <content type="html"><![CDATA[<p>Provo City has installed a new amateur radio repeater at Provo City Hall. The repeater will be available for use beginning <strong>September 17, 2026</strong>.</p>
+<p>PACT would like to thank Provo City for installing the repeater and making it available for all PACT operations and communications.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="provo-city-repeater">Provo City Repeater<a href="https://provoauxiliarycommunicationsteam.com/announcements/2026/09/16/provo-city-repeater/#provo-city-repeater" class="hash-link" aria-label="Direct link to Provo City Repeater" title="Direct link to Provo City Repeater" translate="no">​</a></h3>
+<p><strong>Input (TX):</strong> 448.575 MHz<br>
+<strong>Output (RX):</strong> 443.575 MHz<br>
+<strong>CTCSS:</strong> 123.0 Hz<br>
+<strong>Location:</strong> Provo City Hall</p>
+<hr>
+<div class="announcement-signature"><img src="https://provoauxiliarycommunicationsteam.com/img/pact-logo.png" alt="PACT Logo"><div><strong>PACT Leadership Team</strong><span>Provo Auxiliary Communications Team</span></div></div>]]></content>
+        <category label="General Announcements" term="General Announcements"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[November Interface Date Change]]></title>
         <id>https://provoauxiliarycommunicationsteam.com/announcements/2026/08/19/interface-date-change/</id>
