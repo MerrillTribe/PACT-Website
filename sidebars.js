@@ -29,6 +29,7 @@ const sidebars = {
         'training/meetings',
         'training/certification',
         'training/training-exercises',
+        'training/events',
       ],
     },
 
