@@ -46,6 +46,7 @@ const sidebars = {
         'resources/equipment',
         'resources/radio-troubleshooting',
         'resources/forms',
+        'resources/incident-coordination',
         'resources/local-groups',
         'resources/lds-resources',
         'resources/preparation-for-disasters',

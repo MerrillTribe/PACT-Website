@@ -3040,3 +3040,330 @@ html:not([data-frequency-view='technical'])
   .repeater-frequency-table table td:nth-child(2) {
   display: none;
 }
+
+/* =========================================
+   PACE Communications Plan
+   ========================================= */
+
+.pace-plan {
+  margin: 2rem 0 2.5rem;
+  padding: 2rem;
+
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+
+/* Header */
+
+.pace-plan-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.pace-plan-header h3 {
+  margin: 0;
+
+  color: var(--pact-navy);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.pace-plan-header p {
+  margin: 0.4rem 0 0;
+
+  color: #64748b;
+  font-size: 1rem;
+}
+
+
+/* Grid */
+
+.pace-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+
+/* Cards */
+
+.pace-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-width: 0;
+  padding: 1.6rem 1.25rem;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  /* PACT red accent */
+  border: 2px solid var(--pact-red);
+  border-radius: 12px;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pace-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 22px rgba(0, 32, 48, 0.1);
+}
+
+
+/* PACE letter */
+
+.pace-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+  margin-bottom: 0.75rem;
+
+  color: #ffffff;
+background: var(--pact-red);
+
+  border-radius: 50%;
+
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+
+/* Primary / Alternate / Contingency / Emergency */
+
+.pace-name {
+  margin-bottom: 1.1rem;
+
+  color: var(--pact-red);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+/* Communication method */
+
+.pace-card h4 {
+  margin: 0 0 0.65rem;
+
+  color: var(--pact-navy);
+
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+
+/* Description */
+
+.pace-card p {
+  margin: 0;
+
+  color: #475569;
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+
+/* =========================================
+   Dark mode
+   ========================================= */
+
+[data-theme='dark'] .pace-plan {
+  background: #111827;
+  border-color: #334155;
+}
+
+[data-theme='dark'] .pace-plan-header p {
+  color: #cbd5e1;
+}
+
+[data-theme='dark'] .pace-card {
+  background: #1e293b;
+}
+
+[data-theme='dark'] .pace-card h4 {
+  color: #f8fafc;
+}
+
+[data-theme='dark'] .pace-card p {
+  color: #cbd5e1;
+}
+
+
+/* =========================================
+   Tablet
+   ========================================= */
+
+@media (max-width: 996px) {
+
+  .pace-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+}
+
+
+/* =========================================
+   Mobile
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .pace-plan {
+    padding: 1.5rem 1rem;
+  }
+
+  .pace-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pace-card {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .pace-plan-header h3 {
+    font-size: 1.65rem;
+  }
+}
+
+/* =========================================
+   Radio Assistant
+   ========================================= */
+/* PACT Radio Manual Assistant */
+
+.radio-assistant {
+  margin: 2rem 0;
+  border: 2px solid var(--pact-red);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+}
+
+.radio-assistant-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.radio-assistant-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.radio-assistant-header p {
+  margin-bottom: 0;
+}
+
+.radio-assistant-control {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.radio-assistant-control label,
+.radio-assistant-form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.radio-assistant-control select,
+.radio-assistant-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font: inherit;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+}
+
+.radio-assistant-chat {
+  padding: 1.5rem;
+  min-height: 250px;
+  max-height: 500px;
+  overflow-y: auto;
+  background: var(--ifm-background-color);
+}
+
+.radio-assistant-empty {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.radio-assistant-empty p {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.radio-message {
+  max-width: 85%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.radio-message-user {
+  margin-left: auto;
+  background: var(--ifm-color-emphasis-200);
+}
+
+.radio-message-assistant {
+  margin-right: auto;
+  border-left: 4px solid var(--pact-red);
+  background: var(--ifm-background-surface-color);
+}
+
+.radio-message-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.radio-assistant-form {
+  padding: 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.radio-assistant-form textarea {
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.radio-assistant-form button {
+  background: var(--pact-red);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.4rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.radio-assistant-form button:hover:not(:disabled) {
+  background: var(--pact-red-hover);
+}
+
+.radio-assistant-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.radio-assistant-notice {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  font-size: 0.9rem;
+}

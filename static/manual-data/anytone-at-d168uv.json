@@ -1,0 +1,484 @@
+{
+  "equipment_id": "anytone-at-d168uv",
+  "manufacturer": "AnyTone",
+  "model": "AT-D168UV",
+  "manual": "AnyTone AT-D168UV Manual",
+  "pdf": "/manuals/anytone-at-d168uv.pdf",
+  "sections": [
+    {
+      "page": 1,
+      "chunk": 1,
+      "text": "A T-D168UV\nOperating Manual\nDigital DMR and Analog\nUHF/VHF Amateur Radio Transceiver\nDMR\nDIGITAL MOBILE RADIO ASSOCIATION"
+    },
+    {
+      "page": 2,
+      "chunk": 1,
+      "text": "THANK YOU!\nThank you very much for choosing our Dual Band Digital DMR\nand Analog two way radio.\nThis radio adopts the latest advances in technology, providing reliable\ncommunication in today’s demanding communication environment.\nThis radio offers both DMR digital and analog communication, introduces\ninnovative DMR digital processing system to achieve SMS, high-audio quality\nand digital encryption. It offers great stability, and reliability, together with long\ndistance communication as well as fashionable design and compact exterior\nlines. AT-D168UV has T ext Messaging, Recording, Voice Message, Digital\nEncryption, Emergency Alarm, Work Alone Roaming, Vibration, Analog DTMF ,\n2TONE, 5TONE, CTCSS/DCS encode/decode functions.\n» When you use CPS (computer program software) to program the\nradio, start by reading the factory software data, and then rewrite\nthis data with your frequency etc., to a new saved code plug, otherwise\nerrors may occur.\n» The CPS allows you to program the frequency, channel type, power\netc. your programming must comply with your FCC (or other country)\nlicense certification."
+    },
+    {
+      "page": 3,
+      "chunk": 1,
+      "text": "CONTENTS\n1.UNPACKING AND CHECKING THE EQUIPMENT ........................ 1\n1.1 Supplied Accessories ................................................................. 1\n1.2 Standard Accessories ................................................................ 2\n1.3 Optional Accessories ................................................................. 2\n2.BATTERY INFORMATION .............................................................. 3\n2.1 Charging the Battery Pack ......................................................... 3\n2.2 Charger Supplied ....................................................................... 3\n2.3 Use Caution with the Li-ion Battery ............................................ 3\n2.4 How to Charge ........................................................................... 4\n2.5 How to Store the Battery ............................................................ 5\n3. PREPARATION .............................................................................. 6\n3.1 Installing / Removing the Battery ............................................... 6\n3.2 Installing / Removing the Antenna ............................................. 6"
+    },
+    {
+      "page": 3,
+      "chunk": 2,
+      "text": "3.3 Installing / Removing the Belt Clip ............................................. 7\n3.4 Installing the Additional Speaker/Microphone (Optional) ........... 7\n4. Radio Overview............................................................................. 8\n4.1 LCD ............................................................................................ 9\n4.2 Status Indications ....................................................................... 9\n4.3 Programmed Key ..................................................................... 10\n4.4 Hot Key Setting for PF1, PF2 ................................................... 12\n4.5 Combination Key Function ....................................................... 12\n5.BASIC OPERATIONS ................................................................... 13\n5.1 Power on the Radio ................................................................. 13\n5.2 Adjust Volume .......................................................................... 13\n5.3 Main band/Sub band switch ..................................................... 13\n5.4 VFO/Channel switch ................................................................ 13"
+    },
+    {
+      "page": 3,
+      "chunk": 3,
+      "text": "5.5 Set up VFO frequency ............................................................. 13\n5.6 Select a Channel ...................................................................... 13\n5.7 New channel ............................................................................ 14\n5.8 Delete Channel ........................................................................ 14\n5.9 Receiving and Responding to a Radio Call ............................. 14"
+    },
+    {
+      "page": 4,
+      "chunk": 1,
+      "text": "5.10 Making a Call ......................................................................... 15\n5.11 Monitor ................................................................................... 15\n5.12 Emergency Alarm ................................................................... 15\n5.13 Battery Voltage T est ............................................................... 15\n6. ADVANCED FEATURES ............................................................. 16\n6.1 Access Advanced Features for Private Call ............................. 16\n6.2 Set up Advanced Features for Private Call .............................. 16\n7.MAIN MENU FUNCTIONS ............................................................ 18\n7.1 T alk Group ................................................................................ 18\n7.2 SMS ......................................................................................... 18\n7.3 Call Log .................................................................................... 18\n7.4 Zone ......................................................................................... 18"
+    },
+    {
+      "page": 4,
+      "chunk": 2,
+      "text": "7.5 Scan ......................................................................................... 19\n7.6 Roaming ................................................................................... 20\n7.7 Settings .................................................................................... 21\n7.7.1 Radio Set ................................................................................... 21\n7.7.2 Chan Set.................................................................................... 27\n7.7.3 Device Info................................................................................. 33\n7.8 Record ..................................................................................... 33\n7.9 GPS Positioning Function(optional with installed GPS) ........... 34\n7.10 Satellite .................................................................................. 35\n7.11 APRS Location Reporting(optional, supported by GPS) ........ 35\n7.12 Digital Monitor ........................................................................ 37\n8.RESET........................................................................................... 38"
+    },
+    {
+      "page": 4,
+      "chunk": 3,
+      "text": "9.TROUBLE SHOOTING GUIDE ..................................................... 39\n10.PROGRAMMING GUIDE ............................................................ 40\n11.ON-LINE SERVICE AND SUPPORT .......................................... 42\nSAFETY ........................................................................................... 43\nEU DECLARATION OF CONFORMITY .......................................... 45\n12.TECHNICAL SPECIFICATIONS ................................................. 46"
+    },
+    {
+      "page": 5,
+      "chunk": 1,
+      "text": "1 Digital DMR and Analog UHF/VHF Two Way Radio\n1. UNPACKING AND CHECKING THE EQUIPMENT\nUnpack the radio carefully. We recommend that you identify the items listed\nin the following table before discarding the packing materials. If any items are\nmissing or have been damaged during shipment, please contact the carrier or\nthe dealers immediately.\n1.1 Supplied Accessories\nItem Quantity\nAntenna 2\nLi-ion Battery Pack 2\nBattery Charger 1\nAC Adaptor 1\nTYPE C Cable 1\nBelt Clip 1\nInstruction Manual 1"
+    },
+    {
+      "page": 6,
+      "chunk": 1,
+      "text": "2Digital DMR and Analog UHF/VHF Two Way Radio\n1. UNPACKING AND CHECKING THE EQUIPMENT\n1.2 Standard Accessories\nInstruction Manual\n* Note: For frequency band of antenna, please refer to label indicated in\nthe bottom of the antenna.\n1.3 Optional Accessories\n12cm Antenna\nTX-0311\n38cm Antenna\nTX-0313\nLi-ion Battery Pack\nQB-56HL(2500mAh)\nCharger\nQBC-56L\nAC Adaptor\nNA01(5V/2A)\nBelt Clip\nWWZZ-0029\nTYPE C Cable\nQT-0046\n(Program and Charge)\nWrist strapMulti-charger\nBC-158-4\nLi-ion Battery Pack\nQB-56L(1800mAh)\nEarphone\nEJX-0012\nSpeaker Microphone\nQHM-024"
+    },
+    {
+      "page": 7,
+      "chunk": 1,
+      "text": "3 Digital DMR and Analog UHF/VHF Two Way Radio\n2.2 Charger Supplied\n2.3 Use Caution with the Li-ion Battery\nThe Li-ion battery pack is not charged at the factory; please charge it before use.\n��������������������������������������������������������������������������������������������������������������������������������������������������������������\n(more than 2 months) may not bring the battery pack to its normal maximum\noperating capacity. Best operation will require fully charging/discharging the\nbattery two or three times before the operating capacity will reach its best\nperformance. The battery pack life may be depleted when its operating time\ndecreases even though it has been fully and correctly charged. If this is the\ncase, replace the battery pack.\nPlease use the specified charger provided by AnyT one. Other models may\ncause explosion and personal injury. After installing the battery pack, and if\n��������������������������������������������������������������������������������������������������������������������������������������������������������������\ncharge the battery.\na. Do not short the battery terminals or throw the battery into a fire. Never"
+    },
+    {
+      "page": 7,
+      "chunk": 2,
+      "text": "attempt to remove the casing from the battery pack, as AnyT one cannot be\nheld responsible for any accident caused by modifying the battery.\nb. The ambient temperature should be between 5 ℃ -40℃ ��������������������������������������������\ncharging the battery. Charging outside this range may not fully charge the\nbattery.\nc. Please turn off the radio before inserting it into the charger. It may otherwise\ninterfere with correct charging.\nd. T o avoid interfering with the charging cycle, please do not cut off the power\nor remove the battery during charging until the green light is on.\ne. Do not recharge the battery pack if it is fully charged. This may shorten the\nlife of the battery pack or damage the battery pack.\nf. Do not charge the battery or the radio if it is damp. Dry it before charging to\navoid damage.\n2.1 Charging the Battery Pack\n2. BATTERY INFORMATION\nWARNING:\n» When keys, ornamental chain or other electric metals contact the battery\nterminal, the battery may become damage or injure a human. If the battery\nterminals are short circuited it will generate a lot of heat. Take care when\ncarrying and using the battery. Remember to put the battery or radio into"
+    },
+    {
+      "page": 7,
+      "chunk": 3,
+      "text": "an insulated container. Do not put it into a metal container."
+    },
+    {
+      "page": 8,
+      "chunk": 1,
+      "text": "4Digital DMR and Analog UHF/VHF Two Way Radio\n2.4 How to Charge\na. Plug the AC adaptor into the AC outlet, and then plug the cable into the\nUSB-C port located on the back of the charger. The indicator lights green\nand is then ready to charge a battery.\nb. Plug the battery or the radio into the charger. Make sure the battery\nterminals are good in contact with charging terminals. The indicator light\nturns to red--- charging begins.\nc. It takes approximately 2.5 hours for QB-56L thin battery to be fully charged,\nand 3.5hours for QB-56HL thick battery to be fully charged. When the lamp\nlights green, the charging is completed. Remove the battery or the radio\nunit with its battery from socket\n» when charging a radio (with battery) the indicating lamp will not turn\ninto green to show the fully charged status if the radio is powered on.\nOnly when the radio is switched off will the lamp indicate normal\noperation. The radio consumes energy when it is power-on, and the\ncharger cannot detect the correct battery voltage when the battery has\nbeen fully charged. So the charger will charge the battery in constant\nvoltage mode and fail to indicate correctly when the battery has been\nfully charged."
+    },
+    {
+      "page": 8,
+      "chunk": 2,
+      "text": "2. BATTERY INFORMATION\nThe radio uses a USB-C cable for charging, the USB-C cable can be inserted\ninto the USB-C port on radio for directly charging to the battery.\nThe USB-C cable can also be inserted into the USB-C port on desktop charger.\nThe standard 5V/2A USB-C adapter is used, it is common adapter on the market."
+    },
+    {
+      "page": 9,
+      "chunk": 1,
+      "text": "5 Digital DMR and Analog UHF/VHF Two Way Radio\nSTATUS LED\nWaiting(No Battery) None\nPrecharge Green Light\nCharging Red Light\nFully Charged Green Light\n» Trouble means battery too warm, battery short-circuited or charger\nshort-circuited.\nd. LED Indicator:\n2. BATTERY INFORMATION\n» Do not short circuit the battery terminals.\n» Never attempt to remove the casing from the battery pack.\n» Never store the battery in unsafe surroundings, as a short may cause\nan explosion.\n» Do not put the battery in a hot environment or throw it into a fire, as it\nmay cause an explosion.\n2.5 How to Store the Battery\na. If the battery needs to be stored, keep it in status of 80% discharged.\nb. It should be kept in low temperature and dry environment.\nc. Keep it away from hot places and direct sunlight."
+    },
+    {
+      "page": 10,
+      "chunk": 1,
+      "text": "6Digital DMR and Analog UHF/VHF Two Way Radio\n3.2 Installing / Removing the Antenna\na. Installing the Antenna: Screw the antenna into the connector on the top of\nthe transceiver by holding the antenna at its base and turning it clockwise\nuntil secure.\nb. Removing the Antenna: Turn the antenna counter-clockwise to remove it.\n3.1 Installing / Removing the Battery\na. Match the two top grooves of the battery pack with the corresponding\nguides on the back of the radio and then push it.\nb. T o remove the battery pack, slide the release latch at the bottom away the\nbattery and remove the pack from the transceiver.\n3. PREPARATION\n1\n1\n2 2"
+    },
+    {
+      "page": 11,
+      "chunk": 1,
+      "text": "7 Digital DMR and Analog UHF/VHF Two Way Radio\n3.4 Installing the Additional Speaker/Microphone (Optional)\nPry open the rubber MIC-Headset jack cover and then insert the Speaker /\nMicrophone plug into the double jack.\n3.3 Installing / Removing the Belt Clip\na. Installing the Belt Clip: Place the belt clip above the corresponding holes\non the back of the radio, and screw it into place clockwise with the two\nsupplied screws.\nb. Removing the Belt Clip: Unscrew counter-clockwise to remove the belt clip.\n3. PREPARATION"
+    },
+    {
+      "page": 12,
+      "chunk": 1,
+      "text": "8Digital DMR and Analog UHF/VHF Two Way Radio\nAntenna\nMenu key\nMIC\nSpeaker/Mic Jacks\nTYPE C\n(Program and charge)\nChannel Switch\nPOWER/VOL\nLED Status Indicator\nLCD\nExit Key\nSpeaker\nPTT Button\n[PF1] Key\n[PF2] Key\n4. RADIO OVERVIEW\nPTT"
+    },
+    {
+      "page": 13,
+      "chunk": 1,
+      "text": "9 Digital DMR and Analog UHF/VHF Two Way Radio\n4. RADIO OVERVIEW\nTX Power\nColor Code\nVOX\nBluetooth\nDig Monitor Inbox\nRoaming\nBT PTT\nBattery\nAuto Power Off\nRecording\nGPS\n4.1 LCD\nThe top LED will help you to identify the current radio status.\n4.2 Status Indications\nLED Indication Status\nFlashes Red Low battery voltage\nConstant Red Transmitting\nConstant Green Analog Receiving\nConstant Cyan Digital Receiving\nFlashes Green Scan"
+    },
+    {
+      "page": 14,
+      "chunk": 1,
+      "text": "10Digital DMR and Analog UHF/VHF Two Way Radio\n4. RADIO OVERVIEW\n4.3 Programmed Key\nIt is possible to set different functions for [PF1], [PF2] keys.\nMethod 1: In radio Menu Settings Radio Set Key PF1, PF2.\nMethod 2: In PC software Public Optional Setting Key function.\nOFF No Function\nVolt Check the current battery capacity voltage\nTx Power Switch the power between super high, high, middle and low power.\nT alkAround Switch between T alk Around and Repeater mode\nReverse Turn on/off the frequency reverse function.\nEncryption Choose the digital encryption group for digital channel\nCall In Analog mode, send the DTMF/5TONE/2TONE encode. This\nfunction is only valid for analog channel.\nVOX Set up the VOX level\nVFO / MR Switch between VFO mode and memory channel mode.\nSub PTT Sub channel PTT , press to start the call on sub channel (NOTE: On\nPF1 - PF2 Keys Only)\nScan Press the key to start or stop scanning the channels in scan list.\nFM Radio FM radio on/off\nAlarm Long press the key to start alarm, short press again to exit the alarm.\nRecord Switch Enable/disable the recording function\nRecord Start/stop recording. When stop recording, the radio will remind repeat\nor send the record."
+    },
+    {
+      "page": 14,
+      "chunk": 2,
+      "text": "SMS In digital mode, press to enter into SMS messages\nDial Start the manually dial\nGPS Info\n(optional) Check the GPS position information\nMonitor Monitor the weak signal or the signal with unmatched ID.\nMain CH Switch Choose channel A or channel B as the main channel\nHot Key 1~6 Selects Hot Keys 1-6 Note: Hot key setup details on next page\nWork Alone Turn on/off the work alone function.\nNuisance Delete During scanning, press the key to skip the unwanted channel\nDigi Monitor In DMR mode, press the key to turn on/off digital monitor\nSub CH Hide Turn on/ off the sub channel\nPrior Zone Switch to Priority Zone\nVFO Scan\nPress the key to start or stop the VFO scan.\nThe VFO scan start and end frequency should be set in CPS -Optional\nSetting - VFO Scan.\nMIC Sound In digital channel, switch the microphone tone to normal or enhanced mode."
+    },
+    {
+      "page": 15,
+      "chunk": 1,
+      "text": "11 Digital DMR and Analog UHF/VHF Two Way Radio\n4. RADIO OVERVIEW\nLastCall Reply In digital channel, press the key to access the last call and press PTT\nto call back.\nSwitch ChType Switch the channel type(Analog, Digital, Ana+Dgi, Dgi+Ana)\nRanging\nWhen the radio receives a call and the suspension time is on, press the\nkey programmed as\" Ranging\" to obtain the caller's position and distance.\n(Both party need GPS positioned, or will receive only GPS information)\nRoaming\nIn standby, press the key programmed as \"Roaming\" to search and\nlock on the repeater with strongest signal. (Note: After lock on a\nrepeater, the radio will return to last frequency only after channel\nor frequency is changed. The repeater frequency list must pre-\nprogrammed in CPS.)\nChannel\nRanging\nIn standby, if the call contact type for a channel is \"Private call\" , press\nthe key programmed as \" Channel Ranging\" to turn on this function. The\nradio will automatically start ranging function when turn to this channel.\nMax VOL Set In standby, press the key programmed as \"Max Volume\", will enable\nusers to set the maximum RX volume.\nSlot Set Choose Slot for current channel, this function is only valid in repeater mode."
+    },
+    {
+      "page": 15,
+      "chunk": 2,
+      "text": "Aprs Type Choose Aprs Type for current channel.\nZone Select In standby, press the programmed \"Zone Select\" key, it will allow you\n������������������������������������������������������������������������������������������������������������������������������������������������\nRoaming Set Sets Roaming Function\nAPRS Set\n(optional) Sets APRS Function\nMute Timing Press the key to mute the radio in set time. The mute timing should be\nset in CPS -Optional Setting - Other -Mute Timing.\nCTC/DCS Set Set the CTCSS/DCS for analog channel\nTBST Send Send the TBST T one\nBT On/Off\n(optional) Enable / disable the bluetooth function\nGPS On/Off\n(optional) Enable / disable the GPS function\nCh. Name Switch between channel name display and frequency display for the\ncurrent channel\nCDT Scan\nEnable / disable the CTCSS/DCS scanning for the analog channel.\n��������������������������������������������������������������������������������������������������������������������������������������\nopen the speaker and start receiving.\nOnly the analog channels with CTCSS/DCS signalling is able to start\nthe CDT scanning.\nARPS Send\n(optional) Manually transmit the APRS at the current channel."
+    },
+    {
+      "page": 15,
+      "chunk": 3,
+      "text": "DIM Shut Light up or turn off the display/indicator."
+    },
+    {
+      "page": 16,
+      "chunk": 1,
+      "text": "12Digital DMR and Analog UHF/VHF Two Way Radio\n4.4 Hot Key Setting for PF1, PF2\nCall\nAnalog\n����������������������������������������������������������������������������������������������������������������������������\nthe hot key set. Press the key to transmit 2T one/5T one/DTMF\nto start the analog quick call.\nDigital\nIt allows to select a contact from the digital contact list, press\nthe key to switch the channel to the contact temporary. It will\nswitch back to the original contact after the group/personal\ncall hold time.\nMenu\nSMS Quick access to Messages in the Menu\nNew Msg Quick access to New Msg in the Menu - Messages\nHot T ext Quick access to Quick T ext in the Menu - Messages\nReceived SMS Quick access to Inbox in the Menu - Messages\nSend SMS Quick access to Out box in the Menu - Messages\nContact list Quick access to Contact list in the Menu - Contacts\nManual dial Quick access to Manual Dial in the Menu - Contacts\nCall Log Quick access to Call Log in the Menu\nDialed Calls Quick access to Dialed Calls in the Menu - Call Log\nReceived Calls Quick access to Answered Calls in the Menu - Call Log\nMissed Calls Quick access to Missed Calls in the Menu - Call Log"
+    },
+    {
+      "page": 16,
+      "chunk": 2,
+      "text": "Zone Quick access to Zone in the Menu\nRadio set Quick access to Radio Set in the Menu - Settings\n4. RADIO OVERVIEW\nEnter radio Menu-Settings-Radio Set-PF1, PF2, sub menu. Users can choose\nsettings for Hot Keys 1-6.\nHot Key function details must be setup in PC software Public Hot key.\nGPS Roam\n(optional) Enable / disable the GPS roaming function.\nWX Alarm Enable / disable the weather alarm function.\nSQ Level Set the squelch level.\n4.5 Combination Key Function\n+ number key operation:\nPress key and hold until the LCD display “Next Please Press Dial Key”,\nthen press the number key, it will perform the programmed function.\nCombination key function shall be setup in PC software-Public-Hot key."
+    },
+    {
+      "page": 17,
+      "chunk": 1,
+      "text": "13 Digital DMR and Analog UHF/VHF Two Way Radio\n5.1 Power on the Radio\n5.2 Adjust Volume\n5.3 Main Band/Sub Band Switch\n5.4 VFO/Channel Switch\n5.5 Set Up VFO Frequency\nTurn on the radio by turning the [Power/Volume] switch clockwise till a click is\nheard, and the LCD displays will show a start-up message, and you will hear a\nbeep after 7 seconds.\nRotate the [Power/Volume] knob to adjust the volume. Turn clockwise to\nincrease the volume and counterclockwise to decrease the volume. The LCD\ndisplay will show the volume status during an adjustment.\nPress the key programmed as Main CH Switch to switch the main channel\nto the other channel if there are 2 channels shown on the display. The\nchannel with bold characters is the main channel.\nPress the key programmed as VFO/MR to switch between VFO and\nchannel display.\nTurn the radio to VFO mode, by the key programmed as VFO/MR, the VFO\nfrequency can only be set up when the channel is in the main “bold text”\nchannel.\nOperation 1: Input the VFO frequency directly by the keyboard.\nOperation 2: Turn the channel selector to adjust the VFO frequency steps.\n5. BASIC OPERATIONS\n5.6 Select a Channel"
+    },
+    {
+      "page": 17,
+      "chunk": 2,
+      "text": "Press the key programmed as VFO/MR to switch the radio between VFO\nand Channel mode, select Channel mode.\nOperation 1: Turn the channel switch to select a channel.\nOperation 2: Input the channel numbers by the keyboard. For example, if you\nwant switch to channel 99, input 0+0+9+9 a total of 4 digits, and it will switch\nto channel 99.\nA channel can either be Analog or Digital.\nFor the analog channels the Push-T o-T alk button is always available, and\non the Digital Channels the parameters can be set up by the users / system\noperators by individual channel to allow talk permit.\nThere are four possible settings that can be selected in the CPS channel:\n(1) Always Allow: The user can transmit all the time.\n(2) Channel Free: The radio can transmit only if the channel is free.\n(3) Different Color Code: The radio can transmit if the channel is free, but the\ncolor code is mismatch."
+    },
+    {
+      "page": 18,
+      "chunk": 1,
+      "text": "14Digital DMR and Analog UHF/VHF Two Way Radio\n5. BASIC OPERATIONS\n5.7 New channel\n5.8 Delete Channel\n(1) Press (Menu) to enter main Menu.\n(2) Select \"Settings\".\n(3) Select \"Chan Set\".\n(4) Select \"New Chan\".\n(5) Input the channel number by keypad, press ��������������������\n(6) Select a zone from zone list, then Confirm T o Save. The radio will start\nchannel saving, and saving is completed when it displays \"Saved\".\n(7) Now select the new channel in the radio and go to Channel Settings menu\nto set up all the new channel's parameters.\n(1) In channel (MR) mode, press (Menu) to enter main Menu.\n(2) Select \"Settings\".\n(3) Select \"Chan Set\".\n(4) Select \"Delete Chan\" to delete current channel.\n5.9 Receiving and Responding to a Radio Call\nWhen the radio is in the digital mode, it can receive and respond to a call with\nthe same frequency/color code/ slot. When receiving a call:\na. If the radio is programed with callers DMR ID number in the digital contact\n��������������������������������������������������������������������������������������������������������������������������������������\nb. The cyan LED lights up.\nc. The bottom of LCD shows the received signal strength( RSSI), and the LCD"
+    },
+    {
+      "page": 18,
+      "chunk": 2,
+      "text": "display will show DMR ID/name/city/state/country/call type and incoming\nicon based on what is in the contact list.\nd. When the call is ended, it will display “Call end”, and you can press [PTT] to\nrespond to the call.\n(4) Same Color Code: The radio can transmit only if the channel is free and the\ncolor code matches."
+    },
+    {
+      "page": 19,
+      "chunk": 1,
+      "text": "15 Digital DMR and Analog UHF/VHF Two Way Radio\n5. BASIC OPERATIONS\n5.10 Making a Call\nMethod 1: from the Channel switch.\nTurn the channel switch to choose a programmed channel.\nMethod 2: from the T alk Group.\n(1) Turn the channel switch to choose a programmed channel;\n(2) Press (exit) key to enter the TG List, press the / key to choose a\nTG.\nMethod 3: from the keypad.\n(1) Turn the channel switch to choose a programmed channel.\n(2) Press (Menu) key to T alk Group, press select to enter TG.\n(3) Press / key to Manual Dial, press Select.\n(4) Input the ID number by keypad, press key to switch group ID or Private\nDMR ID.\nHold the radio vertical 2.5-5cm from your mouth, press the [PTT] key to start\nthe call, the red LED lights up, the receiver ID/name/city/state/country/call type\nand call out icon will be display on the LCD if the digital database is up-to-date\nin the radio.\nRelease [PTT] key to receive the reply.\n» When in analog mode, if no signal, it will emit a noise when pressing\nthe Monitor Key. ** The Rx icon is seen when monitor is activated.\n5.11 Monitor\nIn standby, press the key programmed as Monitor to enter Monitor. When"
+    },
+    {
+      "page": 19,
+      "chunk": 2,
+      "text": "receiving matched carrier but the signaling / ID is unmatched or the signal\nis too weak, this function allows monitor the weak signal and signal with\nunmatched ID.\nPress the key again to shut off speaker and return to standby.\n5.12 Emergency Alarm\nPress the key programmed as Alarm to turn alarm function, then press this\nkey again to return to normal operation.\n5.13 Battery Voltage Test\nPress the key programed as Voltage function to check the current battery\nvoltage, press this key again to return."
+    },
+    {
+      "page": 20,
+      "chunk": 1,
+      "text": "16Digital DMR and Analog UHF/VHF Two Way Radio\n6.1 Access Advanced Features for Private Calling\n6.2 Set Up Advanced Features for Private Calling\nMethod 1: T o Access a Private Call from the Contact list\na. Press the (Exit) key to enter the T alk Group, press the / key to a\nprivate DMR call ID name.\nb. Press Select to View Contact, press Select to see the contact information.\nc. Press Option to access the advanced features.\n6.2.1 Call Alert\nSelect Call Alert, it will send out a call alert, the target radio will sound a beep\nor vibrate when receiving the call alert, and it will return a success call or failed\ncall message to the transmit radio.\n6.2.2 Remote Ranging\nSelect Remote Ranging, and it will send out a signal for the target radio will\nturn on its microphone and transmit when receiving the signaling, it will send\nback the voice to the transmit radio. With this feature you can monitor the\nsound activity near the target radio remotely.\n6.2.3 Get GPS info(optional)\nSelect Get GPS info, and it will send out a signal to the target radio which\nwill start the GPS positioning and send a message of its GPS position to the\ntransmit radio.\n6.2.4 Check Radio"
+    },
+    {
+      "page": 20,
+      "chunk": 2,
+      "text": "Select Check Radio, and it will send out a radio check to the target radio which\nwill send back a message if it is available or not available to the transmit radio.\nWith this feature, you can determine if another radio is active and powered on\nin the system.\nMethod 2: Access from Manual Dial\na. Press the (Menu) key to enter T alk Group, press / key to Manual\nDial.\nb. Press Select to enter Manual Dial.\nc. Input the Private DMR ID, press Option to access the advanced features.\n6. ADVANCED FEATURES"
+    },
+    {
+      "page": 21,
+      "chunk": 1,
+      "text": "17 Digital DMR and Analog UHF/VHF Two Way Radio\n6.2.5 Kill\nSelect Kill, and it will send out a kill signaling to the target radio which will be\nkilled (No display, no operation) when receiving the signaling and it will send\nback a kill successful message to the transmit radio.\n6.2.6 Wake\nSelect Wake, and it will send out a wake-up signaling to the killed radio and\nthe target radio will return to standby when it receives this signaling and send\nback a Wake successful message to the transmit radio.\n6.2.7 Ranging(optional)\nWhen caller and receiver both GPS positioned, if the caller turn on ranging\nfunction and the receiver is within communication range, transmit radio will\n����������������������������������������������������������������������������������������������������������������������������������������������������������������\nshow the information on the display of transmit radio.\n6. ADVANCED FEATURES"
+    },
+    {
+      "page": 22,
+      "chunk": 1,
+      "text": "18Digital DMR and Analog UHF/VHF Two Way Radio\n7. MAIN MENU FUNCTIONS\n7.2 SMS\n7.3 Call Log\n7.4 Zone\nNew Msg: Create a new message and send to a contact.\nInBox: Shows all the received messages, and allows forward or delete the\nmessage.\nOutBox: Shows all the sent messages, and allows resend, forward or delete\nof the message.\nQuick Text: Pre-saved messages, and allows to send, edit or delete the\nmessage.\nDraft: Draft messages, and allows send, edit or deleting of the draft message.\nLast Call: The Last Call List show the last caller DMR ID and time information.\nIt allows you to save the last caller as a new contact if it is not in your contact.\nSent: The Sent List shows sent messages until selected and deleted.\nAnswered: Shows all the answered calls, and allows deleting the call record\nor saving the DMR ID as a new contact.\nMissed: Shows all the missed calls, and allows deleting a call record or\nsaving the DMR ID as a new contact.\n7.1 Talk Group\nTG List: Will display the talk group (TG) list which has been programmed in\nthe PC software. This list is used as a look-up table to display the contact TG\ninformation when receiving a call.\nNew Contact: Allows to create a new TG."
+    },
+    {
+      "page": 22,
+      "chunk": 2,
+      "text": "Manual Dial: Input the group ID or private DMR ID to access a TG quickly.\nTalker Alias: Allows Alias transmit Set / Alias receive Set.\n7.4.1 Select a Zone\nA Zone is a group of channels grouped together. AT-D168UV DMR radio\nhas 250 Zones. A Zone can have the maximum of 160 analog and/or digital\nchannels.\nOperation 1: Press / directly to switch the zone, the LCD will display\nthe selected zone number or name.\nOperation 2:\n(1) Press (Menu) to enter main Menu.\n(2) Select \"Zone\".\n(3) Select a zone from the zone list, radio will change to the selected zone."
+    },
+    {
+      "page": 23,
+      "chunk": 1,
+      "text": "19 Digital DMR and Analog UHF/VHF Two Way Radio\n7. MAIN MENU FUNCTIONS\n7.5 Scan\nIn the PC software Public Scan list, it allows to save 250 scan lists, and\nto program the required scan lists and write it into radio.\nSwitch the radio to channel mode, as the scan list is only valid in the channel\nmode.\n7.5.1 Turn On Scan\na. Press (Menu) to enter the main Menu.\nb. Select \"SCAN\".\nc. Select \"Scan ON/OFF\".\nd. Select \"ON\", the radio will start scan, press any key to stop scan.\n7.4.2 Add Zone\n7.4.3 Delete Zone\n(1) Press (Menu) to enter main Menu.\n(2) Select \"Zone\".\n(3) Select \"Add Zone\".\n1. Select \"Edit name\"\nInput zone name by keypad, press key to delete. After edit the right\nname, press ����������������������������������������\n2. Select \"Edit Chan\"\nSelect \"Add Chan\" then Select a channel from the list.\n3. Select \"Save\": press key to store the new zone.\n(1) Press (Menu) to enter the main Menu.\n(2) Select \"Zone\".\n(3) Select a Zone from the zone list.\n(4) Select Delete Zone to delete current zone.\n7.5.2 Scan List Operation\na. Press (Menu) to enter the main Menu.\nb. Select \"SCAN\".\nc. Select \"Scan List\".\nd. Select a scan list and press to enter scan list sub menu."
+    },
+    {
+      "page": 23,
+      "chunk": 2,
+      "text": "Select Add Scan List to enter Sub Menu\n1) Select Cur Chan, and press to add current channel to active list.\n2) Add Channel into Scan List\nSelect \"Add Chan\", then select \"channel X\" to add it into scan list."
+    },
+    {
+      "page": 24,
+      "chunk": 1,
+      "text": "20Digital DMR and Analog UHF/VHF Two Way Radio\n7.5.3 Add Scan List\na. Press (Menu) to enter the main Menu.\nb. Select \"SCAN\".\nc. Select \"Scan List\".\nd. Select \"Add Scan List\"\ne. Select \"Add Chan\", to add wanted channels into new scan list.\nf. ��������������������������������������������������������������������������������������������\ng. Select \"Store List\" to save new list.\n3) Edit Scan List Name\n����������������������������������������������������������������������������������������������������������������������������������������������\n4) Store List\n5) Delete Channel from Scan List\nSelect \"Channel X\", then select \"Delete CH\" to remove it from scan list.\n7.6 Roaming\nRoaming function enable users to search the roaming channel list by a\nprogrammed time interval and lock onto the repeater with the strongest signal.\n7.6.1 Roaming On/Off\n����������������������������������������������������������������������������������������������������������������������������������������������������������\nreturn to the off state. ** Manually Roaming is a onetime action only.\n7.6.2 Roaming Zone\nSelect Roam Test Zone: select a Roaming Zone from the list to set it as active"
+    },
+    {
+      "page": 24,
+      "chunk": 2,
+      "text": "zone. You can also scroll down the list of Zones and select Add Channel to\nadd a new channel to the current Roaming Zone and set the parameters\u000f\nSelect Add Channel: Add a new roaming channel to the current zone.\nNew Roam Ch: Allows you modify the RX frequency/TX frequency/CC/TS/CH\nname for the roaming channel. Also allow you remove the roaming channel\nfrom the zone.\nEdit Name: Edit the zone name.\nSelect Zone: Select the roaming zone for the current channel.\nDelete Zone: Delete the roaming zone from the current channel.\n7.6.3 Auto Roaming Settings\nSet the fixed time waiting interval to begin automatic roaming when the\nrepeater cannot be found, roaming will begin at the end of this time.\nFixed Time Set������������������������������������������������������������������������������������������������������������������������������.\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 25,
+      "chunk": 1,
+      "text": "21 Digital DMR and Analog UHF/VHF Two Way Radio\n7.6.4 Repeater Check - Off / On\nTurn on this function will allow the radio to check the repeater status, the\n\"Repeater is out of range\" icon shows if the repeater is not in range.\n7.7 Settings\n7.7.1 Radio Set\n1.Voice Func\n(1) Beep Tone\nBeep On: The radio will beep when you press the keypad.\nBeep Off: No beep when you press the keypad.\n(3) Digi Idle\nSet on if you want a tone when the digital channel is free.\n(4) Ana Idle\nSet on if you want a tone when the analog channel is free.\n(5) Startup Sound\nSet On if you want a tone when powering on.\n(6) Talk Permit\n������������������������������������������������������������������������������������������������������������������������������������������������������������\nat the start of a call.\n(7) D-Reset Tone\nSelect Off or On, digital call has a group call hold time and a private call hold\ntime to prevent the voice missing after the call. When set Digi Call Reset T one\nis On, it will beep when the hold time terminates.\n(8) Max Vol Level\nIndoor: Very low volume, suitable for the indoor use.\nLevel 1-8: Adjustable and set up the maximum volume level.\n(9) Headset Max Vol"
+    },
+    {
+      "page": 25,
+      "chunk": 2,
+      "text": "Indoor: Very low volume, suitable for indoor use.\nLevel 1-8: Set up the maximum vlomue level for earphone. When the radio\nconnect with earphone, it will automatically change to earphone maximum\nvolume.\nStart Roaming:\nFixed Time: Starts timed roaming\nOut of Range : The roaming will be started when the radio cannot find a\nrepeater - \"The repeater is out of range\" icon will appear 3 times, then the radio\nwill perform roaming one time, and return to roaming being off automatically.\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 26,
+      "chunk": 1,
+      "text": "22Digital DMR and Analog UHF/VHF Two Way Radio\n(10) MIC Sound\nIt will allow you set up the microphone audio pitch.\nNormal: Low pitch.\nEnhance: High pitch.\n(11) SMS Prompt\nDifferent prompt options when receiving a new message.\n(12) Call Ring\nDifferent prompt options when receiving a new call.\n(13) DigiMic Level\nDigital mic level selection.\nLevel 1-5: Adjustable in 5 levels, the level 1 has softest TX digital audio and\nthe level 5 has loudest TX digital audio.\nAuto: It helps to make the TX digital audio similar, the loud audio will be\n����������������������������������������������������������������������������������������\n(14) AnaMic Level\nAnalog mic level selection.\nLevel 1-5: Adjustable in 5 levels, the level 1 has softest TX analog audio and\nthe level 5 has loudest TX analog audio.\nAuto: It helps to make the TX analog audio similar, the loud audio will be\n����������������������������������������������������������������������������������������\n(15) Fix Time Mute\nWith the \" Fix Time Mute \" function activated (On) it is possible to mute the\nloud speaker for special time segment.\nThe duration of the \"Mute Time\" may be set by the CPS Optional Setting\nOther Mute Timing.\n(16) TX NR"
+    },
+    {
+      "page": 26,
+      "chunk": 2,
+      "text": "Enabling the TX noise reduction function can reduce background noise and\nambient noise in transmitted audio.\n(17) Ana RX NR\nEnabling the RX noise reduction function can reduce background noise and\nambient noise in received analog audio.\n(18) RX AGC\nEnable the RX AGC function, it helps to make the RX audio similar, the loud\n��������������������������������������������������������������������������������������������������������������������\n2.Display Func\n(1) Back Light\nLCD backlight intensity is adjustable in 5 steps\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 27,
+      "chunk": 1,
+      "text": "23 Digital DMR and Analog UHF/VHF Two Way Radio\n(2) Night Mode\nWith this function ON, and when the radio is in standby, it will reduce the\nbacklight to level 1, no matter what is the backlight brightness setting.\n(3) Light Time\nAlways: The backlight is always on.\n5Sec-5Min adjustable.\nNote: This function is valid when turning off the power save.\n(4) Ch. Name\nCH name: The radio will work in channel mode and display the channel name,\nand then the programmed VFO/ MR key is not valid.\nFrequency: The radio will work in VFO mode and display the frequency, which\nallows the programmed VFO/MR key to switch the VFO and Memory channels.\n(5) Language\nChoose the Chinese or English.\n(6) Menu Exit Time\n50Sec-60Sec: When enter the menu, the radio will stay at the menu in the set\ntime. When the time is reached, the radio will auto exit the menu.\n(7) Start Display\nPicture: The radio will display an AnyT one picture when powered on.\nCharacter: The radio will display the characters set up in PC software when\npowered on.\nCustomer's Pic: The radio will display the picture uploaded by PC software. In\nCPS To o l Boot Image, it will allow you to upload a Power-on Picture in"
+    },
+    {
+      "page": 27,
+      "chunk": 2,
+      "text": ".bmp or .jpg format, the resolution of the picture shall be 128*160.\n(8) CH Background\nDefualt Picture: In standby, the radio will display the default picture.\nCustomer's Pic: The radio will display the picture uploaded by PC software. In CPS\nT ool Standby BK Picture, it will allow you upload a standby background picture.\n(9) CHG Font Color\nSet the text color of the standby interface. T otal of 8colors available for selection.\n(10) CH Color A\nSet color for the band A channel display.\n(11) CH Color B\nSet color for the band B channel display.\n(12) Zone Color A\nSet color for the band A zone display.\n(13) Zone Color B\nSet color for the band B zone display.\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 28,
+      "chunk": 1,
+      "text": "24Digital DMR and Analog UHF/VHF Two Way Radio\n(14) Main Ch\nChannel A: The upper displayed channel will be set to become the main channel.\nChannel B: The lower displayed channel will be set to become the main channel.\n(15) Sub Ch Off\nSub Channel On: Turns on the sub channel, and the radio will display both channel.\nSub Channel Off: Turns off the sub channel, and the radio will display the\nmain channel only.\n3.Key Func\n(1) Key Lock\nManual Lock: Long press the key to lock the keypad. Press key, then\npress the key to unlock the keypad.\nAuto Lock: Radio will auto lock the keypad when standby for a while. Press\nkey, then press the key to unlock the keypad.\nNote: To get the key lock function working, some options should be set ON in\nCPS Optional Setting ��������������������������������������\nKnob Lock: Set On to lock the knobs.\nKeypad Lock: Set On to lock the keypad.\nSide Key Lock: Set On to lock the PF1,PF2.\nForced Key Lock: Set On to prevent the key from unlocked. When this function\nis ON, the keys are not able to unlock manually.\n(2-11) Key PF1, PF2\nPF1 key and PF2 key are programmable, it allows you assign the key as short,"
+    },
+    {
+      "page": 28,
+      "chunk": 2,
+      "text": "Long1 or Long2 function. Please refer to page 10&11 for the key functions.\nShort: Click on the programmed key to activate the assigned function.\nLong 1: Hold pressing the programmed key until the radio emits a \"Du\" beep,\nrelease the key to activate the assigned function.\nLong 2: Hold pressing the programmed key, do not release the key even when\nthe radio emits the \"Du\" beep, the radio will activate the assigned function.\n4.Other Func\n(1) Auto Power Off\nAllow to set automatic power off when not used for a period of 10 minutes,\n30minutes, 1 hour or 2 hours of inoperation.\nOff: Turn off the function.\n(2) TX Timer\n30Sec-240Sec: The TX will be limited for the set time. When this time is\nreached, the radio will auto stop transmission.\nOFF: Turn off the TX time limit, and there is no limit for the transmission time.\n(3) TOT (Transmitter Out Timer) Predict\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 29,
+      "chunk": 1,
+      "text": "25 Digital DMR and Analog UHF/VHF Two Way Radio\nWith the \"TOT Predict\" function activated (On), 5 seconds before the TOT\nexpiring, a beep sound is preventing that soon the transmitting mode will be\ninterrupted.\n(4) TxPow AGC (Automatic Level Control)\nWith the \"TxPow AGC\" function activated (On), while receiving extremely\nstrong signal, the TX power will automatically reduce the level of the TX Power\nproportionally to the strength of the RX signal.\n(5) Freq Step\n2.5K,5K,6.25K,10K,12.5K,20K,25K,30K,50K, total of 9 frequency steps.\n(6) Ana SQ Level\nAdjusts the squelch level to receive signal with different signal strength, and a\ntotal of 5 levels offered. This function is only valid for analog channel.\n(7) Power Save\nTurn on the function to extend the battery life.\nSave 1:1, work 30ms, dormant 30ms.\nSave 2:1, work 60ms, dormant 30ms\nWhen turn on the power save, it may not receive the message in time.\n(8) TBST Sel\nTBST frequency is used to activate some dormant repeaters, 1000Hz,\n1450Hz,1750Hz, 2100Hz a total of 4 options are offered.\nPress PTT and PF1 key together to transmit the TBST tone.\n(9) VOX\nEnable the VOX, you can speak into the microphone to start transmitting"
+    },
+    {
+      "page": 29,
+      "chunk": 2,
+      "text": "instead of pressing the [PTT] key. A total of 3 levels are provided.\n(10) VOX Delay\nWhen the VOX is enabled, set up the VOX delay to help to extend the\ntransmission time to avoid stopping a transmission too early. 0.5sec-3sec , a\ntotal of 26 times offered.\n(11) Scan Mod\nSCM TO: When scanning and stopping for a signal, stays at the channel 5sec\nbefore resuming the scan.\nSCM CO: When scanning and stopping for signal, stays at the channel until\nthe signal disappears, and resumes scan 2sec later.\nSCM SE: When scanning and stopping for a signal, will terminate the scan.\nThis function is only valid for a VFO scan.\n(12) DTMF Speed\nOffers DTMF encode speed which will help the receiver decode successfully,\n50~500ms are the options.\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 30,
+      "chunk": 1,
+      "text": "26Digital DMR and Analog UHF/VHF Two Way Radio\n7. MAIN MENU FUNCTIONS\n(13) FM Radio\nTurn on or off the FM radio.\n(14) FM Radio Moni\nRadio Mon On: When FM radio is used, you can still receive or transmit on the\nchannel.\nRadio Mon Off: When FM radio is used, the radio will not permit a transmission\nor reception.\n(15) Start Up Pwd\nOn: Set up the password for start up. You need to input the password to power\non the radio.\nOff: No password is required for the radio power on start up.\nThe password shall be set up in CPS Optional Setting Power on\nPower on Password Char.\n(16-17) AuRepeater A or B (For VFO A or B)\nTurn on the Auto Repeater function, the TX frequency in VFO mode will auto\nincrease or reduce frequency base on the set up offset frequency in CPS.\nOff: Turn off the function.\nPositive: TX frequency= RX frequency + Offset frequency.\nNegative: TX frequency= RX frequency - Offset frequency.\n(18) Weather Alarm (only US version)\nTurn On or Off the Weather Alarm function.\n(19) SMS Format\nM-SMS: Allows SMS text communication with Motorola DMR radio.\nH-SMS: Allows SMS text communication with Hytera DMR radio.\nDMR Standard: Allows SMS text communication with radios set SMS in ETSI"
+    },
+    {
+      "page": 30,
+      "chunk": 2,
+      "text": "DMR standard format.\n(20) CTC Ste (Squelch Tail Eliminate)\nT ail eliminate is valid for simplex radio to radio only.\nAt the end of the analog call, the radio will beep 'chap' noise when detect there\nis no signal, and then turn the audio off.\nIn order to avoid hearing the noise, you can set this function for the analog\nchannels with CTCSS signaling.\n(21) DCS Ste(Squelch Tail Eliminate)\nT ail eliminate is valid for simplex radio to radio only.\nAt the end of the analog call, the radio will beep 'chap' noise when detect there\nis no signal, and then turn the audio off.\nIn order to avoid hearing the noise, you can set this function for the analog .\n(22) No-Signal Ste"
+    },
+    {
+      "page": 31,
+      "chunk": 1,
+      "text": "27 Digital DMR and Analog UHF/VHF Two Way Radio\n7. MAIN MENU FUNCTIONS\n7.7.2 Chan Set\nChannel set menu Route: Main Menu Settings Chan Set. The channel set\nmenu will change accordingly to the channel type. When the channel type is\ndigital, it will automatical hide the analog menus.\u000f\nT ail eliminate is valid for simplex radio to radio only.\nAt the end of the analog call, the radio will beep 'chap' noise when detect there\nis no signal, and then turn the audio off.\nIn order to avoid hearing the noise, you can set this function for the analog\nchannels without signaling.\n(23) Time Zone\nSet up the time zone of your location.\n(24) Time Display\nSet On to show the date/time on the display.\nSet Off to hide the date/time on the display.\n(25) Date Time\nTime Set: Allows to set up the date and time manually. Use the / key to\nset the current year. Move to the month by pushing the [PF1] key . Set the\nmonth, and use the [PF1] key to move forward each step. Once done, click\nthe Menu key to save the date and time.\nGPS Check (optional): When the GPS is positioning successfully, enter this\nmenu, select GPS check to do the date & time correction automatically."
+    },
+    {
+      "page": 31,
+      "chunk": 2,
+      "text": "Format: Set the date display format to yy/mm/dd or dd/mm/yy.\n(26) TxPreamble\nThe radio transmits preamble before data,SMS or private call is sent. This is\nuseful to wake up the receiver from battery-saving mode or stop the receiver\nfrom scanning before transimitter sending the data.\nThis settings allows to set the duration of the preamble tranmission.\n(27) Header RPT\nBefore the voice packet is transmitting, the radio will send a voice header with\n��������������������������������������������������������������������������\nRepeat sending voice header will help to synchronize the receiving radio and\nimprove the success rate of communication. This setting allows you set the\nvoice header repeat times.\n(28) CRC ignore\nSet ON to enable the DMR CRC ignore function.\nIt allows the DMR vocoder selectively ignore the CRC result of Voice LC\nHeader, and the radio can receive more signals."
+    },
+    {
+      "page": 32,
+      "chunk": 1,
+      "text": "28Digital DMR and Analog UHF/VHF Two Way Radio\n※ Chan Set (Digital Channel)\n(1) New Chan\nAllows to create a new channel and save the set up to the new channel.\na. Select \"New Chan����������������������������������������������������������������������������������������\n������������������������������������������������������������������\n������������������������������������������������������������������������������������������������������������������������������������������������������������������\n(2) Delete Chan\nAllows to delete the current channel.\na. Select \"Delete Chan\",the radio will remind \"Delete? \"\n������������������������������������������������������������������������������������������������������������������\nNote: After deleting one channel, the radio will move to the next channel.\n(3) Channel Type\nA-Analog : Set up to analog channel\nD- Digital : Set up to digital channel\nA+D TX A: Mixed analog, allow receive analog and digital signal, TX is analog.\nD+A TX D: Mixed digital, allow receive analog and digital signal, TX is digital.\n(4) TX Power\nSet up the TX power for current channel.\n(5) Offset\nPress / to adjust offset frequency.\n(6) Band Width"
+    },
+    {
+      "page": 32,
+      "chunk": 2,
+      "text": "Only narrow band 12.5KHz for digital channel.\n(7) RX Freq\nInput the RX frequency by keypad, click the Menu key to save, press [Exit] key\nto return.\n(8) TX Freq\nInput the TX frequency by keypad, click the Menu key to save, press [Exit] key\nto return.\n(9) Talk Around\nWhen the TX radio and RX radio both are set up with T alk Around on, they can\ncommunicate directly without a repeater. The analog channel will use the RX\nfrequency as TX/RX frequency, the RX CTCSS/DCS decode as TX CTCSS/\nDCS encode.\n(10) Name\nAllows to reset the channel name, this function is only valid in channel mode.\n(11) TX Allow\nAlways: Always allow transmit\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 33,
+      "chunk": 1,
+      "text": "29 Digital DMR and Analog UHF/VHF Two Way Radio\nChannel Free: Allow transmit when the channel is free\nDifferent CC: Allow transmit when receive matched signal but different color code.\nSame CC: Allow transmit when receive matched signal and same color code.\n(12) TX Prohibit\nTX ON: Will allow transmit on the current channel.\nTX OFF: Will not allow transmit on the current channel.\n(13) Radio ID\nIn Digital channel, it will show the DMR ID which must be programmed in the\nPC software Digital DMR ID list DMR ID. Allows edit and select an ID\nfor the channel, each channel allows one DMR ID.\nIn Analog channel, it will show the radio 5T one self ID or DTMF self ID which\nis programmed in the PC software Analog 5T one Self ID or DTMF Self ID.\n(14) Color Code\nThe digital channel should have the same color code for communication as\ndefined by the repeater to be used; which can be programmed in the PC\n������������������������������������������������������������������������\n(15) Time Slot\nSet up Slot 1 or Slot 2 for the current channel.\n(16) Digi Encrypt\nWith the digital encryption, the communication will be confidential. A total"
+    },
+    {
+      "page": 33,
+      "chunk": 2,
+      "text": "of 32 digital encryptions is offered, and it can be programmed in the PC\n������������������������������������������������������������������������\n(17) Encrypt Type\nChoose normal encryption or enhanced encryption type.\n(18) RX Group List\nIt will allow edit the RX Group List and assign a new RX Group List to the\nchannel.\nSelect Cur List: Select the current RX Group List.\nAdd Group: Add a TG to the current RX Group List.\nRemove Group: Remove a TG from the current RX Group List.\n(19) Work Alone\nIn the PC software Public Alarm settings Work Alone, you have to set\nup the response time, warning time and response method initially.\nTurn on the work alone function for the current channel. When the radios\npredetermined time has been reached for the alone working time, the radio\n������������������������������������������������������������������������������������������������������������������������������������������������������\npushing the programmed work alone key to confirm continuing work alone,\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 34,
+      "chunk": 1,
+      "text": "30Digital DMR and Analog UHF/VHF Two Way Radio\notherwise, the radio will start its alarm and send the alarm on the channel\nwhen reaching its preset response time.\n(20) CH Ranging\nIn standby, if the call contact type for a channel is \"Private call\", The radio will\nautomatically start ranging function when turned to this channel. The other\nradio's location will be showed on screen at intervals.\n(21) APRS Receive\nTurn APRS Receive, if both radio GPS is positioned, the radio will display the\nother radio's distance and position when radio is receiving.\n(22) SMS Forbid\nSet On to prohibit the radio receive SMS.\n(23) DataAck Forbid\nSet On to ignore the repeater data service request. The radio will not reply to\n����������������������������������������������������������������������������������������������������������������������������������������������������������\n(24) Idle TX\nWith \"Idle TX\" ON, when a repeater has one time slot occupied, the radio will\nautomatically switch to the other time slot for transmission. If both time slots are\noccupied, the radio will beep to remind that it can not connect to the repeater.\nNotice: When you use this function, make sure both the TX and RX radio"
+    },
+    {
+      "page": 34,
+      "chunk": 2,
+      "text": "have the \"Idle TX\" function turned ON.\n(25) DMR Mode\nSelect different DMR modes for digital channel. Recommend setting is\n\"Repeater\" for normal use.\nRepeater: Allows the radios communicate through repeater or hotspot, same\nslot for TX and RX.\nDMO/Simplex: Only for the radio direct communicate use,without repeater\nor hotspot. Allows the channel has different TX/RX frequency as long as the\nother radio has the matched RX/TX frequency.\nDCDM/Double Slot: Only for the radio direct communicate use,without\nrepeater or hotspot.The channel should have same TX/RX frequency, time slot\nwill be used to distinguish channels, i.e you can ceate two channels at same\nTX/RX frequency but different time slot.\nDCDM/TS split: Allows the radios communicate through repeater or hotspot,\ndifferent time slot for TX and RX use. The slot in channel is for RX use, TX will\nuse reversed slot automatically.\n7. MAIN MENU FUNCTIONS"
+    },
+    {
+      "page": 35,
+      "chunk": 1,
+      "text": "31 Digital DMR and Analog UHF/VHF Two Way Radio\n7. MAIN MENU FUNCTIONS\n※ Chan Set (Available in Analog Channel only)\nWhen the channel type is analog, it will automatically hide the digital menu,\nThe below listed menus are for analog channel only, unlisted menus are are\nthe same as the digital channel, please refer to Chan Set (Digital Channel).\n(4) TCDT\nSet up the CTCSS/DCS code for the TX.\n(5) RCDT\nSet up the CTCSS/DCS code for the RX.\n(6) RTCDT\nSet up the CTCSS/DCS code for both TX and RX\nCTCSS code: 62.5Hz~254.1Hz, a total of 51 groups\nDCS code: 000N~7771, a total of 1024 groups.\n(7) Optional Signal\nAllows the setup of DTMF/5TONE/2TONE encode and decode for the Analog\nchannels.\n(10) Squelch mode\nWhen the analog channel is set up for both CTCSS/DCS decoding and\noptional signaling, you can set up the RX condition in this menu.\nSQ: You can hear the call once the channel receive matched carrier.\nCDT : You can hear the call when receive matched CTCSS/DCS signal.\nTONE: You can hear the call when receives a matched signaling.\nC&T : You can hear the call when receives a matched CTCSS/DCS and\nmatched signaling.\nC|T : You can hear the call when receives a matched CTCSS/DCS or."
+    },
+    {
+      "page": 35,
+      "chunk": 2,
+      "text": "(11) Band Width\nChoose wide band or narrow band for the analog channel.\n(12) Reverse\nWhen this function is enabled, the RX frequency, TX frequency and CTCSS/\nDCS encode/decode will be reversed.\n(13) Compander\nEnable this function to reduce background noise and enhance audio clarity,\nespecially in long range communication.\n(14) Scrambler\n��������������������������������������������������������������������������������������������������������������������������������������������\n(26) Slot Suit\nTurn on Slot suit, the radio will receive calling from both slot, and will be able\nto call back in the corresponding slot."
+    },
+    {
+      "page": 36,
+      "chunk": 1,
+      "text": "32Digital DMR and Analog UHF/VHF Two Way Radio\n7. MAIN MENU FUNCTIONS\nOther radios at the same frequency will receive only the distorted noises.\n(19) Busy Lock\nAlways: Always allows transmissions\nRL: Will not allow transmit when receiving matched carrier but unmatched\nCTCSS/DCS.\nBU: Will not allow transmit when receiving matched carrier.\n(21) OWN ID\nWhen the analog channel set up with 5T one or DTMF , you can check the radio\nID number in this menu. The ID number should be set up in PC software\nAnalog 5T one or DTMF self ID.\n(22) DTMF Enc\nSet a DTMF ID as the default call ID for the current channel.\nPress the PTT key to transmit the selected DTMF ID.\nEdit the DTMF ID in Menu or with the PC programing software.\n(23-24) 2Tone Enc\nSet a 2T one as the default call ID for the current channel.\nPress the [PTT] key to transmit the selected 2T one.\nEdit the 2T one in the PC programing software before it can be selected.\n(25) 5Tone Enc\nSet a 5T one as the default call ID for the current channel.\nPress the [PTT] key to transmit the selected 5T one.\nEdit the 5T one in the PC programing software before it can be selected.\n(26) 5Tone BOT"
+    },
+    {
+      "page": 36,
+      "chunk": 2,
+      "text": "Set ON to send the 5T one encode ID when press the [PTT] key.\n(27) 5Tone EOT\nSet ON to send the 5T one encode ID when release the [PTT] key.\n(28) QDC1200\nSet a QDC1200 as the default call ID for the current channel.\nPress the [PTT] key to transmit the selected QDC1200.\nEdit the QDC1200 in the PC programing software before it can be selected.\n(29) PTT ID\nT o get the PTT ID working, the optional signal shall be set to DTMF or 5T one,\n����������������������������������������������������������������������������������������������������������������������������\nOFF: OFF\nStart: Start, press PTT key to send a series of DTMF code or 5T one code.\nEnd: End, release PTT key to send a series of DTMF code or 5T one code.\nStart&End: Start and end, press and release PTT key to send a series of\nDTMF code or 5T one code."
+    },
+    {
+      "page": 37,
+      "chunk": 1,
+      "text": "33 Digital DMR and Analog UHF/VHF Two Way Radio\n7.8.2 Play the Record\na. Press (Menu) to enter main Menu, press / key to Record.\nb. Select List����������������������������������������������������������������������������������������������������������������������������������������\nc. Select a Record to see the Detailed Information.\nd. Press Select to choose the record option.\n1) Play, it will play one record at a time, you can press / key to switch the\nrecording without return to previous menu.\n2) Loop Playback, it will play all records in a loop.\n7.8.3 Send the Record\na. Press (Menu) to enter main Menu, press / key to Record.\nb. Select Record List to enter Record list, select a Record list to enter the\n����������������������\nc. Select a Record to see the detail information.\nd. Select Send, and it will display the Contact list or Manual Dial.\ne. Select Contact list to choose a contact, press select to send the Record.\nf. Select Manual Dial, input the DMR ID, press key to switch group ID or\nprivate DMR ID, press select to send the Record.\n7. MAIN MENU FUNCTIONS\n7.8.4 Recording Manually\nIn the PC software, Public Optional Setting Key function, program a key\nas Record.\n7.8 Record"
+    },
+    {
+      "page": 37,
+      "chunk": 2,
+      "text": "The voice record is designed for security use purpose. Each call will\n��������������������������������������������������������������������������������������������������������������������������������������\nhours recording in DMR or analog mode.\n7.8.1 Turn On/ Off the Recording\na. Press (Menu) enter main Menu, press / key to Record.\nb. Select Record, then\n������������������������������On/Off, select on or off to turn on or off the recording.\n7.7.3 Device Info\nShow the Radio ID, Radio name, serial number, model name, frequency\nrange, firmware version, radio data version, latest program date, picture\nversion, language version etc."
+    },
+    {
+      "page": 38,
+      "chunk": 1,
+      "text": "34Digital DMR and Analog UHF/VHF Two Way Radio\n7.9.2 GPS Mode\n7.9.3 GPS Roaming\nSelect GPS work mode for positioning use.\nGPS mode is US Global Positioning System.\nBDS mode is China BeiDou Navigation Satellite System.\nGLONASS mode is Russia GLONASS Navigation Satellite System.\nGPS Roaming function allows the radio auto switches to a zone when GPS\npositioning is within the preset radiation radius of coordinates.\nTo g e t t h i s f u n c t i o n w o r k i n g , y o u n e e d t o s e t t h e G P S r o a m i n g p a g e i n t h e\n������������������\n7.9.1 Turn on GPS\n7.9 GPS Positioning Function(optional with installed GPS)\na. Press (Menu) to enter the main Menu.\nb. Select \"GPS\".\nc. Select \"GPS On\".\n7. MAIN MENU FUNCTIONS\n» If the GPS is not positioning, it will display “No Fixed Position”, and\nthe GPS icon shows a grey color. Move the radio to an open window\nor outdoors, and it will take a few minutes to connect to the GPS\nSatellites.\n7.9.4 GPS Info\nMethod 1: Check GPS info from Menu\nPress (Menu) key to enter Main Menu, select \"GPS\", then select \"GPS\nInfo\".\nMethod 2: Check GPS info from programmed key\nIn the PC software, Public Optional Setting Key function, program a key"
+    },
+    {
+      "page": 38,
+      "chunk": 2,
+      "text": "as \"GPS Info\", then press the programmed key to check the GPS info.\na. Press the programmed Record key, and the radio will start the recording,\nand speak into the microphone.\nb. Select Record Play, and the radio will play the record.\nc. Select Record Send, and the radio will display Contact list or Manual Dial.\nd. Select Contact list to choose a contact, and press select to send the\nRecord.\ne. Select Manual Dial, input the DMR ID, press key to switch group ID or\nprivate ID, press select to send the Record."
+    },
+    {
+      "page": 39,
+      "chunk": 1,
+      "text": "35 Digital DMR and Analog UHF/VHF Two Way Radio\n7.9.5 Send GPS Information\na. When the GPS is positioning successfully, the GPS icon shows a red color.\nFollow the above step to check the GPS info, press the edit key to T ext edit.\nb. ��������������������������������������������������������������������������������������������������������������������������������������������������������\ninfo will be saved as a draft message.\nc. Choose Send and it will display Contact list or Manual Dial.\nd. Select Contact list to choose a contact, press select to send the GPS info.\nor\ne. Select Manual Dial, input the DMR ID, press key to switch group ID or\nprivate ID, press to send the GPS info.\n7.11 APRS Location Reporting(Optional, supported by GPS)\n7.11.1 Upload Type\nNone: No APRS.\nSel A Aprs: Select analog APRS.\nSel D Aprs: Select DMR APRS.\n7.10.1 Location\nGPS: The satellite function is depending on GPS location.\n������������������������������������������������������������������������������������������������������������������������������������������������������������\n����������������������������������������������������������������������������������\n7.10.2 Satellite"
+    },
+    {
+      "page": 39,
+      "chunk": 2,
+      "text": "The radio will provide a predict list for the satellites which will transit recently.\nSelect a satellite to check the frequency and transit time. Press PTT button to\ntransmit to the satellite.\n7.11.2 Ana APRS\nPTT Upload: Set the PTT transmit method.\n● Off: Not transmit APRS.\n● Tx Start: Transmit analog APRS when press the PTT .\n● TX End: Transmit analog APRS when release the PTT .\nTX Power: Set the transmit power.\nBand Width: Set the band width for transmitting.\nTX frequency: Set the transmit frequency.\n7. MAIN MENU FUNCTIONS\n7.10 Satellite\nThis feature allows the radio to communicate with the satellite during\nits transit."
+    },
+    {
+      "page": 40,
+      "chunk": 1,
+      "text": "36Digital DMR and Analog UHF/VHF Two Way Radio\n7.11.3 Digi APRS\nPTT Upload: Set the PTT transmit method.\n● Off: Not transmit APRS.\n● On: Transmit DMR APRS when release the PTT .\n7.11.4 Digi APRS Info\nThe received APRS information will be saved in the radio for look back use.\nClick on \"Digi APRS Info\" will show the received APRS information.\nClick on \"Delete All\" will clear the information.\n7.11.5 Intervals Set\nThis function allows you to set the analog APRS or DMR APRS auto transmit\n����������������������������\n7.11.6 Beacon\nGPS Beacon: The APRS will transmit the GPS data, only if the GPS is set to\n��������������������������������������������������������������������������������������������������������������������������������\nFixed Beacon : The APRS will transmit the fixed beacon data. Someone\n��������������������������������������������������������������������������������������������������������������������������������������������������\n��������������������������������������������������������������������������������������������.\nNote: More setup are available by the PC software. CPS-Tools-Options-"
+    },
+    {
+      "page": 40,
+      "chunk": 2,
+      "text": "APRS��������������������������������������������������������������������������������������������������������������������������������\nthe left Digital menu.\n(APRS is a registered trademark of Bob Bruninga, WB4APR)\n7. MAIN MENU FUNCTIONS\nReport Channel: Allow user to select a channel to transmit the DMR APRS,\n������������������������������������������������������������������������������������������������������������������������\nUpload Slot: Allow user to select a slot to transmit the DMR APRS\u000f\n● Channel Slot: It uses the slot of current channel\n● Slot 1: Use slot 1\n● Slot 2: Use slot 2\nUpload ID: Allow user to set a DMR ID to receive the DMR APRS, it can be a\nprivate ID or a group ID.\nSignal Path: Set the WIDE format signal path.\nTX Text������������������������������������������������������������������������������������������������������������������"
+    },
+    {
+      "page": 41,
+      "chunk": 1,
+      "text": "37 Digital DMR and Analog UHF/VHF Two Way Radio\n7.12.1 Response and Save a call in Digital Monitor Mode\nDuring Digital Monitor, when receiving a call with unmatched ID, press\nkey, the screen will display \" Monitor Response Setup Successfully \", press\n[PTT] key will reponse to the call.\nPress key, the radio will remind you choose a Zone, press / key to\nchoose a Zone, press select key to save the new channel to the Zone.\n7. MAIN MENU FUNCTIONS\n7.12 Digital Monitor\na. Press (Menu) key to enter main menu, press / key to choose Digi\nMoni function.\nb. Press Select to enter Digi Moni menu, press / key to choose a sub\nmenu.\n1) On/Off\nOff: Turn off Digital Monitor\nSingle Slot: Monitor the current Slot\nDouble Slot: Monitor Slot 1 and Slot 2\n2) DigiMoni Cc\nAny Cc: Monitor any color code\nSame Cc: Monitor the same color code\n3) DigiMoni Id\nAny Id: Monitor any TG\nSame Id: Monitor the same TG\n4) Slot Hold\nOff: Turn off the slot hold\nOn: Turn on the slot hold\nRecommend to turn on slot hold when monitor double slot (Slot 1 and Slot 2),\nwhen the signal disappears in one slot, instead of switching to the other slot at\nonce, the radio will hold for some seconds and wait for the audio drop."
+    },
+    {
+      "page": 41,
+      "chunk": 2,
+      "text": "c. Press Select to enter the sub menu and set up."
+    },
+    {
+      "page": 42,
+      "chunk": 1,
+      "text": "38Digital DMR and Analog UHF/VHF Two Way Radio\na. ����������������������������������������������������������������������������������������������������������\nb. Then power it on while holding the [PTT] and the [PF1] button below the\nPTT at the same time.\nc. The radio will start up with a note on the display – “Are you sure you\nwant to initialize radio?”\nPress Exit to exit the reset and power on the radio.\n��������������������������������������������������������������������������������������������������������������������������������������������\nnote displaying – Initialize Radio.\nd. After a re-start the radio will display the setting of time zone and the date\nand the time. Use the up-down key to set the current year. Move to the\nmonth by pushing the PF1 key. Set the month, and use the PF1 key to\n����������������������������������������������������������������������������������������������������������������������������������������\ndate and time.\nPlease remember set up the time zone to avoid the date/time error.\nMake sure the codeplug is saved to the PC(CPS) before you do the update\nand reset. The codeplug will be eliminated and needs to be installed in the\nradio.\n8. RESET"
+    },
+    {
+      "page": 43,
+      "chunk": 1,
+      "text": "39 Digital DMR and Analog UHF/VHF Two Way Radio\nProblems Solutions\nThe radio cannot be switched\non or no display after being\nswitched on.\nA. Battery pack may not be installed\nproperly. Remove the battery pack\nand install it again.\nB. Battery power may be insufficient.\nRecharge or replace the battery pack.\nThe battery doesn't last very\nlong after charging.\nThe battery is defective; please replace it\nwith a new battery pack.\nCannot talk to or hear other\nmembers in your group.\n1.Make sure the frequency and CTCSS\nare the same as other members.\n2.Make sure you are within range, and\nnot too far away from your member.\n3.Make sure you are set in correct digital\nmode, and frequency.\n4.In digital mode, make sure to set\ncorrect code and encrypt group is used\nin current channel.\n5.In digital mode, make sure to set\ncorrect receiving contacts and receiving\ngroup to be used.\nOther voices from\nnon-group members are heard\non the channel.\nAnalog: Change the CTCSS/DCS\nT one, and make sure to change the tone\non all radios in your group.\n9. TROUBLE SHOOTING GUIDE"
+    },
+    {
+      "page": 44,
+      "chunk": 1,
+      "text": "40Digital DMR and Analog UHF/VHF Two Way Radio\n10. PROGRAMMING GUIDE\nMultiple Radio ID’s\nAmateur DMR-MARC\nAnytone AT-D168UV radios ship from the manufacturer “Keypad” locked per\nFCC rules.\nYou can press the (Menu) key and the (star) key to unlock the keypad\n������������������������������������������������������������������������������������������������������������������������������������������������������������\nradio to your computer and the CPS software for programming\u000f\nThe programming software and codeplug programming guide are available for\ndownload from Anytone website: www.anytone.net\n����������������������������������������������������������������������������������������������������������������������������������������������������\n����������������������������������������������������������������������������������������������������������������������������������������������������������\nas it contains the default programming and settings. In addition, after you\n������������������������������������������������������������������������������������������������������������������������������������������������"
+    },
+    {
+      "page": 44,
+      "chunk": 2,
+      "text": "������������������������������������������������������������������������������������������������������������\nThe AT-D168UV radio will allow multiple DMR Radio ID numbers to be used\nwith the radio. This feature will allow one radio to be used for example as a\nCommercial Radio with its own DMR ID, and at the same time also be used as\nan Amateur radio with another DMR ID.\nIn the PC software, Digital/ Radio ID List, you can enter your Department Unit\nNumber or Amateur Radio callsign.\nFor the best Amateur DMR experience obtain a subscriber ID from one of\nmany available Amateur Radio sources. A U.S. Amateur can obtain a DMR ID\nFrom:\nhttps://www.radioid.net/cgi-bin/trbo-database/register.cgi\nFor DMR repeaters in your area please see: www.repeaterbook.com\nWorld DMR repeater network map:\nhttps://www.repeaterbook.com/index.php/repeater-database\n������������������������������������������������������������������������������������������������������������������������������\nhttps://brandmeister.network/?page=lh"
+    },
+    {
+      "page": 45,
+      "chunk": 1,
+      "text": "41 Digital DMR and Analog UHF/VHF Two Way Radio\nThe AT-D168UV DMR radios contain a separate database memory for\nimporting and displaying Amateur DMR individual IDs, call sign and user\nname in comma-delimited format (.csv)\nPlease reference in the programming guide for import and export database\noperations detailed.\nUser List Contact Database: https://ham-digital.org/status/\nWorldwide Amateur Contact Database\n10. PROGRAMMING GUIDE"
+    },
+    {
+      "page": 46,
+      "chunk": 1,
+      "text": "42Digital DMR and Analog UHF/VHF Two Way Radio\nThe Anytone website provides additional information about obtaining service\nor support for the Anytone line of two-way radios and accessories. Visit: www.\nanytone.net\nWarning Notes\nEvery effort has been made to ensure that the information in this document is\ncomplete, accurate, and up to-date. Anytone Radio assumes no responsibility\nfor the results of errors beyond its control. The manufacturer of this equipment\nalso cannot guarantee that changes in the equipment made by non-authorized\nusers will not affect the information in it.\nFCC Licensing Information\nThis Anytone radio operates on Commercial / Land Mobile frequencies which\nrequire a license from the Federal Communications Commission (FCC) for\nbusiness, personal, education and recreational use. T o obtain forms, call the\nFCC forms hotline at: 1-800-418-3676 or go to http://www.fcc.gov\nFor questions concerning commercial licensing, contact the FCC at\n1-888-CALL-FCC (1-888-225-5322).\n11. ON-LINE SERVICE AND SUPPORT"
+    },
+    {
+      "page": 47,
+      "chunk": 1,
+      "text": "43 Digital DMR and Analog UHF/VHF Two Way Radio\nThe Anytone AT-D168UV DMR handheld transceiver has been carefully\ndesigned to provide you with years of safe, reliable operation. As with\nall electrical equipment, however, there are a few basic precautions you\nshould take to avoid hurting yourself or damaging the radio:\n������������������������������������������������������������������������������������������������������������������������������������������������������\nfuture reference.\n����������������������������������������������������������������������������������������������������������������������������������������������������������\nowner’s manual.\n��������������������������������������������������������������������������������������������������������������������������������������\nantenna or antenna terminal. Grasp the handheld by its base (not the\nantenna) when you need to place or remove it.\n��������������������������������������������������������������������������������������������������������������������������������������������������������\nparts of the body, while transmitting. Anytone radios will perform best, if"
+    },
+    {
+      "page": 47,
+      "chunk": 2,
+      "text": "you speak 2-4 inches away from the microphone and the radio is vertical.\n������������������������������������������������������������������������������������������������������������������������������������������������\n����������������������������������������������������������������������������������������������������������������������������������������������������������\nexplosive atmosphere.\n������������������������������������������������������������������������������������������������������������������������������������������������\n��������������������������������������������������������������������������������������������������������������������������������������\n����������������������������������������������������������������������������������������������������������������������������������������������������\nheavy environments, however avoid exposing it to extremely hot or cold\ntemperature (out of the range between –20°C to +55°C). Do not expose\nthe transceiver to excessive vibrations as well as dusty or rainy locations.\n��������������������������������������������������������������������������������������������������������������������������������������������������������"
+    },
+    {
+      "page": 47,
+      "chunk": 3,
+      "text": "routine maintenance described in this handbook). It may cause damage\nto the radio transceiver and void your warranty requiring extensive repair\nwork. Always contact your local dealer for assistance.\n����������������������������������������������������������������������������������������������������������������������������������\naccessories may seriously damage your handheld transceiver and void\nyour warranty.\n����������������������������������������������������������������������������������������������������������������������������������������������������������������\nimmediately dry it by a soft and clean cloth.\n��������������������������������������������������������������������������������������������������������������������������������������������������������������\nthe paragraph “Care and maintenance”.\nSAFETY"
+    },
+    {
+      "page": 48,
+      "chunk": 1,
+      "text": "44Digital DMR and Analog UHF/VHF Two Way Radio\n����������������������������������������������������������������������������������������������������������������������������������������������������������\nor purse with loose coins. This could result in short circuiting the battery.\n��������������������������������������������������������������������������������������������������������������������������������������������\nsupplied battery charger (AC adapter). If you are not sure, check with your\nauthorized Anytone dealer.\n������������������������������������������������������������������������������������������������������������������������������������������������\nor place anything on it as this could result in a damaged charger power\ncord. This product complies with the requirements of the Council Directives\n89/336/EEC and 73/23/EEC on the approximation of the laws of the\nmember states relating to electromagnetic compatibility and low voltage.\nYour wireless hand-held portable transceiver contains a low power\ntransmitter. When the Push-to-T alk (PTT) button is pressed it sends out\nradio frequency (RF) signals. The device is authorized to operate at a duty"
+    },
+    {
+      "page": 48,
+      "chunk": 2,
+      "text": "factor not to exceed 50% TX and 50% RX.\nIn August 1996, the Federal Communications Commission (FCC) adopted\nRF exposure guidelines with safety levels for hand-held wireless devices.\nTo maintain compliance with the FCC’s RF exposure guidelines, this\ntransmitter and its antenna must maintain a separation distance of least 2\ninches from your face. Speak in a normal voice, with the antenna pointed\nup and away from the face at the required separation distance. The belt\nclip is for storage purposes only.\nAVOID TRANSMITING ON HIGH POWER WHILE RADIO IS ATTACHED\nTO YOUR BELT. To transmit, hold the device away from your body and\nensure the antenna is at least 2 inches from your body when transmitting.\nWARNING\nSAFETY"
+    },
+    {
+      "page": 49,
+      "chunk": 1,
+      "text": "EU DECLARATION OF CONFORMITY\nIn accordance with EU Directives and Regulations, the undersigned\nhereby declare that the following equipment is in conformity with the\nessential requirements of the Directive 2014/53/EU, 2011/65/EU and its\namendment directives 2015/863/EU.\nThe notified body ������������ ���������� ��������(EU Identification Number:\n��������) performed a conformity assessment. Signed on behalf of\nQixiang Electron Science & Technology Co., Ltd.\n1.I NFORMATION ON THE EQUIPMENT\nProduct: Dig ital DMR and Analog UHF/VHF Two Way Radio\nModel Name:�� AT-D����������\n2. INFORMATION ON THE MANUFACTURER\nManufacturer:Qixiang Electron Science & Technology Co., Ltd.\nAddress: Qixiang Building,Tangxi Industrial Zone,Luojiang\nDistrict,Quanzhou,Fujian, China\nName: Ken XU (General Manager)\nTel: +86 595 22656926\nMail: ken6833@qxdz.cn\n3. INFOMRATION ON THE STANDARDS\nRF\nEMC EN 301 489-1/-15/-17/-19��\nEN 55032\r\u0001EN 550��5\nEN 61000-3-��\r\u0001EN ��������61000-3-��\nEN 301 783 V2.1.1\nEN 30������13 V��.1.1\nEN 303 345���������� V1.1.����������������������������������������\nEN 300 328 V2.��.��\nLVD/Safety\n������������\nEN ��������62368-1����������������������������\nEN 62479\r\u0001EN 50663����������������"
+    },
+    {
+      "page": 49,
+      "chunk": 2,
+      "text": "������������������������������������������������\nROHS EN IEC 63000:2018\nKen Xu (General Manager)��\nSignature:\nDate: 202��-������������"
+    },
+    {
+      "page": 50,
+      "chunk": 1,
+      "text": "46Digital DMR and Analog UHF/VHF Two Way Radio\nGeneral\nFrequency Range European: 144-146MHz, 430-440MHz\nUS: 144-148MHz, 420-450MHz\nChannel Capacity 4000 channels\nChannel Spacing 25KHz (Wide Band) ,12.5KHz (Narrow Band)\nPhase-locked Step 5KHz, 6.25KHz\nOperating Voltage 7.4V DC ±20%\nFrequency Stability ±1.5ppm\nOperating T emperature -20��~ +55��\nSize 103.5×53.5×35.5mm (with battery pack)\nWeight 224g (with battery pack)\nReceiving Part\nWide band Narrow band\nSensitivity(12dB SINAD) �������������� ��������������\n��������������������������������������0.3uV/-117.4dBm (BER 5%)\n0.7uV/-110dBm (BER 1%)\nAdjacent Channel Selectivity ���������� ����������\nSpurious Emission ������������ ������������\nSpurious Rejection ���������� ����������\n���������������� 84db\nHum & Noise ���������� ��40dB\nAudio Distortion ������\nAudio Power Output ��������������������\nTransmitting Part\nWide band Narrow band\nPower Output VHF: 5/2.5/1W/0.2W, UHF: 4.5/2.5/0.5W/0.2W\nModulation ±5.0KHz@25KHz ±2.5KHz@12.5KHz\nAdjacent Channel Power ���������� ����������\nHum & Noise ���������� ����������\nSpurious Emission �������������� ����60dBc\n4FSK ����������������������������������������������������������������������������"
+    },
+    {
+      "page": 50,
+      "chunk": 2,
+      "text": "����������������������������������������������������\nAudio Distortion ������\n�������������������� ������\n12. TECHNICAL SPECIFICATIONS"
+    },
+    {
+      "page": 51,
+      "chunk": 1,
+      "text": "European Users should note that operation of this unit in Transmit mode\nrequires the operator to have a valid Amateur Radio Licence from their\nrespective Countries Amateur Radio Licencing Authority for the Frequencies\nand Transmitter Power levels that this Radio transmits on. Failure to comply\nmay be unlawful and liable for prosecution. At this subject, refer to the “EU”\n������������������������������������������������������������\nProducts with the symbol (crossed-out wheeled bin) cannot be\ndisposed as household waste. Electronic and Electric Equipment\nshould be recycled at a facility capable of handling these items and\ntheir waste by products.\nIn EU countries, please contact your local equipment supplier\nrepresentative or service center for information about the waste\ncollection system in your country.\nDisposal of your Electronic and Electric Equipment"
+    },
+    {
+      "page": 52,
+      "chunk": 1,
+      "text": "IMPORTANT NOTICE TO THE ENDUSERS:\nThe European version of these devices is intended for amateur radio use only. It\noperates on the following bands:\nVHF = 144-146 MHz\nUHF = 430-440 MHz\nThe operator must have the appropriate licence. Any manipulation of the\naforementioned frequency bands is prohibited.\nWICHTIGER HINWEIS FÜR DEN ENDBENUTZER:\nDie europäische Version dieser Geräte ist nur für den Einsatz im Amateurfunk\nvorgesehen. Es arbeitet auf den folgenden Bändern:\nUKW = 144-146 MHz\nUHF = 430-440 MHz\nDer Betreiber muss über die entsprechende Lizenz verfügen. Jegliche Manipulation\nder vorgenannten Frequenzbänder ist untersagt.\nAVIS IMPORTANT AUX UTILISATEURS FINAUX:\nLa version européenne de ces appareils est destinée uniquement à une utilisation\ndans le domaine radioamateur. Il fonctionne sur les bandes suivantes:\nVHF = 144-146 MHz\nUHF = 430-440 MHz\nL'opérateur doit avoir la licence appropriée. T outes les manipulations de les\nbandes de fréquences précitées sont interdite.\nAVVISO IMPORTANTE PER L’UTENZA FINALE:\nLa versione europea di questi apparati è destinata esclusivamente all'uso\nradioamatoriale. Esso opera sulle seguenti bande:\nVHF = 144-146 MHz\nUHF = 430-440 MHz"
+    },
+    {
+      "page": 52,
+      "chunk": 2,
+      "text": "L'operatore deve possedere la licenza appropriata. Qualsiasi manipolazione delle\nsuddette bande di frequenza è interdetta.\nAVISO IMPORTANTE A LOS USUARIOS FINALES:\nLa versión europea de estosequiposestádiseñada para uso exclusivo de\n��������������������������������������������������������������������������������������������\nVHF = 144-146 MHz\nUHF = 430-440 MHz\nEl operadordebeestarprovisto de la licenciacorrespondiente. Quedaprohibidacualq\nuiermanipulación de las citadas bandas de frecuencia.\nQixiang Electron Science & Technology Co., Ltd.\nAdd: Qixiang Building, Tangxi Industrial Zone,\nLuojiang District, Quanzhou 362011, Fujian, China\nEL"
+    },
+    {
+      "page": 53,
+      "chunk": 1,
+      "text": "A1.240828\nwww.anytone.net"
+    }
+  ]
+}

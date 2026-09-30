@@ -4,34 +4,132 @@ sidebar_position: 4
 
 # LDS Resources
 
-While the Provo Auxiliary Communications Team (PACT) is not associated with any faith based organization, members of the Church of Jesus Christ of Latter-day Saints constitute roughly 90% of Provo's population. This page is intended to help members of Provo's predominant faith based organization find resources for creating and updating Ward/Stake Emergency Response Plans.
-
----
-## Ward/Stake Emergency Response Plans
-
-Church guidance encourages Wards and Stakes to identify emergency communication methods, understand local community emergency plans, and coordinate with civil authorities during emergencies. Communication specialists can play an important role in helping priesthood leaders prepare for and respond to communication challenges during a disaster.
-
-Ward and stake leaders should consider how communication specialists will gain familiarity with local emergency communication procedures, reporting processes, and community emergency management resources before an emergency occurs. Participation in the Provo Auxiliary Communications Team (PACT) can provide opportunities to develop this knowledge through training nets, exercises, public service events, and other preparedness activities.
-
-Through regular training and participation, communication specialists can gain practical experience operating radios, passing messages, collecting situational information, and communicating within established emergency communication networks. These skills can help support priesthood leaders during emergencies and improve coordination with local government when normal communication systems are disrupted.
-
-Special consideration should be given to Wards and Stakes that experience frequent membership turnover, such as Young Single Adult (YSA) or Married Student units. Communication specialists, ward council members, and other key leaders may change regularly, making it important to review, update, and communicate emergency response plans frequently to ensure that members understand their roles and responsibilities.
-
-As Wards and Stakes review and update their emergency response plans, leaders should consider how their communication procedures align with Provo's emergency management plans. Understanding how information will be gathered, reported, and shared during an emergency can help improve coordination between Church response efforts and community response organizations when assistance is needed.
+> While the Provo Auxiliary Communications Team (PACT) is not associated with any faith-based organization, members of The Church of Jesus Christ of Latter-day Saints constitute roughly 90% of Provo's population. This page is intended to help members of Provo's predominant faith-based organization understand the flow of communication during emergencies and find resources for creating or updating ward/stake emergency response plans.
 
 ---
 
-:::note Emergency Response Communications (ERC) Net
-The Church of Jesus Christ of Latter-day Saints has an established world-wide communication network called Emergency Response Communications (ERC). ERC provides basic communication during times of widespread disaster. This network, while global in scope, extends down into the area, Stake, and Ward levels. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+## Emergency Communication in Provo
+
+### Reporting
+
+<div
+  style={{
+    backgroundColor: '#f5f6f7',
+    borderRadius: '10px',
+    padding: '1.25rem 1.5rem',
+    marginBottom: '1.5rem'
+  }}
+>
+
+During a major emergency, Church leaders are responsible for assessing and reporting the condition of:
+
+- Missionaries and members (including their locations)
+- Member housing
+- Church properties
+- The surrounding community (including roads, public utilities, commerce, facilities, and infrastructure)
+
+</div>
+
+**Reports are communicated to both Church leadership and civil authorities.**
+
+These reports provide Church leaders with the situational awareness needed to coordinate the Church's response. When normal means of communication are unavailable, reports can be passed from the stakes to the Area Presidency through the [**ERC Net**](#erc-net).
+
+Reports to civil authorities provide the emergency manager and public safety agencies with the situational awareness needed to respond to urgent needs and coordinate the community response. When normal means of communication are unavailable, reports can be passed from the stakes to Provo City through the [**PACT Net**](#pact-net).
+
+<div className="row">
+
+  <div className="col col--6">
+    <div
+      className="card margin-bottom--lg"
+      style={{
+        border: '1px solid #d1d5db',
+        borderTop: '5px solid var(--pact-blue)'
+      }}
+    >
+      <div className="card__header">
+        <h3 id="erc-net" style={{ marginBottom: 0 }}>ERC Net</h3>
+      </div>
+
+      <div className="card__body">
+
+The Church of Jesus Christ of Latter-day Saints operates a worldwide emergency communication network called Emergency Response Communications (ERC). In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+
+**Training Net**
+
+- When: Every Tuesday @ 8PM (VHF) & Saturday @ 8AM (HF)
+- Frequency: **147.020 MHz (+)**, CTCSS 103.5 Hz & **3.9025 MHz**
+- Notes: The first Tuesday of the month is conducted on 147.020 MHz simplex
+
+:::info Emergency Use
+During an emergency, reports can be passed through the **147.020 MHz repeater**.
 :::
 
-:::note Mercury Amateur Radio Association (MARA)
-After the Teton Dam disaster of 1976, the Church created an emergency communication network known as the Mercury Amateur Radio Association (MARA). In 1990, the Church separated itself from MARA, and created another emergency communication team called the Emergency Response Radio System (ERRS). ERRS was renamed in 1995 to Emergency Response Communications (ERC).
+      </div>
+    </div>
+  </div>
+
+  <div className="col col--6">
+    <div
+      className="card margin-bottom--lg"
+      style={{
+        border: '1px solid #d1d5db',
+        borderTop: '5px solid var(--pact-red)'
+      }}
+    >
+      <div className="card__header">
+        <h3 id="pact-net" style={{ marginBottom: 0 }}>PACT Net</h3>
+      </div>
+
+      <div className="card__body">
+
+The Provo Auxiliary Communications Team (PACT) Net provides an emergency communication path between Provo's residents and Provo's emergency management.
+
+**Training Net**
+
+- When: Every Wednesday @ 8:30 PM
+- Frequency: **439.800 MHz simplex** & **443.575 MHz (+)**, CTCSS 123.0 Hz
+- Notes: Check-ins are conducted on 439.800 MHz; announcements follow on the Provo City Repeater
+
+:::info Emergency Use
+During an emergency, use **439.800 MHz simplex** to communicate with Net Control at the Provo City Emergency Operations Center (EOC).
 :::
+
+      </div>
+    </div>
+  </div>
+
+</div>
 
 :::warning Reporting Priorities
-**Life-threatening emergencies and requests for public safety assistance should always be reported through appropriate public safety channels. ERC Nets and priesthood reporting channels serve a different purpose and do not replace requests for emergency services.**
+Life-threatening emergencies and requests for public safety assistance should always be reported through appropriate public safety channels. ERC Nets and priesthood reporting channels serve a different purpose and do not replace requests for emergency services.
 :::
+
+
+### Area Coordination Centers
+
+During major emergencies, stake centers serve as local gathering points where information from wards and the surrounding community is collected and relayed.
+
+Provo City has designated each English-speaking family stake center as an [**Area Coordination Center (ACC)**](/docs/operations/staffing-assignments-reporting/#area-coordination-centers-accs).
+
+Ideally, each ACC will have a trained Emergency Communication Specialist familiar with both Church emergency communication procedures and PACT operations.
+
+Emergency Communication Specialists are vital in helping Church leaders establish and maintain reliable communication during an emergency. They collect and relay reports, maintain contact with the ERC and PACT Nets, and help ensure relevant information reaches the appropriate destination.
+
+Before an emergency occurs, specialists should become familiar with local communication procedures and reporting processes. Participation in PACT's training nets, exercises, and public service events provides practical experience operating radios, passing messages, and communicating within the established emergency network.
+
+If an ACC does not have an Emergency Communication Specialist available, during an emergency, PACT will assign an available PACT member to the ACC to establish communications and relay information to the Provo City Emergency Operations Center.
+
+:::tip Emergency Communications Service Missionaries
+Emergency Communications Service Missionaries, called by the Area Presidency, help train Coordinating Councils and Emergency Communication Specialists in emergency communication responsibilities and procedures.
+:::
+
+---
+
+## Ward/Stake Emergency Response Plans
+
+As wards/stakes review and update their emergency response plans, Church leaders should consider how their communication procedures align with the Church's and Provo City's emergency communication procedures. Rather than creating separate reporting systems, ward and stake plans should support the established process for gathering information and passing it through the appropriate Church and civil communication channels.
+
+Special consideration should be given to wards and stakes that experience frequent membership turnover, such as Young Single Adult (YSA) and Married Student units. Emergency Communication Specialists, ward council members, and other key leaders may change regularly, making it important to review and update emergency response plans frequently and ensure that current leaders understand their roles and responsibilities.
 
 ---
 
@@ -390,4 +488,34 @@ Another way to prepare for an emergency is to receive first aid, CPR, and AED tr
 
 :::tip Leader Preparation Resource
 [**Life Help - Preparedness - Emergency Communication Guidelines**](https://www.churchofjesuschrist.org/life/preparedness/emergency-communication-guidelines?lang=eng)
+:::
+
+---
+
+## Legacy Groups/Programs
+
+:::note Mercury Amateur Radio Association (MARA)
+After the Teton Dam disaster of 1976, the Church created an emergency communication network known as the **Mercury Amateur Radio Association (MARA)**. In 1990, the Church separated itself from MARA, and created another emergency communication team called the Emergency Response Radio System (ERRS). ERRS was renamed in 1995 to Emergency Response Communications (ERC).
+:::
+
+:::note Block Captain Program
+The **Block Captain Program** was a neighborhood-based emergency preparedness model used by wards and stakes for many years. Wards were divided into small geographic areas, or “blocks,” with an assigned individual or household responsible for checking on members, identifying injuries or urgent needs, assessing local conditions, and reporting information back to ward leaders.
+
+The model was intended to help Church leaders quickly account for members and gather neighborhood-level information after a disaster, particularly when normal communication systems were disrupted. Over time, however, experience showed that assigned Block Captains were not always available or able to participate during an emergency, which could leave gaps in neighborhood reporting.
+
+Some wards and neighborhoods, in Provo, continue to use variations of the Block Captain Program as part of their emergency response plans.
+:::
+
+:::note Rapid Disaster Assessment Program (RDAP)
+The **Rapid Disaster Assessment Program (RDAP)** was developed as a later approach to neighborhood damage assessment and reporting. It addressed one of the principal limitations of the Block Captain model by reducing dependence on preassigned individuals.
+
+Rather than requiring a designated Block Captain for every area, RDAP allowed available volunteers to assess damage, account for household conditions, and report urgent needs with minimal advance training.
+
+The Utah Division of Emergency Management worked with The Church of Jesus Christ of Latter-day Saints to develop and promote RDAP through the **Be Ready Utah** initiative. For a number of years, the program was used by municipalities, neighborhoods, and wards to gather initial damage information and relay it to emergency responders. The original RDAP program is still used by a handful of groups, although its use has declined over time.
+:::
+
+:::note Orem/Provo Community Emergency Response Team (CERT)
+The **Community Emergency Response Team (CERT)** program provided volunteer training in disaster preparedness and basic response skills, including fire safety, light search and rescue, team organization, and disaster medical operations.
+
+Orem and Provo operated a joint CERT program for a number of years to support community-level preparedness and response. Participation declined in 2019/2020, and the local program was subsequently mothballed.
 :::

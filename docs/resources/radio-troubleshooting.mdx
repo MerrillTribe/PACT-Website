@@ -1,0 +1,176 @@
+---
+sidebar_position: 1
+draft: true
+---
+
+import RadioAssistant from '@site/src/components/RadioAssistant';
+
+# Radio Troubleshooting
+
+:::warning THIS WEBPAGE IS CURRENTLY UNDER DEVELOPMENT.
+
+The PACT Radio Manual Assistant is still being developed and may not yet provide functional responses.
+
+:::
+
+Having trouble with your radio? Use the **PACT Radio Manual Assistant** below to search approved radio manuals for troubleshooting steps, programming instructions, and operating information.
+
+The assistant is designed to answer questions **only from the radio manuals available to PACT**. If the answer cannot be found in an approved manual, the assistant will tell you rather than provide an unsupported answer.
+
+<RadioAssistant />
+
+## What Can I Ask?
+
+You can ask questions about topics covered in your radio's manual, including:
+
+<div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+    gap: '1rem',
+    marginTop: '1rem',
+    marginBottom: '2rem',
+  }}
+>
+
+<div
+  style={{
+    padding: '1rem',
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderLeft: '5px solid var(--pact-red)',
+    borderRadius: '6px',
+  }}
+>
+<strong>Repeater Programming</strong>
+
+Learn how to enter frequencies, offsets, and tones.
+</div>
+
+<div
+  style={{
+    padding: '1rem',
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderLeft: '5px solid var(--pact-red)',
+    borderRadius: '6px',
+  }}
+>
+<strong>CTCSS & DCS</strong>
+
+Find instructions for setting transmit and receive tones.
+</div>
+
+<div
+  style={{
+    padding: '1rem',
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderLeft: '5px solid var(--pact-red)',
+    borderRadius: '6px',
+  }}
+>
+<strong>VFO & Memory</strong>
+
+Learn how to change operating modes and save channels.
+</div>
+
+<div
+  style={{
+    padding: '1rem',
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderLeft: '5px solid var(--pact-red)',
+    borderRadius: '6px',
+  }}
+>
+<strong>Radio Settings</strong>
+
+Find menu settings, display options, power levels, and operating features.
+</div>
+
+<div
+  style={{
+    padding: '1rem',
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderLeft: '5px solid var(--pact-red)',
+    borderRadius: '6px',
+  }}
+>
+<strong>Troubleshooting</strong>
+
+Search the manufacturer's instructions for common operating problems.
+</div>
+
+<div
+  style={{
+    padding: '1rem',
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderLeft: '5px solid var(--pact-red)',
+    borderRadius: '6px',
+  }}
+>
+<strong>Reset & Configuration</strong>
+
+Find documented reset procedures and configuration instructions.
+</div>
+
+</div>
+
+## How the Assistant Works
+
+The PACT Radio Manual Assistant searches the manufacturer's manuals available in the PACT manual library.
+
+When you submit a question:
+
+1. The assistant identifies the radio you selected.
+2. It searches the approved manual for relevant information.
+3. The relevant manual sections are provided to the AI assistant.
+4. The assistant generates an answer using only those sections.
+5. The manual and page number are displayed with the answer.
+
+:::info Manual-Based Answers
+
+The assistant is intentionally restricted to information contained in the available radio manuals.
+
+If the requested information cannot be found in the manual, the assistant will respond:
+
+> **I couldn't find that information in the available radio manual.**
+
+This helps prevent unsupported instructions or incorrect programming information.
+
+:::
+
+## Example Questions
+
+Try questions such as:
+
+- How do I enter VFO mode?
+- How do I program a repeater?
+- How do I change the CTCSS tone?
+- How do I change the transmit power?
+- How do I save a frequency to a memory channel?
+- How do I lock the keypad?
+- How do I switch between VFO and memory mode?
+- How do I perform a factory reset?
+- What does this menu option do?
+- How do I enable or disable scan?
+
+## Available Manuals
+
+The assistant can only answer questions for radios whose manuals have been added to the PACT manual library.
+
+| Manufacturer | Radio | Manual |
+|---|---|---|
+| AnyTone | AT-D578UVIII Plus | User Manual |
+| AnyTone | AT-D878UVII Plus | User Manual |
+| Icom | IC-2820H | Instruction Manual |
+| Yaesu | FT-891 | Operating Manual |
+
+:::note
+
+Additional radios and manuals may be added as equipment used by PACT members is identified.
+
+:::
+
+## Important
+
+The Radio Manual Assistant is intended to help operators locate information contained in manufacturer documentation. Always verify programming and operating settings before transmitting.
+
+For PACT frequencies and operating information, see **[PACT Frequencies](./frequency-allocation)**.
