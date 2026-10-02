@@ -14,6 +14,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Operations',
+      collapsed: false,
       items: [
         'operations/activation',
         'operations/staffing-assignments-reporting',
@@ -24,6 +25,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Training',
+      collapsed: false,
       items: [
         'training/weekly-training-net',
         'training/meetings',
@@ -36,23 +38,24 @@ const sidebars = {
     {
       type: 'category',
       label: 'Resources',
+      collapsed: false,
       items: [
-        'resources/getting-your-license',
-        'resources/radio-basics',
-        'resources/radio-services-band-plans',
+        'resources/apparel',
         'resources/codes',
-        'resources/local-nets-repeaters-frequencies',
         'resources/emergency-notification-systems',
         'resources/equipment',
-        'resources/radio-troubleshooting',
         'resources/forms',
-        'resources/incident-coordination',
-        'resources/local-groups',
-        'resources/lds-resources',
-        'resources/preparation-for-disasters',
+        'resources/getting-your-license',
         'resources/helpful-links',
-        'resources/apparel',
+        'resources/incident-coordination',
+        'resources/lds-resources',
         'resources/leadership-team',
+        'resources/local-groups',
+        'resources/local-nets-repeaters-frequencies',
+        'resources/preparation-for-disasters',
+        'resources/radio-basics',
+        'resources/radio-services-band-plans',
+        'resources/radio-troubleshooting',
       ],
     },
 

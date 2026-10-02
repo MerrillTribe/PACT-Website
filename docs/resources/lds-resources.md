@@ -47,7 +47,8 @@ Reports to civil authorities provide the emergency manager and public safety age
       }}
     >
       <div className="card__header">
-        <h3 id="erc-net" style={{ marginBottom: 0 }}>ERC Net</h3>
+        <a id="erc-net"></a>
+        <h3 style={{ marginBottom: 0 }}>ERC Net</h3>
       </div>
 
       <div className="card__body">
@@ -56,7 +57,7 @@ The Church of Jesus Christ of Latter-day Saints operates a worldwide emergency c
 
 **Training Net**
 
-- When: Every Tuesday @ 8PM (VHF) & Saturday @ 8AM (HF)
+- When: Every Tuesday @ 8 PM (VHF) & Saturday @ 8 AM (HF)
 - Frequency: **147.020 MHz (+)**, CTCSS 103.5 Hz & **3.9025 MHz**
 - Notes: The first Tuesday of the month is conducted on 147.020 MHz simplex
 
@@ -77,12 +78,13 @@ During an emergency, reports can be passed through the **147.020 MHz repeater**.
       }}
     >
       <div className="card__header">
-        <h3 id="pact-net" style={{ marginBottom: 0 }}>PACT Net</h3>
+        <a id="pact-net"></a>
+        <h3 style={{ marginBottom: 0 }}>PACT Net</h3>
       </div>
 
       <div className="card__body">
 
-The Provo Auxiliary Communications Team (PACT) Net provides an emergency communication path between Provo's residents and Provo's emergency management.
+The Provo Auxiliary Communications Team (PACT) Net provides an emergency communication path between Provo residents and Provo City emergency management.
 
 **Training Net**
 

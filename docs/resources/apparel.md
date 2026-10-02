@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# PACT Apparel
+# Apparel
 
 PACT members may order branded clothing and items using the order form below.
 

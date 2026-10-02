@@ -249,7 +249,7 @@ The following equipment & gear are required for the [**PACT Certification Levels
 <div id="handheld-radio" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/handheld-radio.png" alt="Handheld Radio" className="equipment-card-icon" />
+    <img src="/img/handheld-radio.png" alt="Handheld Radio" className="equipment-card-icon" />
     <h3>Handheld Radio</h3>
     <p>
 Primary communication tool for most PACT deployments. Members should program all PACT frequencies before deployment, carry at least one spare battery when possible, use a speaker mic or earpiece in noisy locations, and keep transmissions short and professional.
@@ -263,7 +263,7 @@ Primary communication tool for most PACT deployments. Members should program all
 <div id="speaker-mic-headset" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/headset.png" alt="Speaker Mic or Headset" className="equipment-card-icon" />
+    <img src="/img/speaker-mic.png" alt="Speaker Mic or Headset" className="equipment-card-icon" />
     <h3>Speaker Mic / Headset</h3>
     <p>
 Improves radio operation in noisy environments or when hands-free use is helpful. A speaker mic or headset allows operators to hear traffic more clearly, keep the radio secured, and communicate more easily during events, walking assignments, and noisy locations.
@@ -274,22 +274,9 @@ Improves radio operation in noisy environments or when hands-free use is helpful
     </details>
   </div>
 
-<div id="radio-carrier" className="equipment-card">
-    <span className="equipment-badge recommended">Optional</span>
-    <img src="/img/equipment/carrier.png" alt="Radio Carrier" className="equipment-card-icon" />
-    <h3>Radio Carrier</h3>
-    <p>
-Keeps the radio secure and accessible while moving on foot. A good carrier helps prevent the radio from being dropped or misplaced and can be attached to a belt, vest, pack, or chest rig without interfering with movement.
-    </p>
-    <details>
-      <summary>Recommended Products</summary>
-      <p>Product recommendations coming soon.</p>
-    </details>
-  </div>
-
 <div id="mobile-radio" className="equipment-card">
     <span className="equipment-badge recommended">Optional</span>
-    <img src="/img/equipment/mobile-radio.png" alt="Mobile Radio" className="equipment-card-icon" />
+    <img src="/img/mobile-radio.png" alt="Mobile Radio" className="equipment-card-icon" />
     <h3>Mobile Radio</h3>
     <p>
 Provides more power and capability than a handheld radio when vehicle or base operation is available. Mobile radios are useful for vehicle-based assignments or fixed locations, but they require proper power, antenna, and mounting setup.
@@ -309,7 +296,7 @@ Provides more power and capability than a handheld radio when vehicle or base op
 <div id="high-gain-whip-antenna" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/whip-antenna.png" alt="High-Gain Whip Antenna" className="equipment-card-icon" />
+    <img src="/img/whip-antenna.png" alt="High-Gain Whip Antenna" className="equipment-card-icon" />
     <h3>High-Gain Whip Antenna</h3>
     <p>
 Improves handheld radio performance compared to many stock antennas. A high-gain antenna can improve transmit and receive performance, especially when operating farther from a repeater, but it should match the radio band and not over-stress the connector.
@@ -323,7 +310,7 @@ Improves handheld radio performance compared to many stock antennas. A high-gain
 <div id="portable-antenna" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
-    <img src="/img/equipment/portable-antenna.png" alt="Portable Antenna" className="equipment-card-icon" />
+    <img src="/img/portable-antenna.png" alt="Portable Antenna" className="equipment-card-icon" />
     <h3>Portable Antenna</h3>
     <p>
 Improves field communication when a handheld or mobile radio antenna is not enough. Portable antennas are useful for temporary field stations and can improve signal quality by increasing antenna height with a tripod, mast, tree, or other support.
@@ -336,7 +323,7 @@ Improves field communication when a handheld or mobile radio antenna is not enou
 
 <div id="throw-rope" className="equipment-card">
     <span className="equipment-badge recommended">Recommended</span>
-    <img src="/img/equipment/throw-rope.png" alt="Throw Rope" className="equipment-card-icon" />
+    <img src="/img/throw-rope.png" alt="Throw Rope" className="equipment-card-icon" />
     <h3>Throw Rope & Weight</h3>
     <p>
 Useful for raising lightweight antennas into trees or other elevated supports. Throw rope is helpful for temporary wire or roll-up antennas, but it should be used safely, kept away from power lines, and stored neatly to prevent tangles.
@@ -353,7 +340,7 @@ Useful for raising lightweight antennas into trees or other elevated supports. T
   <span className="equipment-badge recommended">Optional</span>
 
   <img
-    src="/img/equipment/mast.png"
+    src="/img/mast.png"
     alt="Portable Mast"
     className="equipment-card-icon"
   />
@@ -377,7 +364,7 @@ Useful for raising lightweight antennas into trees or other elevated supports. T
 <div id="external-power-source" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-4">Level 4</span>
-    <img src="/img/equipment/power-supply.png" alt="External Power Source" className="equipment-card-icon" />
+    <img src="/img/external-power-source.png" alt="External Power Source" className="equipment-card-icon" />
     <h3>External Power Source</h3>
     <p>
 Backup power helps maintain communications if commercial power is unavailable. Operators should bring charged battery packs when possible, keep charging cables with their radio equipment, and not rely on emergency power being available.
@@ -391,7 +378,7 @@ Backup power helps maintain communications if commercial power is unavailable. O
 <div id="anderson-powerpoles" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-3">Level 3</span>
-    <img src="/img/equipment/powerpole.png" alt="Anderson Powerpole Connectors" className="equipment-card-icon" />
+    <img src="/img/powerpoles.png" alt="Anderson Powerpole Connectors" className="equipment-card-icon" />
     <h3>Anderson Powerpoles</h3>
     <p>
 Standardized power connectors commonly used in amateur radio emergency communications. They help make power connections more consistent and are useful when connecting radios to battery systems, but polarity should always be verified before use.
@@ -405,7 +392,7 @@ Standardized power connectors commonly used in amateur radio emergency communica
 <div id="usb-cables" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
-    <img src="/img/equipment/usb-cable.png" alt="USB Cables" className="equipment-card-icon" />
+    <img src="/img/usb-cables.png" alt="USB Cables" className="equipment-card-icon" />
     <h3>USB Cables</h3>
     <p>
 Used for charging devices, programming radios, or connecting accessories. Operators should carry cables that match their phone, battery pack, and radio accessories, and should label specialty programming cables when possible.
@@ -419,7 +406,7 @@ Used for charging devices, programming radios, or connecting accessories. Operat
 <div id="coaxial-adapters" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
-    <img src="/img/equipment/coax-adapter.png" alt="Coaxial Adapters" className="equipment-card-icon" />
+    <img src="/img/coaxial-adapters.png" alt="Coaxial Adapters" className="equipment-card-icon" />
     <h3>Coaxial Adapters</h3>
     <p>
 Allow radios, antennas, and feed lines with different connector types to be connected. Common connector types include SMA, BNC, PL-259, and SO-239, so adapters should be organized and tested before deployment.
@@ -433,7 +420,7 @@ Allow radios, antennas, and feed lines with different connector types to be conn
 <div id="coax-cable" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-2">Level 2</span>
-    <img src="/img/equipment/coax-cable.png" alt="Coax Cable" className="equipment-card-icon" />
+    <img src="/img/coax-cable.png" alt="Coax Cable" className="equipment-card-icon" />
     <h3>Coax Cable</h3>
     <p>
 Connects radios to external antennas for improved range and signal quality. Coax should be the appropriate length for the setup, inspected before use, protected from sharp bends, and stored neatly to prevent damage.
@@ -450,7 +437,7 @@ Connects radios to external antennas for improved range and signal quality. Coax
   <span className="equipment-badge recommended">Optional</span>
 
   <img
-    src="/img/equipment/solar-panel.png"
+    src="/img/solar-panel.png"
     alt="Solar Panel"
     className="equipment-card-icon"
   />
@@ -471,7 +458,7 @@ Connects radios to external antennas for improved range and signal quality. Coax
   <span className="equipment-badge recommended">Optional</span>
 
   <img
-    src="/img/equipment/solar-controller.png"
+    src="/img/solar-charge-controller.png"
     alt="Solar Charge Controller"
     className="equipment-card-icon"
   />
@@ -495,7 +482,7 @@ Connects radios to external antennas for improved range and signal quality. Coax
 <div id="first-aid-kit" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/first-aid-kit.png" alt="Personal First Aid Kit" className="equipment-card-icon" />
+    <img src="/img/first-aid-kit.png" alt="Personal First Aid Kit" className="equipment-card-icon" />
     <h3>Personal First Aid Kit</h3>
     <p>
 Provides basic supplies for minor injuries during field assignments. A personal first aid kit should include basic items such as bandages, gloves, antiseptic wipes, and any personal medications needed during an assignment.
@@ -509,7 +496,7 @@ Provides basic supplies for minor injuries during field assignments. A personal 
 <div id="water-bottle" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/water-bottle.png" alt="Water Bottles" className="equipment-card-icon" />
+    <img src="/img/water-bottle.png" alt="Water Bottles" className="equipment-card-icon" />
     <h3>Water Bottle</h3>
     <p>
 Helps operators stay hydrated during outdoor events and emergency assignments. Members should carry enough water for the expected assignment length, plan for hot weather, and not rely on water being provided at every assignment.
@@ -523,7 +510,7 @@ Helps operators stay hydrated during outdoor events and emergency assignments. M
 <div id="multitool" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/multitool.png" alt="Multitool" className="equipment-card-icon" />
+    <img src="/img/multitool.png" alt="Multitool" className="equipment-card-icon" />
     <h3>Multitool</h3>
     <p>
 Useful for small repairs, adjustments, and general field tasks. A multitool can help with minor equipment fixes, tightening, cutting, or adjusting gear, but it should be used safely and in accordance with local event or facility rules.
@@ -537,7 +524,7 @@ Useful for small repairs, adjustments, and general field tasks. A multitool can 
 <div id="maps" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/maps.png" alt="Maps" className="equipment-card-icon" />
+    <img src="/img/maps.png" alt="Maps" className="equipment-card-icon" />
     <h3>Maps</h3>
     <p>
       Maps provide backup navigation and situational awareness when digital tools are unavailable. Level 1 requires map resources, including a Provo street map and PACT District & Frequency Map. Local maps are useful if cell service or internet access is limited and should be paired with written assignment instructions when possible.
@@ -551,7 +538,7 @@ Useful for small repairs, adjustments, and general field tasks. A multitool can 
 <div id="field-manual" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-1">Level 1</span>
-    <img src="/img/equipment/field-manual.png" alt="Field Manual" className="equipment-card-icon" />
+    <img src="/img/field-manual.png" alt="Field Manual" className="equipment-card-icon" />
     <h3>Field Manual</h3>
     <p>
 Contains procedures, frequencies, forms, and reference information needed during operations. Printed or offline copies are useful when electronic access is unreliable and should be updated when PACT procedures change. This is currently under development and will be available soon.
@@ -565,7 +552,7 @@ Contains procedures, frequencies, forms, and reference information needed during
 <div id="headlamp" className="equipment-card">
     <span className="equipment-badge required">Required</span>
     <span className="equipment-level level-4">Level 4</span>
-    <img src="/img/equipment/headlamp.png" alt="Headlamp" className="equipment-card-icon" />
+    <img src="/img/headlamps.png" alt="Headlamp" className="equipment-card-icon" />
     <h3>Headlamp</h3>
     <p>
 Provides hands-free lighting for nighttime operations or low-light conditions. Operators should recharge it before deployment, carry spare batteries when needed, and use lower light settings when working near others.
