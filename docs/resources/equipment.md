@@ -4,10 +4,6 @@ sidebar_position: 1
 
 # Equipment & Gear
 
-:::warning DRAFT PAGE
-**THIS WEBPAGE IS CURRENTLY UNDER DEVELOPMENT**
-:::
-
 Successful emergency communications require both trained operators and dependable equipment. While some PACT roles do not require any personal equipment, members who wish to advance through the certification program and qualify for operational roles should expect to acquire and maintain communications gear over time. Equipment requirements increase with each certification level, allowing members to progressively build the skills, experience, and equipment needed to support PACT operations. Members are encouraged to expand their capabilities gradually as they complete additional certification levels and gain operational experience.
 
 ## Deployment Checklist
@@ -257,6 +253,22 @@ Primary communication tool for most PACT deployments. Members should program all
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -270,7 +282,29 @@ Improves radio operation in noisy environments or when hands-free use is helpful
     </p>
     <details>
       <summary>Recommended Products</summary>
-      <p>Product recommendations coming soon.</p>
+
+      <div className="recommended-product">
+        <span className="product-name">Sheepdog Mics</span>
+        <span className="price-rating">$$</span>
+      </div>
+
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
+
     </details>
   </div>
 
@@ -284,6 +318,22 @@ Provides more power and capability than a handheld radio when vehicle or base op
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -304,6 +354,22 @@ Improves handheld radio performance compared to many stock antennas. A high-gain
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -318,6 +384,22 @@ Improves field communication when a handheld or mobile radio antenna is not enou
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -331,6 +413,22 @@ Useful for raising lightweight antennas into trees or other elevated supports. T
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -354,6 +452,22 @@ Useful for raising lightweight antennas into trees or other elevated supports. T
   <details>
     <summary>Recommended Products</summary>
     <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
   </details>
 </div>
 
@@ -372,6 +486,22 @@ Backup power helps maintain communications if commercial power is unavailable. O
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -386,6 +516,22 @@ Standardized power connectors commonly used in amateur radio emergency communica
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -400,6 +546,22 @@ Used for charging devices, programming radios, or connecting accessories. Operat
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -414,6 +576,22 @@ Allow radios, antennas, and feed lines with different connector types to be conn
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -428,6 +606,22 @@ Connects radios to external antennas for improved range and signal quality. Coax
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -451,6 +645,22 @@ Connects radios to external antennas for improved range and signal quality. Coax
   <details>
     <summary>Recommended Products</summary>
     <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
   </details>
 </div>
 
@@ -472,6 +682,22 @@ Connects radios to external antennas for improved range and signal quality. Coax
   <details>
     <summary>Recommended Products</summary>
     <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
   </details>
 </div>
 
@@ -490,6 +716,22 @@ Provides basic supplies for minor injuries during field assignments. A personal 
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -504,6 +746,22 @@ Helps operators stay hydrated during outdoor events and emergency assignments. M
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -518,6 +776,22 @@ Useful for small repairs, adjustments, and general field tasks. A multitool can 
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -532,6 +806,22 @@ Useful for small repairs, adjustments, and general field tasks. A multitool can 
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -546,6 +836,22 @@ Contains procedures, frequencies, forms, and reference information needed during
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 
@@ -560,6 +866,22 @@ Provides hands-free lighting for nighttime operations or low-light conditions. O
     <details>
       <summary>Recommended Products</summary>
       <p>Product recommendations coming soon.</p>
+<div className="price-legend">
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$</span>
+    <span className="price-legend-text">Budget</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$</span>
+    <span className="price-legend-text">Mid-Range</span>
+  </div>
+
+  <div className="price-legend-item">
+    <span className="price-legend-symbol">$$$</span>
+    <span className="price-legend-text">Premium</span>
+  </div>
+</div>
     </details>
   </div>
 

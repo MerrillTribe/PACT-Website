@@ -1009,6 +1009,90 @@ h3[id] {
   margin-bottom: 1rem;
 }
 
+/* Recommended product list */
+.recommended-products {
+  margin-top: 0.6rem;
+}
+
+.recommended-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.recommended-product:last-child {
+  border-bottom: none;
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.recommended-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.product-name {
+  font-weight: 600;
+}
+
+.price-rating {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10px;
+  background: #e9eef6;
+  color: var(--pact-blue);
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.price-legend {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #d1d5db;
+}
+
+.price-legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.35rem;
+  border-radius: 10px;
+  background: #f8fafc;
+  border: 1px solid #dbe3ea;
+  text-align: center;
+}
+
+.price-legend-symbol {
+  font-weight: 700;
+  color: var(--pact-blue);
+  font-size: 0.85rem;
+  line-height: 1.1;
+}
+
+.price-legend-text {
+  margin-top: 0.15rem;
+  font-size: 0.72rem;
+  color: #6b7280;
+  line-height: 1.2;
+}
+
 /* =========================
    REQUIREMENT BADGE
 ========================= */
