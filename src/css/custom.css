@@ -991,25 +991,36 @@ h3[id] {
 .equipment-card-icon {
   width: 95px;
   height: 95px;
+
   object-fit: contain;
+
   display: block;
+
   margin: 0 auto 1rem;
 }
 
 .equipment-card h3 {
   text-align: center;
+
   color: var(--pact-navy);
+
   margin-top: 0;
   margin-bottom: 0.75rem;
 }
 
 .equipment-card p {
   text-align: center;
+
   line-height: 1.7;
+
   margin-bottom: 1rem;
 }
 
-/* Recommended product list */
+
+/* =========================
+   RECOMMENDED PRODUCTS
+========================= */
+
 .recommended-products {
   margin-top: 0.6rem;
 }
@@ -1018,25 +1029,11 @@ h3[id] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   gap: 1rem;
+
   padding: 0.65rem 0;
-  border-bottom: 1px solid #e5e7eb;
-}
 
-.recommended-product:last-child {
-  border-bottom: none;
-}
-
-.product-name {
-  font-weight: 600;
-}
-
-.recommended-product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1rem;
-  padding: 0.65rem 0;
   border-bottom: 1px solid #d1d5db;
 }
 
@@ -1048,23 +1045,37 @@ h3[id] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+
   min-width: 48px;
+
   padding: 0.3rem 0.6rem;
+
   border-radius: 10px;
+
   background: #e9eef6;
   color: var(--pact-blue);
+
   font-size: 0.85rem;
   font-weight: 700;
+
   white-space: nowrap;
 }
+
+
+/* =========================
+   PRICE LEGEND
+========================= */
 
 .price-legend {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
   gap: 0.5rem;
+
   margin-top: 0.75rem;
   padding-top: 0.75rem;
-  border-top: 1px solid #d1d5db;
+
+  border-top: none;
 }
 
 .price-legend-item {
@@ -1072,26 +1083,36 @@ h3[id] {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   padding: 0.45rem 0.35rem;
-  border-radius: 10px;
-  background: #f8fafc;
+
   border: 1px solid #dbe3ea;
+  border-radius: 10px;
+
+  background: #f8fafc;
+
   text-align: center;
 }
 
 .price-legend-symbol {
-  font-weight: 700;
   color: var(--pact-blue);
+
   font-size: 0.85rem;
+  font-weight: 700;
+
   line-height: 1.1;
 }
 
 .price-legend-text {
   margin-top: 0.15rem;
-  font-size: 0.72rem;
+
   color: #6b7280;
+
+  font-size: 0.72rem;
+
   line-height: 1.2;
 }
+
 
 /* =========================
    REQUIREMENT BADGE
@@ -1129,6 +1150,7 @@ h3[id] {
   color: #333333;
 }
 
+
 /* =========================
    LEVEL BADGE
 ========================= */
@@ -1136,7 +1158,7 @@ h3[id] {
 .equipment-level {
   position: absolute;
 
-  top: 3.70rem;
+  top: 3.7rem;
   right: 1.5rem;
 
   padding: 0.25rem 0.7rem;
@@ -1168,6 +1190,7 @@ h3[id] {
   background: var(--pact-blue);
 }
 
+
 /* =========================
    DETAILS
 ========================= */
@@ -1178,13 +1201,16 @@ h3[id] {
 
 .equipment-card summary {
   cursor: pointer;
+
   font-weight: 700;
+
   color: var(--pact-navy);
 }
 
 .equipment-card summary:hover {
   color: var(--pact-red);
 }
+
 
 /* =========================
    MOBILE
@@ -1194,6 +1220,7 @@ h3[id] {
   .equipment-card {
     width: 100%;
     min-width: 0;
+
     margin-bottom: 3rem;
   }
 
@@ -1205,6 +1232,14 @@ h3[id] {
   .equipment-level {
     top: 3.75rem;
     right: 1rem;
+  }
+
+  .recommended-product {
+    gap: 0.75rem;
+  }
+
+  .price-legend {
+    gap: 0.4rem;
   }
 }
 
