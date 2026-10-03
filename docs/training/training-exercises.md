@@ -124,124 +124,71 @@ All reports from the community will be compiled and transmitted using the [**N-0
 
 ACC Radio Operators will transmit to their District Radio Operator using the district's designated frequency. Visit the [**Area Coordination Centers (ACCs)**](/docs/operations/staffing-assignments-reporting#area-coordination-centers-accs) chart to determine which district your ACC belongs to. District Radio Operators will contact Net Control on 439.800 MHz.
 
-<div style={{marginTop: '1.5rem'}}>
+<div className="exercise-frequency-section">
 
-  <div style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>
+  <div className="exercise-frequency-title">
     District Frequencies (ACC Operators to District Operator)
   </div>
 
-  <div style={{
-    display: 'flex',
-    borderRadius: '8px',
-    overflow: 'hidden',
-    border: '1px solid #ccc'
-  }}>
+  <div className="exercise-frequency-grid">
 
-    <div style={{
-      flex: 1,
-      backgroundColor: '#f0fdf4',
-      padding: '0.75rem',
-      textAlign: 'center',
-      borderRight: '1px solid #ddd'
-    }}>
-      <div style={{color: '#22c55e', fontWeight: 'bold'}}>North District</div>
-      <div><strong>439.850</strong></div>
+    <div className="exercise-frequency-card district-frequency-north">
+      <div className="exercise-frequency-name">North District</div>
+      <div className="exercise-frequency-value">
+        <strong>439.850</strong>
+      </div>
     </div>
 
-    <div style={{
-      flex: 1,
-      backgroundColor: '#fefce8',
-      padding: '0.75rem',
-      textAlign: 'center',
-      borderRight: '1px solid #ddd'
-    }}>
-      <div style={{color: '#eab308', fontWeight: 'bold'}}>East District</div>
-      <div><strong>439.925</strong></div>
+    <div className="exercise-frequency-card district-frequency-east">
+      <div className="exercise-frequency-name">East District</div>
+      <div className="exercise-frequency-value">
+        <strong>439.925</strong>
+      </div>
     </div>
 
-    <div style={{
-      flex: 1,
-      backgroundColor: '#faf5ff',
-      padding: '0.75rem',
-      textAlign: 'center',
-      borderRight: '1px solid #ddd'
-    }}>
-      <div style={{color: '#a855f7', fontWeight: 'bold'}}>West District</div>
-      <div><strong>439.825</strong></div>
+    <div className="exercise-frequency-card district-frequency-west">
+      <div className="exercise-frequency-name">West District</div>
+      <div className="exercise-frequency-value">
+        <strong>439.825</strong>
+      </div>
     </div>
 
-    <div style={{
-      flex: 1,
-      backgroundColor: '#fef2f2',
-      padding: '0.75rem',
-      textAlign: 'center',
-      borderRight: '1px solid #ddd'
-    }}>
-      <div style={{color: '#ef4444', fontWeight: 'bold'}}>Northwest District</div>
-      <div><strong>439.875</strong></div>
+    <div className="exercise-frequency-card district-frequency-northwest">
+      <div className="exercise-frequency-name">Northwest District</div>
+      <div className="exercise-frequency-value">
+        <strong>439.875</strong>
+      </div>
     </div>
 
-    <div style={{
-      flex: 1,
-      backgroundColor: '#eff6ff',
-      padding: '0.75rem',
-      textAlign: 'center'
-    }}>
-      <div style={{color: '#3b82f6', fontWeight: 'bold'}}>Central District</div>
-      <div><strong>439.000</strong></div>
+    <div className="exercise-frequency-card district-frequency-central">
+      <div className="exercise-frequency-name">Central District</div>
+      <div className="exercise-frequency-value">
+        <strong>439.000</strong>
+      </div>
     </div>
 
   </div>
 
-  <div style={{marginTop: '0.5rem', fontSize: '0.9rem'}}>
+  <div className="exercise-frequency-note">
     These frequencies are for communication between ACC Radio Operators and the District Radio Operators. They should not be used by the volunteers knocking on doors.
   </div>
 
 </div>
 
-<div style={{marginTop: '1.5rem'}}>
+<div className="exercise-frequency-section">
 
-  <div style={{fontWeight: 'bold', marginBottom: '0.5rem'}}>
+  <div className="exercise-frequency-title">
     Net Control Frequency (District Operators to Net Control)
   </div>
 
-  <div style={{
-    display: 'flex',
-    borderRadius: '8px',
-    overflow: 'hidden'
-  }}>
+  <div className="exercise-net-control-row">
 
-    <div style={{
-      flex: 1,
-      backgroundColor: '#ffffff',
-      padding: '0.75rem',
-      textAlign: 'center',
-      border: '1px solid #ccc',
-      borderRadius: '8px'
-    }}>
-
-      <div style={{
-        color: '#111827',
-        fontWeight: 'bold',
-        lineHeight: '1',
-        marginBottom: '0.05rem'
-      }}>
-        Net Control
-      </div>
-
-      <div style={{
-        lineHeight: '1',
-        marginTop: '0'
-      }}>
+    <div className="exercise-frequency-card exercise-net-control-card">
+      <div className="exercise-frequency-name">Net Control</div>
+      <div className="exercise-frequency-value">
         <strong>439.800</strong>
       </div>
-
     </div>
-
-    <div style={{flex: 1, visibility: 'hidden'}}></div>
-    <div style={{flex: 1, visibility: 'hidden'}}></div>
-    <div style={{flex: 1, visibility: 'hidden'}}></div>
-    <div style={{flex: 1, visibility: 'hidden'}}></div>
 
   </div>
 
@@ -271,7 +218,9 @@ ACC Radio Operators will transmit to their District Radio Operator using the dis
 </div>
 
 ---
+
 :::info PROVO PREPARED
 **Visit the Provo City website to learn more about the [Provo Prepared](https://www.provo.gov/1353/Provo-Prepared) initiative.**
 :::
+
 ---

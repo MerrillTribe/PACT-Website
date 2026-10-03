@@ -12,14 +12,7 @@ sidebar_position: 4
 
 ### Reporting
 
-<div
-  style={{
-    backgroundColor: '#f5f6f7',
-    borderRadius: '10px',
-    padding: '1.25rem 1.5rem',
-    marginBottom: '1.5rem'
-  }}
->
+<div className="lds-reporting-box">
 
 During a major emergency, Church leaders are responsible for assessing and reporting the condition of:
 

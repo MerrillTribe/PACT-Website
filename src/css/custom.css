@@ -952,13 +952,102 @@ h3[id] {
 }
 
 /* =========================
+   DARK MODE - LEADERSHIP TEAM
+========================= */
+
+/* Front of leadership cards */
+
+html[data-theme='dark'] .flip-card-front {
+  background: #111827;
+
+  border-color: #374151;
+
+  color: #f3f4f6;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .flip-card-front h2 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .flip-card-front h3 {
+  color: #9ca3af;
+}
+
+
+/* Back of leadership cards */
+
+html[data-theme='dark'] .flip-card-back {
+  background: #161f2d;
+
+  border-color: #374151;
+
+  color: #d1d5db;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .flip-card-back p,
+html[data-theme='dark'] .flip-card-back li {
+  color: #d1d5db;
+}
+
+html[data-theme='dark'] .flip-card-back strong {
+  color: #f3f4f6;
+}
+
+
+/* Links inside cards, if added later */
+
+html[data-theme='dark'] .flip-card a {
+  color: #93c5fd;
+}
+
+html[data-theme='dark'] .flip-card a:hover {
+  color: #bfdbfe;
+}
+
+
+/* Card hover */
+
+html[data-theme='dark'] .flip-card:hover .flip-card-front,
+html[data-theme='dark'] .flip-card:hover .flip-card-back {
+  border-color: #4b5563;
+}
+
+
+/* =========================
+   CONTACT SECTION
+========================= */
+
+html[data-theme='dark'] .theme-doc-markdown a[href^='mailto:'] {
+  color: #93c5fd;
+}
+
+html[data-theme='dark'] .theme-doc-markdown a[href^='mailto:']:hover {
+  color: #bfdbfe;
+}
+
+
+/* =========================
+   HORIZONTAL RULES
+========================= */
+
+html[data-theme='dark'] .theme-doc-markdown hr {
+  border-color: #374151;
+}
+
+/* =========================
    EQUIPMENT ACCORDION CARDS
 ========================= */
 
 .equipment-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+
+  gap: 2rem;
 
   width: 100%;
 
@@ -968,29 +1057,41 @@ h3[id] {
 .equipment-card {
   position: relative;
 
-  width: 70%;
-  min-width: 700px;
-  max-width: 900px;
+  display: flex;
+  flex-direction: column;
 
-  margin: 0 auto 4rem;
+  width: 100%;
+  min-width: 0;
+  max-width: none;
+
+  height: 100%;
+
+  margin: 0;
 
   border: 4px solid var(--pact-red);
   border-radius: 18px;
 
-  padding: 1.75rem;
+  padding: 1.5rem;
 
   background: #fff;
 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-.equipment-card:last-child {
-  margin-bottom: 0;
+/* When a Recommended Products dropdown is opened,
+   stop stretching the cards to equal height */
+.equipment-grid:has(.equipment-card details[open]) {
+  align-items: start;
+}
+
+.equipment-grid:has(.equipment-card details[open]) .equipment-card {
+  height: auto;
+  align-self: start;
 }
 
 .equipment-card-icon {
-  width: 95px;
-  height: 95px;
+  width: 82px;
+  height: 82px;
 
   object-fit: contain;
 
@@ -1011,9 +1112,11 @@ h3[id] {
 .equipment-card p {
   text-align: center;
 
-  line-height: 1.7;
+  line-height: 1.6;
 
   margin-bottom: 1rem;
+
+  font-size: 0.95rem;
 }
 
 
@@ -1121,8 +1224,8 @@ h3[id] {
 .equipment-badge {
   position: absolute;
 
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1.25rem;
+  right: 1.25rem;
 
   padding: 0.35rem 0.8rem;
 
@@ -1158,8 +1261,8 @@ h3[id] {
 .equipment-level {
   position: absolute;
 
-  top: 3.7rem;
-  right: 1.5rem;
+  top: 3.45rem;
+  right: 1.25rem;
 
   padding: 0.25rem 0.7rem;
 
@@ -1174,18 +1277,9 @@ h3[id] {
   color: #ffffff;
 }
 
-.level-1 {
-  background: var(--pact-blue);
-}
-
-.level-2 {
-  background: var(--pact-blue);
-}
-
-.level-3 {
-  background: var(--pact-blue);
-}
-
+.level-1,
+.level-2,
+.level-3,
 .level-4 {
   background: var(--pact-blue);
 }
@@ -1196,7 +1290,8 @@ h3[id] {
 ========================= */
 
 .equipment-card details {
-  margin-top: 1.25rem;
+  margin-top: auto;
+  padding-top: 1.25rem;
 }
 
 .equipment-card summary {
@@ -1217,11 +1312,110 @@ h3[id] {
 ========================= */
 
 @media (max-width: 996px) {
+  .equipment-grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+
+    gap: 2rem;
+  }
+
+  .equipment-card,
+  .equipment-grid:has(.equipment-card details[open]) .equipment-card {
+    height: auto;
+    align-self: start;
+  }
+
+  .equipment-card details {
+    margin-top: 1.25rem;
+    padding-top: 0;
+  }
+}
+/* =========================
+   PRODUCT DISCLAIMER
+========================= */
+
+.equipment-disclaimer {
+  width: 100%;
+
+  margin: 0 auto 2rem;
+  padding: 1rem 1.25rem;
+
+  border-left: 5px solid var(--pact-yellow);
+  border-radius: 10px;
+
+  background: #fff8e6;
+
+  color: #374151;
+}
+
+.equipment-disclaimer strong {
+  display: block;
+
+  margin-bottom: 0.35rem;
+
+  color: var(--pact-navy);
+
+  font-size: 0.95rem;
+}
+
+.equipment-disclaimer p {
+  margin: 0;
+
+  text-align: left;
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1200px) {
+  .equipment-grid {
+    gap: 1.5rem;
+  }
+
+  .equipment-card {
+    padding: 1.35rem;
+  }
+
+  .equipment-card-icon {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 996px) {
+  .equipment-grid {
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    margin-bottom: 3rem;
+  }
+
   .equipment-card {
     width: 100%;
     min-width: 0;
 
-    margin-bottom: 3rem;
+    padding: 1.75rem;
+  }
+
+  .equipment-card-icon {
+    width: 95px;
+    height: 95px;
+  }
+
+  .equipment-card p {
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .equipment-badge {
@@ -1241,8 +1435,98 @@ h3[id] {
   .price-legend {
     gap: 0.4rem;
   }
+
+  .equipment-disclaimer {
+    width: 100%;
+  }
 }
 
+/* =========================
+   DARK MODE - EQUIPMENT CARDS
+========================= */
+
+html[data-theme='dark'] .equipment-card {
+  background: #111827;
+  border-color: var(--pact-red);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .equipment-card h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .equipment-card p {
+  color: #d1d5db;
+}
+
+
+/* Recommended Products */
+
+html[data-theme='dark'] .recommended-product {
+  border-bottom-color: #374151;
+}
+
+html[data-theme='dark'] .product-name {
+  color: #e5e7eb;
+}
+
+html[data-theme='dark'] .price-rating {
+  background: #1e3a5f;
+  color: #93c5fd;
+}
+
+
+/* Price Legend */
+
+html[data-theme='dark'] .price-legend-item {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .price-legend-symbol {
+  color: #93c5fd;
+}
+
+html[data-theme='dark'] .price-legend-text {
+  color: #9ca3af;
+}
+
+
+/* Details / Recommended Products dropdown */
+
+html[data-theme='dark'] .equipment-card summary {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .equipment-card summary:hover {
+  color: #f87171;
+}
+
+
+/* Accordion container styling if your existing details
+   uses a light blue background */
+
+html[data-theme='dark'] .equipment-card details {
+  color: #e5e7eb;
+}
+
+
+/* Product Recommendation Disclaimer */
+
+html[data-theme='dark'] .equipment-disclaimer {
+  background: #2a2415;
+  border-left-color: var(--pact-yellow);
+  color: #d1d5db;
+}
+
+html[data-theme='dark'] .equipment-disclaimer strong {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .equipment-disclaimer p {
+  color: #d1d5db;
+}
 
 /* =========================
    FORM PREVIEW CARDS
@@ -3506,4 +3790,953 @@ background: var(--pact-red);
 .theme-doc-sidebar-menu > .menu__list-item > .menu__link,
 .theme-doc-sidebar-menu > .menu__list-item > .menu__list-item-collapsible > .menu__link {
   font-weight: 700;
+}
+
+/* =========================
+   TRAINING EXERCISES
+========================= */
+
+.exercise-frequency-section {
+  margin-top: 1.5rem;
+}
+
+.exercise-frequency-title {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--pact-navy);
+}
+
+.exercise-frequency-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.exercise-frequency-card {
+  padding: 0.75rem;
+  text-align: center;
+
+  border-right: 1px solid #d1d5db;
+}
+
+.exercise-frequency-card:last-child {
+  border-right: none;
+}
+
+.exercise-frequency-name {
+  margin-bottom: 0.15rem;
+  font-weight: 700;
+}
+
+.exercise-frequency-value {
+  color: #111827;
+}
+
+.exercise-frequency-note {
+  margin-top: 0.5rem;
+
+  font-size: 0.9rem;
+
+  color: #4b5563;
+}
+
+
+/* =========================
+   DISTRICT COLORS
+========================= */
+
+.district-frequency-north {
+  background: #f0fdf4;
+}
+
+.district-frequency-north .exercise-frequency-name {
+  color: #22c55e;
+}
+
+.district-frequency-east {
+  background: #fefce8;
+}
+
+.district-frequency-east .exercise-frequency-name {
+  color: #ca8a04;
+}
+
+.district-frequency-west {
+  background: #faf5ff;
+}
+
+.district-frequency-west .exercise-frequency-name {
+  color: #a855f7;
+}
+
+.district-frequency-northwest {
+  background: #fef2f2;
+}
+
+.district-frequency-northwest .exercise-frequency-name {
+  color: #ef4444;
+}
+
+.district-frequency-central {
+  background: #eff6ff;
+}
+
+.district-frequency-central .exercise-frequency-name {
+  color: #3b82f6;
+}
+
+
+/* =========================
+   NET CONTROL
+========================= */
+
+.exercise-net-control-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.exercise-net-control-card {
+  grid-column: 1;
+
+  background: #ffffff;
+
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+}
+
+
+/* =========================
+   DARK MODE - TRAINING EXERCISES
+========================= */
+
+html[data-theme='dark'] .exercise-frequency-title {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .exercise-frequency-grid {
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .exercise-frequency-card {
+  border-right-color: #374151;
+}
+
+html[data-theme='dark'] .exercise-frequency-value {
+  color: #e5e7eb;
+}
+
+html[data-theme='dark'] .exercise-frequency-note {
+  color: #9ca3af;
+}
+
+
+/* North */
+
+html[data-theme='dark'] .district-frequency-north {
+  background: #16351f;
+}
+
+html[data-theme='dark'] .district-frequency-north .exercise-frequency-name {
+  color: #86efac;
+}
+
+
+/* East */
+
+html[data-theme='dark'] .district-frequency-east {
+  background: #3a3112;
+}
+
+html[data-theme='dark'] .district-frequency-east .exercise-frequency-name {
+  color: #fde68a;
+}
+
+
+/* West */
+
+html[data-theme='dark'] .district-frequency-west {
+  background: #2a2142;
+}
+
+html[data-theme='dark'] .district-frequency-west .exercise-frequency-name {
+  color: #d8b4fe;
+}
+
+
+/* Northwest */
+
+html[data-theme='dark'] .district-frequency-northwest {
+  background: #3b1d1d;
+}
+
+html[data-theme='dark'] .district-frequency-northwest .exercise-frequency-name {
+  color: #fca5a5;
+}
+
+
+/* Central */
+
+html[data-theme='dark'] .district-frequency-central {
+  background: #172b4d;
+}
+
+html[data-theme='dark'] .district-frequency-central .exercise-frequency-name {
+  color: #93c5fd;
+}
+
+
+/* Net Control */
+
+html[data-theme='dark'] .exercise-net-control-card {
+  background: #111827;
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .exercise-net-control-card .exercise-frequency-name {
+  color: #f3f4f6;
+}
+
+
+/* =========================
+   EXERCISE SEQUENCE CARDS
+========================= */
+
+html[data-theme='dark'] .cert-card {
+  background: #111827;
+
+  color: #d1d5db;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .cert-card h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .cert-card p {
+  color: #d1d5db;
+}
+
+html[data-theme='dark'] .cert-arrow {
+  color: #9ca3af;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 996px) {
+  .exercise-frequency-grid {
+    grid-template-columns: 1fr;
+    border-radius: 8px;
+  }
+
+  .exercise-frequency-card {
+    border-right: none;
+    border-bottom: 1px solid #d1d5db;
+  }
+
+  .exercise-frequency-card:last-child {
+    border-bottom: none;
+  }
+
+  html[data-theme='dark'] .exercise-frequency-card {
+    border-bottom-color: #374151;
+  }
+
+  .exercise-net-control-row {
+    grid-template-columns: 1fr;
+  }
+
+  .exercise-net-control-card {
+    grid-column: auto;
+  }
+}
+
+/* =========================
+   DARK MODE - ACTIVATION
+========================= */
+
+/* -------------------------
+   TELEGRAM / EVERBRIDGE CARDS
+------------------------- */
+
+html[data-theme='dark'] .custom-box {
+  background: #111827;
+  border-color: #374151;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .custom-box-header {
+  background: #1f2937;
+  border-bottom-color: #374151;
+}
+
+html[data-theme='dark'] .custom-box-header h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .custom-box-body {
+  background: #111827;
+}
+
+html[data-theme='dark'] .custom-box-body p {
+  color: #d1d5db;
+}
+
+
+/* -------------------------
+   ACTIVATION SEQUENCE TITLE
+------------------------- */
+
+html[data-theme='dark'] .cert-path-title {
+  color: #f3f4f6;
+}
+
+
+/* -------------------------
+   ACTIVATION SEQUENCE CARDS
+------------------------- */
+
+html[data-theme='dark'] .cert-card {
+  background: #111827;
+  color: #d1d5db;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .cert-card h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .cert-card p {
+  color: #d1d5db;
+}
+
+
+/* Blue activation cards */
+
+html[data-theme='dark'] .cert-card.cert-blue {
+  border-color: var(--pact-blue);
+}
+
+html[data-theme='dark'] .cert-card.cert-blue .cert-card-header {
+  background: var(--pact-blue);
+  color: #ffffff;
+}
+
+
+/* Red activation card */
+
+html[data-theme='dark'] .cert-card.cert-red {
+  border-color: var(--pact-red);
+}
+
+html[data-theme='dark'] .cert-card.cert-red .cert-card-header {
+  background: var(--pact-red);
+  color: #ffffff;
+}
+
+
+/* -------------------------
+   ACTIVATION SEQUENCE ARROWS
+------------------------- */
+
+html[data-theme='dark'] .cert-arrow {
+  color: #9ca3af;
+}
+
+
+/* -------------------------
+   ACTIVATION ICONS
+------------------------- */
+
+html[data-theme='dark'] .cert-icon {
+  background: #f8fafc;
+
+  border-radius: 12px;
+
+  padding: 0.4rem;
+}
+
+
+/* -------------------------
+   HORIZONTAL RULES
+------------------------- */
+
+html[data-theme='dark'] .theme-doc-markdown hr {
+  border-color: #374151;
+}
+
+/* =========================
+   DARK MODE - DEPLOYMENT
+========================= */
+
+
+/* -------------------------
+   DEPLOYMENT SEQUENCE
+------------------------- */
+
+html[data-theme='dark'] .deployment-step-cards .cert-card {
+  background: #111827;
+  color: #d1d5db;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .deployment-step-cards .cert-card h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .deployment-step-cards .cert-card p {
+  color: #d1d5db;
+}
+
+html[data-theme='dark'] .deployment-step-cards .cert-card.cert-red {
+  border-color: var(--pact-red);
+}
+
+html[data-theme='dark'] .deployment-step-cards .cert-card.cert-red .cert-card-header {
+  background: var(--pact-red);
+  color: #ffffff;
+}
+
+html[data-theme='dark'] .deployment-step-cards .cert-arrow {
+  color: #9ca3af;
+}
+
+
+/* Clickable deployment cards */
+
+html[data-theme='dark'] .deployment-step-cards .card-link {
+  color: inherit;
+}
+
+html[data-theme='dark'] .deployment-step-cards .card-link:hover {
+  text-decoration: none;
+}
+
+html[data-theme='dark'] .deployment-step-cards .cert-card:hover {
+  background: #172033;
+
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+
+/* -------------------------
+   ACC / MARKDOWN TABLES
+------------------------- */
+
+html[data-theme='dark'] .theme-doc-markdown table {
+  display: table;
+  width: 100%;
+
+  background: transparent;
+
+  border-collapse: collapse;
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table thead {
+  background: transparent;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table th {
+  background: #1f2937;
+  color: #f3f4f6;
+
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table td {
+  background: #111827;
+  color: #d1d5db;
+
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table tr:nth-child(even) td {
+  background: #161f2d;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table tr:hover td {
+  background: #1f2937;
+}
+
+/* =========================
+   MARKDOWN TABLE LAYOUT
+========================= */
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+}
+
+/* -------------------------
+   DISTRICT BADGES
+------------------------- */
+
+html[data-theme='dark'] .district-badge {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+html[data-theme='dark'] .district-1 {
+  background: #16351f;
+  color: #9fe3ad;
+}
+
+html[data-theme='dark'] .district-2 {
+  background: #3a3112;
+  color: #f4d76d;
+}
+
+html[data-theme='dark'] .district-3 {
+  background: #3b1d1d;
+  color: #f4a3a3;
+}
+
+html[data-theme='dark'] .district-4 {
+  background: #2a2142;
+  color: #c5b5f3;
+}
+
+html[data-theme='dark'] .district-5 {
+  background: #172b4d;
+  color: #9fc4ff;
+}
+
+
+/* -------------------------
+   REPORTING FORM CARDS
+------------------------- */
+
+html[data-theme='dark'] .card {
+  background: #111827;
+
+  border-color: #374151;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] .card__body {
+  background: #111827;
+}
+
+html[data-theme='dark'] .card__body h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .card__body p {
+  color: #d1d5db;
+}
+
+html[data-theme='dark'] a.card-link {
+  color: inherit;
+}
+
+html[data-theme='dark'] a.card-link:hover {
+  text-decoration: none;
+}
+
+html[data-theme='dark'] a.card-link:hover .card {
+  background: #172033;
+
+  border-color: #4b5563;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* -------------------------
+   BLOCKQUOTES / RADIO EXAMPLE
+------------------------- */
+
+html[data-theme='dark'] .theme-doc-markdown blockquote {
+  background: #161f2d;
+
+  border-left-color: var(--pact-blue);
+
+  color: #e5e7eb;
+}
+
+
+/* -------------------------
+   HORIZONTAL RULES
+------------------------- */
+
+html[data-theme='dark'] .theme-doc-markdown hr {
+  border-color: #374151;
+}
+
+/* =========================
+   DARK MODE - INCIDENT COORDINATION
+========================= */
+
+
+/* -------------------------
+   PACE PLAN CONTAINER
+------------------------- */
+
+html[data-theme='dark'] .pace-plan {
+  background: #111827;
+  border-color: #374151;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+
+/* -------------------------
+   PACE HEADER
+------------------------- */
+
+html[data-theme='dark'] .pace-plan-header {
+  background: #1f2937;
+  border-bottom-color: #374151;
+}
+
+html[data-theme='dark'] .pace-plan-header h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .pace-plan-header p {
+  color: #9ca3af;
+}
+
+
+/* -------------------------
+   PACE CARDS
+------------------------- */
+
+html[data-theme='dark'] .pace-card {
+  background: #161f2d;
+  border-color: #374151;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+html[data-theme='dark'] .pace-card:hover {
+  background: #1f2937;
+
+  border-color: #4b5563;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .pace-card h4 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .pace-card p {
+  color: #d1d5db;
+}
+
+
+/* -------------------------
+   PACE LETTER CIRCLES
+------------------------- */
+
+html[data-theme='dark'] .pace-letter {
+  background: var(--pact-red);
+  color: #ffffff;
+}
+
+
+/* -------------------------
+   PACE LABELS
+------------------------- */
+
+html[data-theme='dark'] .pace-name {
+  color: #9ca3af;
+}
+
+
+/* -------------------------
+   TEXT / ASCII DIAGRAMS
+------------------------- */
+
+html[data-theme='dark'] .theme-code-block,
+html[data-theme='dark'] pre {
+  background: #111827 !important;
+
+  border: 1px solid #374151;
+
+  color: #e5e7eb;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+html[data-theme='dark'] pre code {
+  color: #e5e7eb;
+}
+
+
+/* -------------------------
+   BLOCKQUOTE
+------------------------- */
+
+html[data-theme='dark'] .theme-doc-markdown blockquote {
+  background: #161f2d;
+
+  border-left-color: var(--pact-red);
+
+  color: #d1d5db;
+}
+
+
+/* -------------------------
+   HORIZONTAL RULES
+------------------------- */
+
+html[data-theme='dark'] .theme-doc-markdown hr {
+  border-color: #374151;
+}
+
+/* =========================
+   LDS RESOURCES
+========================= */
+
+/* Reporting responsibility box */
+
+.lds-reporting-box {
+  background: #f5f6f7;
+
+  border-radius: 10px;
+
+  padding: 1.25rem 1.5rem;
+
+  margin-bottom: 1.5rem;
+}
+
+
+/* ERC / PACT cards */
+
+.lds-net-card {
+  border: 1px solid #d1d5db;
+}
+
+.lds-net-card--erc {
+  border-top: 5px solid var(--pact-blue);
+}
+
+.lds-net-card--pact {
+  border-top: 5px solid var(--pact-red);
+}
+
+
+/* Resource accordions */
+
+.theme-doc-markdown > details {
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+
+  margin: 1rem 0;
+
+  background: #ffffff;
+}
+
+.theme-doc-markdown > details > summary {
+  padding: 0.9rem 1rem;
+
+  cursor: pointer;
+
+  color: var(--pact-navy);
+
+  background: #f8fafc;
+
+  border-radius: 9px;
+
+  font-weight: 700;
+}
+
+.theme-doc-markdown > details[open] > summary {
+  border-bottom: 1px solid #d1d5db;
+
+  border-radius: 9px 9px 0 0;
+}
+
+.theme-doc-markdown > details > :not(summary) {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
+/* =========================
+   DARK MODE - LDS RESOURCES
+========================= */
+
+/* Reporting box */
+
+html[data-theme='dark'] .lds-reporting-box {
+  background: #161f2d;
+
+  color: #d1d5db;
+
+  border: 1px solid #374151;
+}
+
+
+/* ERC / PACT cards */
+
+html[data-theme='dark'] .lds-net-card {
+  background: #111827;
+
+  border-color: #374151;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+html[data-theme='dark'] .lds-net-card--erc {
+  border-top-color: var(--pact-blue);
+}
+
+html[data-theme='dark'] .lds-net-card--pact {
+  border-top-color: var(--pact-red);
+}
+
+html[data-theme='dark'] .lds-net-card .card__header,
+html[data-theme='dark'] .lds-net-card .card__body {
+  background: #111827;
+}
+
+html[data-theme='dark'] .lds-net-card h3 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .lds-net-card p,
+html[data-theme='dark'] .lds-net-card li {
+  color: #d1d5db;
+}
+
+
+/* Resource accordions */
+
+html[data-theme='dark'] .theme-doc-markdown > details {
+  background: #111827;
+
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .theme-doc-markdown > details > summary {
+  background: #1f2937;
+
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .theme-doc-markdown > details[open] > summary {
+  border-bottom-color: #374151;
+}
+
+html[data-theme='dark'] .theme-doc-markdown > details h3,
+html[data-theme='dark'] .theme-doc-markdown > details h4,
+html[data-theme='dark'] .theme-doc-markdown > details h5 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .theme-doc-markdown > details p,
+html[data-theme='dark'] .theme-doc-markdown > details li {
+  color: #d1d5db;
+}
+
+
+/* Emergency communications table */
+
+html[data-theme='dark'] .theme-doc-markdown table {
+  display: table;
+  width: 100%;
+
+  background: transparent;
+
+  border-collapse: collapse;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table th {
+  background: #1f2937;
+
+  color: #f3f4f6;
+
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table td {
+  background: #111827;
+
+  color: #d1d5db;
+
+  border-color: #374151;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table tr:nth-child(even) td {
+  background: #161f2d;
+}
+
+html[data-theme='dark'] .theme-doc-markdown table tr:hover td {
+  background: #1f2937;
+}
+
+
+/* Intro blockquote */
+
+html[data-theme='dark'] .theme-doc-markdown blockquote {
+  background: #161f2d;
+
+  border-left-color: var(--pact-blue);
+
+  color: #d1d5db;
+}
+
+
+/* Horizontal rules */
+
+html[data-theme='dark'] .theme-doc-markdown hr {
+  border-color: #374151;
+}
+
+/* =========================
+   DARK MODE - CURRENT ANNOUNCEMENTS
+========================= */
+
+html[data-theme='dark'] .current-announcements {
+  background: #111827;
+
+  border-color: #374151;
+  border-left-color: var(--pact-red);
+
+  color: #d1d5db;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+html[data-theme='dark'] .current-announcements h2,
+html[data-theme='dark'] .current-announcements h3,
+html[data-theme='dark'] .current-announcements h4 {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .current-announcements p {
+  color: #d1d5db;
+}
+
+html[data-theme='dark'] .current-announcements strong {
+  color: #f3f4f6;
+}
+
+html[data-theme='dark'] .current-announcements a {
+  color: #93c5fd;
+}
+
+html[data-theme='dark'] .current-announcements a:hover {
+  color: #bfdbfe;
+}
+
+
+/* Divider between announcement columns */
+
+html[data-theme='dark'] .current-announcements .announcement-divider {
+  border-color: #4b5563;
 }

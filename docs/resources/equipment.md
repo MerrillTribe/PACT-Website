@@ -766,7 +766,11 @@ The following equipment & gear are required for the [**PACT Certification Levels
 <div id="usb-cables" className="equipment-card">
   <span className="equipment-badge required">Required</span>
   <span className="equipment-level level-2">Level 2</span>
-  <img src="/img/usb-cables.png" alt="USB Cables" className="equipment-card-icon" />
+  <img
+    src="/img/usb-cables.png"
+    alt="USB Cables"
+    className="equipment-card-icon"
+  />
 
   <h3>USB Cables</h3>
 
@@ -943,11 +947,8 @@ The following equipment & gear are required for the [**PACT Certification Levels
   </details>
 </div>
 
-</div>
-
 <div id="solar-panel" className="equipment-card">
   <span className="equipment-badge recommended">Optional</span>
-
   <img
     src="/img/solar-panel.png"
     alt="Solar Panel"
@@ -962,32 +963,34 @@ The following equipment & gear are required for the [**PACT Certification Levels
 
   <details>
     <summary>Recommended Products</summary>
-    <p>      <div className="recommended-product">
-        <span className="product-name">PowerFilm Solar</span>
-        <span className="price-rating">$$$</span>
-      </div></p>
-<div className="price-legend">
-  <div className="price-legend-item">
-    <span className="price-legend-symbol">$</span>
-    <span className="price-legend-text">Budget</span>
-  </div>
 
-  <div className="price-legend-item">
-    <span className="price-legend-symbol">$$</span>
-    <span className="price-legend-text">Mid-Range</span>
-  </div>
+    <div className="recommended-product">
+      <span className="product-name">PowerFilm Solar</span>
+      <span className="price-rating">$$$</span>
+    </div>
 
-  <div className="price-legend-item">
-    <span className="price-legend-symbol">$$$</span>
-    <span className="price-legend-text">Premium</span>
-  </div>
-</div>
+    <div className="price-legend">
+      <div className="price-legend-item">
+        <span className="price-legend-symbol">$</span>
+        <span className="price-legend-text">Budget</span>
+      </div>
+
+      <div className="price-legend-item">
+        <span className="price-legend-symbol">$$</span>
+        <span className="price-legend-text">Mid-Range</span>
+      </div>
+
+      <div className="price-legend-item">
+        <span className="price-legend-symbol">$$$</span>
+        <span className="price-legend-text">Premium</span>
+      </div>
+    </div>
+
   </details>
 </div>
 
 <div id="solar-charge-controller" className="equipment-card">
   <span className="equipment-badge recommended">Optional</span>
-
   <img
     src="/img/solar-charge-controller.png"
     alt="Solar Charge Controller"
@@ -1002,27 +1005,32 @@ The following equipment & gear are required for the [**PACT Certification Levels
 
   <details>
     <summary>Recommended Products</summary>
-    <p>      <div className="recommended-product">
-        <span className="product-name">BuddiPole PowerMini 2</span>
-        <span className="price-rating">$$</span>
-      </div></p>
-<div className="price-legend">
-  <div className="price-legend-item">
-    <span className="price-legend-symbol">$</span>
-    <span className="price-legend-text">Budget</span>
-  </div>
 
-  <div className="price-legend-item">
-    <span className="price-legend-symbol">$$</span>
-    <span className="price-legend-text">Mid-Range</span>
-  </div>
+    <div className="recommended-product">
+      <span className="product-name">BuddiPole PowerMini 2</span>
+      <span className="price-rating">$$</span>
+    </div>
 
-  <div className="price-legend-item">
-    <span className="price-legend-symbol">$$$</span>
-    <span className="price-legend-text">Premium</span>
-  </div>
-</div>
+    <div className="price-legend">
+      <div className="price-legend-item">
+        <span className="price-legend-symbol">$</span>
+        <span className="price-legend-text">Budget</span>
+      </div>
+
+      <div className="price-legend-item">
+        <span className="price-legend-symbol">$$</span>
+        <span className="price-legend-text">Mid-Range</span>
+      </div>
+
+      <div className="price-legend-item">
+        <span className="price-legend-symbol">$$$</span>
+        <span className="price-legend-text">Premium</span>
+      </div>
+    </div>
+
   </details>
+</div>
+
 </div>
 
 ### Field Gear
