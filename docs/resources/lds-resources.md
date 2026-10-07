@@ -4,30 +4,39 @@ sidebar_position: 4
 
 # LDS Resources
 
-> While the Provo Auxiliary Communications Team (PACT) is not associated with any faith-based organization, members of The Church of Jesus Christ of Latter-day Saints constitute roughly 90% of Provo's population. This page is intended to help members of Provo's predominant faith-based organization understand the flow of communication during emergencies and find resources for creating or updating ward/stake emergency response plans.
+> While the Provo Auxiliary Communications Team (PACT) is not associated with any faith-based organizations, members of The Church of Jesus Christ of Latter-day Saints constitute roughly 90% of Provo's population. This page is intended to help Church leaders and members understand how the Church and Provo City coordinate during emergencies.
 
 ---
 
 ## Emergency Communication in Provo
 
-### Reporting
+The Church of Jesus Christ of Latter-day Saints provides guidance to help ward and stake leaders prepare for emergencies. Each ward and stake should maintain an emergency response plan. That plan should identify likely disasters, gather important information, outline assignments and procedures, identify ways to communicate, and help members prepare.
+
+When an emergency happens, Church leaders are responsible for **accounting, assessing, responding, and reporting**. They account for members and missionaries, assess needs and local conditions, help coordinate response efforts, and report important information.
+
+Reporting is a key responsibility because it helps both Church leaders and civil authorities understand local conditions and needs.
+
+### Reporting Information During an Emergency
 
 <div className="lds-reporting-box">
 
 During a major emergency, Church leaders are responsible for assessing and reporting the condition of:
 
-- Missionaries and members (including their locations)
-- Member housing
+- Missionaries and members, including their locations
+- Member housing and immediate needs
 - Church properties
-- The surrounding community (including roads, public utilities, commerce, facilities, and infrastructure)
+- Conditions in the surrounding community, including roads, utilities, commerce, facilities, and infrastructure
 
 </div>
 
-**Reports are communicated to both Church leadership and civil authorities.**
+This information is shared with both:
 
-These reports provide Church leaders with the situational awareness needed to coordinate the Church's response. When normal means of communication are unavailable, reports can be passed from the stakes to the Area Presidency through the [**ERC Net**](#erc-net).
+- **Church leadership:** to help leaders understand local conditions, identify needs, and coordinate the Church's response.
+- **Civil authorities:** to help Provo City understand urgent needs, damage, infrastructure problems, and other conditions affecting the community.
 
-Reports to civil authorities provide the emergency manager and public safety agencies with the situational awareness needed to respond to urgent needs and coordinate the community response. When normal means of communication are unavailable, reports can be passed from the stakes to Provo City through the [**PACT Net**](#pact-net).
+Under normal conditions, this information can be shared by phone, text, or the internet. During a major emergency, however, normal communication systems may be unavailable or unreliable.
+
+When normal communication methods are not available, amateur radio can provide alternate communication paths through the ERC and PACT Nets. The **ERC Net** connects Church leaders with Church emergency communication channels, while the **PACT Net** connects them with the Provo City Emergency Operations Center.
 
 <div className="row">
 
@@ -46,12 +55,13 @@ Reports to civil authorities provide the emergency manager and public safety age
 
       <div className="card__body">
 
-The Church of Jesus Christ of Latter-day Saints operates a worldwide emergency communication network called Emergency Response Communications (ERC). In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
+The Church uses Emergency Response Communications (ERC) to support emergency communication when normal systems are unavailable. In Utah County, the ERC Net is organized by the Lindon Bishop's Storehouse.
 
 **Training Net**
 
 - When: Every Tuesday @ 8 PM (VHF) & Saturday @ 8 AM (HF)
-- Frequency: **147.020 MHz (+)**, CTCSS 103.5 Hz & **3.9025 MHz**
+- VHF: **147.020 MHz (+)**, CTCSS 103.5 Hz
+- HF: **3.9025 MHz**
 - Notes: The first Tuesday of the month is conducted on 147.020 MHz simplex
 
 :::info Emergency Use
@@ -77,13 +87,13 @@ During an emergency, reports can be passed through the **147.020 MHz repeater**.
 
       <div className="card__body">
 
-The Provo Auxiliary Communications Team (PACT) Net provides an emergency communication path between Provo residents and Provo City emergency management.
+The PACT Net provides an emergency communication path to Provo City emergency management and the Emergency Operations Center.
 
 **Training Net**
 
 - When: Every Wednesday @ 8:30 PM
-- Frequency: **439.800 MHz simplex** & **443.575 MHz (+)**, CTCSS 123.0 Hz
-- Notes: Check-ins are conducted on 439.800 MHz; announcements follow on the Provo City Repeater
+- Check-ins: **439.800 MHz simplex**
+- Announcements/Training: **443.575 MHz (+)**, CTCSS 123.0 Hz
 
 :::info Emergency Use
 During an emergency, use **439.800 MHz simplex** to communicate with Net Control at the Provo City Emergency Operations Center (EOC).
@@ -96,23 +106,24 @@ During an emergency, use **439.800 MHz simplex** to communicate with Net Control
 </div>
 
 :::warning Reporting Priorities
-Life-threatening emergencies and requests for public safety assistance should always be reported through appropriate public safety channels. ERC Nets and priesthood reporting channels serve a different purpose and do not replace requests for emergency services.
+Life-threatening emergencies and requests for public safety assistance should always be reported through appropriate public safety channels. Church emergency communication networks, including the ERC Net, do not replace requests for emergency services.
 :::
 
+The ERC and PACT Nets serve different purposes and are not interchangeable. During an emergency, both may be used at the same time so information can reach both Church leadership and Provo City.
 
 ### Area Coordination Centers
 
-During major emergencies, stake centers serve as local gathering points where information from wards and the surrounding community is collected and relayed.
-
-Provo City has designated each English-speaking family stake center as an [**Area Coordination Center (ACC)**](/docs/operations/staffing-assignments-reporting/#area-coordination-centers-accs).
+During major emergencies, stake centers serve as local gathering points where information from wards and the surrounding community is collected and relayed. Provo City has designated each English-speaking family stake center as an [**Area Coordination Center (ACC)**](/docs/operations/staffing-assignments-reporting/#area-coordination-centers-accs).
 
 Ideally, each ACC will have a trained Emergency Communication Specialist familiar with both Church emergency communication procedures and PACT operations.
 
-Emergency Communication Specialists are vital in helping Church leaders establish and maintain reliable communication during an emergency. They collect and relay reports, maintain contact with the ERC and PACT Nets, and help ensure relevant information reaches the appropriate destination.
+Emergency Communication Specialists help Church leaders maintain communication during an emergency. They collect and relay reports, maintain contact with the ERC and PACT Nets, and help ensure information reaches the appropriate destination.
 
-Before an emergency occurs, specialists should become familiar with local communication procedures and reporting processes. Participation in PACT's training nets, exercises, and public service events provides practical experience operating radios, passing messages, and communicating within the established emergency network.
+Before an emergency, Specialists should become familiar with local communication procedures and reporting processes. Participating in PACT training nets, exercises, and public service events provides practical experience using radios and passing messages through the established emergency network.
 
-If an ACC does not have an Emergency Communication Specialist available, during an emergency, PACT will assign an available PACT member to the ACC to establish communications and relay information to the Provo City Emergency Operations Center.
+The annual [**Provo Prepared exercise**](/docs/training/training-exercises/#provo-prepared-emergency-communications-exercise) gives Church leaders and Emergency Communication Specialists an opportunity to practice using the PACT Net and become familiar with emergency reporting procedures before a real incident occurs.
+
+During an emergency, if an ACC does not have an Emergency Communication Specialist available, PACT will assign an available member to help establish communications and relay information to the Provo City Emergency Operations Center.
 
 :::tip Emergency Communications Service Missionaries
 Emergency Communications Service Missionaries, called by the Area Presidency, help train Coordinating Councils and Emergency Communication Specialists in emergency communication responsibilities and procedures.
@@ -123,6 +134,13 @@ Emergency Communications Service Missionaries, called by the Area Presidency, he
 ## Ward/Stake Emergency Response Plans
 
 As wards/stakes review and update their emergency response plans, Church leaders should consider how their communication procedures align with the Church's and Provo City's emergency communication procedures. Rather than creating separate reporting systems, ward and stake plans should support the established process for gathering information and passing it through the appropriate Church and civil communication channels.
+
+As part of that planning, leaders should consider:
+
+- **Who will gather reports** from members, wards, and the surrounding community?
+- **Who will communicate with Church leadership** when reports need to be passed through Church channels?
+- **Who will communicate with Provo City** when information needs to be passed to civil authorities?
+- **What backup communication methods will be used** if phone or internet service is unavailable?
 
 Special consideration should be given to wards and stakes that experience frequent membership turnover, such as Young Single Adult (YSA) and Married Student units. Emergency Communication Specialists, ward council members, and other key leaders may change regularly, making it important to review and update emergency response plans frequently and ensure that current leaders understand their roles and responsibilities.
 
@@ -162,7 +180,7 @@ Each plan should:
 5. Encourage member preparation.
 
 :::note Source
-[**Gospel Topics and Questions - Emergency Preparedness**](https://www.churchofjesuschrist.org/study/manual/gospel-topics/emergency-preparedness?lang=eng) ***(Updated April 2026)***
+[**Gospel Topics and Questions - Emergency Preparedness**](https://www.churchofjesuschrist.org/study/manual/gospel-topics/emergency-preparedness?lang=eng)
 :::
 
 </details>
@@ -249,7 +267,68 @@ Members may contribute to the Church Humanitarian Aid Fund using the Tithing and
 Wards, families, and individuals are encouraged to participate in local relief projects where practical.
 
 :::note Source
-[**Gospel Topics and Questions - Emergency Response**](https://www.churchofjesuschrist.org/study/manual/gospel-topics/emergency-response?lang=eng) ***(Updated April 2026)***
+[**Gospel Topics and Questions - Emergency Response**](https://www.churchofjesuschrist.org/study/manual/gospel-topics/emergency-response?lang=eng)
+:::
+
+</details>
+
+<details>
+  <summary><strong>Emergency Communication Guidelines</strong></summary>
+
+### Emergency Communication Guidelines
+
+During a disaster, normal means of communication may become inoperable; however, the need to communicate with Church leaders, missionaries, members, employees, civil authorities, and others is greatly increased. Using proper emergency communication methods can help decrease anxiety and stress during an emergency.
+
+#### The Foundation of Emergency Communication
+
+The Church’s objective in establishing emergency communication is to ensure that critical information can be received and conveyed.
+
+This includes:
+
+- The transfer of information and instructions from area, mission, and stake leaders to ward leaders, missionaries, and members.
+- Reports on the status of missionaries, Church members, and Church properties.
+- Plans for responding to needs of Church members and the community.
+- Coordination of relief efforts with civil authorities and other relief agencies.
+
+#### What Is the Role of a Welfare and Self-Reliance Specialist?
+
+The role of a welfare and self-reliance specialist assigned to manage emergency communications is to enhance a leader’s ability to communicate prior to a disaster and during disaster response.
+
+When managing emergency communications, specialists should not replace presiding ecclesiastical leaders or act outside of their direction.
+
+A stake welfare and self-reliance specialist has the following responsibilities:
+
+- Functions under the direction of a priesthood leader.
+- Recommends backup modes of communication.
+- Helps develop the emergency communications section of the stake emergency preparedness and response plan.
+- Maintains an understanding of local community and government emergency communication plans.
+- Plans to serve at the side of priesthood leaders during a disaster.
+
+#### What Communication Equipment Is Available?
+
+- Communication equipment has been positioned at Church headquarters, some welfare facilities, and area offices.
+- Local communication equipment can also be an effective resource for local units.
+
+##### Amateur Radio Networks “Nets”
+
+- Nets may also be organized at the local unit level under the direction of priesthood leaders.
+- Amateur radio should be seen as one of several options with which local emergency communication specialists should be familiar.
+
+#### What Are the Communication Methods?
+
+Telephone and internet services are often disrupted after a large or regional disaster. Leaders and members should be prepared to communicate using alternate methods that are available locally.
+
+| Method | Benefits | Considerations | Common Use Cases |
+|--------|----------|----------------|------------------|
+| **Cell Phone** | Used widely | Relies on cell coverage and power | One-on-one communication |
+| **Landline Phone** | Tied to a physical address | Requires the recipient to be in a physical location | One-on-one communication and conference calls |
+| **SMS/Text Messaging** | Often available even if voice lines are overwhelmed | Communicates a small amount of information | Field communications |
+| **Internet Communications** | Versatile and resilient | Requires internet connection and software | Mass coordination of relief efforts |
+| **Satellite Phone** | Works when cell phones are down | Requires satellite signal and available system capacity | Incoming and outgoing calls |
+| **Amateur Radio** | Very resilient | Requires a license | Communication into and out of affected areas |
+
+:::note Source
+[**Life Help - Preparedness - Emergency Communications Guidelines**](https://www.churchofjesuschrist.org/life/preparedness/emergency-communication-guidelines?lang=eng)
 :::
 
 </details>
@@ -321,68 +400,7 @@ Obtain medical care for those who have been injured or who have other health cha
 Provide assistance to family members who are suffering, have damaged shelter or belongings, or are experiencing emotional trauma or loss of livelihood.
 
 :::note Source
-[**Life Help - Preparedness - Disaster Planning**](https://www.churchofjesuschrist.org/life/preparedness/disaster-planning?lang=eng) ***(Updated April 2026)***
-:::
-
-</details>
-
-<details>
-  <summary><strong>Emergency Communication Guidelines</strong></summary>
-
-### Emergency Communication Guidelines
-
-During a disaster, normal means of communication may become inoperable; however, the need to communicate with Church leaders, missionaries, members, employees, civil authorities, and others is greatly increased. Using proper emergency communication methods can help decrease anxiety and stress during an emergency.
-
-#### The Foundation of Emergency Communication
-
-The Church’s objective in establishing emergency communication is to ensure that critical information can be received and conveyed.
-
-This includes:
-
-- The transfer of information and instructions from area, mission, and stake leaders to ward leaders, missionaries, and members.
-- Reports on the status of missionaries, Church members, and Church properties.
-- Plans for responding to needs of Church members and the community.
-- Coordination of relief efforts with civil authorities and other relief agencies.
-
-#### What Is the Role of a Welfare and Self-Reliance Specialist?
-
-The role of a welfare and self-reliance specialist assigned to manage emergency communications is to enhance a leader’s ability to communicate prior to a disaster and during disaster response.
-
-When managing emergency communications, specialists should not replace presiding ecclesiastical leaders or act outside of their direction.
-
-A stake welfare and self-reliance specialist has the following responsibilities:
-
-- Functions under the direction of a priesthood leader.
-- Recommends backup modes of communication.
-- Helps develop the emergency communications section of the stake emergency preparedness and response plan.
-- Maintains an understanding of local community and government emergency communication plans.
-- Plans to serve at the side of priesthood leaders during a disaster.
-
-#### What Communication Equipment Is Available?
-
-- Communication equipment has been positioned at Church headquarters, some welfare facilities, and area offices.
-- Local communication equipment can also be an effective resource for local units.
-
-##### Amateur Radio Networks “Nets”
-
-- Nets may also be organized at the local unit level under the direction of priesthood leaders.
-- Amateur radio should be seen as one of several options with which local emergency communication specialists should be familiar.
-
-#### What Are the Communication Methods?
-
-Telephone and internet services are often disrupted after a large or regional disaster. Leaders and members should be prepared to communicate using alternate methods that are available locally.
-
-| Method | Benefits | Considerations | Common Use Cases |
-|--------|----------|----------------|------------------|
-| **Cell Phone** | Used widely | Relies on cell coverage and power | One-on-one communication |
-| **Landline Phone** | Tied to a physical address | Requires the recipient to be in a physical location | One-on-one communication and conference calls |
-| **SMS/Text Messaging** | Often available even if voice lines are overwhelmed | Communicates a small amount of information | Field communications |
-| **Internet Communications** | Versatile and resilient | Requires internet connection and software | Mass coordination of relief efforts |
-| **Satellite Phone** | Works when cell phones are down | Requires satellite signal and available system capacity | Incoming and outgoing calls |
-| **Amateur Radio** | Very resilient | Requires a license | Communication into and out of affected areas |
-
-:::note Source
-[**Life Help - Preparedness - Emergency Communications Guidelines**](https://www.churchofjesuschrist.org/life/preparedness/emergency-communication-guidelines?lang=eng) ***(Updated April 2026)***
+[**Life Help - Preparedness - Disaster Planning**](https://www.churchofjesuschrist.org/life/preparedness/disaster-planning?lang=eng)
 :::
 
 </details>
@@ -428,7 +446,7 @@ As you build and maintain your emergency supply, include the following items:
 Another way to prepare for an emergency is to receive first aid, CPR, and AED training through a certified program.
 
 :::note Source
-[**Gospel Topics and Questions - Emergency Preparedness**](https://www.churchofjesuschrist.org/study/manual/gospel-topics/emergency-preparedness?lang=eng) ***(Updated April 2026)***
+[**Gospel Topics and Questions - Emergency Preparedness**](https://www.churchofjesuschrist.org/study/manual/gospel-topics/emergency-preparedness?lang=eng)
 :::
 
 </details>
@@ -489,6 +507,8 @@ Another way to prepare for an emergency is to receive first aid, CPR, and AED tr
 
 ## Legacy Groups/Programs
 
+Several emergency communication and neighborhood response programs have been used in Provo and throughout Utah over the years. These programs provide useful historical context for how emergency reporting and communication practices have developed.
+
 :::note Mercury Amateur Radio Association (MARA)
 After the Teton Dam disaster of 1976, the Church created an emergency communication network known as the **Mercury Amateur Radio Association (MARA)**. In 1990, the Church separated itself from MARA, and created another emergency communication team called the Emergency Response Radio System (ERRS). ERRS was renamed in 1995 to Emergency Response Communications (ERC).
 :::
@@ -498,7 +518,7 @@ The **Block Captain Program** was a neighborhood-based emergency preparedness mo
 
 The model was intended to help Church leaders quickly account for members and gather neighborhood-level information after a disaster, particularly when normal communication systems were disrupted. Over time, however, experience showed that assigned Block Captains were not always available or able to participate during an emergency, which could leave gaps in neighborhood reporting.
 
-Some wards and neighborhoods, in Provo, continue to use variations of the Block Captain Program as part of their emergency response plans.
+Some wards and neighborhoods in Provo continue to use variations of the Block Captain Program as part of their emergency response plans.
 :::
 
 :::note Rapid Disaster Assessment Program (RDAP)
