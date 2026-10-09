@@ -17,6 +17,19 @@ PACT would like to thank Provo City for installing the repeater and making it av
 **CTCSS:** 123.0 Hz  
 **Location:** Provo City Hall
 
+<div style={{ textAlign: 'center', margin: '2rem 0' }}>
+  <img
+    src="/img/provo-repeater.jpg"
+    alt="New Provo City Repeater"
+    style={{
+      width: '100%',
+      maxWidth: '650px',
+      height: 'auto',
+      borderRadius: '8px',
+    }}
+  />
+</div>
+
 <!-- truncate -->
 
 ---

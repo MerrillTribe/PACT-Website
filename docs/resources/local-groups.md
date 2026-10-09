@@ -32,7 +32,7 @@ https://www.tert.org/radio-training-and-resources/
 
 ## Utah Valley Amateur Radio Club (UVARC)
 
-Utah Valley Amateur Radio Club (UVARC) is the local amateur radio club. The mission of UVARC is to promote the enjoyment of the amateur radio fellowship and hobby in the Utah Valley area. UVARC provides ham radio information for those within or visiting. UVARC was officially organized in 2016 and hold frequent radio related activities. UVARC meets on the first Thursday from 6:30PM to 8:00PM at the Orem City Council Chamber Room.
+Utah Valley Amateur Radio Club (UVARC) is the local amateur radio club. The mission of UVARC is to promote the enjoyment of the amateur radio fellowship and hobby in the Utah Valley area. UVARC provides ham radio information for those within or visiting. UVARC was officially organized in 2016 and holds frequent radio related activities. UVARC meets on the first Thursday from 6:30PM to 8:00PM at the Orem City Council Chamber Room.
 
 https://uvarc.club/
 
