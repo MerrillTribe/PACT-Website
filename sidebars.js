@@ -41,6 +41,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'resources/apparel',
+        'resources/band-plans',
         'resources/codes',
         'resources/emergency-notification-systems',
         'resources/equipment',
@@ -54,7 +55,7 @@ const sidebars = {
         'resources/local-nets-repeaters-frequencies',
         'resources/preparation-for-disasters',
         'resources/radio-basics',
-        'resources/radio-services-band-plans',
+        'resources/radio-services',
         'resources/radio-troubleshooting',
       ],
     },

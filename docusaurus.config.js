@@ -1,4 +1,5 @@
-// @ts-check
+
+ // @ts-check
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
@@ -25,12 +26,6 @@ const config = {
     locales: ['en'],
   },
 
-  markdown: {
-    mermaid: true,
-  },
-
-  themes: ['@docusaurus/theme-mermaid'],
-
   presets: [
     [
       'classic',
@@ -41,15 +36,15 @@ const config = {
           showLastUpdateTime: false,
         },
 
-blog: {
-  routeBasePath: 'announcements',
-  blogTitle: 'PACT Announcements',
-  blogDescription:
-    'Important updates, training information, schedule changes, certification updates, and other information from the Provo Auxiliary Communications Team.',
-  showReadingTime: false,
-  blogSidebarTitle: 'Recent Announcements',
-  blogSidebarCount: 5,
-},
+        blog: {
+          routeBasePath: 'announcements',
+          blogTitle: 'PACT Announcements',
+          blogDescription:
+            'Important updates, training information, schedule changes, certification updates, and other information from the Provo Auxiliary Communications Team.',
+          showReadingTime: false,
+          blogSidebarTitle: 'Recent Announcements',
+          blogSidebarCount: 5,
+        },
 
         theme: {
           customCss: './src/css/custom.css',

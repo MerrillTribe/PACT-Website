@@ -5,6 +5,12 @@ draft: true
 ---
  
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {
+  Info, Map, HeartPulse, Building2, Zap, RadioTower,
+  CarFront, Trees, BriefcaseBusiness, Wheat, Landmark,
+  House, Droplets, Wind, Flame
+} from 'lucide-react';
+
  
 export const DisasterRating = ({ label, value, level }) => {
   const unrated = level == null;
@@ -34,6 +40,44 @@ export const DisasterRating = ({ label, value, level }) => {
   );
 };
  
+export const DISASTER_IMPACTS = {
+  safety: ['Health & Safety', HeartPulse],
+  infrastructure: ['Buildings & Infrastructure', Building2],
+  utilities: ['Utilities', Zap],
+  communications: ['Communications', RadioTower],
+  transportation: ['Transportation', CarFront],
+  environment: ['Environment', Trees],
+  economy: ['Economic Activity', BriefcaseBusiness],
+  agriculture: ['Agriculture & Food', Wheat],
+  services: ['Public Services', Landmark],
+  housing: ['Housing & Displacement', House],
+  water: ['Water Supply', Droplets],
+  air: ['Air Quality', Wind],
+  fire: ['Fire Risk', Flame],
+};
+
+export const DisasterImpacts = ({ impacts = [] }) => {
+  if (!impacts.length) return null;
+  return (
+    <div className="disaster-impacts">
+      <div className="disaster-impacts-heading">Potential Impacts</div>
+      <div className="disaster-impacts-list">
+        {impacts.map(key => {
+          const entry = DISASTER_IMPACTS[key];
+          if (!entry) return null;
+          const [label, Icon] = entry;
+          return (
+            <div className="disaster-impact" key={key}>
+              <Icon size={17} strokeWidth={1.8} aria-hidden="true" />
+              <span>{label}</span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 export const DisasterCard = ({
   id,
   title,
@@ -43,6 +87,9 @@ export const DisasterCard = ({
   likelihoodLevel = null,
   magnitude = 'Not Rated',
   magnitudeLevel = null,
+  impacts = [],
+  riskMap = null,
+  about = false,
   children,
   exampleLabel,
   exampleTitle,
@@ -50,45 +97,62 @@ export const DisasterCard = ({
 }) => (
   <div className="disaster-profile-card">
     <div className="disaster-profile-sidebar">
-      <img
-        src={useBaseUrl(image)}
-        alt={alt || title}
-        className="disaster-profile-icon"
-      />
- 
-      <DisasterRating
-        label="Likelihood"
-        value={likelihood}
-        level={likelihoodLevel}
-      />
- 
-      <DisasterRating
-        label="Magnitude"
-        value={magnitude}
-        level={magnitudeLevel}
-      />
+      <img src={useBaseUrl(image)} alt={alt || title} className="disaster-profile-icon" />
+      <DisasterRating label="Likelihood" value={likelihood} level={likelihoodLevel} />
+      <DisasterRating label="Magnitude" value={magnitude} level={magnitudeLevel} />
+      <DisasterImpacts impacts={impacts} />
+      {riskMap && (
+        <a href={useBaseUrl(riskMap)} target="_blank" rel="noopener noreferrer"
+           className="button button--primary disaster-risk-map">
+          <Map size={17} aria-hidden="true" />
+          <span>Risk Map</span>
+        </a>
+      )}
     </div>
- 
     <div className="disaster-profile-content">
-      <h2 id={id}>{title}</h2>
- 
+      <div className="disaster-profile-title-row">
+        <h2 id={id}>{title}</h2>
+        {about && (
+          <button type="button" className="disaster-about-button"
+            title={`About ${title}`} aria-label={`About ${title}`}
+            aria-haspopup="dialog" aria-controls={`hazard-about-${id}`}
+            onClick={() => document.getElementById(`hazard-about-${id}`)?.showModal()}>
+            <Info size={20} strokeWidth={1.8} aria-hidden="true" />
+            <span>More Info</span>
+          </button>
+        )}
+      </div>
       {children}
- 
       {exampleTitle && (
         <div className="disaster-profile-event">
           <span className="disaster-profile-event-label">
             {exampleLabel || 'Local / Recent Example'}
           </span>
- 
           <strong>{exampleTitle}</strong>
- 
           {exampleText && <p>{exampleText}</p>}
         </div>
       )}
     </div>
   </div>
 );
- 
+
+export const AboutHazardModal = ({ id, title, children }) => (
+  <dialog id={`hazard-about-${id}`} className="disaster-about-modal"
+    aria-label={`About ${title}`}
+    onClick={event => {
+      if (event.target === event.currentTarget) event.currentTarget.close();
+    }}>
+    <div className="disaster-about-modal-header">
+      <h2>About {title}</h2>
+      <button type="button" className="disaster-about-close" aria-label="Close information"
+        onClick={event => event.currentTarget.closest('dialog')?.close()}>
+        ×
+      </button>
+    </div>
+    <div className="disaster-about-modal-body">{children}</div>
+  </dialog>
+);
+
 # Preparation for Disasters
  
 Provo’s location makes it a great place to live, but it also comes with some inherent risks.
@@ -603,13 +667,45 @@ The number of buildings potentially exposed only tells part of the story. Risk m
 </div>
  
 ---
+
+## Preparing for Disasters
+
+:::warning Transportation & Access During a Major Emergency
+ 
+Provo's geography can make movement through the city more difficult during a large emergency. Utah Lake, the Wasatch Mountains, the Provo River, Interstate 15, and the railroad corridor all influence how people and emergency resources move through the community.
+ 
+The 2022 assessment specifically notes that areas west of I-15 have relatively few crossings to the east side of the city, which could create congestion during a large-scale evacuation.
+ 
+A major disaster could also damage or temporarily close roads, bridges, rail crossings, and other transportation routes.
+ 
+:::
+
+---
+ 
+## Stay Informed
+
+:::danger Emergency Alerts
+
+PACT encourages everyone in the Provo community to sign up for local emergency notification systems. These alerts can provide important information and instructions before, during, and after an emergency.
+
+When an emergency occurs, monitor official alerts and follow instructions from Provo City, Utah County, and other public-safety agencies.
+
+<div style={{ textAlign: 'center', marginTop: '1rem' }}>
+  <a
+    href={useBaseUrl('/docs/resources/emergency-notification-systems/')}
+    className="button button--danger button--lg"
+  >
+    Emergency Notification Systems
+  </a>
+</div>
+
+:::
+
+---
  
 ## Disasters
  
 The cards below provide information about different types of disasters, including how they occur, the impacts they can cause, and how they may affect Provo and Utah County.
-
-
-### Earthquake
 
 <DisasterCard
   id="earthquake"
@@ -619,6 +715,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={1}
   magnitude="Catastrophic"
   magnitudeLevel={4}
+  impacts={['safety', 'infrastructure', 'utilities', 'communications', 'transportation']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="2020 — Magna Earthquake"
   exampleText="On March 18, 2020, a magnitude 5.7 earthquake struck near Magna, Utah. Shaking was felt across much of the Wasatch Front, causing structural damage and utility disruptions. The event demonstrated how even a moderate earthquake can affect communities throughout the region."
@@ -647,9 +745,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Earthquakes</strong></summary>
-
+<AboutHazardModal id="earthquake" title="Earthquakes">
   <div>
 
   #### Earthquake Magnitude
@@ -711,16 +807,17 @@ The cards below provide information about different types of disasters, includin
   **Learn More:** [USGS — Earthquake Magnitude, Energy Release, and Shaking Intensity](https://www.usgs.gov/programs/earthquake-hazards/earthquake-magnitude-energy-release-and-shaking-intensity)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-### Liquefaction
 
 <DisasterCard
   id="liquefaction"
   title="Liquefaction"
   image="/img/liquefaction.png"
+  impacts={['infrastructure', 'utilities', 'communications', 'transportation']}
+  about={true}
+  riskMap="/files/provo-liquefaction-map.pdf"
   exampleLabel="Local Example"
   exampleTitle="Liquefaction Potential in Provo"
   exampleText="Large portions of western Provo are located on soils susceptible to liquefaction. The 2022 Pre-Disaster Mitigation Plan identifies significant exposure throughout the city, particularly in areas with loose sediments and shallow groundwater."
@@ -750,9 +847,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Liquefaction</strong></summary>
-
+<AboutHazardModal id="liquefaction" title="Liquefaction">
   <div>
 
   #### How Liquefaction Occurs
@@ -833,12 +928,9 @@ The cards below provide information about different types of disasters, includin
   **Learn More:** [Utah Geological Survey — Liquefaction](https://geology.utah.gov/hazards/earthquakes/liquefaction/)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-
-### Wildfire
 
 <DisasterCard
   id="wildfire"
@@ -848,6 +940,9 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={4}
   magnitude="Limited"
   magnitudeLevel={2}
+  impacts={['safety', 'housing', 'air', 'communications', 'environment']}
+  about={true}
+  riskMap="/files/provo-wildfire-map.pdf"
   exampleLabel="Local Example"
   exampleTitle="2018 — Bald Mountain & Pole Creek Fires"
   exampleText="The Bald Mountain and Pole Creek Fires burned approximately 120,851 acres in southern Utah County and surrounding areas. The lightning-caused fires prompted widespread evacuations, threatened thousands of homes, and disrupted transportation routes, demonstrating how rapidly wildfires can threaten communities along the Wasatch Front."
@@ -878,9 +973,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Wildfires</strong></summary>
-
+<AboutHazardModal id="wildfire" title="Wildfire">
   <div>
 
   #### The Fire Triangle
@@ -970,12 +1063,9 @@ The cards below provide information about different types of disasters, includin
   **Learn More:** [National Park Service — Wildland Fire Behavior](https://www.nps.gov/articles/wildland-fire-behavior.htm)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-
-### Flooding
 
 <DisasterCard
   id="flooding"
@@ -985,6 +1075,9 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={3}
   magnitude="Limited"
   magnitudeLevel={2}
+  impacts={['safety', 'housing', 'infrastructure', 'utilities', 'communications']}
+  about={true}
+  riskMap="/files/provo-flood-plain-map.pdf"
   exampleLabel="Local Example"
   exampleTitle="September 2013 — Provo Flooding"
   exampleText="On September 7, 2013, intense rainfall caused widespread flash flooding across Provo and other Utah County communities. Floodwaters damaged roads, homes, and public facilities, including Lions Park. At least 25 Provo homes sustained major damage, while more than 50 experienced minor damage."
@@ -1017,9 +1110,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Flooding</strong></summary>
-
+<AboutHazardModal id="flooding" title="Flooding">
   <div>
 
   #### Types of Flooding
@@ -1030,7 +1121,6 @@ The cards below provide information about different types of disasters, includin
     banks of a river or stream, inundating surrounding land.
     Prolonged rainfall and melting snowpack can increase river
     flows beyond the capacity of the channel.
-
   - **Flash Flooding:** Develops rapidly, often within minutes
     or hours of intense rainfall. Flash floods can produce
     powerful currents with little warning, particularly in
@@ -1131,11 +1221,9 @@ The cards below provide information about different types of disasters, includin
   **Learn More:** [National Weather Service — Flood Hazards](https://www.weather.gov/safety/flood-hazards)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-### Landslide
 
 <DisasterCard
   id="landslide"
@@ -1145,6 +1233,9 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={3}
   magnitude="Critical"
   magnitudeLevel={3}
+  impacts={['safety', 'housing', 'infrastructure', 'transportation', 'communications']}
+  about={true}
+  riskMap="/files/provo-landslide-map.pdf"
   exampleLabel="Local Example"
   exampleTitle="2005 — Sherwood Hills, Provo"
   exampleText="Following an unusually wet winter in 2005, elevated groundwater levels contributed to renewed landslide movement in Provo's Sherwood Hills neighborhood. The slow-moving landslide damaged homes and infrastructure, resulting in multiple homes being condemned. The event demonstrated how unstable slopes can threaten developed neighborhoods even without sudden, rapid ground movement."
@@ -1177,9 +1268,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Landslides</strong></summary>
-
+<AboutHazardModal id="landslide" title="Landslide">
   <div>
 
   #### How Landslides Occur
@@ -1229,7 +1318,6 @@ The cards below provide information about different types of disasters, includin
   while others can travel downhill in seconds.
 
   #### What Triggers Landslides?
-
   Several natural and human-related factors can cause slopes
   to become unstable:
 
@@ -1283,11 +1371,9 @@ The cards below provide information about different types of disasters, includin
   **Learn More:** [USGS — Landslide Types and Processes](https://pubs.usgs.gov/fs/2004/3072/)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-### Mudslides & Debris Flows
 
 <DisasterCard
   id="mudslide"
@@ -1298,6 +1384,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={3}
   magnitude="Critical"
   magnitudeLevel={3}
+  impacts={['safety', 'infrastructure', 'transportation', 'utilities', 'communications']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="2025 — Buckley Draw, Provo"
   exampleText="On August 27, 2025, intense rainfall over the recently burned Buckley Draw watershed triggered a major debris flow in southeastern Provo. Approximately 15 acre-feet of sediment and debris moved downhill, overwhelming portions of the protective infrastructure, damaging a church building, and reaching State Street. Existing diversion structures helped prevent more extensive damage to nearby residential neighborhoods."
@@ -1331,9 +1419,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Mudslides & Debris Flows</strong></summary>
-
+<AboutHazardModal id="mudslide" title="Mudslides & Debris Flows">
   <div>
 
   #### How Debris Flows Form
@@ -1429,7 +1515,6 @@ The cards below provide information about different types of disasters, includin
 
   - **Increase in Volume:** The flow can collect additional
     sediment, rocks, and vegetation as it travels.
-
   - **Spread onto Alluvial Fans:** When a flow exits a
     narrow canyon and reaches flatter ground, it can
     spread outward and deposit large amounts of debris.
@@ -1482,16 +1567,16 @@ The cards below provide information about different types of disasters, includin
   **Local Study:** [Provo City — Buckley Draw Debris Flow Forensic Study](https://www.provo.gov/DocumentCenter/View/7408/Buckley-Draw-Debris-Flow-Forensic-Study-PDF)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-### Sinkhole
 
 <DisasterCard
   id="sinkhole"
   title="Sinkhole"
   image="/img/sinkhole.png"
+  impacts={['safety', 'infrastructure', 'utilities', 'transportation']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Sinkhole and Ground Collapse Hazards in Utah"
   exampleText="Sinkholes occur in parts of Utah where soluble bedrock, including limestone and gypsum, can develop underground cavities. Although ground-collapse hazards exist in the state, the 2022 Pre-Disaster Mitigation Plan does not identify sinkholes as a separately rated hazard for Provo."
@@ -1524,9 +1609,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Sinkholes</strong></summary>
-
+<AboutHazardModal id="sinkhole" title="Sinkhole">
   <div>
 
   #### How Sinkholes Form
@@ -1647,11 +1730,9 @@ The cards below provide information about different types of disasters, includin
   **Utah Example:** [Utah Geological Survey — Hole-in-the-Ground, Snake Valley](https://geology.utah.gov/map-pub/survey-notes/geosights/geosights-hole-in-the-ground-snake-valley-millard-county-utah/)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Avalanche
 
 <DisasterCard
   id="avalanche"
@@ -1661,6 +1742,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={4}
   magnitude="Limited"
   magnitudeLevel={2}
+  impacts={['safety', 'transportation', 'communications', 'services']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="Avalanche Control in Provo Canyon"
   exampleText="Provo Canyon contains steep mountain slopes where avalanches can threaten US-189 and surrounding areas. The Utah Department of Transportation conducts avalanche mitigation, including controlled releases and temporary road closures, to reduce the danger to motorists. The 2022 Pre-Disaster Mitigation Plan also identifies snow sheds and avalanche-control fencing as measures for protecting transportation routes through the canyon."
@@ -1694,9 +1777,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Avalanches</strong></summary>
-
+<AboutHazardModal id="avalanche" title="Avalanche">
   <div>
 
   #### How Avalanches Form
@@ -1871,11 +1952,9 @@ The cards below provide information about different types of disasters, includin
   **Local Resource:** [UDOT — Avalanche Safety](https://connect.udot.utah.gov/current-conditions/avalanche/)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Drought
 
 <DisasterCard
   id="drought"
@@ -1885,6 +1964,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={3}
   magnitude="Limited"
   magnitudeLevel={2}
+  impacts={['water', 'agriculture', 'environment', 'economy', 'fire']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="2026 — Statewide Drought Emergency"
   exampleText="In May 2026, Utah declared a statewide drought emergency following its warmest winter on record and the lowest recorded mountain snowpack. All 29 counties were experiencing severe drought, with 22 counties experiencing extreme drought conditions. The unusually low snowpack reduced expected runoff and placed additional pressure on water supplies throughout Utah, including Utah County."
@@ -1919,9 +2000,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Drought</strong></summary>
-
+<AboutHazardModal id="drought" title="Drought">
   <div>
 
   #### How Drought Develops
@@ -1929,7 +2008,6 @@ The cards below provide information about different types of disasters, includin
   Drought occurs when an area receives less precipitation
   than normal over an extended period, creating a growing
   imbalance between water supply and demand.
-
   Several environmental factors influence how drought
   develops and intensifies:
 
@@ -2029,7 +2107,6 @@ The cards below provide information about different types of disasters, includin
   using the **U.S. Drought Monitor**, which
   evaluates precipitation, soil moisture,
   streamflow, and other environmental indicators.
-
   The monitor uses five categories:
 
   | Classification | Description |
@@ -2081,16 +2158,16 @@ The cards below provide information about different types of disasters, includin
   **Utah Resource:** [Utah Division of Water Resources — Drought in Utah](https://water.utah.gov/drought/)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Dust Bowl
 
 <DisasterCard
   id="dust-bowl"
   title="Dust Bowl"
   image="/img/dust-bowl.png"
+  impacts={['air', 'safety', 'transportation', 'agriculture']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Dust Storms Along the Wasatch Front"
   exampleText="Utah periodically experiences dust storms when strong winds lift sediment from dry lakebeds, desert areas, and exposed soils. Dust from western and southwestern Utah can travel considerable distances and affect communities along the Wasatch Front, including Utah County. Although these events demonstrate the region's susceptibility to airborne dust, the 2022 Pre-Disaster Mitigation Plan does not identify Dust Bowl conditions as a separately rated Provo hazard."
@@ -2124,9 +2201,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Dust Bowls</strong></summary>
-
+<AboutHazardModal id="dust-bowl" title="Dust Bowl">
   <div>
 
   #### How Dust Bowl Conditions Develop
@@ -2239,11 +2314,9 @@ The cards below provide information about different types of disasters, includin
   **Utah Resource:** [Utah Geological Survey — What's With All This Dust?](https://geology.utah.gov/map-pub/survey-notes/glad-you-asked/glad-you-asked-whats-with-all-this-dust/)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Lightning
 
 <DisasterCard
   id="lightning"
@@ -2253,6 +2326,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={3}
   magnitude="Negligible"
   magnitudeLevel={1}
+  impacts={['safety', 'fire', 'utilities', 'communications']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="Lightning Impacts in Utah County"
   exampleText="Utah County has experienced lightning-related deaths, injuries, and property damage, as documented in the 2022 Pre-Disaster Mitigation Plan. Thunderstorms regularly develop over the Wasatch Mountains and surrounding valleys, creating lightning hazards for communities, outdoor recreation areas, and mountain transportation corridors."
@@ -2287,9 +2362,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Lightning</strong></summary>
-
+<AboutHazardModal id="lightning" title="Lightning">
   <div>
 
   #### How Lightning Forms
@@ -2432,16 +2505,16 @@ The cards below provide information about different types of disasters, includin
   **Additional Resource:** [National Weather Service — Bolts from the Blue](https://www.weather.gov/pub/lightningBoltBlue)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Heavy Rain
 
 <DisasterCard
   id="heavy-rain"
   title="Heavy Rain"
   image="/img/heavy-rain.png"
+  impacts={['safety', 'transportation', 'infrastructure', 'utilities', 'communications']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="September 2013 — Provo Heavy Rainfall"
   exampleText="On September 7, 2013, intense thunderstorms produced exceptionally heavy rainfall across Utah County. Some locations recorded approximately 0.6–0.8 inches of rain in just 15 minutes. The storm overwhelmed drainage systems, flooded streets, and damaged homes, roads, and public facilities in Provo, demonstrating how intense rainfall over a short period can produce significant local impacts."
@@ -2475,9 +2548,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Heavy Rain</strong></summary>
-
+<AboutHazardModal id="heavy-rain" title="Heavy Rain">
   <div>
 
   #### How Heavy Rain Forms
@@ -2629,7 +2700,6 @@ The cards below provide information about different types of disasters, includin
   Certain atmospheric conditions allow
   storms to produce unusually large
   amounts of precipitation.
-
   Important factors include:
 
   - **Deep Atmospheric Moisture:** Large
@@ -2669,11 +2739,9 @@ The cards below provide information about different types of disasters, includin
   **Additional Resource:** [National Weather Service — Orographic Lifting](https://forecast.weather.gov/glossary.php?word=Orographic+Lifting)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### High Wind
 
 <DisasterCard
   id="high-wind"
@@ -2683,6 +2751,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={4}
   magnitude="Limited"
   magnitudeLevel={2}
+  impacts={['safety', 'utilities', 'communications', 'transportation', 'infrastructure']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="August 30, 2026 — Severe Thunderstorm near Provo"
   exampleText="On August 30, 2026, the National Weather Service issued a Severe Thunderstorm Warning for central Utah County, including Provo. A radar-indicated thunderstorm southwest of the city was capable of producing wind gusts up to 60 mph, with potential damage to roofs, siding, and trees. The warning demonstrated how severe thunderstorm winds can threaten developed areas of Utah Valley."
@@ -2715,9 +2785,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding High Winds</strong></summary>
-
+<AboutHazardModal id="high-wind" title="High Wind">
   <div>
 
   #### How Wind Forms
@@ -2729,7 +2797,6 @@ The cards below provide information about different types of disasters, includin
   differences in air temperature and density,
   contributing to areas of relatively high
   and low atmospheric pressure.
-
   Air accelerates in response to the **pressure
   gradient force**, which pushes air from
   higher toward lower pressure.
@@ -2829,7 +2896,6 @@ The cards below provide information about different types of disasters, includin
   These effects help explain why wind
   conditions can vary significantly
   between locations only a few miles apart.
-
   #### Sustained Winds vs. Wind Gusts
 
   Wind is commonly described using
@@ -2904,11 +2970,9 @@ The cards below provide information about different types of disasters, includin
   **Additional Resource:** [National Weather Service — Beaufort Wind Scale](https://www.weather.gov/tbw/beaufort)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Hail
 
 <DisasterCard
   id="hail"
@@ -2918,6 +2982,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={4}
   magnitude="Negligible"
   magnitudeLevel={1}
+  impacts={['safety', 'infrastructure', 'agriculture', 'transportation']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="August 30, 2026 — Severe Thunderstorm near Provo"
   exampleText="On August 30, 2026, the National Weather Service issued a Severe Thunderstorm Warning for central Utah County, including Provo. Radar indicated a thunderstorm capable of producing quarter-size hail, approximately one inch in diameter. The warning highlighted the potential for hail damage to vehicles and other exposed property throughout the affected area."
@@ -2952,9 +3018,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Hail</strong></summary>
-
+<AboutHazardModal id="hail" title="Hail">
   <div>
 
   #### How Hail Forms
@@ -3136,11 +3200,9 @@ The cards below provide information about different types of disasters, includin
   **Additional Resource:** [NOAA — Hail Size Classifications](https://www.noaa.gov/jetstream/appendix/weather-glossary-h)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-### Heavy Snow
 
 <DisasterCard
   id="heavy-snow"
@@ -3150,6 +3212,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={4}
   magnitude="Limited"
   magnitudeLevel={2}
+  impacts={['safety', 'transportation', 'utilities', 'communications', 'services']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="Recurring Winter Storms in Utah County"
   exampleText="Utah County regularly experiences winter storms that bring substantial snowfall to the Wasatch Mountains and surrounding communities. The 2022 Pre-Disaster Mitigation Plan documents deaths, injuries, and property damage associated with heavy snow and winter weather. Significant snowfall can disrupt travel through Provo Canyon and other mountain corridors while creating hazardous conditions throughout Utah Valley."
@@ -3186,9 +3250,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Heavy Snow</strong></summary>
-
+<AboutHazardModal id="heavy-snow" title="Heavy Snow">
   <div>
 
   #### How Snow Forms
@@ -3396,11 +3458,9 @@ The cards below provide information about different types of disasters, includin
   **Additional Resource:** [National Weather Service — Understanding Snow-to-Liquid Ratios](https://www.weather.gov/arx/why_snowratios)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Extreme Cold
 
 <DisasterCard
   id="extreme-cold"
@@ -3410,6 +3470,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={4}
   magnitude="Limited"
   magnitudeLevel={2}
+  impacts={['safety', 'utilities', 'transportation', 'communications']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="Winter Freezing Conditions in Provo"
   exampleText="Provo regularly experiences freezing temperatures during winter, with occasional periods of much colder weather. Extended freezes can threaten exposed plumbing, water infrastructure, and other temperature-sensitive systems. The 2022 Pre-Disaster Mitigation Plan identifies protecting water pipes from freezing as an important local winter-weather concern."
@@ -3444,9 +3506,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Extreme Cold</strong></summary>
-
+<AboutHazardModal id="extreme-cold" title="Extreme Cold">
   <div>
 
   #### How Extreme Cold Develops
@@ -3689,16 +3749,16 @@ The cards below provide information about different types of disasters, includin
   **Additional Resource:** [National Weather Service — Understanding Wind Chill](https://www.weather.gov/safety/cold-wind-chill-chart)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Extreme Heat
 
 <DisasterCard
   id="extreme-heat"
   title="Extreme Heat"
   image="/img/extreme-heat.png"
+  impacts={['safety', 'utilities', 'water', 'services']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="July 2026 — Record Heat in Provo"
   exampleText="July 2026 was Provo's warmest July on record by average daily temperature, according to NOAA-based historical weather data. The average daily high reached approximately 98.9°F, with an average low of 67.9°F. The prolonged heat demonstrated how sustained high temperatures can place additional stress on residents, infrastructure, and electricity demand throughout Utah Valley."
@@ -3734,9 +3794,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Extreme Heat</strong></summary>
-
+<AboutHazardModal id="extreme-heat" title="Extreme Heat">
   <div>
 
   #### How Extreme Heat Develops
@@ -3988,11 +4046,9 @@ The cards below provide information about different types of disasters, includin
   **Additional Resource:** [NOAA — Heat Index](https://www.weather.gov/safety/heat-index)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Tornado
 
 <DisasterCard
   id="tornado"
@@ -4002,6 +4058,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={3}
   magnitude="Negligible"
   magnitudeLevel={1}
+  impacts={['safety', 'infrastructure', 'housing', 'utilities', 'communications']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="1982 — Provo Airport Tornado"
   exampleText="On September 13, 1982, a waterspout formed over Utah Lake before moving ashore at the Provo Airport as a tornado. The storm damaged an airport security gate and overturned a small aircraft that had been tied down. The tornado traveled approximately half a mile, demonstrating that tornadoes can occur directly within Provo and surrounding Utah Valley."
@@ -4037,9 +4095,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Tornadoes</strong></summary>
-
+<AboutHazardModal id="tornado" title="Tornado">
   <div>
 
   #### How Tornadoes Form
@@ -4129,7 +4185,6 @@ The cards below provide information about different types of disasters, includin
   is used in the United States to
   classify tornado intensity based
   on the damage a tornado causes.
-
   The National Weather Service evaluates
   damage to buildings, trees, and
   other structures to estimate the
@@ -4257,16 +4312,16 @@ The cards below provide information about different types of disasters, includin
   **Utah History:** [National Weather Service — Tornadoes in Utah](https://www.weather.gov/slc/tornado)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Infestation
 
 <DisasterCard
   id="infestation"
   title="Infestation"
   image="/img/infestation.png"
+  impacts={['agriculture', 'environment', 'economy']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="2006 — Japanese Beetle Infestation, Orem"
   exampleText="In July 2006, an invasive population of Japanese beetles was discovered in Orem, Utah. The insects threatened lawns, ornamental plants, trees, and agricultural crops because they feed on hundreds of plant species. The Utah Department of Agriculture and Food implemented an extensive monitoring and treatment program that successfully eradicated the established population, demonstrating how invasive pests can threaten local ecosystems and agricultural resources."
@@ -4302,9 +4357,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Infestations</strong></summary>
-
+<AboutHazardModal id="infestation" title="Infestation">
   <div>
 
   #### How Infestations Develop
@@ -4518,16 +4571,16 @@ The cards below provide information about different types of disasters, includin
   **Local Resource:** [Utah State University Extension — Japanese Beetle](https://extension.usu.edu/planthealth/research/japanese-beetle)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Volcano
 
 <DisasterCard
   id="volcano"
   title="Volcano"
   image="/img/volcano.png"
+  impacts={['air', 'safety', 'transportation', 'agriculture', 'communications']}
+  about={true}
   exampleLabel="Utah Example"
   exampleTitle="Approximately 660 Years Ago — Ice Springs Eruption"
   exampleText="Utah's most recent known volcanic eruption occurred at Ice Springs in the Black Rock Desert of Millard County approximately 660 years ago. The eruption produced basaltic lava flows and volcanic cones that remain visible today. Although this volcanic field is far from Provo, it demonstrates that volcanic activity has occurred in Utah during relatively recent geologic history."
@@ -4562,9 +4615,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Volcanoes</strong></summary>
-
+<AboutHazardModal id="volcano" title="Volcano">
   <div>
 
   #### How Volcanoes Form
@@ -4798,16 +4849,16 @@ The cards below provide information about different types of disasters, includin
   **Local Geology:** [Utah Geological Survey — Black Rock Desert Volcanic Features](https://geology.utah.gov/map-pub/survey-notes/geosights/geosights-volcanic-features-in-the-black-rock-desert-millard-county/)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Hurricane
 
 <DisasterCard
   id="hurricane"
   title="Hurricane"
   image="/img/hurricane.png"
+  impacts={['safety', 'infrastructure', 'utilities', 'communications', 'transportation']}
+  about={true}
   exampleLabel="Regional Example"
   exampleTitle="2023 — Hurricane Hilary Remnants"
   exampleText="In August 2023, Hurricane Hilary weakened into a tropical storm as it moved through the southwestern United States. Moisture associated with the remnants spread into the Great Basin, including portions of Utah, contributing to rainfall and elevated flash-flood concerns. The event demonstrated how tropical cyclones can influence weather far inland, even after losing their hurricane-strength winds."
@@ -4845,9 +4896,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Hurricanes</strong></summary>
-
+<AboutHazardModal id="hurricane" title="Hurricane">
   <div>
 
   #### How Hurricanes Form
@@ -4929,7 +4978,6 @@ The cards below provide information about different types of disasters, includin
     within the storm spreads outward
     near the top of the troposphere,
     helping maintain the circulation.
-
   Hurricanes rotate counterclockwise
   in the Northern Hemisphere and
   clockwise in the Southern Hemisphere.
@@ -5096,16 +5144,16 @@ The cards below provide information about different types of disasters, includin
   **Regional Example:** [NOAA — Tropical Storm Hilary, August 2023](https://www.wpc.ncep.noaa.gov/tropical/rain/hilary2023.html)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Tsunami
 
 <DisasterCard
   id="tsunami"
   title="Tsunami"
   image="/img/tsunami.png"
+  impacts={['safety', 'infrastructure', 'transportation', 'utilities', 'communications']}
+  about={true}
   exampleLabel="Utah Example"
   exampleTitle="1909 — Great Salt Lake Seiche"
   exampleText="The magnitude 6+ Hansel Valley earthquake in 1909 produced reported wave activity in the Great Salt Lake. The Utah Geological Survey identifies this event in its discussion of earthquake-induced lake oscillations, known as seiches. Although different from an ocean tsunami, the event demonstrates how earthquakes can disturb large inland bodies of water."
@@ -5142,9 +5190,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Tsunamis</strong></summary>
-
+<AboutHazardModal id="tsunami" title="Tsunami">
   <div>
 
   #### How Tsunamis Form
@@ -5402,16 +5448,16 @@ The cards below provide information about different types of disasters, includin
   **Utah Resource:** [Utah Geological Survey — What About Great Salt Lake?](https://geology.utah.gov/map-pub/survey-notes/what-about-great-salt-lake/)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Space Weather
 
 <DisasterCard
   id="space-weather"
   title="Space Weather"
   image="/img/space-weather.png"
+  impacts={['communications', 'utilities', 'transportation', 'services']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="May 2024 — Extreme Geomagnetic Storm"
   exampleText="On May 10, 2024, Earth experienced a G5 (Extreme) geomagnetic storm, the highest classification on NOAA's scale. The storm produced unusually widespread auroras visible across Utah and much of the United States. The event demonstrated how solar activity can affect the Earth's magnetic environment and threaten technologies used for communications, navigation, and electrical power."
@@ -5447,9 +5493,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Space Weather</strong></summary>
-
+<AboutHazardModal id="space-weather" title="Space Weather">
   <div>
 
   #### How Space Weather Develops
@@ -5529,7 +5573,6 @@ The cards below provide information about different types of disasters, includin
     by enhanced energy transfer from
     the solar wind into the
     magnetosphere.
-
   - **High-Speed Solar Wind Streams:**
     Fast-moving streams of charged
     particles originating from
@@ -5902,11 +5945,9 @@ The cards below provide information about different types of disasters, includin
   **Local Example:** [NOAA — G5 Conditions Observed, May 2024](https://www.spaceweather.gov/news/g5-conditions-observed)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Dam Failure
 
 <DisasterCard
   id="dam-failure"
@@ -5916,6 +5957,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={1}
   magnitude="Catastrophic"
   magnitudeLevel={4}
+  impacts={['safety', 'housing', 'infrastructure', 'transportation', 'communications']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Deer Creek & Jordanelle Dams"
   exampleText="Deer Creek and Jordanelle dams are located upstream of Provo along the Provo River. The 2022 Pre-Disaster Mitigation Plan identifies both dams as significant regional hazards because a major failure could send floodwaters through Provo Canyon and into developed portions of Utah Valley. Inundation studies indicate that portions of Provo, Orem, and surrounding communities could be affected. These are modeled failure scenarios, not historical dam failures."
@@ -5951,9 +5994,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Dam Failures</strong></summary>
-
+<AboutHazardModal id="dam-failure" title="Dam Failure">
   <div>
 
   #### How Dams Work
@@ -6129,7 +6170,6 @@ The cards below provide information about different types of disasters, includin
   excessive seepage pressure
   can threaten the integrity
   of the structure.
-
   **Earthquake Damage**
 
   Strong earthquake shaking
@@ -6229,7 +6269,6 @@ The cards below provide information about different types of disasters, includin
   estimated water depths,
   and flood arrival times
   under specific assumptions.
-
   #### Dam Failures and Provo
 
   Two major reservoirs along
@@ -6353,16 +6392,16 @@ The cards below provide information about different types of disasters, includin
   **Local Assessment:** [2022 Pre-Disaster Mitigation Plan](https://hazards.utah.gov/wp-content/uploads/2022-Pre-Disaster-Mitigation-Plan-for-Summit-Utah-and-Wasatch-Counties.pdf)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Hazardous Materials
 
 <DisasterCard
   id="hazardous-materials"
   title="Hazardous Materials"
   image="/img/hazmat.png"
+  impacts={['safety', 'environment', 'transportation', 'communications', 'services']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Transportation & Industrial Corridors in Provo"
   exampleText="Provo contains major transportation corridors, including Interstate 15, U.S. Route 89, and the Union Pacific railroad, where hazardous materials may be transported. Industrial facilities, commercial operations, and utility infrastructure may also store or use hazardous substances. Accidental releases along these corridors or at fixed facilities could affect nearby neighborhoods, businesses, and transportation routes."
@@ -6399,9 +6438,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Hazardous Materials</strong></summary>
-
+<AboutHazardModal id="hazardous-materials" title="Hazardous Materials">
   <div>
 
   #### What Makes a Material Hazardous?
@@ -6729,16 +6766,16 @@ The cards below provide information about different types of disasters, includin
   **Emergency Response Guidebook:** [Download the 2024 ERG (PDF)](https://www.phmsa.dot.gov/sites/phmsa.dot.gov/files/2024-04/ERG2024-Eng-Web-a.pdf)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Aviation Accident
 
 <DisasterCard
   id="aviation-accident"
   title="Aviation Accident"
   image="/img/aviation-accident.png"
+  impacts={['safety', 'transportation', 'infrastructure', 'services', 'communications']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="1995 — Aircraft Crash East of Provo"
   exampleText="On November 21, 1995, a Cessna 152 departed Provo Municipal Airport and collided with mountainous terrain several miles east of the city. The pilot was fatally injured, and the aircraft was destroyed. The accident, documented by the National Transportation Safety Board, illustrates how surrounding terrain can contribute to aviation hazards in Utah Valley."
@@ -6776,9 +6813,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Aviation Accidents</strong></summary>
-
+<AboutHazardModal id="aviation-accident" title="Aviation Accident">
   <div>
 
   #### Types of Aviation Accidents
@@ -7101,16 +7136,16 @@ The cards below provide information about different types of disasters, includin
   **Local Example:** [NTSB — Aviation Accident Investigation Database](https://www.ntsb.gov/Pages/AviationQuery.aspx)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Train Derailment
 
 <DisasterCard
   id="train-derailment"
   title="Train Derailment"
   image="/img/train-derailment.png"
+  impacts={['safety', 'transportation', 'environment', 'communications', 'economy']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Union Pacific Rail Corridor in Provo"
   exampleText="The Union Pacific railroad passes through developed portions of Provo and serves as an important regional transportation corridor. The 2022 Pre-Disaster Mitigation Plan identifies the rail line as a potential obstacle to movement and evacuation during major emergencies. A derailment could block road crossings, disrupt rail service, and complicate emergency access, particularly if multiple railcars were involved."
@@ -7146,9 +7181,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Train Derailments</strong></summary>
-
+<AboutHazardModal id="train-derailment" title="Train Derailment">
   <div>
 
   #### How Trains Stay on the Tracks
@@ -7547,16 +7580,16 @@ The cards below provide information about different types of disasters, includin
   **Accident Investigations:** [NTSB — Railroad Investigations](https://www.ntsb.gov/investigations/Pages/railroad.aspx)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Industrial Accident
 
 <DisasterCard
   id="industrial-accident"
   title="Industrial Accident"
   image="/img/industrial-accident.png"
+  impacts={['safety', 'infrastructure', 'utilities', 'communications', 'environment']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Industrial & Utility Facilities in Provo"
   exampleText="Provo contains manufacturing facilities, commercial operations, warehouses, and utility infrastructure that rely on industrial equipment and mechanical systems. Accidents involving equipment failures, fires, explosions, or structural damage could threaten workers and nearby properties while interrupting essential services. The 2022 Pre-Disaster Mitigation Plan recognizes technological and industrial hazards but does not assign a separate industrial-accident risk rating for Provo."
@@ -7594,9 +7627,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Industrial Accidents</strong></summary>
-
+<AboutHazardModal id="industrial-accident" title="Industrial Accident">
   <div>
 
   #### Types of Industrial Accidents
@@ -8038,16 +8069,16 @@ The cards below provide information about different types of disasters, includin
   **Accident Investigations:** [U.S. Chemical Safety and Hazard Investigation Board](https://www.csb.gov/)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Power Outage
 
 <DisasterCard
   id="power-outage"
   title="Power Outage"
   image="/img/power-outage.png"
+  impacts={['utilities', 'communications', 'services', 'economy', 'safety']}
+  about={true}
   exampleLabel="Local Example"
   exampleTitle="August 28, 2026 — Provo Power Outages"
   exampleText="On August 28, 2026, Provo experienced multiple power outages, including a significant outage in the East Bay area. Provo Power reported damaged utility infrastructure, including downed and leaning poles, and dispatched crews to repair and stabilize the affected equipment. Power was restored by 9:13 PM, demonstrating how damage to electrical distribution infrastructure can interrupt service across multiple neighborhoods."
@@ -8083,9 +8114,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Power Outages</strong></summary>
-
+<AboutHazardModal id="power-outage" title="Power Outage">
   <div>
 
   #### How the Electrical Grid Works
@@ -8591,16 +8620,16 @@ The cards below provide information about different types of disasters, includin
   **Local Outage Information:** [Provo Power — Outages](https://www.provo.gov/1132/Outages)
 
   </div>
-</details>
+</AboutHazardModal>
 
 ---
-
-### Acts of Violence
 
 <DisasterCard
   id="acts-of-violence"
   title="Acts of Violence"
   image="/img/acts-of-violence.png"
+  impacts={['safety', 'services', 'communications', 'transportation']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Public Safety & Critical Infrastructure in Provo"
   exampleText="Provo contains universities, schools, public gathering places, government facilities, transportation corridors, and other locations where a serious act of violence could create a large-scale emergency. Such incidents may require coordination among law enforcement, fire, emergency medical services, and emergency management. The 2022 Pre-Disaster Mitigation Plan recognizes the protection of critical resources from terrorism as a regional mitigation concern but does not assign a separate Provo likelihood or magnitude rating for acts of violence."
@@ -8637,9 +8666,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Acts of Violence</strong></summary>
-
+<AboutHazardModal id="acts-of-violence" title="Acts of Violence">
   <div>
 
   #### Types of Violent Emergencies
@@ -9036,16 +9063,16 @@ The cards below provide information about different types of disasters, includin
   **Threat Information:** [DHS — National Terrorism Advisory System](https://www.dhs.gov/national-terrorism-advisory-system)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Cyber Attack
 
 <DisasterCard
   id="cyber-attack"
   title="Cyber Attack"
   image="/img/cyber-attack.png"
+  impacts={['communications', 'services', 'utilities', 'economy']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Digital Infrastructure & Essential Services in Provo"
   exampleText="Provo relies on interconnected computer networks and digital systems to support municipal operations, utilities, businesses, healthcare, and communications. A significant cyberattack affecting these systems could interrupt essential services or compromise sensitive information. The 2022 Pre-Disaster Mitigation Plan recognizes the importance of resilient infrastructure but does not assign a separate likelihood or magnitude rating for cyberattacks in Provo."
@@ -9081,9 +9108,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Cyber Attacks</strong></summary>
-
+<AboutHazardModal id="cyber-attack" title="Cyber Attack">
   <div>
 
   #### Types of Cyber Attacks
@@ -9329,7 +9354,6 @@ The cards below provide information about different types of disasters, includin
   and business operations.
 
   Examples include:
-
   - Email servers.
   - Databases.
   - Business applications.
@@ -9429,7 +9453,6 @@ The cards below provide information about different types of disasters, includin
   have different dependencies.
 
   **Internet-Dependent Communications**
-
   Some communication systems
   depend on external networks
   and online services.
@@ -9529,7 +9552,6 @@ The cards below provide information about different types of disasters, includin
   one or more essential services,
   even without causing direct
   physical damage.
-
   **PACT Communications**
 
   PACT uses communications
@@ -9572,16 +9594,16 @@ The cards below provide information about different types of disasters, includin
   **Critical Infrastructure:** [CISA — Cybersecurity Scenarios](https://www.cisa.gov/resources-tools/resources/cybersecurity-scenarios)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Water Contamination
 
 <DisasterCard
   id="water-contamination"
   title="Water Contamination"
   image="/img/water-contamination.png"
+  impacts={['safety', 'water', 'services', 'economy', 'communications']}
+  about={true}
   exampleLabel="Local Context"
   exampleTitle="Protecting Provo's Drinking Water Supply"
   exampleText="Provo obtains most of its culinary water from local springs and groundwater wells, supplemented by treated surface water from the Provo River and Deer Creek system. These sources depend on protected watersheds, groundwater quality, water treatment, and a reliable distribution network. Contamination affecting a water source or part of the distribution system could require additional treatment, public notification, or temporary restrictions on water use."
@@ -9619,9 +9641,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Water Contamination</strong></summary>
-
+<AboutHazardModal id="water-contamination" title="Water Contamination">
   <div>
 
   #### Types of Water Contamination
@@ -10161,11 +10181,9 @@ The cards below provide information about different types of disasters, includin
   **Local Resource:** [Provo City — Water and Sewer](https://www.provo.gov/392/Water-and-Sewer)
 
   </div>
-</details>
+</AboutHazardModal>
  
 ---
-
-### Poor Air Quality
 
 <DisasterCard
   id="air-quality"
@@ -10175,6 +10193,8 @@ The cards below provide information about different types of disasters, includin
   likelihoodLevel={4}
   magnitude="Critical"
   magnitudeLevel={3}
+  impacts={['safety', 'air', 'environment', 'economy']}
+  about={true}
   exampleLabel="Recurring Local Example"
   exampleTitle="Utah Valley Winter Inversions & Wildfire Smoke"
   exampleText="Utah County regularly experiences episodes of reduced air quality during winter temperature inversions, when pollutants accumulate near the valley floor. Wildfire smoke can also affect Provo during warmer months, even when the fires are located hundreds of miles away. These recurring conditions demonstrate how local geography, atmospheric conditions, and emissions contribute to the region's air-quality challenges."
@@ -10210,9 +10230,7 @@ The cards below provide information about different types of disasters, includin
   </p>
 </DisasterCard>
 
-<details>
-  <summary><strong>Understanding Poor Air Quality</strong></summary>
-
+<AboutHazardModal id="air-quality" title="Poor Air Quality">
   <div>
 
   #### Understanding Air Pollutants
@@ -10829,7 +10847,6 @@ The cards below provide information about different types of disasters, includin
   with Utah Valley's
   geography and
   regional emissions.
-
   Three recurring conditions
   are especially relevant.
 
@@ -10916,41 +10933,7 @@ The cards below provide information about different types of disasters, includin
   **Utah Air Quality Data:** [Utah Division of Air Quality](https://air.utah.gov/)
 
   </div>
-</details>
- 
----
-
-## Preparing for Disasters
-
-:::warning Transportation & Access During a Major Emergency
- 
-Provo's geography can make movement through the city more difficult during a large emergency. Utah Lake, the Wasatch Mountains, the Provo River, Interstate 15, and the railroad corridor all influence how people and emergency resources move through the community.
- 
-The 2022 assessment specifically notes that areas west of I-15 have relatively few crossings to the east side of the city, which could create congestion during a large-scale evacuation.
- 
-A major disaster could also damage or temporarily close roads, bridges, rail crossings, and other transportation routes.
- 
-:::
----
- 
-## Stay Informed
-
-:::danger Emergency Alerts
-
-PACT encourages everyone in the Provo community to sign up for local emergency notification systems. These alerts can provide important information and instructions before, during, and after an emergency.
-
-When an emergency occurs, monitor official alerts and follow instructions from Provo City, Utah County, and other public-safety agencies.
-
-<div style={{ textAlign: 'center', marginTop: '1rem' }}>
-  <a
-    href={useBaseUrl('/docs/resources/emergency-notification-systems/')}
-    className="button button--danger button--lg"
-  >
-    Emergency Notification Systems
-  </a>
-</div>
-
-:::
+</AboutHazardModal>
  
 ---
  

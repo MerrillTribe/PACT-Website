@@ -4740,3 +4740,1572 @@ html[data-theme='dark'] .current-announcements a:hover {
 html[data-theme='dark'] .current-announcements .announcement-divider {
   border-color: #4b5563;
 }
+
+
+
+/* =========================================
+   DISASTER CARD ENHANCEMENTS
+   ========================================= */
+
+/* Wider sidebar for potential impacts */
+
+.disaster-profile-sidebar {
+  width: 185px;
+  flex: 0 0 185px;
+  min-width: 0;
+}
+
+/* Disaster title and More Info button */
+
+.disaster-profile-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.disaster-profile-title-row h2 {
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+}
+
+.disaster-about-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+
+  flex: 0 0 auto;
+  min-height: 38px;
+  padding: 0.45rem 0.75rem;
+
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-color-primary);
+
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.disaster-about-button svg {
+  flex-shrink: 0;
+}
+
+.disaster-about-button:hover {
+  background: var(--ifm-color-emphasis-100);
+  border-color: var(--ifm-color-primary);
+}
+
+.disaster-about-button:focus-visible,
+.disaster-about-close:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+}
+
+/* Potential impacts */
+
+.disaster-impacts {
+  margin-top: 1.2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.disaster-impacts-heading {
+  margin-bottom: 0.75rem;
+
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.disaster-impacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.disaster-impact {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+
+.disaster-impact svg {
+  flex: 0 0 17px;
+  color: var(--ifm-color-primary);
+}
+
+.disaster-impact span {
+  min-width: 0;
+}
+
+/* Optional Risk Map button */
+
+.disaster-risk-map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  width: 100%;
+  margin-top: 1.2rem;
+  padding: 0.65rem;
+
+  font-size: 0.85rem;
+  text-decoration: none !important;
+}
+
+/* =========================================
+   ABOUT HAZARD POPUP
+   ========================================= */
+
+.disaster-about-modal {
+  position: fixed;
+
+  width: min(850px, calc(100vw - 2rem));
+  max-width: 850px;
+
+  max-height: 85vh;
+  max-height: 85dvh;
+
+  padding: 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 14px;
+
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.disaster-about-modal[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.disaster-about-modal::backdrop {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.disaster-about-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex: 0 0 auto;
+
+  padding: 1.1rem 1.5rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.disaster-about-modal-header h2 {
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.disaster-about-close {
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+
+  background: transparent;
+  color: var(--ifm-font-color-base);
+
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.disaster-about-close:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.disaster-about-modal-body {
+  min-height: 0;
+  padding: 1.5rem;
+  overflow: auto;
+  overscroll-behavior: contain;
+  line-height: 1.7;
+}
+
+.disaster-about-modal-body h4 {
+  margin-top: 1.75rem;
+}
+
+.disaster-about-modal-body table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+  .disaster-profile-card {
+    flex-direction: column;
+  }
+
+  .disaster-profile-sidebar {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .disaster-profile-title-row {
+    align-items: flex-start;
+  }
+
+  .disaster-about-button {
+    padding: 0.45rem 0.65rem;
+    font-size: 0.8rem;
+  }
+
+  .disaster-impacts-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .disaster-profile-content {
+    width: 100%;
+  }
+
+  .disaster-about-modal-header,
+  .disaster-about-modal-body {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .disaster-impacts-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .disaster-about-button {
+    transition: none;
+  }
+}
+
+
+
+
+/* =========================================
+   RADIO SERVICES & BAND PLANS
+   ========================================= */
+
+/* -----------------------------------------
+   Main Service Cards
+   ----------------------------------------- */
+
+.radio-service-card {
+  margin: 1.25rem 0;
+  padding: 1.25rem;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.035);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.radio-service-card:hover {
+  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Prevent unwanted MDX spacing */
+
+.radio-service-card > .radio-service-card__heading,
+.radio-service-card > .radio-service-card__facts,
+.radio-service-card > .radio-service-card__description,
+.radio-service-card > .radio-service-card__actions {
+  margin-top: 0;
+}
+
+.radio-service-card__heading > *,
+.radio-service-card__identity > *,
+.radio-service-card__text > *,
+.radio-service-card__actions > * {
+  margin-block: 0 !important;
+}
+
+/* -----------------------------------------
+   Card Header
+   ----------------------------------------- */
+
+.radio-service-card__heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 48px;
+  margin-bottom: 1rem;
+}
+
+.radio-service-card__identity {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.radio-service-card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.radio-service-card__text h3.radio-service-card__title {
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.radio-service-card__subtitle {
+  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* -----------------------------------------
+   Service Icons
+   ----------------------------------------- */
+
+.radio-service-card__monogram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  margin: 0;
+  padding: 0;
+  border-radius: 11px;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+/* FRS - Blue */
+
+.radio-service-card--frs .radio-service-card__monogram {
+  background: #dce9fa;
+  color: #285b91;
+}
+
+/* MURS - Teal */
+
+.radio-service-card--murs .radio-service-card__monogram {
+  background: #d7f2ef;
+  color: #176d68;
+}
+
+/* CB - Orange */
+
+.radio-service-card--cb .radio-service-card__monogram {
+  background: #fff0d7;
+  color: #9a5a0d;
+}
+
+/* GMRS - Purple */
+
+.radio-service-card--gmrs .radio-service-card__monogram {
+  background: #ece3fa;
+  color: #6941a5;
+}
+
+/* Business Band - Slate */
+
+.radio-service-card--business .radio-service-card__monogram {
+  background: #e2e8f0;
+  color: #334155;
+}
+
+/* LoRa - Indigo */
+
+.radio-service-card--lora .radio-service-card__monogram {
+  background: #e0e7ff;
+  color: #4338ca;
+}
+
+/* Marine - Cyan */
+
+.radio-service-card--marine .radio-service-card__monogram {
+  background: #cffafe;
+  color: #0e7490;
+}
+
+/* Aviation - Sky Blue */
+
+.radio-service-card--aviation .radio-service-card__monogram {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+/* Railroad - Brown */
+
+.radio-service-card--railroad .radio-service-card__monogram {
+  background: #f0e4d7;
+  color: #80552e;
+}
+
+/* Calling Frequencies - Green */
+
+.radio-service-card--calling .radio-service-card__monogram {
+  background: #dcfce7;
+  color: #166534;
+}
+
+/* Wilderness Protocol - Forest Green */
+
+.radio-service-card--wilderness .radio-service-card__monogram {
+  background: #d9f2df;
+  color: #276749;
+}
+
+/* -----------------------------------------
+   License Status
+   ----------------------------------------- */
+
+.radio-service-card__license {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  align-self: center;
+  box-sizing: border-box;
+
+  width: auto;
+  max-width: 220px;
+  min-height: 0;
+  margin: 0 !important;
+  padding: 0.3rem 0.6rem;
+
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-800);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  white-space: normal;
+}
+
+/* -----------------------------------------
+   Compact Specification Grid
+   ----------------------------------------- */
+
+.radio-service-card__facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0 0 0.9rem;
+  padding: 0;
+}
+
+.radio-service-card__fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  min-width: 0;
+  padding: 0.65rem 0.75rem;
+
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+}
+
+.radio-service-card__fact > * {
+  margin: 0 !important;
+  padding-block: 0;
+}
+
+.radio-service-card__fact-label {
+  display: block;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.radio-service-card__fact strong {
+  display: block;
+  color: var(--ifm-font-color-base);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+/* -----------------------------------------
+   Description
+   ----------------------------------------- */
+
+.radio-service-card p.radio-service-card__description {
+  margin: 0 0 1rem !important;
+  padding: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+/* -----------------------------------------
+   Footer Actions
+   ----------------------------------------- */
+
+.radio-service-card__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* Reference Link */
+
+.radio-service-card__actions a.radio-service-card__rules {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  margin: 0 !important;
+  padding: 0;
+  color: var(--ifm-link-color);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.radio-service-card__rules:hover {
+  text-decoration: underline;
+}
+
+/* View Frequencies Button */
+
+.radio-service-card__actions button.radio-frequency-button {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  align-self: center;
+  flex: 0 0 auto;
+
+  box-sizing: border-box;
+  width: auto !important;
+  height: auto !important;
+  min-height: 38px !important;
+  max-height: none !important;
+
+  margin: 0 !important;
+  padding: 0.55rem 0.95rem !important;
+
+  background: var(--ifm-color-primary);
+  color: #ffffff;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 7px;
+
+  font-family: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2 !important;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.radio-service-card__actions button.radio-frequency-button:hover {
+  background: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary-dark);
+  color: #ffffff;
+}
+
+.radio-service-card__actions button.radio-frequency-button:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+}
+
+/* -----------------------------------------
+   Frequency Modal Popup
+   ----------------------------------------- */
+
+.radio-frequency-modal {
+  position: fixed;
+  inset: 0;
+  width: min(760px, calc(100% - 2rem));
+  max-width: none;
+  max-height: min(85vh, 900px);
+  max-height: min(85dvh, 900px);
+
+  margin: auto;
+  padding: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+}
+
+.radio-frequency-modal:not([open]) {
+  display: none;
+}
+
+.radio-frequency-modal::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* -----------------------------------------
+   Modal Header
+   ----------------------------------------- */
+
+.radio-frequency-modal__header {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  padding: 0.85rem 1rem;
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.radio-frequency-modal__header h3.radio-frequency-modal__title {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.radio-frequency-modal__header form {
+  margin: 0 !important;
+  padding: 0;
+}
+
+/* Close Button */
+
+.radio-frequency-modal__close {
+  appearance: none;
+  -webkit-appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 7px;
+
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.radio-frequency-modal__close:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.radio-frequency-modal__close:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* -----------------------------------------
+   Modal Body
+   ----------------------------------------- */
+
+.radio-frequency-modal__body {
+  padding: 1rem;
+}
+
+.radio-frequency-modal__table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* -----------------------------------------
+   Multiple Tables in a Modal
+   ----------------------------------------- */
+
+.radio-frequency-modal__group {
+  margin: 0 0 1.5rem;
+}
+
+.radio-frequency-modal__group:last-of-type {
+  margin-bottom: 0;
+}
+
+.radio-frequency-modal__group-title {
+  margin: 0 0 0.65rem !important;
+  padding: 0;
+  font-size: 0.98rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.radio-frequency-modal__group + .radio-frequency-modal__group {
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* -----------------------------------------
+   Frequency Tables
+   ----------------------------------------- */
+
+.radio-frequency-modal .radio-service-card__table {
+  display: table;
+  width: 100%;
+  min-width: 440px;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.radio-frequency-modal .radio-service-card__table th {
+  padding: 0.6rem 0.7rem;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.radio-frequency-modal .radio-service-card__table td {
+  padding: 0.5rem 0.65rem;
+  text-align: center;
+  overflow-wrap: break-word;
+  border: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.radio-frequency-modal .radio-service-card__table tbody tr:nth-child(even) {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.radio-frequency-modal .radio-service-card__table tbody tr:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* Merged Power Cells */
+
+.radio-frequency-modal .radio-service-card__table td[rowspan] {
+  vertical-align: middle;
+  font-weight: 700;
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* -----------------------------------------
+   Modal Notes
+   ----------------------------------------- */
+
+.radio-frequency-modal p.radio-frequency-modal__note {
+  margin: 0.9rem 0 0 !important;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+/* -----------------------------------------
+   Dark Mode
+   ----------------------------------------- */
+
+[data-theme='dark'] .radio-service-card {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--ifm-color-emphasis-300);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] .radio-service-card:hover {
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+[data-theme='dark'] .radio-service-card__license {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-font-color-base);
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* Dark Mode Service Icons */
+
+[data-theme='dark']
+.radio-service-card--frs .radio-service-card__monogram {
+  background: #203b5d;
+  color: #b4d5ff;
+}
+
+[data-theme='dark']
+.radio-service-card--murs .radio-service-card__monogram {
+  background: #163f3d;
+  color: #a4e8df;
+}
+
+[data-theme='dark']
+.radio-service-card--cb .radio-service-card__monogram {
+  background: #49351b;
+  color: #ffd39b;
+}
+
+[data-theme='dark']
+.radio-service-card--gmrs .radio-service-card__monogram {
+  background: #352749;
+  color: #d9c1ff;
+}
+
+[data-theme='dark']
+.radio-service-card--business .radio-service-card__monogram {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+[data-theme='dark']
+.radio-service-card--lora .radio-service-card__monogram {
+  background: #312e81;
+  color: #c7d2fe;
+}
+
+[data-theme='dark']
+.radio-service-card--marine .radio-service-card__monogram {
+  background: #164e63;
+  color: #a5f3fc;
+}
+
+[data-theme='dark']
+.radio-service-card--aviation .radio-service-card__monogram {
+  background: #1e3a8a;
+  color: #bfdbfe;
+}
+
+[data-theme='dark']
+.radio-service-card--railroad .radio-service-card__monogram {
+  background: #503b2b;
+  color: #f2d4b5;
+}
+
+[data-theme='dark']
+.radio-service-card--calling .radio-service-card__monogram {
+  background: #14532d;
+  color: #bbf7d0;
+}
+
+[data-theme='dark']
+.radio-service-card--wilderness .radio-service-card__monogram {
+  background: #1d4734;
+  color: #bbf7d0;
+}
+
+/* -----------------------------------------
+   Responsive Layout
+   ----------------------------------------- */
+
+@media (max-width: 996px) {
+  .radio-service-card__facts {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .radio-service-card__heading {
+    flex-wrap: wrap;
+    gap: 0.65rem;
+  }
+
+  .radio-service-card__facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .radio-service-card {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .radio-service-card__heading {
+    align-items: flex-start;
+  }
+
+  .radio-service-card__identity {
+    flex-basis: 100%;
+  }
+
+  .radio-service-card__monogram {
+    flex-basis: 44px;
+    width: 44px;
+    height: 44px;
+    font-size: 0.7rem;
+  }
+
+  .radio-service-card__text h3.radio-service-card__title {
+    font-size: 1.05rem;
+  }
+
+  .radio-service-card__subtitle {
+    font-size: 0.76rem;
+  }
+
+  .radio-service-card__license {
+    max-width: 100%;
+  }
+
+  .radio-service-card__facts {
+    gap: 0.5rem;
+  }
+
+  .radio-service-card__fact {
+    padding: 0.6rem;
+  }
+
+  .radio-service-card__fact strong {
+    font-size: 0.83rem;
+  }
+
+  .radio-service-card__actions {
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .radio-frequency-modal__header,
+  .radio-frequency-modal__body {
+    padding: 0.8rem;
+  }
+
+  .radio-frequency-modal__group-title {
+    font-size: 0.9rem;
+  }
+
+  .radio-frequency-modal .radio-service-card__table {
+    font-size: 0.78rem;
+  }
+
+  .radio-frequency-modal .radio-service-card__table th,
+  .radio-frequency-modal .radio-service-card__table td {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .radio-service-card__facts {
+    grid-template-columns: 1fr;
+  }
+
+  .radio-service-card__actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .radio-service-card__actions button.radio-frequency-button {
+    width: 100% !important;
+  }
+}
+
+/* -----------------------------------------
+   Reduced Motion
+   ----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .radio-service-card,
+  .radio-frequency-button {
+    transition: none;
+  }
+}
+
+/* Radio service pictogram icons */
+
+.radio-service-card__monogram--icon {
+  font-family:
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Noto Color Emoji",
+    sans-serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+@media (max-width: 576px) {
+  .radio-service-card__monogram--icon {
+    font-size: 1.4rem;
+  }
+}
+
+
+
+
+
+/* =========================================
+   PACT AMATEUR RADIO ALLOCATION CHART
+   COASTAL ENGINEERING COLOR PALETTE
+   ========================================= */
+
+.pact-bands {
+  margin: 1rem 0 2rem;
+  font-family: inherit;
+}
+
+/* -----------------------------------------
+   Toolbar and filters
+   ----------------------------------------- */
+
+.pact-bands-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.pact-bands-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.pact-bands-tabs button {
+  appearance: none;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 7px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  font: inherit;
+  font-size: 0.83rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pact-bands-tabs button:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.pact-bands-tabs button.active,
+.pact-bands-tabs button[aria-pressed="true"] {
+  background: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+  color: #fff;
+}
+
+.pact-bands-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.pact-bands-filter select {
+  min-width: 145px;
+  padding: 0.42rem 0.6rem;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  font: inherit;
+  font-size: 0.82rem;
+}
+
+/* -----------------------------------------
+   Legend
+   ----------------------------------------- */
+
+.pact-bands-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.73rem;
+}
+
+.pact-bands-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  line-height: 1.35;
+}
+
+.pact-key {
+  display: inline-block;
+  flex: 0 0 13px;
+  width: 13px;
+  height: 13px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+}
+
+/* -----------------------------------------
+   Coastal Engineering legend colors
+   ----------------------------------------- */
+
+/* CW Only - Slate */
+
+.pact-bands-legend .pact-mode-cw {
+  background-color: #718096;
+}
+
+/* SSB Phone - Sand */
+
+.pact-bands-legend .pact-mode-ssb {
+  background-color: #E8B86D;
+}
+
+/* SSB / Image / Other - Coral */
+
+.pact-bands-legend .pact-mode-phone {
+  background-color: #E17C83;
+}
+
+/* RTTY / Data / CW - Ocean Blue */
+
+.pact-bands-legend .pact-mode-data {
+  background-color: #2878A8;
+}
+
+/* Combined Emissions - Seafoam Teal */
+
+.pact-bands-legend .pact-mode-combined {
+  background-color: #39A996;
+}
+
+/* Fixed Digital Message Only - Lavender */
+
+.pact-bands-legend .pact-mode-fdm {
+  background-color: #A77BBF;
+}
+
+/* USB / CW / RTTY / Data - Deep Navy */
+
+.pact-bands-legend .pact-mode-usb {
+  background-color: #344E87;
+}
+
+/* Out of Bounds - Hatched Gray */
+
+.pact-bands-legend .pact-mode-out {
+  background:
+    repeating-linear-gradient(
+      135deg,
+      #9ca3af 0,
+      #9ca3af 1px,
+      #f1f3f5 1px,
+      #f1f3f5 5px
+    );
+}
+
+/* -----------------------------------------
+   Instructions
+   ----------------------------------------- */
+
+.pact-band-hint {
+  margin: 0 0 1rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+/* -----------------------------------------
+   Band cards
+   ----------------------------------------- */
+
+.pact-bands-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.pact-band-item {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 0.7rem;
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 10px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pact-band-item:hover {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* -----------------------------------------
+   SVG layout and typography
+   ----------------------------------------- */
+
+.pact-band-svg {
+  display: block;
+  width: 100%;
+  min-width: 580px;
+  height: auto;
+  overflow: visible;
+  font-variant-numeric: tabular-nums;
+}
+
+.pact-band-svg text {
+  fill: var(--ifm-font-color-base);
+  font-family: inherit;
+  user-select: none;
+}
+
+.pact-band-name {
+  font-size: 18px;
+  font-weight: 750;
+}
+
+.pact-band-end {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pact-band-class {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.pact-band-frequency-label {
+  font-size: 11px;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+
+/* -----------------------------------------
+   SVG emission category colors
+   Coastal Engineering palette
+   ----------------------------------------- */
+
+/* CW Only - Slate */
+
+.pact-band-svg .pact-mode-cw {
+  fill: #718096;
+}
+
+/* SSB Phone - Sand */
+
+.pact-band-svg .pact-mode-ssb {
+  fill: #E8B86D;
+}
+
+/* SSB / Image / Other - Coral */
+
+.pact-band-svg .pact-mode-phone {
+  fill: #E17C83;
+}
+
+/* RTTY / Data / CW - Ocean Blue */
+
+.pact-band-svg .pact-mode-data {
+  fill: #2878A8;
+}
+
+/* Combined Emissions - Seafoam Teal */
+
+.pact-band-svg .pact-mode-combined {
+  fill: #39A996;
+}
+
+/* Fixed Digital Message Only - Lavender */
+
+.pact-band-svg .pact-mode-fdm {
+  fill: #A77BBF;
+}
+
+/* USB / CW / RTTY / Data - Deep Navy */
+
+.pact-band-svg .pact-mode-usb {
+  fill: #344E87;
+}
+
+/* -----------------------------------------
+   Fallback for older mode data
+   ----------------------------------------- */
+
+.pact-band-svg .pact-mode-mixed {
+  fill: #39A996;
+}
+
+.pact-band-svg .pact-mode-special {
+  fill: #344E87;
+}
+
+/* -----------------------------------------
+   Out-of-bounds background
+   ----------------------------------------- */
+
+.pact-band-empty {
+  fill: var(--ifm-color-emphasis-100);
+  stroke: var(--ifm-color-emphasis-300);
+  stroke-width: 0.8px;
+}
+
+/*
+ * The SVG renderer supplies the hatch pattern
+ * used for unavailable frequencies.
+ */
+
+/* -----------------------------------------
+   Frequency boundaries
+   ----------------------------------------- */
+
+/* Vertical lines inside individual bars */
+
+.pact-band-boundary {
+  stroke: #374151;
+  stroke-width: 1.6px;
+  opacity: 0.8;
+  pointer-events: none;
+  shape-rendering: crispEdges;
+}
+
+/* Tick lines connecting labels to boundaries */
+
+.pact-band-frequency-tick {
+  stroke: var(--ifm-color-emphasis-700);
+  stroke-width: 1.2px;
+  pointer-events: none;
+}
+
+/* Start and end boundary lines */
+
+.pact-band-end-boundary {
+  stroke: #374151;
+  stroke-width: 1.8px;
+  opacity: 0.85;
+  pointer-events: none;
+  shape-rendering: crispEdges;
+}
+
+/* -----------------------------------------
+   Interactive frequency segments
+   ----------------------------------------- */
+
+.pact-band-svg rect[class^="pact-mode-"] {
+  cursor: pointer;
+  transition: filter 0.15s ease;
+}
+
+.pact-band-svg rect[class^="pact-mode-"]:hover {
+  filter: brightness(0.88);
+}
+
+/* -----------------------------------------
+   Notes
+   ----------------------------------------- */
+
+.pact-band-note {
+  margin: 0.25rem 0.5rem 0.2rem 145px;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.74rem;
+  line-height: 1.55;
+}
+
+/* -----------------------------------------
+   Selected segment information
+   ----------------------------------------- */
+
+.pact-band-detail {
+  position: sticky;
+  bottom: 12px;
+  z-index: 4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  font-size: 0.86rem;
+}
+
+.pact-band-detail strong {
+  display: block;
+}
+
+.pact-band-detail small {
+  display: block;
+  margin-top: 0.3rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.5;
+}
+
+.pact-band-detail button {
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+  background: var(--ifm-color-emphasis-100);
+  color: inherit;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* -----------------------------------------
+   Sources and disclaimer
+   ----------------------------------------- */
+
+.pact-bands-disclaimer,
+.pact-bands-source {
+  margin: 1rem 0 0.4rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+/* -----------------------------------------
+   Dark theme
+   ----------------------------------------- */
+
+[data-theme='dark'] .pact-band-item {
+  background: var(--ifm-background-surface-color);
+}
+
+[data-theme='dark'] .pact-band-boundary {
+  stroke: #17212b;
+  opacity: 0.9;
+}
+
+[data-theme='dark'] .pact-band-end-boundary {
+  stroke: #cbd5e1;
+}
+
+[data-theme='dark'] .pact-band-frequency-label {
+  fill: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .pact-band-frequency-tick {
+  stroke: var(--ifm-color-emphasis-600);
+}
+
+/* -----------------------------------------
+   Mobile layout
+   ----------------------------------------- */
+
+@media (max-width: 700px) {
+  .pact-band-svg {
+    min-width: 570px;
+  }
+
+  .pact-band-item {
+    padding: 0.4rem;
+  }
+
+  .pact-band-note {
+    margin: 0.4rem;
+  }
+
+  .pact-band-frequency-label {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pact-bands-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .pact-bands-tabs {
+    width: 100%;
+  }
+
+  .pact-bands-tabs button {
+    flex: 1;
+    padding: 0.5rem 0.35rem;
+    font-size: 0.75rem;
+  }
+
+  .pact-bands-filter {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .pact-bands-filter select {
+    max-width: 60%;
+  }
+
+  .pact-bands-legend {
+    gap: 0.5rem 0.8rem;
+  }
+
+  .pact-band-detail {
+    bottom: 8px;
+    padding: 0.75rem;
+  }
+}
+
+/* -----------------------------------------
+   Reduced motion
+   ----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .pact-band-svg rect,
+  .pact-bands-tabs button {
+    transition: none !important;
+  }
+}
