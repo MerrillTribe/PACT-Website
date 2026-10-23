@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { ClipboardList, Download } from 'lucide-react';
 
 # Training Exercises
 
@@ -12,14 +13,25 @@ This exercise helps Provo neighborhoods practice how to communicate when normal 
 
 The next Provo Prepared exercise will be held on **April 15, 2027, from 6:00 PM to 8:00 PM**.
 
-<div className="button-center">
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
   <a
     className="button button--lg button--cta"
     href="https://docs.google.com/spreadsheets/d/1hut9CB76hs7HBBM6pLG3woXVvUt5JGtQHcJ6A69yg9M/edit?usp=sharing"
   >
-    SIGN UP FOR THE 2027 EXERCISE
+    <ClipboardList
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>Sign Up for the 2027 Exercise</span>
   </a>
 </div>
+
 
 ### Participation Requirements
 
@@ -207,15 +219,25 @@ ACC Radio Operators will transmit to their District Radio Operator using the dis
   }}
 />
 
-<div className="button-center">
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
   <a
-    className="button button--primary"
+    className="button button--primary button--lg"
     href={useBaseUrl('/files/provo-prepared-exercise.pdf')}
     download
   >
-    Download Provo Prepared Exercise Map
+    <Download
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>Download Provo Prepared Exercise Map</span>
   </a>
 </div>
+
 
 ---
 
@@ -224,3 +246,7 @@ ACC Radio Operators will transmit to their District Radio Operator using the dis
 :::
 
 ---
+
+## Simulated Emergency Test (SET)
+
+Information coming soon.

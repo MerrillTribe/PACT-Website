@@ -6,26 +6,33 @@ tags:
   - general-announcement
 ---
 
+import { Send } from 'lucide-react';
+
 Telegram is PACT's primary platform for team announcements, training updates, activation notifications, and other important communications.
 
 All PACT members are encouraged to join the group so they can stay informed and receive timely information from the team.
 
-<div
-  style={{
-    marginTop: '1.5rem',
-    marginBottom: '2rem',
-    textAlign: 'center',
-  }}
->
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
   <a
     href="https://t.me/+M5nUHsEYmoI1ZDQx"
     className="button button--primary button--lg"
     target="_blank"
     rel="noopener noreferrer"
   >
-    Join the PACT Telegram Group
+    <Send
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>Join the PACT Telegram Group</span>
   </a>
 </div>
+
 
 <!-- truncate -->
 ---

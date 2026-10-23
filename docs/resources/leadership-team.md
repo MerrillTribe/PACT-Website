@@ -3,6 +3,7 @@ sidebar_position: 4
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Mail } from 'lucide-react';
 
 # Leadership Team
 
@@ -20,12 +21,17 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
     Have a question about PACT? Email us at <a href="mailto:provoauxcomm@gmail.com">provoauxcomm@gmail.com</a>.
   </p>
 
-  <a
-    href="mailto:provoauxcomm@gmail.com"
-    className="button button--primary button--lg"
-  >
-    ✉️ Contact Leadership Team
-  </a>
+
+<a
+  href="mailto:provoauxcomm@gmail.com"
+  className="button button--primary button--lg"
+>
+  <Mail size={18} strokeWidth={2} aria-hidden="true" />
+  <span>Contact Leadership Team</span>
+</a>
+
+
+
 </div>
 ---
 

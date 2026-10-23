@@ -3,6 +3,7 @@ sidebar_position: 4
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Download } from 'lucide-react';
 
 # Forms
 
@@ -31,13 +32,16 @@ Forms are used to collect, organize, and relay emergency communications informat
       </div>
 
       <div className="card__footer">
-        <a
-          className="button button--primary button--block"
-          href={useBaseUrl('/files/pact-n0.pdf')}
-          download
-        >
-          Download PACT N-0 Form
-        </a>
+       
+<a
+  className="button button--primary button--block"
+  href={useBaseUrl('/files/pact-n0.pdf')}
+  download
+>
+  <Download size={18} strokeWidth={2} aria-hidden="true" />
+  <span>Download PACT N-0 Form</span>
+</a>
+
       </div>
 
     </div>
@@ -64,13 +68,16 @@ Forms are used to collect, organize, and relay emergency communications informat
       </div>
 
       <div className="card__footer">
-        <a
-          className="button button--primary button--block"
-          href={useBaseUrl('/files/ucares-n1.pdf')}
-          download
-        >
-          Download UCARES N-1 Form
-        </a>
+  
+<a
+  className="button button--primary button--block"
+  href={useBaseUrl('/files/ucares-n1.pdf')}
+  download
+>
+  <Download size={18} strokeWidth={2} aria-hidden="true" />
+  <span>Download UCARES N-1 Form</span>
+</a>
+
       </div>
 
     </div>
@@ -97,13 +104,16 @@ Forms are used to collect, organize, and relay emergency communications informat
       </div>
 
       <div className="card__footer">
-        <a
-          className="button button--primary button--block"
-          href={useBaseUrl('/files/ucares-n2.pdf')}
-          download
-        >
-          Download UCARES N-2 Form
-        </a>
+
+<a
+  className="button button--primary button--block"
+  href={useBaseUrl('/files/ucares-n2.pdf')}
+  download
+>
+  <Download size={18} strokeWidth={2} aria-hidden="true" />
+  <span>Download UCARES N-2 Form</span>
+</a>
+
       </div>
 
     </div>
@@ -130,13 +140,16 @@ Forms are used to collect, organize, and relay emergency communications informat
       </div>
 
       <div className="card__footer">
-        <a
-          className="button button--primary button--block"
-          href={useBaseUrl('/files/ucares-n3.pdf')}
-          download
-        >
-          Download UCARES N-3 Form
-        </a>
+
+<a
+  className="button button--primary button--block"
+  href={useBaseUrl('/files/ucares-n3.pdf')}
+  download
+>
+  <Download size={18} strokeWidth={2} aria-hidden="true" />
+  <span>Download UCARES N-3 Form</span>
+</a>
+
       </div>
 
     </div>
@@ -163,13 +176,16 @@ Forms are used to collect, organize, and relay emergency communications informat
       </div>
 
       <div className="card__footer">
-        <a
-          className="button button--primary button--block"
-          href={useBaseUrl('/files/arrl-radiogram.pdf')}
-          download
-        >
-          Download ARRL Radiogram Form
-        </a>
+
+<a
+  className="button button--primary button--block"
+  href={useBaseUrl('/files/arrl-radiogram.pdf')}
+  download
+>
+  <Download size={18} strokeWidth={2} aria-hidden="true" />
+  <span>Download ARRL Radiogram Form</span>
+</a>
+
       </div>
 
     </div>

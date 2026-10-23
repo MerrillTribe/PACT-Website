@@ -505,7 +505,7 @@ Another way to prepare for an emergency is to receive first aid, CPR, and AED tr
 
 ---
 
-## Legacy Groups/Programs
+## Legacy Programs
 
 Several emergency communication and neighborhood response programs have been used in Provo and throughout Utah over the years. These programs provide useful historical context for how emergency reporting and communication practices have developed.
 
@@ -527,10 +527,4 @@ The **Rapid Disaster Assessment Program (RDAP)** was developed as a later approa
 Rather than requiring a designated Block Captain for every area, RDAP allowed available volunteers to assess damage, account for household conditions, and report urgent needs with minimal advance training.
 
 The Utah Division of Emergency Management worked with The Church of Jesus Christ of Latter-day Saints to develop and promote RDAP through the **Be Ready Utah** initiative. For a number of years, the program was used by municipalities, neighborhoods, and wards to gather initial damage information and relay it to emergency responders. The original RDAP program is still used by a handful of groups, although its use has declined over time.
-:::
-
-:::note Orem/Provo Community Emergency Response Team (CERT)
-The **Community Emergency Response Team (CERT)** program provided volunteer training in disaster preparedness and basic response skills, including fire safety, light search and rescue, team organization, and disaster medical operations.
-
-Orem and Provo operated a joint CERT program for a number of years to support community-level preparedness and response. Participation declined in 2019/2020, and the local program was subsequently mothballed.
 :::

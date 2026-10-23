@@ -6,6 +6,8 @@ tags:
   - general-announcement
 ---
 
+import { Shirt } from 'lucide-react';
+
 PACT-branded apparel is now available for members to order!
 
 Members can choose from a variety of PACT clothing and gear, including shirts, hats, vests, patches, and other items.
@@ -14,18 +16,21 @@ Wearing PACT apparel helps identify team members and promotes a consistent, prof
 
 Visit the PACT Clothing page to view available items, ordering information, and current options.
 
-<div
-  style={{
-    marginTop: '1.5rem',
-    marginBottom: '2rem',
-    textAlign: 'center',
-  }}
->
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
   <a
     href="/docs/resources/clothing/"
     className="button button--primary button--lg"
   >
-    View PACT Apparel
+    <Shirt
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>View PACT Apparel</span>
   </a>
 </div>
 

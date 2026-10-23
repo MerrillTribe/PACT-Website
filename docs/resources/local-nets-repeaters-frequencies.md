@@ -5,6 +5,7 @@ sidebar_position: 1
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import RepeaterJumpCards from '@site/src/components/JumpCards';
 import FrequencyViewToggle from '@site/src/components/FrequencyViewToggle';
+import { Download } from 'lucide-react';
 
 # Local Nets, Repeaters, & Frequencies
 
@@ -16,15 +17,26 @@ import FrequencyViewToggle from '@site/src/components/FrequencyViewToggle';
 
 The PACT Standard Load is a baseline set of frequencies and repeater channels programmed into member radios to support interoperable communications during nets, deployments, and emergency operations. Maintaining a standardized radio configuration helps ensure operators can communicate efficiently and transition between assignments with minimal confusion.
 
-<div className="button-center">
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
   <a
     className="button button--lg button--cta"
-  href={useBaseUrl('/files/pact-standard-load.xlsx')}
-  download
+    href={useBaseUrl('/files/pact-standard-load.xlsx')}
+    download
   >
-    DOWNLOAD PACT STANDARD LOAD (VER 1.0)
+    <Download
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>Download PACT Standard Load (Ver 1.0)</span>
   </a>
 </div>
+
 
 ---
 

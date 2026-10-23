@@ -3,6 +3,8 @@ sidebar_position: 1
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { ClipboardCheck } from 'lucide-react';
+
 
 # Deployment
 
@@ -114,12 +116,25 @@ Additional operators may be assigned as Assistant Net Control to support message
 
 After arriving at an assigned Area Coordination Center (ACC), PACT operators should identify themselves to ACC leadership or the community members who are there.
 
-<a
-  className="button button--primary button--lg"
-  href={useBaseUrl('/docs/resources/equipment')}
->
-  View Deployment Check List
-</a>
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
+  <a
+    className="button button--primary button--lg"
+    href={useBaseUrl('/docs/resources/equipment/#deployment-checklist')}
+  >
+    <ClipboardCheck
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>View Deployment Checklist</span>
+  </a>
+</div>
+
 
 ---
 

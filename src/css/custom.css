@@ -6309,3 +6309,409 @@ html[data-theme='dark'] .current-announcements .announcement-divider {
     transition: none !important;
   }
 }
+
+
+/* =====================================================
+   PACT RADIO SERVICES — CONSOLIDATED STYLESHEET
+   Replace the Radio Services-specific CSS with this file.
+   ===================================================== */
+
+/* Page guidance */
+.radio-services-license-guide {
+  margin: 1rem 0 1.6rem;
+  padding: .8rem 1rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 0 6px 6px 0;
+  background: var(--ifm-color-emphasis-100);
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+/* Optional older PACT reference block (safe to retain) */
+.radio-services-pact-reference {
+  margin: 1rem 0 1.6rem;
+  padding: 1.2rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+}
+.radio-services-pact-reference__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: .8rem;
+}
+.radio-services-pact-reference__grid > div {
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  padding: .85rem;
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+}
+.radio-services-pact-reference__grid span { font-size: .78rem; opacity: .8; }
+.radio-services-pact-reference__grid strong { font-size: 1.07rem; }
+.radio-services-pact-reference__grid small { line-height: 1.45; }
+.radio-services-pact-reference > p { margin: .85rem 0 0; font-size: .9rem; }
+
+/* Service directory */
+.radio-services-category { margin: 2rem 0; }
+.radio-services-category > h2 { margin-bottom: 1rem; }
+.radio-services-category__cards { display: block; }
+
+.radio-service-card {
+  margin: 0 0 1.25rem;
+  padding: 1.35rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,.035);
+  min-width: 0;
+}
+.radio-service-card__heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: .8rem 1rem;
+  margin-bottom: 1rem;
+}
+.radio-service-card__identity { display: flex; align-items: center; gap: 1rem; min-width: 0; }
+.radio-service-card__monogram {
+  flex: 0 0 62px;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+  font-size: 1rem;
+  font-weight: 750;
+  text-align: center;
+}
+.radio-service-card--frs .radio-service-card__monogram { background: #dff1e8; color: #236d49; }
+.radio-service-card--gmrs .radio-service-card__monogram { background: #eee4fa; color: #7042a5; }
+.radio-service-card--murs .radio-service-card__monogram { background: #e0eefb; color: #235d91; }
+.radio-service-card--cb .radio-service-card__monogram { background: #fff0d7; color: #8b5c19; }
+.radio-service-card--lora .radio-service-card__monogram { background: #e1e8ff; color: #3f49bc; }
+.radio-service-card__text { min-width: 0; }
+.radio-service-card__title { margin: 0 0 .15rem; font-size: 1.25rem; line-height: 1.3; }
+.radio-service-card__subtitle { display: block; color: var(--ifm-color-emphasis-700); font-size: .92rem; }
+.radio-service-card__license {
+  display: inline-block;
+  flex: 0 0 auto;
+  padding: .38rem .75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  font-size: .82rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+/* Standardized facts: displayed only when the MDX supplies facts */
+.radio-service-card__facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+  margin-bottom: 1rem;
+}
+.radio-service-card__fact {
+  min-width: 0;
+  padding: .85rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 9px;
+  background: var(--ifm-color-emphasis-100);
+}
+.radio-service-card__fact-label {
+  display: block;
+  margin-bottom: .15rem;
+  font-size: .78rem;
+  color: var(--ifm-color-emphasis-700);
+}
+.radio-service-card__fact strong { display: block; font-size: .95rem; line-height: 1.4; }
+.radio-service-card__description { margin: .3rem 0 1.15rem; line-height: 1.65; }
+
+/* Shared action bar */
+.radio-service-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: .8rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+.radio-service-card__rules {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-weight: 600;
+  font-size: .91rem;
+  text-decoration: none;
+}
+.radio-service-card__rules:hover { text-decoration: underline; }
+
+/* IMPORTANT: styles BOTH <button> and <a> frequency actions identically. */
+.radio-service-card__actions .radio-frequency-button,
+.radio-nifog-card__actions .radio-frequency-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .45rem;
+  flex: 0 0 auto;
+  min-height: 46px;
+  padding: .68rem 1.15rem;
+  box-sizing: border-box;
+  appearance: none;
+  border: 1px solid #2457a6;
+  border-radius: 8px;
+  background: #2457a6;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  font-family: inherit;
+  font-size: .92rem;
+  font-weight: 650;
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  cursor: pointer;
+  transition: background-color .15s, border-color .15s;
+}
+.radio-service-card__actions .radio-frequency-button:hover,
+.radio-nifog-card__actions .radio-frequency-button:hover {
+  border-color: #194585;
+  background: #194585;
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  text-decoration: none;
+}
+.radio-service-card__actions .radio-frequency-button:focus-visible,
+.radio-nifog-card__actions .radio-frequency-button:focus-visible,
+.radio-service-card__rules:focus-visible,
+.radio-mesh-subcard a:focus-visible {
+  outline: 3px solid var(--ifm-color-primary-light);
+  outline-offset: 3px;
+}
+
+/* Frequency dialogs */
+.radio-frequency-modal {
+  width: min(96vw, 1080px);
+  max-width: 1080px;
+  max-height: 90dvh;
+  padding: 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  overflow: hidden;
+}
+.radio-frequency-modal::backdrop { background: rgba(0,0,0,.55); }
+.radio-frequency-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-background-surface-color);
+}
+.radio-frequency-modal__title { margin: 0; font-size: 1.2rem; }
+.radio-frequency-modal__header form { margin: 0; }
+.radio-frequency-modal__close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-font-color-base);
+  font: inherit;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.radio-frequency-modal__close:hover { background: var(--ifm-color-emphasis-200); }
+.radio-frequency-modal__close:focus-visible { outline: 3px solid var(--ifm-color-primary); outline-offset: 2px; }
+.radio-frequency-modal__body {
+  max-height: calc(90dvh - 77px);
+  padding: 1rem 1.25rem 1.25rem;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+.radio-frequency-modal__group { margin-bottom: 1.25rem; }
+.radio-frequency-modal__group-title { margin: 0 0 .55rem; font-size: 1rem; }
+.radio-frequency-modal__table-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; }
+.radio-service-card__table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: .88rem; }
+.radio-service-card__table th,
+.radio-service-card__table td {
+  padding: .58rem .72rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  text-align: left;
+  vertical-align: top;
+}
+.radio-service-card__table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 1px 0 var(--ifm-color-emphasis-300);
+  font-weight: 700;
+}
+.radio-service-card__table tbody tr:nth-child(even) { background: var(--ifm-color-emphasis-100); }
+.radio-frequency-modal__note { margin: .5rem 0 0; font-size: .85rem; line-height: 1.55; color: var(--ifm-color-emphasis-700); }
+
+/* LoRa child cards, visually attached but subordinate */
+.radio-services-category__cards > .radio-mesh-subcards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: -.15rem 1.2rem 1.75rem;
+  padding-top: 1.45rem;
+}
+.radio-services-category__cards > .radio-mesh-subcards::before {
+  content: '';
+  position: absolute;
+  top: -1.1rem;
+  left: 50%;
+  width: 2px;
+  height: 2.55rem;
+  transform: translateX(-50%);
+  background: var(--ifm-color-emphasis-300);
+}
+.radio-mesh-subcard {
+  position: relative;
+  z-index: 1;
+  min-width: 0;
+  padding: 1.1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 9px;
+  background: var(--ifm-color-emphasis-100);
+  box-shadow: none;
+}
+.radio-mesh-subcard__heading { display: flex; align-items: center; gap: .8rem; margin-bottom: .85rem; }
+.radio-mesh-subcard__logo { display: block; flex: 0 0 44px; width: 44px; height: 44px; object-fit: contain; }
+.radio-mesh-subcard__heading h3 { margin: 0; font-size: 1.05rem; }
+.radio-mesh-subcard p { margin: 0 0 .75rem; font-size: .9rem; line-height: 1.55; }
+.radio-mesh-subcard a { display: inline-flex; align-items: center; gap: .35rem; }
+.radio-mesh-subcards__note {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: .84rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* NIFOG standalone resource card */
+.radio-nifog-card {
+  margin: 1rem 0 2rem;
+  padding: 1.3rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+}
+.radio-nifog-card__heading { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; }
+.radio-nifog-card__heading h3 { margin: 0; font-size: 1.16rem; }
+.radio-nifog-card__heading > div > span { color: var(--ifm-color-emphasis-700); font-size: .82rem; }
+.radio-nifog-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 60px;
+  width: 60px;
+  height: 52px;
+  border-radius: 10px;
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-font-color-base);
+  font-weight: 800;
+  font-size: .83rem;
+  letter-spacing: .015em;
+}
+.radio-nifog-card h4 { margin: 1rem 0 .4rem; }
+.radio-nifog-card__note {
+  padding: .75rem;
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+}
+.radio-nifog-card__actions { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 1rem; }
+.radio-nifog-card__actions .radio-nifog-card__secondary-button {
+  background: transparent;
+  color: var(--ifm-color-primary);
+  -webkit-text-fill-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-emphasis-300);
+}
+.radio-nifog-card__actions .radio-nifog-card__secondary-button:hover {
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-primary-dark);
+  -webkit-text-fill-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-emphasis-400);
+}
+
+@media (max-width: 768px) {
+  .radio-service-card { padding: 1rem; }
+  .radio-service-card__monogram { flex-basis: 50px; width: 50px; height: 50px; border-radius: 11px; }
+  .radio-service-card__title { font-size: 1.1rem; }
+  .radio-service-card__license { font-size: .75rem; }
+  .radio-service-card__facts { grid-template-columns: 1fr; gap: .5rem; }
+  .radio-service-card__fact { padding: .65rem .8rem; }
+  .radio-frequency-modal { width: 98vw; max-height: 94dvh; }
+  .radio-frequency-modal__body { max-height: calc(94dvh - 77px); padding: .85rem; }
+  .radio-frequency-modal__header { padding: .75rem .85rem; }
+  .radio-services-category__cards > .radio-mesh-subcards {
+    grid-template-columns: 1fr;
+    margin-left: .75rem;
+    margin-right: .75rem;
+  }
+  .radio-mesh-subcard__logo { flex-basis: 40px; width: 40px; height: 40px; }
+  .radio-nifog-card { padding: 1rem; }
+  .radio-nifog-card__actions { flex-direction: column; align-items: stretch; }
+  .radio-nifog-card__actions .radio-frequency-button { width: 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .radio-frequency-button { transition: none !important; }
+}
+
+
+/* =========================================
+   GLOBAL BUTTON ALIGNMENT
+   ========================================= */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.button svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.button span {
+  margin: 0;
+}
+
+
+/* =========================================
+   FULL-WIDTH BUTTON ALIGNMENT
+   ========================================= */
+
+.button.button--block {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+

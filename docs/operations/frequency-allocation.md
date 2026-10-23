@@ -2,6 +2,9 @@
 sidebar_position: 1
 ---
 
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Download } from 'lucide-react';
+
 # PACT Frequencies
 
 The following frequencies have been coordinated and allocated for PACT communications. PACT members should program these frequencies into their radio(s). District frequencies are used to share situational information and support district-level communication efforts as directed.
@@ -84,12 +87,21 @@ The Provo City Repeater is available for all PACT operations, trainings, and eve
 
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
-<a
-  className="button button--primary button--lg"
-  href={useBaseUrl('/files/pact-map-v1-2.pdf')}
-  download
->
-  Download PACT Frequency Map
-</a>
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
+  <a
+    className="button button--primary button--lg"
+    href={useBaseUrl('/files/pact-map-v1-2.pdf')}
+    download
+  >
+    <Download
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>Download PACT Frequency Map</span>
+  </a>
+</div>

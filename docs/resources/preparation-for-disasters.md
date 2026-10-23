@@ -8,7 +8,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import {
   Info, Map, HeartPulse, Building2, Zap, RadioTower,
   CarFront, Trees, BriefcaseBusiness, Wheat, Landmark,
-  House, Droplets, Wind, Flame
+  House, Droplets, Wind, Flame, BellRing
 } from 'lucide-react';
 
  
@@ -690,12 +690,22 @@ PACT encourages everyone in the Provo community to sign up for local emergency n
 
 When an emergency occurs, monitor official alerts and follow instructions from Provo City, Utah County, and other public-safety agencies.
 
-<div style={{ textAlign: 'center', marginTop: '1rem' }}>
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 1rem',
+}}>
   <a
     href={useBaseUrl('/docs/resources/emergency-notification-systems/')}
     className="button button--danger button--lg"
   >
-    Emergency Notification Systems
+    <BellRing
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>Emergency Notification Systems</span>
   </a>
 </div>
 

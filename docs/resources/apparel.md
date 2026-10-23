@@ -2,6 +2,8 @@
 sidebar_position: 1
 ---
 
+import { ClipboardList } from 'lucide-react';
+
 # Apparel
 
 PACT members may order branded clothing and items using the order form below.
@@ -24,14 +26,21 @@ PACT members may order branded clothing and items using the order form below.
         and other approved team merchandise.
       </p>
 
-      <a
-        className="button button--primary button--lg"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSfZ3CzP1Q1-zx3fr3XwFU4OFrlz77u4b0MGXIJPe-LS58tQKQ/viewform"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Open Order Form
-      </a>
+
+<a
+  className="button button--primary button--lg"
+  href="https://docs.google.com/forms/d/e/1FAIpQLSfZ3CzP1Q1-zx3fr3XwFU4OFrlz77u4b0MGXIJPe-LS58tQKQ/viewform"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <ClipboardList
+    size={18}
+    strokeWidth={2}
+    aria-hidden="true"
+  />
+  <span>Open Order Form</span>
+</a>
+
     </div>
   </div>
 </div>

@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 import Link from '@docusaurus/Link';
+import { Users } from 'lucide-react';
 
 # About PACT
 
@@ -41,11 +42,21 @@ Founded in 2025, PACT provides auxiliary communication support when primary syst
 
 The Provo Auxiliary Communications Team consists of local volunteers, many of whom are licensed amateur radio (HAM) operators. PACT members come from diverse professional and technical backgrounds and are united by a shared interest in community service and emergency preparedness.
 
-<div style={{ display: 'flex', justifyContent: 'center' }}>
+
+<div style={{
+  display: 'flex',
+  justifyContent: 'center',
+  margin: '1.5rem 0 2rem',
+}}>
   <Link
     className="button button--primary button--lg"
     to="/docs/get-involved"
   >
-    Get Involved
+    <Users
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>Get Involved</span>
   </Link>
 </div>

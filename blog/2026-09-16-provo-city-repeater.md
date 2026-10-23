@@ -3,7 +3,7 @@ title: New Provo City Repeater
 description: A new amateur radio repeater is now available at Provo City Hall.
 date: 2026-09-16
 tags:
-  - General Announcements
+  - general-announcement
 ---
 
 Provo City has installed a new amateur radio repeater at Provo City Hall. The repeater will be available for use beginning **September 17, 2026**.

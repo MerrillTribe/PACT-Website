@@ -3,7 +3,9 @@ title: Radio Services
 sidebar_position: 4
 draft: true
 ---
-
+ 
+import React from 'react';
+ 
 import {
   BriefcaseBusiness,
   RadioTower,
@@ -11,19 +13,37 @@ import {
   Plane,
   TrainFront,
   TreePine,
+  ExternalLink,
+  Download,
 } from 'lucide-react';
-
-This reference summarizes common radio services and calling or monitoring frequencies. **A frequency appearing here does not authorize transmission.** Follow the applicable FCC rules and current operational assignments.
-
-
+ 
+ 
+Radio services are different systems of wireless communication, each established for particular purposes—such as family conversations, business operations, transportation, or amateur experimentation. In the United States, the FCC sets rules for who may transmit, which frequencies and equipment may be used, and how a service operates. Some services do not require an individual license; others require an operator or station authorization.
+ 
+This guide compares the common services and provides reference frequencies to help you understand how they differ. **Listening to a frequency does not give you permission to transmit on it.**
+ 
+## Service Directory
+ 
+<div className="radio-services-license-guide">
+  <strong>Licensing labels:</strong> “No individual license” means eligible
+  operation without a personal FCC license, <em>not</em> permission to transmit
+  using arbitrary equipment. “FCC license required” and “Restricted /
+  authorized use” indicate that additional authority is necessary.
+  LoRa uses rules determined by the device and configuration.
+</div>
+ 
 export const radioServices = [
   {
     id: 'frs',
     name: 'Family Radio Service',
     icon: 'FRS',
     subtitle: '462–467 MHz · UHF',
-    license: 'License-free',
-    facts: [['Channels', '22'], ['Maximum Power', '2 W ERP'], ['Repeaters', 'Not permitted']],
+    license: 'No Individual License',
+    facts: [
+      ['Channels', '22'],
+      ['Maximum Power', '2 W ERP'],
+      ['Repeaters', 'Not permitted']
+    ],
     description: 'FRS provides short-distance communications for families, outdoor recreation, and group coordination. Its 22 channels are shared with GMRS, and no individual FCC license is required.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B',
     linkLabel: 'FCC Service Rules',
@@ -31,13 +51,27 @@ export const radioServices = [
       title: 'FRS Frequency Table',
       columns: ['CH', 'Frequency (MHz)', 'Max ERP'],
       rows: [
-        ['1','462.5625','2 W'],['2','462.5875','2 W'],['3','462.6125','2 W'],
-        ['4','462.6375','2 W'],['5','462.6625','2 W'],['6','462.6875','2 W'],
-        ['7','462.7125','2 W'],['8','467.5625','0.5 W'],['9','467.5875','0.5 W'],
-        ['10','467.6125','0.5 W'],['11','467.6375','0.5 W'],['12','467.6625','0.5 W'],
-        ['13','467.6875','0.5 W'],['14','467.7125','0.5 W'],['15','462.5500','2 W'],
-        ['16','462.5750','2 W'],['17','462.6000','2 W'],['18','462.6250','2 W'],
-        ['19','462.6500','2 W'],['20','462.6750','2 W'],['21','462.7000','2 W'],
+        ['1','462.5625','2 W'],
+        ['2','462.5875','2 W'],
+        ['3','462.6125','2 W'],
+        ['4','462.6375','2 W'],
+        ['5','462.6625','2 W'],
+        ['6','462.6875','2 W'],
+        ['7','462.7125','2 W'],
+        ['8','467.5625','0.5 W'],
+        ['9','467.5875','0.5 W'],
+        ['10','467.6125','0.5 W'],
+        ['11','467.6375','0.5 W'],
+        ['12','467.6625','0.5 W'],
+        ['13','467.6875','0.5 W'],
+        ['14','467.7125','0.5 W'],
+        ['15','462.5500','2 W'],
+        ['16','462.5750','2 W'],
+        ['17','462.6000','2 W'],
+        ['18','462.6250','2 W'],
+        ['19','462.6500','2 W'],
+        ['20','462.6750','2 W'],
+        ['21','462.7000','2 W'],
         ['22','462.7250','2 W']
       ]
     }],
@@ -48,8 +82,12 @@ export const radioServices = [
     name: 'Multi-Use Radio Service',
     icon: 'MURS',
     subtitle: '151–154 MHz · VHF',
-    license: 'License-free',
-    facts: [['Channels', '5'], ['Maximum Power', '2 W Output'], ['Repeaters', 'Not permitted']],
+    license: 'No Individual License',
+    facts: [
+      ['Channels', '5'],
+      ['Maximum Power', '2 W Output'],
+      ['Repeaters', 'Not permitted']
+    ],
     description: 'MURS provides five VHF channels for short-distance personal and business communications without an individual FCC license. External antennas are permitted, subject to antenna-height restrictions.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-J',
     linkLabel: 'FCC Service Rules',
@@ -71,8 +109,12 @@ export const radioServices = [
     name: 'Citizens Band Radio',
     icon: 'CB',
     subtitle: '26.965–27.405 MHz · HF',
-    license: 'License-free',
-    facts: [['Channels', '40'], ['Maximum Power', '4 W AM/FM · 12 W SSB'], ['Repeaters', 'Not permitted']],
+    license: 'No Individual License',
+    facts: [
+      ['Channels', '40'],
+      ['Maximum Power', '4 W AM/FM · 12 W SSB'],
+      ['Repeaters', 'Not permitted']
+    ],
     description: 'CB provides 40 shared channels for personal and business communications. It is commonly used by truck drivers, travelers, and outdoor groups, with AM, FM, and single-sideband operation using compliant radios.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-D',
     linkLabel: 'FCC Service Rules',
@@ -110,13 +152,22 @@ export const radioServices = [
     icon: 'GMRS',
     subtitle: '462–467 MHz · UHF',
     license: 'FCC License Required',
-    facts: [['Channels', '22 + 8 repeater pairs'], ['Maximum Power', 'Up to 50 W Output'], ['Repeaters', 'Permitted']],
+    facts: [
+      ['Channels', '22 + 8 repeater pairs'],
+      ['Maximum Power', 'Up to 50 W Output'],
+      ['Repeaters', 'Permitted']
+    ],
     description: 'GMRS supports handheld, mobile, base, and repeater communications. An individual FCC license generally covers eligible immediate family members. It shares 22 simplex channels with FRS and offers eight repeater pairs for extended coverage.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E',
     linkLabel: 'FCC Service Rules',
     groups: [{
       title: 'GMRS Frequency Table',
-      columns: ['CH', 'Frequency (MHz)', 'Repeater Input (MHz)', 'Max Power'],
+      columns: [
+        'CH',
+        'Simplex / Repeater Output (MHz)',
+        'Repeater Input (MHz)',
+        'Max Power'
+      ],
       rows: [
         ['1','462.5625','—','5 W ERP'],
         ['2','462.5875','—','5 W ERP'],
@@ -150,50 +201,68 @@ export const radioServices = [
     icon: 'Business',
     subtitle: 'Commercial Land Mobile Radio · FCC Part 90',
     license: 'FCC License Required',
-    facts: [
-      ['Service', 'FCC Part 90'],
-      ['Frequencies', 'Assigned by license'],
-      ['Repeaters', 'When authorized']
-    ],
+    facts: [],
     description: 'Business and Industrial/Business Pool radio systems serve commercial operations, facilities, transportation, and organizational communications. Authorized channels, power, emissions, and coverage depend on each FCC license.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-90',
     linkLabel: 'FCC Part 90 Rules',
     groups: []
   },
-  {
-    id: 'lora',
-    name: 'Long Range (LoRa) Radio',
-    icon: 'LoRa',
-    subtitle: 'Meshtastic · MeshCore · 902–928 MHz',
-    license: 'License-exempt operation possible',
-    facts: [],
-    description: 'LoRa is a long-range, low-power radio technology for digital communications. Meshtastic and MeshCore are separate off-grid messaging and networking systems using LoRa; their devices, firmware, roles, and network protocols are not interchangeable. Other applications include telemetry and remote sensors.',
-    link: 'https://meshtastic.org/docs/overview/radio-settings/',
-    linkLabel: 'Meshtastic Radio Settings',
-    groups: [{
-      title: 'North American LoRa Frequency Reference',
-      columns: ['Frequency', 'Band', 'Typical Use'],
-      rows: [
-        ['902.300 MHz','33 cm','Configurable LoRa / ISM example'],
-        ['903.000 MHz','33 cm','LoRa applications'],
-        ['904.000 MHz','33 cm','Experimental / data links'],
-        ['905.000 MHz','33 cm','Telemetry / data'],
-        ['906.875 MHz','33 cm','Meshtastic LongFast, US region / slot 20'],
-        ['908.000 MHz','33 cm','Configurable mesh use'],
-        ['910.000 MHz','33 cm','IoT / sensor networks'],
-        ['915.000 MHz','33 cm','General LoRa / ISM use'],
-        ['920.000 MHz','33 cm','Configurable LoRa use'],
-        ['927.000 MHz','33 cm','LoRa / ISM applications']
+ 
+
+{
+  id: 'amateur',
+  name: 'Amateur Radio',
+  icon: 'HAM',
+  subtitle: 'Multiple HF, VHF, UHF and microwave bands',
+  license: 'Amateur License Required',
+  facts: [],
+  description: 'Amateur radio is a licensed radio service used for personal communications, technical experimentation, education, and public service. Operators can communicate locally through simplex frequencies and repeaters or across long distances using HF and other bands. The service also plays an important role in volunteer emergency communications. In the United States, operators must hold an FCC amateur radio license, with privileges determined by their license class.',
+  link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97',
+  linkLabel: 'FCC Service Rules',
+  frequencyLink: '/docs/resources/band-plans',
+  groups: [],
+  note: ''
+},
+
+{
+  id: 'lora',
+  name: 'LoRa / Mesh Communications',
+  icon: 'LoRa',
+  subtitle: 'Low-power digital communications · 902–928 MHz',
+  license: 'Configuration Dependent',
+  facts: [],
+  description: 'LoRa (Long Range) is a low-power wireless technology designed to transmit small amounts of digital information over relatively long distances. It can support text messaging, location sharing, telemetry, and other data communications without relying on cellular networks or internet access. Meshtastic and MeshCore are two separate communication systems that use LoRa technology to create off-grid messaging networks. Both are described in the cards below.',
+  link: '',
+  linkLabel: '',
+  groups: [{
+    title: 'North American LoRa / Meshtastic Examples',
+    columns: ['Configuration', 'Frequency', 'Interpretation'],
+    rows: [
+      [
+        'US / LongFast · slot 20',
+        '906.875 MHz',
+        'Common Meshtastic preset/slot combination'
+      ],
+      [
+        'US / LongTurbo · slot 14',
+        '908.750 MHz',
+        'Meshtastic preset/slot combination'
+      ],
+      [
+        'US ISM allocation',
+        '902–928 MHz',
+        'Frequency band; not an individual channel'
       ]
-    }],
-    note: 'These are illustrative frequencies, not fixed universal channels. Meshtastic and MeshCore use separate configurations and networking protocols. 928 MHz is the upper US band edge, not an ordinary channel-center frequency.'
-  },
+    ]
+  }],
+  note: 'LoRa is a modulation technology, not a separately licensed FCC radio service. These frequency examples apply to Meshtastic configurations and should not be assumed to apply to MeshCore. Actual operating frequencies depend on device configuration, region, firmware, and network settings. Equipment must comply with applicable FCC requirements.'
+},
   {
     id: 'marine',
     name: 'Marine Radio',
     icon: 'Marine',
     subtitle: '156–162 MHz · Marine VHF',
-    license: 'Licensing depends on operation',
+    license: 'Authorization Varies',
     facts: [],
     description: 'Marine VHF provides ship-to-ship, ship-to-shore, navigation-safety, and distress communications. Channel 16 (156.800 MHz) is the international distress, safety, and calling channel.',
     link: 'https://www.navcen.uscg.gov/us-vhf-channel-information',
@@ -219,29 +288,16 @@ export const radioServices = [
           ['82A / 1082','157.125 MHz','Government / restricted use'],
           ['83A / 1083','157.175 MHz','U.S. Coast Guard operations']
         ]
-      },
-      {
-        title: 'NOAA Weather Radio',
-        columns: ['Channel', 'Frequency', 'Usage'],
-        rows: [
-          ['WX1','162.550 MHz','NOAA Weather Radio'],
-          ['WX2','162.400 MHz','NOAA Weather Radio'],
-          ['WX3','162.475 MHz','NOAA Weather Radio'],
-          ['WX4','162.425 MHz','NOAA Weather Radio'],
-          ['WX5','162.450 MHz','NOAA Weather Radio'],
-          ['WX6','162.500 MHz','NOAA Weather Radio'],
-          ['WX7','162.525 MHz','NOAA Weather Radio']
-        ]
       }
     ],
-    note: 'Marine channel numbering and permitted uses depend on jurisdiction; four-digit designations increasingly replace A suffixes. NOAA Weather Radio is receive-only for the general public.'
+    note: 'Marine channel numbering and permitted uses depend on jurisdiction; four-digit designations increasingly replace A suffixes.'
   },
   {
     id: 'aviation',
     name: 'Aviation Radio',
     icon: 'Aviation',
     subtitle: '118–137 MHz · VHF Airband',
-    license: 'Authorized aviation use',
+    license: 'Restricted / Authorized Use',
     facts: [],
     description: 'Aviation radio supports aircraft, air traffic control, airport operations, and emergencies. This Utah reference includes airports, backcountry, air medical, emergency monitoring, and Civil Air Patrol. Operational assignments may change: verify before relying on them.',
     link: 'https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/',
@@ -257,9 +313,9 @@ export const radioServices = [
           ['Salt Lake Intl (SLC)','118.300 MHz','Tower — verify'],
           ['Salt Lake Intl (SLC)','121.900 MHz','Ground — verify'],
           ['Salt Lake Intl (SLC)','135.500 MHz','ATIS — verify'],
-          ['Provo (PVU)','118.300 MHz','Tower — verify'],
-          ['Provo (PVU)','121.725 MHz','Ground — verify'],
-          ['Provo (PVU)','124.350 MHz','ATIS — verify'],
+          ['Provo (PVU)','125.300 MHz','Tower / CTAF — FAA data effective Oct. 1, 2026'],
+          ['Provo (PVU)','119.400 MHz','Ground — FAA data effective Oct. 1, 2026'],
+          ['Provo (PVU)','135.175 MHz','ATIS / AWOS — FAA data effective Oct. 1, 2026'],
           ['Ogden-Hinckley (OGD)','124.700 MHz','Tower — verify'],
           ['Ogden-Hinckley (OGD)','121.800 MHz','Ground — verify'],
           ['Spanish Fork (U77)','122.900 MHz','CTAF / UNICOM — verify'],
@@ -334,39 +390,39 @@ export const radioServices = [
         ]
       }
     ],
-    note: 'Airport, air medical, federal, CAP, and public-safety entries reproduce previously supplied reference frequencies and have not been comprehensively validated for current assignment. Consult current FAA publications, NOTAMs, and agency communications plans. This list does not authorize transmission.'
+    note: 'Provo (PVU) frequencies have been corrected against aviation data effective October 1, 2026. Other airport, air-medical, federal, CAP, and public-safety entries have NOT been comprehensively verified for current assignment and must not be relied on operationally without checking current FAA publications, NOTAMs, and agency communications plans. This list does not authorize transmission.'
   },
   {
     id: 'railroad',
     name: 'Railroad Radio',
     icon: 'Railroad',
     subtitle: '160–162 MHz · VHF',
-    license: 'Railroad authorization required',
+    license: 'Restricted / Authorized Use',
     facts: [],
     description: 'North American railroad communications use standardized AAR channel designations for train crews, dispatchers, yard operations, and maintenance. Actual operating channels vary by railroad and location.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-90',
     linkLabel: 'FCC Part 90 Rules',
     groups: [{
       title: 'AAR Frequency Reference',
-      columns: ['AAR Channel', 'Frequency', 'Illustrative Use'],
+      columns: ['AAR Channel', 'Frequency', 'Assignment Status'],
       rows: [
-        ['007','160.215 MHz','Yard operations'],
-        ['008','160.230 MHz','Switching'],
-        ['020','160.410 MHz','Road operations'],
-        ['021','160.425 MHz','Dispatcher'],
-        ['036','160.650 MHz','Local train operations'],
-        ['046','160.800 MHz','Dispatcher / road'],
-        ['052','160.890 MHz','Maintenance'],
-        ['058','160.980 MHz','Yard / terminal'],
-        ['060','161.010 MHz','Dispatch'],
-        ['064','161.070 MHz','Road operations'],
-        ['066','161.100 MHz','Dispatcher'],
-        ['072','161.190 MHz','Engineering'],
-        ['074','161.220 MHz','Railroad operations'],
-        ['080','161.310 MHz','Road operations'],
-        ['086','161.400 MHz','Dispatcher'],
-        ['096','161.550 MHz','Railroad operations'],
-        ['097','161.565 MHz','End-of-train reference — verify']
+        ['007','160.215 MHz','Not location-verified'],
+        ['008','160.230 MHz','Not location-verified'],
+        ['020','160.410 MHz','Not location-verified'],
+        ['021','160.425 MHz','Not location-verified'],
+        ['036','160.650 MHz','Not location-verified'],
+        ['046','160.800 MHz','Not location-verified'],
+        ['052','160.890 MHz','Not location-verified'],
+        ['058','160.980 MHz','Not location-verified'],
+        ['060','161.010 MHz','Not location-verified'],
+        ['064','161.070 MHz','Not location-verified'],
+        ['066','161.100 MHz','Not location-verified'],
+        ['072','161.190 MHz','Not location-verified'],
+        ['074','161.220 MHz','Not location-verified'],
+        ['080','161.310 MHz','Not location-verified'],
+        ['086','161.400 MHz','Not location-verified'],
+        ['096','161.550 MHz','Not location-verified'],
+        ['097','161.565 MHz','Not location-verified']
       ]
     }],
     note: 'AAR frequencies are standardized; examples of use are not confirmed channel assignments for a specific Utah railroad or subdivision.'
@@ -376,7 +432,7 @@ export const radioServices = [
     name: 'Calling & Monitoring Frequencies',
     icon: 'Calling',
     subtitle: 'Amateur radio and other services',
-    license: 'Authorization varies',
+    license: 'Authorization Varies',
     facts: [],
     description: 'These are amateur calling frequencies, activity centers, APRS, and informal conventions for other radio services. Not every listed frequency is an official national calling frequency.',
     link: 'https://www.arrl.org/band-plan',
@@ -409,7 +465,7 @@ export const radioServices = [
     name: 'Wilderness Protocol',
     icon: 'Wilderness',
     subtitle: 'Amateur emergency monitoring practice',
-    license: 'Amateur license required to transmit',
+    license: 'Amateur License Required',
     facts: [],
     description: 'The Wilderness Protocol is an informal amateur-radio practice encouraging stations in remote areas to monitor calling channels for five minutes at the top of the hour, every three hours from 7 a.m. to 7 p.m. local time. It is not a guaranteed emergency-response service.',
     link: 'https://www.arrl.org/files/file/Public%20Service/ARES/ARESFieldResourcesManual-2019.pdf',
@@ -437,199 +493,307 @@ export const radioServices = [
     note: 'Aviation and marine entries are separate service references, not Wilderness Protocol amateur channels. Transmitting on them requires applicable authority except where emergency rules provide otherwise.'
   }
 ];
-
+ 
+export const radioServiceCategories = [
+  {
+    id: 'personal',
+    title: 'Personal & Community Communications',
+    services: ['frs', 'gmrs', 'murs', 'cb', 'lora', 'amateur']
+  },
+  {
+    id: 'commercial',
+    title: 'Commercial & Transportation',
+    services: ['business', 'marine', 'aviation', 'railroad']
+  },
+  {
+    id: 'monitoring',
+    title: 'Calling & Monitoring',
+    services: ['calling', 'wilderness']
+  }
+];
+ 
 {/* =========================================
     RADIO SERVICE CARD RENDERER
     ========================================= */}
-
-{radioServices.map((service) => (
-  <div
-    key={service.id}
-    className={`radio-service-card radio-service-card--${service.id}`}
+ 
+{radioServiceCategories.map((category) => (
+  <section
+    key={category.id}
+    className="radio-services-category"
+    aria-labelledby={`radio-services-category-${category.id}`}
   >
-    <div className="radio-service-card__heading">
-      <div className="radio-service-card__identity">
-        <div
-          className={`radio-service-card__monogram ${
-            [
-              'business',
-              'marine',
-              'aviation',
-              'railroad',
-              'calling',
-              'wilderness'
-            ].includes(service.id)
-              ? 'radio-service-card__monogram--icon'
-              : ''
-          }`}
-          aria-hidden="true"
-        >
-          {service.id === 'business' ? (
-            <BriefcaseBusiness size={25} strokeWidth={1.8} />
-          ) : service.id === 'marine' ? (
-            <Ship size={25} strokeWidth={1.8} />
-          ) : service.id === 'aviation' ? (
-            <Plane size={25} strokeWidth={1.8} />
-          ) : service.id === 'railroad' ? (
-            <TrainFront size={25} strokeWidth={1.8} />
-          ) : service.id === 'calling' ? (
-            <RadioTower size={25} strokeWidth={1.8} />
-          ) : service.id === 'wilderness' ? (
-            <TreePine size={25} strokeWidth={1.8} />
-          ) : (
-            service.icon
-          )}
-        </div>
-
-        <div className="radio-service-card__text">
-          <h3
-            id={`radio-service-${service.id}`}
-            className="radio-service-card__title"
-          >
-            {service.name}
-          </h3>
-
-          <span className="radio-service-card__subtitle">
-            {service.subtitle}
-          </span>
-        </div>
-      </div>
-
-      <span className="radio-service-card__license">
-        {service.license}
-      </span>
-    </div>
-
-    {service.facts.length > 0 && (
-      <div className="radio-service-card__facts">
-        {service.facts.map(([label, value], index) => (
+    <h2 id={`radio-services-category-${category.id}`}>
+      {category.title}
+    </h2>
+ 
+    <div className="radio-services-category__cards">
+      {radioServices
+        .filter((service) => category.services.includes(service.id))
+        .map((service) => (
+          <React.Fragment key={service.id}>
           <div
-            className="radio-service-card__fact"
-            key={`${service.id}-${index}`}
+            key={service.id}
+            className={`radio-service-card radio-service-card--${service.id}`}
           >
-            <span className="radio-service-card__fact-label">
-              {label}
-            </span>
-            <strong>{value}</strong>
-          </div>
-        ))}
-      </div>
-    )}
-
-    <p className="radio-service-card__description">
-      {service.description}
-    </p>
-
-    <div className="radio-service-card__actions">
-      <a
-        className="radio-service-card__rules"
-        href={service.link}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {service.linkLabel}
-      </a>
-
-      {service.groups.length > 0 && (
-        <button
-          type="button"
-          className="radio-frequency-button"
-          onClick={() =>
-            document
-              .getElementById(`radio-frequency-${service.id}`)
-              .showModal()
-          }
-        >
-          View Frequencies
-        </button>
-      )}
-    </div>
-
-    {service.groups.length > 0 && (
-      <dialog
-        id={`radio-frequency-${service.id}`}
-        className="radio-frequency-modal"
-        aria-labelledby={`radio-modal-title-${service.id}`}
-      >
-        <div className="radio-frequency-modal__header">
-          <h3
-            id={`radio-modal-title-${service.id}`}
-            className="radio-frequency-modal__title"
-          >
-            {service.name} Frequencies
-          </h3>
-
-          <form method="dialog">
-            <button
-              type="submit"
-              className="radio-frequency-modal__close"
-              aria-label="Close frequency table"
-            >
-              ×
-            </button>
-          </form>
-        </div>
-
-        <div className="radio-frequency-modal__body">
-          {service.groups.map((group, groupIndex) => (
-            <section
-              className="radio-frequency-modal__group"
-              key={`${service.id}-group-${groupIndex}`}
-            >
-              <h4 className="radio-frequency-modal__group-title">
-                {group.title}
-              </h4>
-
-              <div className="radio-frequency-modal__table-scroll">
-                <table className="radio-service-card__table">
-                  <thead>
-                    <tr>
-                      {group.columns.map((column, index) => (
-                        <th
-                          scope="col"
-                          key={`${service.id}-column-${groupIndex}-${index}`}
-                        >
-                          {column}
-                        </th>
-                      ))}
-                    </tr>
-                  </thead>
-
-                  <tbody>
-                    {group.rows.map((cells, rowIndex) => (
-                      <tr
-                        key={`${service.id}-row-${groupIndex}-${rowIndex}`}
-                      >
-                        {cells.map((cell, cellIndex) => (
-                          <td
-                            key={`${service.id}-cell-${groupIndex}-${rowIndex}-${cellIndex}`}
-                          >
-                            {cell}
-                          </td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+            <div className="radio-service-card__heading">
+              <div className="radio-service-card__identity">
+                <div
+                  className={`radio-service-card__monogram ${
+                    [
+                      'business',
+                      'marine',
+                      'aviation',
+                      'railroad',
+                      'calling',
+                      'wilderness'
+                    ].includes(service.id)
+                      ? 'radio-service-card__monogram--icon'
+                      : ''
+                  }`}
+                  aria-hidden="true"
+                >
+                  {service.id === 'business' ? (
+                    <BriefcaseBusiness size={25} strokeWidth={1.8} />
+                  ) : service.id === 'marine' ? (
+                    <Ship size={25} strokeWidth={1.8} />
+                  ) : service.id === 'aviation' ? (
+                    <Plane size={25} strokeWidth={1.8} />
+                  ) : service.id === 'railroad' ? (
+                    <TrainFront size={25} strokeWidth={1.8} />
+                  ) : service.id === 'calling' ? (
+                    <RadioTower size={25} strokeWidth={1.8} />
+                  ) : service.id === 'wilderness' ? (
+                    <TreePine size={25} strokeWidth={1.8} />
+                  ) : (
+                    service.icon
+                  )}
+                </div>
+ 
+                <div className="radio-service-card__text">
+                  <h3
+                    id={`radio-service-${service.id}`}
+                    className="radio-service-card__title"
+                  >
+                    {service.name}
+                  </h3>
+ 
+                  <span className="radio-service-card__subtitle">
+                    {service.subtitle}
+                  </span>
+                </div>
               </div>
-            </section>
-          ))}
-
-          {service.note && (
-            <p className="radio-frequency-modal__note">
-              {service.note}
+ 
+              <span className="radio-service-card__license">
+                {service.license}
+              </span>
+            </div>
+ 
+            {service.facts.length > 0 && (
+              <div className="radio-service-card__facts">
+                {service.facts.map(([label, value], index) => (
+                  <div
+                    className="radio-service-card__fact"
+                    key={`${service.id}-${index}`}
+                  >
+                    <span className="radio-service-card__fact-label">
+                      {label}
+                    </span>
+                    <strong>{value}</strong>
+                  </div>
+                ))}
+              </div>
+            )}
+ 
+            <p className="radio-service-card__description">
+              {service.description}
             </p>
+ 
+            <div className="radio-service-card__actions">
+              {service.link && (
+                <a
+                  className="radio-service-card__rules"
+                  href={service.link}
+                  target={service.link.startsWith('/') ? undefined : '_blank'}
+                  rel={service.link.startsWith('/') ? undefined : 'noopener noreferrer'}
+                >
+                  {service.linkLabel}
+                </a>
+              )}
+             
+
+{service.frequencyLink || service.groups.length > 0 ? (
+  <button
+    type="button"
+    className="radio-frequency-button"
+    onClick={() => {
+      if (service.frequencyLink) {
+        window.location.href = service.frequencyLink;
+      } else {
+        const modal = document.getElementById(
+          `radio-frequency-${service.id}`
+        );
+
+        if (modal && !modal.open) {
+          modal.showModal();
+        }
+      }
+    }}
+  >
+    View Frequencies
+  </button>
+) : null}
+
+            </div>
+ 
+            {service.groups.length > 0 && (
+              <dialog
+                id={`radio-frequency-${service.id}`}
+                className="radio-frequency-modal"
+                aria-modal="true"
+                aria-labelledby={`radio-modal-title-${service.id}`}
+              >
+                <div className="radio-frequency-modal__header">
+                  <h3
+                    id={`radio-modal-title-${service.id}`}
+                    className="radio-frequency-modal__title"
+                  >
+                    {service.name} Frequencies
+                  </h3>
+ 
+                  <form method="dialog">
+                    <button
+                      type="submit"
+                      className="radio-frequency-modal__close"
+                      aria-label="Close frequency table"
+                    >
+                      ×
+                    </button>
+                  </form>
+                </div>
+ 
+                <div className="radio-frequency-modal__body">
+                  {service.groups.map((group, groupIndex) => (
+                    <section
+                      className="radio-frequency-modal__group"
+                      key={`${service.id}-group-${groupIndex}`}
+                    >
+                      <h4 className="radio-frequency-modal__group-title">
+                        {group.title}
+                      </h4>
+ 
+                      <div className="radio-frequency-modal__table-scroll">
+                        <table className="radio-service-card__table" aria-label={`${service.name}: ${group.title}`}>
+                          <thead>
+                            <tr>
+                              {group.columns.map((column, index) => (
+                                <th
+                                  scope="col"
+                                  key={`${service.id}-column-${groupIndex}-${index}`}
+                                >
+                                  {column}
+                                </th>
+                              ))}
+                            </tr>
+                          </thead>
+ 
+                          <tbody>
+                            {group.rows.map((cells, rowIndex) => (
+                              <tr
+                                key={`${service.id}-row-${groupIndex}-${rowIndex}`}
+                              >
+                                {cells.map((cell, cellIndex) => (
+                                  <td
+                                    key={`${service.id}-cell-${groupIndex}-${rowIndex}-${cellIndex}`}
+                                  >
+                                    {cell}
+                                  </td>
+                                ))}
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  ))}
+ 
+                  {service.note && (
+                    <p className="radio-frequency-modal__note">
+                      {service.note}
+                    </p>
+                  )}
+                </div>
+              </dialog>
+            )}
+          </div>
+          {service.id === 'lora' && (
+            <div className="radio-mesh-subcards" aria-label="LoRa messaging systems">
+              <section className="radio-mesh-subcard" aria-labelledby="mesh-meshtastic-title">
+                <div className="radio-mesh-subcard__heading">
+                  <img className="radio-mesh-subcard__logo" src="https://github.com/meshtastic.png?size=128" alt="Meshtastic logo" loading="lazy" />
+                  <h3 id="mesh-meshtastic-title">Meshtastic</h3>
+                </div>
+                <p>Meshtastic is an off-grid messaging system for text, location sharing, and telemetry. Compatible nodes can relay messages beyond a direct radio link.</p>
+                <p><strong>Network:</strong> Shared channels with matching radio presets, frequency slots, and security settings.</p>
+                <p><strong>Common uses:</strong> Group messages, position reports, and sensor data.</p>
+                <a className="radio-service-card__rules" href="https://meshtastic.org/docs/" target="_blank" rel="noopener noreferrer">Meshtastic documentation <ExternalLink size={14} aria-hidden="true" /></a>
+              </section>
+              <section className="radio-mesh-subcard" aria-labelledby="mesh-meshcore-title">
+                <div className="radio-mesh-subcard__heading">
+                  <img className="radio-mesh-subcard__logo" src="https://github.com/meshcore-dev.png?size=128" alt="MeshCore logo" loading="lazy" />
+                  <h3 id="mesh-meshcore-title">MeshCore</h3>
+                </div>
+                <p>MeshCore is a separate off-grid messaging system built around companion devices, dedicated repeaters, and optional room servers.</p>
+                <p><strong>Network:</strong> Companions and repeaters use matching radio settings to route messages across multiple hops.</p>
+                <p><strong>Common uses:</strong> Direct messages, group messaging, and community networks.</p>
+                <a className="radio-service-card__rules" href="https://meshcore.co.uk/" target="_blank" rel="noopener noreferrer">MeshCore project <ExternalLink size={14} aria-hidden="true" /></a>
+              </section>
+              <p className="radio-mesh-subcards__note">Meshtastic and MeshCore are separate protocols; devices cannot exchange messages directly simply because they use similar LoRa hardware.</p>
+            </div>
           )}
-        </div>
-      </dialog>
-    )}
-  </div>
+          </React.Fragment>
+        ))}
+    </div>
+  </section>
 ))}
 
-## National Interoperability Field Operations Guide (NIFOG)
-
-The **National Interoperability Field Operations Guide (NIFOG)** is a reference for public-safety and emergency-response personnel. It covers interoperability channels, communications planning, and incident support across multiple radio bands.
-
-Listed frequencies are **not open for general transmission**; applicable licenses and authorizations still apply.
-
-For current publications and supporting guidance, visit [CISA SAFECOM](https://www.cisa.gov/safecom).
+## Comparing Radio Services
+ 
+The estimates below cover basic entry-level equipment in the United States. **Range is highly variable** and depends on terrain, antenna height, buildings, interference, equipment, and whether an existing repeater or mesh network is available. These are planning estimates, not guaranteed distances or price quotes.
+ 
+| Radio service | Approximate cost of entry | Typical direct range |
+| --- | --- | --- |
+| [FRS](#radio-service-frs) | $20–$60 for a pair | 0.5–2 miles |
+| [GMRS](#radio-service-gmrs) | $50–$150 per radio, plus FCC license | 1–5 miles |
+| [MURS](#radio-service-murs) | $40–$100 per radio | 1–3 miles |
+| [CB](#radio-service-cb) | $60–$200 for basic radio and antenna | 1–5 miles |
+| [LoRa / Mesh](#radio-service-lora) | $25–$100 per node | 1–10+ miles between favorably placed nodes |
+| [Amateur Radio](#radio-service-amateur) | $30–$150 for an entry-level handheld, plus testing/licensing costs | 1–5 miles with an entry-level VHF/UHF handheld; repeaters and HF can extend coverage much farther |
+ 
+*Costs are approximate U.S. equipment budgets, not recurring service fees. The ranges are broad illustrations for common setups, not statistical averages. GMRS repeater access and mesh relays can extend coverage substantially; amateur-radio range varies enormously by band and operating mode. Business and transportation services use specialized equipment and authorization, so a single consumer entry-cost estimate would be misleading.*
+ 
+The cards below explain each service's authorization requirements and provide frequency references. **Not every listed channel is available for general transmission.**
+ 
+## Emergency & Interoperability Resources
+ 
+<div className="radio-nifog-card">
+  <div className="radio-nifog-card__heading">
+    <span className="radio-nifog-card__icon" aria-hidden="true">NIFOG</span>
+    <div>
+      <h3>National Interoperability Field Operations Guide (NIFOG)</h3>
+      <span>CISA · Version 2.02 (December 2024)</span>
+    </div>
+  </div>
+  <p>The NIFOG is a reference book that helps emergency responders from different organizations communicate by radio when they work together.</p>
+  <p>It lists common interoperability channel names, frequencies, and technical information that can help communications personnel coordinate during major incidents.</p>
+  <h4>What can you find in it?</h4>
+  <ul>
+    <li>Common VHF, UHF, and 700/800 MHz interoperability channels</li>
+    <li>Radio channel[ names and programming references</li>
+    <li>Information for planning communications between responding agencies</li>
+  </ul>
+  <p className="radio-nifog-card__note"><strong>Important:</strong> The NIFOG is a reference, not permission to transmit. Use these channels only with appropriate authorization and operational direction.</p>
+  <div className="radio-nifog-card__actions">
+    <a className="radio-frequency-button" href="https://www.cisa.gov/sites/default/files/2024-12/NIFOG%202.02_508%20FINAL%20VERSION%2012%2003%202024.pdf" target="_blank" rel="noopener noreferrer"><Download size={17} aria-hidden="true" /> Open NIFOG 2.02 (PDF)</a>
+    <a className="radio-frequency-button radio-nifog-card__secondary-button" href="https://www.cisa.gov/safecom/field-operations-guides" target="_blank" rel="noopener noreferrer">CISA publications <ExternalLink size={15} aria-hidden="true" /></a>
+  </div>
+</div>

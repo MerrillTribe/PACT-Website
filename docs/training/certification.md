@@ -3,6 +3,7 @@ sidebar_position: 1
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import { Download } from 'lucide-react';
 
 # Certification Levels
 
@@ -84,13 +85,20 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
 ## LEVEL 1
 
-<a
-  className="button button--primary button--lg"
-  href={useBaseUrl('/files/level-1-checklist.pdf')}
-  download
->
-  Download Level 1 Checklist
-</a>
+<div style={{
+  display: 'flex',
+  justifyContent: 'flex-start',
+  margin: '1.5rem 0 2rem',
+}}>
+  <a
+    className="button button--primary button--lg"
+    href={useBaseUrl('/files/level-1-checklist.pdf')}
+    download
+  >
+    <Download size={18} strokeWidth={2} aria-hidden="true" />
+    <span>Download Level 1 Checklist</span>
+  </a>
+</div>
 
 ### Prerequisites
 
@@ -282,13 +290,20 @@ PACT’s certification program is similar to the UCARES certification requiremen
 ---
 ## LEVEL 2
 
-<a
-  className="button button--primary button--lg"
-  href={useBaseUrl('/files/level-2-checklist.pdf')}
-  download
->
-  Download Level 2 Checklist
-</a>
+<div style={{
+  display: 'flex',
+  justifyContent: 'flex-start',
+  margin: '1.5rem 0 2rem',
+}}>
+  <a
+    className="button button--primary button--lg"
+    href={useBaseUrl('/files/level-2-checklist.pdf')}
+    download
+  >
+    <Download size={18} strokeWidth={2} aria-hidden="true" />
+    <span>Download Level 2 Checklist</span>
+  </a>
+</div>
 
 ### Prerequisites
 
@@ -447,13 +462,20 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
 ## LEVEL 3
 
-<a
-  className="button button--primary button--lg"
-  href={useBaseUrl('/files/level-3-checklist.pdf')}
-  download
->
-  Download Level 3 Checklist
-</a>
+<div style={{
+  display: 'flex',
+  justifyContent: 'flex-start',
+  margin: '1.5rem 0 2rem',
+}}>
+  <a
+    className="button button--primary button--lg"
+    href={useBaseUrl('/files/level-3-checklist.pdf')}
+    download
+  >
+    <Download size={18} strokeWidth={2} aria-hidden="true" />
+    <span>Download Level 3 Checklist</span>
+  </a>
+</div>
 
 ### Prerequisites
 
@@ -572,13 +594,20 @@ PACT’s certification program is similar to the UCARES certification requiremen
 
 ## LEVEL 4
 
-<a
-  className="button button--primary button--lg"
-  href={useBaseUrl('/files/level-4-checklist.pdf')}
-  download
->
-  Download Level 4 Checklist
-</a>
+<div style={{
+  display: 'flex',
+  justifyContent: 'flex-start',
+  margin: '1.5rem 0 2rem',
+}}>
+  <a
+    className="button button--primary button--lg"
+    href={useBaseUrl('/files/level-4-checklist.pdf')}
+    download
+  >
+    <Download size={18} strokeWidth={2} aria-hidden="true" />
+    <span>Download Level 4 Checklist</span>
+  </a>
+</div>
 
 ### Prerequisites
 
