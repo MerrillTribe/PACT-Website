@@ -5,7 +5,8 @@ sidebar_position: 1
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import RepeaterJumpCards from '@site/src/components/JumpCards';
 import FrequencyViewToggle from '@site/src/components/FrequencyViewToggle';
-import { Download } from 'lucide-react';
+import { Download, ExternalLink } from 'lucide-react';
+
 
 # Local Nets, Repeaters, & Frequencies
 
@@ -901,4 +902,29 @@ The interactive map allows you to:
 - Visualize repeater distribution throughout Utah Valley.
  
 ---
+
+## Emergency Interoperability
  
+<div className="radio-nifog-card">
+  <div className="radio-nifog-card__heading">
+    <span className="radio-nifog-card__icon" aria-hidden="true">NIFOG</span>
+    <div>
+      <h3>National Interoperability Field Operations Guide (NIFOG)</h3>
+      <span>CISA · Version 2.02 (December 2024)</span>
+    </div>
+  </div>
+  <p>The NIFOG is a reference book that helps emergency responders from different organizations communicate by radio when they work together.</p>
+  <p>It lists common interoperability channel names, frequencies, and technical information that can help communications personnel coordinate during major incidents.</p>
+  <h4>What can you find in it?</h4>
+  <ul>
+    <li>Common VHF, UHF, and 700/800 MHz interoperability channels</li>
+    <li>Radio channel names and programming references</li>
+    <li>Information for planning communications between responding agencies</li>
+  </ul>
+  <p className="radio-nifog-card__note"><strong>Important:</strong> The NIFOG is a reference, not permission to transmit. Use these channels only with appropriate authorization and operational direction.</p>
+  <div className="radio-nifog-card__actions">
+    <a className="radio-frequency-button" href="https://www.cisa.gov/sites/default/files/2024-12/NIFOG%202.02_508%20FINAL%20VERSION%2012%2003%202024.pdf" target="_blank" rel="noopener noreferrer"><Download size={17} aria-hidden="true" /> Open NIFOG 2.02 (PDF)</a>
+    <a className="radio-frequency-button radio-nifog-card__secondary-button" href="https://www.cisa.gov/safecom/field-operations-guides" target="_blank" rel="noopener noreferrer">CISA publications <ExternalLink size={15} aria-hidden="true" /></a>
+  </div>
+</div>
+

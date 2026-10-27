@@ -1,7 +1,6 @@
 ---
 title: Radio Services
 sidebar_position: 4
-draft: true
 ---
  
 import React from 'react';
@@ -14,22 +13,20 @@ import {
   TrainFront,
   TreePine,
   ExternalLink,
-  Download,
 } from 'lucide-react';
  
+There are many different types of radios, each designed for specific uses, such as talking with family, coordinating work, or communicating during emergencies. In the United States, the Federal Communications Commission (FCC) sets rules for how these radios can be used, including which frequencies are allowed and whether a license is required.
  
-Radio services are different systems of wireless communication, each established for particular purposes—such as family conversations, business operations, transportation, or amateur experimentation. In the United States, the FCC sets rules for who may transmit, which frequencies and equipment may be used, and how a service operates. Some services do not require an individual license; others require an operator or station authorization.
+This guide explains the most common radio services, what they are used for, and their frequencies. **Remember, just because you can listen to a frequency does not mean you are allowed to transmit on it.**
  
-This guide compares the common services and provides reference frequencies to help you understand how they differ. **Listening to a frequency does not give you permission to transmit on it.**
- 
-## Service Directory
+## Radio Services
  
 <div className="radio-services-license-guide">
-  <strong>Licensing labels:</strong> “No individual license” means eligible
-  operation without a personal FCC license, <em>not</em> permission to transmit
-  using arbitrary equipment. “FCC license required” and “Restricted /
-  authorized use” indicate that additional authority is necessary.
-  LoRa uses rules determined by the device and configuration.
+  <strong>Understanding Radio Licenses:</strong> Some radio services can be
+  used without a personal FCC license, while others require one. Certain
+  services are limited to authorized users or organizations. Regardless
+  of licensing requirements, you must use equipment and frequencies
+  permitted for that service.
 </div>
  
 export const radioServices = [
@@ -44,7 +41,7 @@ export const radioServices = [
       ['Maximum Power', '2 W ERP'],
       ['Repeaters', 'Not permitted']
     ],
-    description: 'FRS provides short-distance communications for families, outdoor recreation, and group coordination. Its 22 channels are shared with GMRS, and no individual FCC license is required.',
+    description: 'Family Radio Service (FRS) provides short-range communication for families, outdoor activities, and small groups. It uses 22 shared channels and does not require an individual FCC license. FRS radios have built-in antennas and cannot use repeaters.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-B',
     linkLabel: 'FCC Service Rules',
     groups: [{
@@ -88,7 +85,7 @@ export const radioServices = [
       ['Maximum Power', '2 W Output'],
       ['Repeaters', 'Not permitted']
     ],
-    description: 'MURS provides five VHF channels for short-distance personal and business communications without an individual FCC license. External antennas are permitted, subject to antenna-height restrictions.',
+    description: 'Multi-Use Radio Service (MURS) provides short-range communication for personal, recreational, and business activities. It uses five VHF channels and does not require an individual FCC license. External antennas are permitted, but repeaters are not allowed.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-J',
     linkLabel: 'FCC Service Rules',
     groups: [{
@@ -115,7 +112,7 @@ export const radioServices = [
       ['Maximum Power', '4 W AM/FM · 12 W SSB'],
       ['Repeaters', 'Not permitted']
     ],
-    description: 'CB provides 40 shared channels for personal and business communications. It is commonly used by truck drivers, travelers, and outdoor groups, with AM, FM, and single-sideband operation using compliant radios.',
+    description: 'Citizens Band (CB) radio provides communication for travelers, truck drivers, outdoor enthusiasts, and businesses. It uses 40 shared channels and does not require an individual FCC license. CB radios support AM, FM, and single-sideband communication without repeaters.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-D',
     linkLabel: 'FCC Service Rules',
     groups: [{
@@ -157,7 +154,7 @@ export const radioServices = [
       ['Maximum Power', 'Up to 50 W Output'],
       ['Repeaters', 'Permitted']
     ],
-    description: 'GMRS supports handheld, mobile, base, and repeater communications. An individual FCC license generally covers eligible immediate family members. It shares 22 simplex channels with FRS and offers eight repeater pairs for extended coverage.',
+    description: 'General Mobile Radio Service (GMRS) provides personal and family communications using handheld radios, mobile radios, and repeaters. An FCC license is required and generally covers eligible immediate family members. GMRS shares channels with FRS but permits higher-power equipment and repeaters for extended coverage.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-95/subpart-E',
     linkLabel: 'FCC Service Rules',
     groups: [{
@@ -202,28 +199,29 @@ export const radioServices = [
     subtitle: 'Commercial Land Mobile Radio · FCC Part 90',
     license: 'FCC License Required',
     facts: [],
-    description: 'Business and Industrial/Business Pool radio systems serve commercial operations, facilities, transportation, and organizational communications. Authorized channels, power, emissions, and coverage depend on each FCC license.',
+    description: 'Business radio systems provide communication for companies, organizations, transportation services, and commercial operations. They allow employees to coordinate daily activities using frequencies authorized for their organization. FCC licensing requirements, equipment, and operating privileges depend on the specific system.',
     link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-90',
     linkLabel: 'FCC Part 90 Rules',
     groups: []
   },
  
-
+ 
 {
   id: 'amateur',
   name: 'Amateur Radio',
   icon: 'HAM',
   subtitle: 'Multiple HF, VHF, UHF and microwave bands',
-  license: 'Amateur License Required',
+  license: 'FCC License Required',
   facts: [],
-  description: 'Amateur radio is a licensed radio service used for personal communications, technical experimentation, education, and public service. Operators can communicate locally through simplex frequencies and repeaters or across long distances using HF and other bands. The service also plays an important role in volunteer emergency communications. In the United States, operators must hold an FCC amateur radio license, with privileges determined by their license class.',
+  description: 'Amateur radio allows licensed operators to communicate locally, across the country, and around the world. It is used for personal communication, technical experimentation, education, and volunteer public service, including emergency communications. Available frequencies and operating privileges depend on the operator’s FCC license class.',
   link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97',
   linkLabel: 'FCC Service Rules',
   frequencyLink: '/docs/resources/band-plans',
   groups: [],
   note: ''
 },
-
+ 
+ 
 {
   id: 'lora',
   name: 'LoRa / Mesh Communications',
@@ -231,32 +229,39 @@ export const radioServices = [
   subtitle: 'Low-power digital communications · 902–928 MHz',
   license: 'Configuration Dependent',
   facts: [],
-  description: 'LoRa (Long Range) is a low-power wireless technology designed to transmit small amounts of digital information over relatively long distances. It can support text messaging, location sharing, telemetry, and other data communications without relying on cellular networks or internet access. Meshtastic and MeshCore are two separate communication systems that use LoRa technology to create off-grid messaging networks. Both are described in the cards below.',
+ 
+  description: 'LoRa is a low-power radio technology used to send text messages, location information, and other small amounts of data over long distances. Systems such as Meshtastic and MeshCore use LoRa to communicate without cellular service or internet access. Although they can use similar equipment, they operate as separate networks with different messaging and routing methods.',
+ 
   link: '',
   linkLabel: '',
-  groups: [{
-    title: 'North American LoRa / Meshtastic Examples',
-    columns: ['Configuration', 'Frequency', 'Interpretation'],
-    rows: [
-      [
-        'US / LongFast · slot 20',
-        '906.875 MHz',
-        'Common Meshtastic preset/slot combination'
-      ],
-      [
-        'US / LongTurbo · slot 14',
-        '908.750 MHz',
-        'Meshtastic preset/slot combination'
-      ],
-      [
-        'US ISM allocation',
-        '902–928 MHz',
-        'Frequency band; not an individual channel'
+ 
+  groups: [
+    {
+      title: 'Meshtastic Frequency Examples (United States)',
+      columns: ['Configuration', 'Frequency', 'Description'],
+      rows: [
+        [
+          'LongFast · Slot 20',
+          '906.875 MHz',
+          'Common Meshtastic configuration'
+        ],
+        [
+          'LongTurbo · Slot 14',
+          '908.750 MHz',
+          'Meshtastic configuration'
+        ],
+        [
+          'ISM Band',
+          '902–928 MHz',
+          'U.S. frequency range for compatible devices'
+        ]
       ]
-    ]
-  }],
-  note: 'LoRa is a modulation technology, not a separately licensed FCC radio service. These frequency examples apply to Meshtastic configurations and should not be assumed to apply to MeshCore. Actual operating frequencies depend on device configuration, region, firmware, and network settings. Equipment must comply with applicable FCC requirements.'
+    }
+  ],
+ 
+  note: 'LoRa is a radio technology, not a separate FCC radio service. The frequencies shown are Meshtastic examples and do not necessarily apply to MeshCore. Devices must use compatible radio settings to communicate. Meshtastic and MeshCore cannot directly exchange messages simply because they use the same LoRa hardware. All equipment and configurations must comply with applicable FCC regulations.'
 },
+ 
   {
     id: 'marine',
     name: 'Marine Radio',
@@ -264,7 +269,7 @@ export const radioServices = [
     subtitle: '156–162 MHz · Marine VHF',
     license: 'Authorization Varies',
     facts: [],
-    description: 'Marine VHF provides ship-to-ship, ship-to-shore, navigation-safety, and distress communications. Channel 16 (156.800 MHz) is the international distress, safety, and calling channel.',
+    description: 'Marine radio provides communication between boats, ships, coastal stations, and maritime authorities. It is used for navigation, vessel coordination, safety information, and emergency communications. Marine VHF Channel 16 is the international distress, safety, and calling channel.',
     link: 'https://www.navcen.uscg.gov/us-vhf-channel-information',
     linkLabel: 'USCG Channel Information',
     groups: [
@@ -292,141 +297,123 @@ export const radioServices = [
     ],
     note: 'Marine channel numbering and permitted uses depend on jurisdiction; four-digit designations increasingly replace A suffixes.'
   },
-  {
-    id: 'aviation',
-    name: 'Aviation Radio',
-    icon: 'Aviation',
-    subtitle: '118–137 MHz · VHF Airband',
-    license: 'Restricted / Authorized Use',
-    facts: [],
-    description: 'Aviation radio supports aircraft, air traffic control, airport operations, and emergencies. This Utah reference includes airports, backcountry, air medical, emergency monitoring, and Civil Air Patrol. Operational assignments may change: verify before relying on them.',
-    link: 'https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/',
-    linkLabel: 'FAA Chart Supplement',
-    groups: [
-      {
-        title: 'Utah Aviation Frequencies',
-        columns: ['Location / Agency', 'Frequency', 'Usage'],
-        rows: [
-          ['Salt Lake Center (ZLC)','128.300 MHz','ARTCC / en route — verify'],
-          ['Salt Lake Center (ZLC)','132.675 MHz','ARTCC / high altitude — verify'],
-          ['Salt Lake Approach','124.300 MHz','Approach / departure — verify'],
-          ['Salt Lake Intl (SLC)','118.300 MHz','Tower — verify'],
-          ['Salt Lake Intl (SLC)','121.900 MHz','Ground — verify'],
-          ['Salt Lake Intl (SLC)','135.500 MHz','ATIS — verify'],
-          ['Provo (PVU)','125.300 MHz','Tower / CTAF — FAA data effective Oct. 1, 2026'],
-          ['Provo (PVU)','119.400 MHz','Ground — FAA data effective Oct. 1, 2026'],
-          ['Provo (PVU)','135.175 MHz','ATIS / AWOS — FAA data effective Oct. 1, 2026'],
-          ['Ogden-Hinckley (OGD)','124.700 MHz','Tower — verify'],
-          ['Ogden-Hinckley (OGD)','121.800 MHz','Ground — verify'],
-          ['Spanish Fork (U77)','122.900 MHz','CTAF / UNICOM — verify'],
-          ['Heber Valley (36U)','123.000 MHz','CTAF / UNICOM — verify'],
-          ['Skypark (BTF)','118.700 MHz','Tower — verify'],
-          ['Skypark (BTF)','120.000 MHz','Ground — verify'],
-          ['Cedar City (CDC)','118.000 MHz','Tower — verify'],
-          ['St. George (SGU)','118.275 MHz','Tower — verify'],
-          ['Moab Canyonlands (CNY)','122.800 MHz','CTAF / UNICOM — verify'],
-          ['Common CTAF','122.800 MHz','Advisory / verify applicability'],
-          ['Flight Service','122.200 MHz','Flight Service — verify'],
-          ['Guard','121.500 MHz','Aviation emergency']
-        ]
-      },
-      {
-        title: 'Utah Backcountry Aviation',
-        columns: ['Airport / Area', 'Frequency', 'Usage'],
-        rows: [
-          ['General backcountry CTAF','122.800 MHz','Common advisory — verify'],
-          ['Mexican Mountain (U62)','122.900 MHz','CTAF — verify'],
-          ['Dirty Devil (UTL)','122.900 MHz','CTAF — verify'],
-          ['Hite Airport (UT03)','122.900 MHz','CTAF — verify'],
-          ['Mineral Canyon (UT75)','122.900 MHz','CTAF — verify'],
-          ['Canyonlands area','122.800 MHz','Air-to-air / advisory — verify'],
-          ['Bryce Canyon area','122.750 MHz','Air-to-air — verify'],
-          ['Moab area','122.800 MHz','Advisory — verify'],
-          ['Flight Service','122.200 MHz','Flight Service — verify'],
-          ['Guard','121.500 MHz','Aviation emergency']
-        ]
-      },
-      {
-        title: 'Utah Life Flight / Air Medical References',
-        columns: ['Agency', 'Frequency', 'Usage'],
-        rows: [
-          ['AirMed','155.340 MHz','Hospital coordination — verify'],
-          ['AirMed','123.025 MHz','Air-to-air — verify'],
-          ['Classic Air Medical','155.280 MHz','EMS coordination — verify'],
-          ['Life Flight','123.050 MHz','Air operations — verify'],
-          ['University of Utah AirMed','463.000 MHz','Operations — verify'],
-          ['Utah EMS MED','463.025 MHz','Medical coordination — verify'],
-          ['HEAR','155.340 MHz','Hospital emergency radio — verify'],
-          ['Guard','121.500 MHz','Aviation emergency']
-        ]
-      },
-      {
-        title: 'Utah Emergency Aviation Monitoring References',
-        columns: ['Frequency', 'Band', 'Usage'],
-        rows: [
-          ['121.500 MHz','VHF Airband','International aviation emergency'],
-          ['243.000 MHz','UHF Military','Military Guard'],
-          ['123.100 MHz','VHF Airband','Search and rescue'],
-          ['122.750 MHz','VHF Airband','Air-to-air — verify'],
-          ['122.800 MHz','VHF Airband','Common CTAF / advisory'],
-          ['155.160 MHz','VHF Public Safety','SAR coordination — verify'],
-          ['155.340 MHz','VHF EMS','Hospital / air medical — verify'],
-          ['155.475 MHz','VHF Public Safety','National law enforcement mutual aid'],
-          ['154.280 MHz','VHF Fire','Fire mutual aid — verify'],
-          ['168.625 MHz','Federal VHF','Federal aviation reference — verify'],
-          ['163.100 MHz','Federal VHF','Federal operations reference — verify']
-        ]
-      },
-      {
-        title: 'Utah Civil Air Patrol References',
-        columns: ['Frequency', 'Usage'],
-        rows: [
-          ['148.150 MHz','CAP primary — verify'],
-          ['148.125 MHz','CAP tactical — verify'],
-          ['148.1375 MHz','CAP operations — verify'],
-          ['148.1625 MHz','CAP logistics — verify'],
-          ['121.500 MHz','ELT search / Guard monitoring'],
-          ['243.000 MHz','Military Guard']
-        ]
-      }
-    ],
-    note: 'Provo (PVU) frequencies have been corrected against aviation data effective October 1, 2026. Other airport, air-medical, federal, CAP, and public-safety entries have NOT been comprehensively verified for current assignment and must not be relied on operationally without checking current FAA publications, NOTAMs, and agency communications plans. This list does not authorize transmission.'
-  },
-  {
-    id: 'railroad',
-    name: 'Railroad Radio',
-    icon: 'Railroad',
-    subtitle: '160–162 MHz · VHF',
-    license: 'Restricted / Authorized Use',
-    facts: [],
-    description: 'North American railroad communications use standardized AAR channel designations for train crews, dispatchers, yard operations, and maintenance. Actual operating channels vary by railroad and location.',
-    link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-90',
-    linkLabel: 'FCC Part 90 Rules',
-    groups: [{
-      title: 'AAR Frequency Reference',
-      columns: ['AAR Channel', 'Frequency', 'Assignment Status'],
+     
+ 
+{
+  id: 'aviation',
+  name: 'Aviation Radio',
+  icon: 'Aviation',
+  subtitle: '118–137 MHz · VHF Airband',
+  license: 'Restricted / Authorized Use',
+  facts: [],
+ 
+  description: 'Aviation radio provides communication between pilots, air traffic controllers, and airport personnel. It is used to coordinate aircraft movements, manage air traffic, share weather information, and support emergency communications. Most civilian aviation voice communications use AM radio in the VHF airband.',
+ 
+  link: 'https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/',
+  linkLabel: 'FAA Chart Supplement',
+ 
+  groups: [
+    {
+      title: 'Utah Airports & Air Traffic Control',
+      columns: ['Airport / Facility', 'Frequency', 'Usage'],
       rows: [
-        ['007','160.215 MHz','Not location-verified'],
-        ['008','160.230 MHz','Not location-verified'],
-        ['020','160.410 MHz','Not location-verified'],
-        ['021','160.425 MHz','Not location-verified'],
-        ['036','160.650 MHz','Not location-verified'],
-        ['046','160.800 MHz','Not location-verified'],
-        ['052','160.890 MHz','Not location-verified'],
-        ['058','160.980 MHz','Not location-verified'],
-        ['060','161.010 MHz','Not location-verified'],
-        ['064','161.070 MHz','Not location-verified'],
-        ['066','161.100 MHz','Not location-verified'],
-        ['072','161.190 MHz','Not location-verified'],
-        ['074','161.220 MHz','Not location-verified'],
-        ['080','161.310 MHz','Not location-verified'],
-        ['086','161.400 MHz','Not location-verified'],
-        ['096','161.550 MHz','Not location-verified'],
-        ['097','161.565 MHz','Not location-verified']
+        ['Provo (PVU)', '125.300 MHz', 'Tower / CTAF'],
+        ['Provo (PVU)', '119.400 MHz', 'Ground'],
+        ['Provo (PVU)', '135.175 MHz', 'ATIS / AWOS'],
+        ['Provo Area', '118.850 MHz', 'Salt Lake Approach / Departure'],
+ 
+        ['Salt Lake Intl (SLC)', '118.300 MHz', 'Tower — selected runways'],
+        ['Salt Lake Intl (SLC)', '119.050 MHz', 'Tower — selected runway'],
+        ['Salt Lake Intl (SLC)', '132.650 MHz', 'Tower — selected runway'],
+        ['Salt Lake Intl (SLC)', '121.900 MHz', 'Ground — selected runways'],
+        ['Salt Lake Intl (SLC)', '123.775 MHz', 'Ground — selected runways'],
+        ['Salt Lake Intl (SLC)', '124.750 MHz', 'D-ATIS'],
+        ['Salt Lake Intl (SLC)', '125.625 MHz', 'D-ATIS / weather'],
+ 
+        ['Ogden-Hinckley (OGD)', '118.700 MHz', 'Tower / CTAF'],
+        ['Ogden-Hinckley (OGD)', '121.700 MHz', 'Ground'],
+        ['Ogden-Hinckley (OGD)', '125.550 MHz', 'ATIS'],
+ 
+        ['Spanish Fork (SPK)', '122.900 MHz', 'CTAF'],
+        ['Spanish Fork (SPK)', '119.275 MHz', 'AWOS'],
+ 
+        ['Heber Valley (HCR)', '122.800 MHz', 'CTAF / UNICOM'],
+        ['Heber Valley (HCR)', '124.825 MHz', 'AWOS'],
+ 
+        ['Skypark (BTF)', '122.800 MHz', 'CTAF / UNICOM'],
+ 
+        ['Cedar City (CDC)', '123.000 MHz', 'CTAF / UNICOM'],
+        ['Cedar City (CDC)', '119.025 MHz', 'ASOS'],
+ 
+        ['St. George (SGU)', '123.075 MHz', 'CTAF / UNICOM'],
+        ['St. George (SGU)', '135.075 MHz', 'AWOS'],
+ 
+        ['Canyonlands Regional (CNY)', '122.800 MHz', 'CTAF / UNICOM'],
+        ['Canyonlands Regional (CNY)', '118.525 MHz', 'ASOS']
       ]
-    }],
-    note: 'AAR frequencies are standardized; examples of use are not confirmed channel assignments for a specific Utah railroad or subdivision.'
-  },
+    },
+ 
+    {
+      title: 'Aviation Emergency & Search-and-Rescue Frequencies',
+      columns: ['Frequency', 'Service', 'Usage'],
+      rows: [
+        ['121.500 MHz', 'Civil Aviation', 'Emergency / Guard'],
+        ['243.000 MHz', 'Military Aviation', 'Emergency / Guard'],
+        ['123.100 MHz', 'Aviation', 'Search-and-rescue communications']
+      ]
+    },
+ 
+    {
+      title: 'Emergency Locator Transmitters (ELTs)',
+      columns: ['Frequency', 'Type', 'Usage'],
+      rows: [
+        ['121.500 MHz', 'Analog ELT', 'Emergency beacon / local homing'],
+        ['243.000 MHz', 'Analog ELT', 'Military emergency beacon / homing'],
+        ['406 MHz band', 'Digital ELT', 'Satellite distress alerting through Cospas-Sarsat']
+      ]
+    }
+  ],
+ 
+  note: 'Airport frequencies are based on FAA aeronautical information and may change. Tower, ground, approach, and other services may use different frequencies depending on location, runway, operating hours, and air traffic control instructions. Consult current FAA publications and NOTAMs before operational use. Air-medical dispatch, Civil Air Patrol, and other specialized agency frequencies are not included because their current Utah assignments have not been independently confirmed. This reference does not authorize transmission.'
+},
+ 
+ 
+{
+  id: 'railroad',
+  name: 'Railroad Radio',
+  icon: 'Railroad',
+  subtitle: '160–162 MHz · VHF',
+  license: 'Restricted / Authorized Use',
+  facts: [],
+ 
+  description: 'Railroad radio provides communication between train crews, dispatchers, and yard personnel. It is used to coordinate train movements, switching operations, track maintenance, and railroad safety. In Utah Valley, Union Pacific and other railroad operations use standardized AAR radio channels.',
+ 
+  link: 'https://utahcenteredrail.com/guides/subs/provosub.html',
+  linkLabel: 'Provo Railroad Reference',
+ 
+  groups: [
+    {
+      title: 'Utah Valley Railroad Frequencies',
+      columns: ['AAR Channel', 'Frequency', 'Reported Usage'],
+      rows: [
+        ['23', '160.455 MHz', 'UP Provo Subdivision — Helper to Ironton'],
+        ['42', '160.740 MHz', 'UP — Ironton to Midvale / Provo to Lynndyl'],
+        ['12', '160.290 MHz', 'UP Provo Yard — yardmaster / switching'],
+        ['09', '160.245 MHz', 'UP Provo Yard — switching'],
+        ['54', '160.920 MHz', 'UP Provo Yard — switching'],
+        ['44', '160.770 MHz', 'Utah Railway — switching'],
+        ['68', '161.130 MHz', 'UP Provo Yard — switching'],
+        ['69', '161.145 MHz', 'Utah Railway — Provo Yard switching'],
+        ['79', '161.295 MHz', 'Utah Railway — Provo Yard switching'],
+        ['89', '161.445 MHz', 'UP Provo Yard — switching'],
+        ['92', '161.490 MHz', 'UP Roper Yard / regional reference']
+      ]
+    }
+  ],
+ 
+  note: 'These frequencies are based on published railroad-monitoring references, including the Utah Centered Rail Provo Subdivision guide (2019). Actual assignments and operating practices may change. Railroad channels are provided for monitoring and situational awareness only. Transmission requires appropriate railroad authorization.'
+},
+ 
   {
     id: 'calling',
     name: 'Calling & Monitoring Frequencies',
@@ -434,7 +421,7 @@ export const radioServices = [
     subtitle: 'Amateur radio and other services',
     license: 'Authorization Varies',
     facts: [],
-    description: 'These are amateur calling frequencies, activity centers, APRS, and informal conventions for other radio services. Not every listed frequency is an official national calling frequency.',
+    description: 'Calling and monitoring frequencies are commonly used by radio operators to establish contact or listen for activity. They include amateur radio calling channels, APRS data frequencies, and informal calling conventions used by other radio services. Not every frequency is officially designated for national calling.',
     link: 'https://www.arrl.org/band-plan',
     linkLabel: 'ARRL Band Plan',
     groups: [{
@@ -465,9 +452,9 @@ export const radioServices = [
     name: 'Wilderness Protocol',
     icon: 'Wilderness',
     subtitle: 'Amateur emergency monitoring practice',
-    license: 'Amateur License Required',
+    license: 'FCC License Required',
     facts: [],
-    description: 'The Wilderness Protocol is an informal amateur-radio practice encouraging stations in remote areas to monitor calling channels for five minutes at the top of the hour, every three hours from 7 a.m. to 7 p.m. local time. It is not a guaranteed emergency-response service.',
+    description: 'The Wilderness Protocol is an amateur radio practice intended to improve the chances of making contact in remote areas. Operators are encouraged to periodically monitor established calling frequencies for stations needing assistance. Participation is voluntary and does not guarantee that someone will be listening during an emergency.',
     link: 'https://www.arrl.org/files/file/Public%20Service/ARES/ARESFieldResourcesManual-2019.pdf',
     linkLabel: 'ARRL Field Resources Manual',
     groups: [
@@ -620,7 +607,7 @@ export const radioServiceCategories = [
                 </a>
               )}
              
-
+ 
 {service.frequencyLink || service.groups.length > 0 ? (
   <button
     type="button"
@@ -632,17 +619,17 @@ export const radioServiceCategories = [
         const modal = document.getElementById(
           `radio-frequency-${service.id}`
         );
-
+ 
         if (modal && !modal.open) {
           modal.showModal();
         }
       }
     }}
   >
-    View Frequencies
+    {service.id === 'lora' ? 'Meshtastic Frequencies' : 'View Frequencies'}
   </button>
 ) : null}
-
+ 
             </div>
  
             {service.groups.length > 0 && (
@@ -732,22 +719,28 @@ export const radioServiceCategories = [
                   <img className="radio-mesh-subcard__logo" src="https://github.com/meshtastic.png?size=128" alt="Meshtastic logo" loading="lazy" />
                   <h3 id="mesh-meshtastic-title">Meshtastic</h3>
                 </div>
-                <p>Meshtastic is an off-grid messaging system for text, location sharing, and telemetry. Compatible nodes can relay messages beyond a direct radio link.</p>
-                <p><strong>Network:</strong> Shared channels with matching radio presets, frequency slots, and security settings.</p>
-                <p><strong>Common uses:</strong> Group messages, position reports, and sensor data.</p>
-                <a className="radio-service-card__rules" href="https://meshtastic.org/docs/" target="_blank" rel="noopener noreferrer">Meshtastic documentation <ExternalLink size={14} aria-hidden="true" /></a>
+                <p>Meshtastic lets compatible radios exchange messages and location information without cell service or internet access.</p>
+                <p><strong>Network:</strong> A distributed mesh where participating devices can relay messages. Dedicated repeaters are not required.</p>
+                <p><strong>Messaging:</strong> Group channels, direct messages, and location sharing.</p>
+                <p><strong>Common uses:</strong> Outdoor recreation, position reporting, community communication, and experimentation.</p>
+                <a className="radio-service-card__rules" href="https://meshtastic.org" target="_blank" rel="noopener noreferrer">
+                  Meshtastic Website <ExternalLink size={14} aria-hidden="true" />
+                </a>
               </section>
               <section className="radio-mesh-subcard" aria-labelledby="mesh-meshcore-title">
                 <div className="radio-mesh-subcard__heading">
                   <img className="radio-mesh-subcard__logo" src="https://github.com/meshcore-dev.png?size=128" alt="MeshCore logo" loading="lazy" />
                   <h3 id="mesh-meshcore-title">MeshCore</h3>
                 </div>
-                <p>MeshCore is a separate off-grid messaging system built around companion devices, dedicated repeaters, and optional room servers.</p>
-                <p><strong>Network:</strong> Companions and repeaters use matching radio settings to route messages across multiple hops.</p>
-                <p><strong>Common uses:</strong> Direct messages, group messaging, and community networks.</p>
-                <a className="radio-service-card__rules" href="https://meshcore.co.uk/" target="_blank" rel="noopener noreferrer">MeshCore project <ExternalLink size={14} aria-hidden="true" /></a>
+                <p>MeshCore lets compatible radios exchange messages directly or through a network of dedicated repeaters without cell service or internet access.</p>
+                <p><strong>Network:</strong> User devices communicate directly or through repeaters that forward messages along network paths.</p>
+                <p><strong>Messaging:</strong> Public channels, private messages, and optional room servers for stored messages.</p>
+                <p><strong>Common uses:</strong> Community messaging, fixed repeater networks, group coordination, and experimentation.</p>
+                <a className="radio-service-card__rules" href="https://meshcore.io" target="_blank" rel="noopener noreferrer">
+                  MeshCore Website <ExternalLink size={14} aria-hidden="true" />
+                </a>
               </section>
-              <p className="radio-mesh-subcards__note">Meshtastic and MeshCore are separate protocols; devices cannot exchange messages directly simply because they use similar LoRa hardware.</p>
+              <p className="radio-mesh-subcards__note">Meshtastic and MeshCore use LoRa technology but are separate systems. Devices require compatible firmware and radio settings to communicate.</p>
             </div>
           )}
           </React.Fragment>
@@ -755,7 +748,7 @@ export const radioServiceCategories = [
     </div>
   </section>
 ))}
-
+ 
 ## Comparing Radio Services
  
 The estimates below cover basic entry-level equipment in the United States. **Range is highly variable** and depends on terrain, antenna height, buildings, interference, equipment, and whether an existing repeater or mesh network is available. These are planning estimates, not guaranteed distances or price quotes.
@@ -771,29 +764,3 @@ The estimates below cover basic entry-level equipment in the United States. **Ra
  
 *Costs are approximate U.S. equipment budgets, not recurring service fees. The ranges are broad illustrations for common setups, not statistical averages. GMRS repeater access and mesh relays can extend coverage substantially; amateur-radio range varies enormously by band and operating mode. Business and transportation services use specialized equipment and authorization, so a single consumer entry-cost estimate would be misleading.*
  
-The cards below explain each service's authorization requirements and provide frequency references. **Not every listed channel is available for general transmission.**
- 
-## Emergency & Interoperability Resources
- 
-<div className="radio-nifog-card">
-  <div className="radio-nifog-card__heading">
-    <span className="radio-nifog-card__icon" aria-hidden="true">NIFOG</span>
-    <div>
-      <h3>National Interoperability Field Operations Guide (NIFOG)</h3>
-      <span>CISA · Version 2.02 (December 2024)</span>
-    </div>
-  </div>
-  <p>The NIFOG is a reference book that helps emergency responders from different organizations communicate by radio when they work together.</p>
-  <p>It lists common interoperability channel names, frequencies, and technical information that can help communications personnel coordinate during major incidents.</p>
-  <h4>What can you find in it?</h4>
-  <ul>
-    <li>Common VHF, UHF, and 700/800 MHz interoperability channels</li>
-    <li>Radio channel[ names and programming references</li>
-    <li>Information for planning communications between responding agencies</li>
-  </ul>
-  <p className="radio-nifog-card__note"><strong>Important:</strong> The NIFOG is a reference, not permission to transmit. Use these channels only with appropriate authorization and operational direction.</p>
-  <div className="radio-nifog-card__actions">
-    <a className="radio-frequency-button" href="https://www.cisa.gov/sites/default/files/2024-12/NIFOG%202.02_508%20FINAL%20VERSION%2012%2003%202024.pdf" target="_blank" rel="noopener noreferrer"><Download size={17} aria-hidden="true" /> Open NIFOG 2.02 (PDF)</a>
-    <a className="radio-frequency-button radio-nifog-card__secondary-button" href="https://www.cisa.gov/safecom/field-operations-guides" target="_blank" rel="noopener noreferrer">CISA publications <ExternalLink size={15} aria-hidden="true" /></a>
-  </div>
-</div>

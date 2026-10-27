@@ -1,9 +1,13 @@
 ---
 sidebar_position: 1
 ---
+
+import { Mail } from 'lucide-react';
+
+
 # Getting Your License
 
-Getting your amateur radio license is easier than many people expect. The entry-level Technician license only requires passing a 35 question multiple-choice exam. With consistent study, many people are ready to test within a few weeks.
+Getting your amateur radio license is easier than many people expect. The entry-level Technician license only requires passing a 35-question multiple-choice exam. With consistent study, many people are ready to test within a few weeks.
 
 ---
 
@@ -25,7 +29,8 @@ Licensed operators can:
 
 ## License Classes
 
-In the United States, there are three amateur radio license classes. Most new operators begin with the Technician license and upgrade later if they decide they want additional operating privileges.
+
+In the United States, there are three amateur radio license classes. Most new operators begin with the Technician license and upgrade later if they decide they want [**additional operating privileges**](/docs/resources/band-plans).
 
 | License Class | Primary Privileges |
 | --- | --- |
@@ -38,6 +43,7 @@ In the United States, there are three amateur radio license classes. Most new op
 :::info PACT MEMBERS
 
 **A Technician Class license provides all of the privileges needed to participate in current PACT training nets, exercises, public service events, and emergency deployments.**
+
 :::
 
 While some individuals choose to pursue multiple license classes at once, we recommend focusing on the Technician exam first and getting on the air before pursuing more advanced licenses.
@@ -45,7 +51,9 @@ While some individuals choose to pursue multiple license classes at once, we rec
 Licenses are valid for 10 years.
 
 :::tip TYPICAL TIMELINE
+
 **Most individuals can earn their Technician Class license within 1–4 weeks depending on the amount of time dedicated towards studying.**
+
 :::
 
 ---
@@ -59,7 +67,38 @@ The Technician exam consists of 35 multiple-choice questions selected from the o
 **If you want to study for free, we recommend:**
 
 - [**HamStudy.org**](https://hamstudy.org/) – As long as you use a web browser, you will have access to free study tools, flashcards, and practice exams.
-- Taking a Local Ham Radio Class – Several local clubs offer classes, mentoring, and study groups.
+- **Taking a Local Ham Radio Class** – Several local clubs offer classes, mentoring, and study groups.
+
+<div style={{
+  border: '1px solid var(--ifm-color-emphasis-300)',
+  borderRadius: '8px',
+  padding: '1rem 1.25rem',
+  margin: '0.75rem 0 1.5rem',
+  background: 'var(--ifm-card-background-color)'
+}}>
+
+<h4 style={{
+  margin: '0 0 0.75rem',
+  textAlign: 'center'
+}}>
+  Provo One-Day Technician Course
+</h4>
+
+  <p style={{margin: '0 0 0.85rem'}}>
+    An in-person, one-day course to help prepare for the
+    Technician Class amateur radio exam.
+  </p>
+
+  <p style={{margin: '0 0 0.35rem'}}>
+    <strong>When:</strong> Third Saturday of each month,
+    September–April, at 8:00 AM
+  </p>
+
+  <p style={{margin: 0}}>
+    <strong>Where:</strong> Provo Fire Station #22,
+    2737 N Canyon Road, Provo, UT
+  </p>
+</div>
 
 **If you prefer structured paid study materials, we recommend:**
 
@@ -91,7 +130,59 @@ To obtain your FRN, visit the [**FCC Universal Licensing System**](https://www.f
 
 Amateur radio exams are administered by Volunteer Examiners (VEs) both online and in person. Online testing sessions are available throughout the week and can be a convenient option for individuals who prefer to test from home.
 
-To find upcoming exam sessions, visit [**HamStudy**](https://hamstudy.org/sessions) and search for testing opportunities near you.
+Local, in-person exam sessions are also available in Provo.
+
+
+<div style={{
+  border: '1px solid var(--ifm-color-emphasis-300)',
+  borderRadius: '8px',
+  padding: '1rem 1.25rem',
+  margin: '1rem 0 1.5rem',
+  background: 'var(--ifm-card-background-color)'
+}}>
+
+<h4 style={{
+  margin: '0 0 0.75rem',
+  textAlign: 'center'
+}}>
+  Provo Amateur Radio Exam Sessions
+</h4>
+
+  <p style={{ margin: '0 0 0.85rem' }}>
+    Local, in-person licensing exams are offered regularly
+    for new operators and those upgrading their licenses.
+  </p>
+
+  <p style={{ margin: '0 0 0.35rem' }}>
+    <strong>When:</strong> Generally monthly, on selected
+    Wednesday evenings and Saturday afternoons
+  </p>
+
+  <p style={{ margin: '0 0 0.85rem' }}>
+    <strong>Where:</strong> Provo Fire Station #22,
+    2737 N Canyon Road, Provo, UT
+  </p>
+
+  <div style={{
+    display: 'flex',
+    justifyContent: 'center',
+    marginTop: '1.25rem'
+  }}>
+    <a
+      className="button button--primary"
+      href="mailto:uvhamtest@gmail.com?subject=Provo%20Amateur%20Radio%20Exam%20Inquiry"
+    >
+      <Mail
+        size={18}
+        strokeWidth={2}
+        aria-hidden="true"
+      />
+      <span>Contact Exam Coordinator</span>
+    </a>
+  </div>
+</div>
+
+To find additional in-person or online exam sessions, visit [**HamStudy.org/sessions**](https://hamstudy.org/sessions) and search for testing opportunities near you.
 
 Some exam sessions require a reservation because seats are limited.
 
@@ -107,7 +198,7 @@ Before your exam, make sure you have:
 
 - **Exam Fee:** Depending on the Volunteer Examiner Coordinator (VEC) administering the session, there may be an exam fee. Fees are typically around $15.00 USD, although some sessions may be free.
 
-- **Completed [**605 Form**](https://www.fcc.gov/files/fcc-form-605-main-form-dec-2023):** If you register through HamStudy.org, the required information is collected during registration and you generally will not need to complete a separate paper form.
+- **Completed [605 Form](https://www.fcc.gov/files/fcc-form-605-main-form-dec-2023):** If you register through HamStudy.org, the required information is collected during registration and you generally will not need to complete a separate paper form.
 
 - **Calculator (Optional):** A basic calculator may be permitted. If allowed, you may be required to demonstrate that all stored memories have been cleared before the exam begins.
 
@@ -123,7 +214,7 @@ Remember, a passing score is **26 correct answers out of 35**.
 
 After passing the exam, your information will be submitted to the FCC by the VEs.
 
-Once your information has been processed by the FCC, you will receive an email with instructions on how to pay the $35.00 USD application fee. After passing the test, we recommended paying the fee as soon as possible by logging in to [**CORES**](https://apps.fcc.gov/cores/userLogin.do). You have 10 calendar days to pay the fee before your application is dismissed.
+Once your information has been processed by the FCC, you will receive an email with instructions on how to pay the $35.00 USD application fee. After passing the test, we recommend paying the fee as soon as possible by logging in to [**CORES**](https://apps.fcc.gov/cores/userLogin.do). You have 10 calendar days to pay the fee before your application is dismissed.
 
 You can confirm your application has been submitted by searching the [**ULS Application Search**](https://wireless2.fcc.gov/UlsApp/ApplicationSearch/searchAppl.jsp) for your FRN.
 

@@ -6,6 +6,10 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 # Events
 
+Participating in community events gives PACT members valuable hands-on experience while serving their community. These volunteer opportunities help PACT members become more comfortable with their equipment, practice communication procedures, and develop skills that can be applied during emergencies.
+
+---
+
 ## Provo Half Marathon
 
 ### Event Overview
@@ -111,7 +115,6 @@ On the day of the event, UCARES will link the following repeaters to support eve
 
 </div>
 
-
 ---
 
 ## Provo Freedom Festival Parade
@@ -200,3 +203,73 @@ On the day of the event, UCARES will use the following repeaters & frequencies t
   </div>
 
 </div>
+
+---
+
+## Hike & Light the Y
+
+### Event Overview
+
+Hike & Light the Y is a longstanding tradition that began in 1924. During Homecoming, BYU students, faculty, and alumni hike to the Y on Y Mountain and participate in a special lighting ceremony.
+
+Amateur radio volunteers help support the event by providing communications between the event organizers and key locations along the route.
+
+### Volunteer Information
+
+The event typically utilizes fifteen amateur radio volunteers, including a Net Control operator. Most volunteers are stationed at key locations such as the trailhead, switchbacks, the top of the Y, and the shuttle pickup. Additional operators may be assigned as EMS or Director shadows to help relay information and coordinate requests for assistance throughout the event.
+
+Volunteers should be prepared for outdoor conditions, uneven terrain, and reduced visibility after sunset. Recommended equipment includes a reflective vest, flashlight or headlamp, an extra clothing layer, and an amateur radio with an earpiece.
+
+Volunteer communications support for Hike & Light the Y is coordinated through the [**BYU Amateur Radio Club (BARC)**](/docs/resources/local-groups#BYU-Amateur-Radio-Club-(BARC)). PACT members interested in participating should sign up through the club's leadership.
+
+### Communications Plan
+
+The following frequencies are used during the event. Volunteers should confirm their assignments and operating instructions before the event.
+
+<div className="repeater-card-grid">
+
+  <div className="repeater-card">
+    <div className="repeater-card-header">
+      BYU VHF Repeater
+    </div>
+
+    <div className="repeater-frequency">
+      145.330 MHz
+    </div>
+
+    <ul className="repeater-details">
+      <li><strong>Tone:</strong> 100.0 Hz</li>
+      <li><strong>Offset:</strong> -0.600 MHz</li>
+      <li><strong>Purpose:</strong> Primary event communications</li>
+    </ul>
+  </div>
+
+  <div className="repeater-card">
+    <div className="repeater-card-header">
+      BYU UHF Repeater
+    </div>
+
+    <div className="repeater-frequency">
+      449.075 MHz
+    </div>
+
+    <ul className="repeater-details">
+      <li><strong>Tone:</strong> 167.9 Hz</li>
+      <li><strong>Offset:</strong> -5.000 MHz</li>
+      <li><strong>Purpose:</strong> Alternate repeater access</li>
+    </ul>
+  </div>
+
+  <div className="repeater-card repeater-card-backup">
+    <div className="repeater-card-header">
+      Backup Simplex Frequency
+    </div>
+
+    <div className="repeater-frequency">
+      146.500 MHz
+    </div>
+
+  </div>
+
+</div>
+

@@ -247,6 +247,6 @@ ACC Radio Operators will transmit to their District Radio Operator using the dis
 
 ---
 
-## Simulated Emergency Test (SET)
+## Simulated Emergency Tests (SETs)
 
 Information coming soon.
