@@ -220,7 +220,7 @@ The event typically utilizes fifteen amateur radio volunteers, including a Net C
 
 Volunteers should be prepared for outdoor conditions, uneven terrain, and reduced visibility after sunset. Recommended equipment includes a reflective vest, flashlight or headlamp, an extra clothing layer, and an amateur radio with an earpiece.
 
-Volunteer communications support for Hike & Light the Y is coordinated through the [**BYU Amateur Radio Club (BARC)**](/docs/resources/local-groups#BYU-Amateur-Radio-Club-(BARC)). PACT members interested in participating should sign up through the club's leadership.
+Volunteer communications support for Hike & Light the Y is coordinated through the [BYU Amateur Radio Club (BARC)](/docs/resources/local-groups/#byu-amateur-radio-club-barc). PACT members interested in participating should sign up through the club's leadership.
 
 ### Communications Plan
 

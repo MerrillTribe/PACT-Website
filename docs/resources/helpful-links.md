@@ -195,8 +195,8 @@ A collection of useful amateur radio websites for propagation, repeaters, digita
     <p>Confirm amateur radio contacts electronically for ARRL awards and operating records.</p>
   </a>
 
-  <a className="link-card" href="https://sotamaps.org/" target="_blank" rel="noopener noreferrer">
-    <h3>SOTA Mapping Project</h3>
+  <a className="link-card" href="https://sotl.as/map" target="_blank" rel="noopener noreferrer">
+    <h3>SOTLAS</h3>
     <p>Explore Summits on the Air locations, activations, and summit information.</p>
   </a>
 
