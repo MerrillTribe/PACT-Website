@@ -6715,3 +6715,105 @@ html[data-theme='dark'] .current-announcements .announcement-divider {
   text-align: center;
 }
 
+
+/* =========================================
+   PACT LOCAL GROUPS
+   ========================================= */
+
+.pact-local-group {
+  margin: 1rem 0 1.75rem;
+}
+
+/* Logo and description layout */
+
+.pact-local-group-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Organization logos */
+
+.pact-local-group-logo {
+  flex: 0 0 110px;
+  width: 110px;
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pact-local-group-logo img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Description */
+
+.pact-local-group-description {
+  flex: 1;
+  min-width: 0;
+}
+
+.pact-local-group-description p {
+  margin-bottom: 1rem;
+}
+
+.pact-local-group-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Centered website button */
+
+.pact-local-group-action {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0 0;
+}
+
+.pact-local-group-action .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+/* -----------------------------------------
+   Mobile layout
+   ----------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .pact-local-group-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .pact-local-group-logo {
+    flex: 0 0 auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .pact-local-group-logo img {
+    width: 90px;
+    height: 90px;
+    max-width: 100%;
+  }
+
+  .pact-local-group-action {
+    margin-top: 1.25rem;
+  }
+
+  .pact-local-group-action .button {
+    max-width: 100%;
+    white-space: normal;
+  }
+}
+
