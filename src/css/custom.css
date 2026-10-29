@@ -3444,30 +3444,31 @@ html:not([data-frequency-view='technical'])
   display: none;
 }
 
+
+
 /* =========================================
-   PACE Communications Plan
+   PACE COMMUNICATIONS PLAN
    ========================================= */
 
 .pace-plan {
-  margin: 2rem 0 2.5rem;
-  padding: 2rem;
-
+  margin: 1.5rem 0 2rem;
+  padding: 1.5rem;
   background: #f8fafc;
   border: 1px solid #e5e7eb;
   border-radius: 16px;
 }
 
-
-/* Header */
+/* =========================================
+   Header
+   ========================================= */
 
 .pace-plan-header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .pace-plan-header h3 {
   margin: 0;
-
   color: var(--pact-navy);
   font-size: 2rem;
   font-weight: 700;
@@ -3475,23 +3476,24 @@ html:not([data-frequency-view='technical'])
 
 .pace-plan-header p {
   margin: 0.4rem 0 0;
-
   color: #64748b;
   font-size: 1rem;
 }
 
-
-/* Grid */
+/* =========================================
+   Grid
+   ========================================= */
 
 .pace-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   align-items: stretch;
 }
 
-
-/* Cards */
+/* =========================================
+   Cards
+   ========================================= */
 
 .pace-card {
   display: flex;
@@ -3499,13 +3501,11 @@ html:not([data-frequency-view='technical'])
   align-items: center;
 
   min-width: 0;
-  padding: 1.6rem 1.25rem;
+  padding: 1.4rem 1.1rem;
 
   text-align: center;
-
   background: #ffffff;
 
-  /* PACT red accent */
   border: 2px solid var(--pact-red);
   border-radius: 12px;
 
@@ -3516,13 +3516,12 @@ html:not([data-frequency-view='technical'])
 
 .pace-card:hover {
   transform: translateY(-3px);
-
-  box-shadow:
-    0 8px 22px rgba(0, 32, 48, 0.1);
+  box-shadow: 0 8px 22px rgba(0, 32, 48, 0.1);
 }
 
-
-/* PACE letter */
+/* =========================================
+   PACE Letter
+   ========================================= */
 
 .pace-letter {
   display: flex;
@@ -3531,63 +3530,122 @@ html:not([data-frequency-view='technical'])
 
   width: 58px;
   height: 58px;
-  margin-bottom: 0.75rem;
+  flex-shrink: 0;
+  margin-bottom: 0.5rem;
 
   color: #ffffff;
-background: var(--pact-red);
-
+  background: var(--pact-red);
   border-radius: 50%;
 
   font-size: 1.75rem;
   font-weight: 700;
 }
 
-
-/* Primary / Alternate / Contingency / Emergency */
+/* =========================================
+   PACE Name
+   ========================================= */
 
 .pace-name {
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.75rem;
 
   color: var(--pact-red);
 
-  font-size: 0.8rem;
+  font-size: 0.98rem;
   font-weight: 700;
   letter-spacing: 0.08em;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
+/* =========================================
+   Communication Details
+   ========================================= */
 
-/* Communication method */
+.pace-details {
+  display: flex;
+  flex-direction: column;
 
-.pace-card h4 {
-  margin: 0 0 0.65rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.pace-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.25rem;
+  min-height: 0;
+  padding: 0.7rem 0;
+}
+
+/* Divider between method and information */
+
+.pace-detail + .pace-detail {
+  border-top: 1px solid #e2e8f0;
+}
+
+/* =========================================
+   Detail Labels
+   ========================================= */
+
+.pace-detail-label {
+  display: block;
+
+  color: #64748b;
+
+  font-size: 0.69rem;
+  font-weight: 700;
+  letter-spacing: 0.045em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   Detail Values
+   ========================================= */
+
+.pace-detail strong {
+  display: block;
 
   color: var(--pact-navy);
 
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   font-weight: 700;
+  line-height: 1.3;
+
+  overflow-wrap: anywhere;
 }
 
-
-/* Description */
+/* =========================================
+   Description
+   ========================================= */
 
 .pace-card p {
+  width: 100%;
   margin: 0;
+  padding-top: 0.75rem;
+
+  border-top: 1px solid #e2e8f0;
 
   color: #475569;
 
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.88rem;
+  line-height: 1.45;
 }
 
-
 /* =========================================
-   Dark mode
+   Dark Mode
    ========================================= */
 
 [data-theme='dark'] .pace-plan {
   background: #111827;
   border-color: #334155;
+}
+
+[data-theme='dark'] .pace-plan-header h3 {
+  color: #f8fafc;
 }
 
 [data-theme='dark'] .pace-plan-header p {
@@ -3598,48 +3656,77 @@ background: var(--pact-red);
   background: #1e293b;
 }
 
-[data-theme='dark'] .pace-card h4 {
+[data-theme='dark'] .pace-detail-label {
+  color: #94a3b8;
+}
+
+[data-theme='dark'] .pace-detail strong {
   color: #f8fafc;
+}
+
+[data-theme='dark'] .pace-detail + .pace-detail,
+[data-theme='dark'] .pace-card p {
+  border-color: #475569;
 }
 
 [data-theme='dark'] .pace-card p {
   color: #cbd5e1;
 }
 
-
 /* =========================================
    Tablet
    ========================================= */
 
 @media (max-width: 996px) {
-
   .pace-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1.25rem;
   }
 }
-
 
 /* =========================================
    Mobile
    ========================================= */
 
 @media (max-width: 600px) {
-
   .pace-plan {
     padding: 1.5rem 1rem;
   }
 
+  .pace-plan-header {
+    margin-bottom: 1.25rem;
+  }
+
+  .pace-plan-header h3 {
+    font-size: 1.65rem;
+  }
+
   .pace-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 
   .pace-card {
     padding: 1.4rem 1.2rem;
   }
 
-  .pace-plan-header h3 {
-    font-size: 1.65rem;
+  .pace-detail {
+    min-height: 0;
+    padding: 0.65rem 0;
+  }
+}
+
+/* =========================================
+   Reduced Motion Accessibility
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .pace-card {
+    transition: none;
+  }
+
+  .pace-card:hover {
+    transform: none;
   }
 }
 

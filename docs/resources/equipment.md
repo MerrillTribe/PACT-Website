@@ -6,19 +6,15 @@ sidebar_position: 1
 
 Successful emergency communications require both trained operators and dependable equipment. While some PACT roles do not require any personal equipment, members who wish to advance through the certification program and qualify for operational roles should expect to acquire and maintain communications gear over time. Equipment requirements increase with each certification level, allowing members to progressively build the skills, experience, and equipment needed to support PACT operations. Members are encouraged to expand their capabilities gradually as they complete additional certification levels and gain operational experience.
 
+---
 ## Deployment Checklist
 
-<details>
-  <summary><strong>Deployment Checklist</strong></summary>
-
-- [ ] Radio equipment  
-- [ ] Printed reporting forms  
-- [ ] Notebook and pen  
-- [ ] Appropriate clothing and water  
-- [ ] Backup power source, if possible  
-- [ ] PACT vest, if issued or available for planned exercises  
-
-</details>
+- [ ] Radio
+- [ ] Printed reporting forms
+- [ ] Notebook and pen
+- [ ] Appropriate clothing and water
+- [ ] Backup power source, if possible
+- [ ] PACT vest, if issued or available for planned exercises
 
 ---
 
@@ -190,11 +186,11 @@ The following equipment & gear are required for the [**PACT Certification Levels
   <span className="equipment-level level-1">Level 1</span>
   <img
     src="/img/speaker-mic.png"
-    alt="Speaker Mic or Headset"
+    alt="Speaker Mic or Earpiece"
     className="equipment-card-icon"
   />
 
-  <h3>Speaker Mic / Headset</h3>
+  <h3>Speaker Mic / Earpiece</h3>
 
   <p>
     Improves radio operation in noisy environments or when hands-free use is helpful. A speaker mic or headset allows operators to hear traffic more clearly, keep the radio secured, and communicate more easily during events, walking assignments, and noisy locations.

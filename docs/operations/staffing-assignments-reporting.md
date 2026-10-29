@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { ClipboardCheck } from 'lucide-react';
+import { ClipboardCheck, Radio } from 'lucide-react';
 
 
 # Deployment
@@ -186,6 +186,14 @@ After arriving at the assigned location, PACT operators should complete the foll
 4. Monitor [**assigned frequencies**](/docs/operations/frequency-allocation) and maintain radio readiness.
 5. Begin an operator log and document significant activity.
 6. Remain available for additional instructions or reassignment.
+
+:::info COMMUNICATION CONTINUITY
+
+PACT uses a **[PACE Plan](/docs/operations/frequency-allocation/#pace-plan)** to maintain reliable communications with the Provo City Emergency Operations Center (EOC). The plan establishes multiple communication pathways so operators can continue relaying information when primary systems become unavailable, congested, or unreliable.
+
+PACT members should be familiar with these methods and follow the PACE Plan when communication with Net Control cannot be established or maintained.
+
+:::
 
 ### Tactical Callsigns
 

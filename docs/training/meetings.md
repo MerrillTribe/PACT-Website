@@ -44,6 +44,15 @@ We look forward to seeing you at our next Interface Meeting.
 | August 11 | 7:00–8:00 PM | Quail Orchard Park | Portable Radios Part 2 |
 | November 18 | 7:00–8:00 PM | Fire Station 22 | PACT Radio Trailer |
 
+## 2027 Interface Meeting Schedule
+
+| Date | Time | Location | Training Topic |
+|---|---|---|---|
+| February 17 | 7:00–8:00 PM | Fire Station 22 | TBD |
+| May 12 | 7:00–8:00 PM | Quail Orchard Park | TBD |
+| August 11 | 7:00–8:00 PM | Quail Orchard Park | TBD |
+| November 17 | 7:00–8:00 PM | Fire Station 22 | TBD |
+
 ---
 
 ## Calendar Downloads

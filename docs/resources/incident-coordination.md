@@ -15,17 +15,6 @@ To help maintain this capability when traditional internet or cellular networks 
 
 ---
 
-## PACE Communications
-
-PACT uses a **PACE plan** to provide multiple methods of communicating information during an emergency.
-
-PACE stands for:
-
-* **Primary** — The preferred method of communication
-* **Alternate** — An additional method used when the primary method is unavailable, overwhelmed, or inefficient for the volume of traffic
-* **Contingency** — A backup method when primary and alternate methods cannot be used
-* **Emergency** — A method of last resort
-
 ATAK serves as an **Alternate communications method** for PACT during large-scale incidents.
 
 Traditional radio communications work well for urgent messages and relatively small amounts of traffic. During a major disaster, however, dozens of field observations may need to reach the EOC at approximately the same time.
@@ -51,70 +40,6 @@ ATAK provides another pathway.
 
 The two methods complement one another. Radio remains available for urgent traffic, coordination, and assignments, while ATAK can carry larger volumes of structured, location-based information.
 
-## PACE Communications
-
-PACT uses a **PACE plan** to provide multiple pathways for communicating information to the Provo Emergency Operations Center (EOC). Each method provides another option when communications become unavailable, overwhelmed, or inefficient.
-
-<div className="pace-plan">
-
-  <div className="pace-plan-header">
-    <h3>PACE Plan</h3>
-    <p>Multiple pathways for getting information to the EOC</p>
-  </div>
-
-  <div className="pace-grid">
-
-    <div className="pace-card">
-      <div className="pace-letter">P</div>
-      <div className="pace-name">Primary</div>
-
-      <h4>Radio / N-0</h4>
-
-      <p>
-        The primary pathway for field reports and communications
-        with the EOC.
-      </p>
-    </div>
-
-    <div className="pace-card">
-      <div className="pace-letter">A</div>
-      <div className="pace-name">Alternate</div>
-
-      <h4>ATAK + WASP</h4>
-
-      <p>
-        Provides a parallel pathway for high-volume,
-        location-based reporting during large-scale incidents.
-      </p>
-    </div>
-
-    <div className="pace-card">
-      <div className="pace-letter">C</div>
-      <div className="pace-name">Contingency</div>
-
-      <h4>Backup Communications</h4>
-
-      <p>
-        Additional communications methods used when primary
-        and alternate methods are unavailable.
-      </p>
-    </div>
-
-    <div className="pace-card">
-      <div className="pace-letter">E</div>
-      <div className="pace-name">Emergency</div>
-
-      <h4>Last Resort</h4>
-
-      <p>
-        Available communications methods used when normal
-        communications systems have failed.
-      </p>
-    </div>
-
-  </div>
-
-</div>
 
 ### Why ATAK is the Alternate
 
