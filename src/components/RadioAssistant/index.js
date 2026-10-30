@@ -960,7 +960,7 @@ export default function RadioAssistant() {
 
       <div className="radio-assistant-header">
         <h2>
-          PACT Equipment Manual Assistant
+          PACT Equipment Assistant
         </h2>
 
         <p>

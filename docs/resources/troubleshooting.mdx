@@ -1,0 +1,127 @@
+---
+sidebar_position: 1
+---
+
+import RadioAssistant from '@site/src/components/RadioAssistant';
+
+# Troubleshooting
+
+:::warning THIS WEBPAGE IS CURRENTLY UNDER DEVELOPMENT
+
+**The PACT Equipment Assistant is still being developed and may not yet provide functional responses.**
+
+:::
+
+Having trouble with your equipment or need help finding a particular setting? The **PACT Equipment Assistant** helps you find troubleshooting steps, programming instructions, technical specifications, and operating information directly from manufacturer manuals.
+
+<RadioAssistant />
+
+## Example Questions
+
+<div
+  style={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))',
+    gap: '1rem',
+    marginTop: '1rem',
+    marginBottom: '1.5rem',
+  }}
+>
+  {[
+    {
+      title: 'Radios',
+      questions: [
+        'How do I program a repeater?',
+        'How do I save a memory channel?',
+        'How do I change the CTCSS tone?',
+      ],
+    },
+    {
+      title: 'Antennas',
+      questions: [
+        'How do I install this antenna?',
+        'What frequency range does it support?',
+        'What are the installation requirements?',
+      ],
+    },
+    {
+      title: 'Power Supplies',
+      questions: [
+        'How do I operate this power supply?',
+        'What is the maximum output current?',
+        'What safety precautions should I follow?',
+      ],
+    },
+    {
+      title: 'Batteries',
+      questions: [
+        'How do I charge this battery?',
+        'What is the battery\'s rated capacity?',
+        'What are the storage recommendations?',
+      ],
+    },
+    {
+      title: 'Antenna Tuners',
+      questions: [
+        'How do I tune an antenna?',
+        'What is the supported frequency range?',
+        'How do I troubleshoot a tuning failure?',
+      ],
+    },
+    {
+      title: 'SWR / Power Meters',
+      questions: [
+        'How do I measure SWR?',
+        'How do I measure transmit power?',
+        'What is the supported power range?',
+      ],
+    },
+  ].map((card) => (
+    <div
+      key={card.title}
+      style={{
+        padding: '1.1rem',
+        border: '1px solid var(--ifm-color-emphasis-300)',
+        borderLeft: '5px solid var(--pact-red)',
+        borderRadius: '6px',
+        background: 'var(--ifm-background-surface-color)',
+      }}
+    >
+      <strong
+        style={{
+          display: 'block',
+          marginBottom: '0.75rem',
+          fontSize: '1.05rem',
+        }}
+      >
+        {card.title}
+      </strong>
+
+      {card.questions.map((question) => (
+        <p
+          key={question}
+          style={{
+            margin: '0 0 0.5rem',
+            fontSize: '0.9rem',
+            color: 'var(--ifm-color-emphasis-700)',
+          }}
+        >
+          {question}
+        </p>
+      ))}
+    </div>
+  ))}
+</div>
+
+<p
+  style={{
+    fontSize: '0.85rem',
+    color: 'var(--ifm-color-emphasis-700)',
+    textAlign: 'center',
+    marginTop: '0.5rem',
+    marginBottom: '2rem',
+  }}
+>
+  Answers are based on available equipment manuals.
+  Information not covered by the manuals may be unavailable.
+</p>

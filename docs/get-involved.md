@@ -51,7 +51,7 @@ PACT may be a good fit if you:
 
 ## What to Expect
 
-After submitting your application, a PACT membership coordinator will review it and contact you with next steps. New members are encouraged to begin participating in [weekly training nets](/docs/training/weekly-training-net), join the PACT Telegram group, and work toward completing [certification levels](/docs/training/certification).
+After submitting your application, a PACT membership coordinator will review it and contact you with next steps. New members are encouraged to begin participating in [**weekly training nets**](/docs/training/weekly-training-net), join the PACT Telegram group, and work toward completing [**certification levels**](/docs/training/certification).
 
 ---
 
@@ -60,7 +60,7 @@ After submitting your application, a PACT membership coordinator will review it 
 <details>
   <summary>Do I have what it takes to join PACT?</summary>
 
-  Anyone interested in supporting emergency communications in Provo may apply. Amateur radio experience is helpful, but it is not required to get started.
+  Any Provo residents, who are above the age of 18, and are interested in supporting emergency communications in Provo may apply. Amateur radio experience is helpful, but it is not required to get started.
 
 </details>
 
@@ -111,7 +111,7 @@ After submitting your application, a PACT membership coordinator will review it 
 <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
   <p>
     Have a question about PACT? Email us at{' '}
-    <a href="mailto:provoauxcomm@gmail.com">provoauxcomm@gmail.com</a>.
+    <a href="mailto:provoauxcomm@gmail.com">**provoauxcomm@gmail.com**</a>.
   </p>
 
   <a

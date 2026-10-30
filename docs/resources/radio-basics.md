@@ -250,7 +250,7 @@ APRS is commonly used for:
 
 Most APRS activity in North America occurs on **144.390 MHz** using packet radio.
 
-APRS allows operators to share information with nearby stations, digipeaters, internet gateways, and [mapping systems](https://aprs.fi/#!lat=40.2329&lng=-111.6688) in real time.
+APRS allows operators to share information with nearby stations, digipeaters, internet gateways, and [**mapping systems**](https://aprs.fi/#!lat=40.2329&lng=-111.6688) in real time.
 
 ---
 
@@ -425,7 +425,7 @@ Set the volume high enough to hear clearly without making the audio uncomfortabl
 
 ### Squelch
 
-Squelch mutes background receiver [noise](#interference-noise) when no signal is present.
+Squelch mutes background receiver [**noise**](#interference-noise) when no signal is present.
 
 Proper squelch setting:
 

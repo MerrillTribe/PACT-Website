@@ -115,7 +115,7 @@ Volunteers serving as radio operators must hold a current FCC amateur radio lice
 
 </div>
 
-In real emergencies, community members will gather at [**Area Coordination Centers (ACCs)**](/docs/operations/staffing-assignments-reporting#area-coordination-centers-accs) for neighborhood-level coordination and support. PACT operators assigned to an ACC play a critical role in maintaining communication between the community and the Provo City Emergency Operations Center (EOC).
+In real emergencies, community members will gather at [**Area Coordination Centers (ACCs)**](/docs/operations/deployment#area-coordination-centers-accs) for neighborhood-level coordination and support. PACT operators assigned to an ACC play a critical role in maintaining communication between the community and the Provo City Emergency Operations Center (EOC).
 
 During this exercise, PACT radio operators will be stationed at each of Provo’s nineteen ACCs. ACC operators will receive reports from the volunteers in their area and relay that information to their assigned District Radio Operator.
 
@@ -134,7 +134,7 @@ All reports from the community will be compiled and transmitted using the [**N-0
 
 ### Communications Plan
 
-ACC Radio Operators will transmit to their District Radio Operator using the district's designated frequency. Visit the [**Area Coordination Centers (ACCs)**](/docs/operations/staffing-assignments-reporting#area-coordination-centers-accs) chart to determine which district your ACC belongs to. District Radio Operators will contact Net Control on 439.800 MHz.
+ACC Radio Operators will transmit to their District Radio Operator using the district's designated frequency. Visit the [**Area Coordination Centers (ACCs)**](/docs/operations/deployment#area-coordination-centers-accs) chart to determine which district your ACC belongs to. District Radio Operators will contact Net Control on 439.800 MHz.
 
 <div className="exercise-frequency-section">
 

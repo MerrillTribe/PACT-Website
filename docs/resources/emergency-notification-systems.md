@@ -16,7 +16,7 @@ Everbridge is the emergency notification system designed to alert communities in
 
 The following communities participate in this program: American Fork, Alpine, Cedar Fort, Cedar Hills, Eagle Mountain, Elk Ridge, Fairfield, Genola, Goshen, Highland, Lehi, Orem, Payson, Pleasant Grove, Provo, Salem, Santaquin, Saratoga Springs, Vineyard, Woodland Hills, and unincorporated Utah County.
 
-For additional information, visit the [Provo City Notification System](https://www.provo.gov/889/Notification-System) page.
+For additional information, visit the [**Provo City Notification System**](https://www.provo.gov/889/Notification-System) page.
 
 <div style={{
   display: 'flex',

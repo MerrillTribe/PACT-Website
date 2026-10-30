@@ -18,7 +18,7 @@ import { Mail } from 'lucide-react';
 ---
 <div style={{ textAlign: 'center', marginBottom: '2.5rem' }}>
   <p>
-    Have a question about PACT? Email us at <a href="mailto:provoauxcomm@gmail.com">provoauxcomm@gmail.com</a>.
+    Have a question about PACT? Email us at <a href="mailto:provoauxcomm@gmail.com">**provoauxcomm@gmail.com**</a>.
   </p>
 
 

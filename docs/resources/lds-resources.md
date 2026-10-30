@@ -113,7 +113,7 @@ The ERC and PACT Nets serve different purposes and are not interchangeable. Duri
 
 ### Area Coordination Centers
 
-During major emergencies, stake centers serve as local gathering points where information from wards and the surrounding community is collected and relayed. Provo City has designated each English-speaking family stake center as an [**Area Coordination Center (ACC)**](/docs/operations/staffing-assignments-reporting/#area-coordination-centers-accs).
+During major emergencies, stake centers serve as local gathering points where information from wards and the surrounding community is collected and relayed. Provo City has designated each English-speaking family stake center as an [**Area Coordination Center (ACC)**](/docs/operations/deployment/#area-coordination-centers-accs).
 
 Ideally, each ACC will have a trained Emergency Communication Specialist familiar with both Church emergency communication procedures and PACT operations.
 

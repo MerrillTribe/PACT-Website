@@ -21,7 +21,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
     </div>
     <div className="pact-local-group-description">
       <p>
-        The Utah County Amateur Radio Emergency Service (UCARES) is a local <a href="https://www.arrl.org/ares" target="_blank" rel="noopener noreferrer">ARES</a> group. Its members are licensed amateur radio operators who volunteer their time and skills for community service and emergency communications. UCARES is supported by the Utah County Sheriff's Office and the ECS Team.
+        The Utah County Amateur Radio Emergency Service (UCARES) is a local <a href="https://www.arrl.org/ares" target="_blank" rel="noopener noreferrer">**ARES**</a> group. Its members are licensed amateur radio operators who volunteer their time and skills for community service and emergency communications. UCARES is supported by the Utah County Sheriff's Office and the ECS Team.
       </p>
     </div>
   </div>
@@ -53,7 +53,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
     </div>
     <div className="pact-local-group-description">
       <p>
-        The Utah County Emergency Communication and Support (ECS) Team was formed in 1981 and is a volunteer organization made up of approximately 30 volunteers. It is overseen by the Emergency Services Division of the Sheriff's Office and supports emergency callouts and planned events throughout the county. Some calls to service include supporting Search and Rescue and assisting cities during their summer festivals (Orem Summer Fest, BYU's Stadium of Fire, and many others). The ECS Team also trains to assist the Sheriff's Office during natural disasters.
+        The Utah County Emergency Communication and Support (ECS) Team was formed in 1981 and is a volunteer organization made up of approximately 30 volunteers. It is overseen by the Emergency Services Division of the Sheriff's Office and supports emergency callouts and planned events throughout the county. Some calls to service include supporting Search and Rescue and assisting cities during their summer festivals ([**Provo Freedom Festival Parade**](/docs/training/events#provo-freedom-festival-parade), [**Provo Half Marathon**](/docs/training/events#provo-half-marathon) to name a few). The ECS Team also trains to assist the Sheriff's Office during natural disasters.
       </p>
       <p>
         All members of the ECS Team start by obtaining their amateur radio license. Once this is completed, potential members need to join UCARES. After a couple of years with UCARES, potential members may submit an application to join the team. All members must pass a background check to be considered.
@@ -158,7 +158,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
         During the school year, the club meets Tuesday evenings at 7:00 PM.
       </p>
       <p>
-        Weekly club activities include build nights, demonstrations, training, transmitter hunts, and practice using club radio equipment. The club often volunteers to provide communications for campus and community events such as Hike and Light the Y and the Rex Lee Run.
+        Weekly club activities include build nights, demonstrations, training, transmitter hunts, and practice using club radio equipment. The club often volunteers to provide communications for campus and community events such as [**Hike & Light the Y**](/docs/training/events#hike--light-the-y) and the Rex Lee Run.
       </p>
     </div>
   </div>

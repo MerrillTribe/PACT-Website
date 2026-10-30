@@ -17,7 +17,7 @@ const sidebars = {
       collapsed: false,
       items: [
         'operations/activation',
-        'operations/staffing-assignments-reporting',
+        'operations/deployment',
         'operations/frequency-allocation',
       ],
     },
@@ -56,7 +56,7 @@ const sidebars = {
         'resources/preparation-for-disasters',
         'resources/radio-basics',
         'resources/radio-services',
-        'resources/radio-troubleshooting',
+        'resources/troubleshooting',
       ],
     },
 
