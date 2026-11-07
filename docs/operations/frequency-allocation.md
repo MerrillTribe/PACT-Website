@@ -2,20 +2,17 @@
 sidebar_position: 1
 ---
 
+import React, { useState } from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Download } from 'lucide-react';
+import { Download, MapPin, Map } from 'lucide-react';
 
 # PACT Frequencies
 
 The following frequencies have been coordinated and allocated for PACT communications. PACT members should program these frequencies into their radio(s). District frequencies are used to share situational information and support district-level communication efforts as directed.
 
-<div style={{
-  display: 'flex',
-  justifyContent: 'center',
-  margin: '1.5rem 0 2rem',
-}}>
+<div className="pact-frequency-download">
   <a
-    className="button button--primary button--lg"
+    className="pact-primary-button"
     href={useBaseUrl('/files/pact-map-v1-2.pdf')}
     download
   >
@@ -24,85 +21,262 @@ The following frequencies have been coordinated and allocated for PACT communica
       strokeWidth={2}
       aria-hidden="true"
     />
-    <span>Download PACT Frequency Map</span>
+    <span>DOWNLOAD PACT FREQUENCY MAP</span>
   </a>
 </div>
 
-## PACT Simplex Frequencies
-
-<table>
-<thead>
-<tr>
-<th>Designation</th>
-<th>Frequency (MHz)</th>
-<th>Purpose</th>
-</tr>
-</thead>
-<tbody>
-
-<tr style={{backgroundColor: '#ffffff', borderLeft: '6px solid #6b7280'}}>
-<td><strong style={{color: '#374151'}}>Net Control</strong></td>
-<td><strong>439.800</strong></td>
-<td>Provo City EOC</td>
-</tr>
-
-<tr style={{backgroundColor: '#f0fdf4', borderLeft: '6px solid #86efac'}}>
-<td><strong style={{color: '#166534'}}>North District</strong><br /><small>District 1</small></td>
-<td><strong>439.850</strong></td>
-<td>Inner District Communications</td>
-</tr>
-
-<tr style={{backgroundColor: '#fefce8', borderLeft: '6px solid #fde68a'}}>
-<td><strong style={{color: '#854d0e'}}>East District</strong><br /><small>District 2</small></td>
-<td><strong>439.925</strong></td>
-<td>Inner District Communications</td>
-</tr>
-
-<tr style={{backgroundColor: '#faf5ff', borderLeft: '6px solid #d8b4fe'}}>
-<td><strong style={{color: '#6b21a8'}}>West District</strong><br /><small>District 3</small></td>
-<td><strong>439.825</strong></td>
-<td>Inner District Communications</td>
-</tr>
-
-<tr style={{backgroundColor: '#fef2f2', borderLeft: '6px solid #fca5a5'}}>
-<td><strong style={{color: '#7f1d1d'}}>Northwest District</strong><br /><small>District 4</small></td>
-<td><strong>439.875</strong></td>
-<td>Inner District Communications</td>
-</tr>
-
-<tr style={{backgroundColor: '#eff6ff', borderLeft: '6px solid #93c5fd'}}>
-<td><strong style={{color: '#1e3a8a'}}>Central District</strong><br /><small>District 5</small></td>
-<td><strong>439.000</strong></td>
-<td>Inner District Communications</td>
-</tr>
-
-</tbody>
-</table>
-
-## Provo City Repeater
+## Provo City Repeater {#provo-city-repeater}
 
 The Provo City Repeater is available for all PACT operations, trainings, and events.
 
-<table>
-<thead>
-<tr>
-<th>Output (RX)</th>
-<th>Input (TX)</th>
-<th>CTCSS</th>
-<th>Location</th>
-</tr>
-</thead>
-<tbody>
+export function RepeaterSelector() {
+  const [view, setView] = useState('radio');
 
-<tr style={{backgroundColor: '#eff6ff', borderLeft: '6px solid #2050a0'}}>
-<td><strong>443.575 MHz</strong></td>
-<td><strong>448.575 MHz</strong></td>
-<td><strong>123.0 Hz</strong></td>
-<td>Provo City Hall</td>
-</tr>
+  const isRadio = view === 'radio';
 
-</tbody>
-</table>
+  return (
+    <div className="pact-repeater-panel">
+
+      {/* Toggle and location */}
+
+      <div className="pact-repeater-toolbar">
+
+        <div
+          className="pact-repeater-toggle"
+          role="group"
+          aria-label="Repeater frequency perspective"
+        >
+          <button
+            type="button"
+            className={isRadio ? 'active' : ''}
+            aria-pressed={isRadio}
+            onClick={() => setView('radio')}
+          >
+            Radio Programming
+          </button>
+
+          <button
+            type="button"
+            className={!isRadio ? 'active' : ''}
+            aria-pressed={!isRadio}
+            onClick={() => setView('repeater')}
+          >
+            Repeater Configuration
+          </button>
+        </div>
+
+        <span className="pact-repeater-location">
+          <MapPin
+            size={16}
+            strokeWidth={2}
+            aria-hidden="true"
+          />
+          Provo City Hall
+        </span>
+
+      </div>
+
+      {/* Receive and transmit frequencies */}
+
+      <div className="pact-repeater-grid">
+
+        <div className="pact-repeater-item">
+          <div className="pact-repeater-label">
+            RECEIVE (RX)
+          </div>
+
+          <div className="pact-repeater-value">
+            {isRadio ? '443.575' : '448.575'}
+          </div>
+
+          <div className="pact-repeater-unit">
+            MHz
+          </div>
+        </div>
+
+        <div className="pact-repeater-item">
+          <div className="pact-repeater-label">
+            TRANSMIT (TX)
+          </div>
+
+          <div className="pact-repeater-value">
+            {isRadio ? '448.575' : '443.575'}
+          </div>
+
+          <div className="pact-repeater-unit">
+            MHz
+          </div>
+        </div>
+
+      </div>
+
+      {/* Additional programming settings */}
+
+      <div className="pact-repeater-settings">
+
+        <div>
+          <span>CTCSS Tone</span>
+          <strong>123.0 Hz</strong>
+        </div>
+
+        <div>
+          <span>Frequency Offset</span>
+          <strong>
+            {isRadio ? '+5.000 MHz' : '−5.000 MHz (TX−RX)'}
+          </strong>
+        </div>
+
+      </div>
+
+      {/* Operating explanation */}
+
+      <p className="pact-repeater-description">
+        {isRadio
+          ? 'Your radio receives on 443.575 MHz and transmits on 448.575 MHz. Program a +5.000 MHz offset and a 123.0 Hz transmit CTCSS tone.'
+          : 'The repeater receives on 448.575 MHz and transmits on 443.575 MHz. Its transmit frequency is 5.000 MHz below its receive frequency.'}
+      </p>
+
+      {/* Repeater coverage map */}
+
+      <div className="pact-repeater-map-action">
+        <a
+          className="pact-primary-button"
+          href="https://provoauxiliarycommunicationsteam.com/repeater-map/"
+        >
+          <Map
+            size={18}
+            strokeWidth={2}
+            aria-hidden="true"
+          />
+          <span>VIEW REPEATER COVERAGE MAP</span>
+        </a>
+      </div>
+
+    </div>
+  );
+}
+
+<RepeaterSelector />
+
+
+## PACT Simplex Frequencies
+
+<div className="pact-frequency-table">
+  <table>
+    <thead>
+      <tr>
+        <th>Designation</th>
+        <th>Frequency (MHz)</th>
+        <th>Purpose</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>
+          <div className="pact-frequency-designation">
+            <span className="pact-frequency-tag pact-frequency-net">
+              <span>EOC</span>
+            </span>
+            <strong>Net Control</strong>
+          </div>
+        </td>
+        <td>
+          <span className="pact-frequency-value">
+            439.800
+          </span>
+        </td>
+        <td>Provo City EOC</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div className="pact-frequency-designation">
+            <span className="pact-frequency-tag pact-frequency-d1">
+              <span>D1</span>
+            </span>
+            <strong>North District</strong>
+          </div>
+        </td>
+        <td>
+          <span className="pact-frequency-value">
+            439.850
+          </span>
+        </td>
+        <td>Inner District Communications</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div className="pact-frequency-designation">
+            <span className="pact-frequency-tag pact-frequency-d2">
+              <span>D2</span>
+            </span>
+            <strong>East District</strong>
+          </div>
+        </td>
+        <td>
+          <span className="pact-frequency-value">
+            439.925
+          </span>
+        </td>
+        <td>Inner District Communications</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div className="pact-frequency-designation">
+            <span className="pact-frequency-tag pact-frequency-d3">
+              <span>D3</span>
+            </span>
+            <strong>West District</strong>
+          </div>
+        </td>
+        <td>
+          <span className="pact-frequency-value">
+            439.825
+          </span>
+        </td>
+        <td>Inner District Communications</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div className="pact-frequency-designation">
+            <span className="pact-frequency-tag pact-frequency-d4">
+              <span>D4</span>
+            </span>
+            <strong>Northwest District</strong>
+          </div>
+        </td>
+        <td>
+          <span className="pact-frequency-value">
+            439.875
+          </span>
+        </td>
+        <td>Inner District Communications</td>
+      </tr>
+
+      <tr>
+        <td>
+          <div className="pact-frequency-designation">
+            <span className="pact-frequency-tag pact-frequency-d5">
+              <span>D5</span>
+            </span>
+            <strong>Central District</strong>
+          </div>
+        </td>
+        <td>
+          <span className="pact-frequency-value">
+            439.000
+          </span>
+        </td>
+        <td>Inner District Communications</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ---
 
@@ -131,11 +305,16 @@ Each level provides a progressively different method of communication:
 
       <div className="pace-details">
         <div className="pace-detail">
-          <span className="pace-detail-label">Communication Method</span>
+          <span className="pace-detail-label">
+            Communication Method
+          </span>
           <strong>439.800 MHz Simplex</strong>
         </div>
+
         <div className="pace-detail">
-          <span className="pace-detail-label">Information Transmitted</span>
+          <span className="pace-detail-label">
+            Information Transmitted
+          </span>
           <strong>N-0 Form</strong>
         </div>
       </div>
@@ -152,11 +331,16 @@ Each level provides a progressively different method of communication:
 
       <div className="pace-details">
         <div className="pace-detail">
-          <span className="pace-detail-label">Communication Method</span>
+          <span className="pace-detail-label">
+            Communication Method
+          </span>
           <strong>Provo City Repeater</strong>
         </div>
+
         <div className="pace-detail">
-          <span className="pace-detail-label">Information Transmitted</span>
+          <span className="pace-detail-label">
+            Information Transmitted
+          </span>
           <strong>N-0 Form</strong>
         </div>
       </div>
@@ -173,12 +357,19 @@ Each level provides a progressively different method of communication:
 
       <div className="pace-details">
         <div className="pace-detail">
-          <span className="pace-detail-label">Communication Method</span>
+          <span className="pace-detail-label">
+            Communication Method
+          </span>
           <strong>MANET + ATAK</strong>
         </div>
+
         <div className="pace-detail">
-          <span className="pace-detail-label">Information Transmitted</span>
-          <strong>WASP Reports</strong>
+          <span className="pace-detail">
+            <span className="pace-detail-label">
+              Information Transmitted
+            </span>
+            <strong>WASP Reports</strong>
+          </span>
         </div>
       </div>
 
@@ -194,11 +385,16 @@ Each level provides a progressively different method of communication:
 
       <div className="pace-details">
         <div className="pace-detail">
-          <span className="pace-detail-label">Communication Method</span>
+          <span className="pace-detail-label">
+            Communication Method
+          </span>
           <strong>Hand Delivery</strong>
         </div>
+
         <div className="pace-detail">
-          <span className="pace-detail-label">Information Transmitted</span>
+          <span className="pace-detail-label">
+            Information Transmitted
+          </span>
           <strong>N-0 Form</strong>
         </div>
       </div>

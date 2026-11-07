@@ -1,11 +1,419 @@
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
+
+/* =========================================
+   PACT HOMEPAGE
+   Refined Public Safety Design
+   ========================================= */
+
+.container {
+  width: min(1280px, calc(100% - 4rem));
+  margin: 0 auto;
 }
 
-.buttons {
-  margin-top: 2rem;
+/* =========================================
+   HERO
+   ========================================= */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
   display: flex;
+  align-items: center;
+
+  min-height: 360px;
+  padding: 4rem 0;
+
+  color: #ffffff;
+
+  background: linear-gradient(
+    110deg,
+    #10283b 0%,
+    #142e42 58%,
+    #1e3a4e 100%
+  );
+}
+
+/* -----------------------------------------
+   Future Background Video
+   ----------------------------------------- */
+
+.backgroundVideo {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: -2;
+}
+
+/* -----------------------------------------
+   Background Overlay
+   ----------------------------------------- */
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    90deg,
+    rgba(12, 32, 48, 0.88) 0%,
+    rgba(12, 32, 48, 0.52) 65%,
+    rgba(12, 32, 48, 0.2) 100%
+  );
+
+  z-index: -1;
+}
+
+/* -----------------------------------------
+   Hero Content
+   ----------------------------------------- */
+
+.heroContent {
+  position: relative;
+  max-width: 750px;
+}
+
+.eyebrow {
+  display: block;
+
+  color: #e3afb5;
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  line-height: 1.5;
+
+  margin-bottom: 1.2rem;
+}
+
+.hero h1 {
+  color: #ffffff;
+
+  font-family: var(--ifm-font-family-base);
+  font-size: clamp(2.3rem, 4vw, 3.35rem);
+  font-weight: 650;
+
+  letter-spacing: -0.025em;
+  line-height: 1.16;
+
+  max-width: 720px;
+  margin: 0 0 1.25rem;
+}
+
+.hero p {
+  color: #d7e1e9;
+
+  font-size: 1.02rem;
+  font-weight: 400;
+  line-height: 1.75;
+
+  max-width: 670px;
+  margin: 0 0 1.8rem;
+}
+
+/* =========================================
+   PRIMARY BUTTON
+   ========================================= */
+
+.primaryButton {
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
+
+  gap: 0.75rem;
+  padding: 0.85rem 1.4rem;
+
+  background: #a32c37;
+  border: 1px solid #a32c37;
+  border-radius: 5px;
+
+  color: #ffffff !important;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+
+  text-decoration: none !important;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.primaryButton:hover {
+  background: #85232d;
+  border-color: #85232d;
+  color: #ffffff !important;
+}
+
+.primaryButton:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* =========================================
+   HOMEPAGE ACTIVITIES
+   ========================================= */
+
+.mainContent {
+  background: #ffffff;
+  padding: 2.75rem 0 4rem;
+}
+
+.activitiesSection {
+  width: 100%;
+}
+
+/* -----------------------------------------
+   Section Heading
+   ----------------------------------------- */
+
+.sectionHeader {
+  margin-bottom: 1.5rem;
+}
+
+.sectionLabel {
+  display: block;
+
+  color: #a32c37;
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+
+  margin-bottom: 0.65rem;
+}
+
+.sectionHeader h2 {
+  color: #172f42;
+
+  font-family: var(--ifm-font-family-base);
+  font-size: clamp(1.5rem, 2.5vw, 1.85rem);
+  font-weight: 650;
+
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+
+  margin: 0;
+}
+
+/* =========================================
+   ACTIVITY CARDS
+   ========================================= */
+
+.activityGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.activityCard {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+
+  padding: 1.5rem;
+
+  background: #ffffff;
+  border: 1px solid #dce3e8;
+  border-radius: 6px;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease;
+}
+
+.activityCard:hover {
+  border-color: #b6c1c9;
+  background: #fcfdfe;
+}
+
+/* -----------------------------------------
+   Card Headings
+   ----------------------------------------- */
+
+.cardHeading {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  margin-bottom: 1.2rem;
+}
+
+.cardIcon {
+  color: #a32c37;
+  flex-shrink: 0;
+}
+
+.cardHeading h3 {
+  color: #172f42;
+
+  font-family: var(--ifm-font-family-base);
+  font-size: 1.02rem;
+  font-weight: 650;
+  line-height: 1.4;
+
+  margin: 0;
+}
+
+/* -----------------------------------------
+   Card Details
+   ----------------------------------------- */
+
+.cardContent {
+  flex: 1;
+  margin-bottom: 1.3rem;
+}
+
+.cardPrimary {
+  color: #172f42;
+
+  font-size: 1.12rem;
+  font-weight: 650;
+  line-height: 1.4;
+
+  margin-bottom: 0.7rem;
+}
+
+.cardDetail {
+  color: #607080;
+
+  font-size: 0.91rem;
+  font-weight: 400;
+  line-height: 1.65;
+
+  margin-bottom: 0.3rem;
+}
+
+/* -----------------------------------------
+   Card Links
+   ----------------------------------------- */
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+
+  gap: 0.5rem;
+
+  color: #a32c37 !important;
+  font-size: 0.89rem;
+  font-weight: 600;
+
+  text-decoration: none !important;
+}
+
+.cardLink:hover {
+  color: #85232d !important;
+  text-decoration: underline !important;
+}
+
+.cardLink:focus-visible {
+  outline: 2px solid #a32c37;
+  outline-offset: 4px;
+}
+
+/* =========================================
+   DARK MODE
+   Consistent Public Safety Branding
+   ========================================= */
+
+[data-theme='dark'] .mainContent {
+  background: #ffffff;
+}
+
+[data-theme='dark'] .sectionHeader h2,
+[data-theme='dark'] .cardHeading h3,
+[data-theme='dark'] .cardPrimary {
+  color: #172f42;
+}
+
+[data-theme='dark'] .cardDetail {
+  color: #607080;
+}
+
+[data-theme='dark'] .activityCard {
+  background: #ffffff;
+  border-color: #dce3e8;
+}
+
+[data-theme='dark'] .activityCard:hover {
+  background: #fcfdfe;
+  border-color: #b6c1c9;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 996px) {
+  .container {
+    width: min(100% - 3rem, 1280px);
+  }
+
+  .hero {
+    padding: 3.5rem 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 5vw, 3rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 2rem);
+  }
+
+  .hero {
+    min-height: 0;
+    padding: 3rem 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(2rem, 7vw, 2.65rem);
+  }
+
+  .hero p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .mainContent {
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .activityGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .activityCard {
+    padding: 1.3rem;
+  }
+
+  .cardHeading {
+    margin-bottom: 1rem;
+  }
+
+  .cardPrimary {
+    font-size: 1.05rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .backgroundVideo {
+    display: none;
+  }
+
+  .primaryButton,
+  .activityCard {
+    transition: none;
+  }
 }

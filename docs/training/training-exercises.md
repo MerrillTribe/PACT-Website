@@ -19,17 +19,19 @@ The next Provo Prepared exercise will be held on **April 15, 2027, from 6:00 PM 
   justifyContent: 'center',
   margin: '1.5rem 0 2rem',
 }}>
-  <a
-    className="button button--lg button--cta"
-    href="https://docs.google.com/spreadsheets/d/1hut9CB76hs7HBBM6pLG3woXVvUt5JGtQHcJ6A69yg9M/edit?usp=sharing"
-  >
-    <ClipboardList
-      size={18}
-      strokeWidth={2}
-      aria-hidden="true"
-    />
-    <span>Sign Up for the 2027 Exercise</span>
-  </a>
+
+<a
+  className="pact-primary-button"
+  href="https://docs.google.com/spreadsheets/d/1hut9CB76hs7HBBM6pLG3woXVvUt5JGtQHcJ6A69yg9M/edit?usp=sharing"
+>
+  <ClipboardList
+    size={18}
+    strokeWidth={2}
+    aria-hidden="true"
+  />
+  <span>SIGN UP FOR THE 2027 EXERCISE</span>
+</a>
+
 </div>
 
 
@@ -224,18 +226,20 @@ ACC Radio Operators will transmit to their District Radio Operator using the dis
   justifyContent: 'center',
   margin: '1.5rem 0 2rem',
 }}>
-  <a
-    className="button button--primary button--lg"
-    href={useBaseUrl('/files/provo-prepared-exercise.pdf')}
-    download
-  >
-    <Download
-      size={18}
-      strokeWidth={2}
-      aria-hidden="true"
-    />
-    <span>Download Provo Prepared Exercise Map</span>
-  </a>
+
+<a
+  className="pact-primary-button"
+  href={useBaseUrl('/files/provo-prepared-exercise.pdf')}
+  download
+>
+  <Download
+    size={18}
+    strokeWidth={2}
+    aria-hidden="true"
+  />
+  <span>DOWNLOAD PROVO PREPARED EXERCISE MAP</span>
+</a>
+
 </div>
 
 

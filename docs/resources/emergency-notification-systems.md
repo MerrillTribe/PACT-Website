@@ -18,14 +18,16 @@ The following communities participate in this program: American Fork, Alpine, Ce
 
 For additional information, visit the [**Provo City Notification System**](https://www.provo.gov/889/Notification-System) page.
 
-<div style={{
-  display: 'flex',
-justifyContent: 'center',
-  margin: '1.5rem 0 2rem',
-}}>
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '1.5rem 0 2rem',
+  }}
+>
   <a
     href="https://member.everbridge.net/1332612387832225/login"
-    className="button button--primary button--lg"
+    className="pact-primary-button"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -34,7 +36,7 @@ justifyContent: 'center',
       strokeWidth={2}
       aria-hidden="true"
     />
-    <span>Sign Up for Everbridge</span>
+    <span>SIGN UP FOR EVERBRIDGE</span>
   </a>
 </div>
 
@@ -46,15 +48,16 @@ Y-Alert! is the emergency notification system designed to immediately alert the 
 
 BYU students, staff, and faculty can learn more about enrolling in Y-Alert! through BYU Emergency Management.
 
-
-<div style={{
-  display: 'flex',
-justifyContent: 'center',
-  margin: '1.5rem 0 2rem',
-}}>
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '1.5rem 0 2rem',
+  }}
+>
   <a
     href="https://emergencymanagement.byu.edu/warnings-and-notifications"
-    className="button button--primary button--lg"
+    className="pact-primary-button"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -63,7 +66,7 @@ justifyContent: 'center',
       strokeWidth={2}
       aria-hidden="true"
     />
-    <span>Sign Up for Y-Alert!</span>
+    <span>SIGN UP FOR Y-ALERT!</span>
   </a>
 </div>
 
@@ -73,20 +76,24 @@ justifyContent: 'center',
 
 NOAA Weather Radio broadcasts continuous weather forecasts, watches, warnings, and emergency alerts from the National Weather Service. Broadcasts are available 24/7 and can be received using a compatible weather radio or scanner.
 
-<div style={{
-  background: 'var(--ifm-color-emphasis-100)',
-  borderRadius: '8px',
-  padding: '1rem',
-  margin: '1.25rem 0',
-}}>
+<div
+  style={{
+    background: 'var(--ifm-color-emphasis-100)',
+    borderRadius: '8px',
+    padding: '1rem',
+    margin: '1.25rem 0',
+  }}
+>
   <strong>NOAA Weather Radio Frequencies (MHz)</strong>
 
-  <div style={{
-    display: 'flex',
-    flexWrap: 'wrap',
-    gap: '0.5rem',
-    marginTop: '0.75rem',
-  }}>
+  <div
+    style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      gap: '0.5rem',
+      marginTop: '0.75rem',
+    }}
+  >
     {[
       '162.400',
       '162.425',
@@ -95,7 +102,7 @@ NOAA Weather Radio broadcasts continuous weather forecasts, watches, warnings, a
       '162.500',
       '162.525',
       '162.550',
-    ].map(freq => (
+    ].map((freq) => (
       <span
         key={freq}
         style={{
@@ -113,15 +120,16 @@ NOAA Weather Radio broadcasts continuous weather forecasts, watches, warnings, a
   </div>
 </div>
 
-
-<div style={{
-  display: 'flex',
-  justifyContent: 'center',
-  margin: '1.5rem 0 2rem',
-}}>
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '1.5rem 0 2rem',
+  }}
+>
   <a
     href="https://www.weather.gov/nwr"
-    className="button button--primary button--lg"
+    className="pact-primary-button"
     target="_blank"
     rel="noopener noreferrer"
   >
@@ -130,6 +138,6 @@ NOAA Weather Radio broadcasts continuous weather forecasts, watches, warnings, a
       strokeWidth={2}
       aria-hidden="true"
     />
-    <span>NOAA Weather Radio</span>
+    <span>NOAA WEATHER RADIO</span>
   </a>
 </div>

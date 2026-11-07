@@ -71,45 +71,51 @@ Because wavelength and frequency affect how radio signals travel and behave, rad
 | Super High Frequency     | SHF          | 3 GHz – 30 GHz       |
 | Extremely High Frequency | EHF          | 30 GHz – 300 GHz     |
 
-<details>
-  <summary><strong>HF (High Frequency)</strong></summary>
 
-  <br />
+<div className="pact-join-faq pact-radio-band-faq">
 
-  - Long-distance communication
-  - Signals can [reflect off the ionosphere](#skywave-propagation)
-  - Larger antennas
-  - Common for regional and worldwide contacts
+  <details>
+    <summary>HF (High Frequency)</summary>
 
-</details>
+    <div className="pact-join-faq-answer">
+      <ul>
+        <li>Long-distance communication</li>
+        <li>
+          Signals can <a href="#skywave-propagation">reflect off the ionosphere</a>
+        </li>
+        <li>Larger antennas</li>
+        <li>Common for regional and worldwide contacts</li>
+      </ul>
+    </div>
+  </details>
 
-<br />
+  <details>
+    <summary>VHF (Very High Frequency)</summary>
 
-<details>
-  <summary><strong>VHF (Very High Frequency)</strong></summary>
+    <div className="pact-join-faq-answer">
+      <ul>
+        <li>Primarily line-of-sight communication</li>
+        <li>Reliable local and regional coverage</li>
+        <li>Commonly used for repeaters</li>
+        <li>Includes the 2-meter amateur band</li>
+      </ul>
+    </div>
+  </details>
 
-  <br />
+  <details>
+    <summary>UHF (Ultra High Frequency)</summary>
 
-  - Primarily line-of-sight communication
-  - Reliable local and regional coverage
-  - Commonly used for repeaters
-  - Includes the 2-meter amateur band
+    <div className="pact-join-faq-answer">
+      <ul>
+        <li>Primarily line-of-sight communication</li>
+        <li>Better building penetration</li>
+        <li>Shorter communication range</li>
+        <li>Includes the 70-centimeter amateur band</li>
+      </ul>
+    </div>
+  </details>
 
-</details>
-
-<br />
-
-<details>
-  <summary><strong>UHF (Ultra High Frequency)</strong></summary>
-
-  <br />
-
-  - Primarily line-of-sight communication
-  - Better building penetration
-  - Shorter communication range
-  - Includes the 70-centimeter amateur band
-
-</details>
+</div>
 
 ---
 

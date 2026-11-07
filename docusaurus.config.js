@@ -1,6 +1,6 @@
 
  // @ts-check
-import { themes as prismThemes } from 'prism-react-renderer';
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -25,6 +25,10 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+
+  /* =========================================
+     DOCUSAURUS PRESETS
+     ========================================= */
 
   presets: [
     [
@@ -53,6 +57,54 @@ const config = {
     ],
   ],
 
+  /* =========================================
+     LOCAL WEBSITE SEARCH
+     ========================================= */
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        // Generate a cache-friendly search index.
+        hashed: true,
+
+        // Search documentation pages.
+        indexDocs: true,
+        docsRouteBasePath: '/docs',
+
+        // Search announcements.
+        indexBlog: true,
+        blogRouteBasePath: '/announcements',
+
+        // Include general website pages.
+        indexPages: true,
+
+        // English-language search.
+        language: 'en',
+
+        // Position search on right side of navbar.
+        searchBarPosition: 'right',
+
+        // Enable Command+K / Ctrl+K search.
+        searchBarShortcut: true,
+        searchBarShortcutHint: true,
+
+        // Show the matching section in results.
+        explicitSearchResultPath: true,
+
+        // Highlight matching search terms.
+        highlightSearchTermsOnTargetPage: true,
+
+        // Maximum number of search suggestions.
+        searchResultLimits: 8,
+      },
+    ],
+  ],
+
+  /* =========================================
+     THEME CONFIGURATION
+     ========================================= */
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -64,20 +116,30 @@ const config = {
         respectPrefersColorScheme: false,
       },
 
+      /* =========================================
+         NAVIGATION
+         ========================================= */
+
       navbar: {
+        // Default identity on documentation pages.
+        // Homepage CSS displays PACT instead.
         title: 'Home',
 
+        // Default blue PACT logo.
+        // Homepage CSS displays the regular logo.
         logo: {
           alt: 'PACT Logo',
           src: 'img/pact-logo-blue.png',
         },
 
         items: [
-          {
-            to: '/docs/intro',
-            label: 'About PACT',
-            position: 'left',
-          },
+
+{
+  to: '/docs/about-pact/',
+  label: 'About PACT',
+  position: 'left',
+},
+
           {
             to: '/docs/operations/activation',
             label: 'Operations',
@@ -106,10 +168,18 @@ const config = {
         ],
       },
 
+      /* =========================================
+         FOOTER
+         ========================================= */
+
       footer: {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} Provo Auxiliary Communications Team`,
       },
+
+      /* =========================================
+         CODE HIGHLIGHTING
+         ========================================= */
 
       prism: {
         theme: prismThemes.github,

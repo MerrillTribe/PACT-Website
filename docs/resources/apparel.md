@@ -27,8 +27,9 @@ PACT members may order branded clothing and items using the order form below.
       </p>
 
 
+
 <a
-  className="button button--primary button--lg"
+  className="pact-primary-button"
   href="https://docs.google.com/forms/d/e/1FAIpQLSfZ3CzP1Q1-zx3fr3XwFU4OFrlz77u4b0MGXIJPe-LS58tQKQ/viewform"
   target="_blank"
   rel="noopener noreferrer"
@@ -38,7 +39,7 @@ PACT members may order branded clothing and items using the order form below.
     strokeWidth={2}
     aria-hidden="true"
   />
-  <span>Open Order Form</span>
+  <span>OPEN ORDER FORM</span>
 </a>
 
     </div>

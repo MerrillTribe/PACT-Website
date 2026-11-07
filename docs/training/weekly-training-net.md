@@ -3,25 +3,96 @@ sidebar_position: 1
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import {
+  CalendarDays,
+  Clock3,
+  Radio,
+  RadioTower,
+  FileText,
+  ChevronDown,
+} from 'lucide-react';
 
 # Weekly Training Net
 
-:::info WEEKLY TRAINING NETS
-**When:** Every Wednesday at 8:30 PM  
-**Check-ins:** 439.800 MHz (Simplex)  
-**Announcements:** Provo City Repeater — RX: 443.575 MHz / TX: 448.575 MHz / CTCSS: 123.0 Hz
-:::
+<div className="pact-net-schedule">
 
-<div className="meeting-actions">
+  <div className="pact-net-schedule-header">
+    <CalendarDays
+      size={20}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>WEEKLY TRAINING NET</span>
+  </div>
+
+  <div className="pact-net-schedule-body">
+
+    <div className="pact-net-daytime-compact">
+
+      <div className="pact-net-daytime-heading">
+        Every Wednesday
+      </div>
+
+      <div className="pact-net-daytime-clock">
+        <Clock3
+          size={17}
+          strokeWidth={1.8}
+          aria-hidden="true"
+        />
+        <span>8:30 PM · Mountain Time</span>
+      </div>
+
+    </div>
+
+    <div className="pact-net-schedule-grid">
+
+      <div className="pact-net-schedule-item">
+        <span className="pact-net-phase-label">
+          CHECK-INS
+        </span>
+
+        <strong>439.800 MHz</strong>
+        <span>Simplex</span>
+      </div>
+
+      <div className="pact-net-schedule-item">
+        <span className="pact-net-phase-label">
+          ANNOUNCEMENTS &amp; TRAINING
+        </span>
+
+        <strong>
+          <a
+            href={useBaseUrl('/docs/operations/frequency-allocation/#provo-city-repeater')}
+            onClick={(event) => {
+              event.preventDefault();
+              window.location.assign(event.currentTarget.href);
+            }}
+          >
+            Provo City Repeater
+          </a>
+        </strong>
+
+        <span>Following Check-Ins</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div className="pact-net-calendar-action">
   <a
-    className="button button--sm button--calendar"
+    className="pact-primary-button"
     href={useBaseUrl('/calendar/pact-weekly-training-net.ics')}
     download
   >
-    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
-      <path d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v3H3V6a2 2 0 0 1 2-2h1V3a1 1 0 1 1 2 0v1zm14 9v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7h18z"/>
-    </svg>
-    <span>Add to Calendar</span>
+    <CalendarDays
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>ADD TO CALENDAR</span>
   </a>
 </div>
 
@@ -35,9 +106,53 @@ While attendance is not required, regular participation is strongly encouraged.
 
 ## Net Format
 
-Check-ins are conducted on 439.800 MHz simplex, allowing members to practice on the same frequencies used during PACT [**activations**](/docs/operations/activation).
+The weekly training net is conducted in two phases. Members should remain on the assigned frequency until Net Control directs them to switch.
 
-Once check-ins are complete, all stations will switch to the Provo City repeater for announcements, traffic, and the weekly training topic.
+
+
+<div className="pact-net-format">
+
+  <div className="pact-net-format-step">
+
+    <div className="pact-net-format-number pact-net-format-blue">
+      01
+    </div>
+
+    <div className="pact-net-format-content">
+      <h3>Check-Ins — Simplex</h3>
+
+      <p>
+        Members check in by district on <strong>439.800 MHz simplex</strong>,
+        practicing the communication procedures used during PACT{' '}
+        <a href="/docs/operations/activation">activations</a>.
+      </p>
+    </div>
+
+  </div>
+
+  <div className="pact-net-format-connector">
+    <span aria-hidden="true">↓</span>
+  </div>
+
+  <div className="pact-net-format-step">
+
+    <div className="pact-net-format-number pact-net-format-red">
+      02
+    </div>
+
+    <div className="pact-net-format-content">
+      <h3>Announcements, Traffic &amp; Training — Repeater</h3>
+
+      <p>
+        After check-ins, Net Control directs stations to switch to the{' '}
+        <a href="/docs/operations/frequency-allocation/#provo-city-repeater">Provo City repeater</a>{' '}
+        for announcements, traffic, and training.
+      </p>
+    </div>
+
+  </div>
+
+</div>
 
 ---
 
@@ -52,45 +167,139 @@ When your district is called:
 3. Indicate whether or not you have traffic for the net.
 4. Wait for acknowledgment from Net Control.
 
----
+#### Example Check-In
 
-**Example:**
+<div className="pact-net-example">
 
-> ***Net Control:*** *"All stations located in the North District, please check in."*
->
-> ***Operator:*** *"This is November-Seven-Bravo-Yankee-Uniform with no traffic."*
+  <div className="pact-net-example-row">
+
+    <div className="pact-net-example-icon">
+      <RadioTower
+        size={20}
+        strokeWidth={1.8}
+        aria-hidden="true"
+      />
+    </div>
+
+    <div className="pact-net-example-content">
+      <strong>NET CONTROL</strong>
+
+      <p>
+        "All stations located in the North District,
+        please check in."
+      </p>
+    </div>
+
+  </div>
+
+  <div className="pact-net-example-divider"></div>
+
+  <div className="pact-net-example-row">
+
+    <div className="pact-net-example-icon">
+      <Radio
+        size={20}
+        strokeWidth={1.8}
+        aria-hidden="true"
+      />
+    </div>
+
+    <div className="pact-net-example-content">
+      <strong>OPERATOR</strong>
+
+      <p>
+        "This is November-Seven-Bravo-Yankee-Uniform
+        with no traffic."
+      </p>
+    </div>
+
+  </div>
+
+</div>
 
 If you have announcements, formal traffic, or information for the net, say **"with traffic"** instead of **"with no traffic."**
 
 After your check-in has been acknowledged, remain on **439.800 MHz simplex** until Net Control instructs all stations to switch to the Provo City repeater.
 
----
-
 If you indicate that you have traffic, Net Control will let you know when to speak. Remember, PACT nets are **directed nets**. Operators should wait to be recognized by Net Control before transmitting unless there is emergency traffic.
 
 If you miss your district's check-in, wait until Net Control calls for late or missed check-ins.
 
-:::tip Why Check-Ins Use Simplex
-PACT emergency operations primarily rely on **simplex communications** between operators and Net Control. Conducting weekly check-ins on simplex gives members regular practice using the same operating method that may be required during an activation.
+---
 
-Because Provo covers a large geographic area, it is normal for some stations to hear Net Control but not every other station—or vice versa. After check-ins are complete, the net transitions to the **Provo City repeater**, allowing everyone to hear announcements, traffic, and the weekly training topic more reliably.
-:::
+## Operating Tips
 
-:::tip Handling Doubles
-A **double** occurs when two or more stations transmit at the same time. When this happens, Net Control may not be able to clearly understand either station.
+The following guidance explains common situations members may encounter during the training net.
 
-If you hear a double:
+<div className="pact-net-accordion">
 
-- Stop transmitting.
-- Wait for Net Control to identify a station or request a repeat.
-- Do not try to continue over another station.
+  <details className="pact-net-details">
 
-Net Control may recognize part of a call sign and ask that station to transmit again.
+    <summary>Why Check-Ins Use Simplex</summary>
 
-> *"The station ending in Bravo-Yankee-Uniform, please repeat your callsign."*
+    <div className="pact-net-details-content">
 
-Brief pauses before transmitting help reduce doubles, especially during simplex check-ins.
-:::
+      <p>
+        PACT emergency operations primarily rely on
+        <strong> simplex communications</strong> between operators
+        and Net Control. Conducting weekly check-ins on simplex
+        gives members regular practice using the same operating
+        method that may be required during an activation.
+      </p>
+
+      <p>
+        Because Provo covers a large geographic area, it is normal
+        for some stations to hear Net Control but not every other
+        station—or vice versa. After check-ins are complete, the
+        net transitions to the <strong>Provo City repeater</strong>,
+        allowing everyone to hear announcements, traffic, and
+        the weekly training topic more reliably.
+      </p>
+
+    </div>
+
+  </details>
+
+  <details className="pact-net-details">
+
+    <summary>Handling Doubles</summary>
+
+    <div className="pact-net-details-content">
+
+      <p>
+        A <strong>double</strong> occurs when two or more stations
+        transmit at the same time. When this happens, Net Control
+        may not be able to clearly understand either station.
+      </p>
+
+      <p>If you hear a double:</p>
+
+      <ul>
+        <li>Stop transmitting.</li>
+        <li>Wait for Net Control to identify a station or request a repeat.</li>
+        <li>Do not try to continue over another station.</li>
+      </ul>
+
+      <p>
+        Net Control may recognize part of a call sign and ask
+        that station to transmit again.
+      </p>
+
+      <blockquote>
+        "The station ending in Bravo-Yankee-Uniform,
+        please repeat your callsign."
+      </blockquote>
+
+      <p>
+        Brief pauses before transmitting help reduce doubles,
+        especially during simplex check-ins.
+      </p>
+
+    </div>
+
+  </details>
+
+</div>
 
 ---
 
@@ -98,10 +307,35 @@ Brief pauses before transmitting help reduce doubles, especially during simplex 
 
 PACT training nets follow a structured format as outlined below.
 
-<details>
-<summary><strong>Net Control Script</strong></summary>
+<details className="pact-net-script">
 
-:::note Net Control Script
+  <summary>
+
+    <span className="pact-net-script-icon">
+      <FileText
+        size={21}
+        strokeWidth={1.8}
+        aria-hidden="true"
+      />
+    </span>
+
+    <span className="pact-net-script-heading">
+      <strong>Net Control Script</strong>
+      <small>
+        Opening, district check-ins, announcements, training, and closing
+      </small>
+    </span>
+
+    <ChevronDown
+      className="pact-net-script-chevron"
+      size={21}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+
+  </summary>
+
+  <div className="pact-net-script-content">
 
 #### 10 Minutes Before the Net
 
@@ -119,7 +353,7 @@ All stations interested in participating, please stand by until the net is calle
 
 ---
 
-#### 20:30 Hours — Start the Net
+##### 20:30 Hours — Start the Net
 
 Calling the Provo Auxiliary Communications Team Weekly Training Net.
 
@@ -192,6 +426,6 @@ Thank you to everyone who participated in tonight's training net.
 
 This is station ________, Net Control for the Provo Auxiliary Communications Team Weekly Training Net, closing the net at ________ hours and returning the repeater to normal amateur radio use.
 
-:::
+  </div>
 
 </details>

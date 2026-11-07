@@ -18,83 +18,153 @@ Successful emergency communications require both trained operators and dependabl
 
 ---
 
+
 ## Certification Levels
 
-The following equipment & gear are required for the [**PACT Certification Levels**](/docs/training/certification).
+The following equipment and gear are required for the [**PACT Certification Levels**](/docs/training/certification).
 
-<details>
-  <summary><strong>Level 1</strong></summary>
+<div className="pact-join-faq pact-equipment-certification">
 
-[**VIEW ALL LEVEL 1 REQUIREMENTS**](/docs/training/certification/#level-1)
+  <details>
+    <summary>Level 1 — Participant</summary>
 
-- [ ] 2m/70cm handheld radio 
-	- [ ] Spare battery
-  	- [ ] Earpiece for handheld radio
-	- [ ] Upgraded handheld radio antenna (whip antenna)
-	- [ ] Radio programmed with PACT Standard Load
-- [ ] Documentation binder
-	- [ ] PACT Field Manual
-	- [ ] Provo street map
-	- [ ] PACT District & Frequency Map
-	- [ ] Notebook
-	- [ ] Zipperpouch
-	- [ ] Writing utensils
-	- [ ] Radio manual for handheld radio
-- [ ] Multitool or pocketknife
-- [ ] Reusable water bottle 
-- [ ] Personal First Aid Kit 
+    <div className="pact-join-faq-answer">
 
-</details>
+      <p>
+        <a href="/docs/training/certification/#level-1">
+          <strong>VIEW ALL LEVEL 1 REQUIREMENTS</strong>
+        </a>
+      </p>
 
-<details>
-  <summary><strong>Level 2</strong></summary>
+      <ul>
+        <li>
+          <input type="checkbox" /> 2m/70cm handheld radio
+          <ul>
+            <li><input type="checkbox" /> Spare battery</li>
+            <li><input type="checkbox" /> Earpiece for handheld radio</li>
+            <li><input type="checkbox" /> Upgraded handheld radio antenna (whip antenna)</li>
+            <li><input type="checkbox" /> Radio programmed with PACT Standard Load</li>
+          </ul>
+        </li>
 
-[**VIEW ALL LEVEL 2 REQUIREMENTS**](/docs/training/certification/#level-2)
+        <li>
+          <input type="checkbox" /> Documentation binder
+          <ul>
+            <li><input type="checkbox" /> PACT Field Manual</li>
+            <li><input type="checkbox" /> Provo street map</li>
+            <li><input type="checkbox" /> PACT District &amp; Frequency Map</li>
+            <li><input type="checkbox" /> Notebook</li>
+            <li><input type="checkbox" /> Zipper pouch</li>
+            <li><input type="checkbox" /> Writing utensils</li>
+            <li><input type="checkbox" /> Radio manual for handheld radio</li>
+          </ul>
+        </li>
 
-- [ ] Portable 2m/70cm antenna (j-pole, ground plane, etc)
-- [ ] 50' coax with PL259 connectors (RG-8 or better)
-- [ ] One roll of electrical tape
-- [ ] Coaxial Adaptors
-	- [ ] SO239 - SO239
-	- [ ] SO239 - PL259
-	- [ ] SO239 - BNC Male
-	- [ ] SO239 - BNC Female
-	- [ ] SO239 - SMA Male Pigtail
-	- [ ] SO239 - SMA Female Pigtail
-	- [ ] PL259 - BNC Male
-	- [ ] PL259 - BNC Female
-- [ ] USB Cables  
-	- [ ] USB A - Micro USB
-	- [ ] USB A - USB C
-	- [ ] USB C - USB C 
+        <li><input type="checkbox" /> Multitool or pocketknife</li>
+        <li><input type="checkbox" /> Reusable water bottle</li>
+        <li><input type="checkbox" /> Personal First Aid Kit</li>
+      </ul>
 
-</details>
+    </div>
+  </details>
 
-<details>
-  <summary><strong>Level 3</strong></summary>
+  <details>
+    <summary>Level 2 — Support</summary>
 
-[**VIEW ALL LEVEL 3 REQUIREMENTS**](/docs/training/certification/#level-3)
+    <div className="pact-join-faq-answer">
 
-- [ ] Anderson Power Poles
-	- [ ] Power pole to cigarette lighter
-  	- [ ] Power pole to alligator clip
-	- [ ] Power pole to extension cable
-	- [ ] Power pole to three way splitter
+      <p>
+        <a href="/docs/training/certification/#level-2">
+          <strong>VIEW ALL LEVEL 2 REQUIREMENTS</strong>
+        </a>
+      </p>
 
-</details>
+      <ul>
+        <li><input type="checkbox" /> Portable 2m/70cm antenna (J-pole, ground plane, etc.)</li>
+        <li><input type="checkbox" /> 50 ft coax with PL259 connectors (RG-8 or better)</li>
+        <li><input type="checkbox" /> One roll of electrical tape</li>
 
-<details>
-  <summary><strong>Level 4</strong></summary>
+        <li>
+          <input type="checkbox" /> Coaxial adapters
+          <ul>
+            <li><input type="checkbox" /> SO239 - SO239</li>
+            <li><input type="checkbox" /> SO239 - PL259</li>
+            <li><input type="checkbox" /> SO239 - BNC Male</li>
+            <li><input type="checkbox" /> SO239 - BNC Female</li>
+            <li><input type="checkbox" /> SO239 - SMA Male Pigtail</li>
+            <li><input type="checkbox" /> SO239 - SMA Female Pigtail</li>
+            <li><input type="checkbox" /> PL259 - BNC Male</li>
+            <li><input type="checkbox" /> PL259 - BNC Female</li>
+          </ul>
+        </li>
 
-[**VIEW ALL LEVEL 4 REQUIREMENTS**](/docs/training/certification/#level-4)
+        <li>
+          <input type="checkbox" /> USB cables
+          <ul>
+            <li><input type="checkbox" /> USB A - Micro USB</li>
+            <li><input type="checkbox" /> USB A - USB C</li>
+            <li><input type="checkbox" /> USB C - USB C</li>
+          </ul>
+        </li>
+      </ul>
 
-- [ ] LiFePo4 Battery (20Ah minimum) 
-	- [ ] Ability to connect using Anderson power poles
-  	- [ ] Ability to charge battery with AC power
-- [ ] Head lamp
-- [ ] 12VDC LED light with Anderson power poles
+    </div>
+  </details>
 
-</details>
+  <details>
+    <summary>Level 3 — Independent</summary>
+
+    <div className="pact-join-faq-answer">
+
+      <p>
+        <a href="/docs/training/certification/#level-3">
+          <strong>VIEW ALL LEVEL 3 REQUIREMENTS</strong>
+        </a>
+      </p>
+
+      <ul>
+        <li>
+          <input type="checkbox" /> Anderson Powerpoles
+          <ul>
+            <li><input type="checkbox" /> Powerpole to cigarette lighter</li>
+            <li><input type="checkbox" /> Powerpole to alligator clip</li>
+            <li><input type="checkbox" /> Powerpole extension cable</li>
+            <li><input type="checkbox" /> Powerpole three-way splitter</li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+  </details>
+
+  <details>
+    <summary>Level 4 — Leader</summary>
+
+    <div className="pact-join-faq-answer">
+
+      <p>
+        <a href="/docs/training/certification/#level-4">
+          <strong>VIEW ALL LEVEL 4 REQUIREMENTS</strong>
+        </a>
+      </p>
+
+      <ul>
+        <li>
+          <input type="checkbox" /> LiFePO4 battery (20Ah minimum)
+          <ul>
+            <li><input type="checkbox" /> Ability to connect using Anderson Powerpoles</li>
+            <li><input type="checkbox" /> Ability to charge battery with AC power</li>
+          </ul>
+        </li>
+
+        <li><input type="checkbox" /> Headlamp</li>
+        <li><input type="checkbox" /> 12VDC LED light with Anderson Powerpoles</li>
+      </ul>
+
+    </div>
+  </details>
+
+</div>
 
 ---
 

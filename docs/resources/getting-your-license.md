@@ -4,7 +4,6 @@ sidebar_position: 1
 
 import { Mail } from 'lucide-react';
 
-
 # Getting Your License
 
 Getting your amateur radio license is easier than many people expect. The entry-level Technician license only requires passing a 35-question multiple-choice exam. With consistent study, many people are ready to test within a few weeks.
@@ -28,7 +27,6 @@ Licensed operators can:
 ---
 
 ## License Classes
-
 
 In the United States, there are three amateur radio license classes. Most new operators begin with the Technician license and upgrade later if they decide they want [**additional operating privileges**](/docs/resources/band-plans).
 
@@ -69,32 +67,35 @@ The Technician exam consists of 35 multiple-choice questions selected from the o
 - [**HamStudy.org**](https://hamstudy.org/) – As long as you use a web browser, you will have access to free study tools, flashcards, and practice exams.
 - **Taking a Local Ham Radio Class** – Several local clubs offer classes, mentoring, and study groups.
 
-<div style={{
-  border: '1px solid var(--ifm-color-emphasis-300)',
-  borderRadius: '8px',
-  padding: '1rem 1.25rem',
-  margin: '0.75rem 0 1.5rem',
-  background: 'var(--ifm-card-background-color)'
-}}>
+<div
+  style={{
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderRadius: '8px',
+    padding: '1rem 1.25rem',
+    margin: '0.75rem 0 1.5rem',
+    background: 'var(--ifm-card-background-color)',
+  }}
+>
+  <h4
+    style={{
+      margin: '0 0 0.75rem',
+      textAlign: 'center',
+    }}
+  >
+    Provo One-Day Technician Course
+  </h4>
 
-<h4 style={{
-  margin: '0 0 0.75rem',
-  textAlign: 'center'
-}}>
-  Provo One-Day Technician Course
-</h4>
-
-  <p style={{margin: '0 0 0.85rem'}}>
+  <p style={{ margin: '0 0 0.85rem' }}>
     An in-person, one-day course to help prepare for the
     Technician Class amateur radio exam.
   </p>
 
-  <p style={{margin: '0 0 0.35rem'}}>
+  <p style={{ margin: '0 0 0.35rem' }}>
     <strong>When:</strong> Third Saturday of each month,
     September–April, at 8:00 AM
   </p>
 
-  <p style={{margin: 0}}>
+  <p style={{ margin: 0 }}>
     <strong>Where:</strong> Provo Fire Station #22,
     2737 N Canyon Road, Provo, UT
   </p>
@@ -132,21 +133,23 @@ Amateur radio exams are administered by Volunteer Examiners (VEs) both online an
 
 Local, in-person exam sessions are also available in Provo.
 
-
-<div style={{
-  border: '1px solid var(--ifm-color-emphasis-300)',
-  borderRadius: '8px',
-  padding: '1rem 1.25rem',
-  margin: '1rem 0 1.5rem',
-  background: 'var(--ifm-card-background-color)'
-}}>
-
-<h4 style={{
-  margin: '0 0 0.75rem',
-  textAlign: 'center'
-}}>
-  Provo Amateur Radio Exam Sessions
-</h4>
+<div
+  style={{
+    border: '1px solid var(--ifm-color-emphasis-300)',
+    borderRadius: '8px',
+    padding: '1rem 1.25rem',
+    margin: '1rem 0 1.5rem',
+    background: 'var(--ifm-card-background-color)',
+  }}
+>
+  <h4
+    style={{
+      margin: '0 0 0.75rem',
+      textAlign: 'center',
+    }}
+  >
+    Provo Amateur Radio Exam Sessions
+  </h4>
 
   <p style={{ margin: '0 0 0.85rem' }}>
     Local, in-person licensing exams are offered regularly
@@ -163,13 +166,15 @@ Local, in-person exam sessions are also available in Provo.
     2737 N Canyon Road, Provo, UT
   </p>
 
-  <div style={{
-    display: 'flex',
-    justifyContent: 'center',
-    marginTop: '1.25rem'
-  }}>
+  <div
+    style={{
+      display: 'flex',
+      justifyContent: 'center',
+      marginTop: '1.25rem',
+    }}
+  >
     <a
-      className="button button--primary"
+      className="pact-primary-button"
       href="mailto:uvhamtest@gmail.com?subject=Provo%20Amateur%20Radio%20Exam%20Inquiry"
     >
       <Mail
@@ -177,7 +182,7 @@ Local, in-person exam sessions are also available in Provo.
         strokeWidth={2}
         aria-hidden="true"
       />
-      <span>Contact Exam Coordinator</span>
+      <span>CONTACT EXAM COORDINATOR</span>
     </a>
   </div>
 </div>
@@ -232,46 +237,92 @@ Many new operators find it helpful to connect with a local amateur radio club or
 
 ## Frequently Asked Questions
 
-<details>
-  <summary>Is there a minimum age to get an amateur radio license?</summary>
-  <p>No. The FCC does not establish a minimum age requirement for amateur radio licenses.</p>
-</details>
+<div className="pact-join-faq pact-license-faq">
 
-<details>
-  <summary>Can I take the exam online?</summary>
-  <p>Yes. Many Volunteer Examiner teams offer remote testing sessions using video conferencing software.</p>
-</details>
+  <details>
+    <summary>Is there a minimum age to get an amateur radio license?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        No. The FCC does not establish a minimum age requirement
+        for amateur radio licenses.
+      </p>
+    </div>
+  </details>
 
-<details>
-  <summary>Can I earn more than one license class at the same exam session?</summary>
-  <p>Yes. If you pass the Technician exam, you may immediately attempt the General exam. If you pass General, you may attempt Amateur Extra during the same session.</p>
-</details>
+  <details>
+    <summary>Can I take the exam online?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        Yes. Many Volunteer Examiner teams offer remote testing
+        sessions using video conferencing software.
+      </p>
+    </div>
+  </details>
 
-<details>
-  <summary>Do I need to own a radio before taking the exam?</summary>
-  <p>No. Many new operators earn their license before purchasing any equipment.</p>
-</details>
+  <details>
+    <summary>Can I earn more than one license class at the same exam session?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        Yes. If you pass the Technician exam, you may immediately
+        attempt the General exam. If you pass General, you may
+        attempt Amateur Extra during the same session.
+      </p>
+    </div>
+  </details>
 
-<details>
-  <summary>What happens if I fail the exam?</summary>
-  <p>Many exam sessions allow you to retake the exam during the same session, although additional fees may apply depending on the testing organization.</p>
-</details>
+  <details>
+    <summary>Do I need to own a radio before taking the exam?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        No. Many new operators earn their license before
+        purchasing any equipment.
+      </p>
+    </div>
+  </details>
 
-<details>
-  <summary>Can I use a radio before I am licensed?</summary>
-  <p>You may listen to amateur radio frequencies without a license. However, you must receive your amateur radio license and call sign before transmitting on amateur radio frequencies.</p>
-</details>
+  <details>
+    <summary>What happens if I fail the exam?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        Many exam sessions allow you to retake the exam during
+        the same session, although additional fees may apply
+        depending on the testing organization.
+      </p>
+    </div>
+  </details>
 
-<details>
-  <summary>Do I need to renew my license?</summary>
-  <p>
-    Amateur radio licenses are valid for 10 years. To keep your call sign and avoid retaking the exam, be sure to renew your license before it expires.
-  </p>
-</details>
+  <details>
+    <summary>Can I use a radio before I am licensed?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        You may listen to amateur radio frequencies without a
+        license. However, you must receive your amateur radio
+        license and call sign before transmitting on amateur
+        radio frequencies.
+      </p>
+    </div>
+  </details>
 
-<details>
-  <summary>Is there a fee to upgrade my license?</summary>
-  <p>
-    No. The FCC does not currently charge a fee to upgrade an existing amateur radio license, although some exam sessions may charge a testing fee.
-  </p>
-</details>
+  <details>
+    <summary>Do I need to renew my license?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        Amateur radio licenses are valid for 10 years. To keep
+        your call sign and avoid retaking the exam, be sure to
+        renew your license before it expires.
+      </p>
+    </div>
+  </details>
+
+  <details>
+    <summary>Is there a fee to upgrade my license?</summary>
+    <div className="pact-join-faq-answer">
+      <p>
+        No. The FCC does not currently charge a fee to upgrade
+        an existing amateur radio license, although some exam
+        sessions may charge a testing fee.
+      </p>
+    </div>
+  </details>
+
+</div>

@@ -28,7 +28,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
   <div className="pact-local-group-action">
     <a
       href="https://www.ucares.org/"
-      className="button button--primary button--lg"
+className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -63,7 +63,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
   <div className="pact-local-group-action">
     <a
       href="https://sheriff.utahcounty.gov/supportServices/emergencyManagement/ECS"
-      className="button button--primary button--lg"
+className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -95,7 +95,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
   <div className="pact-local-group-action">
     <a
       href="https://www.tert.org/radio-training-and-resources/"
-      className="button button--primary button--lg"
+className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -127,7 +127,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
   <div className="pact-local-group-action">
     <a
       href="https://uvarc.club/"
-      className="button button--primary button--lg"
+className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -165,7 +165,7 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
   <div className="pact-local-group-action">
     <a
       href="https://radio.byu.edu/"
-      className="button button--primary button--lg"
+className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >

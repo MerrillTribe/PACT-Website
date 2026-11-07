@@ -116,14 +116,15 @@ Additional operators may be assigned as Assistant Net Control to support message
 
 After arriving at an assigned Area Coordination Center (ACC), PACT operators should identify themselves to ACC leadership or the community members who are there.
 
-
-<div style={{
-  display: 'flex',
-  justifyContent: 'center',
-  margin: '1.5rem 0 2rem',
-}}>
+<div
+  style={{
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '1.5rem 0 2rem',
+  }}
+>
   <a
-    className="button button--primary button--lg"
+    className="pact-primary-button"
     href={useBaseUrl('/docs/resources/equipment/#deployment-checklist')}
   >
     <ClipboardCheck
@@ -131,10 +132,9 @@ After arriving at an assigned Area Coordination Center (ACC), PACT operators sho
       strokeWidth={2}
       aria-hidden="true"
     />
-    <span>View Deployment Checklist</span>
+    <span>VIEW DEPLOYMENT CHECKLIST</span>
   </a>
 </div>
-
 
 ---
 
@@ -146,27 +146,118 @@ After arriving at an assigned Area Coordination Center (ACC), PACT operators sho
 
 During emergencies, community members will gather at ACCs for neighborhood-level coordination and support. The PACT operators attached to an ACC are crucial in maintaining communication between the ACC and leaders at the Provo City Emergency Operations Center (EOC).
 
-| Area Coordination Center (ACC) | Address | District |
-|---|---|---|
-| Provo Edgemont North | 345 E 4525 N | <span style={{backgroundColor:'#dff5e1', color:'#1f5f2c', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 1 - North</span> |
-| Provo Edgemont East | 4300 N Canyon Rd | <span style={{backgroundColor:'#dff5e1', color:'#1f5f2c', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 1 - North</span> |
-| Provo Edgemont South | 350 E 2950 N | <span style={{backgroundColor:'#dff5e1', color:'#1f5f2c', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 1 - North</span> |
-| Provo Edgemont | 303 W 3700 N | <span style={{backgroundColor:'#dff5e1', color:'#1f5f2c', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 1 - North</span> |
-| Provo Sharon East | 2400 N 1060 E | <span style={{backgroundColor:'#dff5e1', color:'#1f5f2c', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 1 - North</span> |
-| Provo Oak Hills | 1960 N 1500 E | <span style={{backgroundColor:'#fff3bf', color:'#7a5a00', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 2 - East</span> |
-| Provo Bonneville | 85 S 900 E | <span style={{backgroundColor:'#fff3bf', color:'#7a5a00', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 2 - East</span> |
-| Provo | 1315 E 900 S | <span style={{backgroundColor:'#fff3bf', color:'#7a5a00', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 2 - East</span> |
-| Provo East | 667 N 600 E | <span style={{backgroundColor:'#fff3bf', color:'#7a5a00', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 2 - East</span> |
-| Provo Sunset | 1560 S 1100 W | <span style={{backgroundColor:'#ffdede', color:'#8a1f1f', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 3 - West</span> |
-| Provo West | 2530 W 200 S | <span style={{backgroundColor:'#ffdede', color:'#8a1f1f', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 3 - West</span> |
-| Provo Parkway | 2801 W 620 N | <span style={{backgroundColor:'#ffdede', color:'#8a1f1f', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 3 - West</span> |
-| Provo North Park | 1066 W 200 N | <span style={{backgroundColor:'#e6dcff', color:'#4a2f8a', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 4 - Northwest</span> |
-| Provo Grandview East | 1081 W 1060 N | <span style={{backgroundColor:'#e6dcff', color:'#4a2f8a', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 4 - Northwest</span> |
-| Provo Grandview South | 1122 Grand Ave | <span style={{backgroundColor:'#e6dcff', color:'#4a2f8a', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 4 - Northwest</span> |
-| Provo Grandview | 1600 N 1880 W | <span style={{backgroundColor:'#e6dcff', color:'#4a2f8a', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 4 - Northwest</span> |
-| Provo Freedom | 835 S 500 W | <span style={{backgroundColor:'#dbeafe', color:'#1e3a8a', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 5 - Central</span> |
-| Provo South | 610 W 300 S | <span style={{backgroundColor:'#dbeafe', color:'#1e3a8a', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 5 - Central</span> |
-| Provo Central | 450 N 1220 W | <span style={{backgroundColor:'#dbeafe', color:'#1e3a8a', padding:'2px 8px', borderRadius:'999px', fontWeight:'600'}}>District 5 - Central</span> |
+
+<div className="pact-acc-table">
+
+  <table>
+    <thead>
+      <tr>
+        <th>Area Coordination Center (ACC)</th>
+        <th>Address</th>
+        <th>District</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Provo Edgemont North</td>
+        <td>345 E 4525 N</td>
+        <td><span className="pact-acc-district pact-acc-d1">District 1 - North</span></td>
+      </tr>
+      <tr>
+        <td>Provo Edgemont East</td>
+        <td>4300 N Canyon Rd</td>
+        <td><span className="pact-acc-district pact-acc-d1">District 1 - North</span></td>
+      </tr>
+      <tr>
+        <td>Provo Edgemont South</td>
+        <td>350 E 2950 N</td>
+        <td><span className="pact-acc-district pact-acc-d1">District 1 - North</span></td>
+      </tr>
+      <tr>
+        <td>Provo Edgemont</td>
+        <td>303 W 3700 N</td>
+        <td><span className="pact-acc-district pact-acc-d1">District 1 - North</span></td>
+      </tr>
+      <tr>
+        <td>Provo Sharon East</td>
+        <td>2400 N 1060 E</td>
+        <td><span className="pact-acc-district pact-acc-d1">District 1 - North</span></td>
+      </tr>
+      <tr>
+        <td>Provo Oak Hills</td>
+        <td>1960 N 1500 E</td>
+        <td><span className="pact-acc-district pact-acc-d2">District 2 - East</span></td>
+      </tr>
+      <tr>
+        <td>Provo Bonneville</td>
+        <td>85 S 900 E</td>
+        <td><span className="pact-acc-district pact-acc-d2">District 2 - East</span></td>
+      </tr>
+      <tr>
+        <td>Provo</td>
+        <td>1315 E 900 S</td>
+        <td><span className="pact-acc-district pact-acc-d2">District 2 - East</span></td>
+      </tr>
+      <tr>
+        <td>Provo East</td>
+        <td>667 N 600 E</td>
+        <td><span className="pact-acc-district pact-acc-d2">District 2 - East</span></td>
+      </tr>
+      <tr>
+        <td>Provo Sunset</td>
+        <td>1560 S 1100 W</td>
+        <td><span className="pact-acc-district pact-acc-d3">District 3 - West</span></td>
+      </tr>
+      <tr>
+        <td>Provo West</td>
+        <td>2530 W 200 S</td>
+        <td><span className="pact-acc-district pact-acc-d3">District 3 - West</span></td>
+      </tr>
+      <tr>
+        <td>Provo Parkway</td>
+        <td>2801 W 620 N</td>
+        <td><span className="pact-acc-district pact-acc-d3">District 3 - West</span></td>
+      </tr>
+      <tr>
+        <td>Provo North Park</td>
+        <td>1066 W 200 N</td>
+        <td><span className="pact-acc-district pact-acc-d4">District 4 - Northwest</span></td>
+      </tr>
+      <tr>
+        <td>Provo Grandview East</td>
+        <td>1081 W 1060 N</td>
+        <td><span className="pact-acc-district pact-acc-d4">District 4 - Northwest</span></td>
+      </tr>
+      <tr>
+        <td>Provo Grandview South</td>
+        <td>1122 Grand Ave</td>
+        <td><span className="pact-acc-district pact-acc-d4">District 4 - Northwest</span></td>
+      </tr>
+      <tr>
+        <td>Provo Grandview</td>
+        <td>1600 N 1880 W</td>
+        <td><span className="pact-acc-district pact-acc-d4">District 4 - Northwest</span></td>
+      </tr>
+      <tr>
+        <td>Provo Freedom</td>
+        <td>835 S 500 W</td>
+        <td><span className="pact-acc-district pact-acc-d5">District 5 - Central</span></td>
+      </tr>
+      <tr>
+        <td>Provo South</td>
+        <td>610 W 300 S</td>
+        <td><span className="pact-acc-district pact-acc-d5">District 5 - Central</span></td>
+      </tr>
+      <tr>
+        <td>Provo Central</td>
+        <td>450 N 1220 W</td>
+        <td><span className="pact-acc-district pact-acc-d5">District 5 - Central</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
 
 :::tip ACC BASE STATIONS
 Some ACCs are equipped with base stations; however, access is limited and emergency power is not available. Operators should be prepared to operate using their own radio equipment.
@@ -304,7 +395,29 @@ PACT members should have the following forms available for relaying information:
 
 ---
 
-:::note Ready to Deploy?
+<div className="pact-deployment-ready">
 
-Successful deployments begin before activation. Review the [**Deployment Checklist**](/docs/resources/equipment/#deployment-checklist) to verify that your radio equipment, documentation, power sources, and reporting forms are prepared and ready for use.
-:::
+  <div className="pact-deployment-ready-content">
+    <h2>Ready to Deploy?</h2>
+
+    <p>
+      Successful deployments begin before activation.
+      Review the Deployment Checklist to verify that
+      your radio equipment, documentation, power sources,
+      and reporting forms are prepared and ready for use.
+    </p>
+
+    <a
+      className="pact-deployment-ready-button"
+      href={useBaseUrl('/docs/resources/equipment/#deployment-checklist')}
+    >
+      <ClipboardCheck
+        size={18}
+        strokeWidth={2}
+        aria-hidden="true"
+      />
+      <span>VIEW DEPLOYMENT CHECKLIST</span>
+    </a>
+  </div>
+
+</div>

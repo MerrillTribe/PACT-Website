@@ -59,12 +59,9 @@
 
 /* -------------------------
    Sidebar
+   Documentation appearance is maintained in
+   the PACT DOCUMENTATION DESIGN section below.
 -------------------------- */
-.menu__link--active {
-  border-left: 3px solid var(--pact-red);
-  color: var(--pact-red);
-  font-weight: 600;
-}
 
 /* -------------------------
    Footer
@@ -387,39 +384,48 @@
   transform: translateY(-4px);
 }
 
+
 /* =========================
    COLOR SYSTEM (PACT ONLY)
-========================= */
+   ========================= */
 
-/* DEFAULT (BLUE) */
-.cert-blue .cert-card-header {
-  background: var(--pact-blue-dark);
+/* NAVY — LEVELS 1 AND 3 */
+
+.cert-card.cert-blue .cert-card-header {
+  background: #12394c;
+  color: #ffffff;
 }
 
-.cert-blue h3 {
-  color: var(--pact-blue-dark);
+.cert-card.cert-blue h3 {
+  color: #12394c;
 }
 
-.cert-blue .cert-footer {
-  background: rgba(0, 32, 48, 0.10);
-  color: var(--pact-blue-dark);
+.cert-card.cert-blue .cert-footer {
+  background: rgba(18, 57, 76, 0.10);
+  color: #12394c;
 }
 
-/* RED */
-.cert-red .cert-card-header {
+.cert-card.cert-blue .cert-icon {
+  background: rgba(18, 57, 76, 0.10);
+}
+
+/* RED — LEVELS 2 AND 4 */
+
+.cert-card.cert-red .cert-card-header {
   background: var(--pact-red);
+  color: #ffffff;
 }
 
-.cert-red h3 {
+.cert-card.cert-red h3 {
   color: var(--pact-red);
 }
 
-.cert-red .cert-footer {
+.cert-card.cert-red .cert-footer {
   background: rgba(160, 32, 16, 0.10);
   color: var(--pact-red);
 }
 
-.cert-red .cert-icon {
+.cert-card.cert-red .cert-icon {
   background: rgba(160, 32, 16, 0.10);
 }
 
@@ -3858,26 +3864,6 @@ html:not([data-frequency-view='technical'])
   font-size: 0.9rem;
 }
 
-/* -------------------------
-   Sidebar Bolding
--------------------------- */
-.theme-doc-sidebar-container
-  > .menu
-  > .menu__list
-  > .menu__list-item
-  > .menu__link,
-.theme-doc-sidebar-container
-  > .menu
-  > .menu__list
-  > .menu__list-item
-  > .menu__list-item-collapsible
-  > .menu__link {
-  font-weight: 700;
-}
-.theme-doc-sidebar-menu > .menu__list-item > .menu__link,
-.theme-doc-sidebar-menu > .menu__list-item > .menu__list-item-collapsible > .menu__link {
-  font-weight: 700;
-}
 
 /* =========================
    TRAINING EXERCISES
@@ -5098,6 +5084,7 @@ html[data-theme='dark'] .current-announcements .announcement-divider {
 
 
 
+
 /* =========================================
    RADIO SERVICES & BAND PLANS
    ========================================= */
@@ -5430,9 +5417,9 @@ html[data-theme='dark'] .current-announcements .announcement-divider {
   margin: 0 !important;
   padding: 0.55rem 0.95rem !important;
 
-  background: var(--ifm-color-primary);
+  background: var(--pact-red);
   color: #ffffff;
-  border: 1px solid var(--ifm-color-primary);
+  border: 1px solid var(--pact-red);
   border-radius: 7px;
 
   font-family: inherit;
@@ -5449,13 +5436,13 @@ html[data-theme='dark'] .current-announcements .announcement-divider {
 }
 
 .radio-service-card__actions button.radio-frequency-button:hover {
-  background: var(--ifm-color-primary-dark);
-  border-color: var(--ifm-color-primary-dark);
+  background: color-mix(in srgb, var(--pact-red) 85%, black);
+  border-color: color-mix(in srgb, var(--pact-red) 85%, black);
   color: #ffffff;
 }
 
 .radio-service-card__actions button.radio-frequency-button:focus-visible {
-  outline: 2px solid var(--ifm-color-primary);
+  outline: 2px solid var(--pact-red);
   outline-offset: 3px;
 }
 
@@ -5874,9 +5861,6 @@ html[data-theme='dark'] .current-announcements .announcement-divider {
     font-size: 1.4rem;
   }
 }
-
-
-
 
 
 /* =========================================
@@ -6904,3 +6888,6796 @@ html[data-theme='dark'] .current-announcements .announcement-divider {
   }
 }
 
+
+
+
+
+/* =========================================
+   PACT DOCUMENTATION DESIGN SYSTEM
+
+   Applies to Docusaurus documentation pages.
+   Compact navy navbar remains unchanged.
+   Specialized PACT widgets retain their
+   existing layout and component styles.
+   ========================================= */
+
+:root {
+  --pact-doc-title: #14283c;
+  --pact-doc-text: #435769;
+  --pact-doc-muted: #667888;
+  --pact-doc-accent: #a32c37;
+  --pact-doc-border: #dfe6eb;
+  --pact-doc-surface: #f9fafb;
+  --pact-doc-hover: #eaf0f3;
+  --pact-doc-active-bg: #f3e9eb;
+}
+
+/* Sidebar: softly separated navigation */
+.theme-doc-sidebar-container {
+  background: var(--pact-doc-surface);
+  border-right: 1px solid var(--pact-doc-border) !important;
+}
+
+.theme-doc-sidebar-menu {
+  padding: 1rem .75rem 2rem;
+}
+
+.theme-doc-sidebar-menu .menu__link {
+  color: var(--pact-doc-text);
+  font-size: .92rem;
+  font-weight: 500;
+  line-height: 1.45;
+  border-radius: 5px;
+  transition: color .18s ease, background-color .18s ease;
+}
+
+.theme-doc-sidebar-menu .menu__link:hover,
+.theme-doc-sidebar-menu .menu__list-item-collapsible:hover {
+  color: var(--pact-doc-title);
+  background: var(--pact-doc-hover);
+}
+
+.theme-doc-sidebar-menu .menu__link--sublist {
+  font-weight: 700;
+  color: var(--pact-doc-title);
+}
+
+.theme-doc-sidebar-menu .menu__link--active:not(.menu__link--sublist) {
+  color: var(--pact-doc-accent);
+  background: var(--pact-doc-active-bg);
+  font-weight: 700;
+  border-left: 3px solid var(--pact-doc-accent);
+  padding-left: calc(var(--ifm-menu-link-padding-horizontal) - 3px);
+}
+
+/* Reading typography: direct documentation headings only,
+   avoiding headings inside custom cards and widgets */
+.theme-doc-markdown {
+  color: var(--pact-doc-text);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.theme-doc-markdown > header h1,
+.theme-doc-markdown > h1 {
+  color: var(--pact-doc-title);
+  font-family: var(--ifm-font-family-base);
+  font-size: clamp(2.1rem, 3vw, 2.7rem);
+  font-weight: 700;
+  letter-spacing: -.025em;
+  line-height: 1.2;
+  margin-bottom: 1.45rem;
+}
+
+.theme-doc-markdown > header:has(h1)::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--pact-doc-accent);
+  border-radius: 2px;
+  margin: -.65rem 0 1.6rem;
+}
+
+.theme-doc-markdown > h1::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: var(--pact-doc-accent);
+  border-radius: 2px;
+  margin-top: 1rem;
+}
+
+.theme-doc-markdown > h2 {
+  color: var(--pact-doc-title);
+  font-size: 1.68rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -.015em;
+  margin-top: 2.45rem;
+  margin-bottom: 1rem;
+}
+
+.theme-doc-markdown > h3 {
+  color: var(--pact-doc-title);
+  font-size: 1.28rem;
+  font-weight: 650;
+  line-height: 1.35;
+  margin-top: 1.85rem;
+  margin-bottom: .8rem;
+}
+
+.theme-doc-markdown > p,
+.theme-doc-markdown > ul,
+.theme-doc-markdown > ol {
+  line-height: 1.75;
+}
+
+.theme-doc-markdown > hr {
+  border: 0;
+  border-top: 1px solid var(--pact-doc-border);
+  margin: 2rem 0;
+}
+
+/* Breadcrumbs and in-page navigation */
+.theme-doc-breadcrumbs .breadcrumbs__link {
+  color: var(--pact-doc-muted);
+  font-size: .84rem;
+}
+
+.theme-doc-breadcrumbs .breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--pact-doc-accent);
+  background: transparent;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link {
+  color: var(--pact-doc-muted);
+  font-size: .85rem;
+}
+
+.theme-doc-toc-desktop .table-of-contents__link--active,
+.theme-doc-toc-desktop .table-of-contents__link:hover {
+  color: var(--pact-doc-accent);
+}
+
+/* Standard tables: avoid custom interactive tables */
+.theme-doc-markdown > table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: .93rem;
+}
+
+
+/* Standard documentation tables — gray headers */
+
+.theme-doc-markdown > table th {
+  background: #f1f3f5;
+  color: #14283c;
+  padding: 0.75rem 1rem;
+  border-color: var(--pact-doc-border, #e5eaf0);
+  font-weight: 700;
+}
+
+
+.theme-doc-markdown > table td {
+  padding: .75rem 1rem;
+  border-color: var(--pact-doc-border);
+}
+
+.theme-doc-markdown > table tbody tr:nth-child(even) td {
+  background: var(--pact-doc-surface);
+}
+
+/* Bottom previous / next navigation */
+.pagination-nav__link {
+  border-radius: 6px;
+  border: 1px solid var(--pact-doc-border);
+  box-shadow: none;
+}
+
+.pagination-nav__label {
+  color: var(--pact-doc-title);
+  font-weight: 650;
+}
+
+/* =========================================
+   ABOUT PACT PAGE
+   ========================================= */
+
+/* -----------------------------------------
+   Introduction
+   ----------------------------------------- */
+
+.pact-about-intro {
+  font-size: 1.04rem;
+  line-height: 1.85;
+  margin-bottom: 2rem;
+}
+
+/* -----------------------------------------
+   Mission Statement
+   ----------------------------------------- */
+
+.pact-about-mission {
+  background: #fcfbfa;
+  border: 1px solid #e5eaf0;
+  border-left: 4px solid var(--pact-doc-accent);
+  border-radius: 5px;
+
+  padding: 1.4rem 1.6rem;
+  margin: 1rem 0 2.3rem;
+}
+
+.pact-about-mission-label {
+  color: var(--pact-doc-accent);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  margin-bottom: 0.7rem;
+}
+
+.pact-about-mission p {
+  color: var(--pact-doc-text);
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* =========================================
+   WHAT WE DO
+   Clean Row-Based Layout
+   ========================================= */
+
+.pact-about-service-list {
+  margin: 1.25rem 0 2.75rem;
+}
+
+/* Individual service rows */
+
+.pact-about-service-row {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid var(--pact-doc-border);
+}
+
+.pact-about-service-row:first-child {
+  padding-top: 0.5rem;
+}
+
+.pact-about-service-row:last-child {
+  border-bottom: none;
+}
+
+/* -----------------------------------------
+   Icon + Heading
+   ----------------------------------------- */
+
+.pact-about-service-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  margin-bottom: 0.5rem;
+}
+
+.pact-about-row-icon {
+  flex-shrink: 0;
+
+  width: 23px;
+  height: 23px;
+
+  color: var(--pact-doc-accent);
+}
+
+/* Heading */
+
+.pact-about-service-heading h3 {
+  color: var(--pact-doc-title);
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.4;
+
+  margin: 0;
+  padding: 0;
+}
+
+/* Description */
+
+.pact-about-service-row p {
+  color: var(--pact-doc-text);
+  font-size: 0.96rem;
+  line-height: 1.75;
+
+  margin: 0;
+}
+
+/* =========================================
+   LIGHTER DOCUMENTATION SURFACES
+   ========================================= */
+
+:root {
+  --pact-doc-surface: #f9fafb;
+  --pact-doc-border: #e5eaf0;
+}
+
+/* -----------------------------------------
+   Documentation Sidebar
+   ----------------------------------------- */
+
+.theme-doc-sidebar-container {
+  background: var(--pact-doc-surface);
+  border-right: 1px solid var(--pact-doc-border) !important;
+}
+
+/* Sidebar Hover */
+
+.theme-doc-sidebar-menu .menu__link:hover {
+  background: #f0f3f6;
+}
+
+/* Active Sidebar Page */
+
+.theme-doc-sidebar-menu
+.menu__link--active:not(.menu__link--sublist) {
+  background: #f9f0f1;
+  border-left-color: #a32c37;
+  color: #a32c37 !important;
+}
+
+/* =========================================
+   DOCUMENTATION DARK MODE
+   ========================================= */
+
+html[data-theme='dark'] {
+  --pact-doc-title: #e0eaf2;
+  --pact-doc-text: #c4d1dc;
+  --pact-doc-muted: #a4b4c1;
+  --pact-doc-accent: #ed9aa2;
+  --pact-doc-border: #344a5b;
+  --pact-doc-surface: #172c3c;
+  --pact-doc-hover: #213c50;
+  --pact-doc-active-bg: #422b36;
+}
+
+/* Dark Mode Sidebar */
+
+html[data-theme='dark'] .theme-doc-sidebar-container {
+  background: var(--pact-doc-surface);
+  border-right-color: var(--pact-doc-border) !important;
+}
+
+html[data-theme='dark']
+.theme-doc-sidebar-menu .menu__link:hover {
+  background: #213c50;
+}
+
+html[data-theme='dark']
+.theme-doc-sidebar-menu
+.menu__link--active:not(.menu__link--sublist) {
+  background: #422b36;
+  border-left-color: #ed9aa2;
+  color: #ed9aa2 !important;
+}
+
+/* Dark Mode Mission Statement */
+
+html[data-theme='dark'] .pact-about-mission {
+  background: #1d3445;
+  border: 1px solid #344a5b;
+  border-left: 4px solid #ed9aa2;
+}
+
+html[data-theme='dark'] .pact-about-mission p {
+  color: #c4d1dc;
+}
+
+
+/* Dark Mode Documentation Tables */
+
+html[data-theme='dark'] .theme-doc-markdown > table th {
+  background: #213e52;
+  color: #ffffff;
+}
+
+html[data-theme='dark'] .theme-doc-markdown > table td {
+  color: var(--pact-doc-text);
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* Tablet */
+
+@media (max-width: 996px) {
+  .theme-doc-markdown > header h1,
+  .theme-doc-markdown > h1 {
+    font-size: 2.05rem;
+  }
+
+  .theme-doc-markdown > h2 {
+    font-size: 1.45rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .pact-about-intro {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .pact-about-mission {
+    padding: 1.1rem 1.25rem;
+  }
+
+  .pact-about-service-list {
+    margin: 1rem 0 2rem;
+  }
+
+  .pact-about-service-row {
+    padding: 1.15rem 0;
+  }
+
+  .pact-about-service-heading {
+    gap: 0.6rem;
+  }
+
+  .pact-about-service-heading h3 {
+    font-size: 1.05rem;
+  }
+
+  .pact-about-service-row p {
+    font-size: 0.94rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-doc-sidebar-menu .menu__link {
+    transition: none;
+  }
+}
+
+/* =========================================
+   PACT HOMEPAGE NAVIGATION HEADER
+   Professional Public Safety Design
+
+   Applies ONLY to the homepage.
+   Other pages retain standard Docusaurus navigation.
+   ========================================= */
+
+/* -----------------------------------------
+   Homepage Variables
+   ----------------------------------------- */
+
+body:has(.pact-homepage) {
+  --pact-header-navy: #14283c;
+  --pact-header-red: #a32c37;
+  --pact-header-text: #34485a;
+  --pact-header-muted: #657381;
+  --pact-header-white: #ffffff;
+
+  --ifm-navbar-height: 142px;
+}
+
+/* -----------------------------------------
+   Main Navigation Bar
+   ----------------------------------------- */
+
+body:has(.pact-homepage) .navbar {
+  position: relative;
+  height: var(--ifm-navbar-height);
+  padding: 32px 2rem 0;
+
+  background: var(--pact-header-white);
+  border-bottom: 4px solid var(--pact-header-red);
+  box-shadow: none;
+}
+
+
+/* =========================================
+   HOMEPAGE TOP NAVY INFORMATION BAR
+   ========================================= */
+
+body:has(.pact-homepage) .navbar::before {
+  content: 'PROVO, UTAH';
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 32px;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  background: #14283c;
+  color: #ffffff;
+
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+
+  pointer-events: none;
+}
+
+/* -----------------------------------------
+   Navbar Layout
+   ----------------------------------------- */
+
+body:has(.pact-homepage) .navbar__inner {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  flex-wrap: nowrap;
+}
+
+body:has(.pact-homepage) .navbar__items {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+}
+
+body:has(.pact-homepage) .navbar__items--right {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+
+
+/* =========================================
+   HOMEPAGE ORGANIZATION NAME
+   Two-line title without repeated PACT
+   ========================================= */
+
+/* Hide the default Docusaurus "Home" text */
+
+body:has(.pact-homepage) .navbar .navbar__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 0 !important;
+  line-height: 1.15;
+  white-space: normal;
+}
+
+/* First line */
+
+body:has(.pact-homepage) .navbar .navbar__title::before {
+  content: 'Provo Auxiliary';
+
+  display: block;
+  color: #14283c;
+
+  font-family: var(--ifm-font-family-base);
+  font-size: 1.75rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Second line */
+
+body:has(.pact-homepage) .navbar .navbar__title::after {
+  content: 'Communications Team';
+
+  display: block;
+  margin-top: 0.1rem;
+
+  color: #14283c;
+
+  font-family: var(--ifm-font-family-base);
+  font-size: 1.75rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Tablet */
+
+@media (max-width: 996px) {
+  body:has(.pact-homepage) .navbar .navbar__title::before,
+  body:has(.pact-homepage) .navbar .navbar__title::after {
+    font-size: 1.3rem;
+  }
+}
+
+/* Small mobile screens */
+
+@media (max-width: 480px) {
+  body:has(.pact-homepage) .navbar .navbar__title::before,
+  body:has(.pact-homepage) .navbar .navbar__title::after {
+    font-size: 1.05rem;
+  }
+}
+
+
+/* =========================================
+   HOMEPAGE NAVIGATION LINKS
+   ========================================= */
+
+body:has(.pact-homepage) .navbar .navbar__link,
+body:has(.pact-homepage) .navbar .navbar__link:visited {
+  color: #34485a !important;
+  font-family: var(--ifm-font-family-base);
+
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+/* Hover and active links */
+
+body:has(.pact-homepage) .navbar .navbar__link:hover,
+body:has(.pact-homepage) .navbar .navbar__link--active,
+body:has(.pact-homepage) .navbar .navbar__link--active:visited {
+  color: #a32c37 !important;
+}
+
+
+/* -----------------------------------------
+   Get Involved Navigation Button
+   Targets the last right-aligned link
+   ----------------------------------------- */
+
+body:has(.pact-homepage)
+.navbar__items--right > .navbar__item:last-child {
+  border: 1px solid var(--pact-header-red);
+  border-radius: 4px;
+  margin-left: 0.5rem;
+
+  color: var(--pact-header-red) !important;
+}
+
+body:has(.pact-homepage)
+.navbar__items--right > .navbar__item:last-child:hover {
+  background: #faf0f1;
+}
+
+/* -----------------------------------------
+   Dropdown Menus
+   ----------------------------------------- */
+
+body:has(.pact-homepage) .navbar .dropdown__menu {
+  background: #ffffff;
+  border: 1px solid #e1e5e9;
+  border-radius: 6px;
+
+  box-shadow: 0 8px 24px rgba(15, 35, 55, 0.1);
+}
+
+body:has(.pact-homepage) .navbar .dropdown__link {
+  color: var(--pact-header-text) !important;
+
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+body:has(.pact-homepage) .navbar .dropdown__link:hover,
+body:has(.pact-homepage) .navbar .dropdown__link--active {
+  color: var(--pact-header-red) !important;
+  background: #f5f7f9;
+}
+
+/* -----------------------------------------
+   Dark Mode
+   Maintain Consistent Homepage Branding
+   ----------------------------------------- */
+
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar {
+  background: var(--pact-header-white);
+}
+
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .navbar__title {
+  color: var(--pact-header-navy) !important;
+}
+
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .navbar__link,
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .navbar__link:visited {
+  color: var(--pact-header-text) !important;
+}
+
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .navbar__link:hover,
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .navbar__link--active {
+  color: var(--pact-header-red) !important;
+}
+
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .dropdown__menu {
+  background: #ffffff;
+}
+
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .dropdown__link {
+  color: var(--pact-header-text) !important;
+}
+
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .dropdown__link:hover,
+html[data-theme='dark']
+body:has(.pact-homepage) .navbar .dropdown__link--active {
+  color: var(--pact-header-red) !important;
+}
+
+/* -----------------------------------------
+   Tablet and Mobile
+   ----------------------------------------- */
+
+@media (max-width: 996px) {
+
+  body:has(.pact-homepage) {
+    --ifm-navbar-height: 106px;
+  }
+
+  body:has(.pact-homepage) .navbar {
+    padding: 32px 1rem 0;
+  }
+
+  body:has(.pact-homepage) .navbar::before {
+    height: 32px;
+    padding: 0 1rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+  }
+
+  body:has(.pact-homepage) .navbar__logo {
+    height: 48px;
+  }
+
+  body:has(.pact-homepage) .navbar__brand {
+    gap: 0.6rem;
+    margin-right: 0.5rem;
+  }
+
+  body:has(.pact-homepage) .navbar .navbar__title {
+    font-size: 1.3rem;
+  }
+
+  body:has(.pact-homepage) .navbar .navbar__title::after {
+    margin-top: 0.2rem;
+    font-size: 0.48rem;
+    letter-spacing: 0.025em;
+  }
+
+  body:has(.pact-homepage) .navbar .navbar__toggle,
+  body:has(.pact-homepage) .navbar .navbar__toggle svg {
+    color: var(--pact-header-navy);
+  }
+}
+
+/* -----------------------------------------
+   Small Mobile Screens
+   ----------------------------------------- */
+
+@media (max-width: 480px) {
+
+  body:has(.pact-homepage) .navbar__logo {
+    height: 44px;
+  }
+
+  body:has(.pact-homepage) .navbar .navbar__title {
+    font-size: 1.15rem;
+  }
+
+  body:has(.pact-homepage) .navbar .navbar__title::after {
+    content: 'PROVO AUXILIARY COMMUNICATIONS';
+    font-size: 0.43rem;
+  }
+
+  body:has(.pact-homepage) .navbar::before {
+    font-size: 0.55rem;
+  }
+}
+
+/* -----------------------------------------
+   Reduced Motion
+   ----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  body:has(.pact-homepage) .navbar .navbar__link {
+    transition: none;
+  }
+}
+
+/* =========================================
+   PACT HOMEPAGE BRAND OVERRIDES
+   ========================================= */
+
+/* Replace the default blue logo with the
+   regular PACT logo on the homepage only. */
+
+body:has(.pact-homepage) .navbar__logo img {
+  visibility: hidden;
+}
+
+body:has(.pact-homepage) .navbar__logo {
+  background-image: url('/img/pact-logo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  width: 76px;
+  height: 76px;
+}
+
+/* Display PACT instead of Home on homepage */
+
+body:has(.pact-homepage) .navbar__title {
+  font-size: 0 !important;
+}
+
+/* Homepage title */
+
+body:has(.pact-homepage) .navbar__title::before {
+  content: 'PACT';
+
+  display: block;
+  color: #14283c;
+
+  font-family: var(--ifm-font-family-base);
+  font-size: 1.9rem;
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: 0.035em;
+}
+
+/* Homepage organization subtitle */
+
+body:has(.pact-homepage) .navbar__title::after {
+  content: 'PROVO AUXILIARY COMMUNICATIONS TEAM';
+
+  display: block;
+  margin-top: 0.35rem;
+
+  color: #657381;
+  font-size: 0.62rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: 0.075em;
+}
+
+/* Mobile sizing */
+
+@media (max-width: 996px) {
+  body:has(.pact-homepage) .navbar__logo {
+    width: 48px;
+    height: 48px;
+  }
+
+  body:has(.pact-homepage) .navbar__title::before {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body:has(.pact-homepage) .navbar__logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  body:has(.pact-homepage) .navbar__title::before {
+    font-size: 1.15rem;
+  }
+}
+
+
+/* =========================================
+   PACT NAVIGATION ALIGNMENT
+   ========================================= */
+
+/* Standard documentation pages:
+   Keep menu items immediately after Home */
+
+body:not(:has(.pact-homepage)) .navbar__items:first-child {
+  justify-content: flex-start;
+}
+
+body:not(:has(.pact-homepage)) .navbar__brand {
+  margin-right: 1.25rem;
+}
+
+/* Homepage:
+   Push menu links to the right */
+
+body:has(.pact-homepage) .navbar__items:first-child {
+  width: 100%;
+  flex: 1;
+}
+
+body:has(.pact-homepage) .navbar__items:first-child
+.navbar__item:not(.navbar__brand) {
+  /* Normal navigation link appearance */
+  flex-shrink: 0;
+}
+
+body:has(.pact-homepage) .navbar__brand {
+  margin-right: auto;
+}
+
+
+/* =========================================
+   PACT PRIMARY BUTTON
+   Matches Homepage Get Involved Button
+   ========================================= */
+
+.pact-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.75rem;
+  padding: 0.85rem 1.4rem;
+
+  background: #a32c37;
+  border: 1px solid #a32c37;
+  border-radius: 5px;
+
+  color: #ffffff !important;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+
+  text-decoration: none !important;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pact-primary-button:hover {
+  background: #85232d;
+  border-color: #85232d;
+  color: #ffffff !important;
+}
+
+.pact-primary-button:focus-visible {
+  outline: 3px solid #a32c37;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pact-primary-button {
+    transition: none;
+  }
+}
+
+/* =========================================
+   PACT GET INVOLVED PAGE
+   ========================================= */
+
+/* -----------------------------------------
+   Membership Application
+   ----------------------------------------- */
+
+.pact-join-application {
+  background: #fcfbfa;
+  border: 1px solid #e5eaf0;
+  border-left: 4px solid #a32c37;
+  border-radius: 5px;
+
+  padding: 1.6rem 1.75rem;
+  margin: 2rem 0 1.5rem;
+}
+
+.pact-join-application h2 {
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+
+  margin: 0 0 0.75rem;
+}
+
+.pact-join-application p {
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.98rem;
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+.pact-join-application p strong {
+  font-weight: 500;
+}
+
+/* -----------------------------------------
+   Button Alignment
+   ----------------------------------------- */
+
+.pact-join-button-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+/* Let the existing PACT button class
+   control the button's actual dimensions. */
+
+.pact-join-button-row .pact-primary-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  gap: 0.65rem;
+  width: auto !important;
+  max-width: 100%;
+
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.pact-join-button-row .pact-primary-button svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+/* -----------------------------------------
+   Membership Requirements
+   ----------------------------------------- */
+
+.pact-join-requirements {
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0 2.5rem;
+
+  background: var(--pact-doc-surface, #f9fafb);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 5px;
+}
+
+.pact-join-requirements h3 {
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.05rem;
+  font-weight: 700;
+
+  margin: 0 0 0.4rem;
+}
+
+.pact-join-requirements p {
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.96rem;
+  line-height: 1.65;
+
+  margin: 0;
+}
+
+
+
+/* =========================================
+   GET INVOLVED — FREQUENTLY ASKED QUESTIONS
+   Clean Expanding Box Design
+   ========================================= */
+
+.theme-doc-markdown .pact-join-faq {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  margin: 1.25rem 0 2.75rem;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+}
+
+/* =========================================
+   INDIVIDUAL FAQ BOXES
+   ========================================= */
+
+.theme-doc-markdown .pact-join-faq details {
+  position: relative;
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  background: var(
+    --ifm-background-surface-color,
+    #ffffff
+  ) !important;
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+
+  border-radius: 6px !important;
+
+  box-shadow: none !important;
+  overflow: hidden;
+
+  transition: border-color 0.2s ease;
+}
+
+/* Remove old special first-row border */
+
+.theme-doc-markdown
+.pact-join-faq details:first-child {
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* Highlight expanded box */
+
+.theme-doc-markdown .pact-join-faq details[open] {
+  border-color:
+    var(--pact-doc-accent, #a32c37) !important;
+}
+
+/* =========================================
+   QUESTION HEADING
+   ========================================= */
+
+.theme-doc-markdown .pact-join-faq summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1.25rem;
+  padding: 1.05rem 1.25rem;
+
+  margin: 0;
+
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.5;
+
+  cursor: pointer;
+  list-style: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove native and legacy markers */
+
+.theme-doc-markdown
+.pact-join-faq summary::marker {
+  content: '' !important;
+}
+
+.theme-doc-markdown
+.pact-join-faq summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.theme-doc-markdown
+.pact-join-faq summary::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Plus / minus indicator */
+
+.theme-doc-markdown
+.pact-join-faq summary::after {
+  content: '+' !important;
+
+  display: block !important;
+  position: static !important;
+
+  flex-shrink: 0;
+  width: 22px;
+
+  color: var(--pact-doc-accent, #a32c37);
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1;
+
+  text-align: center;
+  background: none !important;
+  border: none !important;
+  transform: none !important;
+}
+
+.theme-doc-markdown
+.pact-join-faq details[open] > summary::after {
+  content: '−' !important;
+}
+
+/* Question hover */
+
+.theme-doc-markdown
+.pact-join-faq summary:hover {
+  background: #fafbfc !important;
+}
+
+/* Keyboard accessibility */
+
+.theme-doc-markdown
+.pact-join-faq summary:focus-visible {
+  outline: 2px solid
+    var(--pact-doc-accent, #a32c37);
+  outline-offset: -3px;
+}
+
+/* =========================================
+   EXPANDED ANSWER
+   ========================================= */
+
+.theme-doc-markdown .pact-join-faq-answer {
+  padding: 1rem 1.25rem 1.25rem;
+
+  margin: 0;
+
+  background: transparent !important;
+  border: none !important;
+  border-top: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.theme-doc-markdown
+.pact-join-faq-answer p {
+  margin: 0 0 0.8rem;
+}
+
+.theme-doc-markdown
+.pact-join-faq-answer p:last-child,
+.theme-doc-markdown
+.pact-join-faq-answer ul:last-child {
+  margin-bottom: 0;
+}
+
+.theme-doc-markdown
+.pact-join-faq-answer ul {
+  padding-left: 1.3rem;
+  margin-top: 0.5rem;
+}
+
+.theme-doc-markdown
+.pact-join-faq-answer li {
+  margin-bottom: 0.45rem;
+}
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+html[data-theme='dark']
+.theme-doc-markdown .pact-join-faq details {
+  background: #172c3c !important;
+  border-color: #344a5b !important;
+}
+
+html[data-theme='dark']
+.theme-doc-markdown .pact-join-faq details[open] {
+  border-color: #ed9aa2 !important;
+}
+
+html[data-theme='dark']
+.theme-doc-markdown .pact-join-faq summary {
+  color: #e0eaf2;
+}
+
+html[data-theme='dark']
+.theme-doc-markdown .pact-join-faq summary:hover {
+  background: #213c50 !important;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 650px) {
+  .theme-doc-markdown .pact-join-faq {
+    gap: 0.6rem;
+  }
+
+  .theme-doc-markdown .pact-join-faq summary {
+    padding: 0.9rem 1rem;
+    font-size: 0.96rem;
+  }
+
+  .theme-doc-markdown .pact-join-faq-answer {
+    padding: 0.9rem 1rem 1.1rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-doc-markdown .pact-join-faq details {
+    transition: none;
+  }
+}
+
+/* =========================================
+   GET INVOLVED FAQ — SPACING & DIVIDER FIX
+   ========================================= */
+
+/* Remove legacy blue borders and backgrounds */
+
+.theme-doc-markdown .pact-join-faq details,
+.theme-doc-markdown .pact-join-faq details[open] {
+  background: var(--ifm-background-surface-color) !important;
+  box-shadow: none !important;
+}
+
+/* Remove the blue line from the answer area */
+
+.theme-doc-markdown .pact-join-faq .pact-join-faq-answer {
+  border-top: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+
+  border-bottom: none !important;
+  background: transparent !important;
+}
+
+/* Remove any inherited blue summary borders */
+
+.theme-doc-markdown .pact-join-faq details summary {
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Make the question row more compact */
+
+.theme-doc-markdown .pact-join-faq details > summary {
+  min-height: 0 !important;
+  height: auto !important;
+
+  padding: 0.85rem 1.25rem !important;
+  margin: 0 !important;
+
+  line-height: 1.35 !important;
+}
+
+/* Make expanded answers more compact */
+
+.theme-doc-markdown .pact-join-faq .pact-join-faq-answer {
+  padding: 0.85rem 1.25rem 1.05rem !important;
+  margin: 0 !important;
+}
+
+/* Eliminate extra paragraph spacing */
+
+.theme-doc-markdown .pact-join-faq-answer p {
+  margin-top: 0 !important;
+  margin-bottom: 0.7rem !important;
+}
+
+.theme-doc-markdown .pact-join-faq-answer p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Remove legacy generated separators */
+
+.theme-doc-markdown .pact-join-faq details::before,
+.theme-doc-markdown .pact-join-faq details::after,
+.theme-doc-markdown .pact-join-faq summary::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Keep the red plus/minus indicator */
+
+.theme-doc-markdown .pact-join-faq summary::after {
+  content: '+' !important;
+}
+
+.theme-doc-markdown .pact-join-faq details[open] > summary::after {
+  content: '−' !important;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .theme-doc-markdown .pact-join-faq details > summary {
+    padding: 0.8rem 1rem !important;
+  }
+
+  .theme-doc-markdown .pact-join-faq .pact-join-faq-answer {
+    padding: 0.75rem 1rem 0.95rem !important;
+  }
+}
+
+
+
+
+
+/* =========================================
+   PACT ACTIVATION PAGE
+   ========================================= */
+
+/* =========================================
+   NOTIFICATION PANELS
+   ========================================= */
+
+.pact-activation-notifications {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.pact-activation-notification {
+  min-width: 0;
+  padding: 1.5rem;
+
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 6px;
+}
+
+.pact-activation-notification-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 1.15rem;
+}
+
+.pact-activation-notification-heading img {
+  display: block;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.pact-activation-notification-heading h3 {
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.pact-activation-notification p {
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+
+.pact-activation-notification p:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================
+   ACTIVATION SEQUENCE
+   Matches Deployment Card Layout
+   ========================================= */
+
+.activation-step-cards {
+  margin: 1.5rem 0 2.75rem;
+}
+
+/* -----------------------------------------
+   SEQUENCE LAYOUT
+   ----------------------------------------- */
+
+.activation-step-cards .cert-progress {
+  align-items: stretch;
+}
+
+/* -----------------------------------------
+   INDIVIDUAL CARDS
+   ----------------------------------------- */
+
+.activation-step-cards .cert-card {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 210px;
+  height: auto;
+
+  padding: 0;
+  overflow: hidden;
+}
+
+/* -----------------------------------------
+   STEP HEADER BARS
+   ----------------------------------------- */
+
+.activation-step-cards .cert-card-header {
+  padding: 0.55rem;
+
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Navy Blue Headers — Steps 1–3 */
+
+.activation-step-cards
+.cert-blue > .cert-card-header {
+  background: #12394c;
+  color: #ffffff;
+}
+
+/* PACT Red Header — Step 4 */
+
+.activation-step-cards
+.cert-red > .cert-card-header {
+  background: #a32116;
+  color: #ffffff;
+}
+
+/* -----------------------------------------
+   CARD TITLES
+   ----------------------------------------- */
+
+.activation-step-cards .cert-card > h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.9rem !important;
+  font-weight: 800;
+  line-height: 1.1;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  margin: 0.55rem 0.35rem 0.2rem;
+  padding: 0 0.25rem;
+
+  min-height: 46px;
+
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+/* Navy Titles — Steps 1–3 */
+
+.activation-step-cards
+.cert-blue > h3 {
+  color: #12394c !important;
+}
+
+/* PACT Red Title — Step 4 */
+
+.activation-step-cards
+.cert-red > h3 {
+  color: var(--pact-red, #a32116) !important;
+}
+
+/* -----------------------------------------
+   CARD DESCRIPTIONS
+   ----------------------------------------- */
+
+.activation-step-cards .cert-card > p {
+  font-size: 0.9rem;
+  line-height: 1.3;
+
+  text-align: center;
+
+  margin: 0;
+  padding: 0 0.85rem 0.85rem;
+}
+
+/* -----------------------------------------
+   ARROWS BETWEEN CARDS
+   ----------------------------------------- */
+
+.activation-step-cards .cert-arrow {
+  align-self: center;
+  flex-shrink: 0;
+  color: #082b3b;
+}
+
+/* =========================================
+   EOC / ICS DIAGRAM
+   ========================================= */
+
+.pact-activation-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1.75rem auto 2rem;
+  padding: 0;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.pact-activation-diagram img {
+  display: block;
+
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* Tablet */
+
+@media (max-width: 996px) {
+  .activation-step-cards .cert-card {
+    min-height: 190px;
+  }
+
+  .activation-step-cards .cert-card > h3 {
+    font-size: 0.82rem !important;
+    min-height: 42px;
+  }
+
+  .activation-step-cards .cert-card > p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Phone */
+
+@media (max-width: 768px) {
+  .pact-activation-notifications {
+    grid-template-columns: 1fr;
+  }
+
+  .pact-activation-notification {
+    padding: 1.2rem;
+  }
+
+  .pact-activation-diagram img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .activation-step-cards .cert-card {
+    min-height: auto;
+  }
+
+  .activation-step-cards .cert-card > h3 {
+    font-size: 0.95rem !important;
+    min-height: auto;
+  }
+}
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+/* Notification Panels */
+
+html[data-theme='dark']
+.pact-activation-notification {
+  background: var(--ifm-background-surface-color);
+  border-color: var(--pact-doc-border, #344a5b);
+}
+
+/* Card Backgrounds */
+
+html[data-theme='dark']
+.activation-step-cards .cert-card {
+  background: var(--ifm-background-surface-color);
+}
+
+/* Navy Headers */
+
+html[data-theme='dark']
+.activation-step-cards
+.cert-blue > .cert-card-header {
+  background: #12394c;
+  color: #ffffff;
+}
+
+/* Red Header */
+
+html[data-theme='dark']
+.activation-step-cards
+.cert-red > .cert-card-header {
+  background: #a32116;
+  color: #ffffff;
+}
+
+/* Navy Titles */
+
+html[data-theme='dark']
+.activation-step-cards
+.cert-blue > h3 {
+  color: #a6c8dd !important;
+}
+
+/* Red Title */
+
+html[data-theme='dark']
+.activation-step-cards
+.cert-red > h3 {
+  color: #ed9aa2 !important;
+}
+
+/* Arrows */
+
+html[data-theme='dark']
+.activation-step-cards .cert-arrow {
+  color: #a6c8dd;
+}
+
+
+
+/* =========================================
+   DEPLOYMENT — ACC TABLE
+   ========================================= */
+
+.pact-acc-table {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.25rem 0 1.75rem;
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 6px;
+}
+
+.pact-acc-table table {
+  display: table;
+  width: 100%;
+  min-width: 610px;
+  margin: 0;
+  border: none;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+/* -----------------------------------------
+   HEADER
+   ----------------------------------------- */
+
+.pact-acc-table thead {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.pact-acc-table th {
+  color: var(--pact-doc-title, #14283c);
+  font-weight: 700;
+  text-align: left;
+  vertical-align: middle;
+
+  padding: 0.85rem 0.9rem;
+
+  border: none;
+  border-bottom: 1px solid var(--pact-doc-border, #e5eaf0);
+}
+
+/* Vertical header dividers */
+
+.pact-acc-table th:not(:last-child) {
+  border-right: 1px solid var(--pact-doc-border, #e5eaf0);
+}
+
+/* -----------------------------------------
+   TABLE ROWS
+   ----------------------------------------- */
+
+.pact-acc-table td {
+  padding: 0.7rem 0.9rem;
+  vertical-align: middle;
+
+  border: none;
+  border-bottom: 1px solid var(--pact-doc-border, #e5eaf0);
+}
+
+/* Vertical column dividers */
+
+.pact-acc-table td:not(:last-child) {
+  border-right: 1px solid var(--pact-doc-border, #e5eaf0);
+}
+
+/* Remove redundant bottom border */
+
+.pact-acc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Row hover */
+
+.pact-acc-table tbody tr:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* First column */
+
+.pact-acc-table td:first-child {
+  font-weight: 600;
+  color: var(--pact-doc-title, #14283c);
+}
+
+/* Second column */
+
+.pact-acc-table td:nth-child(2) {
+  white-space: nowrap;
+}
+
+/* -----------------------------------------
+   DISTRICT LABELS
+   ----------------------------------------- */
+
+.pact-acc-district {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+
+  font-size: 0.78rem;
+  font-weight: 650;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+
+/* District 1 — North */
+
+.pact-acc-d1 {
+  background: #e4f3e7;
+  color: #216134;
+}
+
+/* District 2 — East */
+
+.pact-acc-d2 {
+  background: #fff3d6;
+  color: #795600;
+}
+
+/* District 3 — West */
+
+.pact-acc-d3 {
+  background: #fbe7e7;
+  color: #922d2d;
+}
+
+/* District 4 — Northwest */
+
+.pact-acc-d4 {
+  background: #eee6fa;
+  color: #59408c;
+}
+
+/* District 5 — Central */
+
+.pact-acc-d5 {
+  background: #e5edfc;
+  color: #244c91;
+}
+
+/* -----------------------------------------
+   DARK MODE
+   ----------------------------------------- */
+
+html[data-theme='dark'] .pact-acc-table th,
+html[data-theme='dark'] .pact-acc-table td:first-child {
+  color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark'] .pact-acc-d1 {
+  background: #213f2d;
+  color: #b5e7c0;
+}
+
+html[data-theme='dark'] .pact-acc-d2 {
+  background: #493b1e;
+  color: #f4df9b;
+}
+
+html[data-theme='dark'] .pact-acc-d3 {
+  background: #4d2929;
+  color: #f3b8b8;
+}
+
+html[data-theme='dark'] .pact-acc-d4 {
+  background: #362b4b;
+  color: #d4c1f6;
+}
+
+html[data-theme='dark'] .pact-acc-d5 {
+  background: #243957;
+  color: #bed6fa;
+}
+
+/* =========================================
+   DEPLOYMENT — READY TO DEPLOY PANEL
+   ========================================= */
+
+.pact-deployment-ready {
+  margin: 2rem 0 2.5rem;
+  padding: 2rem 2.25rem;
+
+  background: #102f40;
+  border: 1px solid #24495d;
+  border-radius: 8px;
+}
+
+.pact-deployment-ready-content {
+  max-width: 720px;
+}
+
+/* Heading */
+
+.pact-deployment-ready h2 {
+  color: #ffffff !important;
+  font-size: 1.55rem;
+  font-weight: 750;
+  line-height: 1.3;
+
+  margin: 0 0 0.85rem;
+  padding: 0;
+  border: none;
+}
+
+/* Description */
+
+.pact-deployment-ready p {
+  color: #dfe9ef;
+  font-size: 0.97rem;
+  line-height: 1.7;
+
+  margin: 0 0 1.4rem;
+}
+
+/* Checklist Button */
+
+.pact-deployment-ready-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+
+  padding: 0.8rem 1.2rem;
+
+  background: #a32c37;
+  border: 1px solid #a32c37;
+  border-radius: 5px;
+
+  color: #ffffff !important;
+  font-size: 0.84rem;
+  font-weight: 750;
+  line-height: 1.3;
+  letter-spacing: 0.015em;
+  text-decoration: none !important;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.pact-deployment-ready-button:hover {
+  background: #87232d;
+  border-color: #87232d;
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.pact-deployment-ready-button:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .pact-deployment-ready {
+    padding: 1.5rem;
+  }
+
+  .pact-deployment-ready h2 {
+    font-size: 1.35rem;
+  }
+
+  .pact-deployment-ready-button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    font-size: 0.78rem;
+  }
+}
+
+
+/* =========================================
+   PACT FREQUENCIES PAGE
+   ========================================= */
+
+/* =========================================
+   FREQUENCY MAP DOWNLOAD
+   ========================================= */
+
+.pact-frequency-download {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0 2rem;
+}
+
+.pact-frequency-download .pact-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  text-align: center;
+}
+
+
+
+
+/* =========================================
+   SIMPLEX TABLE — BADGES AND FREQUENCIES
+   ========================================= */
+
+/* -----------------------------------------
+   DESIGNATION COLUMN
+   ----------------------------------------- */
+
+.pact-frequency-table .pact-frequency-designation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 0.8rem;
+  min-height: 40px;
+
+  margin: 0;
+  padding: 0;
+}
+
+.pact-frequency-table .pact-frequency-designation strong {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  color: var(--pact-doc-title, #14283c);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* -----------------------------------------
+   DISTRICT ABBREVIATION BADGES
+   ----------------------------------------- */
+
+.pact-frequency-table .pact-frequency-tag {
+  box-sizing: border-box;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 44px;
+  width: 44px;
+  min-width: 44px;
+  height: 34px;
+  min-height: 34px;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Corrected abbreviation positioning */
+
+.pact-frequency-table .pact-frequency-tag > span {
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  line-height: 1;
+  transform: translateY(1px);
+}
+
+/* -----------------------------------------
+   BADGE COLORS
+   ----------------------------------------- */
+
+.pact-frequency-table .pact-frequency-tag.pact-frequency-net {
+  background-color: #edf0f3;
+  color: #475569;
+}
+
+.pact-frequency-table .pact-frequency-tag.pact-frequency-d1 {
+  background-color: #e4f3e7;
+  color: #216134;
+}
+
+.pact-frequency-table .pact-frequency-tag.pact-frequency-d2 {
+  background-color: #fff3d6;
+  color: #795600;
+}
+
+.pact-frequency-table .pact-frequency-tag.pact-frequency-d3 {
+  background-color: #eee6fa;
+  color: #59408c;
+}
+
+.pact-frequency-table .pact-frequency-tag.pact-frequency-d4 {
+  background-color: #fbe7e7;
+  color: #922d2d;
+}
+
+.pact-frequency-table .pact-frequency-tag.pact-frequency-d5 {
+  background-color: #e5edfc;
+  color: #244c91;
+}
+
+
+/* =========================================
+   SIMPLEX TABLE — FREQUENCY ALIGNMENT
+   ========================================= */
+
+/* Keep frequency cells as native table cells */
+
+.pact-frequency-table tbody td:nth-child(2) {
+  display: table-cell !important;
+  vertical-align: middle !important;
+  Text-align:center;
+}
+
+/* Align frequency text with designation and purpose */
+
+.pact-frequency-table tbody td .pact-frequency-value {
+  display: inline-block !important;
+
+  width: auto;
+  height: auto;
+  min-height: 0;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.3;
+
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  position: relative;
+  top: 10px;
+}
+
+/* -----------------------------------------
+   ALL TABLE CELLS
+   ----------------------------------------- */
+
+.pact-frequency-table tbody td {
+  vertical-align: middle !important;
+}
+
+/* -----------------------------------------
+   PURPOSE COLUMN
+   ----------------------------------------- */
+
+.pact-frequency-table tbody td:nth-child(3) {
+  color: var(--pact-doc-text, #435769);
+  line-height: 1.4;
+}
+
+/* -----------------------------------------
+   MOBILE
+   ----------------------------------------- */
+
+@media (max-width: 600px) {
+  .pact-frequency-table th,
+  .pact-frequency-table td {
+    padding: 0.8rem 1rem;
+  }
+
+  .pact-frequency-table .pact-frequency-designation {
+    gap: 0.65rem;
+  }
+}
+
+
+/* =========================================
+   PROVO CITY REPEATER PANEL
+   ========================================= */
+
+.pact-repeater-panel {
+  margin: 1.5rem 0 2.5rem;
+  padding: 1.4rem;
+
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+}
+
+/* -----------------------------------------
+   REPEATER HEADER
+   ----------------------------------------- */
+
+.pact-repeater-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+.pact-repeater-panel-header h3 {
+  margin: 0;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.1rem;
+  font-weight: 750;
+}
+
+/* -----------------------------------------
+   REPEATER LOCATION
+   ----------------------------------------- */
+
+.pact-repeater-panel-header .pact-repeater-location {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.85rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.pact-repeater-location svg {
+  display: block;
+  flex: 0 0 16px;
+
+  width: 16px;
+  height: 16px;
+
+  margin: 0;
+  padding: 0;
+
+  color: var(--pact-red, #a32c37);
+}
+
+/* =========================================
+   REPEATER VIEW TOGGLE
+   ========================================= */
+
+.pact-repeater-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: fit-content;
+  max-width: 100%;
+
+  gap: 3px;
+  padding: 4px;
+  margin: 0 auto 1.5rem;
+
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 999px;
+}
+
+.pact-repeater-toggle button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+  min-width: 170px;
+
+  padding: 0.6rem 1.1rem;
+
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+
+  color: var(--pact-doc-text, #435769);
+
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pact-repeater-toggle button:hover:not(.active) {
+  background: var(--ifm-background-surface-color);
+}
+
+.pact-repeater-toggle button.active {
+  background: #12394c;
+  border-color: #12394c;
+  color: #ffffff;
+
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.pact-repeater-toggle button:focus-visible {
+  outline: 2px solid var(--pact-red, #a32c37);
+  outline-offset: 3px;
+}
+
+/* =========================================
+   REPEATER SPECIFICATION GRID
+   ========================================= */
+
+.pact-repeater-panel .pact-repeater-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.pact-repeater-item {
+  min-width: 0;
+  padding: 1rem;
+
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 5px;
+}
+
+/* Specification Labels */
+
+.pact-repeater-label {
+  color: var(--pact-doc-text, #64748b);
+
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.065em;
+
+  margin-bottom: 0.55rem;
+}
+
+/* Frequency Values */
+
+.pact-repeater-value {
+  color: var(--pact-doc-title, #14283c);
+
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Units */
+
+.pact-repeater-unit {
+  margin-top: 0.3rem;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.82rem;
+}
+
+/* =========================================
+   SECONDARY REPEATER SETTINGS
+   ========================================= */
+
+.pact-repeater-settings {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+
+  margin-top: 1rem;
+}
+
+.pact-repeater-settings > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
+
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 5px;
+}
+
+.pact-repeater-settings span {
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.83rem;
+}
+
+.pact-repeater-settings strong {
+  color: var(--pact-doc-title, #14283c);
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* =========================================
+   REPEATER DESCRIPTION
+   ========================================= */
+
+.pact-repeater-description {
+  margin: 1.2rem 0 0 !important;
+  padding-top: 1rem;
+
+  border-top: 1px solid var(--pact-doc-border, #e5eaf0);
+
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+  .pact-repeater-panel {
+    padding: 1.1rem;
+  }
+
+  .pact-repeater-panel .pact-repeater-grid {
+    gap: 0.55rem;
+  }
+
+  .pact-repeater-item {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pact-frequency-download .pact-primary-button {
+    width: 100%;
+    font-size: 0.78rem;
+  }
+
+  .pact-repeater-panel .pact-repeater-grid,
+  .pact-repeater-settings {
+    grid-template-columns: 1fr;
+  }
+
+  .pact-repeater-item {
+    padding: 0.9rem 1rem;
+  }
+
+  .pact-repeater-value {
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pact-repeater-toggle {
+    width: 100%;
+  }
+
+  .pact-repeater-toggle button {
+    flex: 1 1 0;
+    min-width: 0;
+
+    padding: 0.65rem 0.4rem;
+    font-size: 0.74rem;
+  }
+}
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+/* Text Colors */
+
+html[data-theme='dark']
+.pact-frequency-table th,
+html[data-theme='dark']
+.pact-frequency-designation strong,
+html[data-theme='dark']
+.pact-frequency-value,
+html[data-theme='dark']
+.pact-repeater-panel-header h3,
+html[data-theme='dark']
+.pact-repeater-value,
+html[data-theme='dark']
+.pact-repeater-settings strong {
+  color: var(--ifm-font-color-base);
+}
+
+/* District Labels */
+
+html[data-theme='dark'] .pact-frequency-net {
+  background: #344253;
+  color: #dae3eb;
+}
+
+html[data-theme='dark'] .pact-frequency-d1 {
+  background: #213f2d;
+  color: #b5e7c0;
+}
+
+html[data-theme='dark'] .pact-frequency-d2 {
+  background: #493b1e;
+  color: #f4df9b;
+}
+
+html[data-theme='dark'] .pact-frequency-d3 {
+  background: #362b4b;
+  color: #d4c1f6;
+}
+
+html[data-theme='dark'] .pact-frequency-d4 {
+  background: #4d2929;
+  color: #f3b8b8;
+}
+
+html[data-theme='dark'] .pact-frequency-d5 {
+  background: #243957;
+  color: #bed6fa;
+}
+
+/* Repeater Toggle */
+
+html[data-theme='dark']
+.pact-repeater-toggle button.active {
+  background: #214c62;
+  border-color: #214c62;
+  color: #ffffff;
+}
+
+/* =========================================
+   REPEATER TOOLBAR AND COVERAGE MAP
+   ========================================= */
+
+.pact-repeater-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Repeater toggle */
+
+.pact-repeater-toolbar .pact-repeater-toggle {
+  display: inline-flex;
+  align-items: center;
+
+  flex: 0 1 auto;
+  width: auto;
+  max-width: 100%;
+
+  gap: 3px;
+  margin: 0;
+  padding: 4px;
+
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 999px;
+}
+
+.pact-repeater-toolbar .pact-repeater-toggle button {
+  flex: 0 1 auto;
+  min-width: 0;
+  padding: 0.6rem 1rem;
+  white-space: nowrap;
+}
+
+/* Location */
+
+.pact-repeater-toolbar .pact-repeater-location {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.85rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.pact-repeater-toolbar .pact-repeater-location svg {
+  display: block;
+  flex-shrink: 0;
+
+  width: 16px;
+  height: 16px;
+
+  color: var(--pact-red, #a32c37);
+}
+
+/* Coverage map button */
+
+.pact-repeater-map-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.pact-repeater-map-action .pact-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .pact-repeater-toolbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+  }
+
+  .pact-repeater-toolbar .pact-repeater-toggle {
+    width: 100%;
+  }
+
+  .pact-repeater-toolbar .pact-repeater-toggle button {
+    flex: 1 1 0;
+    white-space: normal;
+    text-align: center;
+    padding: 0.65rem 0.4rem;
+    font-size: 0.76rem;
+  }
+
+  .pact-repeater-map-action .pact-primary-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* =========================================
+   PACT WEEKLY TRAINING NET
+   ========================================= */
+
+
+/* =========================================
+   1. WEEKLY NET SCHEDULE
+   ========================================= */
+
+.pact-net-schedule {
+  margin: 1rem 0 1.5rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Navy Header */
+
+.pact-net-schedule-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.7rem 1.25rem;
+
+  background: #12394c;
+  color: #ffffff;
+
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+}
+
+.pact-net-schedule-header svg {
+  flex-shrink: 0;
+}
+
+
+/* =========================================
+   SCHEDULE BODY
+   Match Interface Meetings Layout
+   ========================================= */
+
+.pact-net-schedule-body {
+  padding: 1.5rem;
+}
+
+/* Date and Time Container */
+
+.pact-net-schedule .pact-net-schedule-time {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  gap: 0;
+  height: auto;
+  min-height: 0;
+
+  margin: 0 0 1.25rem;
+  padding: 0 0 1.25rem;
+
+  text-align: center;
+
+  border: 0;
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+/* Every Wednesday */
+
+.pact-net-schedule .pact-net-schedule-datetime {
+  display: block;
+  position: static;
+  flex: none;
+
+  width: auto;
+  height: auto;
+
+  margin: 0 0 0.5rem !important;
+  padding: 0 !important;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* 8:30 PM · Mountain Time */
+
+.pact-net-schedule .pact-net-local-time {
+  position: static;
+  inset: auto;
+  transform: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+
+  flex: none;
+  width: auto;
+  height: auto;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  white-space: normal;
+}
+
+.pact-net-schedule .pact-net-local-time svg {
+  flex-shrink: 0;
+}
+
+/* Frequency Boxes */
+
+.pact-net-schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+/* Left-Aligned Frequency Cards */
+
+.pact-net-schedule-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  min-width: 0;
+  margin: 0;
+  padding: 0.75rem 1rem;
+
+  text-align: left;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 6px;
+}
+
+/* Card Labels */
+
+.pact-net-phase-label {
+  display: block;
+  margin: 0 0 0.35rem;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+  line-height: 1.3;
+  text-align: left;
+}
+
+/* Frequency and Repeater Name */
+
+.pact-net-schedule-item strong {
+  display: block;
+  margin: 0;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.3;
+  text-align: left;
+}
+
+/* Card Descriptions */
+
+.pact-net-schedule-item > span:last-child {
+  display: block;
+  margin: 0.25rem 0 0;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* Repeater Link */
+
+.pact-net-schedule-item a {
+  color: var(--pact-doc-title, #14283c);
+  text-decoration: underline;
+  text-decoration-color: var(--pact-red, #a32c37);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.pact-net-schedule-item a:hover {
+  color: var(--pact-red, #a32c37);
+}
+
+/* Add to Calendar */
+
+.pact-net-calendar-action {
+  display: flex;
+  justify-content: center;
+  margin: 1.25rem 0 2rem;
+}
+
+.pact-net-calendar-action .pact-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+/* Responsive Schedule */
+
+@media (max-width: 768px) {
+  .pact-net-schedule-body {
+    padding: 1rem;
+  }
+
+  .pact-net-schedule-grid {
+    gap: 0.6rem;
+  }
+
+  .pact-net-schedule-item {
+    padding: 0.75rem 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pact-net-schedule-datetime {
+    font-size: 1.35rem;
+  }
+
+  .pact-net-local-time {
+    font-size: 0.82rem;
+  }
+
+  .pact-net-schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pact-net-calendar-action .pact-primary-button {
+    width: 100%;
+  }
+}
+
+
+/* =========================================
+   2. TWO-PHASE NET FORMAT
+   ========================================= */
+
+.pact-net-format {
+  margin: 1.25rem 0 1.75rem;
+  padding: 1.25rem 1.5rem;
+
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+}
+
+/* Phase Rows */
+
+.pact-net-format-step {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+/* Phase Numbers */
+
+.pact-net-format-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 58px;
+  width: 58px;
+  height: 58px;
+
+  margin: 0;
+  padding: 0;
+
+  border-radius: 6px;
+  box-sizing: border-box;
+
+  color: #ffffff;
+  font-size: 1.05rem;
+  font-weight: 800;
+  line-height: 1;
+  text-align: center;
+}
+
+/* Preserve the number alignment adjustment */
+
+.pact-net-format-number {
+  padding-top: 20px;
+}
+
+.pact-net-format-blue {
+  background: #12394c;
+}
+
+.pact-net-format-red {
+  background: var(--pact-red, #a32c37);
+}
+
+/* Phase Content */
+
+.pact-net-format-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pact-net-format-content h3 {
+  margin: 0 0 0.3rem;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1rem;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+.pact-net-format-content p {
+  margin: 0;
+
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+/* Links */
+
+.pact-net-format-content p a {
+  display: inline;
+  font-weight: 600;
+  white-space: normal;
+}
+
+/* Connector Between Phases */
+
+.pact-net-format-connector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 32px;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* =========================================
+   3. CHECK-IN EXAMPLE
+   ========================================= */
+
+.pact-net-example {
+  margin: 1.25rem 0 1.5rem;
+  padding: 1.25rem;
+
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+}
+
+.pact-net-example-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.pact-net-example-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 6px;
+  color: #12394c;
+}
+
+.pact-net-example-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pact-net-example-content strong {
+  display: block;
+  margin-bottom: 0.4rem;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+}
+
+.pact-net-example-content p {
+  margin: 0;
+
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.65;
+}
+
+.pact-net-example-divider {
+  height: 1px;
+  margin: 1.15rem 0;
+  background: var(--pact-doc-border, #e5eaf0);
+}
+
+/* =========================================
+   4. OPERATING TIPS & SCRIPT DROPDOWNS
+   ========================================= */
+
+.pact-net-accordion {
+  display: grid;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+
+/* Reset Docusaurus Default Styling */
+
+.pact-net-accordion > details.pact-net-details,
+details.pact-net-script {
+  --ifm-alert-border-color: transparent;
+  --ifm-alert-border-left-width: 0;
+
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+
+  box-shadow: none;
+  overflow: hidden;
+}
+
+/* Remove Theme-Generated Elements */
+
+.pact-net-accordion > details.pact-net-details::before,
+.pact-net-accordion > details.pact-net-details::after,
+details.pact-net-script::before,
+details.pact-net-script::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Shared Dropdown Headers */
+
+.pact-net-accordion .pact-net-details > summary,
+details.pact-net-script > summary {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between;
+
+  gap: 0.9rem;
+  margin: 0 !important;
+  padding: 1rem 1.25rem !important;
+
+  background: transparent;
+  border: 0 !important;
+  border-radius: 0;
+  box-shadow: none !important;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+
+  cursor: pointer;
+  list-style: none !important;
+}
+
+/* Remove Browser / Theme Arrows */
+
+.pact-net-accordion .pact-net-details > summary::before,
+details.pact-net-script > summary::before {
+  display: none !important;
+  content: none !important;
+}
+
+.pact-net-accordion .pact-net-details > summary::-webkit-details-marker,
+details.pact-net-script > summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.pact-net-accordion .pact-net-details > summary::marker,
+details.pact-net-script > summary::marker {
+  content: '' !important;
+}
+
+/* Hover */
+
+.pact-net-accordion .pact-net-details > summary:hover,
+details.pact-net-script > summary:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* =========================================
+   5. OPERATING TIPS — PLUS / MINUS
+   ========================================= */
+
+.pact-net-accordion .pact-net-details > summary::after {
+  content: '+' !important;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+
+  color: var(--pact-red, #a32c37);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.pact-net-accordion .pact-net-details[open] > summary::after {
+  content: '−' !important;
+}
+
+/* =========================================
+   6. NET CONTROL SCRIPT HEADER
+   ========================================= */
+
+.pact-net-script-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 6px;
+  color: #12394c;
+}
+
+.pact-net-script-heading {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.pact-net-script-heading strong {
+  display: block;
+  margin: 0;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.pact-net-script-heading small {
+  display: block;
+  margin: 0;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* Chevron on Right */
+
+.pact-net-script-chevron {
+  display: block;
+  flex: 0 0 auto;
+  margin-left: auto;
+
+  color: var(--pact-red, #a32c37);
+  transition: transform 0.2s ease;
+}
+
+.pact-net-script[open] .pact-net-script-chevron {
+  transform: rotate(180deg);
+}
+
+/* Disable Extra Script Arrow */
+
+details.pact-net-script > summary::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* =========================================
+   7. EXPANDED DROPDOWN CONTENT
+   ========================================= */
+
+.pact-net-details-content,
+.pact-net-script-content {
+  margin: 0 !important;
+  padding: 1rem 1.25rem 1.25rem !important;
+
+  border: 0 !important;
+  border-top: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+
+  background: transparent;
+  box-shadow: none !important;
+}
+
+/* Remove Theme-Generated Dividers */
+
+.pact-net-details-content::before,
+.pact-net-details-content::after,
+.pact-net-script-content::before,
+.pact-net-script-content::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove Extra Margins */
+
+.pact-net-details-content > :first-child,
+.pact-net-script-content > :first-child {
+  margin-top: 0 !important;
+}
+
+.pact-net-details-content > :last-child,
+.pact-net-script-content > :last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Operating Tips Text */
+
+.pact-net-details-content p,
+.pact-net-details-content li {
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.pact-net-details-content p {
+  margin-bottom: 0.8rem;
+}
+
+.pact-net-details-content ul {
+  margin: 0.5rem 0 0.9rem;
+}
+
+.pact-net-details-content blockquote {
+  margin: 0.8rem 0;
+  padding: 0.5rem 0.85rem;
+
+  border-left: 3px solid var(--pact-red, #a32c37);
+  color: var(--pact-doc-text, #435769);
+}
+
+/* Net Control Script Content */
+
+.pact-net-script-content h3 {
+  margin: 1.25rem 0 0.75rem;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.15rem;
+  font-weight: 750;
+}
+
+.pact-net-script-content h3:first-child {
+  margin-top: 0;
+}
+
+.pact-net-script-content p,
+.pact-net-script-content li {
+  color: var(--pact-doc-text, #435769);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.pact-net-script-content hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid var(--pact-doc-border, #e5eaf0);
+}
+
+
+/* =========================================
+   8. RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+
+  .pact-net-schedule-body {
+    padding: 1rem;
+  }
+
+  .pact-net-schedule-grid {
+    gap: 0.6rem;
+  }
+
+  .pact-net-schedule-item {
+    padding: 0.75rem 0.9rem;
+  }
+
+  .pact-net-format {
+    padding: 1.25rem;
+  }
+
+  .pact-net-format-step {
+    gap: 1rem;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  /* Schedule */
+
+  .pact-net-schedule-datetime {
+    font-size: 1.35rem;
+    text-align: center;
+  }
+
+  .pact-net-local-time {
+    font-size: 0.82rem;
+  }
+
+  .pact-net-schedule-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pact-net-calendar-action .pact-primary-button {
+    width: 100%;
+  }
+
+  /* Net Format */
+
+  .pact-net-format {
+    padding: 1rem;
+  }
+
+  .pact-net-format-step {
+    gap: 0.8rem;
+  }
+
+  .pact-net-format-number {
+    flex-basis: 46px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .pact-net-format-connector {
+    width: 46px;
+    height: 34px;
+  }
+
+  /* Check-In Example */
+
+  .pact-net-example {
+    padding: 1rem;
+  }
+
+  /* Dropdowns */
+
+  .pact-net-accordion .pact-net-details > summary,
+  details.pact-net-script > summary {
+    padding: 0.85rem 1rem !important;
+  }
+
+  .pact-net-details-content,
+  .pact-net-script-content {
+    padding: 1rem !important;
+  }
+
+  .pact-net-script-heading small {
+    font-size: 0.75rem;
+  }
+
+}
+
+/* =========================================
+   9. DARK MODE
+   ========================================= */
+
+html[data-theme='dark'] .pact-net-schedule-datetime,
+html[data-theme='dark'] .pact-net-schedule-item strong,
+html[data-theme='dark'] .pact-net-format-content h3,
+html[data-theme='dark'] .pact-net-example-content strong,
+html[data-theme='dark'] .pact-net-accordion .pact-net-details > summary,
+html[data-theme='dark'] .pact-net-script-heading strong,
+html[data-theme='dark'] .pact-net-script-content h3 {
+  color: var(--ifm-font-color-base);
+}
+
+/* Schedule Labels */
+
+html[data-theme='dark'] .pact-net-phase-label,
+html[data-theme='dark'] .pact-net-local-time,
+html[data-theme='dark'] .pact-net-schedule-item > span:last-child {
+  color: #a9bac8;
+}
+
+/* Repeater Link */
+
+html[data-theme='dark'] .pact-net-schedule-item a {
+  color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark'] .pact-net-schedule-item a:hover {
+  color: #ed9aa2;
+}
+
+/* Radio and Document Icons */
+
+html[data-theme='dark'] .pact-net-example-icon,
+html[data-theme='dark'] .pact-net-script-icon {
+  color: #a6c8dd;
+}
+
+/* =========================================
+   10. KEYBOARD ACCESSIBILITY
+   ========================================= */
+
+.pact-net-details > summary:focus-visible,
+.pact-net-script > summary:focus-visible {
+  outline: 2px solid var(--pact-red, #a32c37);
+  outline-offset: -3px;
+}
+
+
+
+
+/* =========================================
+   PACT INTERFACE MEETINGS
+   ========================================= */
+
+/* =========================================
+   NEXT INTERFACE MEETING
+   ========================================= */
+
+.pact-interface-next {
+  margin: 1.25rem 0 1.75rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Navy Header */
+
+.pact-interface-next-header {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+
+  padding: 0.75rem 1.25rem;
+
+  background: #12394c;
+  color: #ffffff;
+
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+}
+
+.pact-interface-next-header svg {
+  flex-shrink: 0;
+}
+
+/* Main Body */
+
+.pact-interface-next-body {
+  padding: 1.5rem;
+}
+
+/* Meeting Date and Time */
+
+.pact-interface-next-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+.pact-interface-next-date h2 {
+  margin: 0 0 0.5rem;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.pact-interface-next-time {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.pact-interface-next-time svg {
+  flex-shrink: 0;
+}
+
+/* Location and Training Topic */
+
+.pact-interface-next-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.pact-interface-info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  min-width: 0;
+  padding: 1rem 1.15rem;
+
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 6px;
+}
+
+.pact-interface-info-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  margin-bottom: 0.65rem;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+}
+
+.pact-interface-info-label svg {
+  flex-shrink: 0;
+}
+
+.pact-interface-info-card > strong,
+.pact-interface-info-card > a {
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.12rem;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.pact-interface-info-card > a {
+  text-decoration: underline;
+  text-decoration-color: var(--pact-red, #a32c37);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+.pact-interface-info-card > a:hover {
+  color: var(--pact-red, #a32c37);
+}
+
+/* Calendar Button */
+
+.pact-interface-next-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1.3rem;
+}
+
+.pact-interface-next-action .pact-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+/* =========================================
+   ANNUAL SCHEDULE TABLES
+   ========================================= */
+
+.pact-interface-schedule {
+  margin: 1rem 0 2rem;
+}
+
+/* Shared Meeting Time */
+
+.pact-interface-schedule-time {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+
+  margin-bottom: 0.75rem;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.83rem;
+}
+
+.pact-interface-schedule-time svg {
+  flex-shrink: 0;
+}
+
+/* Horizontal Scrolling on Small Screens */
+
+.pact-interface-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+}
+
+/* -----------------------------------------
+   TABLE STRUCTURE
+   ----------------------------------------- */
+
+.pact-interface-table {
+  width: 100%;
+  min-width: 550px;
+
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+
+  font-size: 0.9rem;
+}
+
+/* Header Background */
+
+.pact-interface-table thead {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* Header Cells */
+
+.pact-interface-table th {
+  padding: 0.9rem 1rem;
+
+  color: var(--pact-doc-title, #14283c);
+  font-weight: 800;
+  text-align: left;
+  vertical-align: middle;
+
+  border: 0;
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+/* Vertical Header Dividers */
+
+.pact-interface-table th:not(:last-child) {
+  border-right: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+/* Body Cells */
+
+.pact-interface-table td {
+  padding: 0.85rem 1rem;
+
+  color: var(--pact-doc-text, #435769);
+  line-height: 1.5;
+  vertical-align: middle;
+
+  border: 0;
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+/* Vertical Column Dividers */
+
+.pact-interface-table td:not(:last-child) {
+  border-right: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+/* Remove Bottom Border on Final Row */
+
+.pact-interface-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+/* -----------------------------------------
+   ALTERNATING ROWS
+   ----------------------------------------- */
+
+.pact-interface-table tbody tr:nth-child(even) {
+  background: var(--ifm-color-emphasis-100);
+}
+
+.pact-interface-table tbody tr:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+/* -----------------------------------------
+   COLUMN WIDTHS
+   ----------------------------------------- */
+
+.pact-interface-table th:first-child,
+.pact-interface-table td:first-child {
+  width: 24%;
+  white-space: nowrap;
+}
+
+.pact-interface-table th:nth-child(2),
+.pact-interface-table td:nth-child(2) {
+  width: 31%;
+}
+
+/* -----------------------------------------
+   MAP LINKS
+   ----------------------------------------- */
+
+.pact-interface-table td a {
+  color: var(--ifm-link-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.pact-interface-table td a:hover {
+  color: var(--pact-red, #a32c37);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+
+/* =========================================
+   INTERFACE MEETINGS — LOCATION ALIGNMENT
+   ========================================= */
+
+/* Preserve normal table-cell behavior */
+
+.pact-interface-table tbody td:nth-child(2) {
+  display: table-cell;
+  vertical-align: middle !important;
+}
+
+/* Align location links with other table text */
+
+.pact-interface-table tbody td:nth-child(2) a {
+  display: inline-block;
+
+  margin: 0;
+  padding: 0;
+
+  line-height: 1.5;
+  vertical-align: baseline;
+
+  position: relative;
+  top: 10px;
+}
+
+
+/* -----------------------------------------
+   HIGHLIGHT UPCOMING MEETING
+   ----------------------------------------- */
+
+.pact-interface-table
+tr.pact-interface-upcoming {
+  background: rgba(163, 44, 55, 0.045);
+}
+
+.pact-interface-table
+tr.pact-interface-upcoming td:first-child {
+  border-left: 4px solid
+    var(--pact-red, #a32c37);
+
+  padding-left: calc(1rem - 4px);
+}
+
+.pact-interface-table
+tr.pact-interface-upcoming strong {
+  color: var(--pact-doc-title, #14283c);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 768px) {
+  .pact-interface-next-body {
+    padding: 1.25rem;
+  }
+
+  .pact-interface-next-date h2 {
+    font-size: 1.45rem;
+  }
+
+  .pact-interface-info-card {
+    padding: 0.9rem 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .pact-interface-next-body {
+    padding: 1rem;
+  }
+
+  .pact-interface-next-grid {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .pact-interface-next-date {
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .pact-interface-next-date h2 {
+    font-size: 1.35rem;
+  }
+
+  .pact-interface-next-time {
+    font-size: 0.8rem;
+  }
+
+  .pact-interface-next-action .pact-primary-button {
+    width: 100%;
+  }
+
+  .pact-interface-schedule-time {
+    justify-content: flex-start;
+    font-size: 0.78rem;
+  }
+}
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+html[data-theme='dark']
+.pact-interface-next-date h2,
+html[data-theme='dark']
+.pact-interface-info-card > strong,
+html[data-theme='dark']
+.pact-interface-info-card > a,
+html[data-theme='dark']
+.pact-interface-table th,
+html[data-theme='dark']
+.pact-interface-table
+tr.pact-interface-upcoming strong {
+  color: var(--ifm-font-color-base);
+}
+
+html[data-theme='dark']
+.pact-interface-table
+tr.pact-interface-upcoming {
+  background: rgba(163, 44, 55, 0.14);
+}
+
+html[data-theme='dark']
+.pact-interface-info-card > a:hover {
+  color: #ed9aa2;
+}
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+   ========================================= */
+
+.pact-interface-info-card > a:focus-visible,
+.pact-interface-table a:focus-visible {
+  outline: 2px solid var(--pact-red, #a32c37);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* =========================================
+   PACT CALENDAR BUTTON ICON — SVG-FREE
+   ========================================= */
+
+.meeting-grid .button--calendar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+/* Calendar outline and horizontal divider */
+
+.meeting-grid .pact-calendar-icon {
+  position: relative;
+  display: inline-block;
+
+  flex: 0 0 18px;
+  width: 18px;
+  height: 17px;
+
+  border: 2px solid currentColor;
+  border-radius: 3px;
+
+  background:
+    linear-gradient(
+      currentColor,
+      currentColor
+    ) 0 4px / 100% 2px no-repeat;
+
+  box-sizing: border-box;
+}
+
+/* Calendar binding rings */
+
+.meeting-grid .pact-calendar-icon::before {
+  content: "";
+  position: absolute;
+
+  top: -5px;
+  left: 3px;
+
+  width: 2px;
+  height: 6px;
+
+  background: currentColor;
+  border-radius: 1px;
+
+  box-shadow: 7px 0 currentColor;
+}
+
+/* Calendar date marks */
+
+.meeting-grid .pact-calendar-icon::after {
+  content: "";
+  position: absolute;
+
+  top: 9px;
+  left: 3px;
+
+  width: 2px;
+  height: 2px;
+
+  background: currentColor;
+  border-radius: 50%;
+
+  box-shadow:
+    5px 0 currentColor,
+    10px 0 currentColor;
+}
+
+/* Keep calendar text aligned */
+
+.meeting-grid .button--calendar > span:last-child {
+  line-height: 1.3;
+}
+
+
+
+/* =========================================
+   WEEKLY NET — COMPACT DAY/TIME SPACING
+   ========================================= */
+
+.pact-net-daytime-compact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+
+  height: auto;
+  min-height: 0;
+
+  margin: 0 0 0.85rem;
+  padding: 0 0 0.85rem;
+
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+
+  text-align: center;
+}
+
+/* Every Wednesday */
+
+.pact-net-daytime-heading {
+  display: block;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+/* Time directly below the heading */
+
+.pact-net-daytime-clock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+
+  margin: 0.1rem 0 0 !important;
+  padding: 0 !important;
+
+  color: var(--pact-doc-text, #64748b);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.pact-net-daytime-clock svg {
+  flex-shrink: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .pact-net-daytime-heading {
+    font-size: 1.35rem;
+  }
+
+  .pact-net-daytime-clock {
+    font-size: 0.82rem;
+  }
+}
+
+/* Dark Mode */
+
+html[data-theme='dark'] .pact-net-daytime-heading {
+  color: var(--ifm-font-color-base);
+}
+
+
+/* =========================================
+   EQUIPMENT CERTIFICATION DROPDOWNS
+   ========================================= */
+
+/* Remove default Docusaurus styling */
+
+.pact-join-faq details {
+  --ifm-alert-border-left-width: 0;
+  --ifm-alert-border-color: transparent;
+
+  box-shadow: none;
+}
+
+/* Remove default decorative elements */
+
+.pact-join-faq details::before,
+.pact-join-faq details::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove blue divider under header */
+
+.pact-join-faq details > summary {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Keep one subtle divider when expanded */
+
+.pact-join-faq details[open] > summary {
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* Clean up dropdown content spacing */
+
+.pact-join-faq .pact-join-faq-answer {
+  margin: 0 !important;
+  padding: 1rem 1.25rem !important;
+
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove unnecessary top spacing */
+
+.pact-join-faq .pact-join-faq-answer > :first-child {
+  margin-top: 0 !important;
+}
+
+/* =========================================
+   EQUIPMENT CERTIFICATION DROPDOWN FIX
+   ========================================= */
+
+/* Remove Docusaurus default spacing
+   around expanded dropdown content */
+
+.pact-equipment-certification details > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove spacing from Docusaurus
+   generated collapsible containers */
+
+.pact-equipment-certification
+details [class*="collapsibleContent"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Keep one divider directly
+   beneath the dropdown heading */
+
+.pact-equipment-certification
+details[open] > summary {
+  margin: 0 !important;
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* Checklist content */
+
+.pact-equipment-certification
+.pact-join-faq-answer {
+  margin: 0 !important;
+  padding: 1.25rem !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove extra spacing above
+   the requirements link */
+
+.pact-equipment-certification
+.pact-join-faq-answer > :first-child {
+  margin-top: 0 !important;
+}
+
+/* Remove bullet points next to checkboxes */
+
+.pact-equipment-certification
+.pact-join-faq-answer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pact-equipment-certification
+.pact-join-faq-answer ul ul {
+  padding-left: 1.75rem;
+}
+
+/* =========================================
+   GETTING YOUR LICENSE — FAQ DROPDOWNS
+   ========================================= */
+
+/* Remove default Docusaurus styling */
+
+.pact-license-faq details {
+  --ifm-alert-border-left-width: 0;
+  --ifm-alert-border-color: transparent;
+
+  box-shadow: none;
+}
+
+/* Remove default decorative elements */
+
+.pact-license-faq details::before,
+.pact-license-faq details::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove extra spacing around content */
+
+.pact-license-faq details > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove generated collapsible spacing */
+
+.pact-license-faq
+details [class*="collapsibleContent"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Single divider beneath expanded header */
+
+.pact-license-faq details > summary {
+  margin: 0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.pact-license-faq details[open] > summary {
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* FAQ Answer */
+
+.pact-license-faq .pact-join-faq-answer {
+  margin: 0 !important;
+  padding: 1.25rem !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove unnecessary paragraph spacing */
+
+.pact-license-faq
+.pact-join-faq-answer > :first-child {
+  margin-top: 0 !important;
+}
+
+.pact-license-faq
+.pact-join-faq-answer > :last-child {
+  margin-bottom: 0 !important;
+}
+
+/* =========================================
+   RADIO BASICS — HF / VHF / UHF DROPDOWNS
+   ========================================= */
+
+/* Remove default Docusaurus styling */
+
+.pact-radio-band-faq details {
+  --ifm-alert-border-left-width: 0;
+  --ifm-alert-border-color: transparent;
+
+  box-shadow: none;
+}
+
+/* Remove default decorative elements */
+
+.pact-radio-band-faq details::before,
+.pact-radio-band-faq details::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove extra spacing around expanded content */
+
+.pact-radio-band-faq details > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove Docusaurus collapsible spacing */
+
+.pact-radio-band-faq
+details [class*="collapsibleContent"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Single divider beneath expanded heading */
+
+.pact-radio-band-faq details > summary {
+  margin: 0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+.pact-radio-band-faq details[open] > summary {
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* Expanded content */
+
+.pact-radio-band-faq .pact-join-faq-answer {
+  margin: 0 !important;
+  padding: 1rem 1.25rem !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Checklist spacing */
+
+.pact-radio-band-faq .pact-join-faq-answer ul {
+  margin: 0;
+  padding-left: 1.5rem;
+  list-style: disc;
+}
+
+.pact-radio-band-faq .pact-join-faq-answer li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.pact-radio-band-faq .pact-join-faq-answer li:last-child {
+  margin-bottom: 0;
+}
+
+/* Dark mode */
+
+html[data-theme='dark']
+.pact-radio-band-faq .pact-join-faq-answer {
+  color: var(--ifm-font-color-base);
+}
+
+/* =========================================
+   LDS RESOURCES — DROPDOWNS
+   ========================================= */
+
+/* Reset default Docusaurus details styling */
+
+.pact-lds-resources-faq details {
+  --ifm-alert-border-left-width: 0;
+  --ifm-alert-border-color: transparent;
+  box-shadow: none;
+}
+
+/* Remove theme-generated decorations */
+
+.pact-lds-resources-faq details::before,
+.pact-lds-resources-faq details::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Remove extra wrappers and empty spacing */
+
+.pact-lds-resources-faq details > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.pact-lds-resources-faq
+details [class*="collapsibleContent"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Dropdown heading */
+
+.pact-lds-resources-faq details > summary {
+  margin: 0 !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* One divider when expanded */
+
+.pact-lds-resources-faq details[open] > summary {
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* Expanded content */
+
+.pact-lds-resources-faq .pact-join-faq-answer {
+  margin: 0 !important;
+  padding: 1.25rem !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove first and last element spacing */
+
+.pact-lds-resources-faq
+.pact-join-faq-answer > :first-child {
+  margin-top: 0 !important;
+}
+
+.pact-lds-resources-faq
+.pact-join-faq-answer > :last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Section headings */
+
+.pact-lds-resources-faq .pact-join-faq-answer h4 {
+  margin: 1.5rem 0 0.65rem;
+  color: var(--pact-doc-title, #14283c);
+  font-size: 1.08rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+.pact-lds-resources-faq .pact-join-faq-answer h5 {
+  margin: 1.1rem 0 0.5rem;
+  color: var(--pact-doc-title, #14283c);
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+/* Paragraphs and lists */
+
+.pact-lds-resources-faq .pact-join-faq-answer p,
+.pact-lds-resources-faq .pact-join-faq-answer li {
+  line-height: 1.65;
+}
+
+.pact-lds-resources-faq .pact-join-faq-answer ul,
+.pact-lds-resources-faq .pact-join-faq-answer ol {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.pact-lds-resources-faq .pact-join-faq-answer li {
+  margin-bottom: 0.4rem;
+}
+
+/* -----------------------------------------
+   SOURCE REFERENCES
+   ----------------------------------------- */
+
+.pact-lds-resources-faq .pact-lds-source {
+  margin-top: 1.5rem;
+  padding: 0.85rem 1rem;
+
+  background: var(--ifm-color-emphasis-100);
+  border-left: 3px solid
+    var(--pact-red, #a32c37);
+  border-radius: 4px;
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.pact-lds-resources-faq .pact-lds-source strong {
+  color: var(--pact-doc-title, #14283c);
+}
+
+/* -----------------------------------------
+   COMMUNICATION METHODS TABLE
+   ----------------------------------------- */
+
+.pact-lds-resources-faq .pact-lds-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+  margin: 1rem 0 1.5rem;
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 6px;
+}
+
+.pact-lds-resources-faq .pact-lds-table-scroll table {
+  width: 100%;
+  min-width: 700px;
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.pact-lds-resources-faq .pact-lds-table-scroll th {
+  padding: 0.75rem 0.85rem;
+  background: var(--ifm-color-emphasis-100);
+  font-weight: 750;
+  text-align: left;
+  vertical-align: middle;
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+.pact-lds-resources-faq .pact-lds-table-scroll td {
+  padding: 0.75rem 0.85rem;
+  line-height: 1.5;
+  vertical-align: middle;
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+/* -----------------------------------------
+   DARK MODE
+   ----------------------------------------- */
+
+html[data-theme='dark']
+.pact-lds-resources-faq .pact-join-faq-answer h4,
+html[data-theme='dark']
+.pact-lds-resources-faq .pact-join-faq-answer h5,
+html[data-theme='dark']
+.pact-lds-resources-faq .pact-lds-source strong {
+  color: var(--ifm-font-color-base);
+}
+
+/* -----------------------------------------
+   MOBILE
+   ----------------------------------------- */
+
+@media (max-width: 600px) {
+  .pact-lds-resources-faq .pact-join-faq-answer {
+    padding: 1rem !important;
+  }
+
+  .pact-lds-resources-faq .pact-join-faq-answer h4 {
+    font-size: 1rem;
+  }
+}
+
+
+/* =========================================
+   LOCAL REPEATERS — DROPDOWN DESIGN
+   ========================================= */
+
+/* Repeater dropdown cards */
+
+details.repeater-section {
+  --ifm-alert-border-left-width: 0;
+  --ifm-alert-border-color: transparent;
+
+  display: block;
+  margin: 0 0 0.75rem;
+  padding: 0;
+
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+
+  box-shadow: none;
+  overflow: hidden;
+
+  scroll-margin-top: 170px;
+}
+
+/* Expanded dropdown */
+
+details.repeater-section[open] {
+  border-color: var(--pact-red, #a32c37);
+}
+
+/* Remove Docusaurus decorations */
+
+details.repeater-section::before,
+details.repeater-section::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* -----------------------------------------
+   DROPDOWN HEADINGS
+   ----------------------------------------- */
+
+details.repeater-section > summary {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  margin: 0 !important;
+  padding: 1rem 1.25rem !important;
+
+  background: transparent;
+  border: 0 !important;
+  border-radius: 0;
+
+  color: var(--pact-doc-title, #14283c);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.4;
+
+  list-style: none !important;
+  cursor: pointer;
+  box-shadow: none !important;
+}
+
+/* Remove browser and Docusaurus arrows */
+
+details.repeater-section > summary::-webkit-details-marker {
+  display: none !important;
+}
+
+details.repeater-section > summary::marker {
+  content: "" !important;
+}
+
+details.repeater-section > summary::before {
+  display: none !important;
+  content: none !important;
+}
+
+/* Plus icon */
+
+details.repeater-section > summary::after {
+  content: "+" !important;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+
+  margin-left: auto;
+
+  color: var(--pact-red, #a32c37);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Minus icon when expanded */
+
+details.repeater-section[open] > summary::after {
+  content: "−" !important;
+}
+
+/* Hover */
+
+details.repeater-section > summary:hover {
+  background: var(--ifm-color-emphasis-100);
+}
+
+/* Single divider beneath expanded heading */
+
+details.repeater-section[open] > summary {
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* -----------------------------------------
+   EXPANDED TABLE CONTENT
+   ----------------------------------------- */
+
+details.repeater-section > .repeater-table-wrap {
+  margin: 0 !important;
+  padding: 1rem !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+
+  overflow-x: auto;
+}
+
+/* Keep tables fully scrollable */
+
+details.repeater-section .repeater-table-wrap table {
+  width: 100%;
+  min-width: 900px;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+/* Subtle table grid lines */
+
+details.repeater-section .repeater-table-wrap th,
+details.repeater-section .repeater-table-wrap td {
+  padding: 0.75rem 0.85rem;
+  vertical-align: middle;
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+}
+
+/* Header styling */
+
+details.repeater-section .repeater-table-wrap th {
+  background: var(--ifm-color-emphasis-100);
+
+  color: var(--pact-doc-title, #14283c);
+  font-weight: 750;
+}
+
+/* -----------------------------------------
+   DARK MODE
+   ----------------------------------------- */
+
+html[data-theme='dark']
+details.repeater-section > summary,
+html[data-theme='dark']
+details.repeater-section .repeater-table-wrap th {
+  color: var(--ifm-font-color-base);
+}
+
+/* -----------------------------------------
+   MOBILE
+   ----------------------------------------- */
+
+@media (max-width: 600px) {
+  details.repeater-section > summary {
+    padding: 0.85rem 1rem !important;
+  }
+
+  details.repeater-section > .repeater-table-wrap {
+    padding: 0.75rem !important;
+  }
+}
+
+/* ==============================================
+   PACT EVENTS — MODERN DOCUMENTATION LAYOUT
+   ============================================== */
+
+/* ----------------------------------------------
+   EVENT OVERVIEW CARDS
+   ---------------------------------------------- */
+
+.pact-events-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.25rem;
+}
+
+.pact-events-overview-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.15rem;
+
+  border: 1px solid
+    var(--pact-doc-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.pact-events-overview-card:hover {
+  border-color: var(--pact-red, #a32c37);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.pact-events-card-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 0.55rem;
+}
+
+.pact-events-card-heading > svg {
+  flex: none;
+  color: var(--pact-red, #a32c37);
+  margin-top: 0.08rem;
+}
+
+.pact-events-card-heading h2 {
+  margin: 0;
+  font-size: 1.04rem;
+  line-height: 1.3;
+  font-weight: 750;
+  color: var(--ifm-heading-color);
+}
+
+.pact-events-overview-card > p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.pact-events-overview-meta {
+  display: grid;
+  gap: 0.45rem;
+
+  margin-top: auto;
+  margin-bottom: 1rem;
+
+  font-size: 0.8rem;
+}
+
+.pact-events-overview-meta span,
+.pact-events-detail-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.pact-events-overview-meta svg,
+.pact-events-detail-tags svg {
+  color: var(--pact-red, #a32c37);
+  flex: none;
+}
+
+/* View Event Details button */
+
+.pact-events-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  gap: 0.45rem;
+
+  padding: 0.4rem 0.7rem;
+
+  border: 1px solid var(--pact-red, #a32c37);
+  border-radius: 5px;
+
+  color: var(--pact-red, #a32c37);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+/* ----------------------------------------------
+   EVENT DETAIL CONTAINERS
+   ---------------------------------------------- */
+
+.pact-events-detail {
+  margin: 1.5rem 0;
+
+  border: 1px solid
+    var(--pact-doc-border, var(--ifm-color-emphasis-300));
+  border-radius: 8px;
+
+  background: var(--ifm-background-surface-color);
+
+  scroll-margin-top: 180px;
+  overflow: hidden;
+}
+
+/* Event heading row */
+
+.pact-events-detail-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  padding: 0.95rem 1.1rem;
+
+  border-bottom: 1px solid
+    var(--pact-doc-border, var(--ifm-color-emphasis-300));
+}
+
+.pact-events-detail-title {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.pact-events-detail-title svg {
+  flex: none;
+  color: var(--pact-red, #a32c37);
+}
+
+.pact-events-detail-title h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: var(--ifm-heading-color);
+}
+
+/* Date and volunteer tags */
+
+.pact-events-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pact-events-detail-tags span {
+  padding: 0.3rem 0.55rem;
+
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid
+    var(--pact-doc-border, var(--ifm-color-emphasis-300));
+  border-radius: 5px;
+
+  font-size: 0.77rem;
+}
+
+/* ----------------------------------------------
+   EVENT CONTENT
+   ---------------------------------------------- */
+
+.pact-events-detail-body {
+  display: grid;
+  gap: 0.9rem;
+  padding: 1rem;
+}
+
+/* Overview and volunteer information */
+
+.pact-events-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.9rem;
+}
+
+/* Individual information panels */
+
+.pact-events-panel {
+  min-width: 0;
+  padding: 1rem;
+
+  background: var(--ifm-background-color);
+
+  border: 1px solid
+    var(--pact-doc-border, var(--ifm-color-emphasis-300));
+  border-radius: 6px;
+}
+
+.pact-events-panel h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+
+  margin: 0 0 0.8rem;
+
+  font-size: 1rem;
+  font-weight: 750;
+  color: var(--ifm-heading-color);
+}
+
+.pact-events-panel h3 svg {
+  flex: none;
+  color: var(--pact-red, #a32c37);
+}
+
+.pact-events-panel p {
+  margin: 0 0 0.8rem;
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+
+.pact-events-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* ----------------------------------------------
+   POSITIONS / STAFFING NEEDS
+   ---------------------------------------------- */
+
+.pact-events-position-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pact-events-position-list span {
+  padding: 0.3rem 0.6rem;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.3;
+
+  border: 1px solid
+    var(--pact-doc-border, var(--ifm-color-emphasis-300));
+  background: var(--ifm-color-emphasis-100);
+
+  border-radius: 99px;
+}
+
+/* ----------------------------------------------
+   COMMUNICATIONS TABLES
+   ---------------------------------------------- */
+
+.pact-events-table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-top: 0.8rem;
+}
+
+.pact-events-frequency-table {
+  width: 100%;
+  min-width: 560px;
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+.pact-events-frequency-table thead th {
+  padding: 0.6rem 0.7rem;
+
+  background: var(--ifm-color-emphasis-100);
+  color: var(--ifm-heading-color);
+
+  white-space: nowrap;
+  font-weight: 750;
+}
+
+.pact-events-frequency-table th,
+.pact-events-frequency-table td {
+  padding: 0.6rem 0.7rem;
+  vertical-align: top;
+
+  border: 1px solid
+    var(--pact-doc-border, var(--ifm-color-emphasis-300));
+}
+
+.pact-events-frequency-table tbody th {
+  text-align: left;
+  font-weight: 700;
+}
+
+/* Frequency values */
+
+.pact-events-frequency {
+  font-weight: 700;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Details within communications tables */
+
+.pact-events-frequency-table ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.pact-events-frequency-table li {
+  margin: 0 0 0.25rem;
+  line-height: 1.45;
+}
+
+.pact-events-frequency-table li:last-child {
+  margin: 0;
+}
+
+/* ----------------------------------------------
+   TABLET
+   ---------------------------------------------- */
+
+@media (max-width: 996px) {
+  .pact-events-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .pact-events-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ----------------------------------------------
+   MOBILE
+   ---------------------------------------------- */
+
+@media (max-width: 600px) {
+  .pact-events-detail-header {
+    padding: 0.85rem;
+  }
+
+  .pact-events-detail-body {
+    padding: 0.7rem;
+  }
+
+  .pact-events-panel {
+    padding: 0.8rem;
+  }
+}
+
+
+
+/* =========================================
+   PACT EVENTS — REFINED DESIGN
+   ========================================= */
+
+/* -----------------------------------------
+   1. EVENT OVERVIEW GRID
+   ----------------------------------------- */
+
+.pact-events-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+/* Individual event cards */
+
+.pact-events-overview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+
+  margin: 0;
+  padding: 1.15rem;
+
+  appearance: none;
+  font: inherit;
+  text-align: left;
+
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-surface-color);
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.pact-events-overview-card:hover {
+  color: var(--ifm-font-color-base);
+  border-color: var(--pact-red, #a32c37);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.pact-events-overview-card:focus-visible {
+  outline: 3px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+}
+
+/* -----------------------------------------
+   2. NAVY EVENT HEADERS
+   ----------------------------------------- */
+
+.pact-events-overview-card .pact-events-card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 82px;
+
+  margin: -1.15rem -1.15rem 1rem;
+  padding: 1rem;
+
+  gap: 0;
+
+  background: #12394c;
+  border-bottom: 3px solid
+    var(--pact-red, #a32c37);
+
+  text-align: center;
+}
+
+/* Remove decorative icons */
+
+.pact-events-card-heading > svg {
+  display: none !important;
+}
+
+/* Event titles */
+
+.pact-events-overview-card .pact-events-card-heading h2 {
+  margin: 0;
+
+  color: #ffffff !important;
+
+  font-size: 1.25rem;
+  font-weight: 750;
+  line-height: 1.35;
+  text-align: center;
+}
+
+/* -----------------------------------------
+   3. EVENT DESCRIPTIONS
+   ----------------------------------------- */
+
+.pact-events-overview-card > p {
+  margin: 0 0 1rem;
+
+  color: var(--ifm-font-color-base);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* -----------------------------------------
+   4. DATE & VOLUNTEER BADGES
+   ----------------------------------------- */
+
+.pact-events-overview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.45rem;
+
+  margin-top: auto;
+  margin-bottom: 1.15rem;
+}
+
+/* Remove metadata icons */
+
+.pact-events-overview-meta svg {
+  display: none !important;
+}
+
+/* Badge appearance */
+
+.pact-events-overview-meta span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.35rem 0.65rem;
+
+  background: var(--ifm-color-emphasis-100);
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 5px;
+
+  color: var(--ifm-font-color-base);
+
+  font-size: 0.77rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* -----------------------------------------
+   5. VIEW EVENT DETAILS BUTTON
+   ----------------------------------------- */
+
+.pact-events-overview-card .pact-events-card-link {
+  display: grid !important;
+  place-items: center !important;
+
+  align-self: center !important;
+  flex: 0 0 auto !important;
+
+  width: fit-content !important;
+  height: 46px !important;
+  min-height: 46px !important;
+  max-height: 46px !important;
+
+  margin: 0 auto !important;
+  padding: 0 1.25rem !important;
+
+  background: transparent;
+
+  border: 1px solid var(--pact-red, #a32c37);
+  border-radius: 5px;
+
+  color: var(--pact-red, #a32c37);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 3 !important;
+  text-align: center !important;
+  white-space: nowrap;
+
+  box-sizing: border-box;
+
+  transition:
+    background 0.15s ease,
+    color 0.15s ease;
+}
+
+/* Remove arrow icon */
+
+.pact-events-card-link svg {
+  display: none !important;
+}
+
+/* Button hover */
+
+.pact-events-overview-card:hover .pact-events-card-link {
+  background: var(--pact-red, #a32c37);
+  color: #ffffff;
+}
+
+/* -----------------------------------------
+   6. POPUP SIZE & POSITION
+   ----------------------------------------- */
+
+dialog.pact-events-modal {
+  position: fixed;
+
+  inset: 0;
+
+  width: min(860px, calc(100vw - 3rem));
+  max-width: calc(100vw - 3rem);
+
+  height: auto;
+  max-height: calc(100vh - 4rem);
+  max-height: calc(100dvh - 4rem);
+
+  margin: auto;
+  padding: 0;
+
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-surface-color);
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 9px;
+
+  box-shadow: 0 20px 60px
+    rgba(0, 0, 0, 0.25);
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  overscroll-behavior: contain;
+}
+
+/* Darkened page background */
+
+dialog.pact-events-modal::backdrop {
+  background: rgba(10, 24, 38, 0.55);
+}
+
+/* -----------------------------------------
+   7. POPUP DETAIL CONTAINER
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-detail {
+  display: block;
+
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+
+  border: none;
+  border-radius: 0;
+
+  box-shadow: none;
+  overflow: visible;
+}
+
+/* -----------------------------------------
+   8. POPUP HEADER
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-detail-header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  gap: 0.65rem;
+
+  margin: 0;
+  padding: 1.3rem 4rem 1.15rem 1.5rem;
+
+  background: var(--ifm-background-surface-color);
+
+  border-bottom: 2px solid
+    var(--pact-red, #a32c37);
+}
+
+/* Remove event title icon */
+
+.pact-events-detail-title > svg {
+  display: none !important;
+}
+
+.pact-events-modal .pact-events-detail-title {
+  display: block;
+  width: 100%;
+  gap: 0;
+}
+
+/* Event title */
+
+.pact-events-modal .pact-events-detail-title h2 {
+  margin: 0;
+
+  color: var(--ifm-heading-color);
+
+  font-size: 1.4rem;
+  font-weight: 750;
+  line-height: 1.3;
+}
+
+/* -----------------------------------------
+   9. POPUP METADATA BADGES
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-detail-tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+}
+
+/* Remove icons */
+
+.pact-events-detail-tags svg {
+  display: none !important;
+}
+
+/* Match overview card badges */
+
+.pact-events-modal .pact-events-detail-tags span {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0;
+
+  padding: 0.35rem 0.65rem;
+
+  color: var(--ifm-font-color-base);
+
+  background: var(--ifm-color-emphasis-100);
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 5px;
+
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* -----------------------------------------
+   10. SINGLE-COLUMN POPUP LAYOUT
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-detail-body {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  margin: 0;
+  padding: 1.25rem;
+}
+
+/* Override previous two-column layout */
+
+.pact-events-modal .pact-events-info-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+
+  gap: 1rem;
+  width: 100%;
+}
+
+/* -----------------------------------------
+   11. POPUP INFORMATION PANELS
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-panel {
+  width: 100%;
+  min-width: 0;
+
+  margin: 0;
+  padding: 1.15rem;
+
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-color);
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 6px;
+}
+
+/* Remove section heading icons */
+
+.pact-events-panel h3 > svg {
+  display: none !important;
+}
+
+/* Section headings */
+
+.pact-events-modal .pact-events-panel h3 {
+  display: block;
+
+  margin: 0 0 0.85rem;
+
+  color: var(--ifm-heading-color);
+
+  font-size: 1.05rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+/* Paragraphs */
+
+.pact-events-modal .pact-events-panel p {
+  margin: 0 0 0.85rem;
+
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.pact-events-modal .pact-events-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------
+   12. STAFFING POSITIONS
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-position-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.5rem;
+}
+
+.pact-events-modal .pact-events-position-list span {
+  padding: 0.4rem 0.7rem;
+
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-color-emphasis-100);
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 5px;
+
+  font-size: 0.83rem;
+  line-height: 1.4;
+}
+
+/* -----------------------------------------
+   13. COMMUNICATIONS TABLE
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-table-scroll {
+  width: 100%;
+  max-width: 100%;
+
+  overflow-x: auto;
+
+  margin-top: 1rem;
+}
+
+.pact-events-modal .pact-events-frequency-table {
+  width: 100%;
+  min-width: 560px;
+
+  margin: 0;
+
+  border-collapse: collapse;
+}
+
+/* Preserve existing frequency styling */
+
+.pact-events-modal .pact-events-frequency {
+  font-weight: 700;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+/* -----------------------------------------
+   14. POPUP CLOSE BUTTON
+   ----------------------------------------- */
+
+.pact-events-modal .pact-events-modal-close {
+  position: absolute;
+
+  top: 1rem;
+  right: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36px;
+  height: 36px;
+
+  padding: 0;
+
+  color: var(--ifm-font-color-base);
+  background: var(--ifm-background-color);
+
+  border: 1px solid
+    var(--pact-doc-border, #e5eaf0);
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.pact-events-modal .pact-events-modal-close:hover {
+  color: var(--pact-red, #a32c37);
+
+  border-color: var(--pact-red, #a32c37);
+}
+
+/* Keep close icon */
+
+.pact-events-modal-close svg {
+  display: block !important;
+}
+
+/* -----------------------------------------
+   15. DARK MODE
+   ----------------------------------------- */
+
+html[data-theme='dark']
+.pact-events-overview-card {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+html[data-theme='dark']
+.pact-events-modal .pact-events-panel {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+/* -----------------------------------------
+   16. TABLET
+   ----------------------------------------- */
+
+@media (max-width: 996px) {
+
+  .pact-events-overview {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* -----------------------------------------
+   17. MOBILE
+   ----------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .pact-events-overview-card
+  .pact-events-card-heading {
+    min-height: auto;
+  }
+
+  dialog.pact-events-modal {
+    width: calc(100vw - 1.25rem);
+    max-width: calc(100vw - 1.25rem);
+
+    max-height: calc(100dvh - 1.25rem);
+  }
+
+  .pact-events-modal .pact-events-detail-header {
+    padding: 1rem 3.5rem 1rem 1rem;
+  }
+
+  .pact-events-modal .pact-events-detail-title h2 {
+    font-size: 1.2rem;
+  }
+
+  .pact-events-modal .pact-events-detail-body {
+    padding: 0.75rem;
+    gap: 0.75rem;
+  }
+
+  .pact-events-modal .pact-events-panel {
+    padding: 0.9rem;
+  }
+
+  .pact-events-modal .pact-events-panel h3 {
+    font-size: 1rem;
+  }
+
+}
+
+
+/* =========================================
+   PACT LEGACY PROGRAMS — VERTICAL TIMELINE
+   ========================================= */
+
+.pact-legacy-timeline {
+  position: relative;
+  margin: 1.5rem 0 2rem;
+  padding: 0;
+}
+
+/* Continuous vertical timeline line */
+
+.pact-legacy-timeline::before {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 18px;
+
+  width: 2px;
+  background: var(--pact-doc-border, #d7dee7);
+}
+
+/* Timeline item */
+
+.pact-legacy-item {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr);
+  align-items: stretch;
+
+  column-gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.pact-legacy-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Marker area, matching card height */
+
+.pact-legacy-marker {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 100%;
+}
+
+/* Centered timeline circles */
+
+.pact-legacy-dot {
+  position: relative;
+  z-index: 1;
+
+  display: block;
+
+  width: 14px;
+  height: 14px;
+
+  background: var(--ifm-background-color);
+  border: 3px solid #a32c37;
+  border-radius: 50%;
+
+  box-sizing: border-box;
+}
+
+/* Program cards */
+
+.pact-legacy-content {
+  min-width: 0;
+
+  padding: 1rem 1.1rem;
+
+  background: var(--ifm-background-surface-color);
+
+  border: 1px solid var(--pact-doc-border, #e5eaf0);
+  border-radius: 7px;
+}
+
+/* Program headings */
+
+.pact-legacy-content h3 {
+  margin: 0 0 0.65rem;
+
+  color: var(--ifm-heading-color);
+
+  font-size: 1.05rem;
+  font-weight: 750;
+  line-height: 1.35;
+}
+
+/* Paragraph spacing */
+
+.pact-legacy-content p {
+  line-height: 1.65;
+}
+
+.pact-legacy-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* -----------------------------------------
+   MOBILE
+   ----------------------------------------- */
+
+@media (max-width: 600px) {
+
+  .pact-legacy-timeline::before {
+    left: 13px;
+  }
+
+  .pact-legacy-item {
+    grid-template-columns: 28px minmax(0, 1fr);
+    column-gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .pact-legacy-marker {
+    width: 28px;
+  }
+
+  .pact-legacy-dot {
+    width: 14px;
+    height: 14px;
+  }
+
+  .pact-legacy-content {
+    padding: 0.85rem;
+  }
+
+}
+
+
+
+
+/* =========================================
+   PACT CODES — MATCH EXISTING FAQ DROPDOWNS
+   ========================================= */
+
+/* Dropdown container */
+
+.theme-doc-markdown details.pact-codes-details {
+  --ifm-alert-border-color: transparent;
+  --ifm-alert-border-left-width: 0;
+
+  display: block;
+  position: relative;
+
+  margin: 1rem 0 1.5rem;
+  padding: 0;
+
+  background: var(--ifm-background-surface-color) !important;
+
+  border: 1px solid var(--pact-doc-border, #e5eaf0) !important;
+  border-radius: 6px !important;
+
+  box-shadow: none !important;
+  overflow: hidden;
+
+  transition: border-color 0.2s ease;
+}
+
+/* Expanded border — PACT red */
+
+.theme-doc-markdown details.pact-codes-details[open] {
+  border-color: var(--pact-doc-accent, #a32c37) !important;
+}
+
+/* Remove theme-generated decorations */
+
+.theme-doc-markdown details.pact-codes-details::before,
+.theme-doc-markdown details.pact-codes-details::after {
+  display: none !important;
+  content: none !important;
+}
+
+/* Dropdown heading */
+
+.theme-doc-markdown details.pact-codes-details > summary {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1.25rem;
+
+  min-height: 0 !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0.85rem 1.25rem !important;
+
+  background: transparent !important;
+
+  border: none !important;
+  border-radius: 0 !important;
+
+  box-shadow: none !important;
+
+  color: var(--pact-doc-title, #14283c);
+
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.35;
+
+  cursor: pointer;
+  list-style: none !important;
+}
+
+/* Remove default browser and Docusaurus arrows */
+
+.theme-doc-markdown
+details.pact-codes-details > summary::before {
+  display: none !important;
+  content: none !important;
+}
+
+.theme-doc-markdown
+details.pact-codes-details > summary::-webkit-details-marker {
+  display: none !important;
+}
+
+.theme-doc-markdown
+details.pact-codes-details > summary::marker {
+  content: "" !important;
+}
+
+/* PACT red plus indicator */
+
+.theme-doc-markdown
+details.pact-codes-details > summary::after {
+  content: "+" !important;
+
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+
+  position: static !important;
+
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+
+  color: var(--pact-doc-accent, #a32c37);
+
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1;
+
+  background: none !important;
+  border: none !important;
+
+  transform: none !important;
+}
+
+/* Minus indicator when expanded */
+
+.theme-doc-markdown
+details.pact-codes-details[open] > summary::after {
+  content: "−" !important;
+}
+
+/* Hover and keyboard focus */
+
+.theme-doc-markdown
+details.pact-codes-details > summary:hover {
+  background: var(--ifm-color-emphasis-100) !important;
+}
+
+.theme-doc-markdown
+details.pact-codes-details > summary:focus-visible {
+  outline: 2px solid var(--pact-doc-accent, #a32c37);
+  outline-offset: -3px;
+}
+
+/* Expanded content */
+
+.theme-doc-markdown
+details.pact-codes-details .pact-codes-body {
+  padding: 0.85rem 1.25rem 1.05rem !important;
+  margin: 0 !important;
+
+  background: transparent !important;
+
+  border-top: 1px solid var(--pact-doc-border, #e5eaf0) !important;
+  border-bottom: none !important;
+
+  overflow-x: auto;
+}
+
+.pact-codes-body > :last-child {
+  margin-bottom: 0;
+}
+
+/* Tables — existing neutral gray headers */
+
+.pact-codes-body table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.pact-codes-body table thead th {
+  background: #f1f3f5;
+  color: #14283c;
+  border-color: #d9dfe5;
+  font-weight: 700;
+}
+
+/* Dark mode */
+
+html[data-theme='dark']
+.theme-doc-markdown details.pact-codes-details > summary {
+  color: var(--ifm-heading-color);
+}
+
+html[data-theme='dark']
+.pact-codes-body table thead th {
+  background: #1f2937;
+  color: #f3f4f6;
+  border-color: #374151;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .theme-doc-markdown
+  details.pact-codes-details > summary {
+    padding: 0.85rem 1rem !important;
+  }
+
+  .theme-doc-markdown
+  details.pact-codes-details .pact-codes-body {
+    padding: 0.85rem 1rem !important;
+  }
+}
+
+/* =========================================
+   PACT CODES — DROPDOWN SPACING FIX
+   ========================================= */
+
+/* Remove Docusaurus-generated content spacing */
+
+.theme-doc-markdown
+details.pact-codes-details > div {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Remove generated collapsible wrapper spacing */
+
+.theme-doc-markdown
+details.pact-codes-details
+[class*="collapsibleContent"] {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Keep heading flush with expanded content */
+
+.theme-doc-markdown
+details.pact-codes-details > summary {
+  margin: 0 !important;
+  border-bottom: none !important;
+}
+
+/* One subtle divider when expanded */
+
+.theme-doc-markdown
+details.pact-codes-details[open] > summary {
+  border-bottom: 1px solid
+    var(--pact-doc-border, #e5eaf0) !important;
+}
+
+/* Actual table content */
+
+.theme-doc-markdown
+details.pact-codes-details .pact-codes-body {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+  box-shadow: none !important;
+
+  overflow-x: auto;
+}
+
+/* Remove table margins */
+
+.theme-doc-markdown
+details.pact-codes-details .pact-codes-body table {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Remove spacing on the first and last elements */
+
+.theme-doc-markdown
+details.pact-codes-details
+.pact-codes-body > :first-child {
+  margin-top: 0 !important;
+}
+
+.theme-doc-markdown
+details.pact-codes-details
+.pact-codes-body > :last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Remove spacing on multi-column table layouts */
+
+.theme-doc-markdown
+details.pact-codes-details .pact-codes-body > .row {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .theme-doc-markdown
+  details.pact-codes-details .pact-codes-body {
+    padding: 0 !important;
+  }
+}
+
+
+/* =========================================
+   PACT HOMEPAGE — NAVIGATION REFINEMENT
+   ========================================= */
+
+/* Hide navbar title on homepage only */
+
+body:has(.pact-homepage) .navbar__title {
+  display: none !important;
+}
+
+/* Preserve existing PACT logo */
+
+body:has(.pact-homepage) .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Move navigation links closer to logo */
+
+@media (min-width: 997px) {
+
+  body:has(.pact-homepage) .navbar__inner {
+    justify-content: flex-start;
+  }
+
+  body:has(.pact-homepage) .navbar__brand {
+    margin-right: 2rem;
+  }
+
+  body:has(.pact-homepage) .navbar__items--right {
+    margin-left: 0 !important;
+  }
+
+  body:has(.pact-homepage) .navbar__search {
+    margin-left: auto;
+  }
+
+}
+
+/* =========================================
+   PACT INTERFACE MEETINGS — TABLE HEADINGS
+   ========================================= */
+
+.pact-interface-table thead th {
+  font-size: 1.1rem !important;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .pact-interface-table thead th {
+    font-size: 0.95rem !important;
+  }
+}
+
+/* =========================================
+   PACT INTERFACE MEETINGS — HEADER ALIGNMENT
+   ========================================= */
+
+/* Vertically center all column headings */
+
+.pact-interface-table thead th {
+  vertical-align: middle !important;
+}
+
+/* Correct Calendar heading alignment */
+
+.pact-interface-table thead th.pact-interface-calendar-column {
+  vertical-align: middle !important;
+  display: table-cell !important;
+  text-align: left;
+}
+
+
+
+/* =========================================
+   PACT LEADERSHIP TEAM — PORTRAIT CARDS
+   ========================================= */
+
+/* -----------------------------------------
+   Organizational Chart
+   ----------------------------------------- */
+
+.pact-leadership-chart {
+  text-align: center;
+  margin: 0.5rem 0 1.75rem;
+}
+
+.pact-leadership-chart img {
+  display: block;
+  width: min(100%, 940px);
+  height: auto;
+  margin-inline: auto;
+}
+
+/* -----------------------------------------
+   Contact Section
+   ----------------------------------------- */
+
+.pact-leadership-contact {
+  text-align: center;
+  margin: 0 0 2.5rem;
+}
+
+.pact-leadership-contact p {
+  margin: 0 0 1rem;
+}
+
+/* -----------------------------------------
+   Leadership Grid
+   ----------------------------------------- */
+
+.pact-leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.35rem;
+  margin: 1.5rem 0 2.5rem;
+  align-items: stretch;
+}
+
+/* -----------------------------------------
+   Individual Leadership Cards
+   ----------------------------------------- */
+
+.pact-leadership-card {
+  --leadership-navy: #12394c;
+  --leadership-red: var(--pact-red, #a02010);
+
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+
+  background: #f7f3ea;
+  color: #192d3e;
+
+  border: 1px solid #d8d1c6;
+  border-radius: 13px;
+
+  box-shadow: 0 3px 10px rgba(20, 33, 45, 0.09);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.pact-leadership-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 23px rgba(20, 33, 45, 0.14);
+}
+
+/* -----------------------------------------
+   Navy Leadership Role Header
+   ----------------------------------------- */
+
+.pact-leadership-card__brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 72px;
+  padding: 0.8rem 1rem;
+
+  background: var(--leadership-navy);
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.pact-leadership-card__brand span {
+  display: block;
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+/* -----------------------------------------
+   Portrait and Ribbon Layout
+   ----------------------------------------- */
+
+.pact-leadership-card__visual {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 52px;
+
+  height: 330px;
+  flex: 0 0 330px;
+  min-width: 0;
+
+  padding: 0.55rem 0.55rem 0;
+}
+
+/* -----------------------------------------
+   Portrait Container
+   ----------------------------------------- */
+
+.pact-leadership-card__portrait {
+  position: relative;
+
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #e8dfce;
+  border-radius: 7px 0 0 7px;
+}
+
+.pact-leadership-card__portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* -----------------------------------------
+   Portrait Placeholder
+   ----------------------------------------- */
+
+.pact-leadership-card__placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+
+  width: 100%;
+  height: 100%;
+
+  padding: 1rem;
+
+  color: #70808a;
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at 50% 28%,
+      #f6f1e6 0,
+      transparent 62%
+    ),
+    linear-gradient(
+      160deg,
+      #e7e0d4,
+      #ddd5c6
+    );
+}
+
+.pact-leadership-card__placeholder span {
+  display: block;
+  max-width: 125px;
+
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================
+   RED PACT RIBBON — UPRIGHT STACKED LETTERS
+   ========================================= */
+
+.pact-leadership-card__role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+
+  overflow: hidden;
+
+  background: var(--leadership-red);
+  color: #ffffff;
+
+  border-radius: 0 7px 7px 0;
+
+  /* Reset previous vertical-text styling */
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+  transform: none;
+}
+
+/* Container for P, A, C, T */
+
+.pact-leadership-card__letters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.85rem;
+
+  width: 100%;
+  height: auto;
+  min-height: 0;
+
+  margin: 0;
+  padding: 0.75rem 0;
+
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+  transform: none;
+}
+
+/* Each letter stays upright */
+
+.pact-leadership-card__letters > span {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0;
+
+  text-align: center;
+  white-space: nowrap;
+
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
+  transform: none;
+}
+
+
+
+/* Overlapping Circular PACT Logo */
+
+.pact-leadership-card__badge {
+  position: absolute;
+  z-index: 3;
+
+  display: block;
+  width: 110px;
+  height: 110px;
+
+  right: 7px;
+bottom: -56px;
+
+  object-fit: contain;
+  border-radius: 50%;
+
+  filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.22));
+  pointer-events: none;
+}
+
+/* Mobile */
+
+@media (max-width: 650px) {
+  .pact-leadership-card__badge {
+    width: 96px;
+    height: 96px;
+    right: 6px;
+    bottom: -45px;
+  }
+}
+
+@media (max-width: 390px) {
+  .pact-leadership-card__badge {
+    width: 88px;
+    height: 88px;
+    bottom: -41px;
+  }
+}
+
+/* -----------------------------------------
+   Member Name and Information
+   ----------------------------------------- */
+
+.pact-leadership-card__information {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  min-width: 0;
+
+  padding: 1.1rem 1rem 0.75rem;
+}
+
+.pact-leadership-card__information h3 {
+  margin: 0 0 0.2rem !important;
+
+  color: #142e40;
+
+  font-size: 1.22rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.pact-leadership-card__callsign {
+  margin: 0 0 0.7rem !important;
+
+  color: var(--leadership-red);
+
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.pact-leadership-card__description {
+  margin: 0 !important;
+
+  color: #344251;
+
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+/* -----------------------------------------
+   Expandable Biography
+   ----------------------------------------- */
+
+.pact-leadership-card__details {
+  margin: auto 0.9rem 0.85rem;
+  padding: 0;
+
+  border-top: 1px solid #d9d3c9;
+}
+
+.pact-leadership-card__details summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+
+  padding: 0.85rem 0 0.15rem;
+
+  cursor: pointer;
+
+  color: var(--leadership-navy);
+
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+
+  list-style: none;
+}
+
+.pact-leadership-card__details summary::-webkit-details-marker {
+  display: none;
+}
+
+.pact-leadership-card__details summary::marker {
+  content: '';
+}
+
+.pact-leadership-card__details summary svg {
+  flex: 0 0 auto;
+  transition: transform 0.2s ease;
+}
+
+.pact-leadership-card__details[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.pact-leadership-card__details summary:focus-visible {
+  outline: 2px solid var(--leadership-red);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* -----------------------------------------
+   Biography Content
+   ----------------------------------------- */
+
+.pact-leadership-card__biography {
+  padding-top: 0.7rem;
+
+  color: #344251;
+
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.pact-leadership-card__biography p {
+  margin: 0 0 0.75rem !important;
+}
+
+.pact-leadership-card__biography
+.pact-leadership-card__license {
+  padding-top: 0.6rem;
+  border-top: 1px solid #d9d3c9;
+}
+
+/* -----------------------------------------
+   Dark Mode
+   ----------------------------------------- */
+
+[data-theme='dark'] .pact-leadership-card {
+  background: #232d34;
+  border-color: #46525c;
+  color: #f2f2f2;
+}
+
+[data-theme='dark']
+.pact-leadership-card__information h3,
+[data-theme='dark']
+.pact-leadership-card__description,
+[data-theme='dark']
+.pact-leadership-card__biography {
+  color: #f2f2f2;
+}
+
+[data-theme='dark']
+.pact-leadership-card__details summary {
+  color: #f2f2f2;
+}
+
+[data-theme='dark']
+.pact-leadership-card__callsign {
+  color: #f09a8e;
+}
+
+/* -----------------------------------------
+   Tablet
+   ----------------------------------------- */
+
+@media (max-width: 996px) {
+  .pact-leadership-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* -----------------------------------------
+   Mobile
+   ----------------------------------------- */
+
+@media (max-width: 650px) {
+  .pact-leadership-grid {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .pact-leadership-card__visual {
+    height: 330px;
+    flex-basis: 330px;
+  }
+
+  .pact-leadership-card__badge {
+    width: 68px;
+    height: 68px;
+
+    right: 12px;
+    bottom: -32px;
+  }
+}
+
+@media (max-width: 390px) {
+  .pact-leadership-card__visual {
+    grid-template-columns: minmax(0, 1fr) 48px;
+
+    height: 300px;
+    flex-basis: 300px;
+  }
+
+  .pact-leadership-card__letters > span {
+    font-size: 1.8rem;
+  }
+
+  .pact-leadership-card__badge {
+    width: 62px;
+    height: 62px;
+    bottom: -29px;
+  }
+}
+
+/* -----------------------------------------
+   Reduced Motion
+   ----------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .pact-leadership-card,
+  .pact-leadership-card__details summary svg {
+    transition: none;
+  }
+
+  .pact-leadership-card:hover {
+    transform: none;
+  }
+}

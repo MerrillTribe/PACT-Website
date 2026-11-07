@@ -1,18 +1,23 @@
 ---
 sidebar_position: 1
 ---
+
 # Codes
 
 Radio codes help reduce misunderstandings, improve efficiency, and ensure that important information is transmitted consistently between operators.
-
 While plain language is preferred for most emergency communications, understanding common radio codes remains valuable because many amateur radio operators, emergency communicators, and public safety organizations still use them in specific situations. The tables below provide a quick guide to some of the most commonly recognized communication codes used in radio operations.
 
 ---
-
-### ITU Phonetic Alphabet
-
-The International Telecommunication Union (ITU) phonetic alphabet is used to clearly spell words, names, callsigns, and locations over the radio. It helps prevent confusion between letters that may sound similar, especially when signals are weak or background noise is present.
-
+## ITU Phonetic Alphabet
+<div className="pact-codes-accordion">
+  <section className="pact-codes-section">
+    <p>The International Telecommunication Union (ITU) phonetic alphabet is used to clearly spell words, names, callsigns, and locations over the radio. It helps prevent confusion between letters that may sound similar, especially when signals are weak or background noise is present.</p>
+<div className="pact-codes-note">
+  <strong>Note:</strong> The <strong>boldfaced</strong> syllables are emphasized. The pronunciations shown in this table were designed for those who speak any of the international languages. The pronunciations given for Oscar and Victor may seem awkward to English speaking people in the US.
+</div>
+    <details className="pact-codes-details">
+      <summary>View Phonetic Alphabet</summary>
+      <div className="pact-codes-body">
 | Letter | Word | Pronunciation |
 |-----------|-----|------|
 | A | Alfa | **AL** FAH |
@@ -41,17 +46,17 @@ The International Telecommunication Union (ITU) phonetic alphabet is used to cle
 | X | X-Ray | **ECKS** RAY |
 | Y | Yankee | **YANG** KEY |
 | Z | Zulu | **ZOO** LOO |
-
-:::note Note
-The **boldfaced** syllables are emphasized. The pronunciations shown in this table were designed for those who speak any of the international languages. The pronunciations given for Oscar and Victor may seem awkward to English speaking people in the US.
-:::
-
----
-
-### Q Signals
-
-Q signals are three-letter shorthand codes that originated in early radiotelegraph operations and are still widely used in amateur radio today. These codes allow operators to quickly communicate common questions or statements such as signal strength, location, frequency interference, or whether a station is available.
-
+      </div>
+    </details>
+  </section>
+</div>
+## Q Signals
+<div className="pact-codes-accordion">
+  <section className="pact-codes-section">
+    <p>Q signals are three-letter shorthand codes that originated in early radiotelegraph operations and are still widely used in amateur radio today. These codes allow operators to quickly communicate common questions or statements such as signal strength, location, frequency interference, or whether a station is available.</p>
+    <details className="pact-codes-details">
+      <summary>View Q Signals</summary>
+      <div className="pact-codes-body">
 | Q Code | Question | Answer |
 |-----------|-----|------|
 | **QLE** | What is your expected signal? | The expected signal is low... |
@@ -104,13 +109,17 @@ Q signals are three-letter shorthand codes that originated in early radiotelegra
 | **QUD** | Have you received the urgency signal sent by... | I have received the urgency signal sent by... at... |
 | **QUE** | Can you speak in...(language); if so, on what frequencies? | I can speak in...(language) on... |
 | **QUF** | Have you received the distress signal sent by... | I have received the distress signal sent by...at...hours. |
-
----
-
-### RST Codes
-
-RST stands for Readability, Signal Strength, and Tone. This system is used to report the quality of a received transmission. Operators may use RST reports during signal checks, contests, or troubleshooting to quickly communicate how well they are hearing another station. The tone report digit is only required for a CW (Morse code) contact. A good report like 5-9 means that others can hear you perfectly. A bad report like 3-1 might mean it is time to give up and try again another day when conditions are better. RST reports are recorded for each contact in the operator’s log book.
-
+      </div>
+    </details>
+  </section>
+</div>
+## RST Codes
+<div className="pact-codes-accordion">
+  <section className="pact-codes-section">
+    <p>RST stands for Readability, Signal Strength, and Tone. This system is used to report the quality of a received transmission. Operators may use RST reports during signal checks, contests, or troubleshooting to quickly communicate how well they are hearing another station. The tone report digit is only required for a CW (Morse code) contact. A good report like 5-9 means that others can hear you perfectly. A bad report like 3-1 might mean it is time to give up and try again another day when conditions are better. RST reports are recorded for each contact in the operator’s log book.</p>
+    <details className="pact-codes-details">
+      <summary>View RST Codes</summary>
+      <div className="pact-codes-body">
 | Number | Readability (R) | Strength (S) | Tone (T) [Morse Code] |
 |--------|-----------|------|--------|
 | **1** | Unreadable | Faint | Harsh tone with hum |
@@ -122,17 +131,19 @@ RST stands for Readability, Signal Strength, and Tone. This system is used to re
 | **7** | - | Moderately Strong | Good tone, slight hum |
 | **8** | - | Strong | Good tone, slight modulation |
 | **9** | - | Very Strong | Perfect tone, no hum or modulation |
-
----
-
-### Utah Public Service Ten Codes
-
-Ten codes were originally developed by law enforcement and public safety agencies to communicate common messages quickly. While plain language is always acceptable, operators may still encounter Ten Codes during public events, or when working alongside local agencies.
-
+      </div>
+    </details>
+  </section>
+</div>
+## Utah Public Service Ten Codes
+<div className="pact-codes-accordion">
+  <section className="pact-codes-section">
+    <p>Ten codes were originally developed by law enforcement and public safety agencies to communicate common messages quickly. While plain language is always acceptable, operators may still encounter Ten Codes during public events, or when working alongside local agencies.</p>
+    <details className="pact-codes-details">
+      <summary>View Ten Codes</summary>
+      <div className="pact-codes-body">
 <div className="row">
-
 <div className="col col--6">
-
 <table>
 <thead>
 <tr>
@@ -194,11 +205,8 @@ Ten codes were originally developed by law enforcement and public safety agencie
 <tr><td><strong>10-50</strong></td><td>Traffic Accident</td></tr>
 </tbody>
 </table>
-
 </div>
-
 <div className="col col--6">
-
 <table>
 <thead>
 <tr>
@@ -241,14 +249,12 @@ Ten codes were originally developed by law enforcement and public safety agencie
 <tr><td><strong>10-82</strong></td><td>Prisoner In Custody</td></tr>
 <tr><td><strong>10-83</strong></td><td>Confidential Information</td></tr>
 <tr><td><strong>10-84</strong></td><td>Visitors Present</td></tr>
-
 <tr className="victim-condition-group"><td><strong>10-85</strong></td><td>Victim(s) Condition</td></tr>
 <tr className="victim-condition-group"><td><strong>Alpha</strong></td><td>Fair</td></tr>
 <tr className="victim-condition-group"><td><strong>Bravo</strong></td><td>Poor</td></tr>
 <tr className="victim-condition-group"><td><strong>Charlie</strong></td><td>Critical</td></tr>
 <tr className="victim-condition-group"><td><strong>Delta</strong></td><td>Possible Fatality</td></tr>
 <tr className="victim-condition-group"><td><strong>Echo</strong></td><td>Obvious Fatality</td></tr>
-
 <tr><td><strong>10-86</strong></td><td>Crime In Progress</td></tr>
 <tr><td><strong>10-87</strong></td><td>Abandoned Car</td></tr>
 <tr><td><strong>10-88</strong></td><td>Man With Gun</td></tr>
@@ -265,36 +271,35 @@ Ten codes were originally developed by law enforcement and public safety agencie
 <tr><td><strong>10-99</strong></td><td>Wanted/Stolen Indicated</td></tr>
 <tr><td><strong>10-100</strong></td><td>County-Wide Road Watch</td></tr>
 <tr><td><strong>10-200</strong></td><td>County-Wide Road Block</td></tr>
-
 </tbody>
 </table>
-
 </div>
-
 </div>
-
----
-
-### Morse Code (CW)
-
-Morse code uses combinations of dots (Dits) and dashes (Dahs) to represent letters, numbers, and punctuation.  Although voice communication is far more common today, Morse code remains an important part of radio history and is still actively used by many amateur radio operators because it can be transmitted over long distances using very little power or bandwidth.
-
-:::tip Morse Code Timing
-Morse code is based heavily on timing:
-
-- **Dit (.)** = 1 unit of time  
-- **Dah (-)** = 3 units of time  
-- Space between dits/dahs within a letter = 1 unit  
-- Space between letters = 3 units  
-- Space between words = 7 units  
-
-:::
-
+      </div>
+    </details>
+  </section>
+</div>
+## Morse Code (CW)
+<div className="pact-codes-accordion">
+  <section className="pact-codes-section">
+    <p>Morse code uses combinations of dots (Dits) and dashes (Dahs) to represent letters, numbers, and punctuation.  Although voice communication is far more common today, Morse code remains an important part of radio history and is still actively used by many amateur radio operators because it can be transmitted over long distances using very little power or bandwidth.</p>
+<div className="pact-codes-note">
+  <strong>Morse Code Timing</strong>
+  <p>Morse code is based heavily on timing:</p>
+  <ul>
+    <li><strong>Dit (.)</strong> = 1 unit of time</li>
+    <li><strong>Dah (-)</strong> = 3 units of time</li>
+    <li>Space between dits/dahs within a letter = 1 unit</li>
+    <li>Space between letters = 3 units</li>
+    <li>Space between words = 7 units</li>
+  </ul>
+</div>
+    <details className="pact-codes-details">
+      <summary>View Morse Code</summary>
+      <div className="pact-codes-body">
 <div className="row">
-
   {/* Letters A–M */}
   <div className="col col--4">
-
     <table>
       <thead>
         <tr>
@@ -318,12 +323,9 @@ Morse code is based heavily on timing:
         <tr><td><strong>M</strong></td><td><strong>--</strong></td></tr>
       </tbody>
     </table>
-
   </div>
-
   {/* Letters N–Z */}
   <div className="col col--4">
-
     <table>
       <thead>
         <tr>
@@ -347,12 +349,9 @@ Morse code is based heavily on timing:
         <tr><td><strong>Z</strong></td><td><strong>--..</strong></td></tr>
       </tbody>
     </table>
-
   </div>
-
   {/* Numbers */}
   <div className="col col--4">
-
     <table>
       <thead>
         <tr>
@@ -373,17 +372,19 @@ Morse code is based heavily on timing:
         <tr><td><strong>9</strong></td><td><strong>----.</strong></td></tr>
       </tbody>
     </table>
-
   </div>
-
 </div>
-
----
-
-### CW Abbreviations
-
-CW (Continuous Wave) abbreviations are short shorthand expressions commonly used during Morse code communication to speed up transmissions. Instead of sending full phrases, operators can use abbreviations like DX (distance), or ANT (antenna). These shortcuts make Morse conversations faster and more efficient.
-
+      </div>
+    </details>
+  </section>
+</div>
+## CW Abbreviations
+<div className="pact-codes-accordion">
+  <section className="pact-codes-section">
+    <p>CW (Continuous Wave) abbreviations are short shorthand expressions commonly used during Morse code communication to speed up transmissions. Instead of sending full phrases, operators can use abbreviations like DX (distance), or ANT (antenna). These shortcuts make Morse conversations faster and more efficient.</p>
+    <details className="pact-codes-details">
+      <summary>View CW Abbreviations</summary>
+      <div className="pact-codes-body">
 | Abbreviation | Meaning | Abbreviation | Meaning | Abbreviation | Meaning |
 |--------|-----------|------|--------|------|--------|
 | **AA** | All After | **GG** | Going | **SEZ** | Says |
@@ -434,13 +435,17 @@ CW (Continuous Wave) abbreviations are short shorthand expressions commonly used
 | **GD** | Good | **RX** | Receive, receiver |
 | **GE** | Good Evening | **SASE** | Self addressed stamped envelope |
 | **GESS** | Guess | **SED** | Said |
-
----
-
-### Western Union (92) Codes
-
-The 92 Code was originally adopted by the Western Union in 1859. The code was used by telegraphers to save time and cost when sending long messages. A handful of these codes are still used by amateur radio operators for brevity.
-
+      </div>
+    </details>
+  </section>
+</div>
+## Western Union (92) Codes
+<div className="pact-codes-accordion">
+  <section className="pact-codes-section">
+    <p>The 92 Code was originally adopted by the Western Union in 1859. The code was used by telegraphers to save time and cost when sending long messages. A handful of these codes are still used by amateur radio operators for brevity.</p>
+    <details className="pact-codes-details">
+      <summary>View Western Union Codes</summary>
+      <div className="pact-codes-body">
 | Code | Meaning | Code | Meaning |
 |--------|-----------|------|--------|
 | **1** | Wait a minute. | **25** | Busy on another wire. |
@@ -464,4 +469,7 @@ The 92 Code was originally adopted by the Western Union in 1859. The code was us
 | **22** | Wire test. | **91** | Superintendent's signal. |
 | **23** | All stations copy. | **92** | Delivery promptly. |
 | **24** | Repeat this back. | **134** | Who is at the key? |
-
+      </div>
+    </details>
+  </section>
+</div>
