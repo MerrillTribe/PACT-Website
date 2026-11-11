@@ -48,7 +48,7 @@ const sidebars = {
         'resources/forms',
         'resources/getting-your-license',
         'resources/helpful-links',
-        'resources/incident-coordination',
+        'resources/incident-communications',
         'resources/lds-resources',
         'resources/leadership-team',
         'resources/local-groups',

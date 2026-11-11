@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+title: Get Involved
 ---
 
 import {Mail, ClipboardList, ArrowRight} from 'lucide-react';
