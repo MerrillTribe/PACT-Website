@@ -136,21 +136,21 @@ export function RepeaterSelector() {
           : 'The repeater receives on 448.575 MHz and transmits on 443.575 MHz. Its transmit frequency is 5.000 MHz below its receive frequency.'}
       </p>
 
-      {/* Repeater coverage map */}
+{/* Repeater coverage map */}
 
-      <div className="pact-repeater-map-action">
-        <a
-          className="pact-primary-button"
-          href="https://provoauxiliarycommunicationsteam.com/repeater-map/"
-        >
-          <Map
-            size={18}
-            strokeWidth={2}
-            aria-hidden="true"
-          />
-          <span>VIEW REPEATER COVERAGE MAP</span>
-        </a>
-      </div>
+<div className="pact-repeater-map-action">
+  <a
+    className="pact-primary-button"
+    href="/repeater-map/?view=provo-coverage"
+  >
+    <Map
+      size={18}
+      strokeWidth={2}
+      aria-hidden="true"
+    />
+    <span>VIEW REPEATER COVERAGE MAP</span>
+  </a>
+</div>
 
     </div>
   );

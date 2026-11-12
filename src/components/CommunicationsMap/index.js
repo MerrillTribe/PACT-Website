@@ -52,18 +52,27 @@ const {districts = []} =
  
         const [basemap, setBasemap] = useState('streets');
  
-        const [layers, setLayers] = useState({
-          repeaters: true,
- 
-          intertie: false,
-          sinbad: false,
- 
-          accs: false,
-          eoc: true,
-          districts: true,
- 
-          provoRepeaterCoverage: false,
-        });
+
+const isProvoCoverageView =
+  window.location.search.includes('view=provo-coverage');
+
+const [layers, setLayers] = useState({
+  // Hide other repeater markers in coverage view
+  repeaters: !isProvoCoverageView,
+
+  // Linked repeater systems
+  intertie: false,
+  sinbad: false,
+
+  // Other map layers
+  accs: false,
+  eoc: !isProvoCoverageView,
+  districts: !isProvoCoverageView,
+
+  // Automatically enable Provo City LOS
+  provoRepeaterCoverage: isProvoCoverageView,
+});
+
  
         /*
          * ---------------------------------------------------------
