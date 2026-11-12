@@ -1779,6 +1779,50 @@ const {districts = []} =
                     />
                   )}
  
+{/* PROVO CITY REPEATER - LOS REFERENCE MARKER */}
+
+{layers.provoRepeaterCoverage && !layers.repeaters && (
+  <Marker
+    position={[40.232838, -111.667014]}
+    icon={getIcon('repeaters')}
+    zIndexOffset={1000}
+  >
+    <Popup>
+      <div style={{minWidth: '210px', lineHeight: 1.5}}>
+        <div
+          style={{
+            fontWeight: 700,
+            fontSize: '1rem',
+            marginBottom: '6px',
+          }}
+        >
+          Provo City Repeater
+        </div>
+
+        <div><strong>Callsign:</strong> KM7GCR</div>
+        <div><strong>Location:</strong> Provo City Hall</div>
+        <div><strong>Output (RX):</strong> 443.575 MHz</div>
+        <div><strong>Input (TX):</strong> 448.575 MHz</div>
+        <div><strong>Offset:</strong> +5.000 MHz</div>
+        <div><strong>CTCSS:</strong> 123.0 Hz</div>
+        <div><strong>Antenna Height:</strong> 95 ft AGL</div>
+
+        <div
+          style={{
+            marginTop: '8px',
+            paddingTop: '8px',
+            borderTop: '1px solid #ddd',
+            fontSize: '0.8rem',
+          }}
+        >
+          Origin of the estimated terrain line-of-sight
+          coverage layer.
+        </div>
+      </div>
+    </Popup>
+  </Marker>
+)}
+
                 {/* LINKED REPEATER SYSTEMS */}
  
                 {renderLinkedSystem(
