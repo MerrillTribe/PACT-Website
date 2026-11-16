@@ -30,13 +30,15 @@
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.10.1",
     "@docusaurus/types": "^3.10.1",
-    "webpack": "5.98.0",
+    "webpack": "5.112.2",
     "webpack-dev-server": "5.2.0"
   },
-  "overrides": {
-    "webpack": "5.98.0",
-    "webpack-dev-server": "5.2.0"
-  },
+"overrides": {
+  "webpack": "5.112.2",
+  "webpack-dev-server": "5.2.0",
+  "tinypool": "2.2.0",
+  "serialize-javascript": "7.1.4"
+},
   "browserslist": {
     "production": [
       ">0.5%",
