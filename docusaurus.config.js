@@ -101,6 +101,26 @@ const config = {
     ],
   ],
 
+
+  /* =========================================
+     PAGE REDIRECTS
+     ========================================= */
+
+  plugins: [
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/docs/resources/local-frequencies-repeaters-nets/',
+            to: '/docs/resources/local-nets-repeaters-frequencies/',
+          },
+        ],
+      },
+    ],
+  ],
+
+
   /* =========================================
      THEME CONFIGURATION
      ========================================= */
