@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmy_website||=[]).push([[6239],{5846(a){a.exports=JSON.parse('{"authors":[{"name":"Provo Auxiliary Communications Team","page":{"permalink":"/announcements/authors/pact"},"imageURL":"/img/pact-logo.png","key":"pact","count":0}]}')}}]);
