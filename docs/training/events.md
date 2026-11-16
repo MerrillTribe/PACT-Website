@@ -1,4 +1,5 @@
 ---
+title: Events
 sidebar_position: 1
 ---
 
@@ -498,7 +499,6 @@ Participating in community events gives PACT members valuable hands-on experienc
 
 </dialog>
 
-
 {/* =========================================
     HIKE & LIGHT THE Y
     ========================================= */}
@@ -582,15 +582,9 @@ Participating in community events gives PACT members valuable hands-on experienc
             flashlight or headlamp, an extra clothing layer,
             and an amateur radio with an earpiece.
           </p>
-
-          <p>
-            Volunteer communications support for Hike &amp; Light
-            the Y is coordinated through the{' '}
-            <a href="/docs/resources/local-groups/#byu-amateur-radio-club-barc"><strong>BYU Amateur Radio Club (BARC)</strong></a>.
-            {' '}PACT members interested in participating should
-            sign up through the club's leadership.
-          </p>
-
+<p>
+  Volunteer communications support for Hike &amp; Light the Y is coordinated through the <a href="/docs/resources/local-groups/#byu-amateur-radio-club-barc"><strong>BYU Amateur Radio Club (BARC)</strong></a>. PACT members interested in participating should sign up through the club's leadership.
+</p>
         </div>
 
       </div>

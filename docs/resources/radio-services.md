@@ -2,9 +2,10 @@
 title: Radio Services
 sidebar_position: 4
 ---
- 
+
 import React from 'react';
- 
+import Heading from '@theme/Heading';
+
 import {
   BriefcaseBusiness,
   RadioTower,
@@ -14,13 +15,13 @@ import {
   TreePine,
   ExternalLink,
 } from 'lucide-react';
- 
+
 There are many different types of radios, each designed for specific uses, such as talking with family, coordinating work, or communicating during emergencies. In the United States, the Federal Communications Commission (FCC) sets rules for how these radios can be used, including which frequencies are allowed and whether a license is required.
- 
+
 This guide explains the most common radio services, what they are used for, and their frequencies. **Remember, just because you can listen to a frequency does not mean you are allowed to transmit on it.**
- 
+
 ## Radio Services
- 
+
 <div className="radio-services-license-guide">
   <strong>Understanding Radio Licenses:</strong> Some radio services can be
   used without a personal FCC license, while others require one. Certain
@@ -28,7 +29,7 @@ This guide explains the most common radio services, what they are used for, and 
   of licensing requirements, you must use equipment and frequencies
   permitted for that service.
 </div>
- 
+
 export const radioServices = [
   {
     id: 'frs',
@@ -204,64 +205,62 @@ export const radioServices = [
     linkLabel: 'FCC Part 90 Rules',
     groups: []
   },
- 
- 
-{
-  id: 'amateur',
-  name: 'Amateur Radio',
-  icon: 'HAM',
-  subtitle: 'Multiple HF, VHF, UHF and microwave bands',
-  license: 'FCC License Required',
-  facts: [],
-  description: 'Amateur radio allows licensed operators to communicate locally, across the country, and around the world. It is used for personal communication, technical experimentation, education, and volunteer public service, including emergency communications. Available frequencies and operating privileges depend on the operator’s FCC license class.',
-  link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97',
-  linkLabel: 'FCC Service Rules',
-  frequencyLink: '/docs/resources/band-plans',
-  groups: [],
-  note: ''
-},
- 
- 
-{
-  id: 'lora',
-  name: 'LoRa / Mesh Communications',
-  icon: 'LoRa',
-  subtitle: 'Low-power digital communications · 902–928 MHz',
-  license: 'Configuration Dependent',
-  facts: [],
- 
-  description: 'LoRa is a low-power radio technology used to send text messages, location information, and other small amounts of data over long distances. Systems such as Meshtastic and MeshCore use LoRa to communicate without cellular service or internet access. Although they can use similar equipment, they operate as separate networks with different messaging and routing methods.',
- 
-  link: '',
-  linkLabel: '',
- 
-  groups: [
-    {
-      title: 'Meshtastic Frequency Examples (United States)',
-      columns: ['Configuration', 'Frequency', 'Description'],
-      rows: [
-        [
-          'LongFast · Slot 20',
-          '906.875 MHz',
-          'Common Meshtastic configuration'
-        ],
-        [
-          'LongTurbo · Slot 14',
-          '908.750 MHz',
-          'Meshtastic configuration'
-        ],
-        [
-          'ISM Band',
-          '902–928 MHz',
-          'U.S. frequency range for compatible devices'
+
+  {
+    id: 'amateur',
+    name: 'Amateur Radio',
+    icon: 'HAM',
+    subtitle: 'Multiple HF, VHF, UHF and microwave bands',
+    license: 'FCC License Required',
+    facts: [],
+    description: 'Amateur radio allows licensed operators to communicate locally, across the country, and around the world. It is used for personal communication, technical experimentation, education, and volunteer public service, including emergency communications. Available frequencies and operating privileges depend on the operator’s FCC license class.',
+    link: 'https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97',
+    linkLabel: 'FCC Service Rules',
+    frequencyLink: '/docs/resources/band-plans',
+    groups: [],
+    note: ''
+  },
+
+  {
+    id: 'lora',
+    name: 'LoRa / Mesh Communications',
+    icon: 'LoRa',
+    subtitle: 'Low-power digital communications · 902–928 MHz',
+    license: 'Configuration Dependent',
+    facts: [],
+
+    description: 'LoRa is a low-power radio technology used to send text messages, location information, and other small amounts of data over long distances. Systems such as Meshtastic and MeshCore use LoRa to communicate without cellular service or internet access. Although they can use similar equipment, they operate as separate networks with different messaging and routing methods.',
+
+    link: '',
+    linkLabel: '',
+
+    groups: [
+      {
+        title: 'Meshtastic Frequency Examples (United States)',
+        columns: ['Configuration', 'Frequency', 'Description'],
+        rows: [
+          [
+            'LongFast · Slot 20',
+            '906.875 MHz',
+            'Common Meshtastic configuration'
+          ],
+          [
+            'LongTurbo · Slot 14',
+            '908.750 MHz',
+            'Meshtastic configuration'
+          ],
+          [
+            'ISM Band',
+            '902–928 MHz',
+            'U.S. frequency range for compatible devices'
+          ]
         ]
-      ]
-    }
-  ],
- 
-  note: 'LoRa is a radio technology, not a separate FCC radio service. The frequencies shown are Meshtastic examples and do not necessarily apply to MeshCore. Devices must use compatible radio settings to communicate. Meshtastic and MeshCore cannot directly exchange messages simply because they use the same LoRa hardware. All equipment and configurations must comply with applicable FCC regulations.'
-},
- 
+      }
+    ],
+
+    note: 'LoRa is a radio technology, not a separate FCC radio service. The frequencies shown are Meshtastic examples and do not necessarily apply to MeshCore. Devices must use compatible radio settings to communicate. Meshtastic and MeshCore cannot directly exchange messages simply because they use the same LoRa hardware. All equipment and configurations must comply with applicable FCC regulations.'
+  },
+
   {
     id: 'marine',
     name: 'Marine Radio',
@@ -297,123 +296,111 @@ export const radioServices = [
     ],
     note: 'Marine channel numbering and permitted uses depend on jurisdiction; four-digit designations increasingly replace A suffixes.'
   },
-     
- 
-{
-  id: 'aviation',
-  name: 'Aviation Radio',
-  icon: 'Aviation',
-  subtitle: '118–137 MHz · VHF Airband',
-  license: 'Restricted / Authorized Use',
-  facts: [],
- 
-  description: 'Aviation radio provides communication between pilots, air traffic controllers, and airport personnel. It is used to coordinate aircraft movements, manage air traffic, share weather information, and support emergency communications. Most civilian aviation voice communications use AM radio in the VHF airband.',
- 
-  link: 'https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/',
-  linkLabel: 'FAA Chart Supplement',
- 
-  groups: [
-    {
-      title: 'Utah Airports & Air Traffic Control',
-      columns: ['Airport / Facility', 'Frequency', 'Usage'],
-      rows: [
-        ['Provo (PVU)', '125.300 MHz', 'Tower / CTAF'],
-        ['Provo (PVU)', '119.400 MHz', 'Ground'],
-        ['Provo (PVU)', '135.175 MHz', 'ATIS / AWOS'],
-        ['Provo Area', '118.850 MHz', 'Salt Lake Approach / Departure'],
- 
-        ['Salt Lake Intl (SLC)', '118.300 MHz', 'Tower — selected runways'],
-        ['Salt Lake Intl (SLC)', '119.050 MHz', 'Tower — selected runway'],
-        ['Salt Lake Intl (SLC)', '132.650 MHz', 'Tower — selected runway'],
-        ['Salt Lake Intl (SLC)', '121.900 MHz', 'Ground — selected runways'],
-        ['Salt Lake Intl (SLC)', '123.775 MHz', 'Ground — selected runways'],
-        ['Salt Lake Intl (SLC)', '124.750 MHz', 'D-ATIS'],
-        ['Salt Lake Intl (SLC)', '125.625 MHz', 'D-ATIS / weather'],
- 
-        ['Ogden-Hinckley (OGD)', '118.700 MHz', 'Tower / CTAF'],
-        ['Ogden-Hinckley (OGD)', '121.700 MHz', 'Ground'],
-        ['Ogden-Hinckley (OGD)', '125.550 MHz', 'ATIS'],
- 
-        ['Spanish Fork (SPK)', '122.900 MHz', 'CTAF'],
-        ['Spanish Fork (SPK)', '119.275 MHz', 'AWOS'],
- 
-        ['Heber Valley (HCR)', '122.800 MHz', 'CTAF / UNICOM'],
-        ['Heber Valley (HCR)', '124.825 MHz', 'AWOS'],
- 
-        ['Skypark (BTF)', '122.800 MHz', 'CTAF / UNICOM'],
- 
-        ['Cedar City (CDC)', '123.000 MHz', 'CTAF / UNICOM'],
-        ['Cedar City (CDC)', '119.025 MHz', 'ASOS'],
- 
-        ['St. George (SGU)', '123.075 MHz', 'CTAF / UNICOM'],
-        ['St. George (SGU)', '135.075 MHz', 'AWOS'],
- 
-        ['Canyonlands Regional (CNY)', '122.800 MHz', 'CTAF / UNICOM'],
-        ['Canyonlands Regional (CNY)', '118.525 MHz', 'ASOS']
-      ]
-    },
- 
-    {
-      title: 'Aviation Emergency & Search-and-Rescue Frequencies',
-      columns: ['Frequency', 'Service', 'Usage'],
-      rows: [
-        ['121.500 MHz', 'Civil Aviation', 'Emergency / Guard'],
-        ['243.000 MHz', 'Military Aviation', 'Emergency / Guard'],
-        ['123.100 MHz', 'Aviation', 'Search-and-rescue communications']
-      ]
-    },
- 
-    {
-      title: 'Emergency Locator Transmitters (ELTs)',
-      columns: ['Frequency', 'Type', 'Usage'],
-      rows: [
-        ['121.500 MHz', 'Analog ELT', 'Emergency beacon / local homing'],
-        ['243.000 MHz', 'Analog ELT', 'Military emergency beacon / homing'],
-        ['406 MHz band', 'Digital ELT', 'Satellite distress alerting through Cospas-Sarsat']
-      ]
-    }
-  ],
- 
-  note: 'Airport frequencies are based on FAA aeronautical information and may change. Tower, ground, approach, and other services may use different frequencies depending on location, runway, operating hours, and air traffic control instructions. Consult current FAA publications and NOTAMs before operational use. Air-medical dispatch, Civil Air Patrol, and other specialized agency frequencies are not included because their current Utah assignments have not been independently confirmed. This reference does not authorize transmission.'
-},
- 
- 
-{
-  id: 'railroad',
-  name: 'Railroad Radio',
-  icon: 'Railroad',
-  subtitle: '160–162 MHz · VHF',
-  license: 'Restricted / Authorized Use',
-  facts: [],
- 
-  description: 'Railroad radio provides communication between train crews, dispatchers, and yard personnel. It is used to coordinate train movements, switching operations, track maintenance, and railroad safety. In Utah Valley, Union Pacific and other railroad operations use standardized AAR radio channels.',
- 
-  link: 'https://utahcenteredrail.com/guides/subs/provosub.html',
-  linkLabel: 'Provo Railroad Reference',
- 
-  groups: [
-    {
-      title: 'Utah Valley Railroad Frequencies',
-      columns: ['AAR Channel', 'Frequency', 'Reported Usage'],
-      rows: [
-        ['23', '160.455 MHz', 'UP Provo Subdivision — Helper to Ironton'],
-        ['42', '160.740 MHz', 'UP — Ironton to Midvale / Provo to Lynndyl'],
-        ['12', '160.290 MHz', 'UP Provo Yard — yardmaster / switching'],
-        ['09', '160.245 MHz', 'UP Provo Yard — switching'],
-        ['54', '160.920 MHz', 'UP Provo Yard — switching'],
-        ['44', '160.770 MHz', 'Utah Railway — switching'],
-        ['68', '161.130 MHz', 'UP Provo Yard — switching'],
-        ['69', '161.145 MHz', 'Utah Railway — Provo Yard switching'],
-        ['79', '161.295 MHz', 'Utah Railway — Provo Yard switching'],
-        ['89', '161.445 MHz', 'UP Provo Yard — switching'],
-        ['92', '161.490 MHz', 'UP Roper Yard / regional reference']
-      ]
-    }
-  ],
- 
-  note: 'These frequencies are based on published railroad-monitoring references, including the Utah Centered Rail Provo Subdivision guide (2019). Actual assignments and operating practices may change. Railroad channels are provided for monitoring and situational awareness only. Transmission requires appropriate railroad authorization.'
-},
- 
+
+  {
+    id: 'aviation',
+    name: 'Aviation Radio',
+    icon: 'Aviation',
+    subtitle: '118–137 MHz · VHF Airband',
+    license: 'Restricted / Authorized Use',
+    facts: [],
+    description: 'Aviation radio provides communication between pilots, air traffic controllers, and airport personnel. It is used to coordinate aircraft movements, manage air traffic, share weather information, and support emergency communications. Most civilian aviation voice communications use AM radio in the VHF airband.',
+    link: 'https://www.faa.gov/air_traffic/flight_info/aeronav/digital_products/dafd/',
+    linkLabel: 'FAA Chart Supplement',
+    groups: [
+      {
+        title: 'Utah Airports & Air Traffic Control',
+        columns: ['Airport / Facility', 'Frequency', 'Usage'],
+        rows: [
+          ['Provo (PVU)', '125.300 MHz', 'Tower / CTAF'],
+          ['Provo (PVU)', '119.400 MHz', 'Ground'],
+          ['Provo (PVU)', '135.175 MHz', 'ATIS / AWOS'],
+          ['Provo Area', '118.850 MHz', 'Salt Lake Approach / Departure'],
+
+          ['Salt Lake Intl (SLC)', '118.300 MHz', 'Tower — selected runways'],
+          ['Salt Lake Intl (SLC)', '119.050 MHz', 'Tower — selected runway'],
+          ['Salt Lake Intl (SLC)', '132.650 MHz', 'Tower — selected runway'],
+          ['Salt Lake Intl (SLC)', '121.900 MHz', 'Ground — selected runways'],
+          ['Salt Lake Intl (SLC)', '123.775 MHz', 'Ground — selected runways'],
+          ['Salt Lake Intl (SLC)', '124.750 MHz', 'D-ATIS'],
+          ['Salt Lake Intl (SLC)', '125.625 MHz', 'D-ATIS / weather'],
+
+          ['Ogden-Hinckley (OGD)', '118.700 MHz', 'Tower / CTAF'],
+          ['Ogden-Hinckley (OGD)', '121.700 MHz', 'Ground'],
+          ['Ogden-Hinckley (OGD)', '125.550 MHz', 'ATIS'],
+
+          ['Spanish Fork (SPK)', '122.900 MHz', 'CTAF'],
+          ['Spanish Fork (SPK)', '119.275 MHz', 'AWOS'],
+
+          ['Heber Valley (HCR)', '122.800 MHz', 'CTAF / UNICOM'],
+          ['Heber Valley (HCR)', '124.825 MHz', 'AWOS'],
+
+          ['Skypark (BTF)', '122.800 MHz', 'CTAF / UNICOM'],
+
+          ['Cedar City (CDC)', '123.000 MHz', 'CTAF / UNICOM'],
+          ['Cedar City (CDC)', '119.025 MHz', 'ASOS'],
+
+          ['St. George (SGU)', '123.075 MHz', 'CTAF / UNICOM'],
+          ['St. George (SGU)', '135.075 MHz', 'AWOS'],
+
+          ['Canyonlands Regional (CNY)', '122.800 MHz', 'CTAF / UNICOM'],
+          ['Canyonlands Regional (CNY)', '118.525 MHz', 'ASOS']
+        ]
+      },
+      {
+        title: 'Aviation Emergency & Search-and-Rescue Frequencies',
+        columns: ['Frequency', 'Service', 'Usage'],
+        rows: [
+          ['121.500 MHz', 'Civil Aviation', 'Emergency / Guard'],
+          ['243.000 MHz', 'Military Aviation', 'Emergency / Guard'],
+          ['123.100 MHz', 'Aviation', 'Search-and-rescue communications']
+        ]
+      },
+      {
+        title: 'Emergency Locator Transmitters (ELTs)',
+        columns: ['Frequency', 'Type', 'Usage'],
+        rows: [
+          ['121.500 MHz', 'Analog ELT', 'Emergency beacon / local homing'],
+          ['243.000 MHz', 'Analog ELT', 'Military emergency beacon / homing'],
+          ['406 MHz band', 'Digital ELT', 'Satellite distress alerting through Cospas-Sarsat']
+        ]
+      }
+    ],
+    note: 'Airport frequencies are based on FAA aeronautical information and may change. Tower, ground, approach, and other services may use different frequencies depending on location, runway, operating hours, and air traffic control instructions. Consult current FAA publications and NOTAMs before operational use. Air-medical dispatch, Civil Air Patrol, and other specialized agency frequencies are not included because their current Utah assignments have not been independently confirmed. This reference does not authorize transmission.'
+  },
+
+  {
+    id: 'railroad',
+    name: 'Railroad Radio',
+    icon: 'Railroad',
+    subtitle: '160–162 MHz · VHF',
+    license: 'Restricted / Authorized Use',
+    facts: [],
+    description: 'Railroad radio provides communication between train crews, dispatchers, and yard personnel. It is used to coordinate train movements, switching operations, track maintenance, and railroad safety. In Utah Valley, Union Pacific and other railroad operations use standardized AAR radio channels.',
+    link: 'https://utahcenteredrail.com/guides/subs/provosub.html',
+    linkLabel: 'Provo Railroad Reference',
+    groups: [
+      {
+        title: 'Utah Valley Railroad Frequencies',
+        columns: ['AAR Channel', 'Frequency', 'Reported Usage'],
+        rows: [
+          ['23', '160.455 MHz', 'UP Provo Subdivision — Helper to Ironton'],
+          ['42', '160.740 MHz', 'UP — Ironton to Midvale / Provo to Lynndyl'],
+          ['12', '160.290 MHz', 'UP Provo Yard — yardmaster / switching'],
+          ['09', '160.245 MHz', 'UP Provo Yard — switching'],
+          ['54', '160.920 MHz', 'UP Provo Yard — switching'],
+          ['44', '160.770 MHz', 'Utah Railway — switching'],
+          ['68', '161.130 MHz', 'UP Provo Yard — switching'],
+          ['69', '161.145 MHz', 'Utah Railway — Provo Yard switching'],
+          ['79', '161.295 MHz', 'Utah Railway — Provo Yard switching'],
+          ['89', '161.445 MHz', 'UP Provo Yard — switching'],
+          ['92', '161.490 MHz', 'UP Roper Yard / regional reference']
+        ]
+      }
+    ],
+    note: 'These frequencies are based on published railroad-monitoring references, including the Utah Centered Rail Provo Subdivision guide (2019). Actual assignments and operating practices may change. Railroad channels are provided for monitoring and situational awareness only. Transmission requires appropriate railroad authorization.'
+  },
+
   {
     id: 'calling',
     name: 'Calling & Monitoring Frequencies',
@@ -447,6 +434,7 @@ export const radioServices = [
     }],
     note: 'Calling conventions vary by band, region, mode, and license privileges. APRS 144.390 MHz is a data frequency, not a voice calling channel.'
   },
+
   {
     id: 'wilderness',
     name: 'Wilderness Protocol',
@@ -480,7 +468,7 @@ export const radioServices = [
     note: 'Aviation and marine entries are separate service references, not Wilderness Protocol amateur channels. Transmitting on them requires applicable authority except where emergency rules provide otherwise.'
   }
 ];
- 
+
 export const radioServiceCategories = [
   {
     id: 'personal',
@@ -498,11 +486,11 @@ export const radioServiceCategories = [
     services: ['calling', 'wilderness']
   }
 ];
- 
+
 {/* =========================================
     RADIO SERVICE CARD RENDERER
     ========================================= */}
- 
+
 {radioServiceCategories.map((category) => (
   <section
     key={category.id}
@@ -512,247 +500,329 @@ export const radioServiceCategories = [
     <h2 id={`radio-services-category-${category.id}`}>
       {category.title}
     </h2>
- 
+
     <div className="radio-services-category__cards">
       {radioServices
         .filter((service) => category.services.includes(service.id))
         .map((service) => (
           <React.Fragment key={service.id}>
-          <div
-            key={service.id}
-            className={`radio-service-card radio-service-card--${service.id}`}
-          >
-            <div className="radio-service-card__heading">
-              <div className="radio-service-card__identity">
-                <div
-                  className={`radio-service-card__monogram ${
-                    [
-                      'business',
-                      'marine',
-                      'aviation',
-                      'railroad',
-                      'calling',
-                      'wilderness'
-                    ].includes(service.id)
-                      ? 'radio-service-card__monogram--icon'
-                      : ''
-                  }`}
-                  aria-hidden="true"
-                >
-                  {service.id === 'business' ? (
-                    <BriefcaseBusiness size={25} strokeWidth={1.8} />
-                  ) : service.id === 'marine' ? (
-                    <Ship size={25} strokeWidth={1.8} />
-                  ) : service.id === 'aviation' ? (
-                    <Plane size={25} strokeWidth={1.8} />
-                  ) : service.id === 'railroad' ? (
-                    <TrainFront size={25} strokeWidth={1.8} />
-                  ) : service.id === 'calling' ? (
-                    <RadioTower size={25} strokeWidth={1.8} />
-                  ) : service.id === 'wilderness' ? (
-                    <TreePine size={25} strokeWidth={1.8} />
-                  ) : (
-                    service.icon
-                  )}
-                </div>
- 
-                <div className="radio-service-card__text">
-                  <h3
-                    id={`radio-service-${service.id}`}
-                    className="radio-service-card__title"
-                  >
-                    {service.name}
-                  </h3>
- 
-                  <span className="radio-service-card__subtitle">
-                    {service.subtitle}
-                  </span>
-                </div>
-              </div>
- 
-              <span className="radio-service-card__license">
-                {service.license}
-              </span>
-            </div>
- 
-            {service.facts.length > 0 && (
-              <div className="radio-service-card__facts">
-                {service.facts.map(([label, value], index) => (
+            <div
+              className={`radio-service-card radio-service-card--${service.id}`}
+            >
+              <div className="radio-service-card__heading">
+                <div className="radio-service-card__identity">
                   <div
-                    className="radio-service-card__fact"
-                    key={`${service.id}-${index}`}
+                    className={`radio-service-card__monogram ${
+                      [
+                        'business',
+                        'marine',
+                        'aviation',
+                        'railroad',
+                        'calling',
+                        'wilderness'
+                      ].includes(service.id)
+                        ? 'radio-service-card__monogram--icon'
+                        : ''
+                    }`}
+                    aria-hidden="true"
                   >
-                    <span className="radio-service-card__fact-label">
-                      {label}
-                    </span>
-                    <strong>{value}</strong>
+                    {service.id === 'business' ? (
+                      <BriefcaseBusiness size={25} strokeWidth={1.8} />
+                    ) : service.id === 'marine' ? (
+                      <Ship size={25} strokeWidth={1.8} />
+                    ) : service.id === 'aviation' ? (
+                      <Plane size={25} strokeWidth={1.8} />
+                    ) : service.id === 'railroad' ? (
+                      <TrainFront size={25} strokeWidth={1.8} />
+                    ) : service.id === 'calling' ? (
+                      <RadioTower size={25} strokeWidth={1.8} />
+                    ) : service.id === 'wilderness' ? (
+                      <TreePine size={25} strokeWidth={1.8} />
+                    ) : (
+                      service.icon
+                    )}
                   </div>
-                ))}
-              </div>
-            )}
- 
-            <p className="radio-service-card__description">
-              {service.description}
-            </p>
- 
-            <div className="radio-service-card__actions">
-              {service.link && (
-                <a
-                  className="radio-service-card__rules"
-                  href={service.link}
-                  target={service.link.startsWith('/') ? undefined : '_blank'}
-                  rel={service.link.startsWith('/') ? undefined : 'noopener noreferrer'}
-                >
-                  {service.linkLabel}
-                </a>
-              )}
-             
- 
-{service.frequencyLink || service.groups.length > 0 ? (
-  <button
-    type="button"
-    className="radio-frequency-button"
-    onClick={() => {
-      if (service.frequencyLink) {
-        window.location.href = service.frequencyLink;
-      } else {
-        const modal = document.getElementById(
-          `radio-frequency-${service.id}`
-        );
- 
-        if (modal && !modal.open) {
-          modal.showModal();
-        }
-      }
-    }}
-  >
-    {service.id === 'lora' ? 'Meshtastic Frequencies' : 'View Frequencies'}
-  </button>
-) : null}
- 
-            </div>
- 
-            {service.groups.length > 0 && (
-              <dialog
-                id={`radio-frequency-${service.id}`}
-                className="radio-frequency-modal"
-                aria-modal="true"
-                aria-labelledby={`radio-modal-title-${service.id}`}
-              >
-                <div className="radio-frequency-modal__header">
-                  <h3
-                    id={`radio-modal-title-${service.id}`}
-                    className="radio-frequency-modal__title"
-                  >
-                    {service.name} Frequencies
-                  </h3>
- 
-                  <form method="dialog">
-                    <button
-                      type="submit"
-                      className="radio-frequency-modal__close"
-                      aria-label="Close frequency table"
+
+                  <div className="radio-service-card__text">
+                    <Heading
+                      as="h3"
+                      id={`radio-service-${service.id}`}
+                      className="radio-service-card__title"
                     >
-                      ×
-                    </button>
-                  </form>
+                      {service.name}
+                    </Heading>
+
+                    <span className="radio-service-card__subtitle">
+                      {service.subtitle}
+                    </span>
+                  </div>
                 </div>
- 
-                <div className="radio-frequency-modal__body">
-                  {service.groups.map((group, groupIndex) => (
-                    <section
-                      className="radio-frequency-modal__group"
-                      key={`${service.id}-group-${groupIndex}`}
+
+                <span className="radio-service-card__license">
+                  {service.license}
+                </span>
+              </div>
+
+              {service.facts.length > 0 && (
+                <div className="radio-service-card__facts">
+                  {service.facts.map(([label, value], index) => (
+                    <div
+                      className="radio-service-card__fact"
+                      key={`${service.id}-${index}`}
                     >
-                      <h4 className="radio-frequency-modal__group-title">
-                        {group.title}
-                      </h4>
- 
-                      <div className="radio-frequency-modal__table-scroll">
-                        <table className="radio-service-card__table" aria-label={`${service.name}: ${group.title}`}>
-                          <thead>
-                            <tr>
-                              {group.columns.map((column, index) => (
-                                <th
-                                  scope="col"
-                                  key={`${service.id}-column-${groupIndex}-${index}`}
-                                >
-                                  {column}
-                                </th>
-                              ))}
-                            </tr>
-                          </thead>
- 
-                          <tbody>
-                            {group.rows.map((cells, rowIndex) => (
-                              <tr
-                                key={`${service.id}-row-${groupIndex}-${rowIndex}`}
-                              >
-                                {cells.map((cell, cellIndex) => (
-                                  <td
-                                    key={`${service.id}-cell-${groupIndex}-${rowIndex}-${cellIndex}`}
+                      <span className="radio-service-card__fact-label">
+                        {label}
+                      </span>
+                      <strong>{value}</strong>
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              <p className="radio-service-card__description">
+                {service.description}
+              </p>
+
+              <div className="radio-service-card__actions">
+                {service.link && (
+                  <a
+                    className="radio-service-card__rules"
+                    href={service.link}
+                    target={service.link.startsWith('/') ? undefined : '_blank'}
+                    rel={service.link.startsWith('/') ? undefined : 'noopener noreferrer'}
+                  >
+                    {service.linkLabel}
+                  </a>
+                )}
+
+                {service.frequencyLink || service.groups.length > 0 ? (
+                  <button
+                    type="button"
+                    className="radio-frequency-button"
+                    onClick={() => {
+                      if (service.frequencyLink) {
+                        window.location.href = service.frequencyLink;
+                      } else {
+                        const modal = document.getElementById(
+                          `radio-frequency-${service.id}`
+                        );
+
+                        if (modal && !modal.open) {
+                          modal.showModal();
+                        }
+                      }
+                    }}
+                  >
+                    {service.id === 'lora'
+                      ? 'Meshtastic Frequencies'
+                      : 'View Frequencies'}
+                  </button>
+                ) : null}
+              </div>
+
+              {service.groups.length > 0 && (
+                <dialog
+                  id={`radio-frequency-${service.id}`}
+                  className="radio-frequency-modal"
+                  aria-modal="true"
+                  aria-labelledby={`radio-modal-title-${service.id}`}
+                >
+                  <div className="radio-frequency-modal__header">
+                    <h3
+                      id={`radio-modal-title-${service.id}`}
+                      className="radio-frequency-modal__title"
+                    >
+                      {service.name} Frequencies
+                    </h3>
+
+                    <form method="dialog">
+                      <button
+                        type="submit"
+                        className="radio-frequency-modal__close"
+                        aria-label="Close frequency table"
+                      >
+                        ×
+                      </button>
+                    </form>
+                  </div>
+
+                  <div className="radio-frequency-modal__body">
+                    {service.groups.map((group, groupIndex) => (
+                      <section
+                        className="radio-frequency-modal__group"
+                        key={`${service.id}-group-${groupIndex}`}
+                      >
+                        <h4 className="radio-frequency-modal__group-title">
+                          {group.title}
+                        </h4>
+
+                        <div className="radio-frequency-modal__table-scroll">
+                          <table
+                            className="radio-service-card__table"
+                            aria-label={`${service.name}: ${group.title}`}
+                          >
+                            <thead>
+                              <tr>
+                                {group.columns.map((column, index) => (
+                                  <th
+                                    scope="col"
+                                    key={`${service.id}-column-${groupIndex}-${index}`}
                                   >
-                                    {cell}
-                                  </td>
+                                    {column}
+                                  </th>
                                 ))}
                               </tr>
-                            ))}
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  ))}
- 
-                  {service.note && (
-                    <p className="radio-frequency-modal__note">
-                      {service.note}
-                    </p>
-                  )}
-                </div>
-              </dialog>
-            )}
-          </div>
-          {service.id === 'lora' && (
-            <div className="radio-mesh-subcards" aria-label="LoRa messaging systems">
-              <section className="radio-mesh-subcard" aria-labelledby="mesh-meshtastic-title">
-                <div className="radio-mesh-subcard__heading">
-                  <img className="radio-mesh-subcard__logo" src="https://github.com/meshtastic.png?size=128" alt="Meshtastic logo" loading="lazy" />
-                  <h3 id="mesh-meshtastic-title">Meshtastic</h3>
-                </div>
-                <p>Meshtastic lets compatible radios exchange messages and location information without cell service or internet access.</p>
-                <p><strong>Network:</strong> A distributed mesh where participating devices can relay messages. Dedicated repeaters are not required.</p>
-                <p><strong>Messaging:</strong> Group channels, direct messages, and location sharing.</p>
-                <p><strong>Common uses:</strong> Outdoor recreation, position reporting, community communication, and experimentation.</p>
-                <a className="radio-service-card__rules" href="https://meshtastic.org" target="_blank" rel="noopener noreferrer">
-                  Meshtastic Website <ExternalLink size={14} aria-hidden="true" />
-                </a>
-              </section>
-              <section className="radio-mesh-subcard" aria-labelledby="mesh-meshcore-title">
-                <div className="radio-mesh-subcard__heading">
-                  <img className="radio-mesh-subcard__logo" src="https://github.com/meshcore-dev.png?size=128" alt="MeshCore logo" loading="lazy" />
-                  <h3 id="mesh-meshcore-title">MeshCore</h3>
-                </div>
-                <p>MeshCore lets compatible radios exchange messages directly or through a network of dedicated repeaters without cell service or internet access.</p>
-                <p><strong>Network:</strong> User devices communicate directly or through repeaters that forward messages along network paths.</p>
-                <p><strong>Messaging:</strong> Public channels, private messages, and optional room servers for stored messages.</p>
-                <p><strong>Common uses:</strong> Community messaging, fixed repeater networks, group coordination, and experimentation.</p>
-                <a className="radio-service-card__rules" href="https://meshcore.io" target="_blank" rel="noopener noreferrer">
-                  MeshCore Website <ExternalLink size={14} aria-hidden="true" />
-                </a>
-              </section>
-              <p className="radio-mesh-subcards__note">Meshtastic and MeshCore use LoRa technology but are separate systems. Devices require compatible firmware and radio settings to communicate.</p>
+                            </thead>
+
+                            <tbody>
+                              {group.rows.map((cells, rowIndex) => (
+                                <tr
+                                  key={`${service.id}-row-${groupIndex}-${rowIndex}`}
+                                >
+                                  {cells.map((cell, cellIndex) => (
+                                    <td
+                                      key={`${service.id}-cell-${groupIndex}-${rowIndex}-${cellIndex}`}
+                                    >
+                                      {cell}
+                                    </td>
+                                  ))}
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </section>
+                    ))}
+
+                    {service.note && (
+                      <p className="radio-frequency-modal__note">
+                        {service.note}
+                      </p>
+                    )}
+                  </div>
+                </dialog>
+              )}
             </div>
-          )}
+
+            {service.id === 'lora' && (
+              <div
+                className="radio-mesh-subcards"
+                aria-label="LoRa messaging systems"
+              >
+                <section
+                  className="radio-mesh-subcard"
+                  aria-labelledby="mesh-meshtastic-title"
+                >
+                  <div className="radio-mesh-subcard__heading">
+                    <img
+                      className="radio-mesh-subcard__logo"
+                      src="https://github.com/meshtastic.png?size=128"
+                      alt="Meshtastic logo"
+                      loading="lazy"
+                    />
+                    <h3 id="mesh-meshtastic-title">Meshtastic</h3>
+                  </div>
+
+                  <p>
+                    Meshtastic lets compatible radios exchange messages
+                    and location information without cell service or
+                    internet access.
+                  </p>
+
+                  <p>
+                    <strong>Network:</strong> A distributed mesh where
+                    participating devices can relay messages.
+                    Dedicated repeaters are not required.
+                  </p>
+
+                  <p>
+                    <strong>Messaging:</strong> Group channels,
+                    direct messages, and location sharing.
+                  </p>
+
+                  <p>
+                    <strong>Common uses:</strong> Outdoor recreation,
+                    position reporting, community communication,
+                    and experimentation.
+                  </p>
+
+                  <a
+                    className="radio-service-card__rules"
+                    href="https://meshtastic.org"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Meshtastic Website
+                    <ExternalLink size={14} aria-hidden="true" />
+                  </a>
+                </section>
+
+                <section
+                  className="radio-mesh-subcard"
+                  aria-labelledby="mesh-meshcore-title"
+                >
+                  <div className="radio-mesh-subcard__heading">
+                    <img
+                      className="radio-mesh-subcard__logo"
+                      src="https://github.com/meshcore-dev.png?size=128"
+                      alt="MeshCore logo"
+                      loading="lazy"
+                    />
+                    <h3 id="mesh-meshcore-title">MeshCore</h3>
+                  </div>
+
+                  <p>
+                    MeshCore lets compatible radios exchange messages
+                    directly or through a network of dedicated repeaters
+                    without cell service or internet access.
+                  </p>
+
+                  <p>
+                    <strong>Network:</strong> User devices communicate
+                    directly or through repeaters that forward messages
+                    along network paths.
+                  </p>
+
+                  <p>
+                    <strong>Messaging:</strong> Public channels,
+                    private messages, and optional room servers
+                    for stored messages.
+                  </p>
+
+                  <p>
+                    <strong>Common uses:</strong> Community messaging,
+                    fixed repeater networks, group coordination,
+                    and experimentation.
+                  </p>
+
+                  <a
+                    className="radio-service-card__rules"
+                    href="https://meshcore.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    MeshCore Website
+                    <ExternalLink size={14} aria-hidden="true" />
+                  </a>
+                </section>
+
+                <p className="radio-mesh-subcards__note">
+                  Meshtastic and MeshCore use LoRa technology but are
+                  separate systems. Devices require compatible firmware
+                  and radio settings to communicate.
+                </p>
+              </div>
+            )}
           </React.Fragment>
         ))}
     </div>
   </section>
 ))}
- 
+
 ## Comparing Radio Services
- 
+
 The estimates below cover basic entry-level equipment in the United States. **Range is highly variable** and depends on terrain, antenna height, buildings, interference, equipment, and whether an existing repeater or mesh network is available. These are planning estimates, not guaranteed distances or price quotes.
- 
+
 | Radio service | Approximate cost of entry | Typical direct range |
 | --- | --- | --- |
 | [FRS](#radio-service-frs) | $20–$60 for a pair | 0.5–2 miles |
@@ -761,6 +831,5 @@ The estimates below cover basic entry-level equipment in the United States. **Ra
 | [CB](#radio-service-cb) | $60–$200 for basic radio and antenna | 1–5 miles |
 | [LoRa / Mesh](#radio-service-lora) | $25–$100 per node | 1–10+ miles between favorably placed nodes |
 | [Amateur Radio](#radio-service-amateur) | $30–$150 for an entry-level handheld, plus testing/licensing costs | 1–5 miles with an entry-level VHF/UHF handheld; repeaters and HF can extend coverage much farther |
- 
+
 *Costs are approximate U.S. equipment budgets, not recurring service fees. The ranges are broad illustrations for common setups, not statistical averages. GMRS repeater access and mesh relays can extend coverage substantially; amateur-radio range varies enormously by band and operating mode. Business and transportation services use specialized equipment and authorization, so a single consumer entry-cost estimate would be misleading.*
- 

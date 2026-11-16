@@ -1,8 +1,37 @@
 ---
+title: Local Groups
 sidebar_position: 1
 ---
 
+import React, { useEffect } from 'react';
 import { ExternalLink } from 'lucide-react';
+
+export function ScrollToByuAnchor() {
+  useEffect(() => {
+    if (window.location.hash !== '#byu-amateur-radio-club-barc') {
+      return;
+    }
+
+    const target = document.getElementById(
+      'byu-amateur-radio-club-barc'
+    );
+
+    if (!target) {
+      return;
+    }
+
+    const frame = window.requestAnimationFrame(() => {
+      target.scrollIntoView({
+        behavior: 'auto',
+        block: 'start',
+      });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, []);
+
+  return null;
+}
 
 # Local Groups
 
@@ -21,14 +50,14 @@ Utah County is home to several amateur radio clubs and volunteer emergency respo
     </div>
     <div className="pact-local-group-description">
       <p>
-        The Utah County Amateur Radio Emergency Service (UCARES) is a local <a href="https://www.arrl.org/ares" target="_blank" rel="noopener noreferrer">**ARES**</a> group. Its members are licensed amateur radio operators who volunteer their time and skills for community service and emergency communications. UCARES is supported by the Utah County Sheriff's Office and the ECS Team.
+        The Utah County Amateur Radio Emergency Service (UCARES) is a local <a href="https://www.arrl.org/ares" target="_blank" rel="noopener noreferrer"><strong>ARES</strong></a> group. Its members are licensed amateur radio operators who volunteer their time and skills for community service and emergency communications. UCARES is supported by the Utah County Sheriff's Office and the ECS Team.
       </p>
     </div>
   </div>
   <div className="pact-local-group-action">
     <a
       href="https://www.ucares.org/"
-className="pact-primary-button"
+      className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -53,7 +82,7 @@ className="pact-primary-button"
     </div>
     <div className="pact-local-group-description">
       <p>
-        The Utah County Emergency Communication and Support (ECS) Team was formed in 1981 and is a volunteer organization made up of approximately 30 volunteers. It is overseen by the Emergency Services Division of the Sheriff's Office and supports emergency callouts and planned events throughout the county. Some calls to service include supporting Search and Rescue and assisting cities during their summer festivals ([**Provo Freedom Festival Parade**](/docs/training/events#provo-freedom-festival-parade), [**Provo Half Marathon**](/docs/training/events#provo-half-marathon) to name a few). The ECS Team also trains to assist the Sheriff's Office during natural disasters.
+        The Utah County Emergency Communication and Support (ECS) Team was formed in 1981 and is a volunteer organization made up of approximately 30 volunteers. It is overseen by the Emergency Services Division of the Sheriff's Office and supports emergency callouts and planned events throughout the county. Some calls to service include supporting Search and Rescue and assisting cities during their summer festivals, including the <a href="/docs/training/events/"><strong>Provo Freedom Festival Parade</strong></a> and <a href="/docs/training/events/"><strong>Provo Half Marathon</strong></a>. The ECS Team also trains to assist the Sheriff's Office during natural disasters.
       </p>
       <p>
         All members of the ECS Team start by obtaining their amateur radio license. Once this is completed, potential members need to join UCARES. After a couple of years with UCARES, potential members may submit an application to join the team. All members must pass a background check to be considered.
@@ -63,7 +92,7 @@ className="pact-primary-button"
   <div className="pact-local-group-action">
     <a
       href="https://sheriff.utahcounty.gov/supportServices/emergencyManagement/ECS"
-className="pact-primary-button"
+      className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -95,7 +124,7 @@ className="pact-primary-button"
   <div className="pact-local-group-action">
     <a
       href="https://www.tert.org/radio-training-and-resources/"
-className="pact-primary-button"
+      className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -127,7 +156,7 @@ className="pact-primary-button"
   <div className="pact-local-group-action">
     <a
       href="https://uvarc.club/"
-className="pact-primary-button"
+      className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -141,7 +170,10 @@ className="pact-primary-button"
 
 ## BYU Amateur Radio Club (BARC)
 
-<div className="pact-local-group">
+<div
+  className="pact-local-group"
+  id="byu-amateur-radio-club"
+>
   <div className="pact-local-group-content">
     <div className="pact-local-group-logo">
       <img
@@ -150,22 +182,28 @@ className="pact-primary-button"
         loading="lazy"
       />
     </div>
+
     <div className="pact-local-group-description">
       <p>
         The Brigham Young University Amateur Radio Club (BARC) is a place for students to learn and practice radio operating skills and to use those skills to serve the community.
       </p>
+
+<ScrollToByuAnchor />
+
       <p>
         During the school year, the club meets Tuesday evenings at 7:00 PM.
       </p>
+
       <p>
-        Weekly club activities include build nights, demonstrations, training, transmitter hunts, and practice using club radio equipment. The club often volunteers to provide communications for campus and community events such as [**Hike & Light the Y**](/docs/training/events#hike--light-the-y) and the Rex Lee Run.
+        Weekly club activities include build nights, demonstrations, training, transmitter hunts, and practice using club radio equipment. The club often volunteers to provide communications for campus and community events such as <a href="/docs/training/events/"><strong>Hike &amp; Light the Y</strong></a> and the Rex Lee Run.
       </p>
     </div>
   </div>
+
   <div className="pact-local-group-action">
     <a
       href="https://radio.byu.edu/"
-className="pact-primary-button"
+      className="pact-primary-button"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -174,7 +212,6 @@ className="pact-primary-button"
     </a>
   </div>
 </div>
-
 ---
 
 :::note Orem/Provo Community Emergency Response Team (CERT)
