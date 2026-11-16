@@ -33,12 +33,13 @@
     "webpack": "5.112.2",
     "webpack-dev-server": "5.2.0"
   },
-"overrides": {
-  "webpack": "5.112.2",
-  "webpack-dev-server": "5.2.0",
-  "tinypool": "2.2.0",
-  "serialize-javascript": "7.1.4"
-},
+  "overrides": {
+    "webpack": "5.112.2",
+    "webpack-dev-server": "5.2.0",
+    "tinypool": "2.2.0",
+    "serialize-javascript": "7.1.4",
+    "qs": "6.17.1"
+  },
   "browserslist": {
     "production": [
       ">0.5%",
