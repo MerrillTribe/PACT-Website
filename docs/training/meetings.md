@@ -137,7 +137,7 @@ We look forward to seeing you at our next Interface Meeting.
       <tbody>
 
         <tr>
-          <td>February 17</td>
+          <td>February 10</td>
           <td>
             <a
               href="https://www.google.com/maps/search/?api=1&query=2737%20N%20Canyon%20Road%2C%20Provo%2C%20UT"
@@ -188,7 +188,7 @@ We look forward to seeing you at our next Interface Meeting.
         </tr>
 
         <tr>
-          <td>November 17</td>
+          <td>November 10</td>
           <td>
             <a
               href="https://www.google.com/maps/search/?api=1&query=2737%20N%20Canyon%20Road%2C%20Provo%2C%20UT"
